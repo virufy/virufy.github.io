@@ -52,7 +52,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
       },
       {
         label: 'Media',
-        route: [`/${lang}/news`, `/${lang}/publications`],
+        route: [
+          `/${lang}/news`,
+          `/${lang}/publications`,
+        ],
       },
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
@@ -352,20 +355,18 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <LocaleSelect />
                 </li>
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
-                  <button
-                    className={`${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
-                  >
-                    <Link href={`/${lang}/join-us`}>
-                      {joinUs ? joinUs.buttonText : ''}
-                    </Link>
-                  </button>
-                </li>
+                <button
+                  className={`${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                >
+                  <Link href={`/${lang}/job-listing`}>{joinUs ? joinUs.buttonText : ''}</Link>
+                </button>
+              </li>
 
                 <li className={`text-[#393939] ${navbar ? 'pb-20' : ''}`}>
                   <button
                     onClick={() => setShowModal(true)}
                     className={`${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
-                  >
+                    >
                     <Link href="#">{donate.buttonText}</Link>
                   </button>
                 </li>

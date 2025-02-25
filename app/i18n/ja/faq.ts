@@ -105,7 +105,8 @@ const faq: FAQ = {
           ],
         },
         {
-          question: 'お使いのアプリはiOSまたはAndroidで利用できますか？',
+          question:
+            'お使いのアプリはiOSまたはAndroidで利用できますか？',
           answer: [
             {
               type: 'paragraph',
@@ -444,7 +445,7 @@ const faq: FAQ = {
                 {
                   type: 'relative-link',
                   text: '採用',
-                  href: '/join-us',
+                  href: '/job-listing',
                 },
                 {
                   type: 'text',

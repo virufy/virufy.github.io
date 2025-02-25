@@ -41,7 +41,7 @@ const PublicationsPage = ({
 
           {/* Text Container */}
           <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 pb-40 pt-64 text-center font-medium opacity-95">
-            <h1 className="text-4xl font-bold text-green-500 sm:text-5xl">
+            <h1 className="text-4xl text-green-500 sm:text-5xl font-bold">
               {publicationsSection.title}
             </h1>
             {publicationsSection.texts.map((text, i) => (
@@ -86,7 +86,7 @@ const PublicationsPage = ({
             </h2>
             <button
               className="rounded-full bg-white p-6 text-xl font-medium text-black sm:px-8 sm:text-2xl md:px-8 md:py-4 md:text-lg"
-              onClick={() => router.push(`/${lang}/join-us`)}
+              onClick={() => router.push(`/${lang}/job-listing`)}
             >
               {collaborateSection.linkText}
             </button>

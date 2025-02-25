@@ -108,8 +108,8 @@ const OneYoungWorld = ({
             {/* Slider Container */}
             <TestimonialSlider testimonials={testimonials} />
             <Link
-              className="w-auto rounded-full bg-white px-6 py-4 text-sm font-medium text-black md:px-12 md:py-4 md:text-base"
-              href={`/${lang}/join-us`}
+              className="w-auto rounded-full bg-white text-black px-6 py-4 text-sm font-medium md:px-12 md:py-4 md:text-base"
+              href={`/${lang}/job-listing`}
             >
               {buttonText}
             </Link>
