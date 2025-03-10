@@ -26,6 +26,7 @@ import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
   title: 'サポーター',
+  buttonText: 'サポートする',
   supportersList: [
     {
       img: H4RLogo,

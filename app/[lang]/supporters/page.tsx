@@ -8,7 +8,7 @@ import Title from '../components/Title';
 
 const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    supporters: { title, supportersList },
+    supporters: { title, buttonText, supportersList },
   } = usei18n(lang);
 
   return (
@@ -22,19 +22,30 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           priority
           basePath={basePath}
         />
-        <Title
-          Text={title}
-          H="h1"
-          TitleClassProps="
-					absolute top-[50%] 
-					left-[50%] 
-					translate-y-[-50%] 
-					translate-x-[-50%]
-					text-white
-					text-center
-          pt-10
-          text-xl"
-        />
+      <div className="absolute top-0 left-0 w-full h-full">
+          <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+            <Title
+              Text={title}
+              H="h1"
+              TitleClassProps="
+                text-white
+                text-center
+                text-xl"
+            />
+          </div>
+    
+          {/* Supporter Us button */}
+          <div className="absolute top-[70%] left-[50%] translate-x-[-50%]">
+            <Link href="/join-us">
+              <button
+                className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
+                style={{ borderRadius: '50px', background: 'white' }}
+              >
+                {buttonText}
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
 
       <div className="relative -top-24 z-10 flex flex-col items-center justify-center bg-gradient-to-b from-[#111B2E] to-[#4064AD]">
