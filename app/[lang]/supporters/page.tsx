@@ -36,14 +36,14 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     
           {/* Supporter Us button */}
           <div className="absolute top-[70%] left-[50%] translate-x-[-50%]">
-            <Link href="/join-us">
+
               <button
                 className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
                 style={{ borderRadius: '50px', background: 'white' }}
               >
                 {buttonText}
               </button>
-            </Link>
+            
           </div>
         </div>
       </div>
