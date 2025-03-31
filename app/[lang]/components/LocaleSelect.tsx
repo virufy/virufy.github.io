@@ -31,7 +31,6 @@ const LocaleSelect = () => {
   if (localeMatch) {
     locale = localeMatch[1] as Locale;
   }
-
   const handleLocaleChange = (newLocale: Locale) => {
     const newPath = currPath.replace(localeRegex, `/${newLocale}`);
     router.push(newPath);
@@ -76,20 +75,22 @@ const LocaleSelect = () => {
       </button>
       {dropdownOpen && (
         <div className="absolute z-10 w-40 border-b border-l border-r border-gray-500 bg-black pb-2 shadow-md shadow-gray-500 lg:-left-2 lg:mt-0 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none">
-          {i18n.locales.map((localeOption) => (
-            <button
-              key={localeOption}
-              onClick={() => handleLocaleChange(localeOption as Locale)}
-              className="flex w-full items-center px-3 py-2 text-left text-sm text-white hover:font-bold"
-            >
-              <ExportedImage
-                src={flagIcons[localeOption]}
-                alt={`${localeOption} flag`}
-                className="ml-10 mr-2 h-5 w-5 lg:ml-1"
-              />
-              {localeOption.toUpperCase()}
-            </button>
-          ))}
+          {i18n.locales
+            .filter((localeOption) => localeOption !== locale)
+            .map((localeOption) => (
+              <button
+                key={localeOption}
+                onClick={() => handleLocaleChange(localeOption as Locale)}
+                className="flex w-full items-center px-3 py-2 text-left text-sm text-white hover:font-bold"
+              >
+                <ExportedImage
+                  src={flagIcons[localeOption]}
+                  alt={`${localeOption} flag`}
+                  className="ml-10 mr-2 h-5 w-5 lg:ml-1"
+                />
+                {localeOption.toUpperCase()}
+              </button>
+            ))}
         </div>
       )}
     </div>
