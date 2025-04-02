@@ -26,7 +26,6 @@ const nextConfig = {
    * Add a custom server route for redirection
    */
   async rewrites() {
-
     return [
       {
         source: '/clinic/:path*',
@@ -51,6 +50,11 @@ const nextConfig = {
       {
         source: '/team',
         destination: '/advisors',
+      },
+      {
+        source: '/apply',
+        destination:
+          'https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform',
       },
     ];
   },
