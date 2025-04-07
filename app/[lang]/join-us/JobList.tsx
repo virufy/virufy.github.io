@@ -5,9 +5,9 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { VirufyLogo } from '@/public/images/jobListing';
 import ExportedImage from 'next-image-export-optimizer';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
 import Text from '../components/Text';
 
 const JobList = ({
@@ -21,23 +21,37 @@ const JobList = ({
   modal: JobModal;
   applyButtonText: string;
 }) => {
-  const [showModalConfirmation, setShowModalConfirmation] = useState(true);
   const router = useRouter();
+  const scrollRef = useRef<HTMLDivElement | null>(null);
+  const [showModal, setShowModal] = useState(false);
+  useEffect(() => {
+    const seenModal = localStorage.getItem('seenModal');
+    if (!seenModal) {
+      setShowModal(true);
+      scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
+  const closeModalAndSetLocalStorage = (): void => {
+    setShowModal(false);
+    localStorage.setItem('seenModal', 'true');
+    console.log(showModal);
+  };
   const closeModalAndGoToPreviousPage = (): void => {
-    setShowModalConfirmation(false);
     router.back();
   };
 
   return (
     <>
       <div>
-        {showModalConfirmation ? (
+        {showModal ? (
           <>
             <div className="fixed inset-0 top-60 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto max-w-[90vw] max-h-[90vh] w-[300px] md:w-[360px] overflow-y-auto">
+              <div className="relative mx-auto max-h-[90vh] w-[300px] max-w-[90vw] overflow-y-auto md:w-[360px]">
                 {/*content*/}
 
-                <div className="relative flex w-full flex-col rounded-xl border-0 bg-gradient-to-b from-[black] to-[#4167AD] font-medium text-white shadow-lg outline-none focus:outline-none overflow-y-auto max-h-[90vh]">
+                <div className="relative flex max-h-[90vh] w-full flex-col overflow-y-auto rounded-xl border-0 bg-gradient-to-b from-[black] to-[#4167AD] font-medium text-white shadow-lg outline-none focus:outline-none">
                   {/*header*/}
 
                   <div className="flex justify-center px-4 pt-4 md:justify-between">
@@ -57,21 +71,20 @@ const JobList = ({
                   </div>
 
                   <div className="flex w-full rounded-t text-center md:text-left">
-                    <p className="mx-auto my-10 max-h-[200px] px-6 text-lg md:text-xl break-words overflow-y-auto">
+                    <p className="mx-auto my-10 max-h-[200px] overflow-y-auto break-words px-6 text-lg md:text-xl">
                       {modal?.text}
                     </p>
                   </div>
                   {/*body*/}
 
                   <div className="mb-14 h-[100px] flex-col items-center justify-center">
-                    <Link
+                    <button
                       className="mx-auto flex w-[260px] justify-center rounded-3xl bg-white px-6 py-2 font-bold text-black outline-none transition-all duration-150 ease-linear md:w-[320px] md:font-medium"
                       type="button"
-                      href="#"
-                      onClick={() => setShowModalConfirmation(false)}
+                      onClick={closeModalAndSetLocalStorage}
                     >
                       {modal?.yes}
-                    </Link>
+                    </button>
                     <button
                       className="mx-auto mt-6 flex w-[260px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 font-bold text-red-500 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[320px] md:font-medium"
                       onClick={closeModalAndGoToPreviousPage}
@@ -87,7 +100,7 @@ const JobList = ({
         ) : null}
       </div>
       {/* _________job listings____________ */}
-      <div className="mx-auto mb-12 w-11/12">
+      <div className="mx-auto mb-12 w-11/12" ref={scrollRef}>
         {!jobList ? <p>No data</p> : null}
 
         {jobList.map(({ category, positions }) => (
