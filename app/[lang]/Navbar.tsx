@@ -16,6 +16,8 @@ import LocaleSelect from './components/LocaleSelect';
 import DonateModal from './components/navbar/DonateModal';
 import { ButtonType } from './themes';
 
+
+
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
     navbar: { home, ourTechnology, aboutUs, media, faq, donate, joinUs }, // re add coughcheck here when needed
@@ -69,7 +71,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, [currPathname]);
 
-  const SCREEN_SIZE = 976;
+  const SCREEN_SIZE = 1150;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -121,6 +123,45 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 basePath={basePath}
               />
             </Link>
+            {/* Mobile Search Bar */}
+            <div className="lg:hidden flex items-center justify-center w-full py-2">
+                 <div className="relative w-[204px] h-[34px]" >
+                     <input
+                           type="text"
+                           placeholder="Search..."
+                           className="w-full h-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-[#717171] font-[Nunito Sans]"
+
+                     />
+                     { /* Inner Rectangle for Search Icon */ }
+                     <div
+                          className="absolute flex items-center justify-center right-0 top-0 h-full"
+                          style={{
+                               width: '34px',
+                               height: '34px',
+                               borderTopRightRadius: '100px',
+                               borderBottomRightRadius: '100px',
+                               background: 'linear-gradient(90deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
+                               border: '1px solid black',
+                          }}
+                      >
+                             <svg
+                                 className="w-[22px] h-[22px] text-gray-900"
+                        
+                                 fill="none"
+                                 stroke="currentColor"
+                                 viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <circle cx="10" cy="10" r="6" stroke="black" strokeWidth="2" />
+                                 <line x1="14" y1="14" x2="20" y2="20" stroke="black" strokeWidth="2" />
+                         
+                             </svg>
+                     </div>
+                 </div>
+
+            </div>
+
+            
+
             {/* // hamburger and x button */}
             <div className="lg:hidden">
               <button
@@ -155,11 +196,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
               }`}
             >
               {/* desktop navbar links */}
-              <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-5 lg:space-y-0 xl:space-x-9">
+              <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0 xl:space-x-9">
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
+                        className={`${navbar ? 'font-bold' : 'text-[16px] font-bold'} ${
                         activeLink === 'Home'
                           ? 'solid border-b-2 py-2'
                           : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -174,7 +215,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
+                        className={`${navbar ? 'font-bold' : 'text-[16px] font-bold'} ${
                         activeLink === 'Technology'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -245,11 +286,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
+                        className={`${navbar ? 'font-bold' : 'text-[16px] font-bold'} ${
                         activeLink === 'About Us'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
-                      } `}
+                      } whitespace-nowrap`}
                       href={`/${lang}/story`}
                     >
                       {aboutUs?.section}
@@ -288,7 +329,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
+                        className={`${navbar ? 'font-bold' : 'text-[16px] font-bold'} ${
                         activeLink === 'Media'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -323,7 +364,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 <li className="text-white">
                   <div>
                     <Link
-                      className={`${navbar ? 'font-bold' : 'text-xl font-bold'} ${
+                        className={`${navbar ? 'font-bold' : 'text-[16px] font-bold'} ${
                         activeLink === 'FAQ'
                           ? 'solid peer border-b-2 py-2 text-white'
                           : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
@@ -334,6 +375,40 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </Link>
                   </div>
                 </li>
+                { /* Search bar for Desktop*/}
+                <li className="hidden lg:flex items-center justify-center w-full py-2">
+                    <div className="relative w-[204px] h-[34px]">
+                        <input
+                           type="text"
+                           placeholder="Search..."
+                           className="w-full h-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-[#717171] font-[Nunito Sans]"
+                        />
+                        {/* Inner Rectangle for Search Icon */}
+                         <div
+                             className="absolute flex items-center justify-center right-0 top-0 h-full"
+                             style={{
+                                 width: '34px',
+                                 height: '34px',
+                                 borderTopRightRadius: '100px',
+                                 borderBottomRightRadius: '100px',
+                                 background: 'linear-gradient(90deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
+                                 border: '1px solid black',
+                             }}
+                             >
+                             <svg
+                                 className="w-[22px] h-[22px] text-gray-900"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                 <circle cx="10" cy="10" r="6" stroke="black" strokeWidth="2" />
+                                 <line x1="14" y1="14" x2="20" y2="20" stroke="black" strokeWidth="2" />
+                             </svg>
+                         </div>
+                    </div>
+                </li>
+
                 <li>
                   <LocaleSelect />
                 </li>
