@@ -28,7 +28,6 @@ const JobList = ({
     const seenModal = localStorage.getItem('seenModal');
     if (!seenModal) {
       setShowModal(true);
-      scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
     } else {
       scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
@@ -36,7 +35,7 @@ const JobList = ({
   const closeModalAndSetLocalStorage = (): void => {
     setShowModal(false);
     localStorage.setItem('seenModal', 'true');
-    console.log(showModal);
+    scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const closeModalAndGoToPreviousPage = (): void => {
     router.back();
