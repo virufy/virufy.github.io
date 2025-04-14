@@ -67,6 +67,8 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     []
   );
 
+  const topicCards = topicsSection.cards;
+
   return (
     <div className="relative -top-24">
       {/* Hero Section */}
@@ -146,8 +148,8 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             </h2>
 
             {/* Topic Cards Container */}
-            <div className="mx-5 grid grid-cols-2 gap-6 text-xs md:grid-cols-3 md:text-base md:font-normal xl:grid-cols-6">
-              {topicsSection.cards.map((card) => (
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-7 lg:gap-6">
+              {topicCards.map((card) => (
                 <TopicCard
                   key={card.title}
                   defaultTopic={topicTitle}
