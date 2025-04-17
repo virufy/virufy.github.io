@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
@@ -10,12 +10,12 @@ import {
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { usei18n } from '../i18n';
 import LocaleSelect from './components/LocaleSelect';
 import DonateModal from './components/navbar/DonateModal';
 import { ButtonType } from './themes';
-
+import useSearch from '@/utils/useSearch';
 
 
 export default function Navbar({ lang }: { lang: Locale }) {
@@ -28,6 +28,12 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const [activeLink, setActiveLink] = useState('');
 
   const currPathname = usePathname();
+  const { results, performSearch, clearResults, isReady } = useSearch(lang);
+  const [query, setQuery] = useState('');
+  const [hasSearched, setHasSearched] = useState(false);
+
+  const dropdownRef = useRef<HTMLUListElement | null>(null);
+
 
   useEffect(() => {
     const links = [
@@ -89,6 +95,31 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, []);
 
+  // Clear and hide on result click
+  const handleResultClick = () => {
+      setQuery('');
+      clearResults();
+      setHasSearched(false);
+
+  };
+
+ // Collapse dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+          clearResults(); 
+          setHasSearched(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+
+
   const closeModal = () => setShowModal(false);
 
   return (
@@ -129,12 +160,23 @@ export default function Navbar({ lang }: { lang: Locale }) {
                      <input
                            type="text"
                            placeholder="Search..."
+                           value={query}
+                           disabled={!isReady}
+                           onChange={(e) => {
+                                if (isReady) setQuery(e.target.value);
+                           }}
                            className="w-full h-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-[#717171] font-[Nunito Sans]"
 
                      />
                      { /* Inner Rectangle for Search Icon */ }
                      <div
-                          className="absolute flex items-center justify-center right-0 top-0 h-full"
+                          onClick={() => {
+                               if (isReady) {
+                                   performSearch(query);
+                                   setHasSearched(true);
+                               }
+                          }}
+                          className="absolute flex items-center justify-center right-0 top-0 h-full cursor-pointer transition duration-150 ease-in-out active:scale-80 hover:shadow-md"
                           style={{
                                width: '34px',
                                height: '34px',
@@ -144,21 +186,45 @@ export default function Navbar({ lang }: { lang: Locale }) {
                                border: '1px solid black',
                           }}
                       >
-                             <svg
-                                 className="w-[22px] h-[22px] text-gray-900"
-                        
-                                 fill="none"
-                                 stroke="currentColor"
-                                 viewBox="0 0 24 24"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                 <circle cx="10" cy="10" r="6" stroke="black" strokeWidth="2" />
-                                 <line x1="14" y1="14" x2="20" y2="20" stroke="black" strokeWidth="2" />
+                          <svg
+                              className="w-[22px] h-[22px] text-gray-900 pointer-events-none"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="10" cy="10" r="6" stroke="black" strokeWidth="2" />
+                              <line x1="14" y1="14" x2="20" y2="20" stroke="black" strokeWidth="2" />
                          
-                             </svg>
+                          </svg>
                      </div>
+                     {hasSearched && (
+                        <ul
+                            ref={dropdownRef}
+                            className="absolute left-1/2 top-[42px] z-50 w-[70vw] -translate-x-1/2 rounded-md bg-white shadow-lg max-h-96 overflow-y-auto p-4"
+                         >
+                             {results.length > 0 ? (
+                                
+                                     results.map((r) => (
+                                         <li key={r.id} className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100">
+                                             <div className="font-semibold text-black">{r.title}</div>
+                                             <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
+                                             <div className="mt-2 text-right">
+                                                 <Link href={r.url} className="text-blue-600 text-sm hover:underline" onClick={handleResultClick}>
+                                                      Know More →
+                                                 </Link>
+                                             </div>
+                                         </li>
+                                     ))
+                                
+                                ) : (
+                                  <li className="text-center text-gray-500 py-4">No Results Found</li>
+                             )}
+                        </ul>
+                     )}
                  </div>
 
             </div>
+            
 
             
 
@@ -376,16 +442,24 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </div>
                 </li>
                 { /* Search bar for Desktop*/}
-                <li className="hidden lg:flex items-center justify-center w-full py-2">
+               <li className="hidden lg:flex items-center justify-center w-full py-2">
                     <div className="relative w-[204px] h-[34px]">
                         <input
                            type="text"
                            placeholder="Search..."
+                           value={query}
+                           onChange = { (e) => setQuery(e.target.value)}
                            className="w-full h-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-[#717171] font-[Nunito Sans]"
                         />
                         {/* Inner Rectangle for Search Icon */}
                          <div
-                             className="absolute flex items-center justify-center right-0 top-0 h-full"
+                             onClick={() => {
+                                 if (isReady) {
+                                   performSearch(query);
+                                   setHasSearched(true);
+                                 }
+                             }}
+                             className="absolute flex items-center justify-center right-0 top-0 h-full cursor-pointer transition duration-150 ease-in-out active:scale-80 hover:shadow-md"
                              style={{
                                  width: '34px',
                                  height: '34px',
@@ -396,7 +470,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                              }}
                              >
                              <svg
-                                 className="w-[22px] h-[22px] text-gray-900"
+                                 className="w-[22px] h-[22px] text-gray-900 pointer-events-none"
                                  fill="none"
                                  stroke="currentColor"
                                  viewBox="0 0 24 24"
@@ -406,8 +480,34 @@ export default function Navbar({ lang }: { lang: Locale }) {
                                  <line x1="14" y1="14" x2="20" y2="20" stroke="black" strokeWidth="2" />
                              </svg>
                          </div>
+                    
+                
+                        { hasSearched  && (
+                            <ul
+                                ref={dropdownRef}
+                                className="absolute left-1/2 top-[42px] z-50 w-[70vw] -translate-x-1/2 rounded-md bg-white shadow-lg max-h-96 overflow-y-auto p-4"
+                             >
+                                 {results.length > 0 ? (
+                                    
+                                         results.map((r) => (
+                                             <li key={r.id} className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100">
+                                                 <div className="font-semibold text-black">{r.title}</div>
+                                                 <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
+                                                 <div className="mt-2 text-right">
+                                                     <Link href={r.url} className="text-blue-600 text-sm hover:underline" onClick={handleResultClick}>
+                                                          Know More →
+                                                     </Link>
+                                                 </div>
+                                             </li>
+                                         ))
+                                    
+                                    ) : (
+                                      <li className="text-center text-gray-500 py-4">No Results Found</li>
+                                 )}
+                            </ul>
+                        )}
                     </div>
-                </li>
+               </li>
 
                 <li>
                   <LocaleSelect />
