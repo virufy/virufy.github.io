@@ -202,23 +202,28 @@ export default function Navbar({ lang }: { lang: Locale }) {
                             ref={dropdownRef}
                             className="absolute left-1/2 top-[42px] z-50 w-[70vw] -translate-x-1/2 rounded-md bg-white shadow-lg max-h-96 overflow-y-auto p-4"
                          >
-                             {results.length > 0 ? (
-                                
-                                     results.map((r) => (
-                                         <li key={r.id} className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100">
-                                             <div className="font-semibold text-black">{r.title}</div>
-                                             <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
-                                             <div className="mt-2 text-right">
-                                                 <Link href={r.url} className="text-blue-600 text-sm hover:underline" onClick={handleResultClick}>
-                                                      Know More →
-                                                 </Link>
-                                             </div>
-                                         </li>
-                                     ))
-                                
+                             {results.filter(r => r.url).length > 0 ? (
+                                results
+                                    .filter(r => r.url)
+                                    .map((r) => (
+                                      <li key={r.id} className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100">
+                                         <div className="font-semibold text-black">{r.title}</div>
+                                         <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
+                                         <div className="mt-2 text-right">
+                                           <Link
+                                            href={r.url}
+                                            className="text-blue-600 text-sm hover:underline"
+                                            onClick={handleResultClick}
+                                            >
+                                                Know More →
+                                           </Link>
+                                         </div>
+                                      </li>
+                                    ))
                                 ) : (
-                                  <li className="text-center text-gray-500 py-4">No Results Found</li>
+                               <li className="text-center text-gray-500 py-4">No Results Found</li>
                              )}
+
                         </ul>
                      )}
                  </div>
@@ -482,30 +487,31 @@ export default function Navbar({ lang }: { lang: Locale }) {
                          </div>
                     
                 
-                        { hasSearched  && (
-                            <ul
-                                ref={dropdownRef}
-                                className="absolute left-1/2 top-[42px] z-50 w-[70vw] -translate-x-1/2 rounded-md bg-white shadow-lg max-h-96 overflow-y-auto p-4"
-                             >
-                                 {results.length > 0 ? (
-                                    
-                                         results.map((r) => (
-                                             <li key={r.id} className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100">
+                         {hasSearched && (
+                              <ul
+                                 ref={dropdownRef}
+                                 className="absolute left-1/2 top-[42px] z-50 w-[70vw] -translate-x-1/2 rounded-md bg-white shadow-lg max-h-96 overflow-y-auto p-4"
+                              >
+                                 {results.filter(r => r.url).length > 0 ? (
+                                      results
+                                          .filter(r => r.url)
+                                          .map((r) => (
+                                               <li key={r.id} className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100">
                                                  <div className="font-semibold text-black">{r.title}</div>
                                                  <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
                                                  <div className="mt-2 text-right">
                                                      <Link href={r.url} className="text-blue-600 text-sm hover:underline" onClick={handleResultClick}>
-                                                          Know More →
+                                                           Know More →
                                                      </Link>
                                                  </div>
-                                             </li>
-                                         ))
-                                    
-                                    ) : (
-                                      <li className="text-center text-gray-500 py-4">No Results Found</li>
+                                               </li>
+                                              ))
+                                          ) : (
+                                            <li className="text-center text-gray-500 py-4">No Results Found</li>
                                  )}
-                            </ul>
-                        )}
+                              </ul>
+                         )}
+
                     </div>
                </li>
 

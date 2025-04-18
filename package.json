@@ -11,8 +11,8 @@
     "serve": "npx serve@latest out"
   },
   "dependencies": {
+    "flexsearch": "^0.8.158",
     "lodash.debounce": "^4.0.8",
-    "lunr": "^2.3.9",
     "next": "14.2.4",
     "next-image-export-optimizer": "^1.14.1",
     "react": "^18",
@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "@types/lodash.debounce": "^4.0.9",
-    "@types/lunr": "^2.3.7",
     "@types/node": "20.14.15",
     "@types/react": "18.3.3",
     "@types/react-dom": "^18",

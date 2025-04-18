@@ -1,4 +1,5 @@
-﻿import lunr from 'lunr';
+﻿
+import { Document } from 'flexsearch';
 
 export type SearchEntry = {
     id: string;
@@ -8,46 +9,71 @@ export type SearchEntry = {
     url: string;
 };
 
-let index: lunr.Index;
+let index: Document;
 let currentData: SearchEntry[] = [];
-
-function buildIndex(data: SearchEntry[]) {
-    return lunr(function (this: lunr.Builder) {
-        this.ref('id');
-        this.field('title', { boost: 100 });
-        this.field('content');
-        data.forEach((doc) => this.add(doc));
-    });
-}
-
 
 let currentLang = '';
 let isLoading = false;
 
+// FlexSearch index 
+function buildIndex(data: SearchEntry[]): Document {
+    const flex = new Document({
+        tokenize: 'forward' as const,
+        cache: true,
+        context: true,
+        document: {
+            id: 'id',
+            index: ['title', 'content'],
+        },
+    });
+
+
+    data.forEach((doc) => flex.add(doc));
+    return flex;
+}
+
+// Here, we are Initializing the search index .
 export async function initSearch(lang: string = 'en'): Promise<void> {
     if (isLoading || currentLang === lang) return;
     isLoading = true;
     currentLang = lang;
 
-    const searchIndex = await import(`../public/search-index/${lang}.json`);
-    currentData = searchIndex.default;
-    index = buildIndex(currentData);
+    try {
+        const searchIndex = await import(`../public/search-index/${lang}.json`);
+        currentData = searchIndex.default;
+        index = buildIndex(currentData);
+    } catch (err) {
+        console.error(`[initSearch] Failed to load or build index for ${lang}`, err);
+    }
+
     isLoading = false;
 }
 
+// Searching & Matching results.
 
-export function search(query: string): SearchEntry[] {
+export async function search(query: string): Promise<SearchEntry[]> {
     if (!index) {
-        console.warn('Search index is not initialized. Call initSearch() first.');
+        console.warn('[search] Index not initialized.');
         return [];
     }
 
-    const results = index.search(
-        query
-            .split(' ')
-            .map((term) => `${term}~1 ${term}*`) // fuzzy and partial match
-            .join(' ')
-    );
+    const resultMap = await index.search(query, { enrich: true });
 
-    return results.map((r) => currentData.find((doc) => doc.id === r.ref)!);
+    
+    console.log('[search] Raw resultMap:', JSON.stringify(resultMap, null, 2));
+    
+    
+    const flatResults: SearchEntry[] = Array.isArray(resultMap)
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        ? resultMap.flatMap((entry: any) =>
+            Array.isArray(entry?.result)
+                ? entry.result.map((id: string) => currentData.find(d => d.id === id)).filter(Boolean)
+                : []
+        )
+        : [];
+
+
+    return flatResults;
 }
+
+
