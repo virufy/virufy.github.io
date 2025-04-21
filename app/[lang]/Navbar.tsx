@@ -137,8 +137,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
         ) : null}
 
         <div className="lg:max-w-8lg justify-between px-3 lg:mx-4 lg:flex lg:items-center lg:px-2 xl:mx-9">
-          <div className="flex items-center justify-between py-3 lg:block lg:py-5">
-            <Link href={`/${lang}`} className="flex lg:hidden">
+          <div className="flex items-center justify-between  lg:block lg:py-5">
+            <Link href={`/${lang}`} className="flex lg:hidden ">
               <ExportedImage
                 className="h-[48px] w-[100px]"
                 src={VirufyLogo}
@@ -155,8 +155,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
               />
             </Link>
             {/* Mobile Search Bar */}
-            <div className="lg:hidden flex items-center justify-center w-full py-2">
-                 <div className="relative w-[204px] h-[34px]" >
+            <div className="lg:hidden flex items-center justify-start  py-2">
+                 <div className="relative w-[125px] h-[30px] mb-4" >
                      <input
                            type="text"
                            placeholder="Search..."
@@ -165,7 +165,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                            onChange={(e) => {
                                 if (isReady) setQuery(e.target.value);
                            }}
-                           className="w-full h-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-[#717171] font-[Nunito Sans]"
+                           className="w-full h-full bg-transparent border-0 border-b border-white placeholder-white text-white focus:outline-none focus:ring-0"
 
                      />
                      { /* Inner Rectangle for Search Icon */ }
@@ -178,22 +178,18 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           }}
                           className="absolute flex items-center justify-center right-0 top-0 h-full cursor-pointer transition duration-150 ease-in-out active:scale-80 hover:shadow-md"
                           style={{
-                               width: '34px',
-                               height: '34px',
-                               borderTopRightRadius: '100px',
-                               borderBottomRightRadius: '100px',
-                               background: 'linear-gradient(90deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
-                               border: '1px solid black',
+                               background: 'transparent',
+                               border: 'none',
                           }}
                       >
                           <svg
-                              className="w-[22px] h-[22px] text-gray-900 pointer-events-none"
+                              className="w-[22px] h-[22px] text-white pointer-events-none"
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
                               xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="10" cy="10" r="6" stroke="black" strokeWidth="2" />
-                              <line x1="14" y1="14" x2="20" y2="20" stroke="black" strokeWidth="2" />
+                              <circle cx="10" cy="10" r="6" stroke="white" strokeWidth="2" />
+                              <line x1="14" y1="14" x2="20" y2="20" stroke="white" strokeWidth="2" />
                          
                           </svg>
                      </div>
@@ -447,15 +443,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </div>
                 </li>
                 { /* Search bar for Desktop*/}
-               <li className="hidden lg:flex items-center justify-center w-full py-2">
-                    <div className="relative w-[204px] h-[34px]">
+               <li className="hidden lg:flex items-center justify-center  py-2">
+                    <div className="relative w-[175px] h-[30px]">
                         <input
                            type="text"
                            placeholder="Search..."
                            value={query}
                            onChange = { (e) => setQuery(e.target.value)}
-                           className="w-full h-full rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder:text-[#717171] font-[Nunito Sans]"
-                        />
+                           className="w-full h-full bg-transparent border-0 border-b border-white placeholder-white text-white focus:outline-none focus:ring-0"
+                           />
                         {/* Inner Rectangle for Search Icon */}
                          <div
                              onClick={() => {
@@ -464,25 +460,21 @@ export default function Navbar({ lang }: { lang: Locale }) {
                                    setHasSearched(true);
                                  }
                              }}
-                             className="absolute flex items-center justify-center right-0 top-0 h-full cursor-pointer transition duration-150 ease-in-out active:scale-80 hover:shadow-md"
+                             className="absolute flex items-center justify-center right-0 top-0 h-full w-[34px] cursor-pointer"
                              style={{
-                                 width: '34px',
-                                 height: '34px',
-                                 borderTopRightRadius: '100px',
-                                 borderBottomRightRadius: '100px',
-                                 background: 'linear-gradient(90deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
-                                 border: '1px solid black',
+                                 background: 'transparent',
+                                 border: 'none',
                              }}
                              >
                              <svg
-                                 className="w-[22px] h-[22px] text-gray-900 pointer-events-none"
+                                 className="w-[22px] h-[22px] text-white pointer-events-none"
                                  fill="none"
                                  stroke="currentColor"
                                  viewBox="0 0 24 24"
                                  xmlns="http://www.w3.org/2000/svg"
                                  >
-                                 <circle cx="10" cy="10" r="6" stroke="black" strokeWidth="2" />
-                                 <line x1="14" y1="14" x2="20" y2="20" stroke="black" strokeWidth="2" />
+                                 <circle cx="10" cy="10" r="6" stroke="white" strokeWidth="2" />
+                                 <line x1="14" y1="14" x2="20" y2="20" stroke="white" strokeWidth="2" />
                              </svg>
                          </div>
                     
