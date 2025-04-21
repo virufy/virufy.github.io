@@ -155,7 +155,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
               />
             </Link>
             {/* Mobile Search Bar */}
-            <div className="lg:hidden flex items-center justify-start  py-2">
+            <div className="lg:hidden flex items-center justify-start mt-2 py-2">
                  <div className="relative w-[125px] h-[30px] mb-4" >
                      <input
                            type="text"

@@ -31,7 +31,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
             <div className="mx-auto flex max-w-screen-xl flex-col">
               <div className="mt-0 sm:mt-0 md:mt-32 lg:mt-44">
-                <div className="ml-0 mt-12 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-24 xl:mt-24">
+                <div className="ml-0 mt-20 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-24 xl:mt-24">
                   <Title
                     Text={introSection.text}
                     H=""
