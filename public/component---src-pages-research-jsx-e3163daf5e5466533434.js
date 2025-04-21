@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[9735],{1056:function(e,n,t){t.r(n),t.d(n,{default:function(){return r}});var c=t(7294);const u="/paper";function r(){return(0,c.useEffect)((()=>{window.location.replace(u)})),c.createElement("p",null,"Redirecting...")}}}]);
+//# sourceMappingURL=component---src-pages-research-jsx-e3163daf5e5466533434.js.map
