@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[5190],{3371:function(e,n,t){t.r(n),t.d(n,{default:function(){return o}});var c=t(7294);const u="https://docs.google.com/document/d/1e6p9TAd5NC4W7Lp58oxIp3FhUDGMexXXPL-f4--hhKk/edit?usp=sharing";function o(){return(0,c.useEffect)((()=>{window.location.replace(u)}),[]),c.createElement("p",null,"Redirecting...")}}}]);
+//# sourceMappingURL=component---src-pages-virumap-msg-jsx-46d3fd12536c6e7cf902.js.map
