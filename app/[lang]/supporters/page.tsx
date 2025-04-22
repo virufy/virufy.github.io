@@ -30,7 +30,7 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         />
         <Title
           Text={title}
-          H="h1"
+          H="h1Supporters"
           TitleClassProps="
 					absolute top-[50%] 
 					left-[50%] 
@@ -39,7 +39,9 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 					text-white
 					text-center
           pt-10
-          text-xl"
+          text-xl
+          italic
+          font-bold"
         />
         <button
           className={`${ButtonType.primary} 'pt-10 translate-x-[-50%]'} pb-2px absolute top-[85%] h-[25px] w-[85px] translate-y-[-50%] rounded-full align-middle text-xs md:top-[80%] md:h-[65px] md:w-[250px] md:text-lg md:font-semibold`}
