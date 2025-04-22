@@ -25,7 +25,7 @@ import {
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
-  title: 'Our Supporters',
+  title: 'Revolutionizing Global Health Together – Become a partner!',
   buttontext: 'Support Us',
   contactusform: {
     title: 'Become a Partner',
