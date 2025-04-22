@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[9100],{9632:function(e,t,n){n.r(t),n.d(t,{default:function(){return i}});var c=n(7294);const u="https://github.com/virufy/covid";function i(){return(0,c.useEffect)((()=>{window.location.replace(u)})),c.createElement("p",null,"Redirecting...")}}}]);
-//# sourceMappingURL=component---src-pages-data-jsx-34c2f58136bebe2a5738.js.map
