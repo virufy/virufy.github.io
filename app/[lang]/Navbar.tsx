@@ -22,7 +22,7 @@ import debounce from 'lodash.debounce';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-    navbar: { home, ourTechnology, aboutUs, media, faq, donate, joinUs }, // re add coughcheck here when needed
+      navbar: { home, ourTechnology, aboutUs, media, faq, donate, joinUs, searchPlaceholder }, // re add coughcheck here when needed
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
@@ -190,7 +190,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                  <div className="relative w-[125px] h-[30px] mb-4" >
                      <input
                            type="text"
-                           placeholder="Search..."
+                           placeholder={ searchPlaceholder }
                            value={query}
                            disabled={!isReady}
                            onChange={(e) => {
@@ -527,7 +527,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     <div className="relative w-[175px] h-[30px]">
                         <input
                            type="text"
-                           placeholder="Search..."
+                           placeholder={ searchPlaceholder }
                            value={query}
                            onChange = { (e) => {
                                const value = e.target.value;
