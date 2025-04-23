@@ -39,12 +39,17 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 					text-white
 					text-center
           pt-10
-          text-xl
           italic
-          font-bold"
+          font-bold
+          lg:whitespace-nowrap
+          line-clamp-2"
         />
         <button
-          className={`${ButtonType.primary} 'pt-10 translate-x-[-50%]'} pb-2px absolute top-[85%] h-[25px] w-[85px] translate-y-[-50%] rounded-full align-middle text-xs md:top-[80%] md:h-[65px] md:w-[250px] md:text-lg md:font-semibold`}
+          className={
+            `${ButtonType.primary} 
+            'pt-10 translate-x-[-50%]'} pb-2px absolute top-[85%] h-[25px] w-[85px] translate-y-[-70%]
+            rounded-full align-middle text-xs lg:translate-y-[-135%]
+            md:top-[80%] md:h-[65px] md:w-[250px] md:text-lg md:font-semibold`}
           onClick={() => setShowModal(true)}
         >
           {' '}
