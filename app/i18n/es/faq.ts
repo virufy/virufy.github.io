@@ -53,6 +53,11 @@ const faq: FAQ = {
     title: 'Temas de Preguntas Frecuentes',
     cards: [
       {
+        title: 'Preguntas Generales',
+        img: QuestionMarkIcon,
+        altText: '',
+      },
+      {
         title: 'Aplicación Virufy',
         img: PhoneInHandIcon,
         altText: '',

@@ -5,7 +5,7 @@ const footer: Footer = {
     title: 'Política de Cookies',
     body: [
       {
-        question: 'General',
+        question: 'Preguntas generales',
         answer: [
           {
             type: 'paragraph',
