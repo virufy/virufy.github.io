@@ -592,35 +592,35 @@
     "lang": "ja",
     "title": "出版物",
     "content": "COVID-19の自動検出のための階層型マルチモーダルトランスフォーマー",
-    "url": "/ja/publications/hierarchical-transformer-2022"
+    "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
   },
   {
     "id": "ja-publications-calculator-impact-2022",
     "lang": "ja",
     "title": "出版物",
     "content": "COVID-19計算機 - 米国における前向きな社会経済的影響",
-    "url": "/ja/publications/calculator-impact-2022"
+    "url": "https://arxiv.org/abs/2201.11109"
   },
   {
     "id": "ja-publications-deep-learning-datasets-2022",
     "lang": "ja",
     "title": "出版物",
     "content": "咳の音によるCOVID-19分類のための大規模データセットを用いたディープラーニングの活用",
-    "url": "/ja/publications/deep-learning-datasets-2022"
+    "url": "https://arxiv.org/abs/2201.01669"
   },
   {
     "id": "ja-publications-challenges-ai-2021",
     "lang": "ja",
     "title": "出版物",
     "content": "COVID-19咳AIシステム展開における課題と機会",
-    "url": "/ja/publications/challenges-ai-2021"
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
   },
   {
     "id": "ja-publications-virufy-crowdsourced-2020",
     "lang": "ja",
     "title": "出版物",
     "content": "Virufy：咳の音によるCOVID-19検出のためのクラウドソーシングおよび臨床データセットのグローバルな適用性",
-    "url": "/ja/publications/virufy-crowdsourced-2020"
+    "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
     "id": "ja-our-supporters-list",

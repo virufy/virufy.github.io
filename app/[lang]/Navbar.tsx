@@ -35,6 +35,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const [query, setQuery] = useState('');
   const [hasSearched, setHasSearched] = useState(false);
   const router = useRouter();
+  const isRedirecting = useRef(false);
+
 
   const dropdownRef = useRef<HTMLUListElement | null>(null);
   const DEBOUNCE_DELAY = 400;
@@ -120,6 +122,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
  // Collapse dropdown on outside click
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
+            if (isRedirecting.current) {
+                return; // Skip closing if redirecting
+            }
             const target = event.target as HTMLElement;
             if (dropdownRef.current &&
                 !dropdownRef.current.contains(target) &&
@@ -152,6 +157,106 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
 
   const closeModal = () => setShowModal(false);
+
+  const renderSearchInput = (width: string, extraClass = '') => (
+    <div className={`relative ${width} h-[30px] ${extraClass} search-input-container`}>
+      <input
+        type="text"
+        placeholder={searchPlaceholder}
+        value={query}
+        disabled={!isReady}
+        onChange={(e) => {
+          const value = e.target.value;
+          setQuery(value);
+          if (value.trim() === '') {
+            clearResults();
+            setHasSearched(false);
+          } else {
+            debouncedSearch(value);
+          }
+        }}
+        className="w-full h-full bg-transparent border-0 border-b border-white placeholder-white text-white focus:outline-none focus:ring-0"
+      />
+      {query && (
+        <div
+          onClick={() => {
+            setQuery('');
+            clearResults();
+            setHasSearched(false);
+          }}
+          className="absolute right-7 top-1/2 -translate-y-1/2 cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-4 w-4 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+      )}
+      <div className="absolute flex items-center justify-center right-0 top-0 h-full cursor-pointer">
+        <svg
+          className="w-[22px] h-[22px] text-white pointer-events-none"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="10" cy="10" r="6" stroke="white" strokeWidth="2" />
+          <line x1="14" y1="14" x2="20" y2="20" stroke="white" strokeWidth="2" />
+        </svg>
+      </div>
+    </div>
+  );
+
+  const renderSearchDropdown = () => (
+    hasSearched && (
+      <ul
+        ref={dropdownRef}
+        className="absolute left-1/2 top-[42px] z-50 w-[70vw] -translate-x-1/2 rounded-md bg-white shadow-lg max-h-96 overflow-y-auto p-4"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {results.filter(r => r.url).length > 0 ? (
+          results.filter(r => r.url).map((r) => (
+            <li
+              key={`${r.id}-${r.url}`}
+              className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100"
+              onMouseDown={() => { isRedirecting.current = true; }}
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                try {
+                  router.push(r.url);
+                  setTimeout(() => {
+                    setQuery('');
+                    clearResults();
+                    setHasSearched(false);
+                    isRedirecting.current = false;
+                  }, 300);
+                } catch {
+                  window.location.href = r.url;
+                }
+              }}
+            >
+              <div className="font-semibold text-black">{r.title}</div>
+              <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
+              <div className="mt-2 text-right">
+                <span className="text-blue-600 text-sm hover:underline">Know More →</span>
+              </div>
+            </li>
+          ))
+        ) : (
+          <li className="text-center text-gray-500 py-4">No Results Found</li>
+        )}
+      </ul>
+    )
+  );
+
 
   return (
     <div className="bg-[#000]">
@@ -187,127 +292,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
             </Link>
             {/* Mobile Search Bar */}
             <div className="lg:hidden flex items-center justify-start mt-2 py-2">
-                 <div className="relative w-[125px] h-[30px] mb-4" >
-                     <input
-                           type="text"
-                           placeholder={ searchPlaceholder }
-                           value={query}
-                           disabled={!isReady}
-                           onChange={(e) => {
-                                 const value = e.target.value;
-                                 setQuery(value);
-                                 if ( value.trim() === ''){
-                                     clearResults()
-                                     setHasSearched(false)
-                                 } else {
-                                     debouncedSearch(value);
-                                 }
-                           }}
-                           className="w-full h-full bg-transparent border-0 border-b border-white placeholder-white text-white focus:outline-none focus:ring-0"
-                     />
-                     { query.length > 0 && (
-                         <div
-                             onClick={ () => {
-                                 setQuery('');
-                                 clearResults();
-                                 setHasSearched(false);
-                                 
-                             }}
-                             className="absolute right-7 top-1/2 -translate-y-1/2 cursor-pointer"
-                          >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="h-4 w-4 text-white"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                            >
-                               <line x1="18" y1="6" x2="6" y2="18" />
-                               <line x1="6" y1="6" x2="18" y2="18" />
-                            </svg>
-                        </div>
-                      )
-                     }
-                     { /* Inner Rectangle for Search Icon */ }
-                     <div
-                          className="absolute flex items-center justify-center right-0 top-0 h-full cursor-pointer transition duration-150 ease-in-out active:scale-80 hover:shadow-md"
-                          style={{
-                               background: 'transparent',
-                               border: 'none',
-                          }}
-                      >
-                          <svg
-                              className="w-[22px] h-[22px] text-white pointer-events-none"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="10" cy="10" r="6" stroke="white" strokeWidth="2" />
-                              <line x1="14" y1="14" x2="20" y2="20" stroke="white" strokeWidth="2" />
-                         
-                          </svg>
-                     </div>
-                              {hasSearched && (
-                                  <ul
-                                      ref={dropdownRef}
-                                      className="absolute left-1/2 top-[42px] z-50 w-[70vw] -translate-x-1/2 rounded-md bg-white shadow-lg max-h-96 overflow-y-auto p-4"
-                                      onClick={(e) => {
-                                          console.log('Dropdown container clicked - stopping propagation');
-                                          e.stopPropagation();
-                                      }}
-                                  >
-                                      {results.filter(r => r.url).length > 0 ? (
-                                          results
-                                              .filter(r => r.url)
-                                              .map((r) => {
-                                                  return (
-                                                      <li
-                                                          key={`${r.id}-${r.url}`}
-                                                          className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100"
-                                                          onClick={(e) => {
-                                                              
-                                                              e.preventDefault();
-                                                              e.stopPropagation();
-
-                                                              try {
-                                                                  router.push(r.url);
-                                                                  console.log('router.push executed successfully');
-
-                                                                  setTimeout(() => {
-                                                                      console.log('Clearing search state after navigation');
-                                                                      setQuery('');
-                                                                      clearResults();
-                                                                      setHasSearched(false);
-                                                                  }, 300);
-                                                              } catch (error) {
-                                                                  console.error('Navigation error:', error);
-                                                                  console.log('Falling back to window.location.href');
-                                                                  window.location.href = r.url;
-                                                              }
-                                                          }}
-                                                      >
-                                                          <div className="font-semibold text-black">{r.title}</div>
-                                                          <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
-                                                          <div className="mt-2 text-right">
-                                                              <span className="text-blue-600 text-sm hover:underline">
-                                                                  Know More →
-                                                              </span>
-                                                          </div>
-                                                      </li>
-                                                  );
-                                              })
-                                      ) : (
-                                          <li className="text-center text-gray-500 py-4">No Results Found</li>
-                                      )}
-                                  </ul>
-                              )}
+                 <div className="relative w-[125px] mb-4">
+                     {renderSearchInput('w-full')}
+                     {renderSearchDropdown()}
                  </div>
 
-            </div>
-            
 
-            
+            </div>
 
             {/* // hamburger and x button */}
             <div className="lg:hidden">
@@ -524,93 +515,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 </li>
                 { /* Search bar for Desktop*/}
                <li className="hidden lg:flex items-center justify-center  py-2">
-                    <div className="relative w-[175px] h-[30px]">
-                        <input
-                           type="text"
-                           placeholder={ searchPlaceholder }
-                           value={query}
-                           onChange = { (e) => {
-                               const value = e.target.value;
-                               setQuery(value);
-                               if (value.trim() === '') {
-                                   clearResults();
-                                   setHasSearched(false);
-                               } else {
-                                   debouncedSearch(value);
-                               }
-                               
-                           }}
-                           className="w-full h-full bg-transparent border-0 border-b border-white placeholder-white text-white focus:outline-none focus:ring-0"
-                           />
-                           {query.length > 0 && (
-                                <div
-                                    onClick={() => {
-                                    setQuery('');
-                                    clearResults();
-                                    setHasSearched(false);
-                                    }}
-                                    className="absolute right-7 top-1/2 -translate-y-1/2 cursor-pointer"
-                                 >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-4 w-4 text-white"
-                                        fill="none"
-                                        viewBox="0 0 24 24"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                    >
-                                        <line x1="18" y1="6" x2="6" y2="18" />
-                                        <line x1="6" y1="6" x2="18" y2="18" />
-                                    </svg>
-                                </div>
-                           )}
-                        {/* Inner Rectangle for Search Icon */}
-                         <div
-                             className="absolute flex items-center justify-center right-0 top-0 h-full w-[34px] "
-                             style={{
-                                 background: 'transparent',
-                                 border: 'none',
-                             }}
-                             >
-                             <svg
-                                 className="w-[22px] h-[22px] text-white pointer-events-none"
-                                 fill="none"
-                                 stroke="currentColor"
-                                 viewBox="0 0 24 24"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 >
-                                 <circle cx="10" cy="10" r="6" stroke="white" strokeWidth="2" />
-                                 <line x1="14" y1="14" x2="20" y2="20" stroke="white" strokeWidth="2" />
-                             </svg>
-                         </div>
-                    
-                
-                         {hasSearched && (
-                              <ul
-                                 ref={dropdownRef}
-                                 className="absolute left-1/2 top-[42px] z-50 w-[70vw] -translate-x-1/2 rounded-md bg-white shadow-lg max-h-96 overflow-y-auto p-4"
-                              >
-                                 {results.filter(r => r.url).length > 0 ? (
-                                      results
-                                          .filter(r => r.url)
-                                          .map((r) => (
-                                               <li key={r.id} className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100">
-                                                 <div className="font-semibold text-black">{r.title}</div>
-                                                 <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
-                                                 <div className="mt-2 text-right">
-                                                     <Link href={r.url} className="text-blue-600 text-sm hover:underline" onClick={handleResultClick}>
-                                                           Know More →
-                                                     </Link>
-                                                 </div>
-                                               </li>
-                                              ))
-                                          ) : (
-                                            <li className="text-center text-gray-500 py-4">No Results Found</li>
-                                 )}
-                              </ul>
-                         )}
-
+                    <div className="relative w-[175px] ">
+                       {renderSearchInput('w-full')}
+                       {renderSearchDropdown()}
                     </div>
+
                </li>
 
                 <li>
