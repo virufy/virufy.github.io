@@ -30,7 +30,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const [activeLink, setActiveLink] = useState('');
 
   const currPathname = usePathname();
-  const prevPathRef = useRef(currPathname);
   const { results, performSearch, clearResults, isReady } = useSearch(lang);
   const [query, setQuery] = useState('');
   const [hasSearched, setHasSearched] = useState(false);
@@ -111,19 +110,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, []);
 
-  // Clear and hide on result click
-  const handleResultClick = () => {
-      setQuery('');
-      clearResults();
-      setHasSearched(false);
-
-  };
+  
 
  // Collapse dropdown on outside click
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (isRedirecting.current) {
-                return; // Skip closing if redirecting
+                return; 
             }
             const target = event.target as HTMLElement;
             if (dropdownRef.current &&
@@ -142,19 +135,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         };
     }, []);
 
-  
-  // prevent race condition and also proper redirecting on clicking "know more" under display
-  useEffect(() => {
-  if (prevPathRef.current !== currPathname) {
-    setQuery('');
-    clearResults();
-    setHasSearched(false);
-    prevPathRef.current = currPathname;
-  }
-}, [currPathname]);
-
-
-
+ 
 
   const closeModal = () => setShowModal(false);
 
@@ -199,7 +180,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           </svg>
         </div>
       )}
-      <div className="absolute flex items-center justify-center right-0 top-0 h-full cursor-pointer">
+      <div className="absolute flex items-center justify-center right-0 top-0 h-full ">
         <svg
           className="w-[22px] h-[22px] text-white pointer-events-none"
           fill="none"
@@ -225,7 +206,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           results.filter(r => r.url).map((r) => (
             <li
               key={`${r.id}-${r.url}`}
-              className="px-4 py-2 border-b last:border-b-0 hover:bg-gray-100"
+              className="cursor-pointer px-4 py-2 border-b last:border-b-0 hover:bg-gray-100"
               onMouseDown={() => { isRedirecting.current = true; }}
               onClick={(e) => {
                 e.preventDefault();
@@ -245,9 +226,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             >
               <div className="font-semibold text-black">{r.title}</div>
               <div className="text-sm text-gray-700 mt-1 line-clamp-2">{r.content}</div>
-              <div className="mt-2 text-right">
-                <span className="text-blue-600 text-sm hover:underline">Know More →</span>
-              </div>
+              
             </li>
           ))
         ) : (
