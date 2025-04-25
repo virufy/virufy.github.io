@@ -40,14 +40,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const dropdownRef = useRef<HTMLUListElement | null>(null);
   const DEBOUNCE_DELAY = 400;
 
-  const debouncedSearch = useMemo(() => 
-  debounce((value: string) => {
-    if (isReady) {
-      performSearch(value);
-      setHasSearched(true);
-    }
-  }, DEBOUNCE_DELAY)
-      , [isReady]);
+  
 
 
   useEffect(() => {
@@ -110,7 +103,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, []);
 
-  
+  const debouncedSearch = useMemo(() => 
+  debounce((value: string) => {
+    if (isReady) {
+      performSearch(value);
+      setHasSearched(true);
+    }
+  }, DEBOUNCE_DELAY)
+      , [isReady]);
 
  // Collapse dropdown on outside click
     useEffect(() => {
@@ -123,7 +123,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 !dropdownRef.current.contains(target) &&
                 !target.closest('.search-input-container')
             ) {
-                console.log('Legitimate outside click - closing dropdown');
                 clearResults();
                 setHasSearched(false);
             }
@@ -139,6 +138,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   const closeModal = () => setShowModal(false);
 
+  {/* Renders the search input field with search and clear icons */}
   const renderSearchInput = (width: string, extraClass = '') => (
     <div className={`relative ${width} h-[30px] ${extraClass} search-input-container`}>
       <input
@@ -166,8 +166,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
             setHasSearched(false);
           }}
           className="absolute right-7 top-1/2 -translate-y-1/2 cursor-pointer"
-        >
-          <svg
+        > 
+          {/* SVG for "×" (close) button inside search bar */}
+          <svg 
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4 text-white"
             fill="none"
@@ -181,7 +182,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
         </div>
       )}
       <div className="absolute flex items-center justify-center right-0 top-0 h-full ">
-        <svg
+        {/* SVG for search icon inside search bar */}
+        <svg 
           className="w-[22px] h-[22px] text-white pointer-events-none"
           fill="none"
           stroke="currentColor"
@@ -195,6 +197,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     </div>
   );
 
+  {/* Displays search results in a dropdown; clicking a result navigates to its URL */}
   const renderSearchDropdown = () => (
     hasSearched && (
       <ul
