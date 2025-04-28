@@ -32,6 +32,7 @@ export const navbar: NavbarType = {
   joinUs: {
     buttonText: '参加する', 
   },
+  searchPlaceholder: '検索...',
 };
 
 export default navbar;
