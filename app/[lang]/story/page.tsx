@@ -7,6 +7,13 @@ import { Fragment } from 'react';
 import { usei18n } from '../../i18n';
 import ValuesCard from './ValuesCard';
 
+export const generateMetadata = () => {
+  return {
+    title: "About Us - Virufy",
+    description: "Learn about Virufy's mission, team, and our journey to leverage AI for global healthcare impact.",
+  };
+};
+
 const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     story: { aboutUsSection, storySection, valuesSection, privacySection },
