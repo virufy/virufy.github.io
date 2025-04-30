@@ -27,6 +27,7 @@ import {
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
+  ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -60,16 +61,6 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
-        img: JesseBump,
-        name: 'ジェシー・バンプ博士、MPH、FRSA',
-        role: '公衆衛生アドバイザー',
-        texts: [
-          '国際保健・人口学部門',
-          'ハーバードT.H.チャン公衆衛生大学院',
-        ],
-        link: 'https://www.hsph.harvard.edu/jesse-bump/',
-      },
-      {
         img: MelissaDyrdahl,
         name: 'メリッサ・ダイダール',
         role: 'エグゼクティブマーケティングアドバイザー',
@@ -99,6 +90,13 @@ const people: People = {
         role: 'データ・AI製品戦略アドバイザー',
         texts: ['創設者 / エグゼクティブコーチ', 'MS- スタンフォード大学'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
+      },
+      {
+        img: ZafarShahid,
+        name: 'ザファル・シャヒド',
+        role: 'エグゼクティブCTOアドバイザー',
+        texts: ['創設者/CEO - iCodeGuru', '博士号 - モンペリエ大学'],
+        link: 'https://zafarshahid.com/',
       },
       {
         img: RafiAzimKhan,
@@ -236,6 +234,16 @@ const people: People = {
           'スタンフォード大学電気工学博士',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+      },
+      {
+        img: JesseBump,
+        name: 'ジェシー・バンプ博士、MPH、FRSA',
+        role: '公衆衛生アドバイザー',
+        texts: [
+          '国際保健・人口学部門',
+          'ハーバードT.H.チャン公衆衛生大学院',
+        ],
+        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: NobuyoOzawa,

@@ -22,11 +22,12 @@ import {
   RokSosic,
   RonanDunlop,
   ShirinHasan,
-  TamerFahmy,
+  TamerFahmy, 
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
+  ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -63,16 +64,6 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
-        img: JesseBump,
-        name: 'Jesse Bump, Ph.D., MPH, FRSA',
-        role: 'Population Health Advisor',
-        texts: [
-          'Department of Global Health and Population',
-          'Harvard T.H. Chan School of Public Health',
-        ],
-        link: 'https://www.hsph.harvard.edu/jesse-bump/',
-      },
-      {
         img: MelissaDyrdahl,
         name: 'Melissa Dyrdahl',
         role: 'Executive Marketing Advisor',
@@ -105,6 +96,13 @@ const people: People = {
         role: 'Data and AI Product Strategy Advisor',
         texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
+      },
+      {
+        img: ZafarShahid,
+        name: 'Zafar Shahid',
+        role: 'Executive CTO Advisor',
+        texts: ['Founder/CEO - iCodeGuru', 'PhD - University of Montpellier'],
+        link: 'https://zafarshahid.com/',
       },
       {
         img: RafiAzimKhan,
@@ -241,6 +239,16 @@ const people: People = {
           'Ph.D. Electrical Engineering, Stanford',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+      },
+      {
+        img: JesseBump,
+        name: 'Jesse Bump, Ph.D., MPH, FRSA',
+        role: 'Population Health Advisor',
+        texts: [
+          'Department of Global Health and Population',
+          'Harvard T.H. Chan School of Public Health',
+        ],
+        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: NobuyoOzawa,

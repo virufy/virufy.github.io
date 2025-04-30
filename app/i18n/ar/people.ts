@@ -27,6 +27,7 @@ import {
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
+  ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -63,16 +64,6 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
-        img: JesseBump,
-        name: 'جيسي بامب، دكتوراه، ماجستير فى الصحة العامة ، زميل الجمعية الملكية للفنون.',
-        role: '. مستشار صحة السكان',
-        texts: [
-          '. قسم وزارة الصحة العالمية والسكان',
-          '. كلية هارفارد تي إتش تشان للصحة العامة ',
-        ],
-        link: 'https://www.hsph.harvard.edu/jesse-bump/',
-      },
-      {
         img: MelissaDyrdahl,
         name: 'ميليسا ديرداهل',
         role: 'مستشارة تسويق تنفيذية',
@@ -106,6 +97,13 @@ const people: People = {
         role: 'مستشارة استراتيجية بيانات ومنتجات الذكاء الاصطناعي',
         texts: ['مؤسسة / مدربة تنفيذية', 'ماجستير - جامعة ستانفورد'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
+      },
+      {
+        img: ZafarShahid,
+        name: 'ظفر شهيد',
+        role: 'مستشار CTO التنفيذي',
+        texts: ['المؤسس/الرئيس التنفيذي - iCodeGuru', 'دكتوراه – جامعة مونبلييه'],
+        link: 'https://zafarshahid.com/',
       },
       {
         img: RafiAzimKhan,
@@ -245,6 +243,16 @@ const people: People = {
           'دكتوراه في الهندسة الكهربائية، جامعة ستانفورد',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+      },
+      {
+        img: JesseBump,
+        name: 'جيسي بامب، دكتوراه، ماجستير فى الصحة العامة ، زميل الجمعية الملكية للفنون.',
+        role: '. مستشار صحة السكان',
+        texts: [
+          '. قسم وزارة الصحة العالمية والسكان',
+          '. كلية هارفارد تي إتش تشان للصحة العامة ',
+        ],
+        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: NobuyoOzawa,
