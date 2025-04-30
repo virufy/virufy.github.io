@@ -1,5 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+.vs/
+
 # dependencies
 /node_modules
 /.pnp
@@ -38,3 +40,5 @@ next-env.d.ts
 # next image export optimizer
 **/nextImageExportOptimizer
 **/next-image-export-optimizer-hashes.json
+# Local Netlify folder
+.netlify

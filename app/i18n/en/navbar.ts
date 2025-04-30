@@ -32,6 +32,7 @@ export const navbar: NavbarType = {
   joinUs: {
     buttonText: 'Join Us',
   },
+  searchPlaceholder: 'Search...',
 };
 
 export default navbar;

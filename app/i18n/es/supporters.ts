@@ -25,17 +25,18 @@ import {
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
-  title: 'Revolucionando juntos la salud global: ¡conviértase en socio!',
-  buttontext: 'Support Us',
+  title: 'Partidarios',
+  buttontext: 'Apóyanos',
+
   contactusform: {
-    title: 'Become a Partner',
+    title: 'Conviértete en Socio',
     content:
-      'Your help is important to us, please fill in your data and we will contact you as soon as possible.',
-    nametitle: 'Name',
-    emailtitle: 'Email',
-    texttitle: 'Message',
-    textplaceholder: 'Enter Message',
-    submitButtonText: 'Submit',
+      'Tu ayuda es importante para nosotros. Por favor, completa tus datos y nos pondremos en contacto contigo lo antes posible.',
+    nametitle: 'Nombre',
+    emailtitle: 'Correo electrónico',
+    texttitle: 'Mensaje',
+    textplaceholder: 'Escribe tu mensaje',
+    submitButtonText: 'Enviar',
   },
   supportersList: [
     {

@@ -10,14 +10,14 @@ const jobListing: JobListing = {
     yes: 'Sí',
     no: 'No',
   },
-  applyButtonText: 'Apply',
+  applyButtonText: 'Postularse',
   jobDetailSectionTitles: {
-    responsibilities: 'Responsibilities',
-    desiredSkills: 'Desired Skills',
-    minQualifications: 'Minimum Qualifications',
-    hours: 'Hours',
-    questions: 'Questions?',
-    applyButtonText: 'Apply to this Role',
+    responsibilities: 'Responsabilidades',
+    desiredSkills: 'Habilidades Deseadas',
+    minQualifications: 'Calificaciones Mínimas',
+    hours: 'Horas',
+    questions: '¿Preguntas?',
+    applyButtonText: 'Postularse a este Rol',
   },
   jobList: [
     {
