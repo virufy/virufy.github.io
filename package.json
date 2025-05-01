@@ -11,6 +11,7 @@
     "serve": "npx serve@latest out"
   },
   "dependencies": {
+    "@netlify/edge-functions": "^2.12.0",
     "lodash.debounce": "^4.0.8",
     "next": "14.2.4",
     "next-image-export-optimizer": "^1.14.1",
@@ -19,7 +20,6 @@
     "react-player": "^2.16.0"
   },
   "devDependencies": {
-    "@netlify/edge-functions": "^2.12.0",
     "@types/lodash.debounce": "^4.0.9",
     "@types/node": "20.14.15",
     "@types/react": "18.3.3",
