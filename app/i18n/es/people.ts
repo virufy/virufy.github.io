@@ -27,6 +27,7 @@ import {
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
+  ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -61,16 +62,6 @@ const people: People = {
           'Profesor Asociado de IA - Stanford',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
-      },
-      {
-        img: JesseBump,
-        name: 'Jesse Bump, Ph.D., MPH, FRSA',
-        role: 'Asesor de Salud Poblacional',
-        texts: [
-          'Departamento de Salud Global y Población',
-          'Escuela de Salud Pública T.H. Chan de Harvard',
-        ],
-        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: MelissaDyrdahl,
@@ -108,6 +99,13 @@ const people: People = {
           'M.S. - Universidad de Stanford',
         ],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
+      },
+      {
+        img: ZafarShahid,
+        name: 'Zafar Shahid',
+        role: 'Asesor ejecutivo de CTO',
+        texts: ['Fundador/CEO - iCodeGuru', 'Doctorado - Universidad de Montpellier'],
+        link: 'https://zafarshahid.com/',
       },
       {
         img: RafiAzimKhan,
@@ -253,6 +251,16 @@ const people: People = {
           'Ph.D. en Ingeniería Eléctrica, Stanford',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+      },
+      {
+        img: JesseBump,
+        name: 'Jesse Bump, Ph.D., MPH, FRSA',
+        role: 'Asesor de Salud Poblacional',
+        texts: [
+          'Departamento de Salud Global y Población',
+          'Escuela de Salud Pública T.H. Chan de Harvard',
+        ],
+        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: NobuyoOzawa,
