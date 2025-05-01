@@ -213,7 +213,7 @@ const faq: FAQ = {
         },
         {
           question:
-            'How much investment was made to make the Virufy initiave possible?',
+            'How much investment was made to make the Virufy initiative possible?',
           answer: [
             {
               type: 'paragraph',
