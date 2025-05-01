@@ -1,4 +1,4 @@
-// TODO: delete this file when start using next.js v5
+// TODO: Netlify solved the issue on v5 release of Next.js runtime.
 
 import type { Context } from '@netlify/edge-functions'
 
