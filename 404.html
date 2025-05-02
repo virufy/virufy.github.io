@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="5; url=/" />
+  </head>
+  <body>
+    <p>Redirecting...</p>
+    <script>
+      // Redirect to same path but with a trailing slash
+      if (!location.pathname.endsWith('/')) {
+        const newPath =
+          location.pathname + '/' + location.search + location.hash;
+        location.replace(newPath);
+      }
+    </script>
+    <noscript>
+      <p>
+        If you are not redirected automatically, <a href="/">click here</a>.
+      </p>
+    </noscript>
+  </body>
+</html>
