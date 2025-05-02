@@ -58,8 +58,6 @@ jobs:
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build
           npx next-image-export-optimizer
-      - name: Copy custom 404.html
-        run: cp 404.html out/404.html    
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

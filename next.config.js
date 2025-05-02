@@ -24,7 +24,7 @@ const nextConfig = {
   /**
    * Add a custom server route for redirection
    */
-  trailingSlash: false,
+  trailingSlash: true,
   async rewrites() {
     return [
       {
