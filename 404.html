@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="5; url=/" />
+    <meta http-equiv="refresh" content="5;" />
   </head>
   <body>
     <p>Redirecting...</p>
     <script>
       // Redirect to same path but with a trailing slash
-      if (!location.pathname.endsWith('/')) {
-        const newPath = location.pathname.substring(
-          0,
-          location.pathname.length() - 1
-        );
+      if (location.pathname.endsWith('/')) {
+        const newPath =
+          location.pathname.substring(0, location.pathname.length() - 1) +
+          location.search +
+          location.hash;
         location.replace(newPath);
       }
     </script>
