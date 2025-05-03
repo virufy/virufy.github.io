@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Link from 'next/link';
 import NonProfitDisclaimers from './NonProfitDisclaimers';
 import SocialLinks from './SocialLinks';
 
@@ -14,12 +15,19 @@ export default function FooterNavbar({
           <hr className="mx-auto my-4 hidden h-px w-11/12 rounded border-0 bg-white lg:block" />
         </div>
         <li className="flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold text-white sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
-          {footerPrivacyLinks.map(({ label, showModal }, idx) => (
+          {footerPrivacyLinks.map(({ label, showModal, endpoint }, idx) => (
             <Fragment key={label}>
               {idx > 0 && <div className="font-bold lg:hidden">|</div>}
-              <button key={label} onClick={() => showModal(true)}>
-                {label}
-              </button>
+              {showModal && 
+                <button key={idx} onClick={() => showModal(true)}>
+                  {label}
+                </button>
+              }
+              {endpoint &&
+                <Link key={idx} href={`/${lang}/${endpoint}`}>
+                  {label}
+                </Link>
+              }
             </Fragment>
           ))}
         </li>
