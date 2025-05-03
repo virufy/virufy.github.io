@@ -25,7 +25,7 @@ import {
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
-  title: 'الداعمون',
+  title: 'معًا لنحدث ثورة في الصحة العالمية – كن شريكًا!',
   buttontext: 'ادعمنا',
   contactusform: {
     title: 'كن شريكاً',

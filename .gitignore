@@ -40,3 +40,5 @@ next-env.d.ts
 # next image export optimizer
 **/nextImageExportOptimizer
 **/next-image-export-optimizer-hashes.json
+# Local Netlify folder
+.netlify

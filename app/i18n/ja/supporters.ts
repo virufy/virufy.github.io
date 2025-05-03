@@ -25,7 +25,7 @@ import {
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
-  title: 'サポーター',
+  title: '一緒に世界の健康に革命を起こす – パートナーになりましょう!',
   buttontext: 'お問い合わせ',
   contactusform: {
     title: 'パートナーになる（企業）',
