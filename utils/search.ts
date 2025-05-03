@@ -59,21 +59,29 @@ export async function search(query: string): Promise<SearchEntry[]> {
 
     const resultMap = await index.search(query, { enrich: true });
 
-    
-    console.log('[search] Raw resultMap:', JSON.stringify(resultMap, null, 2));
-    
-    
-    const flatResults: SearchEntry[] = Array.isArray(resultMap)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ? resultMap.flatMap((entry: any) =>
-            Array.isArray(entry?.result)
-                ? entry.result.map((id: string) => currentData.find(d => d.id === id)).filter(Boolean)
-                : []
-        )
-        : [];
+    const titleMatches = resultMap.find(r => r.field === 'title')?.result || [];
+    const contentMatches = resultMap.find(r => r.field === 'content')?.result || [];
 
+    
+    const scoreMap = new Map<string, number>();
 
-    return flatResults;
+    for (const id of titleMatches) {
+        scoreMap.set(id, (scoreMap.get(id) || 0) + 5); 
+    }
+
+    for (const id of contentMatches) {
+        scoreMap.set(id, (scoreMap.get(id) || 0) + 1); 
+    }
+
+    const uniqueIds = Array.from(scoreMap.keys());
+
+    const sortedResults = uniqueIds
+        .map(id => {
+            const entry = currentData.find(d => d.id === id);
+            return entry ? { ...entry, _score: scoreMap.get(id) || 0 } : null;
+        })
+        .filter(Boolean)
+        .sort((a, b) => (b!._score ?? 0) - (a!._score ?? 0)); 
+
+    return sortedResults as SearchEntry[];
 }
-
-
