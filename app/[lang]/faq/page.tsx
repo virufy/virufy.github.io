@@ -9,6 +9,8 @@ import { Fragment, useEffect, useMemo, useState } from 'react';
 import { usei18n } from '../../i18n';
 import AccordionItem from '../components/AccordionItem';
 import TopicCard from './TopicCard';
+import Head from 'next/head';
+
 
 const DEBOUNCE_TIME_MS = 300;
 
@@ -67,7 +69,17 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     []
   );
 
+  const topicCards = topicsSection.cards;
+
   return (
+    <>
+  <Head>
+    <title>FAQ - Virufy</title>
+    <meta
+      name="description"
+      content="Find answers to common questions about Virufy's technology, research, and how our solutions work."
+    />
+  </Head>
     <div className="relative -top-24">
       {/* Hero Section */}
       <section>
@@ -146,8 +158,8 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             </h2>
 
             {/* Topic Cards Container */}
-            <div className="mx-5 grid grid-cols-2 gap-6 text-xs md:grid-cols-3 md:text-base md:font-normal xl:grid-cols-6">
-              {topicsSection.cards.map((card) => (
+            <div className="grid grid-cols-2 gap-4 lg:grid-cols-7 lg:gap-6">
+              {topicCards.map((card) => (
                 <TopicCard
                   key={card.title}
                   defaultTopic={topicTitle}
@@ -183,6 +195,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </section>
       </div>
     </div>
+    </>
   );
 };
 

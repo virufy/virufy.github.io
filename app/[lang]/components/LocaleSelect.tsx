@@ -5,6 +5,7 @@ import {
   JapanFlagIcon,
   USFlagIcon,
   ArabFlagIcon,
+  SpainFlagIcon,
 } from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
 import type { StaticImageData } from 'next/image';
@@ -18,6 +19,7 @@ const flagIcons: Record<Locale, StaticImageData> = {
   en: USFlagIcon,
   ja: JapanFlagIcon,
   ar: ArabFlagIcon,
+  es: SpainFlagIcon,
 };
 
 const LocaleSelect = () => {

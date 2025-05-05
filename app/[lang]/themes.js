@@ -62,6 +62,7 @@ export const ImageSize = {
 // TITLE THEMES
 export const TitleProps = {
     h1: "text-[2.25rem] leading-[2.5rem]   md:text-[2.5rem] md:leading-[2.3rem] lg:text-[2.7rem] lg:leading-[2.50rem] xl:text-[3.3rem] xl:leading-[3rem]",
+    h1Supporters: "text-[0.7rem] leading-[0.9rem] sm:text-[1rem] sm:leading-[1.2rem] md:text-[1rem] md:leading-[1.2rem] lg:text-[1.4rem] lg:leading-[1.6rem] xl:text-[1.8rem] xl:leading-[2.5rem]",
     h1JobListing: "text-[2.25rem] leading-4 sm:leading-6 md:text-[2.5rem] md:leading-10 lg:text-[2.7rem] lg:leading-[4rem] xl:text-[3.3rem] xl:leading-[5rem]",
     h2: "text-[1.875rem] leading-[2.25rem] md:text-[2.3rem] md:leading-[2.1rem] lg:text-[2.5rem] lg:leading-[2.30rem] xl:text-[3rem] xl:leading-[3.3rem]",
     h3: "text-[1.5rem] leading-[2rem]      md:text-[2.1rem] md:leading-[1.9rem] lg:text-[2.3rem] lg:leading-[2.10rem] xl:text-[2.9rem] xl:leading-[2.75rem]",
