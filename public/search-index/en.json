@@ -81,8 +81,8 @@
   {
     "id": "en-faq-app-result-time",
     "lang": "en",
-    "title": "When and how will the app give COVID-19 prediction results?",
-    "content": "Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.",
+    "title": "When and how will the app give upper respiratory infection prediction results?",
+    "content": "Our app is currently for data collection only. We cannot release a upper respiratory infection prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.",
     "url": "/en/faq"
   },
   {
@@ -96,7 +96,7 @@
     "id": "en-faq-app-free-worldwide",
     "lang": "en",
     "title": "Will the application be available for free and worldwide?",
-    "content": "As a 501(c)(3) non-profit organization, our intention is to make the app free for the benefit of low-income countries. However, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds.",
+    "content": "As a 501(c)(3) non-profit organization, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds. However, our intention is to make the app free for the benefit of low-income countries.",
     "url": "/en/faq"
   },
   {
@@ -117,7 +117,7 @@
   {
     "id": "en-faq-virufy-difference",
     "lang": "en",
-    "title": "How is Virufy different from other groups working on similar projects?",
+    "title": "How is Virufy different from other initiatives working on similar ventures?",
     "content": "Because Virufy is a 501(c)(3) non-profit organization, we are able to recruit highly talented professionals as volunteers. Our team is global, spanning five continents, and our organization thus has global empathy built in. We are not concerned with making profit, so are able to work in developing countries. Our dense university alumni and professional networks grant us access to top echelon contacts in every country of the world. Mentorship is built into our organization, as dozens of young professionals in our team are empowered by sage advice from senior industry experts leads to rapid, creative activity focused in the right direction.",
     "url": "/en/faq"
   },
@@ -145,8 +145,8 @@
   {
     "id": "en-faq-ai-coughs",
     "lang": "en",
-    "title": "Why are COVID-19 coughs distinguishable?",
-    "content": "Similar to other respiratory diseases, COVID-19 damages the throat and lungs, creating detectable differences in cough patterns. Consequently, cough sounds can be analyzed to detect COVID-19 and other upper respiratory diseases. Globally, this idea is being actively researched by several prestigious institutions, including Carnegie Mellon (CMU), MIT, and Cambridge. For example, research done by University of Cambridge showed that a simple binary machine learning classifier is able to classify COVID-19 positive patients through breathing and coughing sounds with high accuracy. Similarly, researchers at CMU identified 18 voice features that distinguish positive COVID-19 patients and trained an academic model to detect COVID-19 with high accuracy.",
+    "title": "Why are upper respiratory infection coughs distinguishable?",
+    "content": "Upper respiratory infections damage the throat and lungs, creating detectable differences in cough patterns. Consequently, cough sounds can be analyzed to detect upper respiratory infections​. Globally, this idea is being actively researched by several prestigious institutions, including Carnegie Mellon (CMU), MIT, and Cambridge. For example,research done by University of Cambridge showed that a simple binary machine learning classifier is able to classify COVID-19 positive patients through breathing and coughing sounds with high accuracy. Similarly, researchers at CMU identified 18 voice features that distinguish positive COVID-19 patients and trained an academic model to detect COVID-19 with high accuracy.",
     "url": "/en/faq"
   },
 
