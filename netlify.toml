@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 [build]
   command = "npm run build"
   publish = "out"
+=======
+[[edge_functions]]
+function = "delete-trailing-slash"
+path = "/*"
+>>>>>>> 9c8fac6549724f529b604c5c1af33aab248c29a1
