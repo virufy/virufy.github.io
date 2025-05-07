@@ -199,7 +199,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
