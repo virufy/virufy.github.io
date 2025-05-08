@@ -61,18 +61,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       )}
                     </p>
                   </div>
-
-                  {/* Demo app button */}
-                  <div className="mt-2 flex w-full justify-center px-0">
-                    <Link href={`/study`} target="_blank">
-                      <button
-                        className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
-                        style={{ borderRadius: '50px', background: 'white' }}
-                      >
-                        {introSection.buttonText}
-                      </button>
-                    </Link>
-                  </div>
                 </div>
 
 
