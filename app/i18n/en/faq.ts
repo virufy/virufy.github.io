@@ -96,14 +96,14 @@ const faq: FAQ = {
       'Virufy App': [
         {
           question:
-            'When and how will the app give COVID-19 prediction results?',
+            'When and how will the app give upper respiratory infection prediction results?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.',
+                  text: 'Our app is currently for data collection only. We cannot release a upper respiratory infection prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.',
                 },
               ],
             },
@@ -131,7 +131,7 @@ const faq: FAQ = {
               content: [
                 {
                   type: 'text',
-                  text: 'As a 501(c)(3) non-profit organization, our intention is to make the app free for the benefit of low-income countries. However, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds.',
+                  text: 'As a 501(c)(3) non-profit organization, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds. However, our intention is to make the app free for the benefit of low-income countries.',
                 },
               ],
             },
@@ -169,7 +169,7 @@ const faq: FAQ = {
         },
         {
           question:
-            'How is Virufy different from other groups working on similar projects?',
+            'How is Virufy different from other initiatives working on similar ventures?',
           answer: [
             {
               type: 'paragraph',
@@ -198,7 +198,7 @@ const faq: FAQ = {
           ],
         },
         {
-          question: 'What is unique about Virufy from other projects?',
+          question: 'What is unique about Virufy from other organizations?',
           answer: [
             {
               type: 'paragraph',
@@ -213,7 +213,7 @@ const faq: FAQ = {
         },
         {
           question:
-            'How much investment was made to make the Virufy project possible?',
+            'How much investment was made to make the Virufy initiative possible?',
           answer: [
             {
               type: 'paragraph',
@@ -229,14 +229,15 @@ const faq: FAQ = {
       ],
       'About AI': [
         {
-          question: 'Why are COVID-19 coughs distinguishable?',
+          question:
+            'Why are upper respiratory infection coughs distinguishable?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Similar to other respiratory diseases, COVID-19 damages the throat and lungs, creating detectable differences in cough patterns. Consequently, cough sounds can be analyzed to detect COVID-19​. and other upper respiratory diseases. Globally, this idea is being actively researched by several prestigious institutions, including Carnegie Mellon (CMU), MIT, and Cambridge. For example,research done by University of Cambridge showed that a simple binary machine learning classifier is able to classify COVID-19 positive patients through breathing and coughing sounds with high accuracy. Similarly, researchers at CMU identified 18 voice features that distinguish positive COVID-19 patients and trained an academic model to detect COVID-19 with high accuracy.',
+                  text: 'Upper respiratory infections damage the throat and lungs, creating detectable differences in cough patterns. Consequently, cough sounds can be analyzed to detect upper respiratory infections​. Globally, this idea is being actively researched by several prestigious institutions, including Carnegie Mellon (CMU), MIT, and Cambridge. For example,research done by University of Cambridge showed that a simple binary machine learning classifier is able to classify COVID-19 positive patients through breathing and coughing sounds with high accuracy. Similarly, researchers at CMU identified 18 voice features that distinguish positive COVID-19 patients and trained an academic model to detect COVID-19 with high accuracy.',
                 },
               ],
             },
@@ -307,20 +308,6 @@ const faq: FAQ = {
                 {
                   type: 'text',
                   text: '.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question: 'Do I need to have coughing symptoms to donate my cough?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'No, the app is also compatible with a forced cough.',
                 },
               ],
             },
