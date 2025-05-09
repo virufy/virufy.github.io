@@ -20,7 +20,7 @@ const CookiePolicyPage = ({ params: { lang } }: { params: { lang: Locale } }) =>
           <Title
             H="h5Modals"
             Text={cookiePolicy.title}
-            TitleClassProps={'mt-[30px] mx-auto mb-[30px]'}
+            TitleClassProps={'mt-[30px] mx-auto mb-[30px] text-white'}
           />
         </div>
         {/*cookie policy content*/}

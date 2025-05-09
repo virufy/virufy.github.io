@@ -20,7 +20,7 @@ const PrivacyPolicyPage = ({ params: { lang } }: { params: { lang: Locale } }) =
           <Title
             H="h5Modals"
             Text={privacyPolicy.title}
-            TitleClassProps={'mt-[30px] mx-auto mb-[30px]'}
+            TitleClassProps={'mt-[30px] mx-auto mb-[30px] text-white'}
           />
         </div>
         {/*privacy policy content*/}
