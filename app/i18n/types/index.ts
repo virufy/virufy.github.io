@@ -2,6 +2,7 @@ import { type Ai } from './ai';
 import { type AmilsStory } from './amilsStory';
 import { type FAQ } from './faq';
 import { type Footer } from './footer';
+import { type Fukuoka } from './fukuoka';
 import { type HomeType } from './home';
 import { type JobDetails } from './jobDetails';
 import { type JobListing } from './jobListing';
@@ -20,6 +21,7 @@ export interface I18nData {
   amilsStory: AmilsStory;
   faq: FAQ;
   footer: Footer;
+  fukuoka: Fukuoka;
   home: HomeType;
   jobDetails: JobDetails;
   jobListing: JobListing;

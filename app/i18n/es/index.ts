@@ -3,6 +3,7 @@ import ai from './ai';
 import amilsStory from './amilsStory';
 import faq from './faq';
 import footer from './footer';
+import fukuoka from '../ja/fukuoka';
 import home from './home';
 import jobDetails from './jobDetails';
 import jobListing from './jobListing';
@@ -21,6 +22,7 @@ const esMetadata: I18nData = {
   amilsStory,
   faq,
   footer,
+  fukuoka,
   home,
   jobDetails,
   jobListing,
