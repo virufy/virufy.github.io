@@ -3,6 +3,7 @@ import ai from './ai';
 import amilsStory from './amilsStory';
 import faq from './faq';
 import footer from './footer';
+import fukuoka from './fukuoka';
 import home from './home';
 import jobDetails from './jobDetails';
 import jobListing from './jobListing';
@@ -16,11 +17,12 @@ import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 
-const esMetadata: I18nData = {
+const jaMetadata: I18nData = {
   ai,
   amilsStory,
   faq,
   footer,
+  fukuoka,
   jobDetails,
   jobListing,
   home,
@@ -35,4 +37,4 @@ const esMetadata: I18nData = {
   teamLeads,
 };
 
-export default esMetadata;
+export default jaMetadata;
