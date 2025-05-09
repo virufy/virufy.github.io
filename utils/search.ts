@@ -29,7 +29,7 @@ function buildIndex(data: SearchEntry[]): Document {
 
 
     data.forEach((doc) => flex.add(doc));
-    return flex;
+    return flex as unknown as Document;
 }
 
 // Here, we are Initializing the search index .
