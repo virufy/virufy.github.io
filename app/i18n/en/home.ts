@@ -18,7 +18,7 @@ const home: HomeType = {
         text: ', the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing patterns and provide insights into potential infection symptoms.',
       },
     ],
-    buttonText: 'Demo App',
+    buttonText: 'Share your cough',
     disclaimers: [
       '*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad).', '*The app is still under development, support us by contributing your cough sounds into our data collection app.'
     ],
