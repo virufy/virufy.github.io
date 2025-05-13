@@ -1,6 +1,12 @@
 ﻿
 import { Document } from 'flexsearch';
 
+type EnrichedResult = {
+    field: string;
+    result: string[];
+};
+
+
 export type SearchEntry = {
     id: string;
     lang: string;
@@ -57,20 +63,21 @@ export async function search(query: string): Promise<SearchEntry[]> {
         return [];
     }
 
-    const resultMap = await index.search(query, { enrich: true });
+    // resultMap is an array of EnrichedResult
+    const resultMap = await index.search(query, { enrich: true }) as EnrichedResult[];
 
-    const titleMatches = resultMap.find(r => r.field === 'title')?.result || [];
-    const contentMatches = resultMap.find(r => r.field === 'content')?.result || [];
+    // Type the parameter in .find()
+    const titleMatches = resultMap.find((r: EnrichedResult) => r.field === 'title')?.result || [];
+    const contentMatches = resultMap.find((r: EnrichedResult) => r.field === 'content')?.result || [];
 
-    
     const scoreMap = new Map<string, number>();
 
     for (const id of titleMatches) {
-        scoreMap.set(id, (scoreMap.get(id) || 0) + 5); 
+        scoreMap.set(id, (scoreMap.get(id) || 0) + 5);
     }
 
     for (const id of contentMatches) {
-        scoreMap.set(id, (scoreMap.get(id) || 0) + 1); 
+        scoreMap.set(id, (scoreMap.get(id) || 0) + 1);
     }
 
     const uniqueIds = Array.from(scoreMap.keys());
@@ -81,7 +88,8 @@ export async function search(query: string): Promise<SearchEntry[]> {
             return entry ? { ...entry, _score: scoreMap.get(id) || 0 } : null;
         })
         .filter(Boolean)
-        .sort((a, b) => (b!._score ?? 0) - (a!._score ?? 0)); 
+        .sort((a, b) => (b!._score ?? 0) - (a!._score ?? 0));
 
     return sortedResults as SearchEntry[];
 }
+
