@@ -18,7 +18,7 @@ const home: HomeType = {
         text: ', la aplicación de vanguardia que utiliza algoritmos avanzados de audio e IA generativa para analizar tus patrones de respiración y proporcionar información sobre posibles síntomas de infección.',
       },
     ],
-    buttonText: 'Demo de la App',
+    buttonText: 'Comparte tu tos',
     disclaimers: [
       '*Cualquier dispositivo con un navegador web y micrófono (por ejemplo, iPhone, Android, laptop, iPad).',
       '*La aplicación aún está en desarrollo, apóyanos contribuyendo con tus sonidos de tos en nuestra aplicación de recolección de datos.',
