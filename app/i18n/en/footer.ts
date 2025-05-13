@@ -446,7 +446,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidad',
+                text: 'Privacy Policy',
                 href: 'https://drive.google.com/file/d/1Fef7l77QP3EZboej6mw_q7fBNrayvs03/view',
               },
             ],
@@ -461,7 +461,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidad',
+                text: 'Privacy Policy',
                 href: 'https://drive.google.com/file/d/1ZSrRivk4YJyyDioqYeAsz0fgNAP3UwVn/view',
               },
             ],
@@ -476,7 +476,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidade',
+                text: 'Privacy Policy',
                 href: 'https://drive.google.com/file/d/1Zl9QO-Dliik84xjuXCdFGcDOk5GytXr1/view',
               },
             ],
@@ -491,7 +491,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidad',
+                text: 'Privacy Policy',
                 href: 'https://drive.google.com/file/d/1eQOx81C5e5CoESYsEnrE9sWhCkTMDPEq/view',
               },
             ],
@@ -506,7 +506,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'Πολιτική απορρήτου',
+                text: 'Privacy Policy',
                 href: 'https://drive.google.com/file/d/1lMVygBx3pV_lZBhFtZe5go4UM4mFt0qP/view',
               },
             ],
@@ -521,7 +521,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'Aviso De Privacidad',
+                text: 'Privacy Policy',
                 href: 'https://drive.google.com/file/d/1Qr3cFttfhjUoKxLcQrVEhsuO-OJ6VE0_/view',
               },
             ],
@@ -536,7 +536,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidad',
+                text: 'Privacy Policy',
                 href: 'https://drive.google.com/file/d/1UgN2Bu2XIvv2YirLRYloSPlbYln_uzf9/view',
               },
             ],
@@ -581,7 +581,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'プライバシーポリシー',
+                text: 'Privacy Policy',
                 href: 'https://drive.google.com/file/d/11RTMmnHW4SqHNf7htr3xuSi-o2v2vWlp/view',
               },
             ],
