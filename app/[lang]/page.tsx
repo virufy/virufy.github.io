@@ -61,8 +61,8 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       )}
                     </p>
                   </div>
+                </div>
 
-                  
 
                 {/* Disclaimers */}
                 <div className="mt-1 flex flex-col items-start sm:ml-10 sm:mt-2 md:ml-0 lg:mt-6">
@@ -187,7 +187,6 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

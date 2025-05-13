@@ -35,7 +35,7 @@ function buildIndex(data: SearchEntry[]): Document {
 
 
     data.forEach((doc) => flex.add(doc));
-    return flex;
+    return flex as unknown as Document;
 }
 
 // Here, we are Initializing the search index .
@@ -66,6 +66,7 @@ export async function search(query: string): Promise<SearchEntry[]> {
     // resultMap is an array of EnrichedResult
     const resultMap = await index.search(query, { enrich: true }) as EnrichedResult[];
 
+
     // Type the parameter in .find()
     const titleMatches = resultMap.find((r: EnrichedResult) => r.field === 'title')?.result || [];
     const contentMatches = resultMap.find((r: EnrichedResult) => r.field === 'content')?.result || [];
@@ -92,4 +93,5 @@ export async function search(query: string): Promise<SearchEntry[]> {
 
     return sortedResults as SearchEntry[];
 }
+
 

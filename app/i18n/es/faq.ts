@@ -53,7 +53,7 @@ const faq: FAQ = {
     title: 'Temas de Preguntas Frecuentes',
     cards: [
       {
-        title: 'Preguntas Generales',
+        title: 'Preguntas Comunes',
         img: QuestionMarkIcon,
         altText: '',
       },
@@ -96,14 +96,14 @@ const faq: FAQ = {
       'Aplicación Virufy': [
         {
           question:
-            '¿Cuándo y cómo dará la aplicación los resultados de predicción de COVID-19?',
+            '¿Cuándo y cómo la aplicación dará resultados de predicción de infecciones de las vías respiratorias superiores?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Nuestra aplicación actualmente solo se utiliza para la recolección de datos. No podemos lanzar una aplicación de predicción de COVID-19 sin las aprobaciones del departamento de salud pública de cada país y estudios clínicos para validar la tecnología de IA en condiciones locales. Este proceso puede tomar algunas semanas o meses, dependiendo de la rapidez del socio gubernamental. Virufy da la bienvenida a las asociaciones con funcionarios de salud y hospitales para llevar la tecnología de uso gratuito a las personas y optimizar el uso de costosas pruebas PCR solo cuando sea necesario.',
+                  text: 'Actualmente, nuestra aplicación solo se utiliza para la recopilación de datos. No podemos lanzar una aplicación de predicción de infecciones de las vías respiratorias superiores sin la aprobación de los departamentos de salud pública de cada país y estudios clínicos para validar la tecnología de IA en las condiciones locales. Este proceso puede tardar semanas o meses, dependiendo de la rapidez del socio gubernamental. Virufy agradece la colaboración de funcionarios de salud y hospitales para ofrecer la tecnología de forma gratuita a la población y optimizar el uso de las costosas pruebas PCR solo cuando sea necesario.',
                 },
               ],
             },
@@ -132,7 +132,7 @@ const faq: FAQ = {
               content: [
                 {
                   type: 'text',
-                  text: 'Como organización sin fines de lucro 501(c)(3), nuestra intención es hacer que la aplicación sea gratuita para el beneficio de los países de bajos ingresos. Sin embargo, es posible que necesitemos cobrar una tarifa nominal para apoyar nuestras operaciones en caso de que no podamos recaudar suficientes fondos.',
+                  text: 'Como organización sin fines de lucro 501(c)(3), podríamos tener que cobrar una tarifa nominal para financiar nuestras operaciones en caso de no poder recaudar fondos suficientes. Sin embargo, nuestra intención es que la aplicación sea gratuita para beneficio de los países de bajos ingresos.',
                 },
               ],
             },
@@ -171,7 +171,7 @@ const faq: FAQ = {
         },
         {
           question:
-            '¿Cómo se diferencia Virufy de otros grupos que trabajan en proyectos similares?',
+            '¿En qué se diferencia Virufy de otras iniciativas que trabajan en proyectos similares?',
           answer: [
             {
               type: 'paragraph',
@@ -201,7 +201,7 @@ const faq: FAQ = {
         },
         {
           question:
-            '¿Qué es único acerca de Virufy en comparación con otros proyectos?',
+            '¿Qué tiene de especial Virufy en comparación con otras organizaciones?',
           answer: [
             {
               type: 'paragraph',
@@ -216,7 +216,7 @@ const faq: FAQ = {
         },
         {
           question:
-            '¿Cuánta inversión se hizo para hacer posible el proyecto Virufy?',
+            '¿Cuánta inversión se realizó para hacer posible la iniciativa Virufy?',
           answer: [
             {
               type: 'paragraph',
@@ -224,6 +224,23 @@ const faq: FAQ = {
                 {
                   type: 'text',
                   text: 'Más de 1,000 voluntarios han invertido miles de horas para hacer posible el proyecto. Varias empresas nos han apoyado con software gratuito, incluyendo plataformas de correo electrónico, almacenamiento y mensajería, junto con computación en la nube. Algunos softwares como videoconferencias y herramientas de gestión de proyectos no han sido gratuitos, por lo que, lamentablemente, deben ser pagados con los limitados ahorros del fundador Amil. Creemos que si tenemos éxito, nuestros costos de computación en la nube aumentarán, pero podremos atraer financiamiento amplio de',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+      'Acerca de la IA': [
+        {
+          question:
+            '¿Por qué se distinguen las toses causadas por infecciones de las vías respiratorias superiores?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Las infecciones de las vías respiratorias superiores dañan la garganta y los pulmones, creando diferencias detectables en los patrones de tos. Por consiguiente, los sonidos de la tos pueden analizarse para detectar infecciones de las vías respiratorias superiores. A nivel mundial, esta idea está siendo investigada activamente por varias instituciones prestigiosas, como Carnegie Mellon (CMU), MIT y Cambridge. Por ejemplo, una investigación realizada por la Universidad de Cambridge demostró que un clasificador binario simple de aprendizaje automático es capaz de clasificar a pacientes positivos de COVID-19 mediante sonidos de respiración y tos con alta precisión. De igual manera, investigadores de la CMU identificaron 18 características de voz que distinguen a pacientes positivos de COVID-19 y entrenaron un modelo académico para detectar la COVID-19 con alta precisión.',
                 },
               ],
             },
@@ -274,7 +291,7 @@ const faq: FAQ = {
           ],
         },
       ],
-      Finances: [
+      Finanzas: [
         {
           question:
             '¿Necesito hacer alguna contribución financiera para donar mi tos?',
@@ -294,20 +311,6 @@ const faq: FAQ = {
                 {
                   type: 'text',
                   text: '.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question: '¿Necesito tener síntomas de tos para donar mi tos?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'No, la app también es compatible con una tos forzada.',
                 },
               ],
             },
@@ -357,7 +360,7 @@ const faq: FAQ = {
           ],
         },
       ],
-      Privacy: [
+      Privacidad: [
         {
           question: '¿Cómo almacenará Virufy mis datos de forma segura?',
           answer: [
@@ -425,7 +428,7 @@ const faq: FAQ = {
           ],
         },
       ],
-      Other: [
+      Otros: [
         {
           question: '¿Cómo puedo apoyar más a Virufy?',
           answer: [
