@@ -1,6 +1,12 @@
 ﻿
 import { Document } from 'flexsearch';
 
+type EnrichedResult = {
+    field: string;
+    result: string[];
+};
+
+
 export type SearchEntry = {
     id: string;
     lang: string;
@@ -57,23 +63,35 @@ export async function search(query: string): Promise<SearchEntry[]> {
         return [];
     }
 
-    const resultMap = await index.search(query, { enrich: true });
-
-    
-    console.log('[search] Raw resultMap:', JSON.stringify(resultMap, null, 2));
-    
-    
-    const flatResults: SearchEntry[] = Array.isArray(resultMap)
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ? resultMap.flatMap((entry: any) =>
-            Array.isArray(entry?.result)
-                ? entry.result.map((id: string) => currentData.find(d => d.id === id)).filter(Boolean)
-                : []
-        )
-        : [];
+    // resultMap is an array of EnrichedResult
+    const resultMap = await index.search(query, { enrich: true }) as EnrichedResult[];
 
 
-    return flatResults;
+    // Type the parameter in .find()
+    const titleMatches = resultMap.find((r: EnrichedResult) => r.field === 'title')?.result || [];
+    const contentMatches = resultMap.find((r: EnrichedResult) => r.field === 'content')?.result || [];
+
+    const scoreMap = new Map<string, number>();
+
+    for (const id of titleMatches) {
+        scoreMap.set(id, (scoreMap.get(id) || 0) + 5);
+    }
+
+    for (const id of contentMatches) {
+        scoreMap.set(id, (scoreMap.get(id) || 0) + 1);
+    }
+
+    const uniqueIds = Array.from(scoreMap.keys());
+
+    const sortedResults = uniqueIds
+        .map(id => {
+            const entry = currentData.find(d => d.id === id);
+            return entry ? { ...entry, _score: scoreMap.get(id) || 0 } : null;
+        })
+        .filter(Boolean)
+        .sort((a, b) => (b!._score ?? 0) - (a!._score ?? 0));
+
+    return sortedResults as SearchEntry[];
 }
 
 
