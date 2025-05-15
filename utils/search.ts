@@ -1,11 +1,9 @@
-﻿
-import { Document } from 'flexsearch';
+﻿import { Document } from 'flexsearch';
 
 type EnrichedResult = {
     field: string;
     result: string[];
 };
-
 
 export type SearchEntry = {
     id: string;
@@ -21,7 +19,7 @@ let currentData: SearchEntry[] = [];
 let currentLang = '';
 let isLoading = false;
 
-// FlexSearch index 
+// FlexSearch index
 function buildIndex(data: SearchEntry[]): Document {
     const flex = new Document({
         tokenize: 'forward' as const,
@@ -32,7 +30,6 @@ function buildIndex(data: SearchEntry[]): Document {
             index: ['title', 'content'],
         },
     });
-
 
     data.forEach((doc) => flex.add(doc));
     return flex as unknown as Document;
@@ -49,7 +46,10 @@ export async function initSearch(lang: string = 'en'): Promise<void> {
         currentData = searchIndex.default;
         index = buildIndex(currentData);
     } catch (err) {
-        console.error(`[initSearch] Failed to load or build index for ${lang}`, err);
+        console.error(
+            `[initSearch] Failed to load or build index for ${lang}`,
+            err
+        );
     }
 
     isLoading = false;
@@ -64,12 +64,15 @@ export async function search(query: string): Promise<SearchEntry[]> {
     }
 
     // resultMap is an array of EnrichedResult
-    const resultMap = await index.search(query, { enrich: true }) as EnrichedResult[];
-
+    const resultMap = (await index.search(query, {
+        enrich: true,
+    })) as unknown as EnrichedResult[];
 
     // Type the parameter in .find()
-    const titleMatches = resultMap.find((r: EnrichedResult) => r.field === 'title')?.result || [];
-    const contentMatches = resultMap.find((r: EnrichedResult) => r.field === 'content')?.result || [];
+    const titleMatches =
+        resultMap.find((r: EnrichedResult) => r.field === 'title')?.result || [];
+    const contentMatches =
+        resultMap.find((r: EnrichedResult) => r.field === 'content')?.result || [];
 
     const scoreMap = new Map<string, number>();
 
@@ -84,8 +87,8 @@ export async function search(query: string): Promise<SearchEntry[]> {
     const uniqueIds = Array.from(scoreMap.keys());
 
     const sortedResults = uniqueIds
-        .map(id => {
-            const entry = currentData.find(d => d.id === id);
+        .map((id) => {
+            const entry = currentData.find((d) => d.id === id);
             return entry ? { ...entry, _score: scoreMap.get(id) || 0 } : null;
         })
         .filter(Boolean)
@@ -93,5 +96,3 @@ export async function search(query: string): Promise<SearchEntry[]> {
 
     return sortedResults as SearchEntry[];
 }
-
-
