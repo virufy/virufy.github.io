@@ -33,6 +33,7 @@ export const navbar: NavbarType = {
     buttonText: 'Únete a Nosotros',
   },
   searchPlaceholder: 'Buscar...',
+  noResultsPlaceholder:'No se encontraron resultados',
 };
 
 export default navbar;

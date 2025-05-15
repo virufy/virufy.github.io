@@ -33,6 +33,7 @@ export const navbar: NavbarType = {
     buttonText: 'انضم إلينا',
   },
   searchPlaceholder: 'يبحث...',
+  noResultsPlaceholder:'لم يتم العثور على نتائج' ,
 };
 
 export default navbar;
