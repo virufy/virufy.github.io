@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      // Check if the current hostname is virufy.jp
+      if (window.location.hostname.endsWith('virufy.jp')) {
+        // Redirect to the .org/jp subpath
+        window.location.replace('https://virufy.org/jp' + window.location.pathname);
+      }
+    </script>
+  </head>
+  <body>
+    <p>If you are not redirected, <a href="https://virufy.org/jp">click here</a>.</p>
+  </body>
+</html>

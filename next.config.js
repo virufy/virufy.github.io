@@ -20,6 +20,7 @@ const nextConfig = {
    * or set to an empty string.
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
+
   basePath: '',
 
   /**
@@ -81,6 +82,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
 };
+
 
 export const { basePath } = nextConfig;
 export default nextConfig;
