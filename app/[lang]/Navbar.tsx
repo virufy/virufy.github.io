@@ -22,7 +22,7 @@ import debounce from 'lodash.debounce';
 
 export default function Navbar({ lang }: { lang: Locale }) {
   const {
-      navbar: { home, ourTechnology, aboutUs, media, faq, donate, joinUs, searchPlaceholder }, // re add coughcheck here when needed
+      navbar: { home, ourTechnology, aboutUs, media, faq, donate, joinUs, searchPlaceholder, noResultsPlaceholder }, // re add coughcheck here when needed
   } = usei18n(lang);
 
   const [navbar, setNavbar] = useState(false);
@@ -233,7 +233,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             </li>
           ))
         ) : (
-          <li className="text-center text-gray-500 py-4">No Results Found</li>
+          <li className="text-center text-gray-500 py-4">{noResultsPlaceholder}</li>
         )}
       </ul>
     )

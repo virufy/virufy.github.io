@@ -33,6 +33,7 @@ export const navbar: NavbarType = {
     buttonText: '参加する', 
   },
   searchPlaceholder: '検索...',
+  noResultsPlaceholder:'結果が見つかりませんでした',
 };
 
 export default navbar;

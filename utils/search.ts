@@ -31,8 +31,10 @@ function buildIndex(data: SearchEntry[]): Document {
     },
   });
 
+
   data.forEach((doc) => flex.add(doc));
   return flex as unknown as Document;
+
 }
 
 // Here, we are Initializing the search index .
@@ -40,6 +42,7 @@ export async function initSearch(lang: string = 'en'): Promise<void> {
   if (isLoading || currentLang === lang) return;
   isLoading = true;
   currentLang = lang;
+
 
   try {
     const searchIndex = await import(`../public/search-index/${lang}.json`);
@@ -76,6 +79,7 @@ export async function search(query: string): Promise<SearchEntry[]> {
 
   const scoreMap = new Map<string, number>();
 
+
   for (const id of titleMatches) {
     scoreMap.set(id, (scoreMap.get(id) || 0) + 5);
   }
@@ -94,5 +98,7 @@ export async function search(query: string): Promise<SearchEntry[]> {
     .filter(Boolean)
     .sort((a, b) => (b!._score ?? 0) - (a!._score ?? 0));
 
+
   return sortedResults as SearchEntry[];
 }
+
