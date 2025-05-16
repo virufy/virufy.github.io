@@ -3,7 +3,7 @@ import { basePath } from '@/next.config.mjs';
 import { SplashBackground, WaveBackground } from '@/public/images/ai/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { Fragment } from 'react';
 import { usei18n } from '../../i18n';
 import AiCard from './AiCard';
