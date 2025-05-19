@@ -110,9 +110,10 @@ const people: People = {
       {
         img: ZafarShahid,
         name: 'Zafar Shahid',
-        role: 'Technology Advisor',
+        role: 'Asesor Tecnológico',
         texts: [
-          'Green AI Leader - exNVIDIA, ex-Meta Ph.D. Multimedia Forensics, University of Montpellier',
+          'Líder en IA ecológica: ex-NVIDIA, ex-Meta',
+          'Investigación forense multimedia, Universidad de Montpellier',
         ],
         link: 'https://zafarshahid.com/',
       },
