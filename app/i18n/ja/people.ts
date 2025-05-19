@@ -100,7 +100,8 @@ const people: People = {
         name: 'ザファル・シャヒド',
         role: 'テクノロジーアドバイザー',
         texts: [
-          'グリーン AI リーダー - 元 NVIDIA、元 Meta 博士（マルチメディアフォレンジック）、モンペリエ大学',
+          'グリーンAIリーダー - 元NVIDIA、元Meta',
+          'モンペリエ大学マルチメディアフォレンジック',
         ],
         link: 'https://zafarshahid.com/',
       },

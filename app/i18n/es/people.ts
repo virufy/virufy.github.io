@@ -105,7 +105,8 @@ const people: People = {
         name: 'Zafar Shahid',
         role: 'Asesor Tecnológico',
         texts: [
-          'Líder de IA Verde - exNVIDIA, ex-Meta Doctorado en Informática Forense Multimedia, Universidad de Montpellier',
+          'Líder en IA ecológica: ex-NVIDIA, ex-Meta',
+          'Doctorado en Ciencias Forenses Multimedia, Universidad de Montpellier',
         ],
         link: 'https://zafarshahid.com/',
       },
