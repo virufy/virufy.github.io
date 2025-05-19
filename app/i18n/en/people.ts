@@ -22,7 +22,7 @@ import {
   RokSosic,
   RonanDunlop,
   ShirinHasan,
-  TamerFahmy, 
+  TamerFahmy,
   TetsujiMadarame,
   TsutomuIto,
   VictorWang,
@@ -100,8 +100,10 @@ const people: People = {
       {
         img: ZafarShahid,
         name: 'Zafar Shahid',
-        role: 'Executive CTO Advisor',
-        texts: ['Founder/CEO - iCodeGuru', 'PhD - University of Montpellier'],
+        role: 'Technology Advisor',
+        texts: [
+          'Green AI Leader - exNVIDIA, ex-Meta Ph.D. Multimedia Forensics, University of Montpellier',
+        ],
         link: 'https://zafarshahid.com/',
       },
       {
@@ -127,7 +129,10 @@ const people: People = {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
         role: 'Executive Advisor',
-        texts: ['Former CTO/CPO - edX, GoDaddy', 'Computer Science alumnus - MIT'],
+        texts: [
+          'Former CTO/CPO - edX, GoDaddy',
+          'Computer Science alumnus - MIT',
+        ],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {
@@ -277,10 +282,7 @@ const people: People = {
         img: KoheiWakamiya,
         name: 'Kohei Wakamiya',
         role: 'Audio AI Advisor',
-        texts: [
-          'Acoustic Design Assistant Professor',
-          'Kyushu University'
-        ],
+        texts: ['Acoustic Design Assistant Professor', 'Kyushu University'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
       },
       {

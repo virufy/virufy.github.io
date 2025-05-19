@@ -103,8 +103,10 @@ const people: People = {
       {
         img: ZafarShahid,
         name: 'Zafar Shahid',
-        role: 'Asesor ejecutivo de CTO',
-        texts: ['Fundador/CEO - iCodeGuru', 'Doctorado - Universidad de Montpellier'],
+        role: 'Asesor Tecnológico',
+        texts: [
+          'Líder de IA Verde - exNVIDIA, ex-Meta Doctorado en Informática Forense Multimedia, Universidad de Montpellier',
+        ],
         link: 'https://zafarshahid.com/',
       },
       {
