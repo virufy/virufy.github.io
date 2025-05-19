@@ -30,3 +30,4 @@ export { default as TetsujiMadarame } from './tetsuji-madarame.webp';
 export { default as TsutomuIto } from './tsutomu-ito.webp';
 export { default as VictorWang } from './victor-wang.webp';
 export { default as YukitoshiNakatani } from './yukitoshi-nakatani.webp';
+export { default as ZafarShahid } from './zafar-shahid.webp';
