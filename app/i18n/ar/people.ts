@@ -27,6 +27,7 @@ import {
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
+  ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -108,6 +109,15 @@ const people: People = {
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
       },
       {
+        img: ZafarShahid,
+        name: 'Zafar Shahid',
+        role: 'مستشار التكنولوجيا',
+        texts: [
+          'رائد في مجال الذكاء الاصطناعي الأخضر - سابق في إنفيديا، حاصل على درجة الدكتوراه في علوم الطب الشرعي للوسائط المتعددة، جامعة مونبلييه',
+        ],
+        link: 'https://zafarshahid.com/',
+      },
+      {
         img: RafiAzimKhan,
         name: 'رافي أزيم خان',
         role: 'مستشار قانوني تنفيذي',
@@ -183,14 +193,14 @@ const people: People = {
       },
       {
         img: AdamLeipzig,
-        name: "آدم لايبزيغ",
-        role: "المستشار التنفيذي",
+        name: 'آدم لايبزيغ',
+        role: 'المستشار التنفيذي',
         texts: [
-          "الرئيس التنفيذي لشركة Entertainment Media Partners",
-          "الرئيس السابق لشركة National Geographic Films",
-          "عضو هيئة التدريس المحترف بمدرسة الأعمال بجامعة بيركلي هاس"
+          'الرئيس التنفيذي لشركة Entertainment Media Partners',
+          'الرئيس السابق لشركة National Geographic Films',
+          'عضو هيئة التدريس المحترف بمدرسة الأعمال بجامعة بيركلي هاس',
         ],
-        "link": "https://www.linkedin.com/in/adamleipzig/"
+        link: 'https://www.linkedin.com/in/adamleipzig/',
       },
       {
         img: RokSosic,
@@ -269,13 +279,10 @@ const people: People = {
       },
       {
         img: KoheiWakamiya,
-        name: "كوهي واكاميا",
-        role: "مستشار الذكاء الاصطناعي الصوتي",
-        texts: [
-          "أستاذ مساعد تصميم الصوتيات",
-          "جامعة كيوشو"
-        ],
-        link: "https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html"
+        name: 'كوهي واكاميا',
+        role: 'مستشار الذكاء الاصطناعي الصوتي',
+        texts: ['أستاذ مساعد تصميم الصوتيات', 'جامعة كيوشو'],
+        link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
       },
       {
         img: TamerFahmy,
