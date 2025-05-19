@@ -27,6 +27,7 @@ import {
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
+  ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -63,10 +64,7 @@ const people: People = {
         img: JesseBump,
         name: 'ジェシー・バンプ博士、MPH、FRSA',
         role: '公衆衛生アドバイザー',
-        texts: [
-          '国際保健・人口学部門',
-          'ハーバードT.H.チャン公衆衛生大学院',
-        ],
+        texts: ['国際保健・人口学部門', 'ハーバードT.H.チャン公衆衛生大学院'],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
@@ -90,7 +88,11 @@ const people: People = {
         img: MadhavDatt,
         name: 'マダブ・ダット',
         role: 'エグゼクティブ非営利アドバイザー',
-        texts: ['Green the Gene創設者', '国連環境計画元青年代表', 'MBA、ハーバード・ビジネス・スクール'],
+        texts: [
+          'Green the Gene創設者',
+          '国連環境計画元青年代表',
+          'MBA、ハーバード・ビジネス・スクール',
+        ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
       {
@@ -99,6 +101,15 @@ const people: People = {
         role: 'データ・AI製品戦略アドバイザー',
         texts: ['創設者 / エグゼクティブコーチ', 'MS- スタンフォード大学'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
+      },
+      {
+        img: ZafarShahid,
+        name: 'Zafar Shahid',
+        role: 'テクノロジーアドバイザー',
+        texts: [
+          'グリーン AI リーダー - 元 NVIDIA、元 Meta 博士（マルチメディアフォレンジック）、モンペリエ大学',
+        ],
+        link: 'https://zafarshahid.com/',
       },
       {
         img: RafiAzimKhan,
@@ -174,15 +185,15 @@ const people: People = {
       },
       {
         img: AdamLeipzig,
-        name: "アダム・ライプツィッヒ",
-        role: "エグゼクティブアドバイザー",
+        name: 'アダム・ライプツィッヒ',
+        role: 'エグゼクティブアドバイザー',
         texts: [
-          "Entertainment Media PartnersのCEO",
-          "元National Geographic Filmsの社長",
-          "バークレーのハースビジネススクールの専門教授"
+          'Entertainment Media PartnersのCEO',
+          '元National Geographic Filmsの社長',
+          'バークレーのハースビジネススクールの専門教授',
         ],
-        link: "https://www.linkedin.com/in/adamleipzig/"
-      },      
+        link: 'https://www.linkedin.com/in/adamleipzig/',
+      },
       {
         img: RokSosic,
         name: 'ロック・ソシック',
@@ -262,10 +273,7 @@ const people: People = {
         img: KoheiWakamiya,
         name: '若宮 耕平',
         role: '音声AI顧問',
-        texts: [
-          '音声AIアドバイザー',
-          '九州大学'
-        ],
+        texts: ['音声AIアドバイザー', '九州大学'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_ja.html',
       },
       {
