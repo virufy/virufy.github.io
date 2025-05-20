@@ -52,6 +52,7 @@ const people: People = {
           'Profesora Asistente Clínica de ENT, Facultad de Medicina de Stanford',
         ],
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
+        index: 0,
       },
       {
         img: JureLeskovec,
@@ -62,6 +63,7 @@ const people: People = {
           'Profesor Asociado de IA - Stanford',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
+        index: 3,
       },
       {
         img: MelissaDyrdahl,
@@ -69,6 +71,7 @@ const people: People = {
         role: 'Asesora Ejecutiva de Marketing',
         texts: ['Ex CMO - Adobe', 'Miembro de la Junta - CommonSpirit Health'],
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
+        index: 4,
       },
       {
         img: KutsunaSatoshi,
@@ -78,6 +81,7 @@ const people: People = {
           'Profesor de Control y Prevención de Infecciones - Universidad de Osaka',
         ],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
+        index: 5,
       },
       {
         img: MadhavDatt,
@@ -89,6 +93,7 @@ const people: People = {
           'MBA, Escuela de Negocios de Harvard',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
+        index: 6,
       },
       {
         img: MayXu,
@@ -99,6 +104,7 @@ const people: People = {
           'M.S. - Universidad de Stanford',
         ],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
+        index: 7,
       },
       {
         img: ZafarShahid,
@@ -109,6 +115,7 @@ const people: People = {
           'Doctorado en Ciencias Forenses Multimedia, Universidad de Montpellier',
         ],
         link: 'https://zafarshahid.com/',
+        index: 1,
       },
       {
         img: RafiAzimKhan,
@@ -118,6 +125,7 @@ const people: People = {
           'Socio, IP/IT y Jefe de Privacidad de Datos Europa Pillsbury Winthrop Shaw Pittman LLP',
         ],
         link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        index: 8,
       },
       {
         img: RonanDunlop,
@@ -128,6 +136,7 @@ const people: People = {
           'VP de Marketing - Cohuman',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
+        index: 13,
       },
       {
         img: MarkHaseltine,
@@ -138,6 +147,7 @@ const people: People = {
           'Alumnus de Ciencias de la Computación - MIT',
         ],
         link: 'https://www.linkedin.com/in/mhaseltine/',
+        index: 14,
       },
       {
         img: FaisalCheema,
@@ -147,6 +157,7 @@ const people: People = {
           'Profesor Asociado de Ciencias Biomédicas y Clínicas, Facultad de Medicina Tilman J. Fertitta, Universidad de Houston',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
+        index: 15,
       },
       {
         img: MertPilanci,
@@ -156,6 +167,7 @@ const people: People = {
           'Profesor Asistente de IA - Universidad de Stanford, Ingeniería Eléctrica',
         ],
         link: 'https://stanford.edu/~pilanci/',
+        index: 16,
       },
       {
         img: TetsujiMadarame,
@@ -166,6 +178,7 @@ const people: People = {
           'MBA - Escuela de Negocios de la Universidad de Stanford',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
+        index: 17,
       },
       {
         img: YukitoshiNakatani,
@@ -173,6 +186,7 @@ const people: People = {
         role: 'Asesor Ejecutivo de Japón',
         texts: ['CEO, IT Value Consulting', 'Ex Director, Accenture Japón'],
         link: 'https://www.facebook.com/nakatani.yukitoshi',
+        index: 18,
       },
       {
         img: VictorWang,
@@ -183,6 +197,7 @@ const people: People = {
           'MBA - Escuela de Negocios de la Universidad de Stanford',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
+        index: 19,
       },
       {
         img: AdamLeipzig,
@@ -194,6 +209,7 @@ const people: People = {
           'Miembro del profesorado profesional en la Escuela de Negocios de Berkeley Haas',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
+        index: 20,
       },
       {
         img: RokSosic,
@@ -204,6 +220,7 @@ const people: People = {
           'Escuela de Ingeniería de Stanford',
         ],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
+        index: 21,
       },
       {
         img: RichardNall,
@@ -214,6 +231,7 @@ const people: People = {
           `Maestría en Liderazgo Organizacional - Henley`,
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
+        index: 22,
       },
       {
         img: KhwajaShaik,
@@ -224,6 +242,7 @@ const people: People = {
           'Miembro de la Junta - Universidad de North Florida Computing',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
+        index: 23,
       },
       {
         img: AyomideOwoyemi,
@@ -234,6 +253,7 @@ const people: People = {
           'Embajador - One Young World Nigeria',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
+        index: 24,
       },
       {
         img: TsutomuIto,
@@ -244,6 +264,7 @@ const people: People = {
           'Arquitecto Principal, Tren Bala',
         ],
         link: 'http://tannan.fm/contents/about-us.html',
+        index: 25,
       },
       {
         img: LesAtlas,
@@ -254,6 +275,7 @@ const people: People = {
           'Ph.D. en Ingeniería Eléctrica, Stanford',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+        index: 9,
       },
       {
         img: JesseBump,
@@ -264,6 +286,7 @@ const people: People = {
           'Escuela de Salud Pública T.H. Chan de Harvard',
         ],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
+        index: 2,
       },
       {
         img: NobuyoOzawa,
@@ -271,6 +294,7 @@ const people: People = {
         role: 'Líder de Desarrollo Clínico en Japón',
         texts: ['Gerente de Grupo, Departamento de Desarrollo Clínico, CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
+        index: 10,
       },
       {
         img: HiroyukiKunishima,
@@ -280,6 +304,7 @@ const people: People = {
           'Departamento de Enfermedades Infecciosas, Hospital Universitario St. Marianna',
         ],
         link: 'http://www.k-icnet.org/profile.html',
+        index: 11,
       },
       {
         img: FumihikoYokota,
@@ -287,6 +312,7 @@ const people: People = {
         role: 'Asesor de Salud Pública',
         texts: ['Profesor Asociado de Epidemiología, Universidad de Kyushu'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
+        index: 12,
       },
       {
         img: KoheiWakamiya,
@@ -297,6 +323,7 @@ const people: People = {
           'Universidad de Kyushu',
         ],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
+        index: 26,
       },
       {
         img: TamerFahmy,
@@ -308,6 +335,7 @@ const people: People = {
           'BSc en Ingeniería Biomédica, Universidad de El Cairo',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
+        index: 27,
       },
       {
         img: ShirinHasan,
@@ -318,6 +346,7 @@ const people: People = {
           'M.S., Bioquímica, Universidad de Mumbai',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
+        index: 28,
       },
     ],
   },

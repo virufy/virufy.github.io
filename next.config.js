@@ -56,6 +56,11 @@ const nextConfig = {
         destination:
           'https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform',
       },
+      {
+        source: '/privacy_policy',
+        destination:
+          '/privacy-policy',
+      },
     ];
   },
 

@@ -52,6 +52,7 @@ const people: People = {
           'أستاذ مساعد في الطب الأنف والأذن والحنجرة - كلية الطب بجامعة ستانفورد',
         ],
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
+        index: 0,
       },
       {
         img: JureLeskovec,
@@ -62,6 +63,7 @@ const people: People = {
           'أستاذ مشارك في الذكاء الاصطناعي - جامعة ستانفورد',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
+        index: 3,
       },
       {
         img: MelissaDyrdahl,
@@ -72,6 +74,7 @@ const people: People = {
           'عضو مجلس إدارة - CommonSpirit Health',
         ],
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
+        index: 4,
       },
       {
         img: KutsunaSatoshi,
@@ -79,6 +82,7 @@ const people: People = {
         role: 'مستشار طبي تنفيذي',
         texts: ['أستاذ في مكافحة العدوى والوقاية - جامعة أوساكا'],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
+        index: 5,
       },
       {
         img: MadhavDatt,
@@ -90,6 +94,7 @@ const people: People = {
           'ماجستير في إدارة الأعمال، كلية هارفارد للأعمال',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
+        index: 6,
       },
       {
         img: MayXu,
@@ -97,6 +102,7 @@ const people: People = {
         role: 'مستشارة استراتيجية بيانات ومنتجات الذكاء الاصطناعي',
         texts: ['مؤسسة / مدربة تنفيذية', 'ماجستير - جامعة ستانفورد'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
+        index: 7,
       },
       {
         img: ZafarShahid,
@@ -107,6 +113,7 @@ const people: People = {
           'دكتوراه في الطب الشرعي للوسائط المتعددة، جامعة مونبلييه',
         ],
         link: 'https://zafarshahid.com/',
+        index: 1,
       },
       {
         img: RafiAzimKhan,
@@ -116,6 +123,7 @@ const people: People = {
           'شريك، IP/IT ورئيس خصوصية البيانات أوروبا - Pillsbury Winthrop Shaw Pittman LLP',
         ],
         link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        index: 8,
       },
       {
         img: RonanDunlop,
@@ -126,6 +134,7 @@ const people: People = {
           'نائب رئيس التسويق - Cohuman',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
+        index: 13,
       },
       {
         img: MarkHaseltine,
@@ -133,6 +142,7 @@ const people: People = {
         role: 'مستشار تنفيذي',
         texts: ['CTO / CPO السابق - edX، GoDaddy', 'خريج علوم الكمبيوتر - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
+        index: 14,
       },
       {
         img: FaisalCheema,
@@ -142,6 +152,7 @@ const people: People = {
           'أستاذ مشارك في العلوم الطبية الحيوية والسريرية، كلية الطب Tilman J. Fertitta، جامعة هيوستن',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
+        index: 15,
       },
       {
         img: MertPilanci,
@@ -151,6 +162,7 @@ const people: People = {
           'أستاذ مساعد في الذكاء الاصطناعي - جامعة ستانفورد، الهندسة الكهربائية',
         ],
         link: 'https://stanford.edu/~pilanci/',
+        index: 16,
       },
       {
         img: TetsujiMadarame,
@@ -161,6 +173,7 @@ const people: People = {
           'MBA - جامعة ستانفورد لإدارة الأعمال',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
+        index: 17,
       },
       {
         img: YukitoshiNakatani,
@@ -171,6 +184,7 @@ const people: People = {
           'مدير سابق، أكسنتشر اليابان',
         ],
         link: 'https://www.facebook.com/nakatani.yukitoshi',
+        index: 18,
       },
       {
         img: VictorWang,
@@ -181,6 +195,7 @@ const people: People = {
           'MBA - جامعة ستانفورد لإدارة الأعمال',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
+        index: 19,
       },
       {
         img: AdamLeipzig,
@@ -192,6 +207,7 @@ const people: People = {
           'عضو هيئة التدريس المحترف بمدرسة الأعمال بجامعة بيركلي هاس',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
+        index: 20,
       },
       {
         img: RokSosic,
@@ -199,6 +215,7 @@ const people: People = {
         role: 'مستشار في الذكاء الاصطناعي',
         texts: ['مهندس أبحاث أول', 'جامعة ستانفورد كلية الهندسة'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
+        index: 21,
       },
       {
         img: RichardNall,
@@ -209,6 +226,7 @@ const people: People = {
           `ماجستير في القيادة التنظيمية - Henley`,
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
+        index: 22,
       },
       {
         img: KhwajaShaik,
@@ -219,6 +237,7 @@ const people: People = {
           'عضو مجلس إدارة - جامعة شمال فلوريدا لتكنولوجيا المعلومات',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
+        index: 23,
       },
       {
         img: AyomideOwoyemi,
@@ -229,6 +248,7 @@ const people: People = {
           'سفير - One Young World نيجيريا',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
+        index: 24,
       },
       {
         img: TsutomuIto,
@@ -236,6 +256,7 @@ const people: People = {
         role: 'مستشار تنفيذي مستقبلي',
         texts: ['مؤسس - Tannan FM Radio', 'المدير المعماري، قطار الرصاصة'],
         link: 'http://tannan.fm/contents/about-us.html',
+        index: 25,
       },
       {
         img: LesAtlas,
@@ -246,6 +267,7 @@ const people: People = {
           'دكتوراه في الهندسة الكهربائية، جامعة ستانفورد',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+        index: 9,
       },
       {
         img: JesseBump,
@@ -256,6 +278,7 @@ const people: People = {
           '. كلية هارفارد تي إتش تشان للصحة العامة ',
         ],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
+        index: 2,
       },
       {
         img: NobuyoOzawa,
@@ -263,6 +286,7 @@ const people: People = {
         role: 'قائد تطوير سريري في اليابان',
         texts: ['مدير مجموعة قسم تطوير السريري، CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
+        index: 10,
       },
       {
         img: HiroyukiKunishima,
@@ -270,6 +294,7 @@ const people: People = {
         role: 'مستشار أمراض معدية',
         texts: ['قسم الأمراض المعدية، مستشفى جامعة سانت ماريانا'],
         link: 'http://www.k-icnet.org/profile.html',
+        index: 11,
       },
       {
         img: FumihikoYokota,
@@ -277,6 +302,7 @@ const people: People = {
         role: 'مستشار الصحة العامة',
         texts: ['أستاذ مساعد في الوبائيات، جامعة كيوشو'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/members/yokota-fumihiko',
+        index: 12,
       },
       {
         img: KoheiWakamiya,
@@ -284,6 +310,7 @@ const people: People = {
         role: 'مستشار الذكاء الاصطناعي الصوتي',
         texts: ['أستاذ مساعد تصميم الصوتيات', 'جامعة كيوشو'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
+        index: 26,
       },
       {
         img: TamerFahmy,
@@ -295,6 +322,7 @@ const people: People = {
           'بكالوريوس في الهندسة الطبية الحيوية، جامعة القاهرة',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
+        index: 27,
       },
       {
         img: ShirinHasan,
@@ -305,6 +333,7 @@ const people: People = {
           'ماجستير، الكيمياء الحيوية، جامعة سان خوزيه  / ستانفورد',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
+        index: 28,
       },
     ],
   },
