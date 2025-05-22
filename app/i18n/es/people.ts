@@ -27,6 +27,7 @@ import {
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
+  ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -107,6 +108,16 @@ const people: People = {
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
       },
       {
+        img: ZafarShahid,
+        name: 'Zafar Shahid',
+        role: 'Asesor Tecnológico',
+        texts: [
+          'Líder en IA ecológica: ex-NVIDIA, ex-Meta',
+          'Investigación forense multimedia, Universidad de Montpellier',
+        ],
+        link: 'https://zafarshahid.com/',
+      },
+      {
         img: RafiAzimKhan,
         name: 'Rafi Azim-Khan',
         role: 'Executive Legal Advisor',
@@ -129,7 +140,10 @@ const people: People = {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
         role: 'Executive Advisor',
-        texts: ['Former CTO/CPO - edX, GoDaddy', 'Computer Science alumnus - MIT'],
+        texts: [
+          'Former CTO/CPO - edX, GoDaddy',
+          'Computer Science alumnus - MIT',
+        ],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       {
@@ -179,15 +193,15 @@ const people: People = {
       },
       {
         img: AdamLeipzig,
-        name: "Adam Leipzig",
-        role: "Asesor Ejecutivo",
+        name: 'Adam Leipzig',
+        role: 'Asesor Ejecutivo',
         texts: [
-          "Director Ejecutivo de Entertainment Media Partners",
-          "Ex Presidente de National Geographic Films",
-          "Miembro del profesorado profesional en la Escuela de Negocios de Berkeley Haas"
+          'Director Ejecutivo de Entertainment Media Partners',
+          'Ex Presidente de National Geographic Films',
+          'Miembro del profesorado profesional en la Escuela de Negocios de Berkeley Haas',
         ],
-        link: "https://www.linkedin.com/in/adamleipzig/"
-      },      
+        link: 'https://www.linkedin.com/in/adamleipzig/',
+      },
       {
         img: RokSosic,
         name: 'Rok Sosic',
@@ -267,14 +281,14 @@ const people: People = {
       },
       {
         img: KoheiWakamiya,
-        name: "Kohei Wakamiya",
-        role: "Asesor de Inteligencia Artificial de Voz",
+        name: 'Kohei Wakamiya',
+        role: 'Asesor de Inteligencia Artificial de Voz',
         texts: [
-          "Profesor Asistente de Diseño Acústico",
-          "Universidad de Kyushu"
+          'Profesor Asistente de Diseño Acústico',
+          'Universidad de Kyushu',
         ],
-        link: "https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html"
-      },      
+        link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
+      },
       {
         img: TamerFahmy,
         name: 'Tamer Fahmy',
