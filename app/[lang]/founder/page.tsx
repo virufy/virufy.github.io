@@ -8,7 +8,7 @@ export default function FounderPage() {
       {/* Hero Section */}
       <div className="relative h-[300px] md:h-[500px] w-full">
         <img
-          src="https://via.placeholder.com/1600x500?text=background-OurPeople"
+          src="/images/team/background-OurPeople.png"
           alt="Founder background"
           className="object-cover rounded-xl w-full h-full"
         />
@@ -24,7 +24,7 @@ export default function FounderPage() {
         <div className="grid md:grid-cols-3 gap-8 items-start">
           <div>
             <img
-              src="https://via.placeholder.com/400x500?text=Amil"
+              src="/images/team/amil.png"
               alt="Amil"
               className="rounded-2xl object-contain w-full"
             />
@@ -41,7 +41,7 @@ export default function FounderPage() {
         <div className="grid md:grid-cols-3 gap-8 items-start">
           <div>
             <img
-              src="https://via.placeholder.com/400x300?text=AmilFirstImg"
+              src="/images/team/AmilFirstImg.png"
               alt="Amil First"
               className="rounded-2xl object-contain w-full"
             />
@@ -54,7 +54,7 @@ export default function FounderPage() {
         <div className="grid md:grid-cols-3 gap-8 items-start">
           <div>
             <img
-              src="https://via.placeholder.com/400x300?text=AmilSecondImg"
+              src="/images/team/AmilSecondImg.png"
               alt="Amil Second"
               className="rounded-2xl object-contain w-full"
             />
@@ -97,7 +97,7 @@ export default function FounderPage() {
       {/* Donate CTA */}
       <div className="relative h-[300px] md:h-[400px] w-full mt-20">
         <img
-          src="https://via.placeholder.com/1600x400?text=hero-donating"
+          src="/images/team/hero-donating.png"
           alt="Donate Background"
           className="object-cover w-full h-full"
         />
