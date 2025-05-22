@@ -30,7 +30,7 @@ export default function FounderPage() {
             />
           </div>
           <div className="md:col-span-2 space-y-4">
-            <p>Amil's journey began with a mission.</p>
+            <p>Amil&apos;s journey began with a mission.</p>
             <p>He believed in the power of people and tech.</p>
             <p>His story continues to inspire.</p>
           </div>
@@ -65,12 +65,12 @@ export default function FounderPage() {
           </div>
         </div>
 
-        <p>Innovation is not just technology, it’s leadership.</p>
-        <p>And that’s what Amil brought to the table.</p>
+        <p>Innovation is not just technology, it&apos;s leadership.</p>
+        <p>And that&apos;s what Amil brought to the table.</p>
 
         {/* Publications */}
         <div className="pt-12 text-center">
-          <h2 className="text-xl font-semibold pb-4">Amil's Publications</h2>
+          <h2 className="text-xl font-semibold pb-4">Amil&apos;s Publications</h2>
           <div className="space-y-2">
             <a className="text-blue-600 underline" href="https://dl.acm.org/doi/10.1145/3556384.3556414" target="_blank">
               Paper 1: AI in Healthcare
