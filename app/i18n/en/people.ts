@@ -64,16 +64,6 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
-        img: JesseBump,
-        name: 'Jesse Bump, Ph.D., MPH, FRSA',
-        role: 'Population Health Advisor',
-        texts: [
-          'Department of Global Health and Population',
-          'Harvard T.H. Chan School of Public Health',
-        ],
-        link: 'https://www.hsph.harvard.edu/jesse-bump/',
-      },
-      {
         img: MelissaDyrdahl,
         name: 'Melissa Dyrdahl',
         role: 'Executive Marketing Advisor',
@@ -255,6 +245,16 @@ const people: People = {
           'Ph.D. Electrical Engineering, Stanford',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+      },
+      {
+        img: JesseBump,
+        name: 'Jesse Bump, Ph.D., MPH, FRSA',
+        role: 'Population Health Advisor',
+        texts: [
+          'Department of Global Health and Population',
+          'Harvard T.H. Chan School of Public Health',
+        ],
+        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: NobuyoOzawa,

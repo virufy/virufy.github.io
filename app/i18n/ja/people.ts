@@ -61,13 +61,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
-        img: JesseBump,
-        name: 'ジェシー・バンプ博士、MPH、FRSA',
-        role: '公衆衛生アドバイザー',
-        texts: ['国際保健・人口学部門', 'ハーバードT.H.チャン公衆衛生大学院'],
-        link: 'https://www.hsph.harvard.edu/jesse-bump/',
-      },
-      {
+
         img: MelissaDyrdahl,
         name: 'メリッサ・ダイダール',
         role: 'エグゼクティブマーケティングアドバイザー',
@@ -104,7 +98,9 @@ const people: People = {
       },
       {
         img: ZafarShahid,
-        name: 'Zafar Shahid',
+
+        name: 'ザファル・シャヒド',
+
         role: 'テクノロジーアドバイザー',
         texts: [
           'グリーンAIリーダー - 元NVIDIA、元Meta',
@@ -248,6 +244,13 @@ const people: People = {
           'スタンフォード大学電気工学博士',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+      },
+      {
+        img: JesseBump,
+        name: 'ジェシー・バンプ博士、MPH、FRSA',
+        role: '公衆衛生アドバイザー',
+        texts: ['国際保健・人口学部門', 'ハーバードT.H.チャン公衆衛生大学院'],
+        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: NobuyoOzawa,

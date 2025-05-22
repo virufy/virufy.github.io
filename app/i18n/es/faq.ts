@@ -18,145 +18,152 @@ const faq: FAQ = {
     title: [
       {
         type: 'text',
-        text: 'How can we ',
+        text: '¿Cómo podemos ',
       },
       {
         type: 'span',
-        text: 'help ',
+        text: 'ayudar ',
       },
       {
         type: 'text',
-        text: 'you?',
+        text: 'a ti?',
       },
     ],
     input: {
-      placeholder: 'Start typing your search...',
+      placeholder: 'Comienza a escribir tu búsqueda...',
       img: SearchIcon,
-      altText: 'search icon',
+      altText: 'ícono de búsqueda',
     },
     texts: [
       {
         type: 'text',
-        text: 'Or ',
+        text: 'O ',
       },
       {
         type: 'span',
-        text: 'choose ',
+        text: 'elige ',
       },
       {
         type: 'text',
-        text: 'an option below to help find what you are looking for.',
+        text: 'una opción a continuación para ayudar a encontrar lo que buscas.',
       },
     ],
   },
   topicsSection: {
-    title: 'FAQ Topics',
+    title: 'Temas de Preguntas Frecuentes',
     cards: [
       {
-        title: 'Virufy App',
+        title: 'Preguntas Comunes',
+        img: QuestionMarkIcon,
+        altText: '',
+      },
+      {
+        title: 'Aplicación Virufy',
         img: PhoneInHandIcon,
         altText: '',
       },
       {
-        title: 'About Virufy',
+        title: 'Acerca de Virufy',
         img: GlobeIcon,
         altText: '',
       },
       {
-        title: 'About AI',
+        title: 'Acerca de la IA',
         img: RecycleIcon,
         altText: '',
       },
       {
-        title: 'Finances',
+        title: 'Finanzas',
         img: MonitorIcon,
         altText: '',
       },
       {
-        title: 'Privacy',
+        title: 'Privacidad',
         img: PrivacyIcon,
         altText: '',
       },
       {
-        title: 'Other',
+        title: 'Otros',
         img: QuestionMarkIcon,
         altText: '',
       },
     ],
   },
   questionsSection: {
-    topicTitle: 'Common Questions',
-    noResultsTitle: 'No Results Found',
+    topicTitle: 'Preguntas Comunes',
+    noResultsTitle: 'No Se Encontraron Resultados',
     questionsByTopic: {
-      'Virufy App': [
+      'Aplicación Virufy': [
         {
           question:
-            'When and how will the app give COVID-19 prediction results?',
+            '¿Cuándo y cómo la aplicación dará resultados de predicción de infecciones de las vías respiratorias superiores?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Our app is currently for data collection only. We cannot release a COVID-19 prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.',
+                  text: 'Actualmente, nuestra aplicación solo se utiliza para la recopilación de datos. No podemos lanzar una aplicación de predicción de infecciones de las vías respiratorias superiores sin la aprobación de los departamentos de salud pública de cada país y estudios clínicos para validar la tecnología de IA en las condiciones locales. Este proceso puede tardar semanas o meses, dependiendo de la rapidez del socio gubernamental. Virufy agradece la colaboración de funcionarios de salud y hospitales para ofrecer la tecnología de forma gratuita a la población y optimizar el uso de las costosas pruebas PCR solo cuando sea necesario.',
                 },
               ],
             },
           ],
         },
         {
-          question: 'Is your app available for iOS or Android?',
+          question: '¿Está disponible tu aplicación para iOS o Android?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Our app is designed as a web app, so it can be used from the web browser on any mobile device. It does not require a separate download or install.',
+                  text: 'Nuestra aplicación está diseñada como una aplicación web, por lo que puede usarse desde el navegador web en cualquier dispositivo móvil. No requiere una descarga o instalación separada.',
                 },
               ],
             },
           ],
         },
         {
-          question: 'Will the application be available for free and worldwide?',
+          question:
+            '¿Estará la aplicación disponible de forma gratuita y en todo el mundo?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'As a 501(c)(3) non-profit organization, our intention is to make the app free for the benefit of low-income countries. However, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds.',
+                  text: 'Como organización sin fines de lucro 501(c)(3), podríamos tener que cobrar una tarifa nominal para financiar nuestras operaciones en caso de no poder recaudar fondos suficientes. Sin embargo, nuestra intención es que la aplicación sea gratuita para beneficio de los países de bajos ingresos.',
                 },
               ],
             },
           ],
         },
         {
-          question: 'Do you plan to extend this app in a for-profit startup?',
+          question:
+            '¿Planean extender esta aplicación en una startup con fines de lucro?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Virufy is a non-profit organization. We may partner with companies if needed to accelerate deployment of the app for the benefit of people.',
+                  text: 'Virufy es una organización sin fines de lucro. Es posible que nos asociemos con empresas si es necesario para acelerar el despliegue de la aplicación para el beneficio de la gente.',
                 },
               ],
             },
           ],
         },
       ],
-      'About Virufy': [
+      'Acerca de Virufy': [
         {
-          question: 'How was the initiative created?',
+          question: '¿Cómo se creó la iniciativa?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world. As a One Young World Japan ambassador who has travelled to over 25 countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.',
+                  text: 'Cuando la pandemia golpeó, el fundador de Virufy, Amil, sabía que los smartphones estaban presentes en todas partes y que el COVID afectaba la nariz, la garganta y los pulmones. Hipotetizó que los sonidos de la respiración y la tos podrían analizarse con aprendizaje automático para detectar patrones de COVID. Querido hacer un impacto positivo, orquestó un estudio clínico con 362 pacientes en un hospital universitario de renombre. El equipo original de Virufy, comenzando con estudiantes de AI graduados de Stanford, se expandió a voluntarios de universidades de todo el mundo. Como embajador de One Young World Japón, que ha viajado a más de 25 países, Amil entiende la perspectiva global y cómo una solución basada en smartphone puede ser utilizada por personas de todo el mundo.',
                 },
               ],
             },
@@ -164,14 +171,14 @@ const faq: FAQ = {
         },
         {
           question:
-            'How is Virufy different from other groups working on similar projects?',
+            '¿En qué se diferencia Virufy de otras iniciativas que trabajan en proyectos similares?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Because Virufy is a 501(c)(3) non-profit organization, we are able to recruit highly talented professionals as volunteers. Our team is global, spanning five continents, and our organization thus has global empathy built in. We are not concerned with making profit, so are able to work in developing countries. Our dense university alumni and professional networks grant us access to top echelon contacts in every country of the world. Mentorship is built into our organization, as dozens of young professionals in our team are empowered by sage advice from senior industry experts leads to rapid, creative activity focused in the right direction.',
+                  text: 'Debido a que Virufy es una organización sin fines de lucro 501(c)(3), podemos reclutar profesionales altamente talentosos como voluntarios. Nuestro equipo es global, abarcando cinco continentes, y nuestra organización tiene empatía global incorporada. No nos preocupamos por generar ganancias, por lo que podemos trabajar en países en desarrollo. Nuestras densas redes de alumni universitarios y profesionales nos brindan acceso a contactos de alto nivel en cada país del mundo. El mentorazgo está integrado en nuestra organización, ya que decenas de jóvenes profesionales en nuestro equipo se benefician de los sabios consejos de expertos senior, lo que lleva a una actividad rápida y creativa enfocada en la dirección correcta.',
                 },
               ],
             },
@@ -179,28 +186,14 @@ const faq: FAQ = {
         },
         {
           question:
-            'What phase of the investigation are you at? Is there a deadline to participate?',
+            '¿En qué fase de la investigación se encuentran? ¿Hay una fecha límite para participar?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'We have put considerable effort to form partnerships, build our mobile app, register our California non-profit entity, and build our policies for compliance with data privacy laws across dozens of countries. Our data collection app is at the breakthrough stage, as have addressed the majority of healthcare data privacy and technical concerns to allow for launch. We have already gotten data privacy, information security, and UI/UX in place for our data collection mobile app, along with a scalable backend AWS infrastructure. We had large volumes of data collection exceeding 250,000 patients and with the help of AI are building the solution. There is no deadline, and we always welcome partners who can provide grant funding, volunteer services, and clinical data collection.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question: 'What is unique about Virufy from other projects?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'As a young organization with a diverse and global team including alumni from more than 25 universities, we are guided by top-level industry professionals. Our multidisciplinary team has expertise in law, machine learning, medicine, information security, and mobile app development. Our One Young World network allows us to connect with trusted partners in every country. We welcome all, and being a 501(c)(3) non-profit allows for volunteers to join. As a volunteer run non-profit, we are independent and have less red tape.',
+                  text: 'Hemos puesto un esfuerzo considerable para formar asociaciones, construir nuestra aplicación móvil, registrar nuestra entidad sin fines de lucro en California y construir nuestras políticas para cumplir con las leyes de privacidad de datos en docenas de países. Nuestra aplicación de recolección de datos está en la etapa de avances, ya que hemos abordado la mayoría de las preocupaciones sobre la privacidad de los datos en la atención médica y los aspectos técnicos para permitir el lanzamiento. Ya hemos implementado privacidad de datos, seguridad de la información y UI/UX para nuestra aplicación móvil de recolección de datos, junto con una infraestructura backend escalable en AWS. Ya hemos recolectado grandes volúmenes de datos, superando los 250,000 pacientes, y con la ayuda de IA estamos construyendo la solución. No hay fecha límite, y siempre damos la bienvenida a socios que puedan proporcionar financiamiento de subvenciones, servicios voluntarios y recolección de datos clínicos.',
                 },
               ],
             },
@@ -208,30 +201,46 @@ const faq: FAQ = {
         },
         {
           question:
-            'How much investment was made to make the Virufy project possible?',
+            '¿Qué tiene de especial Virufy en comparación con otras organizaciones?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'More than 1,000 volunteers have put thousands of hours into making the project possible. Several companies have supported us with free software, including email, storage, and messaging platforms, along with cloud compute. Certain softwares such as video conferencing and project management tools have not been free, so unfortunately have to be paid from founder Amil’s limited savings. We believe that if we are successful, our cloud compute costs will increase, but we will be able to attract ample grant funding and private donations, along with government support to keep our system running.',
+                  text: 'Como una organización joven con un equipo diverso y global que incluye alumni de más de 25 universidades, estamos guiados por profesionales de alto nivel en la industria. Nuestro equipo multidisciplinario tiene experiencia en derecho, aprendizaje automático, medicina, seguridad de la información y desarrollo de aplicaciones móviles. Nuestra red de One Young World nos permite conectarnos con socios de confianza en cada país. Damos la bienvenida a todos, y ser una organización sin fines de lucro 501(c)(3) permite que los voluntarios se unan. Como una organización sin fines de lucro dirigida por voluntarios, somos independientes y tenemos menos burocracia.',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            '¿Cuánta inversión se realizó para hacer posible la iniciativa Virufy?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Más de 1,000 voluntarios han invertido miles de horas para hacer posible el proyecto. Varias empresas nos han apoyado con software gratuito, incluyendo plataformas de correo electrónico, almacenamiento y mensajería, junto con computación en la nube. Algunos softwares como videoconferencias y herramientas de gestión de proyectos no han sido gratuitos, por lo que, lamentablemente, deben ser pagados con los limitados ahorros del fundador Amil. Creemos que si tenemos éxito, nuestros costos de computación en la nube aumentarán, pero podremos atraer financiamiento amplio de',
                 },
               ],
             },
           ],
         },
       ],
-      'About AI': [
+      'Acerca de la IA': [
         {
-          question: 'Why are COVID-19 coughs distinguishable?',
+          question:
+            '¿Por qué se distinguen las toses causadas por infecciones de las vías respiratorias superiores?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Similar to other respiratory diseases, COVID-19 damages the throat and lungs, creating detectable differences in cough patterns. Consequently, cough sounds can be analyzed to detect COVID-19​. and other upper respiratory diseases. Globally, this idea is being actively researched by several prestigious institutions, including Carnegie Mellon (CMU), MIT, and Cambridge. For example,research done by University of Cambridge showed that a simple binary machine learning classifier is able to classify COVID-19 positive patients through breathing and coughing sounds with high accuracy. Similarly, researchers at CMU identified 18 voice features that distinguish positive COVID-19 patients and trained an academic model to detect COVID-19 with high accuracy.',
+                  text: 'Las infecciones de las vías respiratorias superiores dañan la garganta y los pulmones, creando diferencias detectables en los patrones de tos. Por consiguiente, los sonidos de la tos pueden analizarse para detectar infecciones de las vías respiratorias superiores. A nivel mundial, esta idea está siendo investigada activamente por varias instituciones prestigiosas, como Carnegie Mellon (CMU), MIT y Cambridge. Por ejemplo, una investigación realizada por la Universidad de Cambridge demostró que un clasificador binario simple de aprendizaje automático es capaz de clasificar a pacientes positivos de COVID-19 mediante sonidos de respiración y tos con alta precisión. De igual manera, investigadores de la CMU identificaron 18 características de voz que distinguen a pacientes positivos de COVID-19 y entrenaron un modelo académico para detectar la COVID-19 con alta precisión.',
                 },
               ],
             },
@@ -239,28 +248,28 @@ const faq: FAQ = {
         },
         {
           question:
-            'What was the main difficulty in collecting and processing data? Was there any region where artificial intelligence was less accurate, for example?',
+            '¿Cuál fue la principal dificultad al recopilar y procesar los datos? ¿Hubo alguna región donde la inteligencia artificial fuera menos precisa, por ejemplo?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'The process is slow and cumbersome when collecting from hospitals, requiring clinical study forms and IRB approvals. With supervision from various medical advisors, including from Harvard and Stanford, we have enrolled more than 250,000 patients in our clinical studies across 5 countries. For collecting directly from users, we spent significant efforts with pro bono expert lawyers to ensure compliance with data privacy laws, including LGPD, GDPR, and CCPA. As described in our research paper, some of the difficulties we found in processing data included excessive background noises and incorrect cough recordings submitted by users, which required the AI developers to manually clean the audio samples before training AI models.',
+                  text: 'El proceso es lento y engorroso al recopilar datos de hospitales, ya que requiere formularios de estudios clínicos y aprobaciones del IRB. Con la supervisión de varios asesores médicos, incluidos de Harvard y Stanford, hemos inscrito a más de 250,000 pacientes en nuestros estudios clínicos en 5 países. Para recopilar directamente de los usuarios, dedicamos importantes esfuerzos con abogados expertos pro bono para garantizar el cumplimiento de las leyes de privacidad de datos, incluidas la LGPD, GDPR y CCPA. Como se describe en nuestro artículo de investigación, algunas de las dificultades que encontramos al procesar los datos incluyeron ruidos de fondo excesivos y grabaciones incorrectas de tos enviadas por los usuarios, lo que requirió que los desarrolladores de IA limpiaran manualmente las muestras de audio antes de entrenar los modelos de IA.',
                 },
               ],
             },
           ],
         },
         {
-          question: 'Can asymptomatic cases be detected?',
+          question: '¿Se pueden detectar casos asintomáticos?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Yes, asymptomatic detection has been shown in research by MIT and other groups. It is especially important for people in their 20s and 30s who are more likely to be asymptomatic.',
+                  text: 'Sí, la detección asintomática ha sido demostrada en investigaciones del MIT y otros grupos. Es especialmente importante para personas en sus 20 y 30 años que tienen más probabilidades de ser asintomáticas.',
                 },
               ],
             },
@@ -268,31 +277,31 @@ const faq: FAQ = {
         },
         {
           question:
-            'Will the application use AI developed by third parties or created just for this purpose?',
+            '¿La aplicación utilizará inteligencia artificial desarrollada por terceros o creada solo para este propósito?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Virufy has its own AI research team with patented technology. We are open to collaboration, co-development, and integration of AI algorithms from other research groups.',
+                  text: 'Virufy cuenta con su propio equipo de investigación en IA con tecnología patentada. Estamos abiertos a la colaboración, el desarrollo conjunto y la integración de algoritmos de IA de otros grupos de investigación.',
                 },
               ],
             },
           ],
         },
       ],
-      Finances: [
+      Finanzas: [
         {
           question:
-            'Do I need to make any financial contribution to donate my cough?',
+            '¿Necesito hacer alguna contribución financiera para donar mi tos?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Virufy is currently only collecting coughs from certain countries, which can be found in our app: ',
+                  text: 'Virufy actualmente solo está recolectando toses de ciertos países, los cuales se pueden encontrar en nuestra app: ',
                 },
                 {
                   type: 'link',
@@ -308,42 +317,28 @@ const faq: FAQ = {
           ],
         },
         {
-          question: 'Do I need to have coughing symptoms to donate my cough?',
+          question: '¿Cuántos donantes han tenido en total?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'No, the app is also compatible with a forced cough.',
+                  text: 'Tenemos más de 5,000 grabaciones de tos de más de 10 países, principalmente en Sudamérica y el sur de Asia. Algunas de estas son clínicas y otras han sido aportadas directamente por individuos a través de nuestra app.',
                 },
               ],
             },
           ],
         },
         {
-          question: 'How many donors have you had in total?',
+          question: '¿Cuáles son los gastos operativos de la organización?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'We have more than 5,000 cough recordings from over 10 countries, mostly in South America and South Asia. Some of these are clinical, and others are contributed directly by individuals in our app.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question: 'What are the operational expenses for the organization?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'We are currently completely volunteer run. Our main budget requirements are for marketing and clinical studies for cough data collection. We would also need money for computation later on after scaling to a large user base.',
+                  text: 'Actualmente funcionamos completamente con voluntarios. Nuestras principales necesidades presupuestarias son para marketing y estudios clínicos para la recopilación de datos de tos. También necesitaríamos fondos para computación una vez que escalemos a una gran base de usuarios.',
                 },
               ],
             },
@@ -351,30 +346,30 @@ const faq: FAQ = {
         },
         {
           question:
-            'Does the team get funding? If so, where and how much? What is it used on?',
+            '¿El equipo recibe financiamiento? Si es así, ¿de dónde y cuánto? ¿En qué se utiliza?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'We partner with several universities to apply for R&D grants leveraging our 501(c)(3) status.',
+                  text: 'Nos asociamos con varias universidades para solicitar subvenciones de I+D aprovechando nuestro estatus 501(c)(3).',
                 },
               ],
             },
           ],
         },
       ],
-      Privacy: [
+      Privacidad: [
         {
-          question: 'How will Virufy securely store my data?',
+          question: '¿Cómo almacenará Virufy mis datos de forma segura?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at ',
+                  text: 'Usamos Amazon Web Services (AWS) para la recopilación de datos de estudios de investigación. AWS almacena los datos en una aplicación segura con acceso y controles restringidos. Tus datos se almacenarán en AWS hasta que los descarguemos. Los almacenaremos en una base de datos con acceso restringido. Si deseas más información sobre cómo AWS almacena tus datos, por favor visita sus respectivas políticas de privacidad en ',
                 },
                 {
                   type: 'link',
@@ -383,7 +378,7 @@ const faq: FAQ = {
                 },
                 {
                   type: 'text',
-                  text: '. If you would like to learn more, please refer to the Virufy privacy policy.',
+                  text: '. Si deseas saber más, consulta la política de privacidad de Virufy.',
                 },
               ],
             },
@@ -391,67 +386,67 @@ const faq: FAQ = {
         },
         {
           question:
-            'Is my privacy ever at risk of being exposed when I donate my cough to Virufy?',
+            '¿Está mi privacidad en riesgo cuando dono mi tos a Virufy?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Our strong legal and information security teams have developed a DPIA to address potential risks and threats for your privacy. We will only store your personal data in an anonymized form (where you cannot be identified in any way) and in a secure database with restricted access. If you would like to learn more please refer to the Virufy Privacy Policy.',
+                  text: 'Nuestros sólidos equipos legales y de seguridad de la información han desarrollado una DPIA para abordar posibles riesgos y amenazas a tu privacidad. Solo almacenaremos tus datos personales en forma anonimizada (donde no se te pueda identificar de ninguna manera) y en una base de datos segura con acceso restringido. Si deseas más información, consulta la Política de Privacidad de Virufy.',
                 },
               ],
             },
           ],
         },
         {
-          question: 'Does Virufy have a privacy policy and cookie policy?',
+          question: '¿Virufy tiene una política de privacidad y de cookies?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, participation in our cough donation study, contacting us, and volunteer applications. Refer to the footer for a detailed Privacy Policy and Cookie Policy.',
+                  text: 'Virufy toma en serio la privacidad y protección de tu información personal. Nuestro equipo legal ha preparado una Política de Privacidad y una Política de Cookies detalladas para proteger la información personal que compartes con nosotros a través del uso de nuestro sitio web, la participación en nuestro estudio de donación de tos, el contacto con nosotros y las solicitudes de voluntariado. Consulta el pie de página para acceder a la Política de Privacidad y la Política de Cookies detalladas.',
                 },
               ],
             },
           ],
         },
         {
-          question: 'Will my data be shared with third parties?',
+          question: '¿Se compartirán mis datos con terceros?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'If you opt-in to share your contact information (e.g., email and phone number) with us, we will not distribute any of this personal identifiable information to any third party. However, we may share your anonymized information, such as your cough sounds, with third parties in order to accelerate global research efforts to stop the COVID-19 pandemic and other future spreads of disease. More details can be found in our Privacy Policy and the data collection study Consent Form.',
+                  text: 'Si optas por compartir tu información de contacto (por ejemplo, correo electrónico y número de teléfono) con nosotros, no distribuiremos ninguno de estos datos personales identificables a ningún tercero. Sin embargo, podemos compartir tu información anonimizada, como los sonidos de tu tos, con terceros para acelerar los esfuerzos de investigación global para detener la pandemia de COVID-19 y otras futuras propagaciones de enfermedades. Puedes encontrar más detalles en nuestra Política de Privacidad y el Formulario de Consentimiento del estudio de recopilación de datos.',
                 },
               ],
             },
           ],
         },
       ],
-      Other: [
+      Otros: [
         {
-          question: 'How can I support Virufy more?',
+          question: '¿Cómo puedo apoyar más a Virufy?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'You can join our team today and look at the ',
+                  text: 'Puedes unirte a nuestro equipo hoy y consultar la página de ',
                 },
                 {
                   type: 'relative-link',
-                  text: 'Job Listing',
+                  text: 'Ofertas de Trabajo',
                   href: '/join-us',
                 },
                 {
                   type: 'text',
-                  text: ' page for more information. You can also support us at GoFundMe. You can also contact us for partnership.',
+                  text: ' para más información. También puedes apoyarnos en GoFundMe. Además, puedes contactarnos para colaborar en una alianza.',
                 },
               ],
             },
@@ -459,28 +454,28 @@ const faq: FAQ = {
         },
         {
           question:
-            'How does distribution work, and how will Virufy become more widespread?',
+            '¿Cómo funciona la distribución y cómo se expandirá Virufy?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'The app will be offered for the benefit of people in low-income countries and will likely market itself and spread quickly.',
+                  text: 'La app será ofrecida para beneficiar a personas en países de bajos ingresos y probablemente se dará a conocer y se expandirá rápidamente.',
                 },
               ],
             },
           ],
         },
         {
-          question: 'What if I have more questions?',
+          question: '¿Qué pasa si tengo más preguntas?',
           answer: [
             {
               type: 'paragraph',
               content: [
                 {
                   type: 'text',
-                  text: 'More details can be found in our full Privacy Policy, Cookie Policy, and consent form which is embedded in the data collection app. For questions related to the data collection study, please email us at ',
+                  text: 'Puedes encontrar más detalles en nuestra Política de Privacidad, Política de Cookies y el formulario de consentimiento, los cuales están integrados en la aplicación de recopilación de datos. Para preguntas relacionadas con el estudio de recopilación de datos, por favor envíanos un correo a ',
                 },
                 {
                   type: 'link',
@@ -489,7 +484,7 @@ const faq: FAQ = {
                 },
                 {
                   type: 'text',
-                  text: '. For data related queries, we can be contacted at ',
+                  text: '. Para consultas relacionadas con los datos, puedes escribirnos a ',
                 },
                 {
                   type: 'link',
@@ -498,7 +493,7 @@ const faq: FAQ = {
                 },
                 {
                   type: 'text',
-                  text: '. For all other inquiries, you may reach us at ',
+                  text: '. Para todas las demás consultas, puedes contactarnos a través de ',
                 },
                 {
                   type: 'link',

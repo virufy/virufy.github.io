@@ -24,14 +24,16 @@ export const navbar: NavbarType = {
     pressReleases: 'Comunicados de prensa',
     ourResearch: 'Publicaciones',
   },
-  faq: 'Preguntas Frecuentes',
+  faq: 'FAQ',
   donate: {
     buttonText: 'Donar',
     optionsTitle: 'Donate Options',
   },
   joinUs: {
-    buttonText:  'Únete a Nosotros',
+    buttonText: 'Únete a Nosotros',
   },
+  searchPlaceholder: 'Buscar...',
+  noResultsPlaceholder:'No se encontraron resultados',
 };
 
 export default navbar;

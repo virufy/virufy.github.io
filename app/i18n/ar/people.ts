@@ -64,16 +64,6 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
-        img: JesseBump,
-        name: 'جيسي بامب، دكتوراه، ماجستير فى الصحة العامة ، زميل الجمعية الملكية للفنون.',
-        role: '. مستشار صحة السكان',
-        texts: [
-          '. قسم وزارة الصحة العالمية والسكان',
-          '. كلية هارفارد تي إتش تشان للصحة العامة ',
-        ],
-        link: 'https://www.hsph.harvard.edu/jesse-bump/',
-      },
-      {
         img: MelissaDyrdahl,
         name: 'ميليسا ديرداهل',
         role: 'مستشارة تسويق تنفيذية',
@@ -114,7 +104,9 @@ const people: People = {
         role: 'مستشار التكنولوجيا',
         texts: [
           'قائد الذكاء الاصطناعي الأخضر - سابق في NVIDIA، سابق في Meta',
-          'الطب الشرعي للوسائط المتعددة، جامعة مونبلييه',
+
+          'دكتوراه في الطب الشرعي للوسائط المتعددة، جامعة مونبلييه',
+
         ],
         link: 'https://zafarshahid.com/',
       },
@@ -256,6 +248,16 @@ const people: People = {
           'دكتوراه في الهندسة الكهربائية، جامعة ستانفورد',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+      },
+      {
+        img: JesseBump,
+        name: 'جيسي بامب، دكتوراه، ماجستير فى الصحة العامة ، زميل الجمعية الملكية للفنون.',
+        role: '. مستشار صحة السكان',
+        texts: [
+          '. قسم وزارة الصحة العالمية والسكان',
+          '. كلية هارفارد تي إتش تشان للصحة العامة ',
+        ],
+        link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       {
         img: NobuyoOzawa,

@@ -10,6 +10,8 @@ import ExportedImage from 'next-image-export-optimizer';
 import { useRouter } from 'next/navigation';
 import { usei18n } from '../../i18n';
 import PublicationCard from './PublicationCard';
+import Head from 'next/head';
+
 
 const PublicationsPage = ({
   params: { lang },
@@ -26,6 +28,14 @@ const PublicationsPage = ({
   } = usei18n(lang);
 
   return (
+    <>
+    <Head>
+      <title>Publications - Virufy</title>
+      <meta
+        name="description"
+        content="Explore Virufy's published research and scientific contributions to AI-driven healthcare solutions worldwide."
+      />
+      </Head>
     <div className="relative -top-24">
       {/* Hero Section */}
       <section>
@@ -94,6 +104,7 @@ const PublicationsPage = ({
         </section>
       </div>
     </div>
+    </>
   );
 };
 

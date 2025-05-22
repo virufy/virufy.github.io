@@ -2,17 +2,17 @@ import { type Footer } from '../types/footer';
 
 const footer: Footer = {
   cookiePolicy: {
-    title: 'Cookie Policy',
+    title: 'Política de Cookies',
     body: [
       {
-        question: 'General',
+        question: 'Preguntas generales',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'The Covid Detection Foundation (“Virufy”, “we”, “us” or “our”), a California nonprofit corporation located at 4546, El Camino Real, B10 #614, Los Altos, código postal 94022, United States of America respects your privacy and is committed to processing your personal information in accordance with the law. This Cookie Policy (“Policy”) explains how Virufy uses cookies and similar technologies to process your personal information that you provide to us when you visit our website (www.virufy.org) (“Website”) or participate in our research survey for the compilation of a dataset needed for the development of artificial intelligence (AI) algorithms for device-based COVID-19 detection.',
+                text: 'La Fundación para la Detección del Covid (“Virufy”, “nosotros” o “nuestro”), una corporación sin fines de lucro de California ubicada en 4546, El Camino Real, B10 #614, Los Altos, código postal 94022, Estados Unidos de América, respeta tu privacidad y se compromete a procesar tu información personal de acuerdo con la ley. Esta Política de Cookies (“Política”) explica cómo Virufy utiliza cookies y tecnologías similares para procesar tu información personal que nos proporcionas cuando visitas nuestro sitio web (www.virufy.org) (“Sitio web”) o participas en nuestra encuesta de investigación para la compilación de un conjunto de datos necesario para el desarrollo de algoritmos de inteligencia artificial (IA) para la detección de COVID-19 basada en dispositivos.',
               },
             ],
           },
@@ -22,7 +22,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'For users located in:',
+                text: 'Para usuarios ubicados en:',
               },
             ],
           },
@@ -33,11 +33,11 @@ const footer: Footer = {
             content: [
               {
                 type: 'bold',
-                text: 'Europe',
+                text: 'Europa',
               },
               {
                 type: 'text',
-                text: ': This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”).',
+                text: ': Esta política de cookies será tratada bajo el Considerando 30 del Reglamento General de Protección de Datos 2016/679 de la Unión Europea (el “GDPR”).',
               },
             ],
           },
@@ -48,11 +48,11 @@ const footer: Footer = {
             content: [
               {
                 type: 'bold',
-                text: 'Spain',
+                text: 'España',
               },
               {
                 type: 'text',
-                text: ': This cookie policy will be treated under Recital 30 of the European General Data Protection Regulation 2016/679 (the “GDPR”) and under Article 22 of Law 34/2002, of July 11, on information society services and electronic commerce (LSSICE).',
+                text: ': Esta política de cookies será tratada bajo el Considerando 30 del Reglamento General de Protección de Datos 2016/679 de la Unión Europea (el “GDPR”) y bajo el Artículo 22 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico (LSSICE).',
               },
             ],
           },
@@ -67,7 +67,7 @@ const footer: Footer = {
               },
               {
                 type: 'text',
-                text: ': This cookie policy will be treated under Argentinian Law 25.326 on Protection of Personal Data.',
+                text: ': Esta política de cookies será tratada bajo la Ley Argentina 25.326 de Protección de Datos Personales.',
               },
             ],
           },
@@ -82,7 +82,7 @@ const footer: Footer = {
               },
               {
                 type: 'text',
-                text: ': This cookie policy will be treated under the General Personal Data Protection Law, number 13.709 / 2018 of Brazil (the “LGPD”).',
+                text: ': Esta política de cookies será tratada bajo la Ley General de Protección de Datos Personales, número 13.709 / 2018 de Brasil (la “LGPD”).',
               },
             ],
           },
@@ -97,7 +97,7 @@ const footer: Footer = {
               },
               {
                 type: 'text',
-                text: ': This cookie policy will be treated under Colombian law 1581 of 2012.',
+                text: ': Esta política de cookies será tratada bajo la Ley Colombiana 1581 de 2012.',
               },
             ],
           },
@@ -108,11 +108,11 @@ const footer: Footer = {
             content: [
               {
                 type: 'bold',
-                text: 'United Mexican States',
+                text: 'Estados Unidos Mexicanos',
               },
               {
                 type: 'text',
-                text: ': This cookie policy will be considered part of the Virufy Privacy Notice and will be treated under the Federal Law on Protection of Personal Data Held by Private Parties. Whenever reference is made to “Privacy Policy” in the present, the term “Privacy Notice” is understood interchangeably.',
+                text: ': Esta política de cookies se considerará parte del Aviso de Privacidad de Virufy y será tratada bajo la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Siempre que se haga referencia a “Política de Privacidad” en el presente documento, se entiende de manera intercambiable el término “Aviso de Privacidad”.',
               },
             ],
           },
@@ -127,7 +127,7 @@ const footer: Footer = {
               },
               {
                 type: 'text',
-                text: ': This cookie policy will be treated under Bolivian Law.',
+                text: ': Esta política de cookies será tratada bajo la ley boliviana.',
               },
             ],
           },
@@ -138,20 +138,11 @@ const footer: Footer = {
             content: [
               {
                 type: 'bold',
-                text: 'Peru',
+                text: 'Perú',
               },
               {
                 type: 'text',
-                text: ': This cookie policy will be treated under Peruvian Law.',
-              },
-            ],
-          },
-          {
-            type: 'paragraph',
-            content: [
-              {
-                type: 'text',
-                text: 'Virufy is the “data controller” of, and responsible for, your personal information collected in accordance with this Cookie Policy. For further information about how we use, store, disclose and process personal data that we obtain through or in connection with the use of our Website, please visit our Privacy Policy.',
+                text: ': Esta política de cookies será tratada bajo la ley peruana.',
               },
             ],
           },
@@ -160,7 +151,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'When you first access our Website, you will receive a message advising you that cookies and similar technologies are in use. By clicking “Use necessary cookies only” or “Allow all cookies”, you signify that you understand and agree to the use of these technologies, as described in this Cookie Policy.',
+                text: 'Virufy es el “responsable del tratamiento” y el encargado de tu información personal recopilada de acuerdo con esta Política de Cookies. Para obtener más información sobre cómo usamos, almacenamos, divulgamos y procesamos los datos personales que obtenemos a través del uso de nuestro Sitio web, visita nuestra Política de Privacidad.',
               },
             ],
           },
@@ -169,7 +160,16 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'If you have any inquiries or complaints regarding our Cookie Policy, please contact us by email at ',
+                text: 'Cuando accedas por primera vez a nuestro Sitio web, recibirás un mensaje informándote que se utilizan cookies y tecnologías similares. Al hacer clic en "Usar solo cookies necesarias" o "Permitir todas las cookies", confirmas que entiendes y aceptas el uso de estas tecnologías, como se describe en esta Política de Cookies.',
+              },
+            ],
+          },
+          {
+            type: 'paragraph',
+            content: [
+              {
+                type: 'text',
+                text: 'Si tienes alguna consulta o queja con respecto a nuestra Política de Cookies, contáctanos por correo electrónico a ',
               },
               {
                 type: 'link',
@@ -178,21 +178,21 @@ const footer: Footer = {
               },
               {
                 type: 'text',
-                text: '. Our team will reply to you within 30 business days upon receipt of your request.',
+                text: '. Nuestro equipo responderá dentro de los 30 días hábiles siguientes a la recepción de tu solicitud.',
               },
             ],
           },
         ],
       },
       {
-        question: 'What are Cookies?',
+        question: '¿Qué son las Cookies?',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'Cookies are text files containing small pieces of data that are stored on your computer or mobile device whenever you access a website. They are used to make websites operate or function more efficiently, as well as to provide information to the owners of the website. Cookies enhance user experience by allowing websites to read and write them, enabling them to recognize visitors and remember important information that makes the visitor’s use of the website more convenient.',
+                text: 'Las cookies son archivos de texto que contienen pequeños fragmentos de datos que se almacenan en tu computadora o dispositivo móvil cada vez que accedes a un sitio web. Se utilizan para hacer que los sitios web funcionen o lo hagan de manera más eficiente, así como para proporcionar información a los propietarios del sitio. Las cookies mejoran la experiencia del usuario permitiendo que los sitios web las lean y escriban, lo que les permite reconocer a los visitantes y recordar información importante que hace más conveniente el uso del sitio web.',
               },
             ],
           },
@@ -201,21 +201,21 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'Cookies set by a website owner (in this case, Virufy) are called “first party cookies”. Cookies set by parties other than the website owner are called “third party cookies”. Third party cookies enable third party features or functionality to be provided on or through the Website (e.g., analytics).',
+                text: 'Las cookies establecidas por el propietario del sitio web (en este caso, Virufy) se denominan "cookies de origen". Las cookies establecidas por terceros se denominan "cookies de terceros". Las cookies de terceros permiten que se proporcionen funcionalidades o características de terceros dentro del Sitio web (por ejemplo, análisis).',
               },
             ],
           },
         ],
       },
       {
-        question: 'How do we use Cookies?',
+        question: '¿Cómo usamos las Cookies?',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'Cookies are messages that web servers pass to web browsers when you visit websites. Cookies are most commonly used to track website activity, to track online shopping, remembering your preferences, and improving your user experience through personalized web pages.',
+                text: 'Las cookies son mensajes que los servidores web envían a los navegadores web cuando visitas sitios web. Las cookies se usan más comúnmente para rastrear la actividad en el sitio web, las compras en línea, recordar tus preferencias y mejorar tu experiencia de usuario mediante páginas personalizadas.',
               },
             ],
           },
@@ -224,7 +224,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'We may use the following types of Cookies* to make the website user-friendly:',
+                text: 'Podemos utilizar los siguientes tipos de Cookies* para hacer que el sitio web sea más fácil de usar:',
               },
             ],
           },
@@ -233,11 +233,11 @@ const footer: Footer = {
             content: [
               {
                 type: 'bold',
-                text: 'Essential Cookies',
+                text: 'Cookies Esenciales',
               },
               {
                 type: 'text',
-                text: ': The Website may use technical cookies to carry out activities that are strictly necessary for the operation or delivery of services. They include, for example, cookies that allow you to access secure areas of the website. We use this cookie to obtain the required consent to process data.',
+                text: ': El Sitio web puede usar cookies técnicas para llevar a cabo actividades que son estrictamente necesarias para el funcionamiento o la entrega de servicios. Incluyen, por ejemplo, cookies que te permiten acceder a áreas seguras del sitio web. Usamos estas cookies para obtener el consentimiento necesario para procesar los datos.',
               },
             ],
           },
@@ -246,11 +246,11 @@ const footer: Footer = {
             content: [
               {
                 type: 'bold',
-                text: 'Preference Cookies',
+                text: 'Cookies de Preferencias',
               },
               {
                 type: 'text',
-                text: ': These cookies enable a website to remember information that changes the way the website behaves or looks, like preferred language or the region that you are in.',
+                text: ': Estas cookies permiten que un sitio web recuerde información que cambia la forma en que el sitio se comporta o se ve, como tu idioma preferido o la región en la que te encuentras.',
               },
             ],
           },
@@ -259,11 +259,11 @@ const footer: Footer = {
             content: [
               {
                 type: 'bold',
-                text: 'Performance Cookies',
+                text: 'Cookies de Rendimiento',
               },
               {
                 type: 'text',
-                text: ': Also known as analytics cookies, these cookies may be used to collect information about your use of the Website and make the Website more user-friendly. Usage of analytic cookies includes but is not limited to distinguishing users and understanding overall patterns of usage of the Website. We use this information in aggregate form to improve the way our Website works.',
+                text: ': También conocidas como cookies de análisis, estas cookies pueden ser utilizadas para recopilar información sobre tu uso del Sitio web y hacerlo más fácil de usar. El uso de cookies analíticas incluye, entre otros, distinguir a los usuarios y entender los patrones generales de uso del Sitio web. Utilizamos esta información de forma agregada para mejorar el funcionamiento de nuestro Sitio.',
               },
             ],
           },
@@ -272,15 +272,15 @@ const footer: Footer = {
             content: [
               {
                 type: 'bold',
-                text: 'Marketing Cookies',
+                text: 'Cookies de Marketing',
               },
               {
                 type: 'text',
-                text: ': These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third-party advertisers. These cookies can be deleted or blocked by adjusting your browser settings (see "How can you control Cookies" below). Alternatively, please follow this link to ',
+                text: ': Estas cookies se utilizan para rastrear a los visitantes a través de sitios web. La intención es mostrar anuncios que sean relevantes y atractivos para el usuario individual y, por tanto, más valiosos para los editores y anunciantes de terceros. Estas cookies se pueden eliminar o bloquear ajustando la configuración de tu navegador (consulta "¿Cómo puedes controlar las Cookies?" más abajo). Alternativamente, sigue este enlace para ',
               },
               {
                 type: 'link',
-                text: 'opt-out of Google Analytics',
+                text: 'excluirte de Google Analytics',
                 href: 'https://tools.google.com/dlpage/gaoptout',
               },
               {
@@ -292,14 +292,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'How can you control Cookies?',
+        question: '¿Cómo puedes controlar las Cookies?',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'You have the right to decide whether to accept or reject cookies. You do not have to accept cookies and consent can be withdrawn at any time. Please note that essential cookies cannot be rejected as they are strictly necessary to provide you with services of our Website.',
+                text: 'Tienes el derecho de decidir si aceptas o rechazas las cookies. No estás obligado a aceptarlas y puedes retirar tu consentimiento en cualquier momento. Ten en cuenta que las cookies esenciales no se pueden rechazar, ya que son estrictamente necesarias para brindarte los servicios de nuestro Sitio web.',
               },
             ],
           },
@@ -308,7 +308,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'By using our Cookie Consent Banner, you can select the categories of cookies which you choose to accept or reject. The Cookie Consent Banner can be found in the notification banner and on our Website. You can change or revoke consent for your cookie policies directly from the website by clicking “Cookie settings” at the bottom of the page.',
+                text: 'Al utilizar nuestro Banner de Consentimiento de Cookies, puedes seleccionar las categorías de cookies que deseas aceptar o rechazar. El Banner de Consentimiento de Cookies se encuentra en la notificación emergente y en nuestro Sitio web. Puedes cambiar o revocar tu consentimiento directamente desde el sitio web haciendo clic en "Configuración de cookies" al pie de la página.',
               },
             ],
           },
@@ -317,7 +317,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'If you choose not to click on “Got it!”, or do not close the message, you may still use our Website. You may also refuse to accept cookies from this Website at any time by activating the setting on your browser which allows you to refuse cookies.',
+                text: 'Si decides no hacer clic en "¡Entendido!" o no cierras el mensaje, aún puedes utilizar nuestro Sitio web. También puedes rechazar cookies de este Sitio web en cualquier momento activando la configuración en tu navegador que te permite rechazarlas.',
               },
             ],
           },
@@ -326,7 +326,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'Please follow the links below to helpful information for the most popular browsers:',
+                text: 'Consulta los siguientes enlaces para obtener información útil sobre los navegadores más populares:',
               },
             ],
           },
@@ -388,14 +388,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Amendments to this Cookie Policy',
+        question: 'Modificaciones a esta Política de Cookies',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal or regulatory reasons. Since we do not collect personal data such as your IP address, email or any other form of contact, thus having no means to reach you for your safety, please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.',
+                text: 'Podemos actualizar esta Política de Cookies ocasionalmente para reflejar, por ejemplo, cambios en las cookies que utilizamos o por otros motivos operativos, legales o regulatorios. Dado que no recopilamos datos personales como tu dirección IP, correo electrónico ni ninguna otra forma de contacto, y por lo tanto no tenemos forma de comunicarnos contigo por tu seguridad, te recomendamos revisar periódicamente esta Política de Cookies para mantenerte informado sobre nuestro uso de cookies y tecnologías relacionadas.',
               },
             ],
           },
@@ -404,21 +404,21 @@ const footer: Footer = {
             content: [
               {
                 type: 'text',
-                text: 'The date at the top of this Cookie Policy indicates when it was last updated.',
+                text: 'La fecha en la parte superior de esta Política de Cookies indica cuándo fue actualizada por última vez.',
               },
             ],
           },
         ],
       },
       {
-        question: 'How can you contact us with questions?',
+        question: '¿Cómo puedes contactarnos si tienes preguntas?',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'If you have any concerns relating to our use of cookies or other technologies, please contact us at ',
+                text: 'Si tienes alguna inquietud relacionada con nuestro uso de cookies u otras tecnologías, por favor contáctanos en ',
               },
               {
                 type: 'link',
@@ -436,7 +436,7 @@ const footer: Footer = {
     ],
   },
   privacyPolicy: {
-    title: 'Privacy Policy',
+    title: 'Política de Privacidad',
     body: [
       {
         question: 'Argentina',
@@ -476,7 +476,7 @@ const footer: Footer = {
             content: [
               {
                 type: 'link',
-                text: 'Política de Privacidade',
+                text: 'Política de Privacidad',
                 href: 'https://drive.google.com/file/d/1Zl9QO-Dliik84xjuXCdFGcDOk5GytXr1/view',
               },
             ],
@@ -499,14 +499,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Greece',
+        question: 'Grecia',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Πολιτική απορρήτου',
+                text: 'Política de Privacidad',
                 href: 'https://drive.google.com/file/d/1lMVygBx3pV_lZBhFtZe5go4UM4mFt0qP/view',
               },
             ],
@@ -514,14 +514,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Mexico',
+        question: 'México',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Aviso De Privacidad',
+                text: 'Política de Privacidad',
                 href: 'https://drive.google.com/file/d/1Qr3cFttfhjUoKxLcQrVEhsuO-OJ6VE0_/view',
               },
             ],
@@ -529,7 +529,7 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Peru',
+        question: 'Perú',
         answer: [
           {
             type: 'paragraph',
@@ -544,14 +544,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'United States',
+        question: 'Estados Unidos',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Privacy Policy',
+                text: 'Política de Privacidad',
                 href: 'https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view',
               },
             ],
@@ -559,14 +559,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Europe',
+        question: 'Europa',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Privacy Policy',
+                text: 'Política de Privacidad',
                 href: 'https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view',
               },
             ],
@@ -574,14 +574,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Japan',
+        question: 'Japón',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'プライバシーポリシー',
+                text: 'Política de Privacidad',
                 href: 'https://drive.google.com/file/d/11RTMmnHW4SqHNf7htr3xuSi-o2v2vWlp/view',
               },
             ],
@@ -589,14 +589,14 @@ const footer: Footer = {
         ],
       },
       {
-        question: 'Other Countries',
+        question: 'Otros países',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'link',
-                text: 'Privacy Policy',
+                text: 'Política de Privacidad',
                 href: 'https://drive.google.com/file/d/1hnxvDJ5qHBnUi7cnkNdyD4PuWMz8Ntss/view',
               },
             ],
@@ -606,17 +606,18 @@ const footer: Footer = {
     ],
   },
   personalInfo: {
-    title: 'Do Not Sell My Personal Info',
+    title: 'No Vendas Mi Información Personal',
     body: [
       {
-        question: 'California Consumer Privacy Act Rights',
+        question:
+          'Derechos según la Ley de Privacidad del Consumidor de California',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'California consumers have a right to knowledge, access, and deletion of their personal information under the California Consumer Privacy Act. California consumers also have a right to opt out of the sale of their personal information by a business and a right not to be discriminated against for exercising one of their California privacy rights. Virufy does not sell the personal information of California consumers and does not discriminate in response to privacy rights requests.',
+                text: 'Los consumidores de California tienen derecho a conocer, acceder y eliminar su información personal bajo la Ley de Privacidad del Consumidor de California. También tienen derecho a optar por no vender su información personal a una empresa y a no ser discriminados por ejercer sus derechos de privacidad. Virufy no vende la información personal de los consumidores de California y no discrimina en respuesta a solicitudes relacionadas con derechos de privacidad.',
               },
             ],
           },
@@ -624,28 +625,28 @@ const footer: Footer = {
       },
       {
         question:
-          'Virufy provides notice of our privacy practices in our Privacy Policy',
+          'Virufy proporciona información sobre nuestras prácticas de privacidad en nuestra Política de Privacidad',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'The Privacy Policy includes what personal information and data is collected, the source of the personal information and data collected, how personal information and data is processed and stored, and the purposes of use of personal information. Virufy also discloses what personal information and if so, the categories of third parties to whom data and personal information is disclosed. More information about how Virufy handles personal information in connection with specific Virufy services is presented in service-specific notices at or before your first use of the Virufy web app and available at any time. To view a copy of the latest versions of the service-specific privacy notices and the California-specific disclosures, please see our Privacy Policy.',
+                text: 'La Política de Privacidad incluye qué información y datos personales se recopilan, la fuente de esta información, cómo se procesan y almacenan, y los fines para los que se usan. Virufy también revela qué información personal se comparte y, de ser así, con qué categorías de terceros. Más información sobre cómo Virufy maneja la información personal en relación con servicios específicos de Virufy se proporciona en avisos específicos del servicio al momento o antes del primer uso de la aplicación web de Virufy, y están disponibles en todo momento. Para ver una copia de las versiones más recientes de los avisos de privacidad específicos del servicio y las divulgaciones específicas para California, consulte nuestra Política de Privacidad.',
               },
             ],
           },
         ],
       },
       {
-        question: 'How to Exercise the Above Rights',
+        question: 'Cómo Ejercer los Derechos Anteriores',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'California consumers can exercise their rights to access or delete their information directly or through an authorized agent by contacting Virufy at ',
+                text: 'Los consumidores de California pueden ejercer sus derechos de acceso o eliminación de su información directamente o a través de un agente autorizado contactando a Virufy en ',
               },
               {
                 type: 'link',
@@ -654,35 +655,35 @@ const footer: Footer = {
               },
               {
                 type: 'text',
-                text: '. Virufy will ask you for information which we consider necessary to verify your identity for security and to prevent fraud. This information may include name, contact information, and information related to your relationship with Virufy, but the specific information requested may differ depending on the circumstances of your request for your security and to protect privacy rights. If we delete your personal information, we will both render certain personal information about you permanently unrecoverable and also de-identify certain personal information.',
+                text: '. Virufy solicitará la información que considere necesaria para verificar su identidad por motivos de seguridad y para prevenir fraudes. Esta información puede incluir nombre, información de contacto e información relacionada con su relación con Virufy, pero la información específica solicitada puede variar dependiendo de las circunstancias de su solicitud, para su seguridad y para proteger los derechos de privacidad. Si eliminamos su información personal, haremos que cierta información sea irrecuperable permanentemente y también desidentificaremos cierta información personal.',
               },
             ],
           },
         ],
       },
       {
-        question: 'Direct Marketing and Do Not Track',
+        question: 'Marketing Directo y Señales de "No Rastrear"',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'Virufy does not track its customers over time and across third party websites to provide targeted advertising and therefore does not respond to web browsers “do not track” signals. If you arrive at our website by way of a link from a third party site that does respond to “do not track” requests, the recognition of any “do not track” request you have initiated will end as soon as you reach our website. Third parties cannot collect any other personally identifiable information from Virufy’s websites unless you provide it to them directly. This is also described in our Privacy Policy.',
+                text: 'Virufy no rastrea a sus usuarios a lo largo del tiempo ni en sitios web de terceros para ofrecer publicidad dirigida, y por lo tanto no responde a señales de “no rastrear” de los navegadores web. Si llega a nuestro sitio web a través de un enlace desde un sitio de terceros que sí responde a solicitudes de “no rastrear”, dicho reconocimiento finalizará al llegar a nuestro sitio. Los terceros no pueden recopilar ninguna información personal identificable de los sitios web de Virufy a menos que usted se la proporcione directamente. Esto también se describe en nuestra Política de Privacidad.',
               },
             ],
           },
         ],
       },
       {
-        question: 'Notice for Minors',
+        question: 'Aviso para Menores de Edad',
         answer: [
           {
             type: 'paragraph',
             content: [
               {
                 type: 'text',
-                text: 'We do not knowingly collect online information from children under the age of 18. If we are notified that we have collected personal information, as defined by the Children’s Online Privacy Protection Act (“COPPA”), of a child under the age of 13, we will delete the information as expeditiously as possible. We never sell the personal information of minors under 18 years of age and would not do so in the future without affirmative authorization of the consumer if between 13 to 16 years of age, or the parent or guardian of a consumer less than 13 years of age.',
+                text: 'No recopilamos intencionalmente información en línea de niños menores de 18 años. Si se nos notifica que hemos recopilado información personal, según lo definido por la Ley de Protección de la Privacidad Infantil en Línea (“COPPA”), de un menor de 13 años, eliminaremos dicha información lo más pronto posible. Nunca vendemos la información personal de menores de 18 años y no lo haremos en el futuro sin la autorización afirmativa del consumidor (si tiene entre 13 y 16 años) o del padre/madre o tutor del consumidor (si tiene menos de 13 años).',
               },
             ],
           },
@@ -691,11 +692,11 @@ const footer: Footer = {
     ],
   },
   nonProfitSection: {
-    title: 'Nonprofit Status',
+    title: 'Estatus como Organización Sin Fines de Lucro',
     textOne:
-      'Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code.',
+      'Virufy es una corporación sin fines de lucro registrada en California y reconocida por el Servicio de Impuestos Internos (IRS) de los Estados Unidos como una organización benéfica pública exenta de impuestos bajo la Sección 501(c)(3) del Código de Rentas Internas.',
     textTwo:
-      '©2025 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved',
+      '©2025 Virufy | VIRUFY es una marca registrada de The Covid Detection Foundation, una corporación sin fines de lucro en California | Todos los derechos reservados',
   },
 };
 

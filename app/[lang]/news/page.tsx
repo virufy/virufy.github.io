@@ -6,6 +6,8 @@ import { PressReleasesBackground } from '@/public/images/pressReleases';
 import ExportedImage from 'next-image-export-optimizer';
 import { usei18n } from '../../i18n';
 import NewsCard from './NewsCard';
+import Head from 'next/head';
+
 
 const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
@@ -14,6 +16,13 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
   return (
     <>
+  <Head>
+    <title>News - Virufy</title>
+    <meta
+      name="description"
+      content="Stay updated with the latest news and press releases about Virufy's advancements in AI healthcare innovation."
+    />
+  </Head>
       <div className="relative -top-24">
         {/* Hero Section */}
         <section>

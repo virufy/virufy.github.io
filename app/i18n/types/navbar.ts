@@ -7,6 +7,8 @@ export interface NavbarType {
   faq: string;
   donate: DonateSection;
   joinUs: JoinUsSection;
+  searchPlaceholder: string;
+  noResultsPlaceholder: string;
 }
 
 export interface OurTechnology {

@@ -32,6 +32,8 @@ export const navbar: NavbarType = {
   joinUs: {
     buttonText: 'انضم إلينا',
   },
+  searchPlaceholder: 'يبحث...',
+  noResultsPlaceholder:'لم يتم العثور على نتائج' ,
 };
 
 export default navbar;

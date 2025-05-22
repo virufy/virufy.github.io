@@ -3,9 +3,7 @@
 import { type Locale } from '@/i18n-config';
 import { type Dispatch, type SetStateAction, useEffect, useState } from 'react';
 import { usei18n } from '../i18n';
-import CookiePolicyModal from './components/footer/CookiesPolicyModal';
 import FooterNavbar from './components/footer/FooterNavbar';
-import PrivacyPolicyModal from './components/footer/PrivacyPolicyModal';
 import SellMyInformationModal from './components/footer/SellMyInformationModal';
 
 const Footer = ({ lang }: { lang: Locale }) => {
@@ -13,21 +11,20 @@ const Footer = ({ lang }: { lang: Locale }) => {
     footer: { cookiePolicy, privacyPolicy, personalInfo, nonProfitSection },
   } = usei18n(lang);
 
-  const [showModalCookiesPolicy, setShowModalCookiesPolicy] = useState(false);
   const [showModalMyInformation, setShowModalMyInformation] = useState(false);
-  const [showModalPrivacyPolicy, setShowModalPrivacyPolicy] = useState(false);
 
-  const footerPrivacyLinks: {
-    label: string;
-    showModal: Dispatch<SetStateAction<boolean>>;
-  }[] = [
+  type FooterPrivacyLink =
+    { label: string; showModal: Dispatch<SetStateAction<boolean>>; endpoint?: never; }
+    | { label: string; endpoint: string; showModal?: never; };
+
+  const footerPrivacyLinks: FooterPrivacyLink[] = [
     {
       label: cookiePolicy.title,
-      showModal: setShowModalCookiesPolicy,
+      endpoint: 'cookie-policy',
     },
     {
       label: privacyPolicy.title,
-      showModal: setShowModalPrivacyPolicy,
+      endpoint: 'privacy-policy',
     },
     {
       label: personalInfo.title,
@@ -38,54 +35,28 @@ const Footer = ({ lang }: { lang: Locale }) => {
   // allows user to close modal by pressing esc key
   const handleKeyPress = (event: KeyboardEvent) => {
     if (event.key === 'Escape') {
-      setShowModalCookiesPolicy(false);
-      setShowModalPrivacyPolicy(false);
       setShowModalMyInformation(false);
     }
   };
 
   useEffect(() => {
-    if (
-      showModalMyInformation ||
-      showModalCookiesPolicy ||
-      showModalPrivacyPolicy
-    ) {
+    if (showModalMyInformation) {
       window.addEventListener('keydown', handleKeyPress);
     }
 
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
     };
-  }, [showModalMyInformation, showModalCookiesPolicy, showModalPrivacyPolicy]);
+  }, [showModalMyInformation]);
 
   return (
     <>
-      <div>
-        {showModalPrivacyPolicy ? (
-          <PrivacyPolicyModal
-            lang={lang}
-            privacyPolicy={privacyPolicy}
-            setShowModalPrivacyPolicy={setShowModalPrivacyPolicy}
-          />
-        ) : null}
-      </div>
-      {/* _____________________ */}
       <div>
         {showModalMyInformation ? (
           <SellMyInformationModal
             lang={lang}
             personalInfo={personalInfo}
             setShowModalMyInformation={setShowModalMyInformation}
-          />
-        ) : null}
-      </div>
-      {/* _____________________ */}
-      <div>
-        {showModalCookiesPolicy ? (
-          <CookiePolicyModal
-            lang={lang}
-            cookiePolicy={cookiePolicy}
-            setShowModalCookiesPolicy={setShowModalCookiesPolicy}
           />
         ) : null}
       </div>
