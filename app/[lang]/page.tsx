@@ -61,6 +61,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       )}
                     </p>
                   </div>
+
                 </div>
 
 

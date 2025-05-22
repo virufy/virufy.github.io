@@ -106,7 +106,9 @@ const people: People = {
         role: 'Asesor Tecnológico',
         texts: [
           'Líder en IA ecológica: ex-NVIDIA, ex-Meta',
+
           'Doctorado en Ciencias Forenses Multimedia, Universidad de Montpellier',
+
         ],
         link: 'https://zafarshahid.com/',
       },
@@ -132,10 +134,12 @@ const people: People = {
       {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
+
         role: 'Asesor Ejecutivo',
         texts: [
           'Ex CTO/CPO - edX, GoDaddy',
           'Alumnus de Ciencias de la Computación - MIT',
+
         ],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },

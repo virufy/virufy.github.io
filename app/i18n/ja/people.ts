@@ -61,6 +61,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       {
+
         img: MelissaDyrdahl,
         name: 'メリッサ・ダイダール',
         role: 'エグゼクティブマーケティングアドバイザー',
@@ -97,7 +98,9 @@ const people: People = {
       },
       {
         img: ZafarShahid,
+
         name: 'ザファル・シャヒド',
+
         role: 'テクノロジーアドバイザー',
         texts: [
           'グリーンAIリーダー - 元NVIDIA、元Meta',
