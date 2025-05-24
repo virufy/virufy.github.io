@@ -10,7 +10,7 @@ const pressReleases: PressReleases = {
         'Virufy to Showcase Innovative COVID-19 Screening Technology at Prototypes for Humanity 2024 in Dubai',
       date: 'November 2024',
       subText: '',
-      url: 'news/press-release-dubai',
+      url: '/en/news/press-release-dubai',
       linkText: 'Read More',
     },
     {
@@ -18,7 +18,7 @@ const pressReleases: PressReleases = {
         'Virufy Beta App Launched in Colombia, Providing At-Home COVID-19 Detection to 4,500 Users',
       date: 'February 2023',
       subText: '',
-      url: 'news/beta-app-release-2023',
+      url: '/en/news/beta-app-release-2023',
       linkText: 'Read More',
     },
     {

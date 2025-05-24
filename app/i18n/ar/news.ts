@@ -10,7 +10,7 @@ const pressReleases: PressReleases = {
         'Virufy تعرض تقنية مبتكرة لفحص COVID-19 في معرض Prototypes for Humanity 2024 في دبي',
       date: 'نوفمبر 2024',
       subText: '',
-      url: 'news/press-release-dubai',
+      url: '/ar/news/press-release-dubai',
       linkText: 'اقرأ المزيد',
     },
     {
@@ -18,7 +18,7 @@ const pressReleases: PressReleases = {
         'تطبيق Virufy Beta يُطلق في كولومبيا، موفرًا الكشف عن COVID-19 في المنزل لـ 4,500 مستخدم',
       date: 'فبراير 2023',
       subText: '',
-      url: 'news/beta-app-release-2023',
+      url: '/ar/news/beta-app-release-2023',
       linkText: 'اقرأ المزيد',
     },
     {
