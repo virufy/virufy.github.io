@@ -113,7 +113,7 @@ const people: People = {
         name: 'ラフィ・アジム・カーン',
         role: 'エグゼクティブ法務アドバイザー',
         texts: [
-          'パートナー、ヨーロッパデジタル法責任者', 'クロウェル＆モーリングLLP',
+          'Europe Crowell & Moring LLP パートナー、デジタル法責任者',
         ],
         link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
       },

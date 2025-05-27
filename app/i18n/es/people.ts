@@ -117,7 +117,7 @@ const people: People = {
         name: 'Rafi Azim-Khan',
         role: 'Asesor Ejecutivo Legal',
         texts: [
-          'Socio, Responsable de Derecho Digital, Europa', 'Crowell & Moring LLP',
+          'Socio, Jefe de Derecho Digital, Europa Crowell & Moring LLP',
         ],
         link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
       },
