@@ -115,7 +115,7 @@ const people: People = {
         name: 'رافي أزيم خان',
         role: 'مستشار قانوني تنفيذي',
         texts: [
-          'شريك، IP/IT ورئيس خصوصية البيانات أوروبا - Pillsbury Winthrop Shaw Pittman LLP',
+          'شريك، رئيس قسم القانون الرقمي، أوروبا', 'كرويل ومورينج إل إل بي',
         ],
         link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
       },
