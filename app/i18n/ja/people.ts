@@ -113,7 +113,7 @@ const people: People = {
         name: 'ラフィ・アジム・カーン',
         role: 'エグゼクティブ法務アドバイザー',
         texts: [
-          'ピルズベリーローレンスウィンショーLLP欧州データプライバシー部門リーダー、IP/ITパートナー',
+          'パートナー、ヨーロッパデジタル法責任者', 'クロウェル＆モーリングLLP',
         ],
         link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
       },
