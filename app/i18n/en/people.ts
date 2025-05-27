@@ -134,7 +134,7 @@ const people: People = {
         name: 'Rafi Azim-Khan',
         role: 'Executive Legal Advisor',
         texts: [
-          'Partner, Head of Digital Law, Europe', 'Crowell & Moring LLP',
+          'Partner, Head of Digital Law, Europe Crowell & Moring LLP',
         ],
         link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
       },
