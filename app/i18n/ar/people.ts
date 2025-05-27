@@ -2,6 +2,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -79,6 +81,26 @@ const people: People = {
         role: 'مستشار طبي تنفيذي',
         texts: ['أستاذ في مكافحة العدوى والوقاية - جامعة أوساكا'],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
+      },
+      {
+        img: GlennMuschert,
+        name: 'البروفيسور جلين موشيرت',
+        role: 'مستشار العلوم الاجتماعية والسياسة العامة',
+        texts: [
+          'أستاذ الصحة العامة وعلم الأوبئة، جامعة خليفة، الإمارات العربية المتحدة',
+          'دكتوراه. علم الاجتماع - جامعة كولورادو، بولدر',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+      },
+      {
+        img: ThomasMahoney,
+        name: 'توماس ماهوني',
+        role: 'مستشار الأعمال والصحة العامة',
+        texts: [
+          'مساعد قسم، قسم الأمراض المعدية، جامعة هارفارد',
+          'ماجستير إدارة الأعمال، كلية وارتون، جامعة بنسلفانيا',
+        ],
+        link: 'https://hsph.harvard.edu/profile/thomas-mahoney/',
       },
       {
         img: MadhavDatt,
