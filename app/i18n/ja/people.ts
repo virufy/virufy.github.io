@@ -98,7 +98,7 @@ const people: People = {
           'ハーバード大学感染症学部助手',
           'ペンシルバニア大学ウォートンスクールMBA',
         ],
-        link: 'https://hsph.harvard.edu/profile/thomas-mahoney/',
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       {
         img: MadhavDatt,

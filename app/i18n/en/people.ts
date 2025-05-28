@@ -99,7 +99,7 @@ const people: People = {
           'Department Associate, Infectious Diseases Department, Harvard University',
           'MBA, The Wharton School, University of Pennsylvania',
         ],
-        link: 'https://hsph.harvard.edu/profile/thomas-mahoney/',
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       {
         img: MadhavDatt,

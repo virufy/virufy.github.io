@@ -100,7 +100,7 @@ const people: People = {
           'مساعد قسم، قسم الأمراض المعدية، جامعة هارفارد',
           'ماجستير إدارة الأعمال، كلية وارتون، جامعة بنسلفانيا',
         ],
-        link: 'https://hsph.harvard.edu/profile/thomas-mahoney/',
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       {
         img: MadhavDatt,
