@@ -99,7 +99,7 @@ const people: People = {
           'Asociado de Departamento, Departamento de Enfermedades Infecciosas, Universidad de Harvard',
           'MBA, The Wharton School, Universidad de Pensilvania',
         ],
-        link: 'https://hsph.harvard.edu/profile/thomas-mahoney/',
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       {
         img: MadhavDatt,
