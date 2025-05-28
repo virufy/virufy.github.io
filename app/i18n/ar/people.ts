@@ -116,8 +116,9 @@ const people: People = {
         role: 'مستشار قانوني تنفيذي',
         texts: [
           'شريك، رئيس قسم القانون الرقمي، شركة Europe Crowell & Moring LLP',
+          'ليسانس الحقوق. جامعة لندن، كلية كوين ماري',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,

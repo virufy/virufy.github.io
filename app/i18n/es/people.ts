@@ -118,8 +118,9 @@ const people: People = {
         role: 'Asesor Ejecutivo Legal',
         texts: [
           'Socio, Jefe de Derecho Digital, Europa Crowell & Moring LLP',
+          'LL.B. Universidad de Londres, Queen Mary College',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,
