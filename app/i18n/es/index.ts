@@ -9,6 +9,7 @@ import jobDetails from './jobDetails';
 import jobListing from './jobListing';
 import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
+import paper from '../en/paper';
 import people from './people';
 import pressReleases from './news';
 import publications from './publications';
@@ -28,6 +29,7 @@ const esMetadata: I18nData = {
   jobListing,
   navbar,
   oneYoungWorld,
+  paper,
   people,
   pressReleases,
   publications,
