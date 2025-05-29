@@ -8,6 +8,7 @@ import { type JobDetails } from './jobDetails';
 import { type JobListing } from './jobListing';
 import { type NavbarType } from './navbar';
 import { type OneYoungWorld } from './oneYoungWorld';
+import { type PaperContent } from './paper';
 import { type People } from './people';
 import { type PressReleases } from './news';
 import { type Publications } from './publications';
@@ -27,6 +28,7 @@ export interface I18nData {
   jobListing: JobListing;
   navbar: NavbarType;
   oneYoungWorld: OneYoungWorld;
+  paper: PaperContent;
   people: People;
   publications: Publications;
   pressReleases: PressReleases;
