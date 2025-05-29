@@ -139,9 +139,10 @@ const people: People = {
         name: 'Rafi Azim-Khan',
         role: 'Asesor Ejecutivo Legal',
         texts: [
-          'Socio, Responsable de Derecho Digital, Europa', 'Crowell & Moring LLP',
+          'Socio, Jefe de Derecho Digital, Europa Crowell & Moring LLP',
+          'LL.B. Universidad de Londres, Queen Mary College',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,

@@ -135,9 +135,10 @@ const people: People = {
         name: 'ラフィ・アジム・カーン',
         role: 'エグゼクティブ法務アドバイザー',
         texts: [
-          'パートナー、ヨーロッパデジタル法責任者', 'クロウェル＆モーリングLLP',
+          'Europe Crowell & Moring LLP パートナー、デジタル法責任者',
+          '法学士ロンドン大学クイーン・メアリー・カレッジ',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,
