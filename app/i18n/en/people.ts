@@ -3,6 +3,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -78,6 +80,26 @@ const people: People = {
           'Infection Control and Prevention Professor - Osaka University',
         ],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
+      },
+      {
+        img: GlennMuschert,
+        name: 'Prof. Glenn Muschert',
+        role: 'Social Science & Public Policy Advisor',
+        texts: [
+          'Professor, Public Health & Epidemiology, Khalifa University, UAE',
+          'Ph.D. Sociology - University of Colorado, Boulder',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+      },
+      {
+        img: ThomasMahoney,
+        name: 'Thomas Mahoney',
+        role: 'Business & Public Health Advisor',
+        texts: [
+          'Department Associate, Infectious Diseases Department, Harvard University',
+          'MBA, The Wharton School, University of Pennsylvania',
+        ],
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       {
         img: MadhavDatt,

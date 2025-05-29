@@ -3,6 +3,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -77,6 +79,26 @@ const people: People = {
         role: 'エグゼクティブ・臨床アドバイザー',
         texts: ['感染制御医学講座(感染制御学)ー大阪大学'],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
+      },
+      {
+        img: GlennMuschert,
+        name: 'グレン・マスチャート教授',
+        role: '社会科学・公共政策アドバイザー',
+        texts: [
+          'アラブ首長国連邦ハリファ大学公衆衛生疫学教授',
+          '博士号社会学 - コロラド大学ボルダー校',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+      },
+      {
+        img: ThomasMahoney,
+        name: 'トーマス・マホニー',
+        role: 'ビジネスおよび公衆衛生アドバイザー',
+        texts: [
+          'ハーバード大学感染症学部助手',
+          'ペンシルバニア大学ウォートンスクールMBA',
+        ],
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       {
         img: MadhavDatt,
