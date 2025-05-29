@@ -25,7 +25,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             <Video
               width={`1200px`}
               height={`675px`}
-              url="https://www.youtube.com/watch?v=od0GGkbC_gQ"
+              url="https://www.youtube.com/live/ttjpF38FVuo"
             />
           </div>
           <div className="mb-[80px] mt-[80px] flex flex-row flex-wrap items-start sm:flex-col sm:items-center md:flex-row md:items-end lg:flex-row lg:items-end xl:flex-row xl:items-end">
