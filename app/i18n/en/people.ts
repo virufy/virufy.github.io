@@ -112,9 +112,10 @@ const people: People = {
         name: 'Rafi Azim-Khan',
         role: 'Executive Legal Advisor',
         texts: [
-          'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
+          'Partner, Head of Digital Law, Europe Crowell & Moring LLP',
+          'LL.B. University of London, Queen Mary College',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,
