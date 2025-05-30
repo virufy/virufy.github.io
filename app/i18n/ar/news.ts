@@ -93,13 +93,6 @@ const pressReleases: PressReleases = {
       url: 'https://youtu.be/UZU3rPTEPfU',
       linkText: 'شاهد الآن',
     },
-    {
-      title: 'ورشة عمل أصوات COVID-19',
-      date: '2020',
-      subText: '',
-      url: 'https://health-sounds.cl.cam.ac.uk/workshop20/short-talks.html',
-      linkText: 'اقرأ المزيد',
-    },
   ],
 };
 

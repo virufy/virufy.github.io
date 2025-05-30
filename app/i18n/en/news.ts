@@ -97,13 +97,6 @@ const pressReleases: PressReleases = {
       url: 'https://youtu.be/UZU3rPTEPfU',
       linkText: 'Watch Now',
     },
-    {
-      title: 'Sounds of COVID-19 Workshop',
-      date: '2020',
-      subText: '',
-      url: 'https://health-sounds.cl.cam.ac.uk/workshop20/short-talks.html',
-      linkText: 'Read More',
-    },
   ],
 };
 

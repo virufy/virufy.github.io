@@ -94,13 +94,6 @@ const pressReleases: PressReleases = {
       url: 'https://youtu.be/UZU3rPTEPfU',
       linkText: '今すぐ見る',
     },
-    {
-      title: 'COVID-19の音に関するワークショップ',
-      date: '2020年',
-      subText: '',
-      url: 'https://health-sounds.cl.cam.ac.uk/workshop20/short-talks.html',
-      linkText: '続きを読む',
-    },
   ],
 };
 
