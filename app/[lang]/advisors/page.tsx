@@ -58,7 +58,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
           {/* Cards Container */}
           <div className="grid grid-cols-2 gap-4 px-4 pb-8 text-white sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
-            {sectionAdvisors.advisors.map(
+            {sectionAdvisors.advisors.sort((a,b)=> a.index - b.index).map(
               ({ img, name, role, texts, link }) => (
                 <div
                   key={name}
