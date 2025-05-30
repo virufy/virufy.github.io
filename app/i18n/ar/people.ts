@@ -2,6 +2,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -85,6 +87,28 @@ const people: People = {
         index: 5,
       },
       {
+        img: GlennMuschert,
+        name: 'البروفيسور جلين موشيرت',
+        role: 'مستشار العلوم الاجتماعية والسياسة العامة',
+        texts: [
+          'أستاذ الصحة العامة وعلم الأوبئة، جامعة خليفة، الإمارات العربية المتحدة',
+          'دكتوراه. علم الاجتماع - جامعة كولورادو، بولدر',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+        index: 6,
+      },
+      {
+        img: ThomasMahoney,
+        name: 'توماس ماهوني',
+        role: 'مستشار الأعمال والصحة العامة',
+        texts: [
+          'مساعد قسم، قسم الأمراض المعدية، جامعة هارفارد',
+          'ماجستير إدارة الأعمال، كلية وارتون، جامعة بنسلفانيا',
+        ],
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
+        index: 7,
+      },
+      {
         img: MadhavDatt,
         name: 'مادهف دات',
         role: 'مستشار تنفيذي غير ربحي',
@@ -94,7 +118,7 @@ const people: People = {
           'ماجستير في إدارة الأعمال، كلية هارفارد للأعمال',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
-        index: 6,
+        index: 8,
       },
       {
         img: MayXu,
@@ -102,7 +126,7 @@ const people: People = {
         role: 'مستشارة استراتيجية بيانات ومنتجات الذكاء الاصطناعي',
         texts: ['مؤسسة / مدربة تنفيذية', 'ماجستير - جامعة ستانفورد'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
-        index: 7,
+        index: 9,
       },
       {
         img: ZafarShahid,
@@ -110,6 +134,7 @@ const people: People = {
         role: 'مستشار التكنولوجيا',
         texts: [
           'قائد الذكاء الاصطناعي الأخضر - سابق في NVIDIA، سابق في Meta',
+
           'دكتوراه في الطب الشرعي للوسائط المتعددة، جامعة مونبلييه',
         ],
         link: 'https://zafarshahid.com/',
@@ -120,10 +145,11 @@ const people: People = {
         name: 'رافي أزيم خان',
         role: 'مستشار قانوني تنفيذي',
         texts: [
-          'شريك، IP/IT ورئيس خصوصية البيانات أوروبا - Pillsbury Winthrop Shaw Pittman LLP',
+          'شريك، رئيس قسم القانون الرقمي، شركة Europe Crowell & Moring LLP',
+          'ليسانس الحقوق. جامعة لندن، كلية كوين ماري',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
-        index: 8,
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
+        index: 10,
       },
       {
         img: RonanDunlop,
@@ -134,7 +160,7 @@ const people: People = {
           'نائب رئيس التسويق - Cohuman',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
-        index: 13,
+        index: 15,
       },
       {
         img: MarkHaseltine,
@@ -142,7 +168,7 @@ const people: People = {
         role: 'مستشار تنفيذي',
         texts: ['CTO / CPO السابق - edX، GoDaddy', 'خريج علوم الكمبيوتر - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-        index: 14,
+        index: 16,
       },
       {
         img: FaisalCheema,
@@ -152,7 +178,7 @@ const people: People = {
           'أستاذ مشارك في العلوم الطبية الحيوية والسريرية، كلية الطب Tilman J. Fertitta، جامعة هيوستن',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
-        index: 15,
+        index: 17,
       },
       {
         img: MertPilanci,
@@ -162,7 +188,7 @@ const people: People = {
           'أستاذ مساعد في الذكاء الاصطناعي - جامعة ستانفورد، الهندسة الكهربائية',
         ],
         link: 'https://stanford.edu/~pilanci/',
-        index: 16,
+        index: 18,
       },
       {
         img: TetsujiMadarame,
@@ -173,7 +199,7 @@ const people: People = {
           'MBA - جامعة ستانفورد لإدارة الأعمال',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
-        index: 17,
+        index: 19,
       },
       {
         img: YukitoshiNakatani,
@@ -184,7 +210,7 @@ const people: People = {
           'مدير سابق، أكسنتشر اليابان',
         ],
         link: 'https://www.facebook.com/nakatani.yukitoshi',
-        index: 18,
+        index: 20,
       },
       {
         img: VictorWang,
@@ -195,7 +221,7 @@ const people: People = {
           'MBA - جامعة ستانفورد لإدارة الأعمال',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
-        index: 19,
+        index: 21,
       },
       {
         img: AdamLeipzig,
@@ -207,7 +233,7 @@ const people: People = {
           'عضو هيئة التدريس المحترف بمدرسة الأعمال بجامعة بيركلي هاس',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
-        index: 20,
+        index: 22,
       },
       {
         img: RokSosic,
@@ -215,7 +241,7 @@ const people: People = {
         role: 'مستشار في الذكاء الاصطناعي',
         texts: ['مهندس أبحاث أول', 'جامعة ستانفورد كلية الهندسة'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
-        index: 21,
+        index: 23,
       },
       {
         img: RichardNall,
@@ -226,7 +252,7 @@ const people: People = {
           `ماجستير في القيادة التنظيمية - Henley`,
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
-        index: 22,
+        index: 24,
       },
       {
         img: KhwajaShaik,
@@ -237,7 +263,7 @@ const people: People = {
           'عضو مجلس إدارة - جامعة شمال فلوريدا لتكنولوجيا المعلومات',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
-        index: 23,
+        index: 25,
       },
       {
         img: AyomideOwoyemi,
@@ -248,7 +274,7 @@ const people: People = {
           'سفير - One Young World نيجيريا',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
-        index: 24,
+        index: 26,
       },
       {
         img: TsutomuIto,
@@ -256,7 +282,7 @@ const people: People = {
         role: 'مستشار تنفيذي مستقبلي',
         texts: ['مؤسس - Tannan FM Radio', 'المدير المعماري، قطار الرصاصة'],
         link: 'http://tannan.fm/contents/about-us.html',
-        index: 25,
+        index: 27,
       },
       {
         img: LesAtlas,
@@ -267,7 +293,7 @@ const people: People = {
           'دكتوراه في الهندسة الكهربائية، جامعة ستانفورد',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
-        index: 9,
+        index: 11,
       },
       {
         img: JesseBump,
@@ -286,7 +312,7 @@ const people: People = {
         role: 'قائد تطوير سريري في اليابان',
         texts: ['مدير مجموعة قسم تطوير السريري، CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
-        index: 10,
+        index: 12,
       },
       {
         img: HiroyukiKunishima,
@@ -294,7 +320,7 @@ const people: People = {
         role: 'مستشار أمراض معدية',
         texts: ['قسم الأمراض المعدية، مستشفى جامعة سانت ماريانا'],
         link: 'http://www.k-icnet.org/profile.html',
-        index: 11,
+        index: 13,
       },
       {
         img: FumihikoYokota,
@@ -302,7 +328,7 @@ const people: People = {
         role: 'مستشار الصحة العامة',
         texts: ['أستاذ مساعد في الوبائيات، جامعة كيوشو'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/members/yokota-fumihiko',
-        index: 12,
+        index: 14,
       },
       {
         img: KoheiWakamiya,
@@ -310,7 +336,7 @@ const people: People = {
         role: 'مستشار الذكاء الاصطناعي الصوتي',
         texts: ['أستاذ مساعد تصميم الصوتيات', 'جامعة كيوشو'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
-        index: 26,
+        index: 28,
       },
       {
         img: TamerFahmy,
@@ -322,7 +348,7 @@ const people: People = {
           'بكالوريوس في الهندسة الطبية الحيوية، جامعة القاهرة',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
-        index: 27,
+        index: 29,
       },
       {
         img: ShirinHasan,
@@ -333,7 +359,7 @@ const people: People = {
           'ماجستير، الكيمياء الحيوية، جامعة سان خوزيه  / ستانفورد',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
-        index: 28,
+        index: 30,
       },
     ],
   },

@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   /**
    * Enable static exports for the App Router.
@@ -25,6 +24,7 @@ const nextConfig = {
   /**
    * Add a custom server route for redirection
    */
+  trailingSlash: true,
   async rewrites() {
     return [
       {

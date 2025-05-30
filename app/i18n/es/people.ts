@@ -3,6 +3,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -81,7 +83,26 @@ const people: People = {
           'Profesor de Control y Prevención de Infecciones - Universidad de Osaka',
         ],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
-        index: 5,
+      },
+      {
+        img: GlennMuschert,
+        name: 'Profesor Glenn Muschert',
+        role: 'Asesor de Ciencias Sociales y Políticas Públicas',
+        texts: [
+          'Profesor, Salud Pública y Epidemiología, Universidad de Khalifa, Emiratos Árabes Unidos',
+          'Doctor en Filosofía. Sociología - Universidad de Colorado, Boulder',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+      },
+      {
+        img: ThomasMahoney,
+        name: 'Thomas Mahoney',
+        role: 'Asesor de negocios y salud pública',
+        texts: [
+          'Asociado de Departamento, Departamento de Enfermedades Infecciosas, Universidad de Harvard',
+          'MBA, The Wharton School, Universidad de Pensilvania',
+        ],
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       {
         img: MadhavDatt,
@@ -112,6 +133,7 @@ const people: People = {
         role: 'Asesor Tecnológico',
         texts: [
           'Líder en IA ecológica: ex-NVIDIA, ex-Meta',
+
           'Doctorado en Ciencias Forenses Multimedia, Universidad de Montpellier',
         ],
         link: 'https://zafarshahid.com/',
@@ -122,10 +144,10 @@ const people: People = {
         name: 'Rafi Azim-Khan',
         role: 'Asesor Ejecutivo Legal',
         texts: [
-          'Socio, IP/IT y Jefe de Privacidad de Datos Europa Pillsbury Winthrop Shaw Pittman LLP',
+          'Socio, Jefe de Derecho Digital, Europa Crowell & Moring LLP',
+          'LL.B. Universidad de Londres, Queen Mary College',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
-        index: 8,
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,
@@ -141,6 +163,7 @@ const people: People = {
       {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
+
         role: 'Asesor Ejecutivo',
         texts: [
           'Ex CTO/CPO - edX, GoDaddy',
