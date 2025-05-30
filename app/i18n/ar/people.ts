@@ -2,6 +2,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -81,6 +83,26 @@ const people: People = {
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       {
+        img: GlennMuschert,
+        name: 'البروفيسور جلين موشيرت',
+        role: 'مستشار العلوم الاجتماعية والسياسة العامة',
+        texts: [
+          'أستاذ الصحة العامة وعلم الأوبئة، جامعة خليفة، الإمارات العربية المتحدة',
+          'دكتوراه. علم الاجتماع - جامعة كولورادو، بولدر',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+      },
+      {
+        img: ThomasMahoney,
+        name: 'توماس ماهوني',
+        role: 'مستشار الأعمال والصحة العامة',
+        texts: [
+          'مساعد قسم، قسم الأمراض المعدية، جامعة هارفارد',
+          'ماجستير إدارة الأعمال، كلية وارتون، جامعة بنسلفانيا',
+        ],
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
+      },
+      {
         img: MadhavDatt,
         name: 'مادهف دات',
         role: 'مستشار تنفيذي غير ربحي',
@@ -115,9 +137,10 @@ const people: People = {
         name: 'رافي أزيم خان',
         role: 'مستشار قانوني تنفيذي',
         texts: [
-          'شريك، IP/IT ورئيس خصوصية البيانات أوروبا - Pillsbury Winthrop Shaw Pittman LLP',
+          'شريك، رئيس قسم القانون الرقمي، شركة Europe Crowell & Moring LLP',
+          'ليسانس الحقوق. جامعة لندن، كلية كوين ماري',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,

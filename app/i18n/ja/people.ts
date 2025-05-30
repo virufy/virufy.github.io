@@ -3,6 +3,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -79,6 +81,26 @@ const people: People = {
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       {
+        img: GlennMuschert,
+        name: 'グレン・マスチャート教授',
+        role: '社会科学・公共政策アドバイザー',
+        texts: [
+          'アラブ首長国連邦ハリファ大学公衆衛生疫学教授',
+          '博士号社会学 - コロラド大学ボルダー校',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+      },
+      {
+        img: ThomasMahoney,
+        name: 'トーマス・マホニー',
+        role: 'ビジネスおよび公衆衛生アドバイザー',
+        texts: [
+          'ハーバード大学感染症学部助手',
+          'ペンシルバニア大学ウォートンスクールMBA',
+        ],
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
+      },
+      {
         img: MadhavDatt,
         name: 'マダブ・ダット',
         role: 'エグゼクティブ非営利アドバイザー',
@@ -113,9 +135,10 @@ const people: People = {
         name: 'ラフィ・アジム・カーン',
         role: 'エグゼクティブ法務アドバイザー',
         texts: [
-          'ピルズベリーローレンスウィンショーLLP欧州データプライバシー部門リーダー、IP/ITパートナー',
+          'Europe Crowell & Moring LLP パートナー、デジタル法責任者',
+          '法学士ロンドン大学クイーン・メアリー・カレッジ',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,

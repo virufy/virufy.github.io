@@ -3,6 +3,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -80,6 +82,26 @@ const people: People = {
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       {
+        img: GlennMuschert,
+        name: 'Prof. Glenn Muschert',
+        role: 'Social Science & Public Policy Advisor',
+        texts: [
+          'Professor, Public Health & Epidemiology, Khalifa University, UAE',
+          'Ph.D. Sociology - University of Colorado, Boulder',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+      },
+      {
+        img: ThomasMahoney,
+        name: 'Thomas Mahoney',
+        role: 'Business & Public Health Advisor',
+        texts: [
+          'Department Associate, Infectious Diseases Department, Harvard University',
+          'MBA, The Wharton School, University of Pennsylvania',
+        ],
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
+      },
+      {
         img: MadhavDatt,
         name: 'Madhav Datt',
         role: 'Executive Nonprofit Advisor',
@@ -112,9 +134,10 @@ const people: People = {
         name: 'Rafi Azim-Khan',
         role: 'Executive Legal Advisor',
         texts: [
-          'Partner, IP/IT & Head Data Privacy Europe Pillsbury Winthrop Shaw Pittman LLP',
+          'Partner, Head of Digital Law, Europe Crowell & Moring LLP',
+          'LL.B. University of London, Queen Mary College',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,

@@ -1,1 +1,0 @@
-{"version":3,"sources":["containers/Welcome/PatientSummary/index.ts"],"names":[],"mappings":"qHAAA","file":"static/js/57.b7bac2db.chunk.js","sourcesContent":["export { default } from './PatientSummary';\n"],"sourceRoot":""}

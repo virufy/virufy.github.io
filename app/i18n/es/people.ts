@@ -3,6 +3,7 @@ import {
   AyomideOwoyemi,
   FaisalCheema,
   FumihikoYokota,
+  GlennMuschert,
   HiroyukiKunishima,
   JureLeskovec,
   JesseBump,
@@ -24,6 +25,7 @@ import {
   ShirinHasan,
   TamerFahmy,
   TetsujiMadarame,
+  ThomasMahoney,
   TsutomuIto,
   VictorWang,
   YukitoshiNakatani,
@@ -80,6 +82,26 @@ const people: People = {
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       {
+        img: GlennMuschert,
+        name: 'Profesor Glenn Muschert',
+        role: 'Asesor de Ciencias Sociales y Políticas Públicas',
+        texts: [
+          'Profesor, Salud Pública y Epidemiología, Universidad de Khalifa, Emiratos Árabes Unidos',
+          'Doctor en Filosofía. Sociología - Universidad de Colorado, Boulder',
+        ],
+        link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+      },
+      {
+        img: ThomasMahoney,
+        name: 'Thomas Mahoney',
+        role: 'Asesor de negocios y salud pública',
+        texts: [
+          'Asociado de Departamento, Departamento de Enfermedades Infecciosas, Universidad de Harvard',
+          'MBA, The Wharton School, Universidad de Pensilvania',
+        ],
+        link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
+      },
+      {
         img: MadhavDatt,
         name: 'Madhav Datt',
         role: 'Asesor Ejecutivo de Organizaciones sin Fines de Lucro',
@@ -117,9 +139,10 @@ const people: People = {
         name: 'Rafi Azim-Khan',
         role: 'Asesor Ejecutivo Legal',
         texts: [
-          'Socio, IP/IT y Jefe de Privacidad de Datos Europa Pillsbury Winthrop Shaw Pittman LLP',
+          'Socio, Jefe de Derecho Digital, Europa Crowell & Moring LLP',
+          'LL.B. Universidad de Londres, Queen Mary College',
         ],
-        link: 'https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html',
+        link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       {
         img: RonanDunlop,
