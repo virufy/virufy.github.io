@@ -83,6 +83,7 @@ const people: People = {
           'Infection Control and Prevention Professor - Osaka University',
         ],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
+        index: 5,
       },
       {
         img: GlennMuschert,
@@ -93,6 +94,7 @@ const people: People = {
           'Ph.D. Sociology - University of Colorado, Boulder',
         ],
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+        index: 6,
       },
       {
         img: ThomasMahoney,
@@ -103,6 +105,7 @@ const people: People = {
           'MBA, The Wharton School, University of Pennsylvania',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
+        index: 7,
       },
       {
         img: MadhavDatt,
@@ -114,7 +117,7 @@ const people: People = {
           'MBA, Harvard Business School',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
-        index: 6,
+        index: 8,
       },
       {
         img: MayXu,
@@ -122,7 +125,7 @@ const people: People = {
         role: 'Data and AI Product Strategy Advisor',
         texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
-        index: 7,
+        index: 9,
       },
       {
         img: ZafarShahid,
@@ -144,6 +147,7 @@ const people: People = {
           'LL.B. University of London, Queen Mary College',
         ],
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
+        index: 10,
       },
       {
         img: RonanDunlop,
@@ -154,7 +158,7 @@ const people: People = {
           'VP of Marketing - Cohuman',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
-        index: 13,
+        index: 15,
       },
       {
         img: MarkHaseltine,
@@ -165,7 +169,7 @@ const people: People = {
           'Computer Science alumnus - MIT',
         ],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-        index: 14,
+        index: 16,
       },
       {
         img: FaisalCheema,
@@ -175,7 +179,7 @@ const people: People = {
           'Associate Professor of Biomedical & Clinical Sciences, Tilman J. Fertitta College of Medicine, University of Houston',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
-        index: 15,
+        index: 17,
       },
       {
         img: MertPilanci,
@@ -185,7 +189,7 @@ const people: People = {
           'Asst. Professor of AI - Stanford University, Electrical Engineering',
         ],
         link: 'https://stanford.edu/~pilanci/',
-        index: 16,
+        index: 18,
       },
       {
         img: TetsujiMadarame,
@@ -196,7 +200,7 @@ const people: People = {
           'MBA - Stanford GSB',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
-        index: 17,
+        index: 19,
       },
       {
         img: YukitoshiNakatani,
@@ -204,7 +208,7 @@ const people: People = {
         role: 'Japan Executive Advisor',
         texts: ['CEO, IT Value Consulting', 'Former Director, Accenture Japan'],
         link: 'https://www.facebook.com/nakatani.yukitoshi',
-        index: 18,
+        index: 20,
       },
       {
         img: VictorWang,
@@ -215,7 +219,7 @@ const people: People = {
           'MBA - Stanford GSB',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
-        index: 19,
+        index: 21,
       },
       {
         img: AdamLeipzig,
@@ -227,7 +231,7 @@ const people: People = {
           'Professional Faculty, Berkeley Haas School of Business',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
-        index: 20,
+        index: 22,
       },
       {
         img: RokSosic,
@@ -235,7 +239,7 @@ const people: People = {
         role: 'Artificial Intelligence Advisor',
         texts: ['Senior Research Engineer', 'Stanford School of Engineering'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
-        index: 21,
+        index: 23,
       },
       {
         img: RichardNall,
@@ -246,7 +250,7 @@ const people: People = {
           `Master's Organizational Leadership - Henley`,
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
-        index: 22,
+        index: 24,
       },
       {
         img: KhwajaShaik,
@@ -257,7 +261,7 @@ const people: People = {
           'Board Member - University of North Florida Computing',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
-        index: 23,
+        index: 25,
       },
       {
         img: AyomideOwoyemi,
@@ -268,7 +272,7 @@ const people: People = {
           'Ambassador - One Young World Nigeria',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
-        index: 24,
+        index: 26,
       },
       {
         img: TsutomuIto,
@@ -276,7 +280,7 @@ const people: People = {
         role: 'Executive Visionary Advisor',
         texts: ['Founder - Tannan FM Radio', 'Lead Architect, Bullet Train'],
         link: 'http://tannan.fm/contents/about-us.html',
-        index: 25,
+        index: 27,
       },
       {
         img: LesAtlas,
@@ -287,7 +291,7 @@ const people: People = {
           'Ph.D. Electrical Engineering, Stanford',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
-        index: 9,
+        index: 11,
       },
       {
         img: JesseBump,
@@ -306,7 +310,7 @@ const people: People = {
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
-        index: 10,
+        index: 12,
       },
       {
         img: HiroyukiKunishima,
@@ -316,7 +320,7 @@ const people: People = {
           'Department of Infectious Diseases, St. Marianna University Hospital',
         ],
         link: 'http://www.k-icnet.org/profile.html',
-        index: 11,
+        index: 13,
       },
       {
         img: FumihikoYokota,
@@ -324,7 +328,7 @@ const people: People = {
         role: 'Public Health Advisor',
         texts: ['Associate Professor of Epidemiology, Kyushu University'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
-        index: 12,
+        index: 14,
       },
       {
         img: KoheiWakamiya,
@@ -332,7 +336,7 @@ const people: People = {
         role: 'Audio AI Advisor',
         texts: ['Acoustic Design Assistant Professor', 'Kyushu University'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
-        index: 26,
+        index: 28,
       },
       {
         img: TamerFahmy,
@@ -344,7 +348,7 @@ const people: People = {
           'BSc Biomedical Engineering, Cairo University',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
-        index: 27,
+        index: 29,
       },
       {
         img: ShirinHasan,
@@ -355,7 +359,7 @@ const people: People = {
           'M.S., Biochemistry, SJSU/Stanford',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
-        index: 28,
+        index: 30,
       },
     ],
   },
