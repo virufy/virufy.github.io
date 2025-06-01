@@ -51,6 +51,7 @@ const people: People = {
         role: '臨床アドバイザー',
         texts: ['スタンフォード医科大学耳鼻咽喉科臨床助教授'],
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
+        index: 0,
       },
       {
         img: JureLeskovec,
@@ -61,9 +62,9 @@ const people: People = {
           'スタンフォード大学AI准教授',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
+        index: 3,
       },
       {
-
         img: MelissaDyrdahl,
         name: 'メリッサ・ダイダール',
         role: 'エグゼクティブマーケティングアドバイザー',
@@ -72,6 +73,7 @@ const people: People = {
           'CommonSpirit Health理事会メンバー',
         ],
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
+        index: 4,
       },
       {
         img: KutsunaSatoshi,
@@ -79,6 +81,7 @@ const people: People = {
         role: 'エグゼクティブ・臨床アドバイザー',
         texts: ['感染制御医学講座(感染制御学)ー大阪大学'],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
+        index: 5,
       },
       {
         img: GlennMuschert,
@@ -89,6 +92,7 @@ const people: People = {
           '博士号社会学 - コロラド大学ボルダー校',
         ],
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
+        index: 6,
       },
       {
         img: ThomasMahoney,
@@ -99,6 +103,7 @@ const people: People = {
           'ペンシルバニア大学ウォートンスクールMBA',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
+        index: 7,
       },
       {
         img: MadhavDatt,
@@ -110,6 +115,7 @@ const people: People = {
           'MBA、ハーバード・ビジネス・スクール',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
+        index: 8,
       },
       {
         img: MayXu,
@@ -117,6 +123,7 @@ const people: People = {
         role: 'データ・AI製品戦略アドバイザー',
         texts: ['創設者 / エグゼクティブコーチ', 'MS- スタンフォード大学'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
+        index: 9,
       },
       {
         img: ZafarShahid,
@@ -129,6 +136,7 @@ const people: People = {
           'モンペリエ大学マルチメディアフォレンジック',
         ],
         link: 'https://zafarshahid.com/',
+        index: 1,
       },
       {
         img: RafiAzimKhan,
@@ -139,6 +147,7 @@ const people: People = {
           '法学士ロンドン大学クイーン・メアリー・カレッジ',
         ],
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
+        index: 10,
       },
       {
         img: RonanDunlop,
@@ -149,6 +158,7 @@ const people: People = {
           'Cohumanマーケティング副社長',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
+        index: 15,
       },
       {
         img: MarkHaseltine,
@@ -156,6 +166,7 @@ const people: People = {
         role: 'エグゼクティブアドバイザー',
         texts: ['元edX、GoDaddy CTO/CPO', 'MITコンピュータサイエンス卒業生'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
+        index: 16,
       },
       {
         img: FaisalCheema,
@@ -165,6 +176,7 @@ const people: People = {
           'ヒューストン大学ティルマン・フェルティッタ医科大学　生命医学・臨床科学准教授',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
+        index: 17,
       },
       {
         img: MertPilanci,
@@ -172,6 +184,7 @@ const people: People = {
         role: '人工知能アドバイザー',
         texts: ['スタンフォード大学電気工学AI助教授'],
         link: 'https://stanford.edu/~pilanci/',
+        index: 18,
       },
       {
         img: TetsujiMadarame,
@@ -182,6 +195,7 @@ const people: People = {
           'MBA - スタンフォード経営大学院',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
+        index: 19,
       },
       {
         img: YukitoshiNakatani,
@@ -192,6 +206,7 @@ const people: People = {
           'アクセンチュア日本法人　元ディレクター',
         ],
         link: 'https://www.facebook.com/nakatani.yukitoshi',
+        index: 20,
       },
       {
         img: VictorWang,
@@ -202,6 +217,7 @@ const people: People = {
           'スタンフォード経営大学院MBA',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
+        index: 21,
       },
       {
         img: AdamLeipzig,
@@ -213,6 +229,7 @@ const people: People = {
           'バークレーのハースビジネススクールの専門教授',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
+        index: 22,
       },
       {
         img: RokSosic,
@@ -220,6 +237,7 @@ const people: People = {
         role: '人工知能アドバイザー',
         texts: ['スタンフォード工学部シニアリサーチエンジニア'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
+        index: 23,
       },
       {
         img: RichardNall,
@@ -230,6 +248,7 @@ const people: People = {
           'Henleyビジネススクール - 組織リーダーシップ修士号',
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
+        index: 24,
       },
       {
         img: KhwajaShaik,
@@ -240,6 +259,7 @@ const people: People = {
           'ノースフロリダ大学コンピューティング理事会メンバー',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
+        index: 25,
       },
       {
         img: AyomideOwoyemi,
@@ -250,6 +270,7 @@ const people: People = {
           'One Young World　ナイジェリア大使',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
+        index: 26,
       },
       {
         img: TsutomuIto,
@@ -257,6 +278,7 @@ const people: People = {
         role: 'エグゼクティブビジョナリーアドバイザー',
         texts: ['Tannan FMラジオ創設者', '新幹線主任設計者'],
         link: 'http://tannan.fm/contents/about-us.html',
+        index: 27,
       },
       {
         img: LesAtlas,
@@ -267,6 +289,7 @@ const people: People = {
           'スタンフォード大学電気工学博士',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
+        index: 11,
       },
       {
         img: JesseBump,
@@ -274,6 +297,7 @@ const people: People = {
         role: '公衆衛生アドバイザー',
         texts: ['国際保健・人口学部門', 'ハーバードT.H.チャン公衆衛生大学院'],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
+        index: 2,
       },
       {
         img: NobuyoOzawa,
@@ -281,6 +305,7 @@ const people: People = {
         role: '日本臨床開発リード',
         texts: ['臨床開発部グループマネージャー'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
+        index: 12,
       },
       {
         img: HiroyukiKunishima,
@@ -288,6 +313,7 @@ const people: People = {
         role: '感染症アドバイザー',
         texts: ['感染症学講座聖マリアンナ医科大学病院'],
         link: 'http://www.k-icnet.org/profile.html',
+        index: 13,
       },
       {
         img: FumihikoYokota,
@@ -295,6 +321,7 @@ const people: People = {
         role: '公衆衛生アドバイザー',
         texts: ['疫学准教授　九州大学'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
+        index: 14,
       },
       {
         img: KoheiWakamiya,
@@ -302,6 +329,7 @@ const people: People = {
         role: '音声AI顧問',
         texts: ['音声AIアドバイザー', '九州大学'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_ja.html',
+        index: 28,
       },
       {
         img: TamerFahmy,
@@ -313,6 +341,7 @@ const people: People = {
           'BSc 生物医学工学 カイロ大学',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
+        index: 29,
       },
       {
         img: ShirinHasan,
@@ -323,6 +352,7 @@ const people: People = {
           '理学修士（生化学）、サンノゼ州立大学 / スタンフォード大学',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
+        index: 30,
       },
     ],
   },

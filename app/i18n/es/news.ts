@@ -10,7 +10,7 @@ const pressReleases: PressReleases = {
         'Virufy presentará tecnología innovadora de detección de COVID-19 en Prototypes for Humanity 2024 en Dubái',
       date: 'Noviembre 2024',
       subText: '',
-      url: 'news/press-release-dubai',
+      url: '/es/news/press-release-dubai',
       linkText: 'Leer más',
     },
     {
@@ -18,7 +18,7 @@ const pressReleases: PressReleases = {
         'Virufy lanza su app beta en Colombia, brindando detección de COVID-19 en casa a 4,500 usuarios',
       date: 'Febrero 2023',
       subText: '',
-      url: 'news/beta-app-release-2023',
+      url: '/es/news/beta-app-release-2023',
       linkText: 'Leer más',
     },
     {
@@ -97,13 +97,6 @@ const pressReleases: PressReleases = {
       subText: 'One Young World, Tokio, Japón',
       url: 'https://youtu.be/UZU3rPTEPfU',
       linkText: 'Ver ahora',
-    },
-    {
-      title: 'Talleres sobre los Sonidos del COVID-19',
-      date: '2020',
-      subText: '',
-      url: 'https://health-sounds.cl.cam.ac.uk/workshop20/short-talks.html',
-      linkText: 'Leer más',
     },
   ],
 };

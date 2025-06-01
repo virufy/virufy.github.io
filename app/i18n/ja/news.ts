@@ -10,7 +10,7 @@ const pressReleases: PressReleases = {
         'Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露',
       date: '2024年11月',
       subText: '',
-      url: 'news/press-release-dubai',
+      url: '/ja/news/press-release-dubai',
       linkText: '続きを読む',
     },
     {
@@ -18,7 +18,7 @@ const pressReleases: PressReleases = {
         'Virufyベータ版アプリがコロンビアでリリース、4,500人のユーザーに自宅でCOVID-19検出を提供',
       date: '2023年2月',
       subText: '',
-      url: 'news/beta-app-release-2023',
+      url: '/ja/news/beta-app-release-2023',
       linkText: '続きを読む',
     },
     {
@@ -93,13 +93,6 @@ const pressReleases: PressReleases = {
       subText: 'One Young World, 東京, 日本',
       url: 'https://youtu.be/UZU3rPTEPfU',
       linkText: '今すぐ見る',
-    },
-    {
-      title: 'COVID-19の音に関するワークショップ',
-      date: '2020年',
-      subText: '',
-      url: 'https://health-sounds.cl.cam.ac.uk/workshop20/short-talks.html',
-      linkText: '続きを読む',
     },
   ],
 };
