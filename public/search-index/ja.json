@@ -79,8 +79,8 @@
   {
     "id": "ja-faq-app-result-time",
     "lang": "ja",
-    "title": "COVID-19予測の結果はいつどのように通知されますか？",
-    "content": "当アプリは現在、データ収集のみに使用されています。各国の公衆衛生当局の承認および臨床試験が完了しない限り、予測機能を含むアプリを公開することはできません。プロセスには数週間から数ヶ月かかる場合があります。Virufyは、病院や保健当局との協力により、PCR検査の効率的な使用を促進しながらこの技術を無償で提供することを目指しています。",
+    "title": "アプリはいつ、どのようにして上気道感染症の予測結果を提供しますか?",
+    "content": "当社のアプリは現在、データ収集のみを目的としています。各国の公衆衛生当局の承認と、現地の状況におけるAI技術の有効性を検証するための臨床研究がなければ、上気道感染症予測アプリをリリースすることはできません。このプロセスは、政府パートナーのスピードに応じて数週間から数ヶ月かかる場合があります。Virufyは、この技術を人々に無料で提供し、高額なPCR検査を必要な場合にのみ最適化するために、保健当局や病院とのパートナーシップを歓迎します。",
     "url": "/ja/faq"
   },
   {
@@ -114,7 +114,7 @@
   {
     "id": "ja-faq-virufy-difference",
     "lang": "ja",
-    "title": "Virufyは類似プロジェクトを行う他団体とどのように異なるのですか？",
+    "title": "Virufy は、同様の事業に取り組んでいる他の取り組みとどう違うのでしょうか?",
     "content": "Virufyは501(c)(3)の非営利団体であるため、優秀な専門家をボランティアとして募集することができます。当チームは世界5大陸にまたがり、グローバルな共感力を備えた組織です。利益を追求していないため、発展途上国でも活動可能です。多くの大学の卒業生ネットワークと専門家のつながりにより、世界中でトップレベルの関係者にアクセスできます。組織内にはメンター制度も整備されており、経験豊富な専門家の助言によって若いプロフェッショナルたちが急速かつ創造的に活動できるようになっています。",
     "url": "/ja/faq"
   },
@@ -128,21 +128,21 @@
   {
     "id": "ja-faq-virufy-unique",
     "lang": "ja",
-    "title": "Virufyのどの点が他のプロジェクトと異なるのですか？",
+    "title": "Virufy が他の組織と比べて独特な点は何ですか?",
     "content": "Virufyは多様でグローバルなチームとともに若い組織として活動しており、25以上の大学の卒業生で構成されています。法律、機械学習、医学、情報セキュリティ、モバイルアプリ開発などの分野にわたる専門性を持った多職種のチームです。One Young Worldのネットワークにより、世界中の信頼できるパートナーとつながることができます。501(c)(3)の非営利であるため、ボランティアが参加しやすく、官僚的な制約も少ない独立した団体です。",
     "url": "/ja/faq"
   },
   {
     "id": "ja-faq-investment",
     "lang": "ja",
-    "title": "Virufyプロジェクトの実現にはどれくらいの投資が必要でしたか？",
+    "title": "Virufy イニシアチブを実現するためにどれだけの投資が行われましたか?",
     "content": "1,000人以上のボランティアが数千時間をこのプロジェクトに捧げてきました。いくつかの企業は、メール、ストレージ、メッセージング、クラウドコンピューティングなどのソフトウェアを無償で提供してくれました。ただし、ビデオ会議やプロジェクト管理ツールなど一部のソフトウェアは有料であり、これらは創設者アミルの限られた貯金から支払われています。成功すればクラウドコストは増加しますが、助成金や寄付、政府の支援により運営を継続できると信じています。",
     "url": "/ja/faq"
   },
   {
     "id": "ja-faq-ai-coughs",
     "lang": "ja",
-    "title": "COVID-19の咳はなぜ識別可能なのですか？",
+    "title": "上気道感染症の咳はなぜ区別できるのでしょうか?",
     "content": "COVID-19は他の呼吸器疾患と同様に喉や肺を損傷するため、咳のパターンに検出可能な違いが生まれます。これにより、咳音を分析してCOVID-19や他の呼吸器疾患を特定できます。世界中の名門大学、たとえばカーネギーメロン大学（CMU）、MIT、ケンブリッジ大学などでもこの研究が進められています。ケンブリッジ大学の研究では、単純な機械学習分類器が咳音と呼吸音からCOVID-19陽性を高精度で分類できることが示されました。CMUの研究者たちは、COVID-19陽性患者を識別する18の音声特徴を発見し、精度の高い学術モデルを構築しました。",
     "url": "/ja/faq"
   },
@@ -296,7 +296,7 @@
   {
     "id": "ja-home-demo",
     "lang": "ja",
-    "title": "デモアプリ",
+    "title": "咳をシェアする",
     "content": "咳を提供してAI解析を体験できるデモアプリをお試しください。",
     "url": "/ja/study"
   },
@@ -581,13 +581,6 @@
     "url": "/ja/news/virufy-presentation-oyw-2020"
   },
   {
-    "id": "ja-news-sounds-of-covid-workshop",
-    "lang": "ja",
-    "title": "ニュース",
-    "content": "COVID-19の音ワークショップ",
-    "url": "/ja/news/sounds-of-covid-workshop"
-  },
-  {
     "id": "ja-publications-hierarchical-transformer-2022",
     "lang": "ja",
     "title": "出版物",
@@ -639,28 +632,28 @@
   {
     "id": "ja-advisor-kara-meister",
     "lang": "ja",
-    "title": "Kara Meister, M.D.",
+    "title": "カラ・マイスター医学博士",
     "content": "臨床アドバイザー（スタンフォード大学医学部 耳鼻咽喉科 臨床助教授）",
     "url": "https://www.linkedin.com/in/kara-meister-200335110/"
   },
   {
     "id": "ja-advisor-jure-leskovec",
     "lang": "ja",
-    "title": "Dr. Jure Leskovec",
+    "title": "ユーリ・レスコヴェック博士",
     "content": "AIアドバイザー（Pinterest チーフサイエンティスト & スタンフォード大学 AI准教授）",
     "url": "https://www.linkedin.com/in/leskovec/"
   },
   {
     "id": "ja-advisor-jesse-bump",
     "lang": "ja",
-    "title": "Jesse Bump, Ph.D., MPH, FRSA",
+    "title": "ジェシー・バンプ博士、MPH、FRSA",
     "content": "公衆衛生アドバイザー（ハーバード公衆衛生大学院 グローバルヘルス・人口学部門）",
     "url": "https://www.hsph.harvard.edu/jesse-bump/"
   },
   {
     "id": "ja-advisor-melissa-dyrdahl",
     "lang": "ja",
-    "title": "Melissa Dyrdahl",
+    "title": "メリッサ・ダイダール",
     "content": "マーケティング顧問（元Adobe CMO & CommonSpirit Health取締役）",
     "url": "https://dci.stanford.edu/melissa-dyrdahl/"
   },
@@ -674,49 +667,56 @@
   {
     "id": "ja-advisor-madhav-datt",
     "lang": "ja",
-    "title": "Madhav Datt",
+    "title": "マダブ・ダット",
     "content": "非営利アドバイザー（Green the Gene 創設者 & 国連UNEP 青年代表 & ハーバードビジネススクールMBA）",
     "url": "https://www.linkedin.com/in/madhavdatt/"
   },
   {
     "id": "ja-advisor-may-xu",
     "lang": "ja",
-    "title": "May Xu",
+    "title": "メイ・シュウ",
     "content": "データ & AIプロダクト戦略アドバイザー（起業家・エグゼクティブコーチ & スタンフォード大学修士）",
     "url": "https://www.linkedin.com/in/may-xu-bb06934"
   },
   {
+    "id": "ja-advisor-zafar-shahid",
+    "lang": "ja",
+    "title": "ザファル・シャヒド",
+    "content": "テクノロジーアドバイザー – グリーンAIリーダー（元NVIDIA、元Meta）、モンペリエ大学マルチメディアフォレンジック博士",
+    "url": "https://zafarshahid.com/"
+  },
+  {
     "id": "ja-advisor-rafi-azim-khan",
     "lang": "ja",
-    "title": "Rafi Azim-Khan",
-    "content": "法務アドバイザー（Pillsbury法律事務所 欧州データプライバシー責任者・パートナー）",
-    "url": "https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html"
+    "title": "ラフィ・アジム・カーン",
+    "content": "法務アドバイザー（Europe Crowell & Moring LLP パートナー、デジタル法責任者）",
+    "url": "https://www.crowell.com/en/professionals/rafi-azim-khan"
   },
   {
     "id": "ja-advisor-ronan-dunlop",
     "lang": "ja",
-    "title": "Ronan Dunlop",
+    "title": "ローナン・ダンロップ",
     "content": "マーケティング顧問（元VMWare/Pivotal マーケティング責任者）",
     "url": "https://www.linkedin.com/in/rdunlop/"
   },
   {
     "id": "ja-advisor-mark-haseltine",
     "lang": "ja",
-    "title": "Mark Haseltine",
+    "title": "マーク・ハセルトン",
     "content": "エグゼクティブアドバイザー（元CTO/CPO：edX、GoDaddy & MIT出身）",
     "url": "https://www.linkedin.com/in/mhaseltine/"
   },
   {
     "id": "ja-advisor-faisal-cheema",
     "lang": "ja",
-    "title": "Faisal Cheema",
+    "title": "ファイサル・チーマ",
     "content": "臨床アドバイザー（ヒューストン大学医学部 生物医科学准教授）",
     "url": "https://www.linkedin.com/in/doccheema/"
   },
   {
     "id": "ja-advisor-mert-pilanci",
     "lang": "ja",
-    "title": "Mert Pilanci",
+    "title": "メルト・ピランチ",
     "content": "AIアドバイザー（スタンフォード大学 電気工学 AI准教授）",
     "url": "https://stanford.edu/~pilanci/"
   },
@@ -737,42 +737,42 @@
   {
     "id": "ja-advisor-victor-wang",
     "lang": "ja",
-    "title": "Victor Wang",
+    "title": "ヴィクター・ワン",
     "content": "エグゼクティブアドバイザー（China Silicon Valley創設者 & Stanford GSB MBA）",
     "url": "https://www.linkedin.com/in/executivestanfordvictorwang/"
   },
   {
     "id": "ja-advisor-adam-leipzig",
     "lang": "ja",
-    "title": "Adam Leipzig",
+    "title": "アダム・ライプツィッヒ",
     "content": "エグゼクティブアドバイザー（Entertainment Media Partners CEO、元ナショナルジオグラフィック映画社長、バークレー・ハースビジネススクール講師）",
     "url": "https://www.linkedin.com/in/adamleipzig/"
   },
   {
     "id": "ja-advisor-rok-sosic",
     "lang": "ja",
-    "title": "Rok Sosic",
+    "title": "ロック・ソシック",
     "content": "AIアドバイザー（スタンフォード工学部 上級研究エンジニア）",
     "url": "https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao"
   },
   {
     "id": "ja-advisor-richard-nall",
     "lang": "ja",
-    "title": "Richard Nall",
+    "title": "リチャード・ノール",
     "content": "マーケティングアドバイザー（The Brand Garden CEO、ヘンリー大学 組織リーダーシップ修士）",
     "url": "https://www.linkedin.com/in/richardnall/"
   },
   {
     "id": "ja-advisor-khwaja-shaik",
     "lang": "ja",
-    "title": "Khwaja Shaik",
+    "title": "クワジャ・シャイク",
     "content": "最高技術責任者（CTO）- IBM（MOSH副議長、ノースフロリダ大学コンピューティング取締役）",
     "url": "https://www.linkedin.com/in/khwajashaik/"
   },
   {
     "id": "ja-advisor-ayomide-owoyemi",
     "lang": "ja",
-    "title": "Ayomide Owoyemi",
+    "title": "アヨミデ・オウォイェミ",
     "content": "臨床アドバイザー（イリノイ大学シカゴ校 生物医学博士、One Young World ナイジェリア大使）",
     "url": "https://www.linkedin.com/in/ayomide-owoyemi/"
   },
@@ -786,7 +786,7 @@
   {
     "id": "ja-advisor-les-atlas",
     "lang": "ja",
-    "title": "Dr. Les Atlas",
+    "title": "レス・アトラス博士",
     "content": "音響 & 機械学習アドバイザー（ワシントン大学 電気・コンピューター工学 教授、スタンフォード大学 博士号取得）",
     "url": "https://people.ece.uw.edu/atlas/"
   },
@@ -821,154 +821,168 @@
   {
     "id": "ja-advisor-tamer-fahmy",
     "lang": "ja",
-    "title": "Tamer Fahmy",
+    "title": "タマー・ファーミー",
     "content": "中東・アフリカ市場アドバイザー（元Dräger/Philips MedTech - 睡眠 & 呼吸ケア、SP Jain経営大学院MBA、カイロ大学 生体医工学学士）",
     "url": "https://ae.linkedin.com/in/tamer-fahmy-b4468614"
   },
   {
     "id": "ja-advisor-shirin-hasan",
     "lang": "ja",
-    "title": "Shirin Hasan",
+    "title": "シリン・ハサン",
     "content": "臨床・医療・規制アフェアーズ アドバイザー（元Medtronic 臨床業務責任者、サンノゼ州立大学/スタンフォード 生化学修士）",
     "url": "https://www.linkedin.com/in/shirinhasan/"
   },
   {
+    "id": "ja-advisor-glenn-muschert",
+    "lang": "ja",
+    "title": "グレン・マッシャート教授",
+    "content": "社会科学・公共政策アドバイザー – アラブ首長国連邦カリファ大学公衆衛生・疫学教授、コロラド大学ボルダー校社会学博士",
+    "url": "https://www.ku.ac.ae/college-people/glenn-muschert"
+  },
+  {
+    "id": "ja-advisor-thomas-mahoney",
+    "lang": "ja",
+    "title": "トーマス・マホニー",
+    "content": "ビジネス・公衆衛生アドバイザー – ハーバード大学感染症学科准教授、ペンシルベニア大学ウォートン校MBA",
+    "url": "https://www.linkedin.com/in/tom-mahoney-lifesci/"
+  },
+  {
     "id": "ja-advisor-amil-khanzada",
     "lang": "ja",
-    "title": "Amil Khanzada",
+    "title": "アミル・カンザダ",
     "content": "創設者（福井大学 工学博士課程 在籍、カリフォルニア大学バークレー校 工学・MBA 二重学位修了）",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-oyw-amil-khanzada",
     "lang": "ja",
-    "title": "Amil Khanzada",
+    "title": "アミル・カンザダ",
     "content": "OYWアンバサダー（日本）Virufy創設者・リーダー",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-madhav-datt",
     "lang": "ja",
-    "title": "Madhav Datt",
+    "title": "マダブ・ダット",
     "content": "OYWアンバサダー（インド）Virufyアドバイザー",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-marcos-deza",
     "lang": "ja",
-    "title": "Marcos Deza",
+    "title": "マルコス・デザ",
     "content": "OYWアンバサダー（アルゼンチン）Virufy デジタルコミュニケーション",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-yulie-qiao",
     "lang": "ja",
-    "title": "Yulie Qiao",
+    "title": "ユリ・チャオ",
     "content": "2021年 OYW bp 代表（Virufyオペレーション）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-ayomide-owoyemi-md",
     "lang": "ja",
-    "title": "Ayomide Owoyemi, MD",
+    "title": "アヨミデ・オウォイェミ、MD",
     "content": "2021年 OYW ノバルティス代表（ナイジェリア）Virufy機械学習臨床統計",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-shreya-sreeram-md",
     "lang": "ja",
-    "title": "Shreya Sreeram, MD",
+    "title": "シュレヤ・スリラム、MD",
     "content": "2021年 Virufy代表（インド）Virufy臨床研究",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-laura-velasquez",
     "lang": "ja",
-    "title": "Laura Velasquez",
+    "title": "ラウラ・ベラスケス",
     "content": "OYWジョンソン・エンド・ジョンソン代表（コロンビア）Arkangel AI 共同創設者・社長、Virufyパートナー",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-nathan-thomas",
     "lang": "ja",
-    "title": "Nathan Thomas",
+    "title": "ネイサン・トーマス",
     "content": "OYWコーディネーティングアンバサダー（アメリカ）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-jason-pareja-jauregui",
     "lang": "ja",
-    "title": "Jason Pareja Jauregui",
+    "title": "ジェイソン・パレハ・ハウレギ",
     "content": "OYWコーディネーティングアンバサダー LATAM（ペルー）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-katherine-ortiz-leon",
     "lang": "ja",
-    "title": "Katherine Thalia Ortiz Leon",
+    "title": "キャサリン・タリア・オルティス・レオン",
     "content": "OYWアンバサダー（ペルー）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-gonzalo-roiffe",
     "lang": "ja",
-    "title": "Gonzalo Roiffe",
+    "title": "ゴンサロ・ロイフェ",
     "content": "OYWアンバサダー（アルゼンチン）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-annelisse-torrez-daza",
     "lang": "ja",
-    "title": "Annelisse Torrez Daza",
+    "title": "アネリッセ・トーレス・ダザ",
     "content": "OYWアンバサダー（ボリビア）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-veronica-guzman-quilqueo",
     "lang": "ja",
-    "title": "Veronica Guzman Quilqueo",
+    "title": "ベロニカ・グスマン・キルケオ",
     "content": "OYWアンバサダー（チリ）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-sebastian-pedraza",
     "lang": "ja",
-    "title": "Sebastian Pedraza",
+    "title": "セバスチャン・ペドラザ",
     "content": "OYWアンバサダー（コロンビア）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-kenmaru-suedomi",
     "lang": "ja",
-    "title": "Kenmaru Suedomi",
+    "title": "ケンマル・スエドミ",
     "content": "OYWアンバサダー（日本）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-kapil-narain-md",
     "lang": "ja",
-    "title": "Kapil Narain, MD",
+    "title": "カピル・ナライン、MD",
     "content": "OYWアンバサダー（南アフリカ）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-leonard-burhz",
     "lang": "ja",
-    "title": "Leonard Burhz",
+    "title": "レオナルド・ブルズ",
     "content": "OYWアンバサダー（アイルランド）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-allana-doyle",
     "lang": "ja",
-    "title": "Allana Doyle",
+    "title": "アラナ・ドイル",
     "content": "OYWアンバサダー（米国）",
     "url": "/ja/one-young-world"
   },
   {
     "id": "ja-oyw-kavya-madhaven",
     "lang": "ja",
-    "title": "Kavya Madhaven",
+    "title": "カビヤ・マダヴェン",
     "content": "OYWアンバサダー",
     "url": "/ja/one-young-world"
   },
@@ -992,6 +1006,55 @@
     "title": "なぜOne Young Worldなのか？",
     "content": "アンバサダー主導、若者主導、世界的な影響にフォーカス、多様な代表性。私たちの組織構造は、各地域で活動する若手アンバサダーによってOYWと連携する形になっています。拡大を続ける私たちのチームは、10か国以上の若手専門家によって構成され、世界の業界リーダーによる密接な助言を受けています。創設当初からの目標は、すべての国、すべての人々に公平なソリューションを提供することです。私たちのチームには50以上の大学と25以上の国からメンバーが参加しており、数十人のOYWアンバサダーから支援を受けています。",
     "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-paper-virufy-collection",
+    "lang": "ja",
+    "title": "Virufy論文",
+    "content": "Virufyが発表した論文の詳細については、こちらをご覧ください。",
+    "url": "/ja/papers"
+  },
+  {
+    "id": "ja-paper-hierarchical-multimodal-transformer",
+    "lang": "ja",
+    "title": "論文",
+    "content": "COVID-19の自動検出のための階層型マルチモーダルトランスフォーマー",
+    "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
+  },
+  {
+    "id": "ja-paper-deep-learning-aggregated-datasets",
+    "lang": "ja",
+    "title": "論文",
+    "content": "大規模集約データセットにおけるディープラーニングの活用咳によるCOVID-19の分類",
+    "url": "https://arxiv.org/abs/2201.01669"
+  },
+  {
+    "id": "ja-paper-covid19-calculator-impact",
+    "lang": "ja",
+    "title": "論文",
+    "content": "COVID-19 Calculator ― 米国への社会経済的プラス影響",
+    "url": "https://arxiv.org/abs/2201.11109"
+  },
+  {
+    "id": "ja-paper-deploying-cough-ai-systems",
+    "lang": "ja",
+    "title": "論文",
+    "content": "COVID-19咳AIシステムの導入における課題と機会",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
+  },
+  {
+    "id": "ja-paper-global-applicability-ai-cough",
+    "lang": "ja",
+    "title": "論文",
+    "content": "Virufy: 咳からのCOVID-19 AI検出におけるクラウドソーシングおよび臨床データセットのグローバル適用性",
+    "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
+  },
+  {
+    "id": "ja-paper-complex-clipping-ml",
+    "lang": "ja",
+    "title": "論文",
+    "content": "機械学習における一般化の向上のための複素クリッピング",
+    "url": "https://arxiv.org/abs/2302.13527"
   }
 ]
 

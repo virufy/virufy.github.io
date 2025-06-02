@@ -79,8 +79,8 @@
   {
     "id": "es-faq-app-result-time",
     "lang": "es",
-    "title": "¿Cuándo y cómo proporcionará la app resultados sobre infecciones respiratorias?",
-    "content": "Nuestra app actualmente solo recopila datos. No podemos lanzar una app de predicción de infecciones respiratorias sin las aprobaciones de los departamentos de salud pública de cada país y estudios clínicos que validen la tecnología de IA en condiciones locales. Este proceso puede tomar semanas o meses, dependiendo de la velocidad del socio gubernamental. Virufy da la bienvenida a alianzas con autoridades de salud y hospitales para ofrecer la tecnología de forma gratuita y optimizar el uso de costosas pruebas PCR solo cuando sea necesario.",
+    "title": "¿Cuándo y cómo la aplicación dará resultados de predicción de infecciones de las vías respiratorias superiores?",
+    "content": "Actualmente, nuestra aplicación solo se utiliza para la recopilación de datos. No podemos lanzar una aplicación de predicción de infecciones de las vías respiratorias superiores sin la aprobación de los departamentos de salud pública de cada país y estudios clínicos para validar la tecnología de IA en las condiciones locales. Este proceso puede tardar semanas o meses, dependiendo de la rapidez del socio gubernamental. Virufy agradece la colaboración de funcionarios de salud y hospitales para ofrecer la tecnología de forma gratuita a la población y optimizar el uso de las costosas pruebas PCR solo cuando sea necesario.",
     "url": "/es/faq"
   },
   {
@@ -114,7 +114,7 @@
   {
     "id": "es-faq-virufy-difference",
     "lang": "es",
-    "title": "¿En qué se diferencia Virufy de otras iniciativas similares?",
+    "title": "¿En qué se diferencia Virufy de otras iniciativas que trabajan en proyectos similares?",
     "content": "Como organización sin fines de lucro 501(c)(3), podemos reclutar profesionales altamente talentosos como voluntarios. Nuestro equipo es global, presente en cinco continentes, lo que nos aporta empatía internacional. No buscamos beneficios económicos, lo que nos permite operar en países en desarrollo. Nuestros contactos en redes universitarias y profesionales nos dan acceso a contactos de alto nivel en todo el mundo. El acompañamiento de mentores también es parte fundamental de nuestra estructura, empoderando a jóvenes profesionales con asesoría de expertos de la industria.",
     "url": "/es/faq"
   },
@@ -128,21 +128,21 @@
   {
     "id": "es-faq-virufy-unique",
     "lang": "es",
-    "title": "¿Qué hace único a Virufy frente a otros proyectos?",
+    "title": "¿Qué tiene de especial Virufy en comparación con otras organizaciones?",
     "content": "Como una organización joven y diversa, con un equipo global y egresados de más de 25 universidades, estamos guiados por profesionales de alto nivel. Nuestro equipo multidisciplinario tiene experiencia en derecho, aprendizaje automático, medicina, ciberseguridad y desarrollo de apps. Nuestra red One Young World nos conecta con aliados en todos los países. Damos la bienvenida a todos, y al ser una organización sin fines de lucro dirigida por voluntarios, somos independientes y con menos burocracia.",
     "url": "/es/faq"
   },
   {
     "id": "es-faq-investment",
     "lang": "es",
-    "title": "¿Cuánto se ha invertido para hacer posible el proyecto Virufy?",
+    "title": "¿Cuánta inversión se realizó para hacer posible la iniciativa Virufy?",
     "content": "Más de 1,000 voluntarios han dedicado miles de horas al proyecto. Varias empresas nos han donado software gratuito como email, almacenamiento y mensajería, así como recursos de cómputo en la nube. Sin embargo, algunos servicios como videollamadas y herramientas de gestión sí han implicado gastos, pagados del ahorro personal del fundador Amil. Creemos que si tenemos éxito, los costos de infraestructura aumentarán, pero lograremos atraer financiamiento, donaciones y apoyo gubernamental para seguir operando.",
     "url": "/es/faq"
   },
   {
     "id": "es-faq-ai-coughs",
     "lang": "es",
-    "title": "¿Por qué se pueden distinguir las toses por infección respiratoria?",
+    "title": "¿Por qué se distinguen las toses causadas por infecciones de las vías respiratorias superiores?",
     "content": "Las infecciones respiratorias superiores dañan la garganta y los pulmones, lo que genera diferencias detectables en los patrones de tos. Por lo tanto, los sonidos de la tos pueden analizarse para detectar estas infecciones. Esta idea está siendo investigada activamente por instituciones de renombre como Carnegie Mellon (CMU), MIT y Cambridge. Por ejemplo, estudios de la Universidad de Cambridge mostraron que un clasificador simple puede detectar COVID-19 mediante sonidos de tos y respiración con alta precisión. Asimismo, CMU identificó 18 características vocales que distinguen a pacientes positivos de COVID-19.",
     "url": "/es/faq"
   },
@@ -256,47 +256,47 @@
     "lang": "es",
     "title": "Bienvenido a Virufy",
     "content": "Bienvenido a Virufy: Tu Compañero de Salud Digital. Presentamos Virufy, la app de vanguardia que utiliza algoritmos avanzados de audio e IA generativa para analizar tus patrones de respiración e identificar posibles síntomas de infección.",
-    "url": "/en"
+    "url": "/es"
   },
   {
     "id": "es-home-how-it-works",
     "lang": "es",
     "title": "Cómo Funciona",
     "content": "Con solo toser intencionadamente al micrófono de tu dispositivo, Virufy aprovecha el poder de la inteligencia artificial para detectar patrones sonoros únicos asociados a enfermedades respiratorias como COVID-19, tuberculosis, gripe, RSV, EPOC y asma.",
-    "url": "/en"
+    "url": "/es"
   },
   {
     "id": "es-home-health-priority",
     "lang": "es",
     "title": "Tu Salud, Nuestra Prioridad",
     "content": "En Virufy, tu bienestar está en el centro de todo lo que hacemos. Priorizamos la privacidad, asegurando que tus datos permanezcan seguros y confidenciales.",
-    "url": "/en"
+    "url": "/es"
   },
   {
     "id": "es-home-health-feature-1",
     "lang": "es",
     "title": "Análisis Instantáneo",
     "content": "Comentarios rápidos sobre las características de tu tos y el perfil de anormalidad basado en el patrón sonoro.",
-    "url": "/en"
+    "url": "/es"
   },
   {
     "id": "es-home-health-feature-2",
     "lang": "es",
     "title": "Anonimato desde Casa",
     "content": "Siéntete seguro sabiendo que tus resultados son solo para ti.",
-    "url": "/en"
+    "url": "/es"
   },
   {
     "id": "es-home-health-feature-3",
     "lang": "es",
     "title": "Interfaz Intuitiva",
     "content": "Diseño intuitivo para una navegación sencilla y una experiencia de usuario fluida.",
-    "url": "/en"
+    "url": "/es"
   },
   {
     "id": "es-home-demo",
     "lang": "es",
-    "title": "Aplicación de Demostración",
+    "title": "Comparte tu tos",
     "content": "Prueba nuestra app de demostración para contribuir con tu tos y ver el análisis con IA en acción.",
     "url": "/study"
   },
@@ -581,13 +581,6 @@
     "url": "https://youtu.be/UZU3rPTEPfU"
   },
   {
-    "id": "es-news-sounds-of-covid-workshop",
-    "lang": "es",
-    "title": "Noticias",
-    "content": "Taller: Sonidos del COVID-19",
-    "url": "https://health-sounds.cl.cam.ac.uk/workshop20/short-talks.html"
-  },
-  {
     "id": "es-publications-hierarchical-transformer-2022",
     "lang": "es",
     "title": "Publicaciones",
@@ -686,11 +679,18 @@
     "url": "https://www.linkedin.com/in/may-xu-bb06934"
   },
   {
+    "id": "es-advisor-zafar-shahid",
+    "lang": "es",
+    "title": "Zafar Shahid",
+    "content": "Asesor tecnológico – Líder en IA ecológica (ex-NVIDIA, ex-Meta), Doctor en Ciencias Forenses Multimedia, Universidad de Montpellier",
+    "url": "https://zafarshahid.com/"
+  },
+  {
     "id": "es-advisor-rafi-azim-khan",
     "lang": "es",
     "title": "Rafi Azim-Khan",
-    "content": "Asesor Legal Ejecutivo (Socio, Propiedad Intelectual/Tecnologías de la Información y Jefe de Privacidad de Datos en Europa - Pillsbury Winthrop Shaw Pittman LLP)",
-    "url": "https://www.pillsburylaw.com/en/lawyers/rafi-azim-khan.html"
+    "content": "Asesor Legal Ejecutivo (Socio, Jefe de Derecho Digital, Europa', 'Crowell & Moring LLP)",
+    "url": "https://www.crowell.com/en/professionals/rafi-azim-khan"
   },
   {
     "id": "es-advisor-ronan-dunlop",
@@ -903,6 +903,20 @@
     "url": "https://www.linkedin.com/in/shirinhasan/"
   },
   {
+    "id": "es-advisor-glenn-muschert",
+    "lang": "es",
+    "title": "Prof. Glenn Muschert",
+    "content": "Asesor en Ciencias Sociales y Políticas Públicas – Profesor de Salud Pública y Epidemiología, Universidad Khalifa, EAU; Doctorado en Sociología - Universidad de Colorado, Boulder",
+    "url": "https://www.ku.ac.ae/college-people/glenn-muschert"
+  },
+  {
+    "id": "es-advisor-thomas-mahoney",
+    "lang": "es",
+    "title": "Thomas Mahoney",
+    "content": "Asesor en Negocios y Salud Pública – Asociado de Departamento, Departamento de Enfermedades Infecciosas, Universidad de Harvard; MBA, The Wharton School, Universidad de Pensilvania",
+    "url": "https://www.linkedin.com/in/tom-mahoney-lifesci/"
+  },
+  {
     "id": "es-advisor-amil-khanzada",
     "lang": "es",
     "title": "Amil Khanzada",
@@ -1062,5 +1076,54 @@
     "title": "¿Por qué One Young World?",
     "content": "Impulsado por embajadores, liderado por jóvenes, enfocado en el impacto global, con representación diversa. Nuestra estructura organizacional refleja la de One Young World, con embajadores juveniles coordinando operaciones en cada región. Nuestro equipo en crecimiento está dirigido por jóvenes profesionales de más de una docena de países con asesoría cercana de líderes globales de la industria. Nuestro objetivo desde el inicio ha sido ofrecer soluciones equitativas para todas las personas en todos los países del mundo. Nuestro equipo cuenta con representación de más de 50 universidades y 25 países y ha recibido apoyo de docenas de embajadores de One Young World.",
     "url": "/es/one-young-world"
+  },
+  {
+    "id": "es-paper-virufy-collection",
+    "lang": "es",
+    "title": "Artículos de Virufy",
+    "content": "Visite aquí para obtener más información sobre los artículos publicados por Virufy.",
+    "url": "/es/papers"
+  },
+  {
+    "id": "es-paper-hierarchical-multimodal-transformer",
+    "lang": "es",
+    "title": "Artículos",
+    "content": "Transformador jerárquico multimodal para la detección automática de COVID-19",
+    "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
+  },
+  {
+    "id": "es-paper-deep-learning-aggregated-datasets",
+    "lang": "es",
+    "title": "Artículos",
+    "content": "Uso de aprendizaje profundo con grandes conjuntos de datos agregados para la clasificación de COVID-19 Tos",
+    "url": "https://arxiv.org/abs/2201.01669"
+  },
+  {
+    "id": "es-paper-covid19-calculator-impact",
+    "lang": "es",
+    "title": "Artículos",
+    "content": "Calculadora de la COVID-19: Impacto socioeconómico positivo en EE. UU.",
+    "url": "https://arxiv.org/abs/2201.11109"
+  },
+  {
+    "id": "es-paper-deploying-cough-ai-systems",
+    "lang": "es",
+    "title": "Artículos",
+    "content": "Desafíos y oportunidades en la implementación de sistemas de IA para la tos en la COVID-19",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
+  },
+  {
+    "id": "es-paper-global-applicability-ai-cough",
+    "lang": "es",
+    "title": "Artículos",
+    "content": "Virufy: Aplicabilidad global de conjuntos de datos clínicos y de colaboración abierta para la detección de COVID-19 mediante IA a partir de la tos",
+    "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
+  },
+  {
+    "id": "es-paper-complex-clipping-ml",
+    "lang": "es",
+    "title": "Artículos",
+    "content": "Recorte complejo para una mejor generalización en aprendizaje automático",
+    "url": "https://arxiv.org/abs/2302.13527"
   }
 ]
