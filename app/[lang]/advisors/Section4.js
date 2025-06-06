@@ -1,8 +1,9 @@
 import { basePath } from '@/next.config.mjs';
-import { AmilKhanzada } from '@/public/images/advisors';
+//import { AmilKhanzada } from '@/public/images/advisors';
 import ExportedImage from 'next-image-export-optimizer';
 import TitleText from '../components/TitleText';
 import Button from './Button';
+import AmilImage from '@/public/images/advisors/AmilImage.jpg';
 
 export default function Section4({
   ContainerTitleProps,
@@ -17,10 +18,10 @@ export default function Section4({
   buttonRoute,
 }) {
   return (
-    <div className="mx-10 mb-10 mt-24 flex flex-col space-y-4 text-center">
+    <div className="mx-10 mb-10 mt-40 flex flex-col space-y-4 text-center">
       <div className="mb-8 flex w-full justify-center lg:hidden">
         <ExportedImage
-          src={AmilKhanzada}
+          src={AmilImage}
           alt={alt}
           priority
           basePath={basePath}
@@ -70,7 +71,7 @@ export default function Section4({
       <div className="mt-20 hidden flex-1 items-center lg:flex">
         <div className="flex w-1/2 items-center justify-start pr-6">
           <ExportedImage
-            src={AmilKhanzada}
+            src={AmilImage}
             alt={alt}
             priority
             basePath={basePath}
