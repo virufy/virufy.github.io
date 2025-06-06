@@ -1,4 +1,5 @@
-export { default as BgHeader } from './bg-header.webp';
+//export { default as BgHeader } from './bg-header.webp';
+export { default as AdvisorsNewBackground } from './advisors_background.png';
 
 // Cards
 export { default as AdamLeipzig } from './adam-leipzig.webp';

@@ -1,11 +1,11 @@
 import { type Locale } from '@/i18n-config.ts';
 import { basePath } from '@/next.config.mjs';
-import { BgHeader } from '@/public/images/advisors';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 import Section4 from './Section4';
+import { AdvisorsNewBackground } from '@/public/images/advisors';
 
 const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
@@ -13,28 +13,34 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = usei18n(lang);
 
   return (
-    <>
-      <div className="w-full overflow-hidden">
-        <div className="relative flex justify-center overflow-hidden">
-          <div className="contrast-1 brightness-100">
-            <ExportedImage
-              className="h-full w-screen object-cover"
-              src={BgHeader}
-              alt=""
-              priority
-              basePath={basePath}
-            />
-          </div>
-          <Title
-            Text={titleImage}
-            H="h4"
-            TitleClassProps="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] text-white text-center"
-          />
-        </div>
+    <div className="relative w-full overflow-hidden pt-[80px]">
+      {/* Background Image */}
+      <ExportedImage
+        className="fixed top-0 left-0 h-full w-full object-cover z-[-10]"
+        src={AdvisorsNewBackground}
+        alt="Advisors page background"
+        width={1512}
+        height={9070}
+        priority
+        basePath={basePath}
+      />
+
+      {/* Title text */}
+      <div className="relative flex justify-center pt-24 pb-10 px-4">
+        <Title
+          Text={titleImage}
+          H="h4"
+          TitleClassProps="text-white text-center text-xl md:text-3xl max-w-[900px]"
+        />
       </div>
 
-      <div className="flex flex-col items-center justify-center bg-[#3468B2]">
+      {/* Spacer between title and Section4 */}
+      <div className="h-15 md:h-100" />
+
+      {/* Founder + Advisors section */}
+      <div className="relative z-10 flex flex-col items-center justify-center px-4">
         <div className="flex w-full max-w-[1440px] flex-col items-center justify-center">
+          {/* Founder Section */}
           <Section4
             TitleSize1="h1"
             TitleSize2="h3"
@@ -48,18 +54,20 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             alt="Amil Khanzada's headshot Image"
           />
 
+          {/* Advisors Title */}
           <Title
             H="h1"
             Text={sectionAdvisors.title}
             TitleClassProps="text-center my-10 bg-transparent 
-                   bg-clip-text text-transparent
-                   bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
+              bg-clip-text text-transparent
+              bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
           />
 
-          {/* Cards Container */}
-          <div className="grid grid-cols-2 gap-4 px-4 pb-8 text-white sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
-            {sectionAdvisors.advisors.sort((a,b)=> a.index - b.index).map(
-              ({ img, name, role, texts, link }) => (
+          {/* Advisors Cards */}
+          <div className="grid grid-cols-2 gap-4 pb-16 text-white sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
+            {sectionAdvisors.advisors
+              .sort((a, b) => a.index - b.index)
+              .map(({ img, name, role, texts, link }) => (
                 <div
                   key={name}
                   className="relative max-w-40 text-center md:w-[375px] md:max-w-[22rem]"
@@ -72,10 +80,8 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       basePath={basePath}
                     />
                   </Link>
-                  {/* Text Container */}
                   <div className="pb-2 md:pb-4">
                     <h2 className="pt-2 text-xs md:pt-4 md:text-2xl">{name}</h2>
-                    {/* Role Container */}
                     <div className="py-1 text-[10px] font-bold text-white md:text-xl">
                       {role}
                     </div>
@@ -86,12 +92,11 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     ))}
                   </div>
                 </div>
-              )
-            )}
+              ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

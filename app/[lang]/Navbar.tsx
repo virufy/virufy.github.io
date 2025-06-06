@@ -241,11 +241,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
 
   return (
-    <div className="bg-[#000]">
+    <div className="bg-transparent">
       <nav
-        className={`sticky z-[100] w-full ${
-          navbar ? 'bg-black' : 'bg-transparent'
-        }`}
+       className={`sticky z-[100] w-full bg-transparent`}
       >
         {/* donate modal */}
         {showModal ? (
