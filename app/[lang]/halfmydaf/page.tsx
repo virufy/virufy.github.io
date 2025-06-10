@@ -28,8 +28,17 @@ const HalfmyDAF2025Letter = () => {
             #HalfMyDAF is an initiative aimed at encouraging donors who have
             existing Donor Advised Funds (DAF) to distribute their charitable
             funds proactively. In the U.S., over $251 billion remain unused in
-            DAF accounts... The <span>#HalfMyDAF</span> initiative aims to
-            address this issue by offering $2.25 million in matching funds...
+            DAF accounts. Donors are incentivized to set up and deposit into
+            these accounts as it allows them to receive tax breaks;
+            unfortunately, instead of these funds going to nonprofits, they
+            often remain in the DAF accounts for years on end. This has led to
+            the gap between the amount of funds going into DAF accounts and the
+            amount of funds being disbursed to nonprofits to continuously grow.
+            The #HalfMyDAF initiative aims to address this issue by offering
+            $2.25 million in matching funds through a lottery drawing to
+            encourage donors to actively use their DAF account. Grants for the
+            chosen nonprofits will be matched dollar-for-dollar up to $5,000,
+            with four nonprofits receiving matching of up to $25,000.
           </p>
         </section>
 
@@ -38,11 +47,16 @@ const HalfmyDAF2025Letter = () => {
             What is a Donor Advised Fund (DAF)?
           </h3>
           <p className="mx-10">
-            A Donor Advised Fund (DAF) is a charitable giving account...
-            <em>
-              donors retain the right to recommend grants to their preferred
-              nonprofits.
-            </em>
+            A Donor Advised Fund (DAF) is a charitable giving account created by
+            an individual or organization at a sponsoring institution (e.g.,
+            Fidelity, Schwab, Vanguard, or Amalgamated Foundation). When donors
+            contribute money into their DAF, they receive an immediate tax
+            deduction. Also, once money is deposited into the account, it can
+            only be used to make charitable contributions to nonprofit
+            organizations. Essentially, a DAF operates like a charitable
+            checking account—funds, once contributed, cannot return to donors,
+            but donors retain the right to recommend grants to their preferred
+            nonprofits.
           </p>
         </section>
         <section className="block rounded-xl bg-[#255292] p-5">
@@ -75,12 +89,16 @@ const HalfmyDAF2025Letter = () => {
           <ul className="mx-10">
             <li>#HalfMyDAF is offering $2.25 million in matching funds</li>
             <li>
-              $1 million is general matching; the rest supports nonprofits in
-              gender equity, reproductive justice, and underserved education
+              $1 million of that amount is a general matching fund for all
+              nonprofits (if chosen, the money granted to Virufy would come from
+              this pool); the remaining amount is reserved for organizations
+              working in gender equity, reproductive justice, and education in
+              underserved communities.
             </li>
             <li className="underline">
-              Donations matched up to $5,000; four nonprofits may receive up to
-              $25,000
+              Opportunity for donations to be matched dollar-for-dollar up to
+              $5,000 (with four lucky nonprofits eligible to receive matching of
+              up to $25,000)
             </li>
             <li>
               Every donation from a different donor increases chances of
@@ -96,16 +114,17 @@ const HalfmyDAF2025Letter = () => {
           <p className="py-2 font-bold">Virufy donors must:</p>
           <ol className="mx-10 my-2">
             <li>
-              <strong>Identify themselves as DAF holders:</strong> Must have an
-              active DAF with a recognized sponsor
+              <strong>Identify themselves as DAF holders:</strong> They must
+              have existing active DAF accounts with sponsors like Fidelity,
+              Schwab, Vanguard, or Amalgamated Foundation.
             </li>
             <li>
               <strong>Initiate the Donation:</strong>
             </li>
             <ul className="mx-10">
               <li>
-                Make a grant recommendation to <strong>Virufy</strong> (minimum
-                $250)
+                Make a grant recommendation from their DAF sponsor’s platform to{' '}
+                <strong>Virufy</strong> (minimum grant amount $250)
               </li>
             </ul>
             <li>
@@ -120,7 +139,8 @@ const HalfmyDAF2025Letter = () => {
             </li>
             <ul className="mx-10">
               <li>
-                Pledge to spend at least half their DAF balance by{' '}
+                Fill out this simple commitment form pledging to spend at least
+                half of their DAF account balance by{' '}
                 <strong className="text-[#ff9900] underline">
                   September 26, 2025
                 </strong>
@@ -144,22 +164,33 @@ const HalfmyDAF2025Letter = () => {
           <h3 className="py-2 font-bold">
             What Virufy Should Do to Participate
           </h3>
-          <p>Virufy’s role in #HalfMyDAF 2025 is proactive outreach:</p>
+          <p>
+            Virufy’s role in #HalfMyDAF 2025 is proactive outreach.
+            Specifically, Virufy must:
+          </p>
           <ol className="mx-10 my-2">
             <li>
               <strong>Identify and Reach Potential DAF Donors:</strong>
             </li>
             <ul className="mx-10">
-              <li>Use networks to find donors</li>
-              <li>Direct them to the commitment form</li>
+              <li>
+                Board members and stakeholders may use their networks to find
+                individuals or organizations with existing DAF accounts.
+              </li>
+              <li>
+                Direct donors to complete the commitment form on the #HalfMyDAF
+                website.
+              </li>
             </ul>
             <li>
               <strong>Facilitate Efficient Fund Transfers:</strong>
             </li>
             <ul className="mx-10">
               <li>
-                Register for ACH through Amalgamated Foundation’s GranteeView
-                Portal
+                Register for electronic ACH payments through Amalgamated
+                Foundation’s GranteeView Portal to ensure we receive the money
+                in a timely manner (funds are issued the month following each
+                drawing).
               </li>
             </ul>
           </ol>
