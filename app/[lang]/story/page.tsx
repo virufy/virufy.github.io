@@ -50,7 +50,7 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <ExportedImage
           src={BgBody}
           alt=""
-          className="absolute h-full w-full object-cover opacity-40"
+          className="absolute h-full w-full object-cover"
           basePath={basePath}
         />
 
@@ -100,7 +100,7 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </h2>
 
                 {/* Cards Container */}
-                <div className="grid grid-cols-1 grid-rows-6 gap-y-6 rounded-3xl bg-[#132d62] px-8 py-16 sm:px-16 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-x-20 lg:gap-y-16 lg:space-y-0 lg:px-20">
+                <div className="grid grid-cols-1 grid-rows-6 gap-y-6 rounded-3xl bg-white opacity-95 px-8 py-16 sm:px-16 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-x-20 lg:gap-y-16 lg:space-y-0 lg:px-20">
                   {valuesSection.cards.map((card) => (
                     <div key={card.title}>
                       <ValuesCard {...card} />
