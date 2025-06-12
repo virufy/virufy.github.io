@@ -1,7 +1,9 @@
+//Note:since this page doesnt have an image at the top, reminder that you need the relative -top-24 , -mb-24 , and p-24 to make it look better since the navbar
+// is transparent
 const PressReleaseDubai = () => {
   return (
     <>
-      <div className="flex justify-center bg-gradient-to-b from-black to-[#4064AD] text-white">
+      <div className="relative -top-24 -mb-24 flex justify-center overflow-hidden bg-gradient-to-b from-black to-[#4064AD] pt-24 text-white">
         <div className="flex max-w-7xl flex-col space-y-6 px-8 py-20 sm:px-12 lg:px-40">
           <div>
             <h2>
@@ -29,11 +31,12 @@ const PressReleaseDubai = () => {
           <div>
             <p>
               Virufy’s team includes co-researchers from Stanford University,
-              Harvard University, the University of South Dakota, and the University of Fukui in
-              Japan. These collaborators are committed to harnessing technology
-              empowering global change through innovation. Their project’s
-              potential impact on global public health exemplifies the values
-              and goals championed by Prototypes for Humanity.
+              Harvard University, the University of South Dakota, and the
+              University of Fukui in Japan. These collaborators are committed to
+              harnessing technology empowering global change through innovation.
+              Their project’s potential impact on global public health
+              exemplifies the values and goals championed by Prototypes for
+              Humanity.
             </p>
           </div>
           <div>
@@ -78,7 +81,7 @@ const PressReleaseDubai = () => {
             <div>
               For more information about Virufy and to explore its work in
               digital health innovation, please visit
-              <a className="text-blue-500" href="https://virufy.org/">
+              <a className="text-red-500" href="https://virufy.org/">
                 {' '}
                 https://virufy.org/
               </a>
