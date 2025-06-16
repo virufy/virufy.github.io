@@ -72,7 +72,7 @@ const OneYoungWorld = ({
             {/* Cards Container */}
             <div className="space-y-16 rounded-2xl bg-[#3578de4f] py-10 pr-4 font-medium md:grid md:grid-cols-2 md:gap-12 md:space-x-0 md:space-y-0 md:bg-inherit md:py-0">
               {cards.map((card) => (
-                <div key={card.title} className="flex justify-center space-x-2">
+                <div key={card.title} className="flex justify-center space-x-2 text-[#3579de] bg-[#f5f5f5] p-5">
                   <ExportedImage
                     className="my-auto h-[80px] w-[80px] lg:h-[100px] lg:w-[100px]"
                     src={card.image}
