@@ -13,9 +13,9 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = usei18n(lang);
 
   return (
-    <div className="-mb-24 flex flex-col items-center justify-center">
+    <div className="-mb-24 flex flex-col items-center justify-center bg-[#0A0A0A]">
       <div className="relative -top-24 w-full overflow-hidden">
-        <div className="relative flex justify-center overflow-hidden bg-[#0A0A0A]">
+        <div className="relative flex justify-center overflow-hidden">
           {/* First background img */}
           <div className="w-full brightness-100 contrast-100">
             <ExportedImage
@@ -96,11 +96,11 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     )
                   )}
                 </p>
-                {/* Demo app button */}
+                {/* Share your cough button */}
                 <div className="mt-2 flex w-full justify-center px-0">
                     <Link href={`/study`}>
                       <button
-                        className="medium primary h-9 w-64 text-black sm:h-11 sm:w-80 xl:h-16 xl:w-64"
+                        className="medium primary text-black text-xs md:text-base md:text-xl py-2 md:py-4 px-2 md:px-16"
                         style={{ borderRadius: '50px', background: 'white' }}
                       >
                         {introSection.buttonText}
