@@ -30,7 +30,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <Title
           Text={titleImage}
           H="h4"
-          TitleClassProps="text-white text-center text-xl md:text-3xl max-w-[900px]"
+          TitleClassProps="text-black font-bold text-center text-2xl md:text-4xl max-w-[900px]"
         />
       </div>
 
@@ -58,13 +58,11 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <Title
             H="h1"
             Text={sectionAdvisors.title}
-            TitleClassProps="text-center my-10 bg-transparent 
-              bg-clip-text text-transparent
-              bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
+            TitleClassProps="text-black font-black text-center my-10"
           />
 
           {/* Advisors Cards */}
-          <div className="grid grid-cols-2 gap-4 pb-16 text-white sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 pb-16 text-black sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
             {sectionAdvisors.advisors
               .sort((a, b) => a.index - b.index)
               .map(({ img, name, role, texts, link }) => (
@@ -81,12 +79,12 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     />
                   </Link>
                   <div className="pb-2 md:pb-4">
-                    <h2 className="pt-2 text-xs md:pt-4 md:text-2xl">{name}</h2>
-                    <div className="py-1 text-[10px] font-bold text-white md:text-xl">
+                    <h2 className="pt-2 text-xs md:pt-4 md:text-2xl font-bold text-black">{name}</h2>
+                    <div className="py-1 text-[10px] font-semibold text-black md:text-xl">
                       {role}
                     </div>
                     {texts.map((text, i) => (
-                      <div key={i} className="text-[9px] font-thin md:text-lg">
+                      <div key={i} className="text-[9px] font-normal text-black md:text-lg">
                         {text}
                       </div>
                     ))}
