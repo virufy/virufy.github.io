@@ -16,7 +16,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className="relative w-full overflow-hidden pt-[80px]">
       {/* Background Image */}
       <ExportedImage
-        className="fixed top-0 left-0 h-full w-full object-cover z-[-10]"
+        className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
         src={AdvisorsNewBackground}
         alt="Advisors page background"
         width={1512}
@@ -26,7 +26,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       />
 
       {/* Title text */}
-      <div className="relative flex justify-center pt-24 pb-10 px-4">
+      <div className="relative flex justify-center px-4 pb-10 pt-24">
         <Title
           Text={titleImage}
           H="h4"
@@ -68,7 +68,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               .map(({ img, name, role, texts, link }) => (
                 <div
                   key={name}
-                  className="relative max-w-40 text-center md:w-[375px] md:max-w-[22rem]"
+                  className="relative max-w-40 bg-white bg-opacity-30 text-center md:w-[375px] md:max-w-[22rem]"
                 >
                   <Link target="_blank" href={link}>
                     <ExportedImage
@@ -79,12 +79,17 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     />
                   </Link>
                   <div className="pb-2 md:pb-4">
-                    <h2 className="pt-2 text-xs md:pt-4 md:text-2xl font-bold text-black">{name}</h2>
+                    <h2 className="pt-2 text-xs font-bold text-black md:pt-4 md:text-2xl">
+                      {name}
+                    </h2>
                     <div className="py-1 text-[10px] font-semibold text-black md:text-xl">
                       {role}
                     </div>
                     {texts.map((text, i) => (
-                      <div key={i} className="text-[9px] font-normal text-black md:text-lg">
+                      <div
+                        key={i}
+                        className="text-[9px] font-normal text-black md:text-lg lg:text-lg"
+                      >
                         {text}
                       </div>
                     ))}
