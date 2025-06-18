@@ -8,10 +8,11 @@ const ArrowIcon = ({ isActive }: { isActive: boolean }) => {
 
   return (
     <ExportedImage
-      className={`${rotateStyle} h-6 w-6 object-cover transition duration-500 ease-in-out`}
+      className={`${rotateStyle} mx-2 h-5 w-5 object-cover pt-1 transition duration-500 ease-in-out`}
       src={ArrowDownIcon}
       alt={altText}
       basePath={basePath}
+      //<a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Catalin Fertu - Flaticon</a>
     />
   );
 };

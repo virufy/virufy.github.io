@@ -343,7 +343,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 }`}
               >
                 <div
-                  className={`items-center justify-center space-y-8 rounded-full bg-white bg-opacity-80 p-2 px-5 lg:flex lg:space-x-6 lg:space-y-0 xl:space-x-9 ${
+                  className={`lg: items-center justify-center space-y-8 rounded-full bg-white bg-opacity-80 p-2 lg:flex lg:space-x-6 lg:space-y-0 lg:px-10 xl:space-x-9 ${
                     navbar ? '' : 'hidden'
                   }`}
                 >
@@ -353,7 +353,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Home'
                             ? 'solid border-b-2 py-2'
-                            : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                            : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
                         }`}
                         href={`/${lang}`}
                       >
@@ -368,7 +368,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Technology'
                             ? 'solid peer border-b-2 py-2 text-black'
-                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
                         }`}
                         href={`/${lang}/ai`}
                       >
@@ -391,7 +391,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       className={`${navbar ? 'font-bold' : ''} ${
                         activeLink === 'CoughCheck App'
                           ? 'solid peer border-b-2 py-2 text-white'
-                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
                       } `}
                       href={`/${lang}/covid19`}
                     >
@@ -439,7 +439,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'About Us'
                             ? 'solid peer border-b-2 py-2 text-black'
-                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
                         } whitespace-nowrap`}
                         href={`/${lang}/story`}
                       >
@@ -482,7 +482,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Media'
                             ? 'solid peer border-b-2 py-2 text-black'
-                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
                         } `}
                         href={`/${lang}/news`}
                       >
@@ -516,7 +516,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'FAQ'
                             ? 'solid peer border-b-2 py-2 text-black'
-                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
                         }`}
                         href={`/${lang}/faq`}
                       >
