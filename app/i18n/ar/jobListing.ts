@@ -150,6 +150,15 @@ const jobListing: JobListing = {
         },
       ],
     },
+    {
+      category: 'عام',
+      positions: [
+        {
+          title: 'طلب وظيفة عامة',
+          id: 26,
+        },
+      ],
+    },
   ],
 };
 
