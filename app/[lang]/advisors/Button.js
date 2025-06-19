@@ -21,7 +21,7 @@ export default function Button({
       <Link href={path}>
         <button
           onClick={onClick}
-          className={`${ButtonType?.[type]} ${ButtonSize?.[size]} ${style}`} // Removed the extra style prop
+          className={`${ButtonType?.[type]} ${ButtonSize?.[size]} text-xl font-semibold ${style}`}
           style={{
             background: gradientBackground,
             borderRadius: radius,
