@@ -3,7 +3,7 @@
 const PressReleaseDubai = () => {
   return (
     <>
-      <div className="relative -top-24 -mb-24 flex justify-center overflow-hidden bg-gradient-to-b from-black to-[#4064AD] pt-24 text-white">
+      <div className="relative flex justify-center overflow-hidden bg-gradient-to-b from-black to-[#4064AD] pt-24 text-white">
         <div className="flex max-w-7xl flex-col space-y-6 px-8 py-20 sm:px-12 lg:px-40">
           <div>
             <h2>
