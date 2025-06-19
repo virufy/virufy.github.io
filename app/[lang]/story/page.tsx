@@ -21,10 +21,10 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = usei18n(lang);
 
   return (
-    <div className="relative -top-24">
+    <div className="relative pb-24">
       {/* About Us/Hero Section */}
       <section>
-        <div className="relative w-full overflow-hidden pt-[80px]">
+        <div className="relative w-full overflow-hidden py-[80px]">
           <ExportedImage
             className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
             src={About_us_bg}

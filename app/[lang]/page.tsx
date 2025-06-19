@@ -13,7 +13,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = usei18n(lang);
 
   return (
-    <div className="relative -top-24 -mb-24 flex flex-col items-center justify-center bg-[#0A0A0A]">
+    <div className="relative flex flex-col items-center justify-center bg-[#0A0A0A]">
       <div className="w-full overflow-hidden">
         <div className="relative flex justify-center overflow-hidden">
           {/* First background img */}

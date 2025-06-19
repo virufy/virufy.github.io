@@ -42,12 +42,12 @@ const story: Story = {
     ],
   },
   MissionSection: {
-    title: 'Our Mission',
+    title: 'مهمتنا',
     statement:
-      'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
+      'في فيروفي، مهمتنا هي إنقاذ الأرواح من خلال جعل الوقاية من الأمراض والكشف عنها مجانية، وخاصة، ومتاحة للجميع في كل مكان. نحن ملتزمون بما يلي:',
     texts: [
-      'Delivering rapid, AI-powered respiratory disease pre-screening solutions for patients, clinicians, and governments—especially in underserved communities.',
-      'Harnessing the power of technology and global collaboration to transform healthcare into a more affordable, efficient, and inclusive system for all.',
+      'توفير حلول سريعة للفحص المسبق لأمراض الجهاز التنفسي، مدعومة بالذكاء الاصطناعي، للمرضى والأطباء والحكومات، وخاصة في المجتمعات المحرومة.',
+      'تسخير قوة التكنولوجيا والتعاون العالمي لتحويل الرعاية الصحية إلى نظام أكثر فعالية من حيث التكلفة وشامل للجميع.',
     ],
   },
   privacySection: {

@@ -199,13 +199,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="10" cy="10" r="6" stroke="white" strokeWidth="2" />
+          <circle cx="10" cy="10" r="6" stroke="black" strokeWidth="2" />
           <line
             x1="14"
             y1="14"
             x2="20"
             y2="20"
-            stroke="white"
+            stroke="black"
             strokeWidth="2"
           />
         </svg>
@@ -274,7 +274,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         ) : null}
 
         <div
-          className={`lg:max-w-8lg justify-between px-3 lg:mx-4 lg:flex lg:items-center lg:px-2 xl:mx-9${navbar ? 'flex h-screen' : ''}`}
+          className={`lg:max-w-8lg justify-between bg-white px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 xl:mx-9${navbar ? 'flex h-screen' : ''}`}
         >
           <div className="flex items-center justify-between lg:block lg:py-5">
             <Link

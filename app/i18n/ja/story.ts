@@ -42,12 +42,12 @@ const story: Story = {
     ],
   },
   MissionSection: {
-    title: 'Our Mission',
+    title: '私たちの使命',
     statement:
-      'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
+      'Virufyの使命は、病気の予防と検出を無料、プライバシー保護、そして誰もがどこからでもアクセスできるようにすることで、命を救うことです。私たちは以下のことに尽力しています。',
     texts: [
-      'Delivering rapid, AI-powered respiratory disease pre-screening solutions for patients, clinicians, and governments—especially in underserved communities.',
-      'Harnessing the power of technology and global collaboration to transform healthcare into a more affordable, efficient, and inclusive system for all.',
+      '特に医療サービスが行き届いていない地域の患者、臨床医、政府向けに、AI を活用した迅速な呼吸器疾患事前スクリーニング ソリューションを提供します。',
+      'テクノロジーの力とグローバルなコラボレーションを活用して、ヘルスケアを、すべての人にとってより手頃で効率的、かつ包括的なシステムへと変革します。',
     ],
   },
   privacySection: {
