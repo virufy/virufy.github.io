@@ -82,7 +82,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <ExportedImage
           src={WaveBackground}
           alt=""
-          className="absolute h-full w-full object-cover"
+          className="absolute h-full w-full object-cover opacity-40"
           priority
           basePath={basePath}
         />

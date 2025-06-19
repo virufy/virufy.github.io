@@ -20,7 +20,7 @@ const ValuesCard = ({ title, image, imageText, text }: ValuesCardProps) => {
       </div>
 
       <p className="mb-4 hidden font-black text-[#3686ff] lg:block">___</p>
-      <p className="max-w-xl text-sm text-[#3578DE] lg:max-w-md">{text}</p>
+      <p className="max-w-xl text-sm text-white lg:max-w-md">{text}</p>
     </>
   );
 };

@@ -16,7 +16,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className="relative w-full overflow-hidden pt-[80px]">
       {/* Background Image */}
       <ExportedImage
-        className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
+        className="fixed top-0 left-0 h-full w-full object-cover z-[-10]"
         src={AdvisorsNewBackground}
         alt="Advisors page background"
         width={1512}
@@ -26,11 +26,11 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       />
 
       {/* Title text */}
-      <div className="relative flex justify-center px-4 pb-10 pt-24">
+      <div className="relative flex justify-center pt-24 pb-10 px-4">
         <Title
           Text={titleImage}
           H="h4"
-          TitleClassProps="text-black font-bold text-center text-2xl md:text-4xl max-w-[900px]"
+          TitleClassProps="text-white text-center text-xl md:text-3xl max-w-[900px]"
         />
       </div>
 
@@ -58,17 +58,19 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <Title
             H="h1"
             Text={sectionAdvisors.title}
-            TitleClassProps="text-black font-black text-center my-10"
+            TitleClassProps="text-center my-10 bg-transparent 
+              bg-clip-text text-transparent
+              bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]"
           />
 
           {/* Advisors Cards */}
-          <div className="grid grid-cols-2 gap-4 pb-16 text-black sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 pb-16 text-white sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
             {sectionAdvisors.advisors
               .sort((a, b) => a.index - b.index)
               .map(({ img, name, role, texts, link }) => (
                 <div
                   key={name}
-                  className="relative max-w-40 bg-white bg-opacity-30 text-center md:w-[375px] md:max-w-[22rem]"
+                  className="relative max-w-40 text-center md:w-[375px] md:max-w-[22rem]"
                 >
                   <Link target="_blank" href={link}>
                     <ExportedImage
@@ -79,17 +81,12 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     />
                   </Link>
                   <div className="pb-2 md:pb-4">
-                    <h2 className="pt-2 text-xs font-bold text-black md:pt-4 md:text-2xl">
-                      {name}
-                    </h2>
-                    <div className="py-1 text-[10px] font-semibold text-black md:text-xl">
+                    <h2 className="pt-2 text-xs md:pt-4 md:text-2xl">{name}</h2>
+                    <div className="py-1 text-[10px] font-bold text-white md:text-xl">
                       {role}
                     </div>
                     {texts.map((text, i) => (
-                      <div
-                        key={i}
-                        className="text-[9px] font-normal text-black md:text-lg lg:text-lg"
-                      >
+                      <div key={i} className="text-[9px] font-thin md:text-lg">
                         {text}
                       </div>
                     ))}
