@@ -264,7 +264,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     );
 
   return (
-    <div className="bg-transparent">
+    <div className="w-full bg-transparent lg:absolute">
       <nav className={`sticky z-[100] w-full bg-transparent`}>
         {/* donate modal */}
         {showModal ? (
@@ -277,7 +277,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
           className={`lg:max-w-8lg justify-between px-3 lg:mx-4 lg:flex lg:items-center lg:px-2 xl:mx-9${navbar ? 'flex h-screen' : ''}`}
         >
           <div className="flex items-center justify-between lg:block lg:py-5">
-            <Link href={`/${lang}`} className="flex lg:hidden">
+            <Link
+              href={`/${lang}`}
+              className="mt-2 flex rounded-full bg-white bg-opacity-80 px-3 py-2 text-black lg:hidden"
+            >
               <ExportedImage
                 className="h-[48px] w-[100px]"
                 src={VirufyLogo}
@@ -285,7 +288,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 basePath={basePath}
               />
             </Link>
-            <Link href={`/${lang}`} className="hidden lg:flex">
+            <Link
+              href={`/${lang}`}
+              className="lg-space-x-6 hidden lg:flex lg:rounded-full lg:bg-white lg:bg-opacity-80 lg:p-2"
+            >
               <ExportedImage
                 className="h-[48px] w-[160px]"
                 src={VirufyLogo}
@@ -294,7 +300,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
               />
             </Link>
             {/* Mobile Search Bar */}
-            <div className="mt-2 flex items-center justify-start py-2 lg:hidden">
+            <div className="mt-2 flex items-center justify-start rounded-full bg-white bg-opacity-80 px-5 py-2 text-black lg:hidden">
               <div className="relative mb-4 w-[125px]">
                 {renderSearchInput('w-full')}
                 {renderSearchDropdown()}
@@ -447,7 +453,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       </Link>
 
                       <div
-                        className={`absolute w-[200px] flex-col rounded-xl bg-white bg-opacity-50 text-center drop-shadow-lg ${
+                        className={`absolute w-[200px] flex-col rounded-xl bg-white bg-opacity-50 text-center lg:drop-shadow-lg ${
                           navbar
                             ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform sm:bg-white sm:bg-opacity-0'
                             : 'ml-[-60px] hidden'
@@ -489,7 +495,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         {media?.section}
                       </Link>
                       <div
-                        className={`absolute w-[200px] flex-col rounded-xl bg-white bg-opacity-50 text-center drop-shadow-lg ${
+                        className={`absolute w-[200px] flex-col rounded-xl bg-white bg-opacity-50 text-center lg:drop-shadow-lg ${
                           navbar
                             ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform sm:bg-opacity-0'
                             : 'ml-[-75px] hidden'
@@ -538,11 +544,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 </div>
                 <div className="sm:flex-column lg:flex">
                   <li
-                    className={`text-[#393939] lg:mx-5 ${navbar ? 'pb-20' : ''}`}
+                    className={`text-[#393939] lg:mx-5 ${navbar ? 'pb-10' : ''}`}
                   >
                     <Link href={`/${lang}/join-us`}>
                       <button
-                        className={`md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                        className={`md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] border border-solid text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                       >
                         {joinUs ? joinUs.buttonText : ''}
                       </button>
@@ -550,11 +556,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </li>
 
                   <li
-                    className={`text-[#393939] ${navbar ? 'flex-columnpb-20' : ''}`}
+                    className={`text-[#393939] ${navbar ? 'flex-column pb-10' : ''}`}
                   >
                     <button
                       onClick={() => setShowModal(true)}
-                      className={`md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] rounded-full text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                      className={`md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                     >
                       <Link href="#">{donate.buttonText}</Link>
                     </button>

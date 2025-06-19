@@ -1,11 +1,4 @@
-import {
-  FingerSnapIcon,
-  GlobeIcon,
-  HeartRhythmIcon,
-  PhoneInHandIcon,
-  RecycleIcon,
-  TeamIcon,
-} from '@/public/images/story';
+import {} from '@/public/images/story';
 import { type Story } from '../types/story';
 
 const story: Story = {
@@ -48,45 +41,13 @@ const story: Story = {
       ],
     ],
   },
-  valuesSection: {
-    title: 'القيم',
-    cards: [
-      {
-        title: 'التحول',
-        image: RecycleIcon,
-        imageText: 'رمز التكرار',
-        text: 'نهدف إلى تحويل أنظمة الرعاية الصحية المكلفة باستخدام التكنولوجيا لدفع التغييرات اللازمة.',
-      },
-      {
-        title: 'التعاون',
-        image: GlobeIcon,
-        imageText: 'رمز الكرة الأرضية',
-        text: 'نلتزم بجعل الكشف السريع عن الأمراض متاحًا لكل شخص في العالم، بغض النظر عن خلفيته.',
-      },
-      {
-        title: 'الصحة',
-        image: HeartRhythmIcon,
-        imageText: 'رمز إيقاع القلب',
-        text: 'نلتزم دائمًا بوضع صحة ورفاهية جميع الأشخاص في جميع أنحاء العالم في المقام الأول.',
-      },
-      {
-        title: 'القدرة على تحمل التكاليف',
-        image: TeamIcon,
-        imageText: 'رمز مجموعة من الأشخاص',
-        text: 'نهدف إلى استخدام التكنولوجيا لجعل الوقاية من الأمراض والكشف عنها مجانيًا لجميع الأشخاص في جميع أنحاء العالم.',
-      },
-      {
-        title: 'الكفاءة',
-        image: FingerSnapIcon,
-        imageText: 'رمز التصفيق بالأصابع',
-        text: 'نلتزم بإنشاء تقنيات بديهية توفر الكشف السريع، مما يوقف انتشار الفيروس وينقذ الأرواح.',
-      },
-      {
-        title: 'الابتكار',
-        image: PhoneInHandIcon,
-        imageText: 'رمز الهاتف في اليد',
-        text: 'نهدف إلى ضمان الكشف السريع عن الأمراض بنقرة واحدة فقط على جهاز محمول.',
-      },
+  MissionSection: {
+    title: 'Our Mission',
+    statement:
+      'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
+    texts: [
+      'Delivering rapid, AI-powered respiratory disease pre-screening solutions for patients, clinicians, and governments—especially in underserved communities.',
+      'Harnessing the power of technology and global collaboration to transform healthcare into a more affordable, efficient, and inclusive system for all.',
     ],
   },
   privacySection: {
