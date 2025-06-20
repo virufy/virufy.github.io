@@ -13,8 +13,8 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = usei18n(lang);
 
   return (
-    <div className="-mb-24 flex flex-col items-center justify-center bg-[#0A0A0A]">
-      <div className="relative -top-24 w-full overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center bg-[#0A0A0A]">
+      <div className="w-full overflow-hidden">
         <div className="relative flex justify-center overflow-hidden">
           {/* First background img */}
           <div className="w-full brightness-100 contrast-100">
@@ -61,9 +61,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       )}
                     </p>
                   </div>
-
                 </div>
-
 
                 {/* Disclaimers */}
                 <div className="mt-1 flex flex-col items-start sm:ml-10 sm:mt-2 md:ml-0 lg:mt-6">
@@ -98,88 +96,12 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </p>
                 {/* Share your cough button */}
                 <div className="mt-2 flex w-full justify-center px-0">
-                    <Link href={`/study`}>
-                      <button
-                        className="medium primary text-black text-xs md:text-base md:text-xl py-2 md:py-4 px-2 md:px-16"
-                        style={{ borderRadius: '50px', background: 'white' }}
-                      >
-                        {introSection.buttonText}
-                      </button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom section of home page */}
-        <div className="flex min-h-[1050px] w-full flex-col items-center justify-center bg-[#0A0A0A] pb-8 xl:min-h-[1273px]">
-          <div className="mt-4 flex w-full items-center justify-center sm:px-5 xl:px-12">
-            <div className="flex w-full flex-col items-center rounded-3xl bg-[#132D62] pb-8">
-              <div className="mx-auto w-full max-w-screen-xl">
-                {/* Your health title and text */}
-                <div className="mt-8 flex w-full flex-col items-center px-4 text-center lg:mt-16">
-                  <Title
-                    Text={section2.text}
-                    H=""
-                    TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-xl sm:leading-9 md:text-4xl md:leading-10 lg:leading-[2.75rem] xl:text-5xl xl:leading-[3.5rem]"
-                  />
-                  <p className="mt-4 px-0.5 text-sm leading-4 text-white md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:px-40 xl:text-2xl xl:font-bold xl:leading-10">
-                    {section2.subtext}
-                  </p>
-                </div>
-
-                {/* Text next to phone img */}
-                <div className="mt-0 flex w-full flex-col justify-between px-8 text-center sm:flex-col xl:mt-8 xl:flex-row xl:px-24 xl:text-start">
-                  <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-1/2 xl:items-start xl:px-24">
-                    <div className="mb-4 mt-0 pt-8 xl:mt-4 xl:pt-0">
-                      {section2.title.map((item, i) => (
-                        <Fragment key={i}>
-                          <Title
-                            H="h5spaced"
-                            Text={item}
-                            TitleClassProps="text-white font-bold mb-1 mt-8"
-                          />
-                          <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
-                            {section2.sub[i]}
-                          </p>
-                        </Fragment>
-                      ))}
-                    </div>
-
-                    {/* Disclaimer */}
-                    <div className="mt-8 flex w-full flex-col items-center xl:mt-16 xl:items-start">
-                      <div className="w-full">
-                        <p className="px-8 text-center text-xs font-thin text-white lg:text-base xl:px-0 xl:text-left">
-                          {section2.disclaimer}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Phone img */}
-                  <div className="order-1 mt-8 flex justify-center xl:order-2 xl:mt-0 xl:w-1/2">
-                    <div className="relative w-auto">
-                      <ExportedImage
-                        className="h-[300px] w-auto xl:h-[800px]"
-                        src={VirufyMobilePhone}
-                        alt="mobile phone with Virufy's logo"
-                        priority
-                        basePath={basePath}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* Our technology button */}
-                <div className="mx-auto mb-8 mt-8 flex w-full max-w-md items-center justify-center px-0 md:max-w-lg xl:mt-0">
-                  <Link href={`/${lang}/ai`}>
+                  <Link href={`/study`}>
                     <button
-                      className="medium primary h-[45px] w-[315px] text-black xl:h-[65px] xl:w-[250px]"
+                      className="medium primary px-2 py-2 text-xs text-black md:px-16 md:py-4 md:text-base md:text-xl"
                       style={{ borderRadius: '50px', background: 'white' }}
                     >
-                      {section2.buttonText}
+                      {introSection.buttonText}
                     </button>
                   </Link>
                 </div>
@@ -188,6 +110,82 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           </div>
         </div>
       </div>
+
+      {/* Bottom section of home page */}
+      <div className="flex min-h-[1050px] w-full flex-col items-center justify-center bg-[#0A0A0A] pb-8 xl:min-h-[1273px]">
+        <div className="mt-4 flex w-full items-center justify-center sm:px-5 xl:px-12">
+          <div className="flex w-full flex-col items-center rounded-3xl bg-[#132D62] pb-8">
+            <div className="mx-auto w-full max-w-screen-xl">
+              {/* Your health title and text */}
+              <div className="mt-8 flex w-full flex-col items-center px-4 text-center lg:mt-16">
+                <Title
+                  Text={section2.text}
+                  H=""
+                  TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#30DA74] to-[#3578DE] text-xl sm:leading-9 md:text-4xl md:leading-10 lg:leading-[2.75rem] xl:text-5xl xl:leading-[3.5rem]"
+                />
+                <p className="mt-4 px-0.5 text-sm leading-4 text-white md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:px-40 xl:text-2xl xl:font-bold xl:leading-10">
+                  {section2.subtext}
+                </p>
+              </div>
+
+              {/* Text next to phone img */}
+              <div className="mt-0 flex w-full flex-col justify-between px-8 text-center sm:flex-col xl:mt-8 xl:flex-row xl:px-24 xl:text-start">
+                <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-1/2 xl:items-start xl:px-24">
+                  <div className="mb-4 mt-0 pt-8 xl:mt-4 xl:pt-0">
+                    {section2.title.map((item, i) => (
+                      <Fragment key={i}>
+                        <Title
+                          H="h5spaced"
+                          Text={item}
+                          TitleClassProps="text-white font-bold mb-1 mt-8"
+                        />
+                        <p className="leading-1 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
+                          {section2.sub[i]}
+                        </p>
+                      </Fragment>
+                    ))}
+                  </div>
+
+                  {/* Disclaimer */}
+                  <div className="mt-8 flex w-full flex-col items-center xl:mt-16 xl:items-start">
+                    <div className="w-full">
+                      <p className="px-8 text-center text-xs font-thin text-white lg:text-base xl:px-0 xl:text-left">
+                        {section2.disclaimer}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Phone img */}
+                <div className="order-1 mt-8 flex justify-center xl:order-2 xl:mt-0 xl:w-1/2">
+                  <div className="relative w-auto">
+                    <ExportedImage
+                      className="h-[300px] w-auto xl:h-[800px]"
+                      src={VirufyMobilePhone}
+                      alt="mobile phone with Virufy's logo"
+                      priority
+                      basePath={basePath}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Our technology button */}
+              <div className="mx-auto mb-8 mt-8 flex w-full max-w-md items-center justify-center px-0 md:max-w-lg xl:mt-0">
+                <Link href={`/${lang}/ai`}>
+                  <button
+                    className="medium primary h-[45px] w-[315px] text-black xl:h-[65px] xl:w-[250px]"
+                    style={{ borderRadius: '50px', background: 'white' }}
+                  >
+                    {section2.buttonText}
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

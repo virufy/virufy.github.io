@@ -1,6 +1,6 @@
 const HalfmyDAF2025Letter = () => {
   return (
-    <div className="space-y-6 bg-[#3468b2] pt-10 text-white">
+    <div className="relative space-y-6 bg-[#3468b2] py-[20px] text-white lg:py-[200px]">
       <div className="mx-auto items-center justify-center text-center font-medium">
         <h1 className="text-4xl font-bold text-green-500 sm:text-5xl">
           <strong>Virufy: Participation in #HalfMyDAF 2025 Initiative</strong>

@@ -1,4 +1,5 @@
 import { basePath } from '@/next.config.mjs';
+//import { AmilKhanzada } from '@/public/images/advisors';
 import ExportedImage from 'next-image-export-optimizer';
 import TitleText from '../components/TitleText';
 import Button from './Button';
@@ -18,7 +19,6 @@ export default function Section4({
 }) {
   return (
     <div className="mx-10 mb-10 mt-40 flex flex-col space-y-4 text-center">
-      {/* Mobile Image */}
       <div className="mb-8 flex w-full justify-center lg:hidden">
         <ExportedImage
           src={AmilImage}
@@ -27,31 +27,34 @@ export default function Section4({
           basePath={basePath}
         />
       </div>
-
-      {/* Mobile Text Card */}
       <div className="flex w-full flex-col items-center gap-5 text-center lg:hidden">
-        <div className="w-full p-6 rounded-xl shadow-lg bg-black bg-opacity-10 backdrop-blur-sm">
-          <TitleText
-            TitleSize={TitleSize1}
-            TitleLabel={TitleLabel1}
-            TextSize={''}
-            TextLabel={''}
-            ContainerTitleProps={{}}
-            ContainerTextProps={{}}
-            TitleClassProps={'text-black font-black'}
-            TextClassProps={''}
-          />
-          <TitleText
-            TitleSize={TitleSize2}
-            TitleLabel={TitleLabel2}
-            TextSize="normal"
-            TextLabel={TextLabel}
-            ContainerTitleProps={ContainerTitleProps}
-            ContainerTextProps={ContainerTextProps}
-            TitleClassProps={'text-black font-bold'}
-            TextClassProps={'text-black font-medium'}
-          />
-        </div>
+        <TitleText
+          TitleSize={TitleSize1}
+          TitleLabel={TitleLabel1}
+          TextSize={''}
+          TextLabel={''}
+          ContainerTitleProps={{
+            style: {
+              background:
+                'linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
+            },
+          }}
+          ContainerTextProps={{}}
+          TitleClassProps={
+            'bg-transparent bg-clip-text text-transparent bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]'
+          }
+          TextClassProps={''}
+        />
+        <TitleText
+          TitleSize={TitleSize2}
+          TitleLabel={TitleLabel2}
+          TextSize="normal"
+          TextLabel={TextLabel}
+          ContainerTitleProps={ContainerTitleProps}
+          ContainerTextProps={ContainerTextProps}
+          TitleClassProps={'text-white'}
+          TextClassProps={'text-white'}
+        />
         <Button
           size="medium"
           type="primary"
@@ -65,7 +68,6 @@ export default function Section4({
         />
       </div>
 
-      {/* Desktop Layout */}
       <div className="mt-20 hidden flex-1 items-center lg:flex">
         <div className="flex w-1/2 items-center justify-start pr-6">
           <ExportedImage
@@ -75,17 +77,23 @@ export default function Section4({
             basePath={basePath}
           />
         </div>
-        <div className="flex w-1/2 flex-col items-start justify-start sm:justify-center gap-6">
-          {/* Text box with softer background */}
-          <div className="w-full flex flex-col gap-5 text-left p-6 rounded-xl shadow-lg bg-black bg-opacity-10 backdrop-blur-sm">
+        <div className="flex w-1/2 items-center justify-start sm:justify-center">
+          <div className="flex w-full flex-col gap-5 text-left">
             <TitleText
               TitleSize={TitleSize1}
               TitleLabel={TitleLabel1}
               TextSize={''}
               TextLabel={''}
-              ContainerTitleProps={{}}
+              ContainerTitleProps={{
+                style: {
+                  background:
+                    'linear-gradient(180deg, #38B76B 0%, #33A5AE 47%, #3578DE 100%)',
+                },
+              }}
               ContainerTextProps={{}}
-              TitleClassProps={'text-black font-black'}
+              TitleClassProps={
+                'bg-transparent bg-clip-text text-transparent bg-gradient-to-b from-[#38B76B] via-[#33A5AE] to-[#3578DE]'
+              }
               TextClassProps={''}
             />
             <TitleText
@@ -95,22 +103,22 @@ export default function Section4({
               TextLabel={TextLabel}
               ContainerTitleProps={ContainerTitleProps}
               ContainerTextProps={ContainerTextProps}
-              TitleClassProps={'text-black font-bold'}
-              TextClassProps={'text-black font-medium'}
+              TitleClassProps={'text-white'}
+              TextClassProps={'text-white'}
             />
-          </div>
-          <div className="hidden sm:flex mt-6">
-            <Button
-              size="medium"
-              type="primary"
-              path={buttonRoute}
-              label={labelButton}
-              style={{}}
-              radius="50px"
-              gradientBackground="white"
-              width="250px"
-              height="65px"
-            />
+            <div className="hidden flex-col justify-center sm:flex">
+              <Button
+                size="medium"
+                type="primary"
+                path={buttonRoute}
+                label={labelButton}
+                style={{}}
+                radius="50px"
+                gradientBackground="white"
+                width="250px"
+                height="65px"
+              />
+            </div>
           </div>
         </div>
       </div>

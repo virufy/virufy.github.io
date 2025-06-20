@@ -1,81 +1,74 @@
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
-import { BgBody, BgHeader } from '@/public/images/story';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { Fragment } from 'react';
 import { usei18n } from '../../i18n';
-import ValuesCard from './ValuesCard';
+
+import { About_us_bg } from '@/public/images/story';
 
 export const generateMetadata = () => {
   return {
-    title: "About Us - Virufy",
-    description: "Learn about Virufy's mission, team, and our journey to leverage AI for global healthcare impact.",
+    title: 'About Us - Virufy',
+    description:
+      "Learn about Virufy's mission, team, and our journey to leverage AI for global healthcare impact.",
   };
 };
 
 const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    story: { aboutUsSection, storySection, valuesSection, privacySection },
+    story: { aboutUsSection, storySection, MissionSection, privacySection },
   } = usei18n(lang);
 
   return (
-    <div className="relative -top-24">
+    <div className="relative pb-24">
       {/* About Us/Hero Section */}
       <section>
-        <div className="relative bg-gradient-to-b from-[#1b3f6f] to-[#1b3b6f]">
+        <div className="relative w-full overflow-hidden py-[80px]">
           <ExportedImage
-            className="absolute h-full w-full object-cover opacity-40"
-            src={BgHeader}
-            alt=""
+            className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
+            src={About_us_bg}
+            alt="About us background image"
+            width={1512}
+            height={9070}
             priority
             basePath={basePath}
           />
 
           {/* Text Container */}
-          <div className="relative flex flex-col items-center justify-center py-60 lg:right-28">
+          <div className="relative flex flex-col items-center justify-center sm:pt-[50px] lg:pt-[180px]">
             {/* Sizing & Spacing Container */}
-            <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white lg:max-w-2xl lg:text-left">
-              <h2 className="text-5xl font-normal">{aboutUsSection.title}</h2>
-              {aboutUsSection.texts.map((text, i) => (
-                <p key={i}>{text}</p>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Gradient Overlay Container */}
-      <div className="relative bg-[#3468b2]">
-        <ExportedImage
-          src={BgBody}
-          alt=""
-          className="absolute h-full w-full object-cover"
-          basePath={basePath}
-        />
-
-        {/* Story, Values, and Privacy Container */}
-        <div className="-mb-24 py-40">
-          {/* Story Section */}
-          <section className="mb-40">
-            {/* Story Container */}
-            <div className="relative flex items-center justify-center lg:right-28">
-              {/* Sizing & Spacing Container */}
-              <div className="max-w-xl space-y-6 px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl lg:text-left">
-                <h2 className="text-5xl font-normal">{storySection.title}</h2>
+            <div className="space-y-6 rounded-[64px] bg-white p-5 text-center font-medium text-black opacity-85 sm:w-[420px] sm:p-[40px] lg:w-full lg:max-w-2xl lg:px-10 lg:text-left">
+              <div className="">
+                <h2 className="flex items-center justify-center py-2 text-5xl font-normal">
+                  {aboutUsSection.title}
+                </h2>
+                {aboutUsSection.texts.map((text, i) => (
+                  <p
+                    className="flex items-center justify-center py-5 text-center lg:text-xl"
+                    key={i}
+                  >
+                    {text}
+                  </p>
+                ))}
+              </div>
+              {/* Story Text */}
+              <div>
+                <h2 className="pb-10 text-center text-5xl font-normal">
+                  {storySection.title}
+                </h2>
                 {storySection.texts.map((el, i) => (
                   // render fragment or link component in paragraph element
-                  <p key={i}>
+                  <p
+                    className="justify-center py-5 text-center lg:text-xl"
+                    key={i}
+                  >
                     {el.map((text, i) =>
                       text.type === 'text' ? (
                         <Fragment key={i}>{text.text}</Fragment>
                       ) : (
                         <Link
-                          className={
-                            text.className || 
-                            (!text.style?.color ? "text-blue-500" : "")
-                          }
-                          style={text.style || {}}
+                          className="text-green-500"
                           key={i}
                           href={`/${lang}${text.url}`}
                         >
@@ -86,47 +79,37 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   </p>
                 ))}
               </div>
-            </div>
-          </section>
-
-          {/* Values Section */}
-          <section className="mb-40">
-            {/* Values Container */}
-            <div className="flex items-center justify-center">
-              {/* Sizing & Spacing Container */}
-              <div className="max-w-3xl space-y-6 px-10 text-left font-medium text-white opacity-95 lg:max-w-4xl">
-                <h2 className="text-center text-5xl font-normal lg:text-left">
-                  {valuesSection.title}
+              <div className="pb-10">
+                <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
+                  {MissionSection.title}
                 </h2>
-
-                {/* Cards Container */}
-                <div className="grid grid-cols-1 grid-rows-6 gap-y-6 rounded-3xl bg-white opacity-95 px-8 py-16 sm:px-16 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-x-20 lg:gap-y-16 lg:space-y-0 lg:px-20">
-                  {valuesSection.cards.map((card) => (
-                    <div key={card.title}>
-                      <ValuesCard {...card} />
-                    </div>
-                  ))}
-                </div>
+                <p className="mb-5 lg:text-xl">{MissionSection.statement}</p>
+                {MissionSection.texts.map((text, i) => (
+                  <li
+                    className="mx-10 mb-5 leading-10 lg:text-lg lg:leading-normal"
+                    key={i}
+                  >
+                    {text}
+                  </li>
+                ))}
+              </div>
+              <div className="pb-5">
+                <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
+                  {privacySection.title}
+                </h2>
+                {privacySection.texts.map((text, i) => (
+                  <p
+                    className="text-center leading-10 lg:text-xl lg:leading-normal"
+                    key={i}
+                  >
+                    {text}
+                  </p>
+                ))}
               </div>
             </div>
-          </section>
-
-          {/* Privacy Section */}
-          <section>
-            {/* Privacy Container */}
-            <div className="mx-auto max-w-xl px-10 text-center font-medium text-white opacity-95 lg:max-w-2xl">
-              <h2 className="mb-10 text-4xl font-normal sm:text-5xl">
-                {privacySection.title}
-              </h2>
-              {privacySection.texts.map((text, i) => (
-                <p className="leading-10 lg:leading-normal" key={i}>
-                  {text}
-                </p>
-              ))}
-            </div>
-          </section>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

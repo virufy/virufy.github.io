@@ -1,11 +1,4 @@
-import {
-  FingerSnapIcon,
-  GlobeIcon,
-  HeartRhythmIcon,
-  PhoneInHandIcon,
-  RecycleIcon,
-  TeamIcon,
-} from '@/public/images/story';
+import {} from '@/public/images/story';
 import { type Story } from '../types/story';
 
 const story: Story = {
@@ -48,45 +41,13 @@ const story: Story = {
       ],
     ],
   },
-  valuesSection: {
-    title: '価値観',
-    cards: [
-      {
-        title: '変革',
-        image: RecycleIcon,
-        imageText: '',
-        text: '私たちは、技術を活用して、必要な変化を促進し、高額な医療システムを変革することを目指しています。',
-      },
-      {
-        title: '協力',
-        image: GlobeIcon,
-        imageText: '',
-        text: '私たちは、バックグラウンドに関係なく、すべての人に迅速な病気の検出を提供することを約束します。',
-      },
-      {
-        title: '健康',
-        image: HeartRhythmIcon,
-        imageText: '',
-        text: '私たちは、世界中のすべての人々の健康と福祉を最優先にすることを常に約束します。',
-      },
-      {
-        title: '使いやすさ',
-        image: TeamIcon,
-        imageText: '',
-        text: '私たちは、技術を活用して、世界中のすべての人々に病気の予防と検出を無料で提供することを目指しています。',
-      },
-      {
-        title: '効率',
-        image: FingerSnapIcon,
-        imageText: '',
-        text: '私たちは、簡単に使える技術を作り出し、迅速な検出を提供してウイルスの拡散を止め、命を救うことを約束します。',
-      },
-      {
-        title: '革新',
-        image: PhoneInHandIcon,
-        imageText: '',
-        text: '私たちは、モバイルデバイスのワンタップで病気の迅速な検出を実現することを目指しています。',
-      },
+  MissionSection: {
+    title: '私たちの使命',
+    statement:
+      'Virufyの使命は、病気の予防と検出を無料、プライバシー保護、そして誰もがどこからでもアクセスできるようにすることで、命を救うことです。私たちは以下のことに尽力しています。',
+    texts: [
+      '特に医療サービスが行き届いていない地域の患者、臨床医、政府向けに、AI を活用した迅速な呼吸器疾患事前スクリーニング ソリューションを提供します。',
+      'テクノロジーの力とグローバルなコラボレーションを活用して、ヘルスケアを、すべての人にとってより手頃で効率的、かつ包括的なシステムへと変革します。',
     ],
   },
   privacySection: {

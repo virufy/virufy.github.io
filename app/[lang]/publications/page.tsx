@@ -80,7 +80,7 @@ const PublicationsPage = ({
             {publicationsCards.map((publication, i) => (
               <div
                 key={i}
-                className="space-y-4 bg-white opacity-95 px-10 py-8 text-left text-white sm:px-16 md:w-[700px] md:space-y-5"
+                className="space-y-4 rounded-xl bg-[#00000060] px-10 py-8 text-left text-white sm:px-16 md:w-[700px] md:space-y-5"
               >
                 <PublicationCard {...publication} />
               </div>

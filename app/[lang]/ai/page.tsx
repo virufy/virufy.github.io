@@ -11,17 +11,19 @@ import AiCard from './AiCard';
 // Overwrite the MetaData for this page
 export const metadata: Metadata = {
   title: 'Virufy: Our Technology',
-  description: 'A look at the science and technology behind Virufy including our AI and research',
+  description:
+    'A look at the science and technology behind Virufy including our AI and research',
   openGraph: {
-      title: 'Virufy: Our Technology',
-      description: 'A look at the science and technology behind Virufy including our AI and research',
-      url: 'http://localhost:3000/en/ai',  // Replace with live URL
-      type: 'website',
+    title: 'Virufy: Our Technology',
+    description:
+      'A look at the science and technology behind Virufy including our AI and research',
+    url: 'http://localhost:3000/en/ai', // Replace with live URL
+    type: 'website',
   },
   keywords: ['ai', 'technology', 'virufy technology', 'virufy ai'],
   alternates: {
-      canonical: 'http://localhost:3000/en/ai' // Replace with live URL
-  }
+    canonical: 'http://localhost:3000/en/ai', // Replace with live URL
+  },
 };
 
 const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
@@ -51,10 +53,10 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   text.type === 'text' ? (
                     <Fragment key={i}>{text.text}</Fragment>
                   ) : (
-                    <span key={i} className="text-green-400 font-bold">
+                    <span key={i} className="font-bold text-green-400">
                       {text.text}
                     </span>
-                  ),
+                  )
                 )}
               </h2>
 
@@ -63,7 +65,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <p className="text-xl">{heroSection.text}</p>
                 <div>
                   <Link
-                    className="rounded-full bg-white text-black px-10 py-6 text-sm font-medium lg:px-8 lg:py-4 lg:text-lg"
+                    className="rounded-full bg-white px-10 py-6 text-sm font-medium text-black lg:px-8 lg:py-4 lg:text-lg"
                     href={`/${lang}/${heroSection.url}`}
                   >
                     {heroSection.linkText}
@@ -80,7 +82,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <ExportedImage
           src={WaveBackground}
           alt=""
-          className="absolute h-full w-full object-cover"
+          className="absolute h-full w-full object-cover opacity-40"
           priority
           basePath={basePath}
         />

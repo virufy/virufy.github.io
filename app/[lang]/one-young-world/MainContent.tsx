@@ -23,8 +23,8 @@ const MainContent = ({ lang, teamLeads, oyw, navbarTexts }: Props) => {
 
   return (
     <>
-      {/* image is only shown in non-mobile view */}
-      {(
+      {/* image is only shown under 'One Young World' tab in non-mobile view */}
+      {!showTeamLeads && (
         <ExportedImage
           className="hidden md:absolute md:block md:h-full md:w-full md:rotate-180 md:object-cover md:opacity-30"
           src={oyw.bgImage}
