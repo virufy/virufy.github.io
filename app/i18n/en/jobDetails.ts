@@ -783,6 +783,34 @@ const jobDetails: JobDetails = {
     hours: ['Coming soon'],
     questions: ['Coming soon'],
   },
+  // General Job Application
+  '26': {
+    title: 'General Volunteer Application',
+    description: 'Seeking individuals who are passionate about global health and want to contribute on a part-time volunteer basis, even if a specific role isn\'t currently listed. This is your opportunity to tell us how you\'d like to support Virufy\'s mission to harness AI for pandemic detection and response.',
+    responsibilities: [
+      'Define product roadmap and manage product backlog.',
+      'Analyze user needs and market conditions.',
+      'Communicate product requirements to the development team.',
+      'Prioritize tasks and ensure they are successfully achieved.',
+      'Develop, implement, and maintain production timelines.',
+      'Work collaboratively with development team, UI/UX, and partner companies.',
+    ],
+    minQualifications: [
+      'Age 18 or over.',
+      'Legally authorized to work in the United States (We do not sponsor Visas).',
+      'High School Graduate or College Degree.',
+      'Valid Photo ID (Driver\'s License or Passport).',
+      'Must Be Multi-Lingual (English, Spanish & Portuguese).',
+    ],
+    desiredSkills: [
+      'Previous experience in product.',
+      'Organized, collaborative, and detail-oriented.',
+      'Exceptional communication skills.',
+      'Strong sense of responsibility.',
+    ],
+    hours: ['10+ hours per week while actively localizing policies.'],
+    questions: ['Reach out to frederick.cosper@virufy.org and we will get back to you promptly.'],
+  },
 };
 
 export default jobDetails;

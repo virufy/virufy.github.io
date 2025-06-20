@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usei18n } from '../../../i18n';
 import Title from '../../components/Title';
 
-const NUM_JOB_OPENINGS = 25;
+const NUM_JOB_OPENINGS = 26;
 
 export function generateStaticParams() {
   const staticParams: { lang: Locale; id: string }[] = [];

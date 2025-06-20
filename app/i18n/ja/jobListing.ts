@@ -150,6 +150,15 @@ const jobListing: JobListing = {
         },
       ],
     },
+    {
+      category: '一般的な',
+      positions: [
+        {
+          title: '一般的な求人応募',
+          id: 26,
+        },
+      ],
+    },
   ],
 };
 
