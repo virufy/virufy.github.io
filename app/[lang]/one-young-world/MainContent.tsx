@@ -33,7 +33,7 @@ const MainContent = ({ lang, teamLeads, oyw, navbarTexts }: Props) => {
           basePath={basePath}
         />
       )}
-
+      
       <Navbar
         showTeamLeads={showTeamLeads}
         setShowTeamLeads={setShowTeamLeads}
