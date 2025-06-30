@@ -23,7 +23,7 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         />
       </Head>
 
-      <div className="relative -top-24">
+      <div className="relative">
         {/* Hero Section */}
         <section>
           <div className="relative bg-[#2b5290]">
