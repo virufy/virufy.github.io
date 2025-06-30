@@ -32,7 +32,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = usei18n(lang);
 
   return (
-    <div className="relative -top-24">
+    <div className="relative">
       {/* Hero Section */}
       <section>
         <div className="relative bg-[#4883e3]">
