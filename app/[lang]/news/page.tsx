@@ -15,16 +15,6 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
   return (
     <>
-<<<<<<< HEAD
-  <Head>
-    <title>News - Virufy</title>
-    <meta
-      name="description"
-      content="Stay updated with the latest news and press releases about Virufy's advancements in AI healthcare innovation."
-    />
-  </Head>
- 
-=======
       <Head>
         <title>News - Virufy</title>
         <meta
@@ -33,8 +23,7 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         />
       </Head>
 
->>>>>>> a3168f8e0b84b6fc261a587bdb084af73a047f8f
-      <div className="relative -top-24">
+      <div className="relative">
         {/* Hero Section */}
         <section>
           <div className="relative bg-[#2b5290]">
@@ -47,13 +36,8 @@ const NewsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             />
 
             <div className="mx-auto flex max-w-xl flex-col items-center justify-center space-y-8 px-10 py-64 text-center font-medium opacity-95">
-<<<<<<< HEAD
-              <h1 className="text-4xl sm:text-5xl text-white font-bold">
-=======
               <h1 className="text-4xl font-bold text-white sm:text-5xl">
->>>>>>> a3168f8e0b84b6fc261a587bdb084af73a047f8f
                 {pressReleaseSection.title}
-  
               </h1>
             </div>
           </div>
