@@ -7,6 +7,14 @@ const pressReleases: PressReleases = {
   pressReleaseCards: [
     {
       title:
+        'Virufy demuestra el éxito de la detección respiratoria con IA en Abu Dabi',
+      date: 'junio de 2025',
+      subText: '',
+      url: '/en/news/Abu-Dhabi-June-2025',
+      linkText: 'Leer más',
+    },
+    {
+      title:
         'Virufy presentará tecnología innovadora de detección de COVID-19 en Prototypes for Humanity 2024 en Dubái',
       date: 'Noviembre 2024',
       subText: '',
