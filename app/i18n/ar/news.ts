@@ -7,6 +7,14 @@ const pressReleases: PressReleases = {
   pressReleaseCards: [
     {
       title:
+        'فيروفي تستعرض نجاحها في فحص الجهاز التنفسي باستخدام الذكاء الاصطناعي في أبوظبي',
+      date: 'يونيو 2025',
+      subText: '',
+      url: '/en/news/Abu-Dhabi-June-2025',
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
         'Virufy تعرض تقنية مبتكرة لفحص COVID-19 في معرض Prototypes for Humanity 2024 في دبي',
       date: 'نوفمبر 2024',
       subText: '',
