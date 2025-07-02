@@ -15,7 +15,7 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
     // background img with title text in center
     <div className="bg-[#142037]">
-      <div className="over relative -top-24 flex justify-center overflow-hidden">
+      <div className="over relative flex justify-center overflow-hidden">
         <div className="contrast-1 bg-black brightness-100">
           <ExportedImage
             className="h-full w-screen object-cover"

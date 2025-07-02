@@ -26,7 +26,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       />
 
       {/* Title text */}
-      <div className="relative flex justify-center px-4 pb-10 pt-24">
+      <div className="relative flex justify-center px-4 pb-10 pt-48">
         <Title
           Text={titleImage}
           H="h4"
