@@ -791,6 +791,33 @@ const jobDetails: JobDetails = {
     hours: ['Próximamente'],
     questions: ['Próximamente'],
   },
+  '26': {
+    title: 'Solicitud general de voluntariado',
+    description: 'Buscando personas apasionadas por la salud global y que quieran contribuir como voluntarios a tiempo parcial, incluso si una función específica no figura actualmente en la lista. Esta es su oportunidad para decirnos cómo le gustaría apoyar la misión de Virufy de aprovechar la IA para la detección y respuesta a pandemias.',
+    responsibilities: [
+      'Definir la hoja de ruta del producto y gestionar la cartera de productos.',
+      'Analizar las necesidades de los usuarios y las condiciones del mercado.',
+      'Comunicar los requisitos del producto al equipo de desarrollo.',
+      'Priorice las tareas y asegúrese de que se realicen con éxito.',
+      'Desarrollar, implementar y mantener cronogramas de producción.',
+      'Trabaje en colaboración con el equipo de desarrollo, UI/UX y empresas asociadas.',
+    ],
+    minQualifications: [
+      '18 años o más.',
+      'Legalmente autorizado para trabajar en los Estados Unidos (No patrocinamos Visas).',
+      'Graduado de escuela secundaria o título universitario.',
+      'Identificación con fotografía válida (licencia de conducir o pasaporte).',
+      'Debe ser multilingüe (inglés, español y portugués).',
+    ],
+    desiredSkills: [
+      'Experiencia previa en producto.',
+      'Organizado, colaborativo y orientado a los detalles.',
+      'Habilidades de comunicación excepcionales.',
+      'Fuerte sentido de responsabilidad.',
+    ],
+    hours: ['Más de 10 horas por semana mientras localiza políticas activamente.'],
+    questions: ['Comunícate con frederick.cosper@virufy.org y te responderemos con prontitud.'],
+  },
 };
 
 export default jobDetails;

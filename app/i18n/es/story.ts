@@ -1,11 +1,4 @@
-import {
-  FingerSnapIcon,
-  GlobeIcon,
-  HeartRhythmIcon,
-  PhoneInHandIcon,
-  RecycleIcon,
-  TeamIcon,
-} from '@/public/images/story';
+import {} from '@/public/images/story';
 import { type Story } from '../types/story';
 
 const story: Story = {
@@ -48,45 +41,13 @@ const story: Story = {
       ],
     ],
   },
-  valuesSection: {
-    title: 'Valores',
-    cards: [
-      {
-        title: 'Transformación',
-        image: RecycleIcon,
-        imageText: '',
-        text: 'Nuestro objetivo es transformar los costosos sistemas de salud mediante el uso de la tecnología para impulsar los cambios necesarios.',
-      },
-      {
-        title: 'Colaboración',
-        image: GlobeIcon,
-        imageText: '',
-        text: 'Nos comprometemos a hacer que la detección rápida de enfermedades esté disponible para todas las personas en el mundo, independientemente de sus antecedentes.',
-      },
-      {
-        title: 'Salud',
-        image: HeartRhythmIcon,
-        imageText: '',
-        text: 'Nos comprometemos a anteponer siempre la salud y el bienestar de todas las personas en todo el mundo.',
-      },
-      {
-        title: 'Asequibilidad',
-        image: TeamIcon,
-        imageText: '',
-        text: 'Nuestro objetivo es utilizar la tecnología para que la prevención y detección de enfermedades sea gratuita para todas las personas en todo el mundo.',
-      },
-      {
-        title: 'Eficiencia',
-        image: FingerSnapIcon,
-        imageText: '',
-        text: 'Nos comprometemos a crear tecnología intuitiva que brinde una detección rápida, detenga la propagación del virus y salve vidas.',
-      },
-      {
-        title: 'Innovación',
-        image: PhoneInHandIcon,
-        imageText: '',
-        text: 'Nuestro objetivo es garantizar la detección rápida de enfermedades con solo un toque en un dispositivo móvil.',
-      },
+  MissionSection: {
+    title: 'Nuestra Misión',
+    statement:
+      'En Virufy, nuestra misión es salvar vidas haciendo que la prevención y la detección de enfermedades sean gratuitas, privadas y accesibles para todos, en todas partes. Nos dedicamos a:',
+    texts: [
+      'Ofrecemos soluciones rápidas de detección previa de enfermedades respiratorias basadas en inteligencia artificial para pacientes, médicos y gobiernos, especialmente en comunidades marginadas.',
+      'Aprovechar el poder de la tecnología y la colaboración global para transformar la atención médica en un sistema más asequible, eficiente e inclusivo para todos.',
     ],
   },
   privacySection: {

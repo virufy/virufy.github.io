@@ -4,7 +4,7 @@ const jobListing: JobListing = {
   titleImage:
     'Virufy is entirely run by volunteers and pro bono partner companies.',
   title: 'Our Mission',
-  text: 'Join Virufy and be part of a groundbreaking global effort to combat COVID-19! As an innovative nonprofit consortium, we’ve brought together experts from over 25 countries to develop a state-of-the-art smartphone app for detecting the virus. Originally a Stanford University COVID-19 Response Innovation Lab project, our AI-driven diagnostic solution is setting new standards for accessible, free testing. By volunteering with Virufy, you will gain hands-on experience with cutting-edge AI tools, broaden your professional network, and contribute significantly to a vital cause. Take this opportunity to be at the forefront of innovation and help shape the future of pandemic response!',
+  text: 'Join Virufy and be part of a groundbreaking global effort to combat COVID-19 and other upper respiratory diseases. As an innovative nonprofit consortium, we’ve brought together experts from 25 countries to develop a state-of-the-art smart phone and web App that detects viruses through cough patterns. Originally a Stanford University  COVID-19 Response Innovation Lab Project, our AI-driven diagnostic solution is setting new standards for accessible, free testing. By volunteering at Virufy means you’ll gain hands-on experience with cutting-edge AI tools, and contribute significantly to a vital cause. Be at the forefront of innovation and help shape the future of global health.',
   modal: {
     text: 'Do you understand these are all unpaid, volunteer positions?',
     yes: 'Yes',
@@ -147,6 +147,15 @@ const jobListing: JobListing = {
         {
           title: 'Unix Administrator',
           id: 25,
+        },
+      ],
+    },
+    {
+      category: 'General',
+      positions: [
+        {
+          title: 'General Job Application',
+          id: 26,
         },
       ],
     },

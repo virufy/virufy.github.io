@@ -63,7 +63,7 @@ const LocaleSelect = () => {
     <div className="relative inline-block lg:pr-6" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className={`flex w-40 items-center bg-transparent p-3 text-xl font-bold text-white hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:px-0 ${
+        className={`flex w-40 items-center bg-transparent p-3 text-xl font-bold text-black hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:px-0 ${
           dropdownOpen ? 'border-l border-r border-t border-gray-500' : ''
         }`}
       >
@@ -76,14 +76,14 @@ const LocaleSelect = () => {
         <ArrowIcon isActive={dropdownOpen} />
       </button>
       {dropdownOpen && (
-        <div className="absolute z-10 w-40 border-b border-l border-r border-gray-500 bg-black pb-2 shadow-md shadow-gray-500 lg:-left-2 lg:mt-0 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none">
+        <div className="absolute z-10 w-40 border-b border-l border-r border-gray-500 bg-white pb-2 shadow-md shadow-gray-500 lg:-left-2 lg:mt-0 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none">
           {i18n.locales
             .filter((localeOption) => localeOption !== locale)
             .map((localeOption) => (
               <button
                 key={localeOption}
                 onClick={() => handleLocaleChange(localeOption as Locale)}
-                className="flex w-full items-center px-3 py-2 text-left text-sm text-white hover:font-bold"
+                className="flex w-[75px] items-center bg-white bg-opacity-50 px-3 py-2 text-left text-sm text-black hover:font-bold"
               >
                 <ExportedImage
                   src={flagIcons[localeOption]}

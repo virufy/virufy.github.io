@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Text from '../components/Text';
 
+
 const JobList = ({
   lang,
   jobList,
@@ -38,7 +39,8 @@ const JobList = ({
     scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const closeModalAndGoToPreviousPage = (): void => {
-    router.back();
+    setShowModal(false);
+    router.push('/');
   };
 
   return (
@@ -46,8 +48,12 @@ const JobList = ({
       <div>
         {showModal ? (
           <>
-            <div className="fixed inset-0 top-60 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-              <div className="relative mx-auto max-h-[90vh] w-[300px] max-w-[90vw] overflow-y-auto md:w-[360px]">
+            <div className="fixed inset-0 top-60 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
+            onClick={() => setShowModal(false)} 
+            >
+              <div className="relative mx-auto max-h-[90vh] w-[300px] max-w-[90vw] overflow-y-auto md:w-[360px]"
+               onClick={(e) => e.stopPropagation()}
+              >
                 {/*content*/}
 
                 <div className="relative flex max-h-[90vh] w-full flex-col overflow-y-auto rounded-xl border-0 bg-gradient-to-b from-[black] to-[#4167AD] font-medium text-white shadow-lg outline-none focus:outline-none">

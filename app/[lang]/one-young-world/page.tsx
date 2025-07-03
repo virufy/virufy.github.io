@@ -17,7 +17,7 @@ const OneYoungWorldPage = ({
   } = usei18n(lang);
 
   return (
-    <div className="relative -top-24">
+    <div className="relative">
       {/* Header/Hero Section */}
       <section>
         <div className="relative bg-[#255292]">

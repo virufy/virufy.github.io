@@ -15,7 +15,7 @@ const home: HomeType = {
       },
       {
         type: 'text',
-        text: ', the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing patterns and provide insights into potential infection symptoms.',
+        text: ', the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing and cough patterns and provide insights into potential infection symptoms.',
       },
     ],
     buttonText: 'Share your cough',

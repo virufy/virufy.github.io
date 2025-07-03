@@ -28,7 +28,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
     },
     {
       label: personalInfo.title,
-      showModal: setShowModalMyInformation,
+      endpoint: 'do-not-sell-my-data',
     },
   ];
 
