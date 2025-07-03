@@ -1,7 +1,7 @@
 const BetaAppRelease2023 = () => {
   return (
     <>
-      <div className="flex justify-center bg-gradient-to-b from-black to-[#4064AD] text-white">
+      <div className="relative flex justify-center bg-gradient-to-b from-black to-[#4064AD] pt-24 text-white">
         <div className="flex max-w-7xl flex-col space-y-6 px-8 py-20 sm:px-12 lg:px-40">
           <div>
             <h2 className="uppercase">For Immediate Release</h2>
@@ -64,7 +64,7 @@ const BetaAppRelease2023 = () => {
             <div>Gabriela Sonsino</div>
             <div>Virufy Marketing Director</div>
             <a
-              className="text-blue-500"
+              className="text-red-500"
               href="mailto:gabriela.sonsino@virufy.org"
             >
               gabriela.sonsino@virufy.org
