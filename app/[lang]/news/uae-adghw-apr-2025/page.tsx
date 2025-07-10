@@ -1,3 +1,6 @@
+import { DubaiImage2025 } from '@/public/images/news';
+import { basePath } from '@/next.config.mjs';
+import ExportedImage from 'next-image-export-optimizer';
 const AbuDhabiJune2025 = () => {
   return (
     <>
@@ -11,6 +14,12 @@ const AbuDhabiJune2025 = () => {
               Virufy Showcases AI Respiratory Screening Success at Abu Dhabi
               Global Health Week
             </h3>
+            <a
+              className="underline"
+              href="https://www.linkedin.com/posts/virufy_june-25th-2025-abu-dhabi-united-arab-emirates-activity-7343469195881299969-K7W1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9RuBsBynpmHyj3jtUVOL8AdGX6paZKBw8"
+            >
+              Link to article
+            </a>
           </div>
           <div>
             <p>
@@ -96,6 +105,13 @@ const AbuDhabiJune2025 = () => {
               Virufy.
             </p>
           </div>
+          <ExportedImage
+            className=""
+            src={DubaiImage2025}
+            alt=""
+            priority
+            basePath={basePath}
+          />
         </div>
       </div>
     </>
