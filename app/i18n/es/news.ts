@@ -10,7 +10,7 @@ const pressReleases: PressReleases = {
         'Virufy demuestra el éxito de la detección respiratoria con IA en Abu Dabi',
       date: 'junio de 2025',
       subText: '',
-      url: '/en/news/Abu-Dhabi-June-2025',
+      url: '/en/news/uae-adghw-apr-2025',
       linkText: 'Leer más',
     },
     {

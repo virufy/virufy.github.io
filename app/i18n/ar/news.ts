@@ -10,7 +10,7 @@ const pressReleases: PressReleases = {
         'فيروفي تستعرض نجاحها في فحص الجهاز التنفسي باستخدام الذكاء الاصطناعي في أبوظبي',
       date: 'يونيو 2025',
       subText: '',
-      url: '/en/news/Abu-Dhabi-June-2025',
+      url: '/en/news/uae-adghw-apr-2025',
       linkText: 'اقرأ المزيد',
     },
     {
