@@ -110,6 +110,7 @@ export default function Section4({
               gradientBackground="white"
               width="250px"
               height="65px"
+              
             />
           </div>
         </div>

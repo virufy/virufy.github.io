@@ -6,6 +6,13 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示',
+      date: '2025年6月',
+      subText: '',
+      url: '/en/news/Abu-Dhabi-June-2025',
+      linkText: '続きを読む',
+    },
+    {
       title:
         'Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露',
       date: '2024年11月',

@@ -1,11 +1,3 @@
-import {
-  FingerSnapIcon,
-  GlobeIcon,
-  HeartRhythmIcon,
-  PhoneInHandIcon,
-  RecycleIcon,
-  TeamIcon,
-} from '@/public/images/story';
 import { type Story } from '../types/story';
 
 const story: Story = {
@@ -28,7 +20,6 @@ const story: Story = {
           type: 'link',
           url: '/amils-story',
           text: 'Virufy founder Amil Khanzada',
-          className: 'text-[#30DA74]',
         },
         {
           type: 'text',
@@ -49,49 +40,17 @@ const story: Story = {
       ],
     ],
   },
-  valuesSection: {
-    title: 'Values',
-    cards: [
-      {
-        title: 'Transformation',
-        image: RecycleIcon,
-        imageText: 'loop icon',
-        text: 'We aim to transform expensive healthcare systems by using technology to drive necessary changes.',
-      },
-      {
-        title: 'Collaboration',
-        image: GlobeIcon,
-        imageText: 'globe icon',
-        text: 'We are committed to making rapid disease detection available to every person in the world, regardless of background.',
-      },
-      {
-        title: 'Health',
-        image: HeartRhythmIcon,
-        imageText: 'heart rhythm icon',
-        text: 'We commit to always putting the health and well-being of all people across the globe first and foremost.',
-      },
-      {
-        title: 'Affordability',
-        image: TeamIcon,
-        imageText: 'group of people icon',
-        text: 'We aim to use technology to make disease prevention and detection free for all people around the world.',
-      },
-      {
-        title: 'Efficiency',
-        image: FingerSnapIcon,
-        imageText: 'finger snapping icon',
-        text: 'We commit to creating intuitive technology that delivers rapid detection, stopping virus spread and saving lives.',
-      },
-      {
-        title: 'Innovation',
-        image: PhoneInHandIcon,
-        imageText: 'phone in hand icon',
-        text: 'We aim to ensure rapid detection of diseases with just one tap on a mobile device.',
-      },
+  MissionSection: {
+    title: 'Our Mission',
+    statement:
+      'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
+    texts: [
+      'Delivering rapid, AI-powered respiratory disease pre-screening solutions for patients, clinicians, and governments—especially in underserved communities.',
+      'Harnessing the power of technology and global collaboration to transform healthcare into a more affordable, efficient, and inclusive system for all.',
     ],
   },
   privacySection: {
-    title: 'Our Commitment to Privacy',
+    title: 'Commitment to Privacy',
     texts: [
       'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website.',
     ],

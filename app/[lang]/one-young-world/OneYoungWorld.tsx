@@ -25,9 +25,6 @@ const OneYoungWorld = ({
         <section>
           <div className="flex flex-col items-center justify-center px-8 py-12 text-white opacity-95 md:py-0 md:pt-20">
             <div>
-              {/* <h1 className="hidden md:mb-4 md:block md:text-5xl md:text-[#3074dc]">
-                {oywTitle}
-              </h1> */}
               <h2 className="mb-8 text-center text-2xl font-bold md:text-left md:text-3xl md:font-medium">
                 {subTitle}
               </h2>

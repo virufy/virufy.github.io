@@ -6,6 +6,13 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'Virufy Showcases AI Respiratory screening Success at Abu Dhabi',
+      date: 'June 2025',
+      subText: '',
+      url: '/en/news/Abu-Dhabi-June-2025',
+      linkText: 'Read More',
+    },
+    {
       title:
         'Virufy to Showcase Innovative COVID-19 Screening Technology at Prototypes for Humanity 2024 in Dubai',
       date: 'November 2024',

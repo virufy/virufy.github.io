@@ -64,12 +64,7 @@ const nextConfig = {
       {
         source: '/halfmydaf',
         destination: 'https://docs.google.com/document/d/1uDY8EqbnAyb0xdc2v19IEHGys6jlTyZS8a-v3ES4Y8o' 
-      },
-      {
-        source: '/Founder',
-        destination:
-          '/founder',
-      },
+      }
     ];
   },
 

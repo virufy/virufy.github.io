@@ -1,17 +1,8 @@
-import { type StaticImageData } from 'next/image';
-
 export interface Story {
   aboutUsSection: AboutUsSection;
   storySection: StorySection;
-  valuesSection: ValuesSection;
+  MissionSection: MissionSection;
   privacySection: PrivacySection;
-}
-
-export interface ValuesCard {
-  title: string;
-  image: StaticImageData;
-  imageText: string;
-  text: string;
 }
 
 interface StorySection {
@@ -27,9 +18,10 @@ interface StorySectionText {
   className?: string;
 }
 
-interface ValuesSection {
+interface MissionSection {
   title: string;
-  cards: ValuesCard[];
+  statement: string;
+  texts: string[];
 }
 
 export interface Section {
