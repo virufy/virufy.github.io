@@ -5,7 +5,7 @@ import RedirectWithSpinner from '../../[lang]/components/RedirectWithSpinner';
 const NewsRedirect = () => {
   return (
     <RedirectWithSpinner
-      targetUrl={`/${i18n.defaultLocale}/news/Abu-Dhabi-June-2025`}
+      targetUrl={`/${i18n.defaultLocale}/news/uae-adghw-apr-2025`}
     />
   );
 };
