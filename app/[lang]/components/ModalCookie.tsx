@@ -17,7 +17,7 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
     if (!seenModal) {
       setShowModal(true);
     } else {
-      //
+      //Google analytics
       ReactGA.initialize('G-ZV5G86ZDRG');
       //
     }
