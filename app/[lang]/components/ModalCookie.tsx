@@ -5,6 +5,7 @@ import { VirufyLogo } from '@/public/images/jobListing';
 import ExportedImage from 'next-image-export-optimizer';
 import { useState, useEffect } from 'react';
 import { usei18n } from '@/app/i18n';
+import ReactGA from 'react-ga4';
 
 const ModalCookie = ({ lang }: { lang: Locale }) => {
   const {
@@ -12,15 +13,21 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
   } = usei18n(lang);
   const [showModal, setShowModal] = useState(false);
   useEffect(() => {
-    const seenModal = localStorage.getItem('seenCookieModal');
+    const seenModal = localStorage.getItem('AcceptCookieModal');
     if (!seenModal) {
       setShowModal(true);
     } else {
+      //
+      ReactGA.initialize('G-ZV5G86ZDRG');
+      //
     }
   }, []);
   const closeModalAndSetLocalStorage = (): void => {
     setShowModal(false);
-    localStorage.setItem('seenCookieModal', 'true');
+    localStorage.setItem('AcceptCookieModal', 'true');
+    //Google analytics
+    ReactGA.initialize('G-ZV5G86ZDRG');
+    //
   };
 
   return (
