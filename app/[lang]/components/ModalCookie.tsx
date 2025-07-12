@@ -3,11 +3,28 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { VirufyLogo } from '@/public/images/jobListing';
 import ExportedImage from 'next-image-export-optimizer';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { usei18n } from '@/app/i18n';
 import ReactGA from 'react-ga4';
+import { usePathname } from 'next/navigation';
 
 const ModalCookie = ({ lang }: { lang: Locale }) => {
+  //if the google analytics dont work delete from---
+  // and the two comments with the google analytics comments
+  const pathname = usePathname();
+  const dateAccessed = new Date().toISOString();
+  const trackPageview = useCallback(
+    (url: string) => {
+      ReactGA.initialize('G-ZV5G86ZDRG');
+      ReactGA.send({
+        hitType: 'pageview',
+        page: url,
+        date_accessed: dateAccessed,
+      });
+    },
+    [dateAccessed]
+  );
+  //to here---
   const {
     cookieModal: { text, yes, no },
   } = usei18n(lang);
@@ -18,15 +35,17 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
       setShowModal(true);
     } else {
       //Google analytics
-      ReactGA.initialize('G-ZV5G86ZDRG');
+      trackPageview(pathname);
       //
     }
-  }, []);
+    //--
+  }, [pathname, trackPageview]);
+  //--
   const closeModalAndSetLocalStorage = (): void => {
     setShowModal(false);
     localStorage.setItem('AcceptCookieModal', 'true');
     //Google analytics
-    ReactGA.initialize('G-ZV5G86ZDRG');
+    trackPageview(pathname);
     //
   };
 
