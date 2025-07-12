@@ -33,7 +33,7 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
               onClick={() => setShowModal(false)}
             >
               <div
-                className="relative mx-auto max-h-[90vh] w-[300px] max-w-[90vw] overflow-y-auto md:w-[360px]"
+                className="relative mx-auto max-h-[90vh] w-[300px] max-w-[90vw] overflow-y-auto md:h-auto md:w-[500px]"
                 onClick={(e) => e.stopPropagation()}
               >
                 {/*content*/}
@@ -53,13 +53,13 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
                   </div>
 
                   <div className="flex w-full rounded-t text-center md:text-left">
-                    <p className="mx-auto my-10 max-h-[200px] overflow-y-auto break-words px-6 text-lg md:text-xl">
+                    <p className="mx-auto my-10 max-h-[500px] overflow-y-auto break-words px-6 text-center text-lg md:text-xl">
                       {text}
                     </p>
                   </div>
                   {/*body*/}
 
-                  <div className="mb-14 h-[100px] flex-col items-center justify-center">
+                  <div className="mb-14 h-[100px] flex-col">
                     <button
                       className="mx-auto flex w-[260px] justify-center rounded-3xl bg-white px-6 py-2 font-bold text-black outline-none transition-all duration-150 ease-linear md:w-[320px] md:font-medium"
                       type="button"
