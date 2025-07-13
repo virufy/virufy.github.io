@@ -37,6 +37,12 @@ const teamLeads: TeamLeadsType = {
       altText: 'صورة لمادهاف دات',
     },
     {
+      name: 'شريا سريرام، MD',
+      texts: ['مندوبة فيروفي لعام 2021، الهند', 'البحث السريري في فيروفي'],
+      image: Shreya,
+      altText: 'صورة لشريا سريرام',
+    },
+    {
       name: 'ماركوس ديزا',
       texts: ['سفير OYW، الأرجنتين', 'الاتصالات الرقمية في فيروفي'],
       image: Marcos,
@@ -56,12 +62,6 @@ const teamLeads: TeamLeadsType = {
       ],
       image: Ayomide,
       altText: 'صورة لأويميد أووييمي',
-    },
-    {
-      name: 'شريا سريرام، MD',
-      texts: ['مندوبة فيروفي لعام 2021، الهند', 'البحث السريري في فيروفي'],
-      image: Shreya,
-      altText: 'صورة لشريا سريرام',
     },
     {
       name: 'لاورا فيلاسكيز',
@@ -116,10 +116,10 @@ const teamLeads: TeamLeadsType = {
       altText: 'صورة لسيباستيان بيدرازا',
     },
     {
-      name: 'كينمارو سودومي',
-      texts: ['سفير OYW، اليابان'],
-      image: Kenmaru,
-      altText: 'صورة لكينمارو سودومي',
+      name: 'أالانا دويل',
+      texts: ['سفير OYW، الولايات المتحدة'],
+      image: Allana,
+      altText: 'صورة لأالانا دويل',
     },
     {
       name: 'كابيل نارين، MD',
@@ -128,22 +128,22 @@ const teamLeads: TeamLeadsType = {
       altText: 'صورة لكابيل نارين',
     },
     {
+      name: 'كافيا مادهافين',
+      texts: ['سفير OYW'],
+      image: Kavya,
+      altText: 'صورة لكافيا مادهافين',
+    },
+    {
       name: 'ليونارد بورز',
       texts: ['سفير OYW، أيرلندا'],
       image: Leonard,
       altText: 'صورة ليونارد بورز',
     },
     {
-      name: 'أالانا دويل',
-      texts: ['السفير OYW، EE.UU11'],
-      image: Allana,
-      altText: 'صورة لأالانا دويل',
-    },
-    {
-      name: 'كافيا مادهافين',
-      texts: ['سفير OYW'],
-      image: Kavya,
-      altText: 'صورة لكافيا مادهافين',
+      name: 'كينمارو سودومي',
+      texts: ['سفير OYW، اليابان'],
+      image: Kenmaru,
+      altText: 'صورة لكينمارو سودومي',
     },
   ],
 };
