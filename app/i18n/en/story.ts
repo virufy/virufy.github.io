@@ -1,13 +1,5 @@
 import { type Story } from '../types/story';
-
 const story: Story = {
-  aboutUsSection: {
-    title: 'About Us',
-    texts: [
-      'Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
-      'We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
-    ],
-  },
   storySection: {
     title: 'How It Started',
     texts: [
@@ -42,8 +34,7 @@ const story: Story = {
   },
   MissionSection: {
     title: 'Our Mission',
-    statement:
-      'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
+    statement: 'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
     texts: [
       'Delivering rapid, AI-powered respiratory disease pre-screening solutions for patients, clinicians, and governments—especially in underserved communities.',
       'Harnessing the power of technology and global collaboration to transform healthcare into a more affordable, efficient, and inclusive system for all.',
@@ -53,6 +44,12 @@ const story: Story = {
     title: 'Commitment to Privacy',
     texts: [
       'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website.',
+    ],
+  },
+  aboutUsSection: {
+    title: 'About Us',
+    texts: [
+      'Virufy is a global nonprofit organization focused on leveraging technology and AI to improve healthcare accessibility and disease detection.',
     ],
   },
 };

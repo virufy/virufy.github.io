@@ -49,8 +49,8 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 {/* Introducing Virufy section */}
                 <div className="mt-14 flex flex-col items-start space-y-2 sm:mt-24 md:mt-56 md:space-y-8 lg:mt-80 xl:mt-[40rem]">
                   <div className="w-full max-w-md md:max-w-3xl xl:max-w-5xl">
-                    <p className="text-center text-xs font-bold leading-[1.1rem] sm:text-sm md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
-                      {introSection.subText.map((text, i) =>
+                    <p className="mb-6 text-center text-xs font-bold leading-[1.1rem] sm:text-sm md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
+                      {introSection.subText.slice(0,3).map((text, i) =>
                         text.type === 'text' ? (
                           <Fragment key={i}>{text.text}</Fragment>
                         ) : (
@@ -59,6 +59,15 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                           </span>
                         )
                       )}
+                    </p>
+                    {/* Second paragraph */}
+                    <p className="mb-6 text-center text-xs font-bold leading-[1.1rem] sm:text-sm md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
+                      {introSection.subText[3].text}
+                    </p>
+
+                    {/* Third paragraph */}
+                    <p className="text-center text-xs font-bold leading-[1.1rem] sm:text-sm md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
+                      {introSection.subText[4].text}
                     </p>
                   </div>
                 </div>
