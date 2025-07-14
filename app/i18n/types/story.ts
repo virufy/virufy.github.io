@@ -1,7 +1,7 @@
 export interface Story {
   aboutUsSection: AboutUsSection;
   storySection: StorySection;
-  MissionSection: MissionSection;
+  MissionSection: StorySection;
   privacySection: PrivacySection;
 }
 
@@ -16,12 +16,6 @@ interface StorySectionText {
   url?: string;
   style?: Record<string, string>;
   className?: string;
-}
-
-interface MissionSection {
-  title: string;
-  statement: string;
-  texts: string[];
 }
 
 export interface Section {

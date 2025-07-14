@@ -52,6 +52,33 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   </p>
                 ))}
               </div>
+              {/* Our Misiion Text */}
+              <div className="pb-10">
+                <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
+                  {MissionSection.title}
+                </h2>
+                {MissionSection.texts.map((el, i) => (
+                  // render fragment or link component in paragraph element
+                  <p
+                    className="mx-5 mb-5 leading-10 lg:text-lg lg:leading-normal"
+                    key={i}
+                  >
+                    {el.map((text, i) =>
+                      text.type === 'text' ? (
+                        <Fragment key={i}>{text.text}</Fragment>
+                      ) : (
+                        <Link
+                          className="text-green-500"
+                          key={i}
+                          href={`/${lang}${text.url}`}
+                        >
+                          {text.text}
+                        </Link>
+                      )
+                    )}
+                  </p>
+                ))}
+              </div>
               {/* Story Text */}
               <div>
                 <h2 className="pb-10 text-center text-5xl font-normal">
@@ -77,20 +104,6 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       )
                     )}
                   </p>
-                ))}
-              </div>
-              <div className="pb-10">
-                <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
-                  {MissionSection.title}
-                </h2>
-                <p className="mb-5 lg:text-xl">{MissionSection.statement}</p>
-                {MissionSection.texts.map((text, i) => (
-                  <li
-                    className="mx-10 mb-5 leading-10 lg:text-lg lg:leading-normal"
-                    key={i}
-                  >
-                    {text}
-                  </li>
                 ))}
               </div>
               <div className="pb-5">

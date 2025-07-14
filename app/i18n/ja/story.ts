@@ -42,12 +42,59 @@ const story: Story = {
     ],
   },
   MissionSection: {
-    title: '私たちの使命',
-    statement:
-      'Virufyの使命は、病気の予防と検出を無料、プライバシー保護、そして誰もがどこからでもアクセスできるようにすることで、命を救うことです。私たちは以下のことに尽力しています。',
+    title: 'Our Mission',
     texts: [
-      '特に医療サービスが行き届いていない地域の患者、臨床医、政府向けに、AI を活用した迅速な呼吸器疾患事前スクリーニング ソリューションを提供します。',
-      'テクノロジーの力とグローバルなコラボレーションを活用して、ヘルスケアを、すべての人にとってより手頃で効率的、かつ包括的なシステムへと変革します。',
+      [
+        {
+          type: 'text',
+          text: 'Some people may be wondering, "why are we here?" and "why have so many people supported Virufy?" Virufy\'s mission and goal is to transform global health.',
+        }
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Virufy\'s mission and goal is to transform global health.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We aim to give everyone in the world access to a smartphone app to detect respiratory diseases like COVID, flu, RSV, asthma, lung cancer, in seconds.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Here is a listing of disclosed ',
+        },
+        {
+          type: 'link',
+          url: '/advisors',
+          text: 'advisors',
+        },
+        {
+          type: 'text',
+          text: ' and we have had 1,300+ volunteers to date.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We aim to have UAE as our first country to release the app because of our supporters and the process is much faster and straightforward here than other nations.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Thank you for being part of the mission and let\'s make it happen.',
+        },
+      ],
     ],
   },
   privacySection: {

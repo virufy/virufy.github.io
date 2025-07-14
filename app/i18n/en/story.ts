@@ -42,11 +42,58 @@ const story: Story = {
   },
   MissionSection: {
     title: 'Our Mission',
-    statement:
-      'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
     texts: [
-      'Delivering rapid, AI-powered respiratory disease pre-screening solutions for patients, clinicians, and governments—especially in underserved communities.',
-      'Harnessing the power of technology and global collaboration to transform healthcare into a more affordable, efficient, and inclusive system for all.',
+      [
+        {
+          type: 'text',
+          text: 'Some people may be wondering, "why are we here?" and "why have so many people supported Virufy?" Virufy\'s mission and goal is to transform global health.',
+        }
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Virufy\'s mission and goal is to transform global health.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We aim to give everyone in the world access to a smartphone app to detect respiratory diseases like COVID, flu, RSV, asthma, lung cancer, in seconds.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Here is a listing of disclosed ',
+        },
+        {
+          type: 'link',
+          url: '/advisors',
+          text: 'advisors',
+        },
+        {
+          type: 'text',
+          text: ' and we have had 1,300+ volunteers to date.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We aim to have UAE as our first country to release the app because of our supporters and the process is much faster and straightforward here than other nations.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Thank you for being part of the mission and let\'s make it happen.',
+        },
+      ],
     ],
   },
   privacySection: {
