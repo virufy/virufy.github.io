@@ -9,11 +9,8 @@ const pressReleases: PressReleases = {
       title: 'Virufy Showcases AI Respiratory screening Success at Abu Dhabi',
       date: 'June 2025',
       subText: '',
-<<<<<<< HEAD
-      url: '/en/news/Abu-Dhabi-June-2025',
-=======
+
       url: '/en/news/uae-adghw-apr-2025',
->>>>>>> origin/Testing
       linkText: 'Read More',
     },
     {

@@ -24,10 +24,6 @@
     "react-player": "^2.16.0"
   },
   "devDependencies": {
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/Testing
     "@playwright/test": "^1.53.0",
     "@types/lodash.debounce": "^4.0.9",
     "@types/node": "20.14.15",

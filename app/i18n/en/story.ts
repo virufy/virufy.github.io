@@ -34,12 +34,8 @@ const story: Story = {
   },
   MissionSection: {
     title: 'Our Mission',
-<<<<<<< HEAD
-    statement: 'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
-=======
     statement:
       'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
->>>>>>> origin/Testing
     texts: [
       'Delivering rapid, AI-powered respiratory disease pre-screening solutions for patients, clinicians, and governments—especially in underserved communities.',
       'Harnessing the power of technology and global collaboration to transform healthcare into a more affordable, efficient, and inclusive system for all.',
