@@ -9,10 +9,9 @@ import ReactGA from 'react-ga4';
 import { usePathname } from 'next/navigation';
 
 const ModalCookie = ({ lang }: { lang: Locale }) => {
-  //if the google analytics dont work delete from---
-  // and the two comments with the google analytics comments
   const pathname = usePathname();
   const dateAccessed = new Date().toISOString();
+  
   const trackPageview = useCallback(
     (url: string) => {
       ReactGA.initialize('G-ZV5G86ZDRG');
@@ -24,30 +23,34 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
     },
     [dateAccessed]
   );
-  //to here---
+
   const {
     cookieModal: { text, yes, no },
   } = usei18n(lang);
+
   const [showModal, setShowModal] = useState(false);
+
   useEffect(() => {
-    const seenModal = localStorage.getItem('AcceptCookieModal');
-    if (!seenModal) {
-      setShowModal(true);
-    } else {
-      //Google analytics
+    const consent = localStorage.getItem('CookieConsent');
+
+    if (!consent) { // user hasn't decided yet, show modal
+      setShowModal(true); 
+    } else if (consent === 'accepted') { // user accepted cookies, start tracking
       trackPageview(pathname);
-      //
     }
-    //--
   }, [pathname, trackPageview]);
-  //--
-  const closeModalAndSetLocalStorage = (): void => {
+
+  const acceptCookies = (): void => {
     setShowModal(false);
-    localStorage.setItem('AcceptCookieModal', 'true');
-    //Google analytics
+    localStorage.setItem('CookieConsent', 'accepted');
     trackPageview(pathname);
-    //
-  };
+  }
+
+  const rejectCookies = (): void => {
+    setShowModal(false);
+    localStorage.setItem('CookieConsent', 'rejected');
+    // user rejected cookies, no tracking
+  }
 
   return (
     <>
@@ -89,11 +92,15 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
                     <button
                       className="mx-auto flex w-[260px] justify-center rounded-3xl bg-white px-6 py-2 font-bold text-black outline-none transition-all duration-150 ease-linear md:w-[320px] md:font-medium"
                       type="button"
-                      onClick={closeModalAndSetLocalStorage}
+                      onClick={acceptCookies}
                     >
                       {yes}
                     </button>
-                    <button className="mx-auto mt-6 flex w-[260px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 font-bold text-red-500 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[320px] md:font-medium">
+                    <button 
+                      className="mx-auto mt-6 flex w-[260px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 font-bold text-red-500 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[320px] md:font-medium"
+                      type="button"
+                      onClick={rejectCookies}
+                    >
                       {no}
                     </button>
                   </div>
