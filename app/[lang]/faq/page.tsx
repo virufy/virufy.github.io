@@ -80,7 +80,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       content="Find answers to common questions about Virufy's technology, research, and how our solutions work."
     />
   </Head>
-    <div className="relative -top-24">
+    <div className="relative -top-24 pt-20">
       {/* Hero Section */}
       <section>
         <div className="relative bg-[#255292]">
@@ -93,7 +93,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           />
 
           {/* Text and Input Container */}
-          <div className="relative flex flex-col items-center justify-center pb-8 pt-32 md:pb-48 md:pt-72">
+          <div className="relative flex flex-col items-center justify-center pb-8 pt-32 md:pb-32 md:pt-72">
             {/* Sizing & Spacing Container */}
             <div className="px-8 text-center font-medium text-white">
               {/* Header */}
@@ -148,17 +148,17 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="-mb-24 bg-[#3468b2] text-white">
+      <div className="-mb-24 bg-[#20376b] text-white">
         {/* Topics Section */}
         <section>
           {/* Title and Topic Cards Container */}
-          <div className="flex flex-col items-center justify-center space-y-6 pt-10 text-center md:space-y-10 md:pt-20">
+          <div className="flex flex-col items-center justify-center space-y-6 pt-10 text-center md:space-y-10 md:pt-16">
             <h2 className="text-lg font-medium md:text-3xl">
               {topicsSection.title}
             </h2>
 
             {/* Topic Cards Container */}
-            <div className="grid grid-cols-2 gap-4 lg:grid-cols-7 lg:gap-6">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6 lg:gap-6">
               {topicCards.map((card) => (
                 <TopicCard
                   key={card.title}
@@ -175,19 +175,20 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         {/* Questions Section */}
         <section>
           {/* Title and Questions Container */}
-          <div className="mx-5 flex flex-col items-center justify-center gap-y-4 py-10 md:gap-y-10 md:py-56 md:pt-24">
+          <div className="mx-5 flex flex-col items-center justify-center gap-y-4 py-10 md:gap-y-10 md:py-40 md:pt-16">
             <h2 className="text-lg font-medium md:text-3xl">
               {filteredQuestions.length === 0 ? noResultsTitle : selectedTopic}
             </h2>
 
             {/* Questions Container */}
-            <div className="max-w-md rounded-lg border-b bg-black bg-opacity-[28%] text-xs last:border-b-0 md:max-w-2xl md:text-base lg:max-w-4xl xl:max-w-5xl">
+            <div className="max-w-md rounded-lg border-b bg-white text-xs text-black last:border-b-0 md:max-w-2xl md:text-base lg:max-w-4xl xl:max-w-5xl">
               {filteredQuestions &&
                 filteredQuestions.map((content) => (
                   <AccordionItem
                     {...content}
                     lang={lang}
                     key={content.question}
+                    className="!text-black"
                   />
                 ))}
             </div>
