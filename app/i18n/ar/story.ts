@@ -2,13 +2,6 @@ import {} from '@/public/images/story';
 import { type Story } from '../types/story';
 
 const story: Story = {
-  aboutUsSection: {
-    title: 'معلومات عنا',
-    texts: [
-      'نهدف من خلال نهجنا المبتكر إلى تقديم فحص أولي للأمراض التنفسية للمرضى والأطباء والحكومات، خاصة في البلدان ذات الدخل المنخفض.',
-      'نطمح أن نكون المنظمة غير الربحية الرائدة في مجال التعرف على الأمراض باستخدام التكنولوجيا، ونعمل على تحويل الرعاية الصحية العالمية وإلهام الآخرين لدعم هذه المهمة والاستثمار فيها معنا.',
-    ],
-  },
   storySection: {
     title: 'كيف بدأت الفكرة ',
     texts: [
@@ -43,11 +36,52 @@ const story: Story = {
   },
   MissionSection: {
     title: 'مهمتنا',
-    statement:
-      'في فيروفي، مهمتنا هي إنقاذ الأرواح من خلال جعل الوقاية من الأمراض والكشف عنها مجانية، وخاصة، ومتاحة للجميع في كل مكان. نحن ملتزمون بما يلي:',
     texts: [
-      'توفير حلول سريعة للفحص المسبق لأمراض الجهاز التنفسي، مدعومة بالذكاء الاصطناعي، للمرضى والأطباء والحكومات، وخاصة في المجتمعات المحرومة.',
-      'تسخير قوة التكنولوجيا والتعاون العالمي لتحويل الرعاية الصحية إلى نظام أكثر فعالية من حيث التكلفة وشامل للجميع.',
+      [
+        {
+          type: 'text',
+          text: 'Some people may be wondering, "why are we here?" and "why have so many people supported Virufy?"',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: "Virufy's mission and goal is to transform global health.",
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Here is a listing of disclosed ',
+        },
+        {
+          type: 'link',
+          url: '/advisors',
+          text: 'advisors',
+        },
+        {
+          type: 'text',
+          text: ' and we have had 1,300+ volunteers to date.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: "Thank you for being part of the mission and let's make it happen.",
+        },
+      ],
     ],
   },
   privacySection: {

@@ -1,5 +1,4 @@
 export interface Story {
-  aboutUsSection: AboutUsSection;
   storySection: StorySection;
   MissionSection: StorySection;
   privacySection: PrivacySection;
@@ -23,5 +22,4 @@ export interface Section {
   texts: string[];
 }
 
-type AboutUsSection = Section;
 type PrivacySection = Section;

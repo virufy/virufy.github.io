@@ -1,13 +1,6 @@
 import { type Story } from '../types/story';
 
 const story: Story = {
-  aboutUsSection: {
-    title: 'About Us',
-    texts: [
-      'Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
-      'We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
-    ],
-  },
   storySection: {
     title: 'How It Started',
     texts: [
@@ -46,19 +39,19 @@ const story: Story = {
       [
         {
           type: 'text',
-          text: 'Some people may be wondering, "why are we here?" and "why have so many people supported Virufy?" Virufy\'s mission and goal is to transform global health.',
-        }
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Virufy\'s mission and goal is to transform global health.',
+          text: 'Some people may be wondering, "why are we here?" and "why have so many people supported Virufy?"',
         },
       ],
       [
         {
           type: 'text',
-          text: 'We aim to give everyone in the world access to a smartphone app to detect respiratory diseases like COVID, flu, RSV, asthma, lung cancer, in seconds.',
+          text: "Virufy's mission and goal is to transform global health.",
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds.',
         },
       ],
       [
@@ -85,13 +78,7 @@ const story: Story = {
       [
         {
           type: 'text',
-          text: 'We aim to have UAE as our first country to release the app because of our supporters and the process is much faster and straightforward here than other nations.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Thank you for being part of the mission and let\'s make it happen.',
+          text: "Thank you for being part of the mission and let's make it happen.",
         },
       ],
     ],
