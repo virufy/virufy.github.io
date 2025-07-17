@@ -47,6 +47,7 @@ const nextConfig = {
         source: '/join',
         destination: '/join-us',
       },
+    
       {
         source: '/team',
         destination: '/advisors',

@@ -14,6 +14,7 @@ export const navbar: NavbarType = {
   },
   aboutUs: {
     section: 'About Us',
+    ourFounder: 'Our Founder',
     advisors: 'Advisors',
     ourSupporters: 'Our Supporters',
     blog: 'Blog',
