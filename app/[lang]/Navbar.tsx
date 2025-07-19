@@ -63,6 +63,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {
         label: 'About Us',
         route: [
+          `/${lang}/founder`,
           `/${lang}/advisors`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
@@ -459,8 +460,16 @@ export default function Navbar({ lang }: { lang: Locale }) {
                             : 'ml-[-60px] hidden'
                         } hover:flex peer-hover:flex`}
                       >
+                        
                         <Link
                           className="pb-3 pt-6 text-black hover:font-bold"
+                          href={`/${lang}/advisors?show=founder`}
+                        >
+                          {aboutUs?.ourFounder}
+                        </Link>
+
+                        <Link
+                          className="py-3 text-black hover:font-bold"
                           href={`/${lang}/advisors`}
                         >
                           {aboutUs?.advisors}

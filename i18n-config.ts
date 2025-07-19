@@ -1,3 +1,5 @@
+import type { NavbarType } from './app/i18n/types/navbar';
+
 export const i18n = {
   defaultLocale: 'en',
   locales: ['en', 'ja', 'ar', 'es'],
@@ -5,3 +7,39 @@ export const i18n = {
 
 // construct a union type of all elements in 'locales'
 export type Locale = (typeof i18n)['locales'][number];
+export const navbar: NavbarType = {
+  home: 'Home',
+  ourTechnology: {
+    section: 'Technology',
+  },
+  coughCheckApp: {
+    section: 'CoughCheck App',
+    covid19: 'Covid-19',
+    flu: 'Flu',
+    copd: 'COPD',
+    rsv: 'RSV',
+  },
+  aboutUs: {
+    section: 'About Us',
+    ourFounder: 'Our Founder',
+    advisors: 'Advisors',
+    ourSupporters: 'Our Supporters',
+    blog: 'Blog',
+    oneYoungWorld: 'One Young World',
+  },
+  media: {
+    section: 'Media',
+    pressReleases: 'News',
+    ourResearch: 'Publications',
+  },
+  faq: 'FAQ',
+  donate: {
+    buttonText: 'Donate',
+    optionsTitle: 'Donate Options',
+  },
+  joinUs: {
+    buttonText: 'Join Us',
+  },
+  searchPlaceholder: 'Search...',
+  noResultsPlaceholder: 'No Results Found',
+};
