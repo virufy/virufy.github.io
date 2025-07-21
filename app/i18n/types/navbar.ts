@@ -29,6 +29,7 @@ export interface AboutUs {
   ourSupporters: string;
   blog: string;
   oneYoungWorld: string;
+  ourFounder: string;
 }
 
 export interface Media {
@@ -44,4 +45,4 @@ interface DonateSection {
 
 export interface JoinUsSection {
   buttonText: string;
-}  
+}
