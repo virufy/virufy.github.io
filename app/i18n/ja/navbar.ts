@@ -14,7 +14,6 @@ export const navbar: NavbarType = {
   },
   aboutUs: {
     section: '私たちについて',
-    ourFounder: '私たちの創設者',
     advisors: 'アドバイザー',
     ourSupporters: 'サポーター',
     blog: 'ブログ',

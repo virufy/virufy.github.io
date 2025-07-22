@@ -14,7 +14,6 @@ export const navbar: NavbarType = {
   },
   aboutUs: {
     section: 'معلومات عنا',
-    ourFounder: 'مؤسسنا',
     advisors: 'المستشارين',
     ourSupporters: 'داعمونا',
     blog: 'المدونة',
