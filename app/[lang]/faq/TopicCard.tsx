@@ -18,8 +18,8 @@ const TopicCard = ({
 }: Props) => {
   const bgStyle =
     title === selectedTopic
-      ? 'border border-green-400 bg-blue-950'
-      : 'bg-gradient-to-b from-[#3578de] to-[#1c5cbd] border border-transparent hover:border-green-400 hover:border';
+      ? 'border-4 border-green-400 bg-white'
+      : 'bg-gradient-to-b bg-white border-4 border-transparent hover:border-green-400 hover:border-4';
 
   const handleTopicClick = (): void => {
     // deselect selected topic by resetting to default topic
@@ -36,12 +36,12 @@ const TopicCard = ({
       className={`flex cursor-pointer flex-col justify-between space-y-2 rounded-xl px-6 py-4 text-center shadow-lg sm:px-9 ${bgStyle}`}
     >
       <ExportedImage
-        className="mx-auto"
+        className="mx-auto filter invert"
         src={img}
         alt={altText}
         basePath={basePath}
       />
-      <h3>{title}</h3>
+      <h3 className={'text-black'}>{title}</h3>
     </div>
   );
 };
