@@ -8,7 +8,7 @@ export interface HomeType {
 interface WelcomeSection {
   text: string;
   text2: string;
-  subText: TypeText[];
+  subText: TypeText[][];
   buttonText: string;
   disclaimers: Array<string>;
   mainText2: string;
