@@ -40,46 +40,46 @@ const story: Story = {
       [
         {
           type: 'text',
-          text: 'Some people may be wondering, "why are we here?" and "why have so many people supported Virufy?"',
+          text: 'قد يتساءل البعض: "لماذا نحن هنا؟" و"لماذا حظيت Virufy بدعم هذا العدد الكبير من الناس؟"',
         },
       ],
       [
         {
           type: 'text',
-          text: "Virufy's mission and goal is to transform global health.",
+          text: 'مهمة Virufy وهدفها هو إحداث تحول في الصحة العالمية.',
         },
       ],
       [
         {
           type: 'text',
-          text: 'We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds.',
+          text: 'نهدف إلى تمكين الجميع حول العالم من الوصول إلى تطبيق ويب قادر على كشف أمراض الجهاز التنفسي مثل كوفيد، الإنفلونزا، فيروس RSV، مرض الانسداد الرئوي المزمن (COPD)، الربو، وسرطان الرئة — في غضون ثوانٍ.',
         },
       ],
       [
         {
           type: 'text',
-          text: 'We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones.',
+          text: 'نرغب في تمكين مليار شخص في الدول النامية من حماية صحتهم وصحة أحبائهم.',
         },
       ],
       [
         {
           type: 'text',
-          text: 'Here is a listing of disclosed ',
+          text: 'فيما يلي قائمة',
         },
         {
           type: 'link',
           url: '/advisors',
-          text: 'advisors',
+          text: 'المستشارين',
         },
         {
           type: 'text',
-          text: ' and we have had 1,300+ volunteers to date.',
+          text: 'المُعلنين، وقد بلغ عدد المتطوعين لدينا حتى الآن أكثر من 1300 متطوع.',
         },
       ],
       [
         {
           type: 'text',
-          text: "Thank you for being part of the mission and let's make it happen.",
+          text: 'شكرًا لكونك جزءًا من هذه المهمة. دعونا نحققها معًا.',
         },
       ],
     ],

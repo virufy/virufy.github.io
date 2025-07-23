@@ -35,7 +35,7 @@ const story: Story = {
     ],
   },
   MissionSection: {
-    title: 'Nuestra misión',
+    title: 'Nuestra Misión',
     texts: [
       [
         {
@@ -58,7 +58,7 @@ const story: Story = {
       [
         {
           type: 'text',
-          text: 'Nuestro objetivo es brindar a todas las personas del mundo acceso a una aplicación web para detectar enfermedades respiratorias como la COVID-19, la gripe, el VSR, la EPOC, el asma y el cáncer de pulmón en segundos.',
+          text: 'Queremos que mil millones de personas en países en desarrollo tengan la capacidad de proteger su salud y la de sus seres queridos.',
         },
       ],
       [
