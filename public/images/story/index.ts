@@ -9,4 +9,8 @@ export { default as TeamIcon } from '../../icons/icon-team.webp';
 // Background Images
 export { default as BgBody } from './bg-body.webp';
 export { default as BgHeader } from './bg-header.webp';
+<<<<<<< HEAD
 export { default as About_us_bg } from './bg-body.webp';
+=======
+export { default as About_us_bg } from './About_us_background.png';
+>>>>>>> origin/main

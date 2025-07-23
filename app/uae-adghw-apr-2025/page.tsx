@@ -1,10 +1,6 @@
 'use client';
 import { i18n } from '@/i18n-config';
-<<<<<<< HEAD
-import RedirectWithSpinner from '../../[lang]/components/RedirectWithSpinner';
-=======
-import RedirectWithSpinner from '@/app/[lang]/components/RedirectWithSpinner';
->>>>>>> origin/main
+import RedirectWithSpinner from '../[lang]/components/RedirectWithSpinner';
 
 const NewsRedirect = () => {
   return (

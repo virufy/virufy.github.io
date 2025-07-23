@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client';
 
 import { useSearchParams } from 'next/navigation';  // <-- you must import this
@@ -9,6 +10,16 @@ import { AdvisorsNewBackground } from '@/public/images/advisors';
 import { basePath } from '@/next.config.mjs';
 import { usei18n } from '../../i18n';
 import { type Locale } from '@/i18n-config.ts';
+=======
+import { type Locale } from '@/i18n-config.ts';
+import { basePath } from '@/next.config.mjs';
+import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
+import { usei18n } from '../../i18n';
+import Title from '../components/Title';
+import Section4 from './Section4';
+import { AdvisorsNewBackground } from '@/public/images/advisors';
+>>>>>>> origin/main
 
 const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const searchParams = useSearchParams();
@@ -20,6 +31,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
   } = usei18n(lang);
 
+<<<<<<< HEAD
   if (isFounderPage) {
     return (
       <div className="relative w-full overflow-hidden pt-[80px]">
@@ -58,10 +70,33 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             />
           </div>
         </div>
+=======
+  return (
+    <div className="relative w-full overflow-hidden pt-[80px]">
+      {/* Background Image */}
+      <ExportedImage
+        className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
+        src={AdvisorsNewBackground}
+        alt="Advisors page background"
+        width={1512}
+        height={9070}
+        priority
+        basePath={basePath}
+      />
+
+      {/* Title text */}
+      <div className="relative flex justify-center px-4 pb-10 pt-48">
+        <Title
+          Text={titleImage}
+          H="h4"
+          TitleClassProps="text-black font-bold text-center text-2xl md:text-4xl max-w-[900px]"
+        />
+>>>>>>> origin/main
       </div>
     );
   }
 
+<<<<<<< HEAD
   return (
     <div className="relative w-full overflow-hidden pt-[80px]">
       <ExportedImage
@@ -88,6 +123,16 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <div className="flex w-full max-w-[1440px] flex-col items-center justify-center">
           {/* Uncomment below if you want founder section also on default */}
           {/* <Section4
+=======
+      {/* Spacer between title and Section4 */}
+      <div className="h-15 md:h-100" />
+
+      {/* Founder + Advisors section */}
+      <div className="relative z-10 flex flex-col items-center justify-center px-4">
+        <div className="flex w-full max-w-[1440px] flex-col items-center justify-center">
+          {/* Founder Section */}
+          <Section4
+>>>>>>> origin/main
             TitleSize1="h1"
             TitleSize2="h3"
             TitleLabel1={sectionMeetOurFounder.titleMeetOurFounder}
@@ -98,13 +143,23 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             ContainerTitleProps={{ style: { paddingLeft: '20px' } }}
             ContainerTextProps={{ style: { paddingLeft: '20px' } }}
             alt="Amil Khanzada's headshot Image"
+<<<<<<< HEAD
           />*/}
+=======
+          />
+
+          {/* Advisors Title */}
+>>>>>>> origin/main
           <Title
             H="h1"
             Text={sectionAdvisors.title}
             TitleClassProps="text-black font-black text-center my-10"
           />
 
+<<<<<<< HEAD
+=======
+          {/* Advisors Cards */}
+>>>>>>> origin/main
           <div className="grid grid-cols-2 gap-4 pb-16 text-black sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
             {sectionAdvisors.advisors
               .sort((a, b) => a.index - b.index)
