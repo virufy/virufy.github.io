@@ -460,21 +460,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
                             : 'ml-[-60px] hidden'
                         } hover:flex peer-hover:flex`}
                       >
-<<<<<<< HEAD
-                        
                         <Link
                           className="pb-3 pt-6 text-black hover:font-bold"
-                          href={`/${lang}/advisors?show=founder`}
-                        >
-                          {aboutUs?.ourFounder}
-                        </Link>
-
-                        <Link
-                          className="py-3 text-black hover:font-bold"
-=======
-                        <Link
-                          className="pb-3 pt-6 text-black hover:font-bold"
->>>>>>> origin/main
                           href={`/${lang}/advisors`}
                         >
                           {aboutUs?.advisors}
