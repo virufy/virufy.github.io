@@ -78,7 +78,6 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
                       priority
                       basePath={basePath}
                     />
-                    <button className="hidden md:block">X</button>
                   </div>
 
                   <div className="flex w-full rounded-t text-center md:text-left">
