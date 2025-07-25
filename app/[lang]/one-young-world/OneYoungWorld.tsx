@@ -89,10 +89,13 @@ const OneYoungWorld = ({
                 {text}
               </p>
             </div>
+
             <TestimonialSlider testimonials={testimonials} />
+
+            {/* Updated Button Style */}
             <Link
-              className="w-auto rounded-full bg-white px-6 py-4 text-sm font-medium text-black md:px-12 md:py-4 md:text-base"
               href={`/${lang}/join-us`}
+              className="inline-block rounded-full border-2 border-white bg-gradient-to-br from-[#1c3f94] to-[#2a5bd7] px-6 py-3 text-sm font-medium text-white shadow-md transition-transform duration-300 hover:scale-105 md:px-12 md:py-4 md:text-base"
             >
               {buttonText}
             </Link>
