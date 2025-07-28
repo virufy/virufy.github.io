@@ -28,7 +28,6 @@ import {
   ThomasMahoney,
   TsutomuIto,
   VictorWang,
-  YukitoshiNakatani,
   ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
@@ -196,17 +195,6 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
         index: 19,
-      },
-      {
-        img: YukitoshiNakatani,
-        name: '中谷幸俊',
-        role: '日本エグゼクティブ・アドバイザー',
-        texts: [
-          'ITバリューコンサルティング社　CEO',
-          'アクセンチュア日本法人　元ディレクター',
-        ],
-        link: 'https://www.facebook.com/nakatani.yukitoshi',
-        index: 20,
       },
       {
         img: VictorWang,

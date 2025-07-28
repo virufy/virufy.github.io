@@ -28,7 +28,6 @@ import {
   ThomasMahoney,
   TsutomuIto,
   VictorWang,
-  YukitoshiNakatani,
   ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
@@ -206,14 +205,6 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
         index: 19,
-      },
-      {
-        img: YukitoshiNakatani,
-        name: 'Yukitoshi Nakatani',
-        role: 'Asesor Ejecutivo de Japón',
-        texts: ['CEO, IT Value Consulting', 'Ex Director, Accenture Japón'],
-        link: 'https://www.facebook.com/nakatani.yukitoshi',
-        index: 20,
       },
       {
         img: VictorWang,
