@@ -5,6 +5,8 @@ const home: HomeType = {
     text: 'Welcome to Virufy',
     text2: 'Your Digital Health Companion',
     subText: [
+      [
+
       {
         type: 'text',
         text: 'Introducing ',
@@ -17,6 +19,23 @@ const home: HomeType = {
         type: 'text',
         text: ', the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing and cough patterns and provide insights into potential infection symptoms.',
       },
+    ],
+    [
+    
+      {
+        type: 'text',
+        text: ' Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
+      },
+    ],
+    [
+  
+      {
+        type: 'text',
+        text: ' We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
+      },
+    ],
+    
+
     ],
     buttonText: 'Share your cough',
     disclaimers: [
