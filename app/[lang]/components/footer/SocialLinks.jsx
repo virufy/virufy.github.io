@@ -87,6 +87,20 @@ export default function SocialLinks({ lang }) {
           className="h-[40px] w-[30px]"
           basePath={basePath}
         />
+        
+      </Link>
+            <Link
+        target="_blank"
+        href="https://x.com/VirufyOrg"
+        className={lang != 'ja' ? 'hidden lg:flex' : 'hidden'}
+      >
+        <ExportedImage
+          src={XIconDarkGradient}
+          alt="X icon"
+          className="h-[40px] w-[30px]"
+          basePath={basePath}
+        />
+        
       </Link>
       <Link
         target="_blank"

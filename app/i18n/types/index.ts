@@ -1,4 +1,5 @@
 import { type Ai } from './ai';
+import { type CookieModal } from './cookiemodal';
 import { type AmilsStory } from './amilsStory';
 import { type FAQ } from './faq';
 import { type Footer } from './footer';
@@ -20,6 +21,7 @@ import { type TeamLeadsType } from './teamLeads';
 export interface I18nData {
   ai: Ai;
   amilsStory: AmilsStory;
+  cookieModal: CookieModal;
   faq: FAQ;
   footer: Footer;
   fukuoka: Fukuoka;

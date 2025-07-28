@@ -16,17 +16,17 @@ const TestimonialCard = ({
 }: Props) => {
   return (
     <div
-      // add inline css because Tailwind cannot construct class names dynamically
       style={{ transform: `translateX(${-100 * imageIndex}%)` }}
-      className={`h-full w-full shrink-0 grow-0 transition duration-500 ease-in-out md:w-11/12`}
+      className="h-full w-full shrink-0 grow-0 transition duration-500 ease-in-out md:w-11/12"
     >
-      <div className="flex h-[575px] w-48 flex-col items-center justify-between rounded-2xl text-[#3579de] bg-[#f5f5f5] px-4 py-8 text-center font-medium sm:h-[475px] sm:w-64 sm:max-w-xs md:h-[448px] md:w-auto md:max-w-sm md:px-6">
-        <blockquote className="text-sm leading-loose md:text-base md:leading-relaxed">
+
+      <div className="flex h-[420px] w-[320px] flex-col items-center justify-between rounded-2xl bg-white px-8 py-6 text-center font-medium text-black shadow-lg">
+        <blockquote className="text-sm leading-relaxed md:text-base md:leading-relaxed">
+
           {testimonial}
         </blockquote>
 
-        {/* Author Container */}
-        <div className="space-y-4">
+        <div className="space-y-3">
           <ExportedImage
             className="mx-auto rounded-full"
             src={image}
@@ -35,7 +35,7 @@ const TestimonialCard = ({
             height="64"
             basePath={basePath}
           />
-          <div className="text-base">{name}</div>
+          <div className="text-base font-semibold">{name}</div>
           <div className="text-sm">{origin}</div>
         </div>
       </div>
