@@ -6,9 +6,10 @@ import AccordionItemParagraph from './AccordionItemParagraph';
 
 interface AccordionItemProps extends QA {
   lang: Locale;
+  className?: string;
 }
 
-const AccordionItem = ({ question, answer, lang }: AccordionItemProps) => {
+const AccordionItem = ({ question, answer, lang, className='' }: AccordionItemProps) => {
   const [isActive, setIsActive] = useState(false);
   const borderTransitionStyle = isActive
     ? 'border-t border-gray-400'
@@ -20,7 +21,7 @@ const AccordionItem = ({ question, answer, lang }: AccordionItemProps) => {
   const heightStyle = isActive ? 'max-h-[2600px]' : 'max-h-0';
 
   return (
-    <div className="border-b border-gray-400 text-white last:border-b-0">
+    <div className={`border-b border-gray-400 text-white last:border-b-0 ${className}`}>
       {/* Question Container */}
       <div
         className="flex cursor-pointer items-center justify-between px-5 py-4"
@@ -36,7 +37,7 @@ const AccordionItem = ({ question, answer, lang }: AccordionItemProps) => {
         <div
           className={`overflow-hidden transition-all duration-500 ${heightStyle}`}
         >
-          <div className="px-5 py-4 font-normal leading-relaxed text-stone-300">
+          <div className={`px-5 py-4 font-normal leading-relaxed text-stone-300 ${className}`}>
             <div className="space-y-4">
               {answer.map(({ type, content }, i) => {
                 if (type === 'paragraph') {

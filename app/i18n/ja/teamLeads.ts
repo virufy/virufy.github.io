@@ -37,6 +37,12 @@ const teamLeads: TeamLeadsType = {
       altText: 'マダヴ・ダットの画像',
     },
     {
+      name: 'シュレヤ・スリラム、MD',
+      texts: ['2021 Virufyデリゲート、インド', 'Virufy臨床研究'],
+      image: Shreya,
+      altText: 'シュレヤ・スリラムの画像',
+    },
+    {
       name: 'マルコス・デザ',
       texts: ['OYW大使、アルゼンチン', 'Virufyデジタルコミュニケーション'],
       image: Marcos,
@@ -56,12 +62,6 @@ const teamLeads: TeamLeadsType = {
       ],
       image: Ayomide,
       altText: 'アヨミデ・オウォイェミの画像',
-    },
-    {
-      name: 'シュレヤ・スリラム、MD',
-      texts: ['2021 Virufyデリゲート、インド', 'Virufy臨床研究'],
-      image: Shreya,
-      altText: 'シュレヤ・スリラムの画像',
     },
     {
       name: 'ラウラ・ベラスケス',
@@ -116,10 +116,10 @@ const teamLeads: TeamLeadsType = {
       altText: 'セバスチャン・ペドラザの画像',
     },
     {
-      name: 'ケンマル・スエドミ',
-      texts: ['OYW大使、日本'],
-      image: Kenmaru,
-      altText: 'ケンマル・スエドミの画像',
+      name: 'アラナ・ドイル',
+      texts: ['OYW大使、米国'],
+      image: Allana,
+      altText: 'アラナ・ドイルの画像',
     },
     {
       name: 'カピル・ナライン、MD',
@@ -128,22 +128,22 @@ const teamLeads: TeamLeadsType = {
       altText: 'カピル・ナラインの画像',
     },
     {
+      name: 'カビヤ・マダヴェン',
+      texts: ['OYW大使'],
+      image: Kavya,
+      altText: 'カビヤ・マダヴェンの画像',
+    },
+    {
       name: 'レオナルド・ブルズ',
       texts: ['OYW大使、アイルランド'],
       image: Leonard,
       altText: 'レオナルド・ブルズの画像',
     },
     {
-      name: 'アラナ・ドイル',
-      texts: ['OYW大使、米国'],
-      image: Allana,
-      altText: 'アラナ・ドイルの画像',
-    },
-    {
-      name: 'カビヤ・マダヴェン',
-      texts: ['OYW大使'],
-      image: Kavya,
-      altText: 'カビヤ・マダヴェンの画像',
+      name: 'ケンマル・スエドミ',
+      texts: ['OYW大使、日本'],
+      image: Kenmaru,
+      altText: 'ケンマル・スエドミの画像',
     },
   ],
 };

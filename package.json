@@ -21,7 +21,9 @@
     "next-intl": "^4.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-player": "^2.16.0"
+    "react-ga4": "^2.1.0",
+    "react-player": "^2.16.0",
+    "sharp": "^0.34.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.53.0",
@@ -32,7 +34,11 @@
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+<<<<<<< HEAD
     "netlify-cli": "^22.4.0",
+=======
+    "netlify-cli": "^22.2.2",
+>>>>>>> d20a43acb53ec444f6fcb2b38806c9f26963f5c0
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
