@@ -3,6 +3,8 @@ import { type JobListing } from '../types/jobListing';
 const jobListing: JobListing = {
   titleImage:
     'Virufy es operado completamente por voluntarios y empresas asociadas pro bono.',
+  title: 'Nuestra Misión',
+  text: '¡Únete a Virufy y sé parte de un esfuerzo global innovador para combatir el COVID-19! Como un consorcio sin fines de lucro innovador, hemos reunido a expertos de más de 25 países para desarrollar una aplicación de vanguardia para teléfonos inteligentes que detecta el virus. Originalmente un proyecto del Laboratorio de Innovación de Respuesta al COVID-19 de la Universidad de Stanford, nuestra solución de diagnóstico impulsada por IA está estableciendo nuevos estándares para pruebas accesibles y gratuitas. Al ofrecer tu voluntariado en Virufy, obtendrás experiencia práctica con herramientas de IA de última generación, ampliarás tu red profesional y contribuirás significativamente a una causa vital. ¡Aprovecha esta oportunidad para estar a la vanguardia de la innovación y ayudar a moldear el futuro de la respuesta pandémica!',
   modal: {
     text: '¿Entiendes que todos estos son puestos no remunerados y de voluntariado?',
     yes: 'Sí',

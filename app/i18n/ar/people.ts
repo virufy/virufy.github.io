@@ -28,6 +28,7 @@ import {
   ThomasMahoney,
   TsutomuIto,
   VictorWang,
+  YukitoshiNakatani,
   ZafarShahid,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
@@ -199,6 +200,17 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
         index: 19,
+      },
+      {
+        img: YukitoshiNakatani,
+        name: 'يوكيتوشي ناكاتاني',
+        role: 'مستشار تنفيذي في اليابان',
+        texts: [
+          'الرئيس التنفيذي، IT Value Consulting',
+          'مدير سابق، أكسنتشر اليابان',
+        ],
+        link: 'https://www.facebook.com/nakatani.yukitoshi',
+        index: 20,
       },
       {
         img: VictorWang,

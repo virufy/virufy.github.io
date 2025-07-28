@@ -1,6 +1,8 @@
 export interface JobListing {
   jobList: Job[];
   titleImage: string;
+  title: string;
+  text: string;
   modal: JobModal;
   applyButtonText: string;
   jobDetailSectionTitles: JobDetailSectionTitles;

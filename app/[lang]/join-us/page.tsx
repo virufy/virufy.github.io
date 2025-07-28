@@ -4,11 +4,12 @@ import { HeroBackground } from '@/public/images/jobListing';
 import ExportedImage from 'next-image-export-optimizer';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
+import TitleText from '../components/TitleText';
 import JobList from './JobList';
 
 const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    jobListing: { titleImage, jobList, modal, applyButtonText },
+    jobListing: { titleImage, title, text, jobList, modal, applyButtonText },
   } = usei18n(lang);
 
   return (
@@ -34,6 +35,17 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       {/* intro text and listings */}
       <div className="bg-gradient-to-b from-[#142037] to-[#3F64A8]">
         <div className="mx-auto flex max-w-[1440px] flex-col">
+          <TitleText
+            TitleSize={'h5'}
+            TitleClassProps={'text-white text-center md:text-left'}
+            TitleLabel={title}
+            ContainerTitleProps={'md:mt-[40px] mb-5 md:ml-[10%]'}
+            TextSize={'normal'}
+            TextClassProps={'text-white text-left'}
+            TextLabel={text}
+            ContainerTextProps={'mt-[16px] mb-[40px] ml-[10%] w-[80%]'}
+          />
+
           <JobList
             lang={lang}
             jobList={jobList}

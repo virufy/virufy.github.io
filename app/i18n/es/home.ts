@@ -5,8 +5,6 @@ const home: HomeType = {
     text: 'Bienvenido a Virufy',
     text2: 'Tu Compañero de Salud Digital',
     subText: [
-      [
-      
       {
         type: 'text',
         text: 'Presentamos ',
@@ -19,20 +17,6 @@ const home: HomeType = {
         type: 'text',
         text: ', la aplicación de vanguardia que utiliza algoritmos avanzados de audio e IA generativa para analizar tus patrones de respiración y proporcionar información sobre posibles síntomas de infección.',
       },
-    ],
-    [
-      {
-        type:'text',
-        text: 'Nuestro enfoque innovador tiene como objetivo ofrecer una detección previa superior de enfermedades respiratorias para pacientes, médicos y gobiernos, especialmente en países de bajos ingresos.',
-      },
-
-    ],
-    [
-      {
-        type:'text',
-        text:'Aspiramos a ser la organización sin fines de lucro líder en la identificación de enfermedades mediante tecnología, transformando la atención médica global e inspirando a otros a apoyar e invertir en esta misión con nosotros.'
-      },
-    ],
     ],
     buttonText: 'Comparte tu tos',
     disclaimers: [

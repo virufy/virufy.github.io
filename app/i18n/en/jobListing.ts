@@ -3,6 +3,8 @@ import { type JobListing } from '../types/jobListing';
 const jobListing: JobListing = {
   titleImage:
     'Virufy is entirely run by volunteers and pro bono partner companies.',
+  title: 'Our Mission',
+  text: 'Join Virufy and be part of a groundbreaking global effort to combat COVID-19 and other upper respiratory diseases. As an innovative nonprofit consortium, we’ve brought together experts from 25 countries to develop a state-of-the-art smart phone and web App that detects viruses through cough patterns. Originally a Stanford University  COVID-19 Response Innovation Lab Project, our AI-driven diagnostic solution is setting new standards for accessible, free testing. By volunteering at Virufy means you’ll gain hands-on experience with cutting-edge AI tools, and contribute significantly to a vital cause. Be at the forefront of innovation and help shape the future of global health.',
   modal: {
     text: 'Do you understand these are all unpaid, volunteer positions?',
     yes: 'Yes',

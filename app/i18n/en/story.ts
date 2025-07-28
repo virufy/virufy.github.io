@@ -1,6 +1,13 @@
 import { type Story } from '../types/story';
 
 const story: Story = {
+  aboutUsSection: {
+    title: 'About Us',
+    texts: [
+      'Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
+      'We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
+    ],
+  },
   storySection: {
     title: 'How It Started',
     texts: [
@@ -35,52 +42,11 @@ const story: Story = {
   },
   MissionSection: {
     title: 'Our Mission',
+    statement:
+      'At Virufy, our mission is to save lives by making disease prevention and detection free, private, and accessible to everyone, everywhere. We are dedicated to:',
     texts: [
-      [
-        {
-          type: 'text',
-          text: 'Some people may be wondering, "why are we here?" and "why have so many people supported Virufy?"',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: "Virufy's mission and goal is to transform global health.",
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Here is a listing of disclosed ',
-        },
-        {
-          type: 'link',
-          url: '/advisors',
-          text: 'advisors',
-        },
-        {
-          type: 'text',
-          text: ' and we have had 1,300+ volunteers to date.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: "Thank you for being part of the mission and let's make it happen.",
-        },
-      ],
+      'Delivering rapid, AI-powered respiratory disease pre-screening solutions for patients, clinicians, and governments—especially in underserved communities.',
+      'Harnessing the power of technology and global collaboration to transform healthcare into a more affordable, efficient, and inclusive system for all.',
     ],
   },
   privacySection: {

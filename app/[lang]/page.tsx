@@ -49,22 +49,17 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 {/* Introducing Virufy section */}
                 <div className="mt-14 flex flex-col items-start space-y-2 sm:mt-24 md:mt-56 md:space-y-8 lg:mt-80 xl:mt-[40rem]">
                   <div className="w-full max-w-md md:max-w-3xl xl:max-w-5xl">
-                    {introSection.subText.map((paragraph, index) => (
-                      <p
-                        key={index}
-                        className="mb-6 text-center text-xs font-bold leading-[1.1rem] sm:text-sm md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10"
-                      >
-                        {paragraph.map((item, i) =>
-                          item.type === 'text' ? (
-                            <Fragment key={i}>{item.text}</Fragment>
-                          ) : (
-                            <span key={i} className="text-green-500">
-                              {item.text}
-                            </span>
-                          )
-                        )}
-                      </p>
-                    ))}
+                    <p className="text-center text-xs font-bold leading-[1.1rem] sm:text-sm md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10">
+                      {introSection.subText.map((text, i) =>
+                        text.type === 'text' ? (
+                          <Fragment key={i}>{text.text}</Fragment>
+                        ) : (
+                          <span key={i} className="text-green-500">
+                            {text.text}
+                          </span>
+                        )
+                      )}
+                    </p>
                   </div>
                 </div>
 

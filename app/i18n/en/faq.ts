@@ -52,12 +52,11 @@ const faq: FAQ = {
   topicsSection: {
     title: 'FAQ Topics',
     cards: [
-      // Removed in 6.2 Redesign
-      // {
-      //   title: 'Common Questions',
-      //   img: QuestionMarkIcon,
-      //   altText: '',
-      // },
+      {
+        title: 'Common Questions',
+        img: QuestionMarkIcon,
+        altText: '',
+      },
       {
         title: 'Virufy App',
         img: PhoneInHandIcon,

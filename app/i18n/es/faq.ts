@@ -52,12 +52,11 @@ const faq: FAQ = {
   topicsSection: {
     title: 'Temas de Preguntas Frecuentes',
     cards: [
-      // Removed in 6.2 Redesign
-      // {
-      //   title: 'Preguntas Comunes',
-      //   img: QuestionMarkIcon,
-      //   altText: '',
-      // },
+      {
+        title: 'Preguntas Comunes',
+        img: QuestionMarkIcon,
+        altText: '',
+      },
       {
         title: 'Aplicación Virufy',
         img: PhoneInHandIcon,

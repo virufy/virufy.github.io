@@ -17,7 +17,7 @@ export const generateMetadata = () => {
 
 const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    story: { storySection, MissionSection, privacySection },
+    story: { aboutUsSection, storySection, MissionSection, privacySection },
   } = usei18n(lang);
 
   return (
@@ -39,30 +39,16 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <div className="relative flex flex-col items-center justify-center sm:pt-[50px] lg:pt-[180px]">
             {/* Sizing & Spacing Container */}
             <div className="space-y-6 rounded-[64px] bg-white p-5 text-center font-medium text-black opacity-85 sm:w-[420px] sm:p-[40px] lg:w-full lg:max-w-2xl lg:px-10 lg:text-left">
-              {/* Our Misiion Text */}
-              <div className="pb-10">
-                <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
-                  {MissionSection.title}
+              <div className="">
+                <h2 className="flex items-center justify-center py-2 text-5xl font-normal">
+                  {aboutUsSection.title}
                 </h2>
-                {MissionSection.texts.map((el, i) => (
-                  // render fragment or link component in paragraph element
+                {aboutUsSection.texts.map((text, i) => (
                   <p
-                    className="justify-center py-5 text-center lg:text-xl"
+                    className="flex items-center justify-center py-5 text-center lg:text-xl"
                     key={i}
                   >
-                    {el.map((text, i) =>
-                      text.type === 'text' ? (
-                        <Fragment key={i}>{text.text}</Fragment>
-                      ) : (
-                        <Link
-                          className="text-green-500"
-                          key={i}
-                          href={`/${lang}${text.url}`}
-                        >
-                          {text.text}
-                        </Link>
-                      )
-                    )}
+                    {text}
                   </p>
                 ))}
               </div>
@@ -91,6 +77,20 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       )
                     )}
                   </p>
+                ))}
+              </div>
+              <div className="pb-10">
+                <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
+                  {MissionSection.title}
+                </h2>
+                <p className="mb-5 lg:text-xl">{MissionSection.statement}</p>
+                {MissionSection.texts.map((text, i) => (
+                  <li
+                    className="mx-10 mb-5 leading-10 lg:text-lg lg:leading-normal"
+                    key={i}
+                  >
+                    {text}
+                  </li>
                 ))}
               </div>
               <div className="pb-5">

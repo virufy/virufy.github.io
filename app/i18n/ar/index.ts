@@ -1,7 +1,6 @@
 import { type I18nData } from '../types';
 import ai from './ai';
 import amilsStory from './amilsStory';
-import cookieModal from './cookiemodal';
 import faq from './faq';
 import footer from './footer';
 import fukuoka from '../ja/fukuoka';
@@ -22,7 +21,6 @@ import teamLeads from './teamLeads';
 const arMetadata: I18nData = {
   ai,
   amilsStory,
-  cookieModal,
   faq,
   footer,
   fukuoka,

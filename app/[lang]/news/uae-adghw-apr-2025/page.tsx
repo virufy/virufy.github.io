@@ -14,19 +14,11 @@ const AbuDhabiJune2025 = () => {
               Virufy Showcases AI Respiratory Screening Success at Abu Dhabi
               Global Health Week
             </h3>
-            <div className="">
-              <a
-                className="underline"
-                href="https://www.linkedin.com/posts/virufy_june-25th-2025-abu-dhabi-united-arab-emirates-activity-7343469195881299969-K7W1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9RuBsBynpmHyj3jtUVOL8AdGX6paZKBw8"
-              >
-                Link to article (Linkedin)
-              </a>
-            </div>
             <a
               className="underline"
-              href="https://x.com/VirufyOrg/status/1948456157896737113"
+              href="https://www.linkedin.com/posts/virufy_june-25th-2025-abu-dhabi-united-arab-emirates-activity-7343469195881299969-K7W1?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9RuBsBynpmHyj3jtUVOL8AdGX6paZKBw8"
             >
-              Link to post (X/Twitter)
+              Link to article
             </a>
           </div>
           <div>

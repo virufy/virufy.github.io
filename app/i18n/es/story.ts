@@ -2,6 +2,13 @@ import {} from '@/public/images/story';
 import { type Story } from '../types/story';
 
 const story: Story = {
+  aboutUsSection: {
+    title: 'Sobre Nosotros',
+    texts: [
+      'Nuestro enfoque innovador tiene como objetivo ofrecer una detección previa de COVID superior para pacientes, médicos y gobiernos, especialmente en países de bajos ingresos.',
+      'Aspiramos a ser la organización sin fines de lucro líder en la identificación de enfermedades habilitada por la tecnología, transformando la atención médica global e inspirando a otros a apoyar e invertir en esta misión con nosotros.',
+    ],
+  },
   storySection: {
     title: 'Cómo empezó',
     texts: [
@@ -36,52 +43,11 @@ const story: Story = {
   },
   MissionSection: {
     title: 'Nuestra Misión',
+    statement:
+      'En Virufy, nuestra misión es salvar vidas haciendo que la prevención y la detección de enfermedades sean gratuitas, privadas y accesibles para todos, en todas partes. Nos dedicamos a:',
     texts: [
-      [
-        {
-          type: 'text',
-          text: 'Algunos se preguntarán: "¿Por qué estamos aquí?" y "¿Por qué tanta gente ha apoyado a Virufy?".',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'La misión y el objetivo de Virufy es transformar la salud mundial.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Nuestro objetivo es brindar a todas las personas del mundo acceso a una aplicación web para detectar enfermedades respiratorias como la COVID-19, la gripe, el VSR, la EPOC, el asma y el cáncer de pulmón en segundos.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Queremos que mil millones de personas en países en desarrollo tengan la capacidad de proteger su salud y la de sus seres queridos.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Aquí encontrará una lista de ',
-        },
-        {
-          type: 'link',
-          url: '/advisors',
-          text: 'asesores',
-        },
-        {
-          type: 'text',
-          text: ' y, hasta la fecha, hemos contado con más de 1300 voluntarios.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Gracias por formar parte de esta misión. ¡Hagámoslo realidad!',
-        },
-      ],
+      'Ofrecemos soluciones rápidas de detección previa de enfermedades respiratorias basadas en inteligencia artificial para pacientes, médicos y gobiernos, especialmente en comunidades marginadas.',
+      'Aprovechar el poder de la tecnología y la colaboración global para transformar la atención médica en un sistema más asequible, eficiente e inclusivo para todos.',
     ],
   },
   privacySection: {

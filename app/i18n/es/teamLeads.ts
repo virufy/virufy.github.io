@@ -37,15 +37,6 @@ const teamLeads: TeamLeadsType = {
       altText: 'imagen de Madhav Datt',
     },
     {
-      name: 'Shreya Sreeram, MD',
-      texts: [
-        'Delegada de Virufy 2021, India',
-        'Investigación Clínica de Virufy',
-      ],
-      image: Shreya,
-      altText: 'imagen de Shreya Sreeram',
-    },
-    {
       name: 'Marcos Deza',
       texts: ['Embajador OYW, Argentina', 'Comunicación Digital de Virufy'],
       image: Marcos,
@@ -65,6 +56,15 @@ const teamLeads: TeamLeadsType = {
       ],
       image: Ayomide,
       altText: 'imagen de Ayomide Owoyemi',
+    },
+    {
+      name: 'Shreya Sreeram, MD',
+      texts: [
+        'Delegada de Virufy 2021, India',
+        'Investigación Clínica de Virufy',
+      ],
+      image: Shreya,
+      altText: 'imagen de Shreya Sreeram',
     },
     {
       name: 'Laura Velasquez',
@@ -119,10 +119,10 @@ const teamLeads: TeamLeadsType = {
       altText: 'imagen de Sebastian Pedraza',
     },
     {
-      name: 'Allana Doyle',
-      texts: ['Embajadora OYW, EE.UU.'],
-      image: Allana,
-      altText: 'imagen de Allana Doyle',
+      name: 'Kenmaru Suedomi',
+      texts: ['Embajador OYW, Japón'],
+      image: Kenmaru,
+      altText: 'imagen de Kenmaru Suedomi',
     },
     {
       name: 'Kapil Narain, MD',
@@ -131,22 +131,22 @@ const teamLeads: TeamLeadsType = {
       altText: 'imagen de Kapil Narain',
     },
     {
-      name: 'Kavya Madhaven',
-      texts: ['Embajadora OYW'],
-      image: Kavya,
-      altText: 'imagen de Kavya Madhaven',
-    },
-    {
       name: 'Leonard Burhz',
       texts: ['Embajador OYW, Irlanda'],
       image: Leonard,
       altText: 'imagen de Leonard Burhz',
     },
     {
-      name: 'Kenmaru Suedomi',
-      texts: ['Embajador OYW, Japón'],
-      image: Kenmaru,
-      altText: 'imagen de Kenmaru Suedomi',
+      name: 'Allana Doyle',
+      texts: ['Embajadora OYW, EE.UU.'],
+      image: Allana,
+      altText: 'imagen de Allana Doyle',
+    },
+    {
+      name: 'Kavya Madhaven',
+      texts: ['Embajadora OYW'],
+      image: Kavya,
+      altText: 'imagen de Kavya Madhaven',
     },
   ],
 };
