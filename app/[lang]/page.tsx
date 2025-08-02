@@ -1,4 +1,4 @@
-import { type Locale } from '@/i18n-config';
+import { i18n, type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { BgHeader, VirufyMobilePhone } from '@/public/images/home';
 import ExportedImage from 'next-image-export-optimizer';
@@ -6,6 +6,9 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import { usei18n } from '../i18n';
 import Title from './components/Title';
+export async function generateStaticParams() {
+  return i18n.locales.map((lang) => ({ lang }));
+}
 
 const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
