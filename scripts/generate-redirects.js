@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-
+//Note: to get these to work you need to do npm run build, then npm run preview
 
 
 const redirects = [

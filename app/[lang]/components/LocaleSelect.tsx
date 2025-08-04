@@ -30,6 +30,7 @@ const LocaleSelect = () => {
 
   let locale: Locale = i18n.defaultLocale;
   const localeMatch = currPath.match(localeRegex);
+  console.log(currPath);
   if (localeMatch) {
     locale = localeMatch[1] as Locale;
   }
