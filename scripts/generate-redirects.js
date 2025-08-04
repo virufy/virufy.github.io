@@ -21,6 +21,8 @@ const redirects = [
   {from: 'virumap-msg-jp', to: 'https://docs.google.com/document/d/1HLQ7ZNMR1wO3BdaWnfQw3_yyhBfNBJGYz8zWN25gA8o/edit?usp=sharing'},
   {from: 'virumap-slides', to: 'https://docs.google.com/presentation/d/1Sb3WXxKrJPbdKkKH9IXV4iWCd3b5iSz5f_92UuJbYZc/edit?usp=sharing'},
   {from: 'virumap-slides-jp', to: 'https://docs.google.com/presentation/d/1GqNirFzOrWsLoLaH5hSe8YVXTMMrWZ1gW5d56jICs30/edit?usp=sharing'},
+  { from: 'join-jp', to: 'https://forms.gle/nxGbL1pd1R8Q27qe7' },
+  { from: 'apply', to: 'https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform' },
   // add more here
 ];
 
