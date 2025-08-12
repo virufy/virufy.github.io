@@ -17,7 +17,14 @@ const RootPage = () => {
         supportedLanguages.find((lang) => userLang.startsWith(lang)) || 'en';
 
       localStorage.setItem('lang-redirected', 'true');
+      localStorage.setItem('lang-redirect-code', langCode);
       router.replace(`/${langCode}`);
+    }
+    if (hasRedirected) {
+      const langCode = localStorage.getItem('lang-redirect-code');
+      router.replace(`/${langCode}`);
+    } else {
+      router.replace(`/${'en'}`);
     }
   }, [router]);
 
