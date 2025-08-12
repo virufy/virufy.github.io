@@ -2,6 +2,10 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 const supportedLanguages = ['ja', 'en', 'es', 'ar'];
+('use client');
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+const supportedLanguages = ['ja', 'en', 'es', 'ar'];
 
 const RootPage = () => {
   const router = useRouter();
