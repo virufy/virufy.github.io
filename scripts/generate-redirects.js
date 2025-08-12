@@ -5,6 +5,7 @@ import path from 'path';
 
 
 const redirects = [
+  { from: 'null', to: 'en' },//just in case the language check doesnt work correctly
   { from: 'team', to: 'en/advisors' },
   { from: 'opportunities', to: 'en/join-us' },
   { from: 'fukuoka', to: 'en/fukuoka' },
