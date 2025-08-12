@@ -29,6 +29,12 @@ const RootPage = () => {
     } else {
       router.replace(`/${'en'}`); //brute force
     }
+    if (hasRedirected) {
+      const langCode = localStorage.getItem('lang-redirect-code');
+      router.replace(`/${langCode}`);
+    } else {
+      router.replace(`/${'en'}`);
+    }
   }, [router]);
 
   return null;
