@@ -14,9 +14,14 @@ type NestedObject = {
 };
 
 // Helper to set a nested value by dot/number path
-function setNested(obj: NestedObject, key: string, value: string): void {
+function setNested(
+  obj: NestedObject | (string | NestedObject)[],
+  key: string,
+  value: string
+): void {
   const parts = key.split('.');
   let current: NestedObject | (string | NestedObject)[] = obj;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let parent: any = null;
   let parentKey: string | number | null = null;
 
@@ -27,7 +32,6 @@ function setNested(obj: NestedObject, key: string, value: string): void {
     if (isLast) {
       if (isArrayIndex) {
         if (!Array.isArray(current)) {
-          // Replace the object in parent with an array
           const arr: (string | NestedObject)[] = [];
           if (parent && parentKey !== null) parent[parentKey] = arr;
           current = arr;
@@ -39,7 +43,6 @@ function setNested(obj: NestedObject, key: string, value: string): void {
       return;
     }
 
-    // Prepare next level
     if (isArrayIndex) {
       const idx = Number(part);
       if (!Array.isArray(current)) {
@@ -61,7 +64,7 @@ function setNested(obj: NestedObject, key: string, value: string): void {
   });
 }
 
-// Convert nested object to TypeScript literal string
+// Convert nested object/array to TypeScript literal
 function toTsLiteral(
   obj: string | NestedObject | (string | NestedObject)[],
   indent = 2
@@ -71,13 +74,31 @@ function toTsLiteral(
   if (typeof obj === 'string') return JSON.stringify(obj);
 
   if (Array.isArray(obj)) {
+    if (obj.length === 0) return '[]';
     const items = obj.map((item) => toTsLiteral(item, indent + 2));
     return `[\n${space}${items.join(`,\n${space}`)}\n${' '.repeat(indent - 2)}]`;
   }
 
-  const entries = Object.entries(obj).map(([k, v]) => {
-    return `${k}: ${toTsLiteral(v, indent + 2)}`;
+  const keys = Object.keys(obj).filter((k) => {
+    const v = (obj as NestedObject)[k];
+    return (
+      v !== '' &&
+      v !== undefined &&
+      !(Array.isArray(v) && v.length === 0) &&
+      !(
+        typeof v === 'object' &&
+        !Array.isArray(v) &&
+        Object.keys(v).length === 0
+      )
+    );
   });
+
+  if (keys.length === 0) return '{}';
+
+  const entries = keys.map((k) => {
+    return `${k}: ${toTsLiteral((obj as NestedObject)[k], indent + 2)}`;
+  });
+
   return `{\n${space}${entries.join(`,\n${space}`)}\n${' '.repeat(indent - 2)}}`;
 }
 
@@ -97,7 +118,7 @@ for (const row of parsed) {
   files[topKey][row.key] = row;
 }
 
-// Generate files per locale in "test" folder
+// Generate files per locale
 const outputRoot = path.resolve('./test');
 
 for (const locale of locales) {
@@ -105,19 +126,28 @@ for (const locale of locales) {
   if (!fs.existsSync(localeDir)) fs.mkdirSync(localeDir, { recursive: true });
 
   for (const topFile in files) {
-    const obj: NestedObject = {};
+    const firstKey = Object.keys(files[topFile])[0]
+      .replace(`${topFile}.`, '')
+      .split('.')[0];
+    const obj: NestedObject | (string | NestedObject)[] = /^\d+$/.test(firstKey)
+      ? []
+      : {};
+
+    let hasContent = false;
 
     for (const key in files[topFile]) {
       const value = files[topFile][key][locale];
-      if (value !== undefined) {
+      if (value !== undefined && value !== '') {
         setNested(obj, key.replace(`${topFile}.`, ''), value);
+        hasContent = true;
       }
     }
 
+    // Skip file if no content
+    if (!hasContent) continue;
+
     const typeImport = `import { type ${capitalize(topFile)} } from '../types/${topFile}';\n\n`;
-    const constDeclaration = `const ${topFile}: ${capitalize(topFile)} = ${toTsLiteral(
-      obj
-    )};\n\n`;
+    const constDeclaration = `const ${topFile}: ${capitalize(topFile)} = ${toTsLiteral(obj)};\n\n`;
     const exportStatement = `export default ${topFile};\n`;
 
     fs.writeFileSync(
