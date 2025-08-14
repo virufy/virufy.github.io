@@ -16,29 +16,41 @@ const locales = ['ar', 'en', 'es', 'ja'];
 // Output CSV file
 const outputFile = path.resolve(__dirname, 'translations.csv');
 
-// Helper: flatten nested objects
+// Helper: flatten nested objects and arrays
 function flattenObject(
-  obj: Record<string, unknown>,
+  obj: Record<string, unknown> | unknown[],
   parentKey = '',
   result: Record<string, unknown> = {}
 ): Record<string, unknown> {
-  for (const key in obj) {
-    if (!obj.hasOwnProperty(key)) continue;
+  if (Array.isArray(obj)) {
+    obj.forEach((item, index) => {
+      const arrayKey = parentKey ? `${parentKey}.${index}` : `${index}`;
+      if (typeof item === 'object' && item !== null) {
+        flattenObject(item as Record<string, unknown>, arrayKey, result);
+      } else {
+        result[arrayKey] = item;
+      }
+    });
+  } else {
+    for (const key in obj) {
+      if (!Object.prototype.hasOwnProperty.call(obj, key)) continue;
+      const value = obj[key];
+      const fullKey = parentKey ? `${parentKey}.${key}` : key;
 
-    const value = obj[key];
-    const fullKey = parentKey ? `${parentKey}.${key}` : key;
+      // Skip images
+      if (
+        typeof value === 'string' &&
+        (value.endsWith('.svg') || value.endsWith('.webp'))
+      )
+        continue;
 
-    // Skip images
-    if (
-      typeof value === 'string' &&
-      (value.endsWith('.svg') || value.endsWith('.webp'))
-    )
-      continue;
-
-    if (typeof value === 'object' && value !== null) {
-      flattenObject(value as Record<string, unknown>, fullKey, result);
-    } else {
-      result[fullKey] = value;
+      if (Array.isArray(value)) {
+        flattenObject(value, fullKey, result);
+      } else if (typeof value === 'object' && value !== null) {
+        flattenObject(value as Record<string, unknown>, fullKey, result);
+      } else {
+        result[fullKey] = value;
+      }
     }
   }
   return result;
