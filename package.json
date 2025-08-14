@@ -16,6 +16,7 @@
     "preview": "npx serve out"
   },
   "dependencies": {
+    "csv-parse": "^6.1.0",
     "flexsearch": "^0.8.161",
     "lodash.debounce": "^4.0.8",
     "next": "^14.2.30",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.53.0",
+    "@types/csv-parse": "^1.1.12",
     "@types/lodash.debounce": "^4.0.9",
     "@types/node": "20.14.15",
     "@types/papaparse": "^5.3.16",
