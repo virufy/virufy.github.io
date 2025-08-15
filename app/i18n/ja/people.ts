@@ -29,6 +29,7 @@ import {
   TsutomuIto,
   VictorWang,
   ZafarShahid,
+  MaurinoFlora,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -43,16 +44,15 @@ const people: People = {
   },
   sectionAdvisors: {
     title: 'アドバイザー',
-    advisors: [
-      {
+    advisors: {
+      kara: {
         img: KaraMeister,
         name: 'カラ・マイスター医学博士',
         role: '臨床アドバイザー',
         texts: ['スタンフォード医科大学耳鼻咽喉科臨床助教授'],
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
-        index: 0,
       },
-      {
+      jure: {
         img: JureLeskovec,
         name: 'ユーリ・レスコヴェック博士',
         role: '人工知能アドバイザー',
@@ -61,9 +61,8 @@ const people: People = {
           'スタンフォード大学AI准教授',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
-        index: 3,
       },
-      {
+      melissa: {
         img: MelissaDyrdahl,
         name: 'メリッサ・ダイダール',
         role: 'エグゼクティブマーケティングアドバイザー',
@@ -72,17 +71,15 @@ const people: People = {
           'CommonSpirit Health理事会メンバー',
         ],
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
-        index: 4,
       },
-      {
+      kutsuna: {
         img: KutsunaSatoshi,
         name: '忽那賢志',
         role: 'エグゼクティブ・臨床アドバイザー',
         texts: ['感染制御医学講座(感染制御学)ー大阪大学'],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
-        index: 5,
       },
-      {
+      glenn: {
         img: GlennMuschert,
         name: 'グレン・マスチャート教授',
         role: '社会科学・公共政策アドバイザー',
@@ -91,9 +88,8 @@ const people: People = {
           '博士号社会学 - コロラド大学ボルダー校',
         ],
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
-        index: 6,
       },
-      {
+      thomas: {
         img: ThomasMahoney,
         name: 'トーマス・マホニー',
         role: 'ビジネスおよび公衆衛生アドバイザー',
@@ -102,9 +98,8 @@ const people: People = {
           'ペンシルバニア大学ウォートンスクールMBA',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
-        index: 7,
       },
-      {
+      madhav: {
         img: MadhavDatt,
         name: 'マダブ・ダット',
         role: 'エグゼクティブ非営利アドバイザー',
@@ -114,17 +109,15 @@ const people: People = {
           'MBA、ハーバード・ビジネス・スクール',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
-        index: 8,
       },
-      {
+      may: {
         img: MayXu,
         name: 'メイ・シュウ',
         role: 'データ・AI製品戦略アドバイザー',
         texts: ['創設者 / エグゼクティブコーチ', 'MS- スタンフォード大学'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
-        index: 9,
       },
-      {
+      zafar: {
         img: ZafarShahid,
 
         name: 'ザファル・シャヒド',
@@ -135,9 +128,8 @@ const people: People = {
           'モンペリエ大学マルチメディアフォレンジック',
         ],
         link: 'https://zafarshahid.com/',
-        index: 1,
       },
-      {
+      rafi: {
         img: RafiAzimKhan,
         name: 'ラフィ・アジム・カーン',
         role: 'エグゼクティブ法務アドバイザー',
@@ -146,9 +138,8 @@ const people: People = {
           '法学士ロンドン大学クイーン・メアリー・カレッジ',
         ],
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
-        index: 10,
       },
-      {
+      ronan: {
         img: RonanDunlop,
         name: 'ローナン・ダンロップ',
         role: 'エグゼクティブマーケティングアドバイザー',
@@ -157,17 +148,15 @@ const people: People = {
           'Cohumanマーケティング副社長',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
-        index: 15,
       },
-      {
+      mark: {
         img: MarkHaseltine,
         name: 'マーク・ハセルトン',
         role: 'エグゼクティブアドバイザー',
         texts: ['元edX、GoDaddy CTO/CPO', 'MITコンピュータサイエンス卒業生'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-        index: 16,
       },
-      {
+      faisal: {
         img: FaisalCheema,
         name: 'ファイサル・チーマ',
         role: 'エグゼクティブ・臨床アドバイザー',
@@ -175,17 +164,15 @@ const people: People = {
           'ヒューストン大学ティルマン・フェルティッタ医科大学　生命医学・臨床科学准教授',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
-        index: 17,
       },
-      {
+      mert: {
         img: MertPilanci,
         name: 'メルト・ピランチ',
         role: '人工知能アドバイザー',
         texts: ['スタンフォード大学電気工学AI助教授'],
         link: 'https://stanford.edu/~pilanci/',
-        index: 18,
       },
-      {
+      tetsuji: {
         img: TetsujiMadarame,
         name: '斑目哲司',
         role: 'Pプリンシパルフェロー・技術計画・日本郵船',
@@ -194,9 +181,8 @@ const people: People = {
           'MBA - スタンフォード経営大学院',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
-        index: 19,
       },
-      {
+      victor: {
         img: VictorWang,
         name: 'ヴィクター・ワン',
         role: 'エグゼクティブアドバイザー',
@@ -205,9 +191,8 @@ const people: People = {
           'スタンフォード経営大学院MBA',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
-        index: 21,
       },
-      {
+      adam: {
         img: AdamLeipzig,
         name: 'アダム・ライプツィッヒ',
         role: 'エグゼクティブアドバイザー',
@@ -217,17 +202,15 @@ const people: People = {
           'バークレーのハースビジネススクールの専門教授',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
-        index: 22,
       },
-      {
+      rok: {
         img: RokSosic,
         name: 'ロック・ソシック',
         role: '人工知能アドバイザー',
         texts: ['スタンフォード工学部シニアリサーチエンジニア'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
-        index: 23,
       },
-      {
+      richard: {
         img: RichardNall,
         name: 'リチャード・ノール',
         role: 'マーケティイングアドバイザー',
@@ -236,9 +219,8 @@ const people: People = {
           'Henleyビジネススクール - 組織リーダーシップ修士号',
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
-        index: 24,
       },
-      {
+      khwaja: {
         img: KhwajaShaik,
         name: 'クワジャ・シャイク',
         role: 'IBM最高技術責任者',
@@ -247,9 +229,8 @@ const people: People = {
           'ノースフロリダ大学コンピューティング理事会メンバー',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
-        index: 25,
       },
-      {
+      ayomide: {
         img: AyomideOwoyemi,
         name: 'アヨミデ・オウォイェミ',
         role: 'エグゼクティブ・臨床アドバイザー',
@@ -258,17 +239,15 @@ const people: People = {
           'One Young World　ナイジェリア大使',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
-        index: 26,
       },
-      {
+      tsutomu: {
         img: TsutomuIto,
         name: '伊藤勉',
         role: 'エグゼクティブビジョナリーアドバイザー',
         texts: ['Tannan FMラジオ創設者', '新幹線主任設計者'],
         link: 'http://tannan.fm/contents/about-us.html',
-        index: 27,
       },
-      {
+      les: {
         img: LesAtlas,
         name: 'レス・アトラス博士',
         role: 'オーディオおよび機械学習アドバイザー',
@@ -277,49 +256,43 @@ const people: People = {
           'スタンフォード大学電気工学博士',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
-        index: 11,
       },
-      {
+      jesse: {
         img: JesseBump,
         name: 'ジェシー・バンプ博士、MPH、FRSA',
         role: '公衆衛生アドバイザー',
         texts: ['国際保健・人口学部門', 'ハーバードT.H.チャン公衆衛生大学院'],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
-        index: 2,
       },
-      {
+      nobuyo: {
         img: NobuyoOzawa,
         name: '小澤信代',
         role: '日本臨床開発リード',
         texts: ['臨床開発部グループマネージャー'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
-        index: 12,
       },
-      {
+      hiroyuki: {
         img: HiroyukiKunishima,
         name: '國島広之',
         role: '感染症アドバイザー',
         texts: ['感染症学講座聖マリアンナ医科大学病院'],
         link: 'http://www.k-icnet.org/profile.html',
-        index: 13,
       },
-      {
+      fumihiko: {
         img: FumihikoYokota,
         name: '横田文彦',
         role: '公衆衛生アドバイザー',
         texts: ['疫学准教授　九州大学'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
-        index: 14,
       },
-      {
+      kohei: {
         img: KoheiWakamiya,
         name: '若宮 耕平',
         role: '音声AI顧問',
         texts: ['音声AIアドバイザー', '九州大学'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_ja.html',
-        index: 28,
       },
-      {
+      tamer: {
         img: TamerFahmy,
         name: 'タマー・ファーミー',
         role: '中東・アフリカ市場アドバイザー',
@@ -329,9 +302,8 @@ const people: People = {
           'BSc 生物医学工学 カイロ大学',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
-        index: 29,
       },
-      {
+      shirin: {
         img: ShirinHasan,
         name: 'シリン・ハサン',
         role: '規制業務アドバイザー',
@@ -340,8 +312,50 @@ const people: People = {
           '理学修士（生化学）、サンノゼ州立大学 / スタンフォード大学',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
-        index: 30,
       },
+      maurino: {
+        img: MaurinoFlora,
+        name: 'マウリノ・フローラ',
+        role: '医療機器プログラムアドバイザー',
+        texts: [
+          'アポメッド・コンサルタンツ マネージング・ディレクター',
+          'サンタクララ大学工学管理学修士',
+        ],
+        link: 'https://www.linkedin.com/in/maurino-f-a230971/',
+      },
+    },
+    advisorOrder: [
+      'adam',
+      'ayomide',
+      'faisal',
+      'fumihiko',
+      'glenn',
+      'hiroyuki',
+      'jure',
+      'jesse',
+      'kara',
+      'khwaja',
+      'kohei',
+      'kutsuna',
+      'les',
+      'madhav',
+      'mark',
+      'may',
+      'melissa',
+      'mert',
+      'nobuyo',
+      'rafi',
+      'richard',
+      'rok',
+      'ronan',
+      'shirin',
+      'tamer',
+      'tetsuji',
+      'thomas',
+      'tsutomu',
+      'victor',
+      'zafar',
+      'maurino',
     ],
   },
 };
