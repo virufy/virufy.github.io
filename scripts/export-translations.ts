@@ -64,7 +64,9 @@ async function main() {
   // Load each locale folder
   for (const locale of locales) {
     const localePath = path.join(i18nDir, locale);
-    const files = fs.readdirSync(localePath).filter((f) => f !== 'types.ts');
+    const files = fs
+      .readdirSync(localePath)
+      .filter((f) => f !== 'types.ts' && f !== 'index.ts');
 
     const flattened: Record<string, unknown> = {};
 
@@ -79,7 +81,7 @@ async function main() {
           allKeys.add(`${file.replace(/\.ts$/, '')}.${key}`);
         }
       } catch (err) {
-        //console.error(`Failed to import ${filePath}:`, err);
+        console.error(`Failed to import ${filePath}:`, err);
       }
     }
 
