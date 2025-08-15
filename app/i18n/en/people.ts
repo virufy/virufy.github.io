@@ -29,6 +29,7 @@ import {
   TsutomuIto,
   VictorWang,
   ZafarShahid,
+  MaurinoFlora,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -44,8 +45,8 @@ const people: People = {
   },
   sectionAdvisors: {
     title: 'Advisors',
-    advisors: [
-      {
+    advisors: {
+      kara: {
         img: KaraMeister,
         name: 'Kara Meister, M.D.',
         role: 'Clinical Advisor',
@@ -53,9 +54,8 @@ const people: People = {
           'Clinical Assistant Professor of ENT Stanford School of Medicine',
         ],
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
-        index: 0,
       },
-      {
+      jure: {
         img: JureLeskovec,
         name: 'Dr. Jure Leskovec',
         role: 'Artificial Intelligence Advisor',
@@ -64,17 +64,15 @@ const people: People = {
           'Associate Professor of AI - Stanford',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
-        index: 3,
       },
-      {
+      melissa: {
         img: MelissaDyrdahl,
         name: 'Melissa Dyrdahl',
         role: 'Executive Marketing Advisor',
         texts: ['Former CMO - Adobe', 'Board Member - CommonSpirit Health'],
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
-        index: 4,
       },
-      {
+      kutsuna: {
         img: KutsunaSatoshi,
         name: 'Kutsuna Satoshi',
         role: 'Executive Clinical Advisor',
@@ -82,9 +80,8 @@ const people: People = {
           'Infection Control and Prevention Professor - Osaka University',
         ],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
-        index: 5,
       },
-      {
+      glenn: {
         img: GlennMuschert,
         name: 'Prof. Glenn Muschert',
         role: 'Social Science & Public Policy Advisor',
@@ -93,9 +90,8 @@ const people: People = {
           'Ph.D. Sociology - University of Colorado, Boulder',
         ],
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
-        index: 6,
       },
-      {
+      thomas: {
         img: ThomasMahoney,
         name: 'Thomas Mahoney',
         role: 'Business & Public Health Advisor',
@@ -104,9 +100,8 @@ const people: People = {
           'MBA, The Wharton School, University of Pennsylvania',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
-        index: 7,
       },
-      {
+      madhav: {
         img: MadhavDatt,
         name: 'Madhav Datt',
         role: 'Executive Nonprofit Advisor',
@@ -116,17 +111,15 @@ const people: People = {
           'MBA, Harvard Business School',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
-        index: 8,
       },
-      {
+      may: {
         img: MayXu,
         name: 'May Xu',
         role: 'Data and AI Product Strategy Advisor',
         texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
-        index: 9,
       },
-      {
+      zafar: {
         img: ZafarShahid,
         name: 'Zafar Shahid',
         role: 'Technology Advisor',
@@ -135,9 +128,8 @@ const people: People = {
           'Ph.D. Multimedia Forensics, University of Montpellier',
         ],
         link: 'https://zafarshahid.com/',
-        index: 1,
       },
-      {
+      rafi: {
         img: RafiAzimKhan,
         name: 'Rafi Azim-Khan',
         role: 'Executive Legal Advisor',
@@ -146,9 +138,8 @@ const people: People = {
           'LL.B. University of London, Queen Mary College',
         ],
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
-        index: 10,
       },
-      {
+      ronan: {
         img: RonanDunlop,
         name: 'Ronan Dunlop',
         role: 'Executive Marketing Advisor',
@@ -157,9 +148,8 @@ const people: People = {
           'VP of Marketing - Cohuman',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
-        index: 15,
       },
-      {
+      mark: {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
         role: 'Executive Advisor',
@@ -168,9 +158,8 @@ const people: People = {
           'Computer Science alumnus - MIT',
         ],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-        index: 16,
       },
-      {
+      faisal: {
         img: FaisalCheema,
         name: 'Faisal Cheema',
         role: 'Executive Clinical Advisor',
@@ -178,9 +167,8 @@ const people: People = {
           'Associate Professor of Biomedical & Clinical Sciences, Tilman J. Fertitta College of Medicine, University of Houston',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
-        index: 17,
       },
-      {
+      mert: {
         img: MertPilanci,
         name: 'Mert Pilanci',
         role: 'Artificial Intelligence Advisor',
@@ -188,9 +176,8 @@ const people: People = {
           'Asst. Professor of AI - Stanford University, Electrical Engineering',
         ],
         link: 'https://stanford.edu/~pilanci/',
-        index: 18,
       },
-      {
+      tetsuji: {
         img: TetsujiMadarame,
         name: 'Tetsuji Madarame',
         role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
@@ -199,9 +186,8 @@ const people: People = {
           'MBA - Stanford GSB',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
-        index: 19,
       },
-      {
+      victor: {
         img: VictorWang,
         name: 'Victor Wang',
         role: 'Executive Advisor',
@@ -210,9 +196,8 @@ const people: People = {
           'MBA - Stanford GSB',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
-        index: 21,
       },
-      {
+      adam: {
         img: AdamLeipzig,
         name: 'Adam Leipzig',
         role: 'Executive Advisor',
@@ -222,17 +207,15 @@ const people: People = {
           'Professional Faculty, Berkeley Haas School of Business',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
-        index: 22,
       },
-      {
+      rok: {
         img: RokSosic,
         name: 'Rok Sosic',
         role: 'Artificial Intelligence Advisor',
         texts: ['Senior Research Engineer', 'Stanford School of Engineering'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
-        index: 23,
       },
-      {
+      richard: {
         img: RichardNall,
         name: 'Richard Nall',
         role: 'Marketing Advisor',
@@ -241,9 +224,8 @@ const people: People = {
           `Master's Organizational Leadership - Henley`,
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
-        index: 24,
       },
-      {
+      khwaja: {
         img: KhwajaShaik,
         name: 'Khwaja Shaik',
         role: 'Chief Technology Officer - IBM',
@@ -252,9 +234,8 @@ const people: People = {
           'Board Member - University of North Florida Computing',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
-        index: 25,
       },
-      {
+      ayomide: {
         img: AyomideOwoyemi,
         name: 'Ayomide Owoyemi',
         role: 'Executive Clinical Advisor',
@@ -263,17 +244,15 @@ const people: People = {
           'Ambassador - One Young World Nigeria',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
-        index: 26,
       },
-      {
+      tsutomu: {
         img: TsutomuIto,
         name: 'Tsutomu Ito',
         role: 'Executive Visionary Advisor',
         texts: ['Founder - Tannan FM Radio', 'Lead Architect, Bullet Train'],
         link: 'http://tannan.fm/contents/about-us.html',
-        index: 27,
       },
-      {
+      les: {
         img: LesAtlas,
         name: 'Dr. Les Atlas',
         role: 'Audio and Machine Learning Advisor',
@@ -282,9 +261,8 @@ const people: People = {
           'Ph.D. Electrical Engineering, Stanford',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
-        index: 11,
       },
-      {
+      jesse: {
         img: JesseBump,
         name: 'Jesse Bump, Ph.D., MPH, FRSA',
         role: 'Population Health Advisor',
@@ -293,17 +271,15 @@ const people: People = {
           'Harvard T.H. Chan School of Public Health',
         ],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
-        index: 2,
       },
-      {
+      nobuyo: {
         img: NobuyoOzawa,
         name: 'Nobuyo Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
-        index: 12,
       },
-      {
+      hiroyuki: {
         img: HiroyukiKunishima,
         name: 'Hiroyuki Kunishima',
         role: 'Infectious Diseases Advisor',
@@ -311,25 +287,22 @@ const people: People = {
           'Department of Infectious Diseases, St. Marianna University Hospital',
         ],
         link: 'http://www.k-icnet.org/profile.html',
-        index: 13,
       },
-      {
+      fumihiko: {
         img: FumihikoYokota,
         name: 'Fumihiko Yokota',
         role: 'Public Health Advisor',
         texts: ['Associate Professor of Epidemiology, Kyushu University'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
-        index: 14,
       },
-      {
+      kohei: {
         img: KoheiWakamiya,
         name: 'Kohei Wakamiya',
         role: 'Audio AI Advisor',
         texts: ['Acoustic Design Assistant Professor', 'Kyushu University'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
-        index: 28,
       },
-      {
+      tamer: {
         img: TamerFahmy,
         name: 'Tamer Fahmy',
         role: 'Middle East & Africa Market Advisor',
@@ -339,9 +312,8 @@ const people: People = {
           'BSc Biomedical Engineering, Cairo University',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
-        index: 29,
       },
-      {
+      shirin: {
         img: ShirinHasan,
         name: 'Shirin Hasan',
         role: 'Clinical, Medical, Regulatory Affairs Advisor',
@@ -350,8 +322,50 @@ const people: People = {
           'M.S., Biochemistry, SJSU/Stanford',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
-        index: 30,
       },
+      maurino: {
+        img: MaurinoFlora,
+        name: 'Maurino Flora',
+        role: 'Medical Device Program Advisor',
+        texts: [
+          'Managing Director, Apomed Consultants',
+          'M.S. Engineering Management, Santa Clara University',
+        ],
+        link: 'https://www.linkedin.com/in/maurino-f-a230971/',
+      },
+    },
+    advisorOrder: [
+      'adam',
+      'ayomide',
+      'faisal',
+      'fumihiko',
+      'glenn',
+      'hiroyuki',
+      'jure',
+      'jesse',
+      'kara',
+      'khwaja',
+      'kohei',
+      'kutsuna',
+      'les',
+      'madhav',
+      'mark',
+      'may',
+      'melissa',
+      'mert',
+      'nobuyo',
+      'rafi',
+      'richard',
+      'rok',
+      'ronan',
+      'shirin',
+      'tamer',
+      'tetsuji',
+      'thomas',
+      'tsutomu',
+      'victor',
+      'zafar',
+      'maurino',
     ],
   },
 };

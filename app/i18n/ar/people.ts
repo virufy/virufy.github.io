@@ -29,6 +29,7 @@ import {
   TsutomuIto,
   VictorWang,
   ZafarShahid,
+  MaurinoFlora,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -44,8 +45,8 @@ const people: People = {
   },
   sectionAdvisors: {
     title: 'المستشارين',
-    advisors: [
-      {
+    advisors: {
+      kara: {
         img: KaraMeister,
         name: 'كارا ميستر، دكتور في الطب',
         role: 'مستشارة طبية',
@@ -53,9 +54,8 @@ const people: People = {
           'أستاذ مساعد في الطب الأنف والأذن والحنجرة - كلية الطب بجامعة ستانفورد',
         ],
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
-        index: 0,
       },
-      {
+      jure: {
         img: JureLeskovec,
         name: 'الدكتور يور ليشكوفيتش',
         role: 'مستشار في الذكاء الاصطناعي',
@@ -64,9 +64,8 @@ const people: People = {
           'أستاذ مشارك في الذكاء الاصطناعي - جامعة ستانفورد',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
-        index: 3,
       },
-      {
+      melissa: {
         img: MelissaDyrdahl,
         name: 'ميليسا ديرداهل',
         role: 'مستشارة تسويق تنفيذية',
@@ -75,17 +74,15 @@ const people: People = {
           'عضو مجلس إدارة - CommonSpirit Health',
         ],
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
-        index: 4,
       },
-      {
+      kutsuna: {
         img: KutsunaSatoshi,
         name: 'كوتسونا ساتوشي',
         role: 'مستشار طبي تنفيذي',
         texts: ['أستاذ في مكافحة العدوى والوقاية - جامعة أوساكا'],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
-        index: 5,
       },
-      {
+      glenn: {
         img: GlennMuschert,
         name: 'البروفيسور جلين موشيرت',
         role: 'مستشار العلوم الاجتماعية والسياسة العامة',
@@ -94,9 +91,8 @@ const people: People = {
           'دكتوراه. علم الاجتماع - جامعة كولورادو، بولدر',
         ],
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
-        index: 6,
       },
-      {
+      thomas: {
         img: ThomasMahoney,
         name: 'توماس ماهوني',
         role: 'مستشار الأعمال والصحة العامة',
@@ -105,9 +101,8 @@ const people: People = {
           'ماجستير إدارة الأعمال، كلية وارتون، جامعة بنسلفانيا',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
-        index: 7,
       },
-      {
+      madhav: {
         img: MadhavDatt,
         name: 'مادهف دات',
         role: 'مستشار تنفيذي غير ربحي',
@@ -117,17 +112,15 @@ const people: People = {
           'ماجستير في إدارة الأعمال، كلية هارفارد للأعمال',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
-        index: 8,
       },
-      {
+      may: {
         img: MayXu,
         name: 'ماي شو',
         role: 'مستشارة استراتيجية بيانات ومنتجات الذكاء الاصطناعي',
         texts: ['مؤسسة / مدربة تنفيذية', 'ماجستير - جامعة ستانفورد'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
-        index: 9,
       },
-      {
+      zafar: {
         img: ZafarShahid,
         name: 'ظفر شهيد',
         role: 'مستشار التكنولوجيا',
@@ -137,9 +130,8 @@ const people: People = {
           'دكتوراه في الطب الشرعي للوسائط المتعددة، جامعة مونبلييه',
         ],
         link: 'https://zafarshahid.com/',
-        index: 1,
       },
-      {
+      rafi: {
         img: RafiAzimKhan,
         name: 'رافي أزيم خان',
         role: 'مستشار قانوني تنفيذي',
@@ -148,9 +140,8 @@ const people: People = {
           'ليسانس الحقوق. جامعة لندن، كلية كوين ماري',
         ],
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
-        index: 10,
       },
-      {
+      ronan: {
         img: RonanDunlop,
         name: 'رونان دونلوب',
         role: 'مستشار تسويق تنفيذي',
@@ -159,17 +150,15 @@ const people: People = {
           'نائب رئيس التسويق - Cohuman',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
-        index: 15,
       },
-      {
+      mark: {
         img: MarkHaseltine,
         name: 'مارك هاسلتين',
         role: 'مستشار تنفيذي',
         texts: ['CTO / CPO السابق - edX، GoDaddy', 'خريج علوم الكمبيوتر - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-        index: 16,
       },
-      {
+      faisal: {
         img: FaisalCheema,
         name: 'فيصل شيمة',
         role: 'مستشار طبي تنفيذي',
@@ -177,9 +166,8 @@ const people: People = {
           'أستاذ مشارك في العلوم الطبية الحيوية والسريرية، كلية الطب Tilman J. Fertitta، جامعة هيوستن',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
-        index: 17,
       },
-      {
+      mert: {
         img: MertPilanci,
         name: 'مارت بيلانجي',
         role: 'مستشار في الذكاء الاصطناعي',
@@ -187,9 +175,8 @@ const people: People = {
           'أستاذ مساعد في الذكاء الاصطناعي - جامعة ستانفورد، الهندسة الكهربائية',
         ],
         link: 'https://stanford.edu/~pilanci/',
-        index: 18,
       },
-      {
+      tetsuji: {
         img: TetsujiMadarame,
         name: 'تتسوجي مادارامي',
         role: 'زميل رئيسي، تخطيط تقني، السكك الحديدية الشحن اليابانية',
@@ -198,9 +185,8 @@ const people: People = {
           'MBA - جامعة ستانفورد لإدارة الأعمال',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
-        index: 19,
       },
-      {
+      victor: {
         img: VictorWang,
         name: 'فيكتور وانغ',
         role: 'مستشار تنفيذي',
@@ -209,9 +195,8 @@ const people: People = {
           'MBA - جامعة ستانفورد لإدارة الأعمال',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
-        index: 21,
       },
-      {
+      adam: {
         img: AdamLeipzig,
         name: 'آدم لايبزيغ',
         role: 'المستشار التنفيذي',
@@ -221,17 +206,15 @@ const people: People = {
           'عضو هيئة التدريس المحترف بمدرسة الأعمال بجامعة بيركلي هاس',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
-        index: 22,
       },
-      {
+      rok: {
         img: RokSosic,
         name: 'روك سوسي',
         role: 'مستشار في الذكاء الاصطناعي',
         texts: ['مهندس أبحاث أول', 'جامعة ستانفورد كلية الهندسة'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
-        index: 23,
       },
-      {
+      richard: {
         img: RichardNall,
         name: 'ريتشارد نال',
         role: 'مستشار تسويق',
@@ -240,9 +223,8 @@ const people: People = {
           `ماجستير في القيادة التنظيمية - Henley`,
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
-        index: 24,
       },
-      {
+      khwaja: {
         img: KhwajaShaik,
         name: 'خواجة شيك',
         role: 'الرئيس التنفيذي للتكنولوجيا - IBM',
@@ -251,9 +233,8 @@ const people: People = {
           'عضو مجلس إدارة - جامعة شمال فلوريدا لتكنولوجيا المعلومات',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
-        index: 25,
       },
-      {
+      ayomide: {
         img: AyomideOwoyemi,
         name: 'أيومي دي أووييمي',
         role: 'مستشار طبي تنفيذي',
@@ -262,17 +243,15 @@ const people: People = {
           'سفير - One Young World نيجيريا',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
-        index: 26,
       },
-      {
+      tsutomu: {
         img: TsutomuIto,
         name: 'تسوتومو إيتو',
         role: 'مستشار تنفيذي مستقبلي',
         texts: ['مؤسس - Tannan FM Radio', 'المدير المعماري، قطار الرصاصة'],
         link: 'http://tannan.fm/contents/about-us.html',
-        index: 27,
       },
-      {
+      les: {
         img: LesAtlas,
         name: 'الدكتور ليس أطلس',
         role: 'مستشار الصوت والتعلم الآلي',
@@ -281,9 +260,8 @@ const people: People = {
           'دكتوراه في الهندسة الكهربائية، جامعة ستانفورد',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
-        index: 11,
       },
-      {
+      jesse: {
         img: JesseBump,
         name: 'جيسي بامب، دكتوراه، ماجستير فى الصحة العامة ، زميل الجمعية الملكية للفنون.',
         role: '. مستشار صحة السكان',
@@ -292,41 +270,36 @@ const people: People = {
           '. كلية هارفارد تي إتش تشان للصحة العامة ',
         ],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
-        index: 2,
       },
-      {
+      nobuyo: {
         img: NobuyoOzawa,
         name: 'نوبويو أوزاوا',
         role: 'قائد تطوير سريري في اليابان',
         texts: ['مدير مجموعة قسم تطوير السريري، CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
-        index: 12,
       },
-      {
+      hiroyuki: {
         img: HiroyukiKunishima,
         name: 'هيرويوكي كونيشما',
         role: 'مستشار أمراض معدية',
         texts: ['قسم الأمراض المعدية، مستشفى جامعة سانت ماريانا'],
         link: 'http://www.k-icnet.org/profile.html',
-        index: 13,
       },
-      {
+      fumihiko: {
         img: FumihikoYokota,
         name: 'فوميهيكو يوكوتا',
         role: 'مستشار الصحة العامة',
         texts: ['أستاذ مساعد في الوبائيات، جامعة كيوشو'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/members/yokota-fumihiko',
-        index: 14,
       },
-      {
+      kohei: {
         img: KoheiWakamiya,
         name: 'كوهي واكاميا',
         role: 'مستشار الذكاء الاصطناعي الصوتي',
         texts: ['أستاذ مساعد تصميم الصوتيات', 'جامعة كيوشو'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
-        index: 28,
       },
-      {
+      tamer: {
         img: TamerFahmy,
         name: 'تامر فهمي',
         role: 'مستشار سوق الشرق الأوسط وأفريقيا',
@@ -336,9 +309,8 @@ const people: People = {
           'بكالوريوس في الهندسة الطبية الحيوية، جامعة القاهرة',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
-        index: 29,
       },
-      {
+      shirin: {
         img: ShirinHasan,
         name: 'شيرين حسن',
         role: 'مستشار الشؤون السريرية والطبية والتنظيمية',
@@ -347,8 +319,50 @@ const people: People = {
           'ماجستير، الكيمياء الحيوية، جامعة سان خوزيه  / ستانفورد',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
-        index: 30,
       },
+      maurino: {
+        img: MaurinoFlora,
+        name: 'مورينو فلورا',
+        role: 'مستشار برنامج الأجهزة الطبية',
+        texts: [
+          'المدير العام لشركة أبوميد للاستشارات',
+          'ماجستير في إدارة الهندسة، جامعة سانتا كلارا',
+        ],
+        link: 'https://www.linkedin.com/in/maurino-f-a230971/',
+      },
+    },
+    advisorOrder: [
+      'adam',
+      'ayomide',
+      'faisal',
+      'fumihiko',
+      'glenn',
+      'hiroyuki',
+      'jure',
+      'jesse',
+      'kara',
+      'khwaja',
+      'kohei',
+      'kutsuna',
+      'les',
+      'madhav',
+      'mark',
+      'may',
+      'melissa',
+      'mert',
+      'nobuyo',
+      'rafi',
+      'richard',
+      'rok',
+      'ronan',
+      'shirin',
+      'tamer',
+      'tetsuji',
+      'thomas',
+      'tsutomu',
+      'victor',
+      'zafar',
+      'maurino',
     ],
   },
 };
