@@ -22,7 +22,8 @@ const nextConfig = {
   basePath: '',
 
   /**
-   * Add a custom server route for redirection
+   * NOTE: this website is being staticly exported these will not work, either put them into the scripts file with the other redirects or make a file in the app folder
+   * with the redirect with spinner commands
    */
   trailingSlash: true,
   async rewrites() {

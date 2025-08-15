@@ -6,7 +6,40 @@ import { usei18n } from '../../i18n';
 import Title from '../components/Title';
 import Section4 from './Section4';
 import { AdvisorsNewBackground } from '@/public/images/advisors';
-
+//use this list to reorder
+const advisorOrder = [
+  'kara',
+  'les',
+  'jesse',
+  'jure',
+  'zafar',
+  'melissa',
+  'kutsuna',
+  'glenn',
+  'thomas',
+  'madhav',
+  'may',
+  'rafi',
+  'nobuyo',
+  'hiroyuki',
+  'fumihiko',
+  'ronan',
+  'mark',
+  'faisal',
+  'mert',
+  'tetsuji',
+  'victor',
+  'adam',
+  'rok',
+  'richard',
+  'khwaja',
+  'ayomide',
+  'tsutomu',
+  'kohei',
+  'tamer',
+  'shirin',
+  'maurino',
+];
 const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
@@ -63,11 +96,20 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
           {/* Advisors Cards */}
           <div className="grid grid-cols-2 gap-4 pb-16 text-black sm:gap-6 lg:gap-x-12 lg:gap-y-10 xl:grid-cols-3">
-            {sectionAdvisors.advisors
-              .sort((a, b) => a.index - b.index)
-              .map(({ img, name, role, texts, link }) => (
+            {advisorOrder.map((id) => {
+              const advisor = sectionAdvisors.advisors[id];
+              if (!advisor) {
+                console.warn(
+                  `Advisor with ID "${id}" is missing in advisors object`
+                );
+                return null; // skip missing advisor
+              }
+
+              const { img, name, role, texts, link } = advisor;
+
+              return (
                 <div
-                  key={name}
+                  key={id}
                   className="relative max-w-40 bg-white bg-opacity-30 text-center md:w-[375px] md:max-w-[22rem]"
                 >
                   <Link target="_blank" href={link}>
@@ -95,7 +137,8 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     ))}
                   </div>
                 </div>
-              ))}
+              );
+            })}
           </div>
         </div>
       </div>

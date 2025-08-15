@@ -11,7 +11,9 @@
     "serve": "npx serve@latest out",
     "test": "npx playwright test",
     "test-report": "npx playwright show-report",
-    "test-ui": "npx playwright test --ui"
+    "test-ui": "npx playwright test --ui",
+    "postbuild": "node scripts/generate-redirects.js",
+    "preview": "npx serve out"
   },
   "dependencies": {
     "flexsearch": "^0.8.161",
