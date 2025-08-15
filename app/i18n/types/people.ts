@@ -15,14 +15,16 @@ export interface sectionMeetOurFounder {
 
 export interface sectionAdvisors {
   title: string;
-  advisors: CardData[];
+  advisors: AdvisorsMap;
+  advisorOrder: AdvisorOrder;
 }
+export type AdvisorsMap = Record<string, Advisor>;
+export type AdvisorOrder = (keyof AdvisorsMap)[];
 
-type CardData = {
+type Advisor = {
   img: StaticImageData;
   name: string;
   role: string;
   texts: string[];
   link: string;
-  index: number;
 };

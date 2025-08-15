@@ -29,6 +29,7 @@ import {
   TsutomuIto,
   VictorWang,
   ZafarShahid,
+  MaurinoFlora,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -44,8 +45,8 @@ const people: People = {
   },
   sectionAdvisors: {
     title: 'Asesores',
-    advisors: [
-      {
+    advisors: {
+      kara: {
         img: KaraMeister,
         name: 'Kara Meister, M.D.',
         role: 'Asesora Clínica',
@@ -53,9 +54,8 @@ const people: People = {
           'Profesora Asistente Clínica de ENT, Facultad de Medicina de Stanford',
         ],
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
-        index: 0,
       },
-      {
+      jure: {
         img: JureLeskovec,
         name: 'Dr. Jure Leskovec',
         role: 'Asesor de Inteligencia Artificial',
@@ -64,17 +64,15 @@ const people: People = {
           'Profesor Asociado de IA - Stanford',
         ],
         link: 'https://www.linkedin.com/in/leskovec/',
-        index: 3,
       },
-      {
+      melissa: {
         img: MelissaDyrdahl,
         name: 'Melissa Dyrdahl',
         role: 'Asesora Ejecutiva de Marketing',
         texts: ['Ex CMO - Adobe', 'Miembro de la Junta - CommonSpirit Health'],
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
-        index: 4,
       },
-      {
+      kutsuna: {
         img: KutsunaSatoshi,
         name: 'Kutsuna Satoshi',
         role: 'Asesor Clínico Ejecutivo',
@@ -82,9 +80,8 @@ const people: People = {
           'Profesor de Control y Prevención de Infecciones - Universidad de Osaka',
         ],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
-        index: 5,
       },
-      {
+      glenn: {
         img: GlennMuschert,
         name: 'Profesor Glenn Muschert',
         role: 'Asesor de Ciencias Sociales y Políticas Públicas',
@@ -93,9 +90,8 @@ const people: People = {
           'Doctor en Filosofía. Sociología - Universidad de Colorado, Boulder',
         ],
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
-        index: 6,
       },
-      {
+      thomas: {
         img: ThomasMahoney,
         name: 'Thomas Mahoney',
         role: 'Asesor de negocios y salud pública',
@@ -104,9 +100,8 @@ const people: People = {
           'MBA, The Wharton School, Universidad de Pensilvania',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
-        index: 7,
       },
-      {
+      madhav: {
         img: MadhavDatt,
         name: 'Madhav Datt',
         role: 'Asesor Ejecutivo de Organizaciones sin Fines de Lucro',
@@ -116,9 +111,8 @@ const people: People = {
           'MBA, Escuela de Negocios de Harvard',
         ],
         link: 'https://www.linkedin.com/in/madhavdatt/',
-        index: 8,
       },
-      {
+      may: {
         img: MayXu,
         name: 'May Xu',
         role: 'Asesora de Estrategia de Producto de Datos e Inteligencia Artificial',
@@ -127,9 +121,8 @@ const people: People = {
           'M.S. - Universidad de Stanford',
         ],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
-        index: 9,
       },
-      {
+      zafar: {
         img: ZafarShahid,
         name: 'Zafar Shahid',
         role: 'Asesor Tecnológico',
@@ -139,9 +132,8 @@ const people: People = {
           'Doctorado en Ciencias Forenses Multimedia, Universidad de Montpellier',
         ],
         link: 'https://zafarshahid.com/',
-        index: 1,
       },
-      {
+      rafi: {
         img: RafiAzimKhan,
         name: 'Rafi Azim-Khan',
         role: 'Asesor Ejecutivo Legal',
@@ -150,9 +142,8 @@ const people: People = {
           'LL.B. Universidad de Londres, Queen Mary College',
         ],
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
-        index: 10,
       },
-      {
+      ronan: {
         img: RonanDunlop,
         name: 'Ronan Dunlop',
         role: 'Asesor Ejecutivo de Marketing',
@@ -161,9 +152,8 @@ const people: People = {
           'VP de Marketing - Cohuman',
         ],
         link: 'https://www.linkedin.com/in/rdunlop/',
-        index: 15,
       },
-      {
+      mark: {
         img: MarkHaseltine,
         name: 'Mark Haseltine',
 
@@ -173,9 +163,8 @@ const people: People = {
           'Alumnus de Ciencias de la Computación - MIT',
         ],
         link: 'https://www.linkedin.com/in/mhaseltine/',
-        index: 16,
       },
-      {
+      faisal: {
         img: FaisalCheema,
         name: 'Faisal Cheema',
         role: 'Asesor Clínico Ejecutivo',
@@ -183,9 +172,8 @@ const people: People = {
           'Profesor Asociado de Ciencias Biomédicas y Clínicas, Facultad de Medicina Tilman J. Fertitta, Universidad de Houston',
         ],
         link: 'https://www.linkedin.com/in/doccheema/',
-        index: 17,
       },
-      {
+      mert: {
         img: MertPilanci,
         name: 'Mert Pilanci',
         role: 'Asesor de Inteligencia Artificial',
@@ -193,9 +181,8 @@ const people: People = {
           'Profesor Asistente de IA - Universidad de Stanford, Ingeniería Eléctrica',
         ],
         link: 'https://stanford.edu/~pilanci/',
-        index: 18,
       },
-      {
+      tetsuji: {
         img: TetsujiMadarame,
         name: 'Tetsuji Madarame',
         role: 'Fellow Principal, Planificación Tecnológica, Japan Freight Railway',
@@ -204,9 +191,8 @@ const people: People = {
           'MBA - Escuela de Negocios de la Universidad de Stanford',
         ],
         link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
-        index: 19,
       },
-      {
+      victor: {
         img: VictorWang,
         name: 'Victor Wang',
         role: 'Asesor Ejecutivo',
@@ -215,9 +201,8 @@ const people: People = {
           'MBA - Escuela de Negocios de la Universidad de Stanford',
         ],
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
-        index: 21,
       },
-      {
+      adam: {
         img: AdamLeipzig,
         name: 'Adam Leipzig',
         role: 'Asesor Ejecutivo',
@@ -227,9 +212,8 @@ const people: People = {
           'Miembro del profesorado profesional en la Escuela de Negocios de Berkeley Haas',
         ],
         link: 'https://www.linkedin.com/in/adamleipzig/',
-        index: 22,
       },
-      {
+      rok: {
         img: RokSosic,
         name: 'Rok Sosic',
         role: 'Asesor de Inteligencia Artificial',
@@ -238,9 +222,8 @@ const people: People = {
           'Escuela de Ingeniería de Stanford',
         ],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
-        index: 23,
       },
-      {
+      richard: {
         img: RichardNall,
         name: 'Richard Nall',
         role: 'Asesor de Marketing',
@@ -249,9 +232,8 @@ const people: People = {
           `Maestría en Liderazgo Organizacional - Henley`,
         ],
         link: 'https://www.linkedin.com/in/richardnall/',
-        index: 24,
       },
-      {
+      khwaja: {
         img: KhwajaShaik,
         name: 'Khwaja Shaik',
         role: 'Director de Tecnología - IBM',
@@ -260,9 +242,8 @@ const people: People = {
           'Miembro de la Junta - Universidad de North Florida Computing',
         ],
         link: 'https://www.linkedin.com/in/khwajashaik/',
-        index: 25,
       },
-      {
+      ayomide: {
         img: AyomideOwoyemi,
         name: 'Ayomide Owoyemi',
         role: 'Asesor Clínico Ejecutivo',
@@ -271,9 +252,8 @@ const people: People = {
           'Embajador - One Young World Nigeria',
         ],
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
-        index: 26,
       },
-      {
+      tsutomu: {
         img: TsutomuIto,
         name: 'Tsutomu Ito',
         role: 'Asesor Visionario Ejecutivo',
@@ -282,9 +262,8 @@ const people: People = {
           'Arquitecto Principal, Tren Bala',
         ],
         link: 'http://tannan.fm/contents/about-us.html',
-        index: 27,
       },
-      {
+      les: {
         img: LesAtlas,
         name: 'Dr. Les Atlas',
         role: 'Asesor de Audio e Inteligencia Artificial',
@@ -293,9 +272,8 @@ const people: People = {
           'Ph.D. en Ingeniería Eléctrica, Stanford',
         ],
         link: 'https://people.ece.uw.edu/atlas/',
-        index: 11,
       },
-      {
+      jesse: {
         img: JesseBump,
         name: 'Jesse Bump, Ph.D., MPH, FRSA',
         role: 'Asesor de Salud Poblacional',
@@ -304,17 +282,15 @@ const people: People = {
           'Escuela de Salud Pública T.H. Chan de Harvard',
         ],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
-        index: 2,
       },
-      {
+      nobuyo: {
         img: NobuyoOzawa,
         name: 'Nobuyo Ozawa',
         role: 'Líder de Desarrollo Clínico en Japón',
         texts: ['Gerente de Grupo, Departamento de Desarrollo Clínico, CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
-        index: 12,
       },
-      {
+      hiroyuki: {
         img: HiroyukiKunishima,
         name: 'Hiroyuki Kunishima',
         role: 'Asesor de Enfermedades Infecciosas',
@@ -322,17 +298,15 @@ const people: People = {
           'Departamento de Enfermedades Infecciosas, Hospital Universitario St. Marianna',
         ],
         link: 'http://www.k-icnet.org/profile.html',
-        index: 13,
       },
-      {
+      fumihiko: {
         img: FumihikoYokota,
         name: 'Fumihiko Yokota',
         role: 'Asesor de Salud Pública',
         texts: ['Profesor Asociado de Epidemiología, Universidad de Kyushu'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
-        index: 14,
       },
-      {
+      kohei: {
         img: KoheiWakamiya,
         name: 'Kohei Wakamiya',
         role: 'Asesor de Inteligencia Artificial de Voz',
@@ -341,9 +315,8 @@ const people: People = {
           'Universidad de Kyushu',
         ],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
-        index: 28,
       },
-      {
+      tamer: {
         img: TamerFahmy,
         name: 'Tamer Fahmy',
         role: 'Asesor de Mercado de Medio Oriente y África',
@@ -353,9 +326,8 @@ const people: People = {
           'BSc en Ingeniería Biomédica, Universidad de El Cairo',
         ],
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
-        index: 29,
       },
-      {
+      shirin: {
         img: ShirinHasan,
         name: 'Shirin Hasan',
         role: 'Asesora de Asuntos Regulatorios',
@@ -364,8 +336,50 @@ const people: People = {
           'M.S., Bioquímica, Universidad de Mumbai',
         ],
         link: 'https://www.linkedin.com/in/shirinhasan/',
-        index: 30,
       },
+      maurino: {
+        img: MaurinoFlora,
+        name: 'Flora Maurino',
+        role: 'Asesor del Programa de Dispositivos Médicos',
+        texts: [
+          'Director General, Apomed Consultants',
+          'Maestría en Gestión de Ingeniería, Universidad de Santa Clara',
+        ],
+        link: 'https://www.linkedin.com/in/maurino-f-a230971/',
+      },
+    },
+    advisorOrder: [
+      'adam',
+      'ayomide',
+      'faisal',
+      'fumihiko',
+      'glenn',
+      'hiroyuki',
+      'jure',
+      'jesse',
+      'kara',
+      'khwaja',
+      'kohei',
+      'kutsuna',
+      'les',
+      'madhav',
+      'mark',
+      'may',
+      'melissa',
+      'mert',
+      'nobuyo',
+      'rafi',
+      'richard',
+      'rok',
+      'ronan',
+      'shirin',
+      'tamer',
+      'tetsuji',
+      'thomas',
+      'tsutomu',
+      'victor',
+      'zafar',
+      'maurino',
     ],
   },
 };
