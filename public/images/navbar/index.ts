@@ -14,4 +14,7 @@ export { default as PaypalIcon } from '../../icons/icon-paypal.png';
 
 // Menu Icons
 export { default as CloseMenuIcon } from '../../icons/icon-close-menu.svg';
+export { default as WhiteCloseMenuIcon } from '../../icons/icon-close-menu-white.svg';
 export { default as HamburgerMenuIcon } from '../../icons/icon-hamburger-menu.svg';
+export { default as WhiteHamburgerMenuIcon } from '../../icons/icon-hamburger-menu-white.svg';
+
