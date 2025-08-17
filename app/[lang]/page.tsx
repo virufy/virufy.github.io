@@ -190,6 +190,8 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           </div>
         </div>
       </div>
+      {/* Blur transition to footer */}
+      <div className="block md:hidden w-full h-10 bg-gradient-to-b from-[#011633] to-[#000000]"></div>
     </div>
   );
 };
