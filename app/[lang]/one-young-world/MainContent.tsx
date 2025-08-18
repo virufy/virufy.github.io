@@ -24,15 +24,18 @@ const MainContent = ({ lang, teamLeads, oyw, navbarTexts }: Props) => {
   return (
     <>
       {/* image is only shown in non-mobile view */}
-      {(
+      {
         <ExportedImage
           className="hidden md:absolute md:block md:h-full md:w-full md:rotate-180 md:object-cover md:opacity-30"
           src={oyw.bgImage}
           alt={oyw.altText}
           priority
           basePath={basePath}
+          width={1512}
+          height={9070}
+          sizes="100vw"
         />
-      )}
+      }
 
       <Navbar
         showTeamLeads={showTeamLeads}

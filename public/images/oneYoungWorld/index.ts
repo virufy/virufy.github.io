@@ -3,10 +3,10 @@ export { default as BgBody } from './bg-body.webp';
 export { default as BgHeader } from './bg-header.webp';
 
 // Icons
-export { default as AmbassadorIcon } from '../../icons/icon-female.png';
-export { default as DiverseIcon } from '../../icons/icon-globe-with-markers.png';
-export { default as GlobeIcon } from '../../icons/icon-man-lifting-globe.png';
-export { default as YouthIcon } from '../../icons/icon-youth-in-circle.png';
+export { default as AmbassadorIcon } from '/icons/icon-female.png';
+export { default as DiverseIcon } from '/icons/icon-globe-with-markers.png';
+export { default as GlobeIcon } from '/icons/icon-man-lifting-globe.png';
+export { default as YouthIcon } from '/icons/icon-youth-in-circle.png';
 
 // Testimonial
 export { default as GonzaloTestimonial } from './testimonials/gonzalo-square-pic.webp';

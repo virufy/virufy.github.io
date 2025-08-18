@@ -27,6 +27,8 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           alt=""
           priority
           basePath={basePath}
+          width={1512}
+          height={700}
         />
         <Title
           Text={title}
@@ -43,12 +45,7 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           font-bold"
         />
         <button
-          className={
-            `${ButtonType.primary} 
-            'pt-10 translate-x-[-50%]'} pb-2px absolute top-[85%] h-[25px] w-[85px] translate-y-[-50%]
-            rounded-full align-middle text-xs 
-            md:top-[80%] md:h-[65px] md:w-[250px] md:text-lg md:font-semibold`
-          }
+          className={`${ButtonType.primary} 'pt-10 translate-x-[-50%]'} pb-2px absolute top-[85%] h-[25px] w-[85px] translate-y-[-50%] rounded-full align-middle text-xs md:top-[80%] md:h-[65px] md:w-[250px] md:text-lg md:font-semibold`}
           onClick={() => setShowModal(true)}
         >
           {' '}
@@ -93,6 +90,8 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       alt={alt}
                       priority
                       basePath={basePath}
+                      width={150}
+                      height={75}
                     />
                   </Link>
                 </div>
@@ -117,6 +116,8 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       alt={alt}
                       priority
                       basePath={basePath}
+                      width={200}
+                      height={100}
                     />
                   </Link>
                 </div>

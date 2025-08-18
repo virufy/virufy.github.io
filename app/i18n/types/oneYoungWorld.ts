@@ -9,7 +9,7 @@ export interface OneYoungWorld {
 // Header and Navbar Section
 interface HeaderSection {
   text: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
   altText: string;
 }
 
@@ -20,7 +20,7 @@ export interface OywNavbarTexts {
 
 // One Young World Section
 export interface OywSection {
-  bgImage: StaticImageData;
+  bgImage: StaticImageData | string;
   altText: string;
   virufyAndOyw: VirufyAndOywSection;
   whyOyw: WhyOywSection;
@@ -44,7 +44,7 @@ interface WhyOywSection {
 interface OywCard {
   title: string;
   text: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
   altText: string;
 }
 
@@ -59,7 +59,7 @@ interface VolunteerStoriesSection {
 export interface Testimonial {
   name: string;
   origin: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
   altText: string;
   testimonial: string;
 }

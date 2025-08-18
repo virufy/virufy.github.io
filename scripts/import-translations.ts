@@ -2,6 +2,22 @@ import fs from 'fs';
 import path from 'path';
 import Papa from 'papaparse';
 
+/** * This script imports translations from a CSV file into TypeScript files per locale.
+ * It reads a CSV file with translation keys and values for each locale,
+ * flattens nested objects, and generates TypeScript files for each locale.
+ * * It assumes the CSV has a "key" column and one column for each locale.
+ * The output will be TypeScript files in a specified directory, with each file containing
+ *
+ * run using:
+ * node --loader ts-node/esm scripts/export-translations.ts
+ *
+ * Make sure to have the necessary packages installed:
+ * npm install papaparse ts-node @types/node
+ *
+ * it will put the generated files in the "translationsOutput" folder.
+ * Adjust the csvFile and locales array as needed for your project structure.
+ */
+
 // CSV file
 const csvFile = path.resolve('./scripts/translations.csv');
 
@@ -119,7 +135,7 @@ for (const row of parsed) {
 }
 
 // Generate files per locale
-const outputRoot = path.resolve('./test');
+const outputRoot = path.resolve('./translationsOutput');
 
 for (const locale of locales) {
   const localeDir = path.join(outputRoot, locale);

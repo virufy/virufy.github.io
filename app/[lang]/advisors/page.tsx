@@ -118,6 +118,8 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       src={img}
                       alt={name}
                       basePath={basePath}
+                      width={375}
+                      height={450}
                     />
                   </Link>
                   <div className="pb-2 md:pb-4">

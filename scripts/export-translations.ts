@@ -3,6 +3,21 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import Papa from 'papaparse';
 
+/*
+ * This script exports translations from the i18n folders into a CSV file.
+ * It flattens nested objects and arrays, skips image paths, and handles multiple locales.
+ * It assumes the locale files are TypeScript modules exporting an object.
+ * The output CSV will have a header row with the locale codes and a "key" column.
+ *
+ * run using:
+ * node --loader ts-node/esm scripts/export-translations.ts
+ *
+ * Make sure to have the necessary packages installed:
+ * npm install papaparse ts-node @types/node
+ *
+ * Adjust the i18nDir and locales array as needed for your project structure.
+ */
+
 // __dirname fix for ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
