@@ -1,5 +1,10 @@
 import { type OywNavbarTexts } from '@/app/i18n/types/oneYoungWorld';
 
+enum Position {
+  Left,
+  Right,
+}
+
 interface Props {
   showTeamLeads: boolean;
   setShowTeamLeads: React.Dispatch<React.SetStateAction<boolean>>;
@@ -10,6 +15,7 @@ interface ListItemProps {
   text: string;
   isActive: boolean;
   onClick: () => void;
+  borderRadiusPosition: Position;
 }
 
 const Navbar = ({ showTeamLeads, setShowTeamLeads, navbarTexts }: Props) => {
@@ -19,11 +25,13 @@ const Navbar = ({ showTeamLeads, setShowTeamLeads, navbarTexts }: Props) => {
         <ListItem
           isActive={!showTeamLeads}
           text={navbarTexts.oyw}
+          borderRadiusPosition={Position.Right}
           onClick={() => setShowTeamLeads(false)}
         />
         <ListItem
           isActive={showTeamLeads}
           text={navbarTexts.teamLeads}
+          borderRadiusPosition={Position.Left}
           onClick={() => setShowTeamLeads(true)}
         />
       </ul>
@@ -31,9 +39,17 @@ const Navbar = ({ showTeamLeads, setShowTeamLeads, navbarTexts }: Props) => {
   );
 };
 
-const ListItem = ({ text, isActive, onClick }: ListItemProps) => {
-  const activeStyle =
-    'bg-green-800 font-bold md:border-b-2 md:border-[#30DA74] md:font-semibold';
+const ListItem = ({
+  text,
+  isActive,
+  onClick,
+  borderRadiusPosition,
+}: ListItemProps) => {
+  const borderRadiusPositionClassName =
+    borderRadiusPosition === Position.Left
+      ? 'rounded-tl-2xl'
+      : 'rounded-tr-2xl';
+  const activeStyle = `bg-[#30DA7473] font-bold md:border-b-2 md:border-[#30DA74] md:font-semibold ${borderRadiusPositionClassName}`;
   const inActiveStyle = 'md:border-b-2 md:border-transparent';
 
   return (

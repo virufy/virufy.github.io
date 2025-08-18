@@ -20,7 +20,7 @@ const OneYoungWorldPage = ({
     <div className="relative">
       {/* Header/Hero Section */}
       <section>
-        <div className="relative bg-[#255292]">
+        <div className="relative bg-[#1F376A]">
           <ExportedImage
             className="absolute object-cover opacity-30"
             src={header.image}
