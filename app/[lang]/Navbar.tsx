@@ -112,11 +112,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, []);
 
-  // Handles search bar visibility based on screen size
+  // Handles search bar visibility based on screen size and home page status
   useEffect(() => {
   if (typeof window !== "undefined") {
     const handleResize = () => {
-      if (window.innerWidth >= 640) {
+      if (window.innerWidth >= 640 || !isHomePage) {
         setShowSearch(true);
       } else {
         setShowSearch(false);
@@ -127,7 +127,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }
-}, []);
+}, [isHomePage]);
 
   const debouncedSearch = useMemo(
     () =>
@@ -221,10 +221,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
       <div 
         className={
           `absolute top-0 flex h-full items-center justify-center
-          ${isHomePage && showSearch ? 'right-0' : ''}`
+          ${showSearch ? 'right-0' : ''}`
         }
         onClick={() => {
-          if (window.innerWidth < 640) {
+          if (isHomePage && window.innerWidth < 640) {
             setShowSearch((prev) => !prev);
           }
         }}
