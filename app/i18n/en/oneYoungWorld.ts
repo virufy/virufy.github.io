@@ -64,7 +64,7 @@ const oneYoungWorld: OneYoungWorld = {
       ],
     },
     volunteerStories: {
-      title: 'Volunteer Testimonials',
+      title: 'Volunteer Stories',
       text: 'Several ambassadors have volunteered at Virufy and have given testimonials. We have strong trust in members of the One Young World community and warmly welcome any ambassadors interested to contribute.',
       testimonials: [
         {

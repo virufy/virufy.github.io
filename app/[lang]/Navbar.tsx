@@ -4,7 +4,9 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import {
   CloseMenuIcon,
+  WhiteCloseMenuIcon,
   HamburgerMenuIcon,
+  WhiteHamburgerMenuIcon,
   VirufyLogo,
 } from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
@@ -43,6 +45,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const [hasSearched, setHasSearched] = useState(false);
   const router = useRouter();
   const isRedirecting = useRef(false);
+
+  const isHomePage = currPathname === `/${lang}/`;
+  const [showSearch, setShowSearch] = useState(false);
 
   const dropdownRef = useRef<HTMLUListElement | null>(null);
   const DEBOUNCE_DELAY = 400;
@@ -107,6 +112,23 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, []);
 
+  // Handles search bar visibility based on screen size and home page status
+  useEffect(() => {
+  if (typeof window !== "undefined") {
+    const handleResize = () => {
+      if (window.innerWidth >= 640 || !isHomePage) {
+        setShowSearch(true);
+      } else {
+        setShowSearch(false);
+      }
+    };
+
+    handleResize(); 
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }
+}, [isHomePage]);
+
   const debouncedSearch = useMemo(
     () =>
       debounce((value: string) => {
@@ -150,24 +172,30 @@ export default function Navbar({ lang }: { lang: Locale }) {
     <div
       className={`relative ${width} h-[30px] ${extraClass} search-input-container`}
     >
-      <input
-        type="text"
-        placeholder={searchPlaceholder}
-        value={query}
-        disabled={!isReady}
-        onChange={(e) => {
-          const value = e.target.value;
-          setQuery(value);
-          if (value.trim() === '') {
-            clearResults();
-            setHasSearched(false);
-          } else {
-            debouncedSearch(value);
+      {showSearch && (
+        <input
+          type="text"
+          placeholder={searchPlaceholder}
+          value={query}
+          disabled={!isReady}
+          onChange={(e) => {
+            const value = e.target.value;
+            setQuery(value);
+            if (value.trim() === '') {
+              clearResults();
+              setHasSearched(false);
+            } else {
+              debouncedSearch(value);
+            }
+          }} 
+          className={
+            `h-full w-full border-0 border-b 
+            ${isHomePage ? 'border-white text-white placeholder-white lg:border-black lg:text-black lg:placeholder-black' : 'border-black text-black placeholder-black'} 
+            bg-transparent focus:outline-none focus:ring-0`
           }
-        }}
-        className="h-full w-full border-0 border-b border-black bg-transparent text-black placeholder-black focus:outline-none focus:ring-0"
-      />
-      {query && (
+        />
+      )}
+      {showSearch && query && (
         <div
           onClick={() => {
             setQuery('');
@@ -179,7 +207,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           {/* SVG for "×" (close) button inside search bar */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4 text-black"
+            className={`h-4 w-4 ${isHomePage ? 'text-black lg:text-black text-white' : 'text-black'}`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -190,22 +218,31 @@ export default function Navbar({ lang }: { lang: Locale }) {
           </svg>
         </div>
       )}
-      <div className="absolute right-0 top-0 flex h-full items-center justify-center">
+      <div 
+        className={
+          `absolute top-0 flex h-full items-center justify-center
+          ${showSearch ? 'right-0' : ''}`
+        }
+        onClick={() => {
+          if (isHomePage && window.innerWidth < 640) {
+            setShowSearch((prev) => !prev);
+          }
+        }}
+      >
         {/* SVG for search icon inside search bar */}
         <svg
-          className="pointer-events-none h-[22px] w-[22px] text-white"
+          className={`mt-1 lg:mt-0 pointer-events-none h-[22px] w-[22px] ${isHomePage ? 'text-white lg:text-black' : 'text-black'}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle cx="10" cy="10" r="6" stroke="black" strokeWidth="2" />
+          <circle cx="10" cy="10" r="6"  strokeWidth="2" />
           <line
             x1="14"
             y1="14"
             x2="20"
             y2="20"
-            stroke="black"
             strokeWidth="2"
           />
         </svg>
@@ -265,7 +302,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   return (
     <div className="w-full bg-transparent lg:absolute">
-      <nav className={`sticky z-[100] w-full bg-transparent`}>
+      <nav className={`sticky z-[100] w-full ${isHomePage ? 'bg-[#022140]' : 'bg-white'} lg:bg-transparent`}>
         {/* donate modal */}
         {showModal ? (
           <div onClick={() => setShowModal(false)}>
@@ -274,19 +311,21 @@ export default function Navbar({ lang }: { lang: Locale }) {
         ) : null}
 
         <div
-          className={`lg:max-w-8lg justify-between bg-white px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 xl:mx-9${navbar ? 'flex h-screen' : ''}`}
+          className={`lg:max-w-8lg justify-between bg-transparent px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 xl:mx-9${navbar ? 'flex h-screen' : ''}`}
         >
           <div className="flex items-center justify-between lg:block lg:py-5">
             <Link
               href={`/${lang}`}
-              className="mt-2 flex rounded-full bg-white bg-opacity-80 px-3 py-2 text-black lg:hidden"
+              className="mt-2 flex rounded-full bg-opacity-80 px-3 py-2 text-black lg:hidden"
             >
-              <ExportedImage
-                className="h-[48px] w-[100px]"
-                src={VirufyLogo}
-                alt="Virufy logo"
-                basePath={basePath}
-              />
+              {!isHomePage && (
+                <ExportedImage
+                  className="h-[48px] w-[100px]"
+                  src={VirufyLogo}
+                  alt="Virufy logo"
+                  basePath={basePath}
+                />
+              )}
             </Link>
             <Link
               href={`/${lang}`}
@@ -300,15 +339,25 @@ export default function Navbar({ lang }: { lang: Locale }) {
               />
             </Link>
             {/* Mobile Search Bar */}
-            <div className="mt-2 flex items-center justify-start rounded-full bg-white bg-opacity-80 px-5 py-2 text-black lg:hidden">
+            <div className="mt-2 flex items-center justify-start rounded-full bg-opacity-80 px-5 py-2 text-black lg:hidden">
               <div className="relative mb-4 w-[125px]">
                 {renderSearchInput('w-full')}
                 {renderSearchDropdown()}
               </div>
             </div>
 
+            {/* Mobile Donate Button */}
+            {isHomePage && (
+              <button
+                onClick={() => setShowModal(true)}
+                className={`h-[32px] w-[100px] lg:hidden h-[28px] md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+              >
+                <Link href="#">{donate.buttonText}</Link>
+              </button>
+            )}
+
             {/* // hamburger and x button */}
-            <div className="lg:hidden">
+            <div className={`lg:hidden ${isHomePage ? 'absolute left-3 top-4' : ''}`}>
               <button
                 className="rounded-lg p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                 onClick={() => setNavbar(!navbar)}
@@ -316,14 +365,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 {navbar ? (
                   <ExportedImage
                     className="h-[18px] w-[30px]"
-                    src={CloseMenuIcon}
+                    src={isHomePage ? WhiteCloseMenuIcon : CloseMenuIcon}
                     alt="close menu icon"
                     basePath={basePath}
                   />
                 ) : (
                   <ExportedImage
                     className="h-[18px] w-[30px]"
-                    src={HamburgerMenuIcon}
+                    src={isHomePage ? WhiteHamburgerMenuIcon : HamburgerMenuIcon}
                     alt="hamburger menu icon"
                     basePath={basePath}
                   />
