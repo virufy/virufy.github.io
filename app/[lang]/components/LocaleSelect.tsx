@@ -22,7 +22,11 @@ const flagIcons: Record<Locale, StaticImageData> = {
   es: SpainFlagIcon,
 };
 
-const LocaleSelect = () => {
+type LocaleSelectProps = {
+  isNavbar?: boolean;
+}
+
+const LocaleSelect = ({ isNavbar = false }: LocaleSelectProps) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
@@ -63,32 +67,32 @@ const LocaleSelect = () => {
     <div className="relative inline-block lg:pr-6" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className={`flex w-40 items-center bg-transparent p-3 text-xl font-bold text-black hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:px-0 ${
+        className={`flex ${isNavbar ? 'w-28' : 'w-40'} items-center bg-transparent pt-2 pb-1 lg:p-3 text-xl font-bold text-white lg:text-black hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:px-0 ${
           dropdownOpen ? 'border-l border-r border-t border-gray-500' : ''
         }`}
       >
         <ExportedImage
           src={flagIcons[locale]}
           alt={`${locale} flag`}
-          className="ml-10 mr-2 h-5 w-5 lg:ml-2"
+          className={`mr-2 h-5 w-5 ${isNavbar ? 'ml-4' : 'ml-10 lg:ml-2'}`}
         />
         {locale.toUpperCase()}
-        <ArrowIcon isActive={dropdownOpen} />
+        <ArrowIcon isActive={dropdownOpen} isWhite={isNavbar} />
       </button>
       {dropdownOpen && (
-        <div className="absolute z-10 w-40 border-b border-l border-r border-gray-500 bg-white pb-2 shadow-md shadow-gray-500 lg:-left-2 lg:mt-0 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none">
+        <div className={`absolute z-10 ${isNavbar ? 'w-28' : 'w-40'} border-b border-l border-r border-gray-500 bg-black shadow-md shadow-gray-500 lg:-left-2 lg:mt-0 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none`}>
           {i18n.locales
             .filter((localeOption) => localeOption !== locale)
             .map((localeOption) => (
               <button
                 key={localeOption}
                 onClick={() => handleLocaleChange(localeOption as Locale)}
-                className="flex w-[75px] items-center bg-white bg-opacity-50 px-3 py-2 text-left text-sm text-black hover:font-bold"
+                className="flex w-[75px] items-center bg-black bg-opacity-50 lg:bg-white lg:bg-opacity-50 px-3 py-2 text-left text-sm text-white lg:text-black hover:font-bold"
               >
                 <ExportedImage
                   src={flagIcons[localeOption]}
                   alt={`${localeOption} flag`}
-                  className="ml-10 mr-2 h-5 w-5 lg:ml-1"
+                  className={`mr-2 h-5 w-5 ${isNavbar ? 'ml-5' : 'ml-10 lg:ml-1'}`}
                 />
                 {localeOption.toUpperCase()}
               </button>
