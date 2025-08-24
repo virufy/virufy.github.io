@@ -1,7 +1,7 @@
-import { type NewsCard } from '@/app/i18n/types/news';
+import type { NewsCard as NewsCardProps } from '@/app/i18n/types/news';
 import Link from 'next/link';
 
-const NewsCard = ({ title, date, subText, url, linkText }: NewsCard) => {
+const NewsCard = ({ title, date, subText, url, linkText = 'Read more' }: NewsCardProps) => {
   return (
     <>
       <h3 className="max-w-lg text-xl font-bold text-black lg:h-28 xl:h-20">
@@ -15,7 +15,9 @@ const NewsCard = ({ title, date, subText, url, linkText }: NewsCard) => {
         <Link
           className="rounded-3xl bg-[#3578DE] px-4 py-2 text-white sm:px-8"
           target="_blank"
+          rel="noopener noreferrer"
           href={url}
+          aria-label={linkText}
         >
           {linkText}
         </Link>

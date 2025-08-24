@@ -1,0 +1,9 @@
+export { default as InstagramIconDarkGradient } from '../../icons/icon-instagram-gradient.png';
+export { default as InstagramIconWhite } from '../../icons/icon-instagram-white.svg';
+export { default as LinkedInIconDarkGradient } from '../../icons/icon-linkedin-gradient.png';
+export { default as LinkedInIconWhite } from '../../icons/icon-linkedin-white.svg';
+export { default as XIconWhite } from '../../icons/icon-x-white.svg';
+export { default as XIconDarkGradient } from '../../icons/icon-x-gradient.svg';
+export { default as YouTubeIconDarkGradient } from '../../icons/icon-youtube-gradient.svg';
+export { default as YouTubeIconWhite } from '../../icons/icon-youtube-white.svg';
+export { default as CandidSeal } from '../../icons/icon-candid-seal.svg';

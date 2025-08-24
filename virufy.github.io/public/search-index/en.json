@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "en-ai-hero",
+    "lang": "en",
+    "title": "The science behind Virufy",
+    "content": "Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence. Our Research",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-01",
+    "lang": "en",
+    "title": "How does AI work? - 01",
+    "content": "Our groundbreaking app employs cutting-edge AI technology to analyze your breathing patterns using deep learning algorithms and audio signal processing techniques.",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-02",
+    "lang": "en",
+    "title": "How does AI work? - 02",
+    "content": "The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-publications",
+    "lang": "en",
+    "title": "Our Research",
+    "content": "Our Research publications and AI studies related to disease detection using vocal patterns.",
+    "url": "/en/publications"
+  },
+
+  {
+    "id": "en-amilsStory-bio-1",
+    "lang": "en",
+    "title": "Amil’s Early Life",
+    "content": "Born and raised in the Silicon Valley in an immigrant family, Amil attended homeschooling and began studying at community college while 14 years old. Amil father's dedication to social service shaped him, with a childhood filled with volunteer activities such as feeding the homeless at soup kitchens. Soon after, Amil's father passed away in a fatal car crash with a drunk driver. Although struggling emotionally with the loss of his hero, Amil took his first job as a software consultant developing image recognition technology for automated grading of tests in K-12 schools.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-bio-2",
+    "lang": "en",
+    "title": "Professional Journey",
+    "content": "After receiving his B.A. in Computer Science from University of California, Berkeley, Amil joined Hewlett-Packard (HP) in Silicon Valley to work full-time as a software engineer developing security log standardization software for ArcSight, a Security Information and Event Management System (SIEM). Seeking a new home, Amil transferred to HP’s Tokyo headquarters to take on a role as cybersecurity consultant, in which he traveled across Hong Kong, Tokyo, and Australia to deploy SIEM solutions at customer sites in the banking industry.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-pivotal",
+    "lang": "en",
+    "title": "Work at Pivotal",
+    "content": "Amil returned to Silicon Valley to join Pivotal Software as a software engineer working primarily on the Postgres-based open source Greenplum OLAP database. In Pivotal’s extreme programming (XP) environment, Amil practiced several software development practices, including daily pair programming, test-driven development (TDD), and weekly retroactive meetings, while rotating across several teams, including DevOps, database backend, and workload management tooling.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-zen",
+    "lang": "en",
+    "title": "Life in Japan",
+    "content": "In 2018, Amil took leave from work to move to the countryside of Japan. Living in Eiheiji town, the birthplace of Soto Zen, Amil meditated daily and learned Zen philosophy, while giving back teaching agile programming to young adults and children. Soon, Amil was appointed Evolution Ambassador of the town and sent to the One Young World conference in the Netherlands to represent Japan.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-virufy",
+    "lang": "en",
+    "title": "Founding of Virufy",
+    "content": "In late 2019, Amil left his job to pursue graduate studies in Artificial Intelligence at Stanford University. When the pandemic hit, Amil committed himself to pandemic relief efforts and soon founded Virufy, a nonprofit organization developing a smartphone app to prescreen for COVID-19 instantly through AI-powered analysis of voice and cough recordings.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-virufy-scale",
+    "lang": "en",
+    "title": "Virufy's Global Reach",
+    "content": "As of July 2024, the organization operates in three continents with more than 250 volunteers and 60 partner organizations.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-publications",
+    "lang": "en",
+    "title": "Amil’s Publications",
+    "content": "2022. Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough. 2021. Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML). 2020. Virufy: Global Applicability of AI Detection for COVID-19 from Cough Recordings. 2020. Fusical: Multimodal Fusion for Video Sentiment. 2020. Facial Expression Recognition with Deep Learning.",
+    "url": "/en/amils-story"
+  },
+
+  {
+    "id": "en-faq-app-result-time",
+    "lang": "en",
+    "title": "When and how will the app give upper respiratory infection prediction results?",
+    "content": "Our app is currently for data collection only. We cannot release a upper respiratory infection prediction app without public health department approvals in each country and clinical studies to validate the AI technology in local conditions. This process can take some weeks or months depending on the speed of the government partner. Virufy welcomes partnerships from health officials and hospitals to bring the technology for free use to the people and to optimize usage of costly PCR tests only when necessary.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-app-availability",
+    "lang": "en",
+    "title": "Is your app available for iOS or Android?",
+    "content": "Our app is designed as a web app, so it can be used from the web browser on any mobile device. It does not require a separate download or install.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-app-free-worldwide",
+    "lang": "en",
+    "title": "Will the application be available for free and worldwide?",
+    "content": "As a 501(c)(3) non-profit organization, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds. However, our intention is to make the app free for the benefit of low-income countries.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-app-for-profit",
+    "lang": "en",
+    "title": "Do you plan to extend this app in a for-profit startup?",
+    "content": "Virufy is a non-profit organization. We may partner with companies if needed to accelerate deployment of the app for the benefit of people.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-initiative-created",
+    "lang": "en",
+    "title": "How was the initiative created?",
+    "content": "When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world. As a One Young World Japan ambassador who has travelled to over 25 countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.",
+    "url": "/en/faq"
+  },
+
+  {
+    "id": "en-faq-virufy-difference",
+    "lang": "en",
+    "title": "How is Virufy different from other initiatives working on similar ventures?",
+    "content": "Because Virufy is a 501(c)(3) non-profit organization, we are able to recruit highly talented professionals as volunteers. Our team is global, spanning five continents, and our organization thus has global empathy built in. We are not concerned with making profit, so are able to work in developing countries. Our dense university alumni and professional networks grant us access to top echelon contacts in every country of the world. Mentorship is built into our organization, as dozens of young professionals in our team are empowered by sage advice from senior industry experts leads to rapid, creative activity focused in the right direction.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-investigation-phase",
+    "lang": "en",
+    "title": "What phase of the investigation are you at? Is there a deadline to participate?",
+    "content": "We have put considerable effort to form partnerships, build our mobile app, register our California non-profit entity, and build our policies for compliance with data privacy laws across dozens of countries. Our data collection app is at the breakthrough stage, as have addressed the majority of healthcare data privacy and technical concerns to allow for launch. We have already gotten data privacy, information security, and UI/UX in place for our data collection mobile app, along with a scalable backend AWS infrastructure. We had large volumes of data collection exceeding 250,000 patients and with the help of AI are building the solution. There is no deadline, and we always welcome partners who can provide grant funding, volunteer services, and clinical data collection.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-virufy-unique",
+    "lang": "en",
+    "title": "What is unique about Virufy from other organizations?",
+    "content": "As a young organization with a diverse and global team including alumni from more than 25 universities, we are guided by top-level industry professionals. Our multidisciplinary team has expertise in law, machine learning, medicine, information security, and mobile app development. Our One Young World network allows us to connect with trusted partners in every country. We welcome all, and being a 501(c)(3) non-profit allows for volunteers to join. As a volunteer run non-profit, we are independent and have less red tape.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-investment",
+    "lang": "en",
+    "title": "How much investment was made to make the Virufy initiative possible?",
+    "content": "More than 1,000 volunteers have put thousands of hours into making the project possible. Several companies have supported us with free software, including email, storage, and messaging platforms, along with cloud compute. Certain softwares such as video conferencing and project management tools have not been free, so unfortunately have to be paid from founder Amil’s limited savings. We believe that if we are successful, our cloud compute costs will increase, but we will be able to attract ample grant funding and private donations, along with government support to keep our system running.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-ai-coughs",
+    "lang": "en",
+    "title": "Why are upper respiratory infection coughs distinguishable?",
+    "content": "Similar to other respiratory diseases, COVID-19 damages the throat and lungs, creating detectable differences in cough patterns. Consequently, cough sounds can be analyzed to detect COVID-19 and other upper respiratory diseases. Globally, this idea is being actively researched by several prestigious institutions, including Carnegie Mellon (CMU), MIT, and Cambridge. For example, research done by University of Cambridge showed that a simple binary machine learning classifier is able to classify COVID-19 positive patients through breathing and coughing sounds with high accuracy. Similarly, researchers at CMU identified 18 voice features that distinguish positive COVID-19 patients and trained an academic model to detect COVID-19 with high accuracy.",
+    "url": "/en/faq"
+  },
+
+  {
+    "id": "en-faq-ai-data-challenges",
+    "lang": "en",
+    "title": "What was the main difficulty in collecting and processing data? Was there any region where artificial intelligence was less accurate, for example?",
+    "content": "The process is slow and cumbersome when collecting from hospitals, requiring clinical study forms and IRB approvals. With supervision from various medical advisors, including from Harvard and Stanford, we have enrolled more than 250,000 patients in our clinical studies across 5 countries. For collecting directly from users, we spent significant efforts with pro bono expert lawyers to ensure compliance with data privacy laws, including LGPD, GDPR, and CCPA. As described in our research paper, some of the difficulties we found in processing data included excessive background noises and incorrect cough recordings submitted by users, which required the AI developers to manually clean the audio samples before training AI models.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-ai-asymptomatic",
+    "lang": "en",
+    "title": "Can asymptomatic cases be detected?",
+    "content": "Yes, asymptomatic detection has been shown in research by MIT and other groups. It is especially important for people in their 20s and 30s who are more likely to be asymptomatic.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-ai-third-party",
+    "lang": "en",
+    "title": "Will the application use AI developed by third parties or created just for this purpose?",
+    "content": "Virufy has its own AI research team with patented technology. We are open to collaboration, co-development, and integration of AI algorithms from other research groups.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-finance-donate-cough",
+    "lang": "en",
+    "title": "Do I need to make any financial contribution to donate my cough?",
+    "content": "Virufy is currently only collecting coughs from certain countries, which can be found in our app: https://virufy.org/study.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-finance-cough-symptoms",
+    "lang": "en",
+    "title": "Do I need to have coughing symptoms to donate my cough?",
+    "content": "No, the app is also compatible with a forced cough.",
+    "url": "/en/faq"
+  },
+
+  {
+    "id": "en-faq-finance-total-donors",
+    "lang": "en",
+    "title": "How many donors have you had in total?",
+    "content": "We have more than 5,000 cough recordings from over 10 countries, mostly in South America and South Asia. Some of these are clinical, and others are contributed directly by individuals in our app.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-finance-operational-expenses",
+    "lang": "en",
+    "title": "What are the operational expenses for the organization?",
+    "content": "We are currently completely volunteer run. Our main budget requirements are for marketing and clinical studies for cough data collection. We would also need money for computation later on after scaling to a large user base.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-finance-funding",
+    "lang": "en",
+    "title": "Does the team get funding? If so, where and how much? What is it used on?",
+    "content": "We partner with several universities to apply for R&D grants leveraging our 501(c)(3) status.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-privacy-data-storage",
+    "lang": "en",
+    "title": "How will Virufy securely store my data?",
+    "content": "We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at https://aws.amazon.com/en/privacy. If you would like to learn more, please refer to the Virufy privacy policy.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-privacy-data-risk",
+    "lang": "en",
+    "title": "Is my privacy ever at risk of being exposed when I donate my cough to Virufy?",
+    "content": "Our strong legal and information security teams have developed a DPIA to address potential risks and threats for your privacy. We will only store your personal data in an anonymized form (where you cannot be identified in any way) and in a secure database with restricted access. If you would like to learn more please refer to the Virufy Privacy Policy.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-privacy-policy",
+    "lang": "en",
+    "title": "Does Virufy have a privacy policy and cookie policy?",
+    "content": "Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, participation in our cough donation study, contacting us, and volunteer applications. Refer to the footer for a detailed Privacy Policy and Cookie Policy.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-privacy-data-sharing",
+    "lang": "en",
+    "title": "Will my data be shared with third parties?",
+    "content": "If you opt-in to share your contact information (e.g., email and phone number) with us, we will not distribute any of this personal identifiable information to any third party. However, we may share your anonymized information, such as your cough sounds, with third parties in order to accelerate global research efforts to stop the COVID-19 pandemic and other future spreads of disease. More details can be found in our Privacy Policy and the data collection study Consent Form.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-other-support-virufy",
+    "lang": "en",
+    "title": "How can I support Virufy more?",
+    "content": "You can join our team today and look at the Job Listing page for more information. You can also support us at GoFundMe. You can also contact us for partnership.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-other-distribution",
+    "lang": "en",
+    "title": "How does distribution work, and how will Virufy become more widespread?",
+    "content": "The app will be offered for the benefit of people in low-income countries and will likely market itself and spread quickly.",
+    "url": "/en/faq"
+  },
+  {
+    "id": "en-faq-other-more-questions",
+    "lang": "en",
+    "title": "What if I have more questions?",
+    "content": "More details can be found in our full Privacy Policy, Cookie Policy, and consent form which is embedded in the data collection app. For questions related to the data collection study, please email us at study@virufy.org. For data related queries, we can be contacted at open-data@virufy.org. For all other inquiries, you may reach us at info@virufy.org.",
+    "url": "/en/faq"
+  },
+
+  {
+    "id": "en-home-intro",
+    "lang": "en",
+    "title": "Welcome to Virufy",
+    "content": "Welcome to Virufy - Your Digital Health Companion. Introducing Virufy, the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing patterns and provide insights into potential infection symptoms.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-how-it-works",
+    "lang": "en",
+    "title": "How It Works",
+    "content": "With just a simple intentional cough into your device's microphone, Virufy harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, TB, flu, RSV, COPD, and asthma.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-health-priority",
+    "lang": "en",
+    "title": "Your Health, Our Priority",
+    "content": "At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-health-feature-1",
+    "lang": "en",
+    "title": "Instant Analysis",
+    "content": "Rapid feedback on your cough's characteristics and abnormality profile based on the sound pattern of your cough",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-health-feature-2",
+    "lang": "en",
+    "title": "At-home Anonymity",
+    "content": "Feel secure knowing that your results are only for your eyes.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-health-feature-3",
+    "lang": "en",
+    "title": "User-Friendly Interface",
+    "content": "Intuitive design for easy navigation and seamless user experience.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-demo",
+    "lang": "en",
+    "title": "Share your cough",
+    "content": "Try our demo app to contribute your cough and see AI analysis in action.",
+    "url": "/study"
+  },
+
+  {
+    "id": "en-job-1",
+    "lang": "en",
+    "title": "Software Engineer",
+    "content": "Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-2",
+    "lang": "en",
+    "title": "Machine Learning Engineer",
+    "content": "Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-3",
+    "lang": "en",
+    "title": "Machine Learning Engineer (Modeling)",
+    "content": "Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-4",
+    "lang": "en",
+    "title": "Audio Signal Processing Engineer",
+    "content": "Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-5",
+    "lang": "en",
+    "title": "DevOps Engineer",
+    "content": "Seeking a part-time volunteer to work with machine learning, deep learning, and signal processing for audio analysis in a medical setting. We welcome students and professionals with experience in these domains. The candidate will be immersed in a highly collaborative environment alongside senior AI engineers and mentors.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-6",
+    "lang": "en",
+    "title": "Infosec Engineer",
+    "content": "Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with the management and development team to help manage the internal data privacy concerns, potentially under mentorship from senior licensed lawyers.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-7",
+    "lang": "en",
+    "title": "Data Privacy Intern",
+    "content": "Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with Virufy management and globally-dispersed legal teams to help manage data privacy concerns for their local jurisdictions.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-8",
+    "lang": "en",
+    "title": "Associate Data Scientist",
+    "content": "Our team of part-time volunteers works with machine learning, deep learning, and signal analysis for audio analysis in a medical setting. We welcome individuals with professional experience in these domains to apply. The candidate will be immersed in a collaborative environment alongside AI engineers and mentors.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-9",
+    "lang": "en",
+    "title": "Business Manager",
+    "content": "Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with the Virufy management and development team to help manage the overall business, product, and finances.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-10",
+    "lang": "en",
+    "title": "Project Manager",
+    "content": "We are looking for a Skilled & Talented Project Manager who loves to solve problems on the fly. You will be working with the Company Operations Lead on executing multiple projects & initiatives with tight deadlines. You will have to step in and create systems & processes for everything to flow smoothly.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-11",
+    "lang": "en",
+    "title": "Product Manager",
+    "content": "This person will contribute on a part-time volunteer basis and collaborate closely with the development team, define the product roadmap, manage development progress and align with stakeholders.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-12",
+    "lang": "en",
+    "title": "HR Business Partner",
+    "content": "Seeking a part-time, volunteer HR Partner to work as part of the management team.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-13",
+    "lang": "en",
+    "title": "Human Resources Administrative Assistant",
+    "content": "Seeking an individual to assist in all HR-related administrative tasks. This person will report directly to the Human Resources Team Lead.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-14",
+    "lang": "en",
+    "title": "Technical Recruiter",
+    "content": "Communicate with HR and Virufy leadership for the available positions and their requirements.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-15",
+    "lang": "en",
+    "title": "Corporate Attorney (IT Oriented)",
+    "content": "Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with Virufy management and globally-dispersed legal teams to help manage data privacy concerns for their local jurisdictions.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-16",
+    "lang": "en",
+    "title": "Paralegal",
+    "content": "Seeking an individual to contribute on a part-time volunteer basis and collaborate closely with the Virufy globally-dispersed legal team.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-17",
+    "lang": "en",
+    "title": "Business Analyst",
+    "content": "Business analysts are the drivers of our continued growth and success. With their commitment to innovation, these analysts seek, develop, and help implement strategic initiatives for improved efficiency and productivity.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-18",
+    "lang": "en",
+    "title": "Python Programmer",
+    "content": "Looking for Python Programmers",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-19",
+    "lang": "en",
+    "title": "Technical Writer",
+    "content": "Because of our commitment to client satisfaction, Virufy has grown into an industry leader. The driving force behind this commitment is an unwavering belief in clear and effective communications.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-20",
+    "lang": "en",
+    "title": "Quality Assurance Engineer",
+    "content": "We are a healthcare AI nonprofit startup focused on developing innovative solutions to combat COVID-19. Our mission is to leverage artificial intelligence and machine learning to create a mobile application that can detect the presence of COVID-19 through analysis of cough sounds.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-21",
+    "lang": "en",
+    "title": "AWS Developer",
+    "content": "We are seeking an experienced AWS Developer to join our team. The ideal candidate will possess a strong background in building scalable, reliable, and maintainable services on AWS. You will collaborate with cross-functional teams to design, develop, and deploy applications and services on the AWS platform.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-22",
+    "lang": "en",
+    "title": "AWS Architect",
+    "content": "This Technical Architect will join a modernization effort from Monolithic architecture to Cloud based systems. This Architect will be providing technical leadership across multiple teams within our client’s organization to help establish standards, tools and help other teams gain perspective.",
+    "url": "/en/join-us"
+  },
+  {
+    "id": "en-job-23",
+    "lang": "en",
+    "title": "AWS Engineer",
+    "content": "Virufy is on the lookout for an AWS Engineer willing to contribute on a volunteer basis. This role offers the chance to immerse oneself in cloud computing and infrastructure, especially within the Amazon Web Services environment, while making a meaningful impact.",
+    "url": "/en/join-us"
+  },
+
+  {
+    "id": "en-about-advisors",
+    "lang": "en",
+    "title": "Advisors",
+    "content": "Meet the esteemed advisors behind Virufy, who guide our vision and strategy with deep expertise in healthcare, technology, and public impact.",
+    "url": "/en/advisors"
+  },
+  {
+    "id": "en-about-supporters",
+    "lang": "en",
+    "title": "Our Supporters",
+    "content": "Explore the global community of individuals and organizations supporting Virufy's mission through mentorship, sponsorship, and collaboration.",
+    "url": "/en/supporters"
+  },
+  {
+    "id": "en-about-oyw",
+    "lang": "en",
+    "title": "One Young World",
+    "content": "Virufy's connection with the One Young World community fosters youth-driven leadership in global health innovation.",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-media-news",
+    "lang": "en",
+    "title": "News",
+    "content": "Stay updated with the latest press releases and media coverage featuring Virufy's breakthroughs and partnerships.",
+    "url": "/en/news"
+  },
+  {
+    "id": "en-media-publications",
+    "lang": "en",
+    "title": "Publications",
+    "content": "Read our peer-reviewed research and published articles showcasing the scientific foundation of our AI technology.",
+    "url": "/en/publications"
+  },
+
+  {
+    "id": "en-news-dubai-2024",
+    "lang": "en",
+    "title": "News",
+    "content": "Virufy to Showcase Innovative COVID-19 Screening Technology at Prototypes for Humanity 2024 in Dubai",
+    "url": "/en/news/press-release-dubai"
+  },
+  {
+    "id": "en-news-beta-app-2023",
+    "lang": "en",
+    "title": "News",
+    "content": "Virufy Beta App Launched in Colombia, Providing At-Home COVID-19 Detection to 4,500 Users",
+    "url": "/en/news/beta-app-release-2023"
+  },
+  {
+    "id": "en-news-barda-2022",
+    "lang": "en",
+    "title": "News",
+    "content": "BARDA supports development of novel AI/ML-based digital apps for visual and auditory symptomatic infectious disease detection",
+    "url": "https://medicalcountermeasures.gov/newsroom/2022/ai_ml/"
+  },
+  {
+    "id": "en-news-forbes-2021",
+    "lang": "en",
+    "title": "News",
+    "content": "Esta app busca diagnosticar Covid-19 con sólo toser frente al teléfono",
+    "url": "https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/"
+  },
+  {
+    "id": "en-news-americatv-2021",
+    "lang": "en",
+    "title": "News",
+    "content": "COVID-19: Aplicativo Virufy puede diagnosticar el virus mediante el análisis de la tos",
+    "url": "https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332"
+  },
+  {
+    "id": "en-news-expreso-2020",
+    "lang": "en",
+    "title": "News",
+    "content": "VIRUFY: plataforma que permite detectar si estamos contagiados con COVID-19",
+    "url": "https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/"
+  },
+  {
+    "id": "en-news-oywj-ai-2020",
+    "lang": "en",
+    "title": "News",
+    "content": "One Young World Japan Ambassador Targets COVID-19 Using A.I.",
+    "url": "https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
+  },
+  {
+    "id": "en-news-oyw-frontlines-2020",
+    "lang": "en",
+    "title": "News",
+    "content": "North American Ambassadors on the Frontlines of the COVID-19 Response",
+    "url": "https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response"
+  },
+  {
+    "id": "en-news-ambassadors-july-2020",
+    "lang": "en",
+    "title": "News",
+    "content": "Ambassadors of the Month July",
+    "url": "https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month"
+  },
+  {
+    "id": "en-news-digital-events-july-2020",
+    "lang": "en",
+    "title": "News",
+    "content": "Thousands attend OYW's global digital events in July: A recap of what you've missed",
+    "url": "https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed"
+  },
+  {
+    "id": "en-news-tokyo-caucus-2020",
+    "lang": "en",
+    "title": "News",
+    "content": "One Young World Tokyo 2020 Caucus",
+    "url": "https://www.oneyoungworld.com/event/one-young-world-tokyo-caucus-2020"
+  },
+  {
+    "id": "en-news-virufy-presentation-oyw-2020",
+    "lang": "en",
+    "title": "News",
+    "content": "Virufy Presentation to One Young World Tokyo 2020 Cacus",
+    "url": "https://youtu.be/UZU3rPTEPfU"
+  },
+  {
+    "id": "en-publications-hierarchical-transformer-2022",
+    "lang": "en",
+    "title": "Publications",
+    "content": "Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19",
+    "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
+  },
+  {
+    "id": "en-publications-calculator-impact-2022",
+    "lang": "en",
+    "title": "Publications",
+    "content": "Covid 19 Calculator -- Positive U.S. Socio-Economic Impact",
+    "url": "https://arxiv.org/abs/2201.11109"
+  },
+  {
+    "id": "en-publications-deep-learning-datasets-2022",
+    "lang": "en",
+    "title": "Publications",
+    "content": "Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough",
+    "url": "https://arxiv.org/abs/2201.01669"
+  },
+  {
+    "id": "en-publications-challenges-ai-2021",
+    "lang": "en",
+    "title": "Publications",
+    "content": "Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
+  },
+  {
+    "id": "en-publications-virufy-crowdsourced-2020",
+    "lang": "en",
+    "title": "Publications",
+    "content": "Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from Cough",
+    "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
+  },
+  {
+    "id": "en-our-supporters-list",
+    "lang": "en",
+    "title": "Our Supporters",
+    "content": "H4R, AWS, Drive, One Young World, Pillsbury, University Fukui, Idime, CJ Partners, Xoor, Sherlock Communications, Nuvu, SPI, Devlights, Fenwick, Olarte Moure, Locked Jar, Response Innovation Lab, Takemoto Lab, Life Science Washington, Candido Costa & Cancio, Arkangel Ai, Nexus Tax Services",
+    "url": "/en/supporters"
+  },
+  {
+    "id": "en-supporters-contact-message",
+    "lang": "en",
+    "title": "Our Supporters",
+    "content": "Your help is important to us, please fill in your data and we will contact you as soon as possible.",
+    "url": "/en/supporters"
+  },
+  {
+    "id": "en-advisor-kara-meister",
+    "lang": "en",
+    "title": "Kara Meister, M.D.",
+    "content": "Clinical Advisor (Clinical Assistant Professor of ENT Stanford School of Medicine)",
+    "url": "https://www.linkedin.com/in/kara-meister-200335110/"
+  },
+  {
+    "id": "en-advisor-jure-leskovec",
+    "lang": "en",
+    "title": "Dr. Jure Leskovec",
+    "content": "Artificial Intelligence Advisor (Chief Scientist - Pinterest & Associate Professor of AI - Stanford)",
+    "url": "https://www.linkedin.com/in/leskovec/"
+  },
+  {
+    "id": "en-advisor-jesse-bump",
+    "lang": "en",
+    "title": "Jesse Bump, Ph.D., MPH, FRSA",
+    "content": "Population Health Advisor (Department of Global Health and Population - Harvard T.H. Chan School of Public Health)",
+    "url": "https://www.hsph.harvard.edu/jesse-bump/"
+  },
+  {
+    "id": "en-advisor-melissa-dyrdahl",
+    "lang": "en",
+    "title": "Melissa Dyrdahl",
+    "content": "Executive Marketing Advisor (Former CMO - Adobe & Board Member - CommonSpirit Health)",
+    "url": "https://dci.stanford.edu/melissa-dyrdahl/"
+  },
+  {
+    "id": "en-advisor-kutsuna-satoshi",
+    "lang": "en",
+    "title": "Kutsuna Satoshi",
+    "content": "Executive Clinical Advisor (Infection Control and Prevention Professor - Osaka University)",
+    "url": "https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection"
+  },
+  {
+    "id": "en-advisor-madhav-datt",
+    "lang": "en",
+    "title": "Madhav Datt",
+    "content": "Executive Nonprofit Advisor (Founder - Green the Gene & Former Global Representative for Youth - UN EP & MBA, Harvard Business School)",
+    "url": "https://www.linkedin.com/in/madhavdatt/"
+  },
+  {
+    "id": "en-advisor-may-xu",
+    "lang": "en",
+    "title": "May Xu",
+    "content": "Data and AI Product Strategy Advisor (Founder / Executive Coach & M.S. - Stanford University)",
+    "url": "https://www.linkedin.com/in/may-xu-bb06934"
+  },
+  {
+    "id": "en-advisor-zafar-shahid",
+    "lang": "en",
+    "title": "Zafar Shahid",
+    "content": "Technology Advisor – Green AI Leader (ex-NVIDIA, ex-Meta), Ph.D. Multimedia Forensics, University of Montpellier",
+    "url": "https://zafarshahid.com/"
+  },
+  {
+    "id": "en-advisor-rafi-azim-khan",
+    "lang": "en",
+    "title": "Rafi Azim-Khan",
+    "content": "Executive Legal Advisor (Partner, Head of Digital Law, Europe', 'Crowell & Moring LLP)",
+    "url": "https://www.crowell.com/en/professionals/rafi-azim-khan"
+  },
+  {
+    "id": "en-advisor-ronan-dunlop",
+    "lang": "en",
+    "title": "Ronan Dunlop",
+    "content": "Executive Marketing Advisor (Former Head of Marketing - Pivotal/VMWare & VP of Marketing - Cohuman)",
+    "url": "https://www.linkedin.com/in/rdunlop/"
+  },
+  {
+    "id": "en-advisor-mark-haseltine",
+    "lang": "en",
+    "title": "Mark Haseltine",
+    "content": "Executive Advisor (Former CTO/CPO - edX, GoDaddy & Computer Science alumnus - MIT)",
+    "url": "https://www.linkedin.com/in/mhaseltine/"
+  },
+  {
+    "id": "en-advisor-faisal-cheema",
+    "lang": "en",
+    "title": "Faisal Cheema",
+    "content": "Executive Clinical Advisor (Associate Professor of Biomedical & Clinical Sciences, Tilman J. Fertitta College of Medicine, University of Houston)",
+    "url": "https://www.linkedin.com/in/doccheema/"
+  },
+  {
+    "id": "en-advisor-mert-pilanci",
+    "lang": "en",
+    "title": "Mert Pilanci",
+    "content": "Artificial Intelligence Advisor (Asst. Professor of AI - Stanford University, Electrical Engineering)",
+    "url": "https://stanford.edu/~pilanci/"
+  },
+  {
+    "id": "en-advisor-tetsuji-madarame",
+    "lang": "en",
+    "title": "Tetsuji Madarame",
+    "content": "Principal Fellow, Tech Planning, Japan Freight Railway (Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC & MBA - Stanford GSB)",
+    "url": "https://www.linkedin.com/in/tetsuji-madarame-6a337916b"
+  },
+  {
+    "id": "en-advisor-yukitoshi-nakatani",
+    "lang": "en",
+    "title": "Yukitoshi Nakatani",
+    "content": "Japan Executive Advisor (CEO, IT Value Consulting & Former Director, Accenture Japan)",
+    "url": "https://www.facebook.com/nakatani.yukitoshi"
+  },
+  {
+    "id": "en-advisor-victor-wang",
+    "lang": "en",
+    "title": "Victor Wang",
+    "content": "Executive Advisor (Founder & Chairman - China Silicon Valley & MBA - Stanford GSB)",
+    "url": "https://www.linkedin.com/in/executivestanfordvictorwang/"
+  },
+  {
+    "id": "en-advisor-adam-leipzig",
+    "lang": "en",
+    "title": "Adam Leipzig",
+    "content": "Executive Advisor (CEO, Entertainment Media Partners & Former President, National Geographic Films & Professional Faculty, Berkeley Haas School of Business)",
+    "url": "https://www.linkedin.com/in/adamleipzig/"
+  },
+  {
+    "id": "en-advisor-rok-sosic",
+    "lang": "en",
+    "title": "Rok Sosic",
+    "content": "Artificial Intelligence Advisor (Senior Research Engineer & Stanford School of Engineering)",
+    "url": "https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao"
+  },
+  {
+    "id": "en-advisor-richard-nall",
+    "lang": "en",
+    "title": "Richard Nall",
+    "content": "Marketing Advisor (CEO - The Brand Garden & Master's Organizational Leadership - Henley)",
+    "url": "https://www.linkedin.com/in/richardnall/"
+  },
+  {
+    "id": "en-advisor-khwaja-shaik",
+    "lang": "en",
+    "title": "Khwaja Shaik",
+    "content": "Chief Technology Officer - IBM (MOSH, Vice Chair, Board Member & Board Member - University of North Florida Computing)",
+    "url": "https://www.linkedin.com/in/khwajashaik/"
+  },
+  {
+    "id": "en-advisor-ayomide-owoyemi",
+    "lang": "en",
+    "title": "Ayomide Owoyemi",
+    "content": "Executive Clinical Advisor (PhD Biomedical Sciences - University of Illinois Chicago & Ambassador - One Young World Nigeria)",
+    "url": "https://www.linkedin.com/in/ayomide-owoyemi/"
+  },
+  {
+    "id": "en-advisor-tsutomu-ito",
+    "lang": "en",
+    "title": "Tsutomu Ito",
+    "content": "Executive Visionary Advisor (Founder - Tannan FM Radio & Lead Architect, Bullet Train)",
+    "url": "http://tannan.fm/contents/about-us.html"
+  },
+  {
+    "id": "en-advisor-les-atlas",
+    "lang": "en",
+    "title": "Dr. Les Atlas",
+    "content": "Audio and Machine Learning Advisor (Professor of Electrical and Computer Engineering - University of Washington & Ph.D. Electrical Engineering, Stanford)",
+    "url": "https://people.ece.uw.edu/atlas/"
+  },
+  {
+    "id": "en-advisor-nobuyo-ozawa",
+    "lang": "en",
+    "title": "Nobuyo Ozawa",
+    "content": "Japan Clinical Development Lead (Clinical Development Department Group Manager, CRO)",
+    "url": "https://www.linkedin.com/in/nobuyo-ozawa-223707113"
+  },
+  {
+    "id": "en-advisor-hiroyuki-kunishima",
+    "lang": "en",
+    "title": "Hiroyuki Kunishima",
+    "content": "Infectious Diseases Advisor (Department of Infectious Diseases, St. Marianna University Hospital)",
+    "url": "http://www.k-icnet.org/profile.html"
+  },
+  {
+    "id": "en-advisor-fumihiko-yokota",
+    "lang": "en",
+    "title": "Fumihiko Yokota",
+    "content": "Public Health Advisor (Associate Professor of Epidemiology, Kyushu University)",
+    "url": "https://q-aos.kyushu-u.ac.jp/en/staff/1770/"
+  },
+  {
+    "id": "en-advisor-kohei-wakamiya",
+    "lang": "en",
+    "title": "Kohei Wakamiya",
+    "content": "Audio AI Advisor (Acoustic Design Assistant Professor - Kyushu University)",
+    "url": "https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html"
+  },
+  {
+    "id": "en-advisor-tamer-fahmy",
+    "lang": "en",
+    "title": "Tamer Fahmy",
+    "content": "Middle East & Africa Market Advisor (Former Dräger/Philips MedTech - Sleep & Respiratory Care & MBA, SP Jain School of Global Management & BSc Biomedical Engineering, Cairo University)",
+    "url": "https://ae.linkedin.com/in/tamer-fahmy-b4468614"
+  },
+  {
+    "id": "en-advisor-shirin-hasan",
+    "lang": "en",
+    "title": "Shirin Hasan",
+    "content": "Clinical, Medical, Regulatory Affairs Advisor (Former Head of Clinical Affairs, Medtronic & M.S., Biochemistry, SJSU/Stanford)",
+    "url": "https://www.linkedin.com/in/shirinhasan/"
+  },
+  {
+    "id": "en-advisor-glenn-muschert",
+    "lang": "en",
+    "title": "Prof. Glenn Muschert",
+    "content": "Social Science & Public Policy Advisor – Professor, Public Health & Epidemiology, Khalifa University, UAE; Ph.D. Sociology - University of Colorado, Boulder",
+    "url": "https://www.ku.ac.ae/college-people/glenn-muschert"
+  },
+  {
+    "id": "en-advisor-thomas-mahoney",
+    "lang": "en",
+    "title": "Thomas Mahoney",
+    "content": "Business & Public Health Advisor – Department Associate, Infectious Diseases Department, Harvard University; MBA, The Wharton School, University of Pennsylvania",
+    "url": "https://www.linkedin.com/in/tom-mahoney-lifesci/"
+  },
+  {
+    "id": "en-advisor-amil-khanzada",
+    "lang": "en",
+    "title": "Amil Khanzada",
+    "content": "Founder (Doctorate of Engineering Candidate, University of Fukui, Japan & Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley)",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-oyw-amil-khanzada",
+    "lang": "en",
+    "title": "Amil Khanzada",
+    "content": "OYW Ambassador, Japan (Virufy Founder & Leader)",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-madhav-datt",
+    "lang": "en",
+    "title": "Madhav Datt",
+    "content": "OYW Ambassador, India (Virufy Advisor)",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-marcos-deza",
+    "lang": "en",
+    "title": "Marcos Deza",
+    "content": "OYW Ambassador, Argentina (Virufy Digital Communications)",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-yulie-qiao",
+    "lang": "en",
+    "title": "Yulie Qiao",
+    "content": "2021 OYW bp Delegate (Virufy Operations)",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-ayomide-owoyemi-md",
+    "lang": "en",
+    "title": "Ayomide Owoyemi, MD",
+    "content": "2021 OYW Novartis Delegate, Nigeria (Virufy Machine Learning Clinical Statistics)",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-shreya-sreeram-md",
+    "lang": "en",
+    "title": "Shreya Sreeram, MD",
+    "content": "2021 Virufy Delegate, India (Virufy Clinical Research)",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-laura-velasquez",
+    "lang": "en",
+    "title": "Laura Velasquez",
+    "content": "OYW Johnson & Johnson Delegate, Colombia (Arkangel AI Co-founder and President & Virufy Partner)",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-nathan-thomas",
+    "lang": "en",
+    "title": "Nathan Thomas",
+    "content": "OYW Coordinating Ambassador, USA",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-jason-pareja-jauregui",
+    "lang": "en",
+    "title": "Jason Pareja Jauregui",
+    "content": "OYW Coordinating Ambassador LATAM, Peru",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-katherine-ortiz-leon",
+    "lang": "en",
+    "title": "Katherine Thalia Ortiz Leon",
+    "content": "OYW Ambassador, Peru",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-gonzalo-roiffe",
+    "lang": "en",
+    "title": "Gonzalo Roiffe",
+    "content": "OYW Ambassador, Argentina",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-annelisse-torrez-daza",
+    "lang": "en",
+    "title": "Annelisse Torrez Daza",
+    "content": "OYW Ambassador, Bolivia",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-veronica-guzman-quilqueo",
+    "lang": "en",
+    "title": "Veronica Guzman Quilqueo",
+    "content": "OYW Ambassador, Chile",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-sebastian-pedraza",
+    "lang": "en",
+    "title": "Sebastian Pedraza",
+    "content": "OYW Ambassador, Colombia",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-kenmaru-suedomi",
+    "lang": "en",
+    "title": "Kenmaru Suedomi",
+    "content": "OYW Ambassador, Japan",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-kapil-narain-md",
+    "lang": "en",
+    "title": "Kapil Narain, MD",
+    "content": "OYW Ambassador, South Africa",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-leonard-burhz",
+    "lang": "en",
+    "title": "Leonard Burhz",
+    "content": "OYW Ambassador, Ireland",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-allana-doyle",
+    "lang": "en",
+    "title": "Allana Doyle",
+    "content": "Ambassador OYW, EE.UU11",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-kavya-madhaven",
+    "lang": "en",
+    "title": "Kavya Madhaven",
+    "content": "OYW Ambassador",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-share-your-cough-study",
+    "lang": "en",
+    "title": "Cough Data Collection Study",
+    "content": "An Independent Nonprofit Research Organization",
+    "url": "https://virufy.org/study/welcome"
+  },
+  {
+    "id": "en-oyw-intro",
+    "lang": "en",
+    "title": "One Young World",
+    "content": "Virufy & One Young World\nOur world needs great leadership. The new generation is one of the most informed, educated and well connected generations in world history. One Young World identifies, promotes and connects the most impactful young leaders across the globe to create a better world: a world with more responsible and effective leadership.\nVirufy has been featured on various OYW platforms, including in the Americas and Japan, ambassadors in action, delegate conferences, and ambassadors on the frontline for COVID-19 response. We are also collaborating with OYW coordinating ambassadors across various regions for outreach efforts.",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-oyw-why",
+    "lang": "en",
+    "title": "Why One Young World?",
+    "content": "Ambassador driven, Youth led, Focused on global impact, Diverse representation. Our organization structure matches One Young World with youth ambassadors coordinating operations in each region. Our growing team is led by young professionals from over a dozen countries with close advisory from global industry leaders. Our aim from day one has been to provide equitable solutions for all people in all countries across the world. Our team has representation from over 50 universities and 25 countries and has received support from dozens of One Young World ambassadors.",
+    "url": "/en/one-young-world"
+  },
+  {
+    "id": "en-paper-virufy-collection",
+    "lang": "en",
+    "title": "Virufy Papers",
+    "content": "Visit here to learn more about papers published by Virufy.",
+    "url": "/en/papers"
+  },
+  {
+    "id": "en-paper-hierarchical-multimodal-transformer",
+    "lang": "en",
+    "title": "Papers",
+    "content": "Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19",
+    "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
+  },
+  {
+    "id": "en-paper-deep-learning-aggregated-datasets",
+    "lang": "en",
+    "title": "Papers",
+    "content": "Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough",
+    "url": "https://arxiv.org/abs/2201.01669"
+  },
+  {
+    "id": "en-paper-covid19-calculator-impact",
+    "lang": "en",
+    "title": "Papers",
+    "content": "Covid 19 Calculator -- Positive U.S. Socio-Economic Impact",
+    "url": "https://arxiv.org/abs/2201.11109"
+  },
+  {
+    "id": "en-paper-deploying-cough-ai-systems",
+    "lang": "en",
+    "title": "Papers",
+    "content": "Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
+  },
+  {
+    "id": "en-paper-global-applicability-ai-cough",
+    "lang": "en",
+    "title": "Papers",
+    "content": "Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from Cough",
+    "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
+  },
+  {
+    "id": "en-paper-complex-clipping-ml",
+    "lang": "en",
+    "title": "Papers",
+    "content": "Complex Clipping for Improved Generalization in Machine Learning",
+    "url": "https://arxiv.org/abs/2302.13527"
+  }
+
+
+
+]
+
+
+
+
+
+
+
+
+
+
+

@@ -1,23 +1,20 @@
-// import { NewsCard } from '@/i18n-config';
-
-// Define PublicationCard interface (replace with actual properties if needed)
 export interface PublicationCard {
-  // Add properties here as required
   title: string;
   url: string;
 }
 
-export interface PressReleases {
-  pressReleaseSection: PressReleaseSection;
-  pressReleaseCards: NewsCard[];
+export interface NewsCard extends PublicationCard {
+  date: string;       // or Date
+  subText: string;
+  linkText?: string;  // for button text (e.g., "Read more")
+  year?: number;
 }
 
 export interface PressReleaseSection {
   title: string;
 }
 
-export interface NewsCard extends PublicationCard {
-  date: any;
-  subText: string;
-  year?: number;
+export interface PressReleases {
+  pressReleaseSection: PressReleaseSection;
+  pressReleaseCards: NewsCard[];
 }

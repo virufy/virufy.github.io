@@ -1,0 +1,9 @@
+/clinic/      /clinic/index.html  200
+/demo/*        /demo/index.html    200
+/elderlycare/* /elderlycare/index.html 200
+/study/*       /study/index.html   200
+/join          /join-us            301
+/team          /advisors           301
+/apply         https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform 301
+/privacy_policy /privacy-policy 301
+/halfmydaf      https://docs.google.com/document/d/1uDY8EqbnAyb0xdc2v19IEHGys6jlTyZS8a-v3ES4Y8o/edit?usp=sharing    301

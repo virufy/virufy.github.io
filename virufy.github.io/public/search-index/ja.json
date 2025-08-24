@@ -1,0 +1,1069 @@
+﻿[
+  {
+    "id": "ja-ai-hero",
+    "lang": "ja",
+    "title": "Virufyの科学的根拠",
+    "content": "人工知能（AI）は声のパターンの微細な違いを検出することで、病気の存在を特定する能力があります。私たちの研究",
+    "url": "/ja/ai"
+  },
+  {
+    "id": "ja-ai-01",
+    "lang": "ja",
+    "title": "AIはどのように機能するのか？ - 01",
+    "content": "私たちの革新的なアプリは、ディープラーニングアルゴリズムと音声信号処理技術を使用して、あなたの呼吸パターンを分析する最先端のAI技術を採用しています。",
+    "url": "/ja/ai"
+  },
+  {
+    "id": "ja-ai-02",
+    "lang": "ja",
+    "title": "AIはどのように機能するのか？ - 02",
+    "content": "このアルゴリズムは咳の持続時間、頻度、音程などの要素を精査します。包括的なデータベースを活用し、AIは録音された咳のパターンを既知の呼吸器疾患の指標と詳細に比較することで、健康問題の早期発見を可能にします。",
+    "url": "/ja/ai"
+  },
+  {
+    "id": "ja-ai-publications",
+    "lang": "ja",
+    "title": "私たちの研究",
+    "content": "声のパターンを用いた疾患検出に関する私たちの研究論文およびAI研究。",
+    "url": "/ja/publications"
+  },
+  {
+    "id": "ja-amilsStory-bio-1",
+    "lang": "ja",
+    "title": "アミルの幼少期",
+    "content": "移民家庭に生まれシリコンバレーで育ったアミルは、ホームスクーリングを受け、14歳でコミュニティカレッジに通い始めました。アミルの父の社会奉仕への献身は彼に影響を与え、ホームレスへの炊き出しなどのボランティア活動に満ちた子供時代を送りました。その後、父は飲酒運転による事故で亡くなりました。英雄のような父を失い心に傷を抱えながらも、アミルはK-12学校でのテストを自動採点する画像認識技術の開発に従事するソフトウェアコンサルタントとして初の仕事に就きました。",
+    "url": "/ja/amils-story"
+  },
+  {
+    "id": "ja-amilsStory-bio-2",
+    "lang": "ja",
+    "title": "プロとしての旅",
+    "content": "アミルはカリフォルニア大学バークレー校でコンピュータサイエンスの学士号を取得した後、HPのシリコンバレー本社でセキュリティログ標準化ソフトウェアの開発に携わるソフトウェアエンジニアとして勤務しました。その後、東京本社に移り、サイバーセキュリティコンサルタントとして香港・東京・オーストラリアを訪れ、銀行業界の顧客向けにSIEMソリューションを導入しました。",
+    "url": "/ja/amils-story"
+  },
+  {
+    "id": "ja-amilsStory-pivotal",
+    "lang": "ja",
+    "title": "Pivotalでの仕事",
+    "content": "アミルはシリコンバレーに戻り、Pivotal SoftwareにてPostgresベースのオープンソースGreenplum OLAPデータベースの開発に従事。XP環境下で、ペアプログラミング、TDD、週次の振り返りミーティングなど、複数のチームをローテーションで経験しました。",
+    "url": "/ja/amils-story"
+  },
+  {
+    "id": "ja-amilsStory-zen",
+    "lang": "ja",
+    "title": "日本での生活",
+    "content": "2018年、アミルは仕事を離れ、曹洞宗の発祥地である永平寺町に移住しました。彼は毎日瞑想を行い、禅の哲学を学びつつ、若者たちにアジャイルプログラミングを教える活動に従事。後に町のエボリューション・アンバサダーに任命され、オランダで開催されたOne Young World会議に日本代表として参加しました。",
+    "url": "/ja/amils-story"
+  },
+  {
+    "id": "ja-amilsStory-virufy",
+    "lang": "ja",
+    "title": "Virufyの創設",
+    "content": "2019年後半、アミルはスタンフォード大学でAIの大学院研究を行うために退職。パンデミックが発生すると、アミルは救済活動に専念し、AIによる音声・咳の分析でCOVID-19のスクリーニングを行うアプリを開発する非営利団体Virufyを創設しました。",
+    "url": "/ja/amils-story"
+  },
+  {
+    "id": "ja-amilsStory-virufy-scale",
+    "lang": "ja",
+    "title": "Virufyの世界的展開",
+    "content": "2024年7月現在、Virufyは3大陸で展開され、250人以上のボランティアと60のパートナー団体が活動しています。",
+    "url": "/ja/amils-story"
+  },
+  {
+    "id": "ja-amilsStory-publications",
+    "lang": "ja",
+    "title": "アミルの論文",
+    "content": "2022年: 咳によるCOVID-19分類のための大規模集約データセットを用いた深層学習。2021年: COVID-19予備スクリーニングソリューションの米国における社会経済的影響測定。2020年: 咳音によるCOVID-19のAI検出の世界的応用性。2020年: Fusical、マルチモーダル感情分析。2020年: 深層学習による表情認識。",
+    "url": "/ja/amils-story"
+  },
+  {
+    "id": "ja-faq-app-result-time",
+    "lang": "ja",
+    "title": "アプリはいつ、どのようにして上気道感染症の予測結果を提供しますか?",
+    "content": "当社のアプリは現在、データ収集のみを目的としています。各国の公衆衛生当局の承認と、現地の状況におけるAI技術の有効性を検証するための臨床研究がなければ、上気道感染症予測アプリをリリースすることはできません。このプロセスは、政府パートナーのスピードに応じて数週間から数ヶ月かかる場合があります。Virufyは、この技術を人々に無料で提供し、高額なPCR検査を必要な場合にのみ最適化するために、保健当局や病院とのパートナーシップを歓迎します。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-app-availability",
+    "lang": "ja",
+    "title": "アプリはiOSまたはAndroidで利用可能ですか？",
+    "content": "当アプリはWebアプリとして設計されており、モバイル端末のブラウザからアクセスできます。別途インストールの必要はありません。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-app-free-worldwide",
+    "lang": "ja",
+    "title": "アプリは無償で世界中で利用可能になりますか？",
+    "content": "Virufyは501(c)(3)の非営利団体であり、低所得国の支援を目的として無料での提供を計画しています。ただし、資金が不足する場合は運営のための名目料金を請求する可能性もあります。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-app-for-profit",
+    "lang": "ja",
+    "title": "このアプリを営利企業に発展させる計画はありますか？",
+    "content": "Virufyは非営利団体ですが、必要に応じて企業との提携を通じて迅速な展開を目指す可能性はあります。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-initiative-created",
+    "lang": "ja",
+    "title": "この取り組みはどのようにして始まったのですか？",
+    "content": "パンデミックが発生した際、Virufyの創設者アミルはスマートフォンが普及しており、COVIDが鼻、喉、肺に影響を及ぼすことを知っていました。彼は呼吸音や咳音を機械学習で解析することでCOVIDのパターンを検出できると仮説を立てました。前向きな影響を与えたいと考えた彼は、著名な大学病院で362人の患者を対象とした臨床研究を実施しました。スタンフォード大学のAI大学院生から始まったVirufyのチームは、世界中の大学からのボランティアに拡大しました。25か国以上を訪れた経験を持つOne Young World Japanのアンバサダーとして、アミルはグローバルな視点を理解し、スマートフォンベースのソリューションが世界中の人々に利用できる方法を知っています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-virufy-difference",
+    "lang": "ja",
+    "title": "Virufy は、同様の事業に取り組んでいる他の取り組みとどう違うのでしょうか?",
+    "content": "Virufyは501(c)(3)の非営利団体であるため、優秀な専門家をボランティアとして募集することができます。当チームは世界5大陸にまたがり、グローバルな共感力を備えた組織です。利益を追求していないため、発展途上国でも活動可能です。多くの大学の卒業生ネットワークと専門家のつながりにより、世界中でトップレベルの関係者にアクセスできます。組織内にはメンター制度も整備されており、経験豊富な専門家の助言によって若いプロフェッショナルたちが急速かつ創造的に活動できるようになっています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-investigation-phase",
+    "lang": "ja",
+    "title": "今、どの段階にありますか？参加期限はありますか？",
+    "content": "私たちはパートナーシップの構築、モバイルアプリの開発、カリフォルニア州での非営利団体登録、そして数十か国のデータプライバシー法に準拠するための方針整備に大きな努力を費やしてきました。データ収集アプリは転換点にあり、プライバシーと技術の主要な課題の多くに対処済みです。すでにプライバシー、情報セキュリティ、UI/UX、拡張可能なAWSバックエンドインフラを整備済みです。25万人以上の患者からのデータを収集し、AIの助けを借りてソリューションを構築中です。期限はなく、助成金、ボランティア、臨床データを提供できるパートナーを常に歓迎しています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-virufy-unique",
+    "lang": "ja",
+    "title": "Virufy が他の組織と比べて独特な点は何ですか?",
+    "content": "Virufyは多様でグローバルなチームとともに若い組織として活動しており、25以上の大学の卒業生で構成されています。法律、機械学習、医学、情報セキュリティ、モバイルアプリ開発などの分野にわたる専門性を持った多職種のチームです。One Young Worldのネットワークにより、世界中の信頼できるパートナーとつながることができます。501(c)(3)の非営利であるため、ボランティアが参加しやすく、官僚的な制約も少ない独立した団体です。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-investment",
+    "lang": "ja",
+    "title": "Virufy イニシアチブを実現するためにどれだけの投資が行われましたか?",
+    "content": "1,000人以上のボランティアが数千時間をこのプロジェクトに捧げてきました。いくつかの企業は、メール、ストレージ、メッセージング、クラウドコンピューティングなどのソフトウェアを無償で提供してくれました。ただし、ビデオ会議やプロジェクト管理ツールなど一部のソフトウェアは有料であり、これらは創設者アミルの限られた貯金から支払われています。成功すればクラウドコストは増加しますが、助成金や寄付、政府の支援により運営を継続できると信じています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-ai-coughs",
+    "lang": "ja",
+    "title": "上気道感染症の咳はなぜ区別できるのでしょうか?",
+    "content": "COVID-19は他の呼吸器疾患と同様に喉や肺を損傷するため、咳のパターンに検出可能な違いが生まれます。これにより、咳音を分析してCOVID-19や他の呼吸器疾患を特定できます。世界中の名門大学、たとえばカーネギーメロン大学（CMU）、MIT、ケンブリッジ大学などでもこの研究が進められています。ケンブリッジ大学の研究では、単純な機械学習分類器が咳音と呼吸音からCOVID-19陽性を高精度で分類できることが示されました。CMUの研究者たちは、COVID-19陽性患者を識別する18の音声特徴を発見し、精度の高い学術モデルを構築しました。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-ai-data-challenges",
+    "lang": "ja",
+    "title": "データ収集と処理での主な課題は何でしたか？AIの精度が地域によって異なることはありましたか？",
+    "content": "病院からのデータ収集は、臨床研究フォームや倫理審査委員会（IRB）の承認が必要なため、時間がかかり煩雑です。ハーバードやスタンフォードの医学顧問の監督の下、5か国で25万人以上の患者を臨床研究に登録しました。ユーザーから直接収集するために、LGPD、GDPR、CCPAなどのデータプライバシー法に準拠するため、プロボノ弁護士と多くの努力を費やしました。研究論文に記載されている通り、処理における課題の一部は、過剰な背景音やユーザーによる不正確な咳の録音であり、AI開発者が音声サンプルを手動でクリーンアップする必要がありました。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-ai-asymptomatic",
+    "lang": "ja",
+    "title": "無症状のケースも検出できますか？",
+    "content": "はい。MITやその他の研究グループにより、無症状の検出が可能であることが示されています。特に20〜30代の人々のように無症状の可能性が高い人々にとって重要です。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-ai-third-party",
+    "lang": "ja",
+    "title": "このアプリは他社が開発したAIを使用しますか？それとも独自開発ですか？",
+    "content": "Virufyには独自のAI研究チームがあり、特許取得済みの技術を使用しています。他の研究グループのAIアルゴリズムとの協力、共同開発、統合にも前向きです。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-finance-donate-cough",
+    "lang": "ja",
+    "title": "咳を提供するには金銭的な負担がありますか？",
+    "content": "Virufyは現在、特定の国のみで咳の収集を行っており、アプリ https://virufy.org/study に記載されています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-finance-cough-symptoms",
+    "lang": "ja",
+    "title": "咳の提供には実際に咳の症状が必要ですか？",
+    "content": "いいえ。アプリは強制的に咳をすることにも対応しています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-finance-total-donors",
+    "lang": "ja",
+    "title": "これまでに何人の寄稿者がいましたか？",
+    "content": "これまでに南米および南アジアを中心に、10か国以上から5,000以上の咳音の録音を収集しています。その一部は臨床的なものであり、一部はアプリを通じて個人から提供されました。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-finance-operational-expenses",
+    "lang": "ja",
+    "title": "組織の運営費はどのようなものですか？",
+    "content": "現在、完全にボランティアによって運営されています。主な予算はマーケティングおよび臨床研究（咳データ収集）に充てられます。大規模なユーザーベースに拡張した後は、計算処理にも資金が必要になると考えています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-finance-funding",
+    "lang": "ja",
+    "title": "チームは資金提供を受けていますか？もしそうなら、どこから、どれくらい、何に使われていますか？",
+    "content": "私たちはいくつかの大学と提携し、501(c)(3)のステータスを活用して研究開発助成金を申請しています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-privacy-data-storage",
+    "lang": "ja",
+    "title": "Virufy は私のデータをどのように安全に保存しますか？",
+    "content": "私たちは研究データ収集のために Amazon Web Services (AWS) を使用しています。AWS は制限付きアクセスと管理が施された安全なアプリケーションにデータを保存します。データは AWS に保存され、後に私たちがダウンロードし、制限付きアクセスのデータベースに保存されます。AWS のプライバシーポリシーについての詳細は https://aws.amazon.com/en/privacy をご覧ください。さらに詳しく知りたい場合は、Virufy のプライバシーポリシーをご参照ください。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-privacy-data-risk",
+    "lang": "ja",
+    "title": "咳の提供を通じて私のプライバシーが漏洩するリスクはありますか？",
+    "content": "私たちの強力な法務および情報セキュリティチームは、あなたのプライバシーに対する潜在的リスクや脅威に対応する DPIA（データ保護影響評価）を策定しています。個人データは匿名化され（本人特定ができない形）で保存され、安全な制限付きアクセスのデータベースに保管されます。詳しくは Virufy のプライバシーポリシーをご確認ください。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-privacy-policy",
+    "lang": "ja",
+    "title": "Virufy にはプライバシーポリシーとクッキーポリシーがありますか？",
+    "content": "Virufy は、あなたの個人情報のプライバシーと保護を非常に重視しています。当社の法務チームは、当ウェブサイトの利用、咳データ提供調査への参加、お問い合わせ、ボランティア申請などを通じて共有される個人情報を保護するための詳細なプライバシーポリシーおよびクッキーポリシーを策定しました。詳細はフッターをご参照ください。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-privacy-data-sharing",
+    "lang": "ja",
+    "title": "私のデータは第三者と共有されますか？",
+    "content": "あなたが連絡先情報（例：メールアドレス、電話番号）の共有に同意しない限り、個人を特定できる情報は一切第三者と共有されません。ただし、咳の音などの匿名化された情報は、COVID-19 や将来の感染症拡大を防ぐためのグローバルな研究促進を目的として共有されることがあります。詳細は、プライバシーポリシーおよびデータ提供調査の同意書をご参照ください。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-other-support-virufy",
+    "lang": "ja",
+    "title": "Virufy をさらに支援するには？",
+    "content": "チームに参加することができます。詳しくは募集情報ページをご覧ください。GoFundMe で支援することも可能です。また、提携に関してもお気軽にご連絡ください。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-other-distribution",
+    "lang": "ja",
+    "title": "配布はどのように行われ、Virufy はどのように普及しますか？",
+    "content": "アプリは低所得国の人々の利益のために提供され、自然に広まり普及していくことが期待されています。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-faq-other-more-questions",
+    "lang": "ja",
+    "title": "さらに質問がある場合は？",
+    "content": "詳細は、完全なプライバシーポリシー、クッキーポリシー、およびデータ収集アプリに埋め込まれている同意書をご覧ください。データ収集調査に関する質問は study@virufy.org、データ関連の問い合わせは open-data@virufy.org、その他のお問い合わせは info@virufy.org までご連絡ください。",
+    "url": "/ja/faq"
+  },
+  {
+    "id": "ja-home-intro",
+    "lang": "ja",
+    "title": "Virufyへようこそ",
+    "content": "Virufyへようこそ - あなたのデジタルヘルスパートナーです。Virufyは、先進的な音声および生成AIアルゴリズムを活用して呼吸パターンを分析し、潜在的な感染症の兆候を提供する最先端アプリです。",
+    "url": "/ja"
+  },
+  {
+    "id": "ja-home-how-it-works",
+    "lang": "ja",
+    "title": "仕組み",
+    "content": "デバイスのマイクに意図的に咳をするだけで、Virufyは人工知能の力を活用してCOVID-19、結核、インフルエンザ、RSウイルス、COPD、喘息などの呼吸器疾患に関連する独自の音声パターンを検出します。",
+    "url": "/ja"
+  },
+  {
+    "id": "ja-home-health-priority",
+    "lang": "ja",
+    "title": "あなたの健康が最優先",
+    "content": "Virufyでは、あなたの健康を最も大切にしています。私たちはプライバシーを重視し、あなたのデータが安全かつ機密に保たれるようにしています。",
+    "url": "/ja"
+  },
+  {
+    "id": "ja-home-health-feature-1",
+    "lang": "ja",
+    "title": "即時解析",
+    "content": "咳の音のパターンに基づき、その特徴と異常のプロファイルを迅速にフィードバックします。",
+    "url": "/ja"
+  },
+  {
+    "id": "ja-home-health-feature-2",
+    "lang": "ja",
+    "title": "自宅での匿名性",
+    "content": "あなたの結果はあなただけのものであることが保証され、安心して使用できます。",
+    "url": "/ja"
+  },
+  {
+    "id": "ja-home-health-feature-3",
+    "lang": "ja",
+    "title": "ユーザーフレンドリーなインターフェース",
+    "content": "直感的なデザインで、簡単に操作でき、スムーズなユーザー体験を提供します。",
+    "url": "/ja"
+  },
+  {
+    "id": "ja-home-demo",
+    "lang": "ja",
+    "title": "咳をシェアする",
+    "content": "咳を提供してAI解析を体験できるデモアプリをお試しください。",
+    "url": "/ja/study"
+  },
+  {
+    "id": "ja-job-1",
+    "lang": "ja",
+    "title": "ソフトウェアエンジニア",
+    "content": "当チームはパートタイムのボランティアで構成されており、医療分野の音声分析において機械学習、深層学習、信号分析に取り組んでいます。これらの分野での経験をお持ちの方の応募を歓迎します。候補者はAIエンジニアやメンターと協力する環境に身を置きます。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-2",
+    "lang": "ja",
+    "title": "機械学習エンジニア",
+    "content": "当チームはパートタイムのボランティアで構成されており、医療分野の音声分析において機械学習、深層学習、信号分析に取り組んでいます。これらの分野での経験をお持ちの方の応募を歓迎します。候補者はAIエンジニアやメンターと協力する環境に身を置きます。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-3",
+    "lang": "ja",
+    "title": "機械学習エンジニア（モデリング）",
+    "content": "当チームはパートタイムのボランティアで構成されており、医療分野の音声分析において機械学習、深層学習、信号分析に取り組んでいます。これらの分野での経験をお持ちの方の応募を歓迎します。候補者はAIエンジニアやメンターと協力する環境に身を置きます。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-4",
+    "lang": "ja",
+    "title": "音声信号処理エンジニア",
+    "content": "当チームはパートタイムのボランティアで構成されており、医療分野の音声分析において機械学習、深層学習、信号分析に取り組んでいます。これらの分野での経験をお持ちの方の応募を歓迎します。候補者はAIエンジニアやメンターと協力する環境に身を置きます。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-5",
+    "lang": "ja",
+    "title": "DevOpsエンジニア",
+    "content": "医療分野の音声分析において、機械学習、深層学習、信号処理に取り組むパートタイムのボランティアを募集しています。学生および経験のある専門家の応募を歓迎します。候補者は上級AIエンジニアやメンターと密接に連携する協力的な環境に身を置きます。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-6",
+    "lang": "ja",
+    "title": "情報セキュリティエンジニア",
+    "content": "内部のデータプライバシーの懸念を管理するために、管理チームおよび開発チームと密接に連携して、パートタイムのボランティアとして貢献できる個人を募集しています。場合によっては、有資格の上級弁護士によるメンタリングの下での活動になります。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-7",
+    "lang": "ja",
+    "title": "データプライバシーインターン",
+    "content": "地域の法律におけるデータプライバシーの問題を管理するために、Virufyの管理チームおよび世界中に分散した法務チームと密接に連携する、パートタイムのボランティアとして貢献できる個人を募集しています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-8",
+    "lang": "ja",
+    "title": "アソシエイトデータサイエンティスト",
+    "content": "当チームはパートタイムのボランティアで構成されており、医療分野の音声分析において機械学習、深層学習、信号分析に取り組んでいます。これらの分野での経験をお持ちの方の応募を歓迎します。候補者はAIエンジニアやメンターと協力する環境に身を置きます。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-9",
+    "lang": "ja",
+    "title": "ビジネスマネージャー",
+    "content": "Virufyの経営および開発チームと密接に連携し、事業、製品、財務の全体的な管理を支援するパートタイムのボランティアを募集しています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-10",
+    "lang": "ja",
+    "title": "プロジェクトマネージャー",
+    "content": "迅速な課題解決が得意な優秀なプロジェクトマネージャーを募集しています。運営責任者と連携して複数のプロジェクトや取り組みを厳しい期限内で遂行します。円滑な運営のためにシステムやプロセスを構築することが求められます。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-11",
+    "lang": "ja",
+    "title": "プロダクトマネージャー",
+    "content": "開発チームと密接に連携し、プロダクトロードマップの定義、進捗管理、関係者との調整を行うパートタイムのボランティアを募集しています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-12",
+    "lang": "ja",
+    "title": "HRビジネスパートナー",
+    "content": "マネジメントチームの一員として活動するパートタイムのボランティアHRパートナーを募集しています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-13",
+    "lang": "ja",
+    "title": "人事アドミニストレーティブアシスタント",
+    "content": "人事関連のすべての事務業務を支援する人材を募集しています。この役職は人事チームリーダーの直属となります。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-14",
+    "lang": "ja",
+    "title": "テクニカルリクルーター",
+    "content": "利用可能な職種やその要件について、HRおよびVirufyのリーダーシップと連携して対応できる人材を求めています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-15",
+    "lang": "ja",
+    "title": "企業法務弁護士（IT志向）",
+    "content": "地域の法的管轄区域におけるデータプライバシー問題を管理するために、Virufyの経営陣および世界中の法務チームと密接に連携する、パートタイムのボランティアとして貢献できる人材を募集しています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-16",
+    "lang": "ja",
+    "title": "パラリーガル（法律補佐）",
+    "content": "世界中に分散したVirufyの法務チームと協力して活動できる、パートタイムのボランティアを募集しています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-17",
+    "lang": "ja",
+    "title": "ビジネスアナリスト",
+    "content": "ビジネスアナリストは、継続的な成長と成功を支える原動力です。彼らは革新に取り組み、効率と生産性の向上を目指した戦略的な取り組みを開発・実施します。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-18",
+    "lang": "ja",
+    "title": "Pythonプログラマー",
+    "content": "Pythonプログラマーを募集しています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-19",
+    "lang": "ja",
+    "title": "テクニカルライター",
+    "content": "Virufyは、顧客満足へのコミットメントにより業界リーダーへと成長しました。その原動力は、明確で効果的なコミュニケーションへの揺るぎない信念です。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-20",
+    "lang": "ja",
+    "title": "品質保証エンジニア",
+    "content": "私たちは、COVID-19との闘いに取り組む医療AI系の非営利スタートアップです。咳の音を分析することでCOVID-19を検出できるモバイルアプリの開発を目指して、AIと機械学習を活用した革新的なソリューションを提供しています。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-21",
+    "lang": "ja",
+    "title": "AWS開発者",
+    "content": "経験豊富なAWS開発者をチームに迎えたいと考えています。理想的な候補者は、AWS上でスケーラブルで信頼性が高く、保守しやすいサービスを構築した実績を持つ方です。クロスファンクショナルチームと連携しながら、AWSプラットフォーム上でアプリケーションやサービスを設計、開発、展開します。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-22",
+    "lang": "ja",
+    "title": "AWSアーキテクト",
+    "content": "このテクニカルアーキテクトは、モノリシックアーキテクチャからクラウドベースシステムへのモダナイゼーションプロジェクトに参加します。複数のチームに技術的なリーダーシップを提供し、標準やツールの確立、他チームへの視点提供を支援します。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-job-23",
+    "lang": "ja",
+    "title": "AWSエンジニア",
+    "content": "Virufyは、ボランティアとして貢献できるAWSエンジニアを募集しています。この役割は、Amazon Web Services環境でのクラウドコンピューティングとインフラに深く関わりながら、意味のある社会的貢献ができる貴重な機会です。",
+    "url": "/ja/join-us"
+  },
+  {
+    "id": "ja-about-advisors",
+    "lang": "ja",
+    "title": "アドバイザー",
+    "content": "Virufyを支える尊敬すべきアドバイザーをご紹介します。彼らは医療、技術、公共の分野で深い専門知識を持ち、私たちのビジョンと戦略を導いています。",
+    "url": "/ja/advisors"
+  },
+  {
+    "id": "ja-about-supporters",
+    "lang": "ja",
+    "title": "支援者たち",
+    "content": "メンターシップ、スポンサーシップ、協業を通じてVirufyの使命を支援している、世界中の個人および団体をご覧ください。",
+    "url": "/ja/supporters"
+  },
+  {
+    "id": "ja-about-oyw",
+    "lang": "ja",
+    "title": "One Young World",
+    "content": "VirufyはOne Young Worldコミュニティと連携し、世界の健康革新における若者主導のリーダーシップを育んでいます。",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-media-news",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "Virufyの最新のブレイクスルーやパートナーシップを紹介するプレスリリースやメディア報道をご確認ください。",
+    "url": "/ja/news"
+  },
+  {
+    "id": "ja-media-publications",
+    "lang": "ja",
+    "title": "出版物",
+    "content": "当社のAI技術の科学的基盤を紹介する、査読済みの研究や公開記事をご覧ください。",
+    "url": "/ja/publications"
+  },
+  {
+    "id": "ja-news-dubai-2024",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "Virufyがドバイで開催されるPrototypes for Humanity 2024で革新的なCOVID-19スクリーニング技術を発表予定",
+    "url": "/ja/news/press-release-dubai"
+  },
+  {
+    "id": "ja-news-beta-app-2023",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "Virufyベータ版アプリがコロンビアでローンチされ、4,500人に自宅でCOVID-19検出を提供",
+    "url": "/ja/news/beta-app-release-2023"
+  },
+  {
+    "id": "ja-news-barda-2022",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "BARDAは視覚・聴覚症状の感染症検出を目的としたAI/MLアプリの開発を支援",
+    "url": "https://medicalcountermeasures.gov/newsroom/2022/ai_ml/"
+  },
+  {
+    "id": "ja-news-forbes-2021",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "このアプリは、スマートフォンに咳をするだけでCOVID-19の診断を目指す",
+    "url": "https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/"
+  },
+  {
+    "id": "ja-news-americatv-2021",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "Virufyアプリは咳の分析によりCOVID-19を診断可能",
+    "url": "https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332"
+  },
+  {
+    "id": "ja-news-expreso-2020",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "Virufy：COVID-19感染の有無を検出するプラットフォーム",
+    "url": "https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/"
+  },
+  {
+    "id": "ja-news-oywj-ai-2020",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "One Young World日本大使がAIを用いてCOVID-19に取り組む",
+    "url": "/ja/news/oywj-ai-2020"
+  },
+  {
+    "id": "ja-news-oyw-frontlines-2020",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "COVID-19対応の最前線に立つ北米の大使たち",
+    "url": "/ja/news/oyw-frontlines-2020"
+  },
+  {
+    "id": "ja-news-ambassadors-july-2020",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "7月の月間大使たち",
+    "url": "/ja/news/ambassadors-july-2020"
+  },
+  {
+    "id": "ja-news-digital-events-july-2020",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "7月に開催されたOYWのグローバルデジタルイベントに数千人が参加：見逃した内容のまとめ",
+    "url": "/ja/news/digital-events-july-2020"
+  },
+  {
+    "id": "ja-news-tokyo-caucus-2020",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "One Young World Tokyo 2020 カーカス",
+    "url": "/ja/news/tokyo-caucus-2020"
+  },
+  {
+    "id": "ja-news-virufy-presentation-oyw-2020",
+    "lang": "ja",
+    "title": "ニュース",
+    "content": "One Young World Tokyo 2020 カーカスにおけるVirufyのプレゼンテーション",
+    "url": "/ja/news/virufy-presentation-oyw-2020"
+  },
+  {
+    "id": "ja-publications-hierarchical-transformer-2022",
+    "lang": "ja",
+    "title": "出版物",
+    "content": "COVID-19の自動検出のための階層型マルチモーダルトランスフォーマー",
+    "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
+  },
+  {
+    "id": "ja-publications-calculator-impact-2022",
+    "lang": "ja",
+    "title": "出版物",
+    "content": "COVID-19計算機 - 米国における前向きな社会経済的影響",
+    "url": "https://arxiv.org/abs/2201.11109"
+  },
+  {
+    "id": "ja-publications-deep-learning-datasets-2022",
+    "lang": "ja",
+    "title": "出版物",
+    "content": "咳の音によるCOVID-19分類のための大規模データセットを用いたディープラーニングの活用",
+    "url": "https://arxiv.org/abs/2201.01669"
+  },
+  {
+    "id": "ja-publications-challenges-ai-2021",
+    "lang": "ja",
+    "title": "出版物",
+    "content": "COVID-19咳AIシステム展開における課題と機会",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
+  },
+  {
+    "id": "ja-publications-virufy-crowdsourced-2020",
+    "lang": "ja",
+    "title": "出版物",
+    "content": "Virufy：咳の音によるCOVID-19検出のためのクラウドソーシングおよび臨床データセットのグローバルな適用性",
+    "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
+  },
+  {
+    "id": "ja-our-supporters-list",
+    "lang": "ja",
+    "title": "支援者の皆様",
+    "content": "H4R、AWS、Drive、One Young World、Pillsbury、福井大学、Idime、CJ Partners、Xoor、Sherlock Communications、Nuvu、SPI、Devlights、Fenwick、Olarte Moure、Locked Jar、Response Innovation Lab、竹本研究室、Life Science Washington、Candido Costa & Cancio、Arkangel Ai、Nexus Tax Services",
+    "url": "/ja/supporters"
+  },
+  {
+    "id": "ja-supporters-contact-message",
+    "lang": "ja",
+    "title": "支援者の皆様",
+    "content": "皆様のご支援は私たちにとって非常に重要です。情報をご記入いただければ、できる限り早くご連絡いたします。",
+    "url": "/ja/supporters"
+  },
+  {
+    "id": "ja-advisor-kara-meister",
+    "lang": "ja",
+    "title": "カラ・マイスター医学博士",
+    "content": "臨床アドバイザー（スタンフォード大学医学部 耳鼻咽喉科 臨床助教授）",
+    "url": "https://www.linkedin.com/in/kara-meister-200335110/"
+  },
+  {
+    "id": "ja-advisor-jure-leskovec",
+    "lang": "ja",
+    "title": "ユーリ・レスコヴェック博士",
+    "content": "AIアドバイザー（Pinterest チーフサイエンティスト & スタンフォード大学 AI准教授）",
+    "url": "https://www.linkedin.com/in/leskovec/"
+  },
+  {
+    "id": "ja-advisor-jesse-bump",
+    "lang": "ja",
+    "title": "ジェシー・バンプ博士、MPH、FRSA",
+    "content": "公衆衛生アドバイザー（ハーバード公衆衛生大学院 グローバルヘルス・人口学部門）",
+    "url": "https://www.hsph.harvard.edu/jesse-bump/"
+  },
+  {
+    "id": "ja-advisor-melissa-dyrdahl",
+    "lang": "ja",
+    "title": "メリッサ・ダイダール",
+    "content": "マーケティング顧問（元Adobe CMO & CommonSpirit Health取締役）",
+    "url": "https://dci.stanford.edu/melissa-dyrdahl/"
+  },
+  {
+    "id": "ja-advisor-kutsuna-satoshi",
+    "lang": "ja",
+    "title": "沓名賢",
+    "content": "臨床顧問（大阪大学 感染症制御・予防 教授）",
+    "url": "https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection"
+  },
+  {
+    "id": "ja-advisor-madhav-datt",
+    "lang": "ja",
+    "title": "マダブ・ダット",
+    "content": "非営利アドバイザー（Green the Gene 創設者 & 国連UNEP 青年代表 & ハーバードビジネススクールMBA）",
+    "url": "https://www.linkedin.com/in/madhavdatt/"
+  },
+  {
+    "id": "ja-advisor-may-xu",
+    "lang": "ja",
+    "title": "メイ・シュウ",
+    "content": "データ & AIプロダクト戦略アドバイザー（起業家・エグゼクティブコーチ & スタンフォード大学修士）",
+    "url": "https://www.linkedin.com/in/may-xu-bb06934"
+  },
+  {
+    "id": "ja-advisor-zafar-shahid",
+    "lang": "ja",
+    "title": "ザファル・シャヒド",
+    "content": "テクノロジーアドバイザー – グリーンAIリーダー（元NVIDIA、元Meta）、モンペリエ大学マルチメディアフォレンジック博士",
+    "url": "https://zafarshahid.com/"
+  },
+  {
+    "id": "ja-advisor-rafi-azim-khan",
+    "lang": "ja",
+    "title": "ラフィ・アジム・カーン",
+    "content": "法務アドバイザー（Europe Crowell & Moring LLP パートナー、デジタル法責任者）",
+    "url": "https://www.crowell.com/en/professionals/rafi-azim-khan"
+  },
+  {
+    "id": "ja-advisor-ronan-dunlop",
+    "lang": "ja",
+    "title": "ローナン・ダンロップ",
+    "content": "マーケティング顧問（元VMWare/Pivotal マーケティング責任者）",
+    "url": "https://www.linkedin.com/in/rdunlop/"
+  },
+  {
+    "id": "ja-advisor-mark-haseltine",
+    "lang": "ja",
+    "title": "マーク・ハセルトン",
+    "content": "エグゼクティブアドバイザー（元CTO/CPO：edX、GoDaddy & MIT出身）",
+    "url": "https://www.linkedin.com/in/mhaseltine/"
+  },
+  {
+    "id": "ja-advisor-faisal-cheema",
+    "lang": "ja",
+    "title": "ファイサル・チーマ",
+    "content": "臨床アドバイザー（ヒューストン大学医学部 生物医科学准教授）",
+    "url": "https://www.linkedin.com/in/doccheema/"
+  },
+  {
+    "id": "ja-advisor-mert-pilanci",
+    "lang": "ja",
+    "title": "メルト・ピランチ",
+    "content": "AIアドバイザー（スタンフォード大学 電気工学 AI准教授）",
+    "url": "https://stanford.edu/~pilanci/"
+  },
+  {
+    "id": "ja-advisor-tetsuji-madarame",
+    "lang": "ja",
+    "title": "斑目哲司",
+    "content": "技術戦略フェロー（JR貨物） & Stanford GSB MBA",
+    "url": "https://www.linkedin.com/in/tetsuji-madarame-6a337916b"
+  },
+  {
+    "id": "ja-advisor-yukitoshi-nakatani",
+    "lang": "ja",
+    "title": "中谷幸俊",
+    "content": "日本担当エグゼクティブアドバイザー（元アクセンチュア ディレクター、現IT Value Consulting CEO）",
+    "url": "https://www.facebook.com/nakatani.yukitoshi"
+  },
+  {
+    "id": "ja-advisor-victor-wang",
+    "lang": "ja",
+    "title": "ヴィクター・ワン",
+    "content": "エグゼクティブアドバイザー（China Silicon Valley創設者 & Stanford GSB MBA）",
+    "url": "https://www.linkedin.com/in/executivestanfordvictorwang/"
+  },
+  {
+    "id": "ja-advisor-adam-leipzig",
+    "lang": "ja",
+    "title": "アダム・ライプツィッヒ",
+    "content": "エグゼクティブアドバイザー（Entertainment Media Partners CEO、元ナショナルジオグラフィック映画社長、バークレー・ハースビジネススクール講師）",
+    "url": "https://www.linkedin.com/in/adamleipzig/"
+  },
+  {
+    "id": "ja-advisor-rok-sosic",
+    "lang": "ja",
+    "title": "ロック・ソシック",
+    "content": "AIアドバイザー（スタンフォード工学部 上級研究エンジニア）",
+    "url": "https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao"
+  },
+  {
+    "id": "ja-advisor-richard-nall",
+    "lang": "ja",
+    "title": "リチャード・ノール",
+    "content": "マーケティングアドバイザー（The Brand Garden CEO、ヘンリー大学 組織リーダーシップ修士）",
+    "url": "https://www.linkedin.com/in/richardnall/"
+  },
+  {
+    "id": "ja-advisor-khwaja-shaik",
+    "lang": "ja",
+    "title": "クワジャ・シャイク",
+    "content": "最高技術責任者（CTO）- IBM（MOSH副議長、ノースフロリダ大学コンピューティング取締役）",
+    "url": "https://www.linkedin.com/in/khwajashaik/"
+  },
+  {
+    "id": "ja-advisor-ayomide-owoyemi",
+    "lang": "ja",
+    "title": "アヨミデ・オウォイェミ",
+    "content": "臨床アドバイザー（イリノイ大学シカゴ校 生物医学博士、One Young World ナイジェリア大使）",
+    "url": "https://www.linkedin.com/in/ayomide-owoyemi/"
+  },
+  {
+    "id": "ja-advisor-tsutomu-ito",
+    "lang": "ja",
+    "title": "伊藤 努",
+    "content": "ビジョナリーアドバイザー（Tannan FM 創設者、弾丸列車 設計責任者）",
+    "url": "http://tannan.fm/contents/about-us.html"
+  },
+  {
+    "id": "ja-advisor-les-atlas",
+    "lang": "ja",
+    "title": "レス・アトラス博士",
+    "content": "音響 & 機械学習アドバイザー（ワシントン大学 電気・コンピューター工学 教授、スタンフォード大学 博士号取得）",
+    "url": "https://people.ece.uw.edu/atlas/"
+  },
+  {
+    "id": "ja-advisor-nobuyo-ozawa",
+    "lang": "ja",
+    "title": "小澤 伸代",
+    "content": "日本臨床開発リード（CRO 臨床開発部門グループマネージャー）",
+    "url": "https://www.linkedin.com/in/nobuyo-ozawa-223707113"
+  },
+  {
+    "id": "ja-advisor-hiroyuki-kunishima",
+    "lang": "ja",
+    "title": "國島 博之",
+    "content": "感染症アドバイザー（聖マリアンナ医科大学病院 感染症科）",
+    "url": "http://www.k-icnet.org/profile.html"
+  },
+  {
+    "id": "ja-advisor-fumihiko-yokota",
+    "lang": "ja",
+    "title": "横田 文彦",
+    "content": "公衆衛生アドバイザー（九州大学 疫学 准教授）",
+    "url": "https://q-aos.kyushu-u.ac.jp/en/staff/1770/"
+  },
+  {
+    "id": "ja-advisor-kohei-wakamiya",
+    "lang": "ja",
+    "title": "若宮 幸平",
+    "content": "音声AIアドバイザー（九州大学 音響設計 助教）",
+    "url": "https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html"
+  },
+  {
+    "id": "ja-advisor-tamer-fahmy",
+    "lang": "ja",
+    "title": "タマー・ファーミー",
+    "content": "中東・アフリカ市場アドバイザー（元Dräger/Philips MedTech - 睡眠 & 呼吸ケア、SP Jain経営大学院MBA、カイロ大学 生体医工学学士）",
+    "url": "https://ae.linkedin.com/in/tamer-fahmy-b4468614"
+  },
+  {
+    "id": "ja-advisor-shirin-hasan",
+    "lang": "ja",
+    "title": "シリン・ハサン",
+    "content": "臨床・医療・規制アフェアーズ アドバイザー（元Medtronic 臨床業務責任者、サンノゼ州立大学/スタンフォード 生化学修士）",
+    "url": "https://www.linkedin.com/in/shirinhasan/"
+  },
+  {
+    "id": "ja-advisor-glenn-muschert",
+    "lang": "ja",
+    "title": "グレン・マッシャート教授",
+    "content": "社会科学・公共政策アドバイザー – アラブ首長国連邦カリファ大学公衆衛生・疫学教授、コロラド大学ボルダー校社会学博士",
+    "url": "https://www.ku.ac.ae/college-people/glenn-muschert"
+  },
+  {
+    "id": "ja-advisor-thomas-mahoney",
+    "lang": "ja",
+    "title": "トーマス・マホニー",
+    "content": "ビジネス・公衆衛生アドバイザー – ハーバード大学感染症学科准教授、ペンシルベニア大学ウォートン校MBA",
+    "url": "https://www.linkedin.com/in/tom-mahoney-lifesci/"
+  },
+  {
+    "id": "ja-advisor-amil-khanzada",
+    "lang": "ja",
+    "title": "アミル・カンザダ",
+    "content": "創設者（福井大学 工学博士課程 在籍、カリフォルニア大学バークレー校 工学・MBA 二重学位修了）",
+    "url": "/ja/amils-story"
+  },
+  {
+    "id": "ja-oyw-amil-khanzada",
+    "lang": "ja",
+    "title": "アミル・カンザダ",
+    "content": "OYWアンバサダー（日本）Virufy創設者・リーダー",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-madhav-datt",
+    "lang": "ja",
+    "title": "マダブ・ダット",
+    "content": "OYWアンバサダー（インド）Virufyアドバイザー",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-marcos-deza",
+    "lang": "ja",
+    "title": "マルコス・デザ",
+    "content": "OYWアンバサダー（アルゼンチン）Virufy デジタルコミュニケーション",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-yulie-qiao",
+    "lang": "ja",
+    "title": "ユリ・チャオ",
+    "content": "2021年 OYW bp 代表（Virufyオペレーション）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-ayomide-owoyemi-md",
+    "lang": "ja",
+    "title": "アヨミデ・オウォイェミ、MD",
+    "content": "2021年 OYW ノバルティス代表（ナイジェリア）Virufy機械学習臨床統計",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-shreya-sreeram-md",
+    "lang": "ja",
+    "title": "シュレヤ・スリラム、MD",
+    "content": "2021年 Virufy代表（インド）Virufy臨床研究",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-laura-velasquez",
+    "lang": "ja",
+    "title": "ラウラ・ベラスケス",
+    "content": "OYWジョンソン・エンド・ジョンソン代表（コロンビア）Arkangel AI 共同創設者・社長、Virufyパートナー",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-nathan-thomas",
+    "lang": "ja",
+    "title": "ネイサン・トーマス",
+    "content": "OYWコーディネーティングアンバサダー（アメリカ）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-jason-pareja-jauregui",
+    "lang": "ja",
+    "title": "ジェイソン・パレハ・ハウレギ",
+    "content": "OYWコーディネーティングアンバサダー LATAM（ペルー）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-katherine-ortiz-leon",
+    "lang": "ja",
+    "title": "キャサリン・タリア・オルティス・レオン",
+    "content": "OYWアンバサダー（ペルー）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-gonzalo-roiffe",
+    "lang": "ja",
+    "title": "ゴンサロ・ロイフェ",
+    "content": "OYWアンバサダー（アルゼンチン）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-annelisse-torrez-daza",
+    "lang": "ja",
+    "title": "アネリッセ・トーレス・ダザ",
+    "content": "OYWアンバサダー（ボリビア）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-veronica-guzman-quilqueo",
+    "lang": "ja",
+    "title": "ベロニカ・グスマン・キルケオ",
+    "content": "OYWアンバサダー（チリ）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-sebastian-pedraza",
+    "lang": "ja",
+    "title": "セバスチャン・ペドラザ",
+    "content": "OYWアンバサダー（コロンビア）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-kenmaru-suedomi",
+    "lang": "ja",
+    "title": "ケンマル・スエドミ",
+    "content": "OYWアンバサダー（日本）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-kapil-narain-md",
+    "lang": "ja",
+    "title": "カピル・ナライン、MD",
+    "content": "OYWアンバサダー（南アフリカ）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-leonard-burhz",
+    "lang": "ja",
+    "title": "レオナルド・ブルズ",
+    "content": "OYWアンバサダー（アイルランド）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-allana-doyle",
+    "lang": "ja",
+    "title": "アラナ・ドイル",
+    "content": "OYWアンバサダー（米国）",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-kavya-madhaven",
+    "lang": "ja",
+    "title": "カビヤ・マダヴェン",
+    "content": "OYWアンバサダー",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-share-your-cough-study",
+    "lang": "ja",
+    "title": "咳データ収集研究",
+    "content": "独立した非営利研究団体",
+    "url": "https://virufy.org/study/welcome"
+  },
+  {
+    "id": "ja-oyw-intro",
+    "lang": "ja",
+    "title": "One Young World",
+    "content": "VirufyとOne Young World\n私たちの世界には優れたリーダーシップが必要です。今の若い世代は、歴史上最も情報に精通し、教育を受け、つながりのある世代です。One Young Worldは、世界中で最も影響力のある若手リーダーを特定し、支援し、つなげることで、より責任感があり効果的なリーダーシップを実現する、より良い世界を目指しています。\nVirufyはアメリカ大陸や日本を含むOYWのさまざまなプラットフォームに登場し、アンバサダーによる活動、代表者会議、COVID-19対策の最前線などで取り上げられました。また、OYWの各地域のコーディネーティングアンバサダーと協力し、アウトリーチ活動を展開しています。",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-why",
+    "lang": "ja",
+    "title": "なぜOne Young Worldなのか？",
+    "content": "アンバサダー主導、若者主導、世界的な影響にフォーカス、多様な代表性。私たちの組織構造は、各地域で活動する若手アンバサダーによってOYWと連携する形になっています。拡大を続ける私たちのチームは、10か国以上の若手専門家によって構成され、世界の業界リーダーによる密接な助言を受けています。創設当初からの目標は、すべての国、すべての人々に公平なソリューションを提供することです。私たちのチームには50以上の大学と25以上の国からメンバーが参加しており、数十人のOYWアンバサダーから支援を受けています。",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-paper-virufy-collection",
+    "lang": "ja",
+    "title": "Virufy論文",
+    "content": "Virufyが発表した論文の詳細については、こちらをご覧ください。",
+    "url": "/ja/papers"
+  },
+  {
+    "id": "ja-paper-hierarchical-multimodal-transformer",
+    "lang": "ja",
+    "title": "論文",
+    "content": "COVID-19の自動検出のための階層型マルチモーダルトランスフォーマー",
+    "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
+  },
+  {
+    "id": "ja-paper-deep-learning-aggregated-datasets",
+    "lang": "ja",
+    "title": "論文",
+    "content": "大規模集約データセットにおけるディープラーニングの活用咳によるCOVID-19の分類",
+    "url": "https://arxiv.org/abs/2201.01669"
+  },
+  {
+    "id": "ja-paper-covid19-calculator-impact",
+    "lang": "ja",
+    "title": "論文",
+    "content": "COVID-19 Calculator ― 米国への社会経済的プラス影響",
+    "url": "https://arxiv.org/abs/2201.11109"
+  },
+  {
+    "id": "ja-paper-deploying-cough-ai-systems",
+    "lang": "ja",
+    "title": "論文",
+    "content": "COVID-19咳AIシステムの導入における課題と機会",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
+  },
+  {
+    "id": "ja-paper-global-applicability-ai-cough",
+    "lang": "ja",
+    "title": "論文",
+    "content": "Virufy: 咳からのCOVID-19 AI検出におけるクラウドソーシングおよび臨床データセットのグローバル適用性",
+    "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
+  },
+  {
+    "id": "ja-paper-complex-clipping-ml",
+    "lang": "ja",
+    "title": "論文",
+    "content": "機械学習における一般化の向上のための複素クリッピング",
+    "url": "https://arxiv.org/abs/2302.13527"
+  }
+]
+
+
+
+
+
+
+
+
+
+
