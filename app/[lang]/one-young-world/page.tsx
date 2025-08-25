@@ -44,7 +44,7 @@ const OneYoungWorldPage = ({
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="relative -mb-24 bg-[#255292]">
+      <div className="relative bg-[#255292]">
         <MainContent
           lang={lang}
           teamLeads={teamLeads}
