@@ -4,8 +4,8 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import {
   CloseMenuIcon,
-  WhiteCloseMenuIcon,
   HamburgerMenuIcon,
+  WhiteCloseMenuIcon,
   WhiteHamburgerMenuIcon,
   VirufyLogo,
 } from '@/public/images/navbar/index';
@@ -35,8 +35,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }, // re add coughcheck here when needed
   } = usei18n(lang);
 
-  const [navbar, setNavbar] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+  const [navbar, setNavbar] = useState(false); // Mobile navbar
+  const [showModal, setShowModal] = useState(false); // Donate modal
   const [activeLink, setActiveLink] = useState('');
 
   const currPathname = usePathname();
@@ -48,6 +48,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   const isHomePage = currPathname === `/${lang}/`;
   const [showSearch, setShowSearch] = useState(false);
+  const handleNavClick = () => setNavbar(false);
 
   const dropdownRef = useRef<HTMLUListElement | null>(null);
   const DEBOUNCE_DELAY = 400;
@@ -96,38 +97,34 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   const SCREEN_SIZE = 1265;
 
+  // Handles navbar and search bar visibility based on screen size and page navigation
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
+        setShowSearch(false);
         if (window.innerWidth >= SCREEN_SIZE) {
           setNavbar(false);
+          setShowSearch(true);
         }
       };
 
+      handleResize();
       window.addEventListener('resize', handleResize);
 
       return () => {
         window.removeEventListener('resize', handleResize);
       };
     }
-  }, []);
+  }, [currPathname]);
 
-  // Handles search bar visibility based on screen size and home page status
+  // Prevents scrolling main page on mobile if hamburger menu is open
   useEffect(() => {
-  if (typeof window !== "undefined") {
-    const handleResize = () => {
-      if (window.innerWidth >= 640 || !isHomePage) {
-        setShowSearch(true);
-      } else {
-        setShowSearch(false);
-      }
-    };
-
-    handleResize(); 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }
-}, [isHomePage]);
+    if (navbar) {
+      document.body.style.overflow = 'hidden'; // prevent scrolling
+    } else {
+      document.body.style.overflow = ''; // enable scrolling
+    }
+  }, [navbar]);
 
   const debouncedSearch = useMemo(
     () =>
@@ -190,7 +187,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
           }} 
           className={
             `h-full w-full border-0 border-b 
-            ${isHomePage ? 'border-white text-white placeholder-white lg:border-black lg:text-black lg:placeholder-black' : 'border-black text-black placeholder-black'} 
+            ${isHomePage || navbar ? 'border-white text-white placeholder-white lg:border-black lg:text-black lg:placeholder-black' 
+              : 'border-black text-black placeholder-black'} 
             bg-transparent focus:outline-none focus:ring-0`
           }
         />
@@ -207,7 +205,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           {/* SVG for "×" (close) button inside search bar */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`h-4 w-4 ${isHomePage ? 'text-black lg:text-black text-white' : 'text-black'}`}
+            className={`h-4 w-4 ${isHomePage || navbar ? 'text-black lg:text-black text-white' : 'text-black'}`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -224,14 +222,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
           ${showSearch ? 'right-0' : ''}`
         }
         onClick={() => {
-          if (isHomePage && window.innerWidth < 640) {
+          if (window.innerWidth < SCREEN_SIZE) {
             setShowSearch((prev) => !prev);
           }
         }}
       >
         {/* SVG for search icon inside search bar */}
         <svg
-          className={`mt-1 lg:mt-0 pointer-events-none h-[22px] w-[22px] ${isHomePage ? 'text-white lg:text-black' : 'text-black'}`}
+          className={`mt-1 lg:mt-0 pointer-events-none h-[22px] w-[22px] ${isHomePage || navbar ? 'text-white lg:text-black' : 'text-black'}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -310,15 +308,19 @@ export default function Navbar({ lang }: { lang: Locale }) {
           </div>
         ) : null}
 
+        {/* Navbar container */}
         <div
-          className={`lg:max-w-8lg justify-between bg-transparent px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 xl:mx-9${navbar ? 'flex h-screen' : ''}`}
+          className={`lg:max-w-8lg justify-between ${navbar ? 'bg-black' : ''} lg:bg-transparent px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 xl:mx-9${navbar ? 'flex h-screen' : ''}`}
         >
           <div className="flex items-center justify-between lg:block lg:py-5">
+            
+            {/* Mobile Virufy Logo */}
             <Link
               href={`/${lang}`}
-              className="mt-2 flex rounded-full bg-opacity-80 px-3 py-2 text-black lg:hidden"
+              onClick={handleNavClick}
+              className="absolute right-3 mt-2 flex rounded-full bg-opacity-80 px-3 py-2 text-black lg:hidden" 
             >
-              {!isHomePage && (
+              {(!isHomePage || navbar) && (
                 <ExportedImage
                   className="h-[48px] w-[100px]"
                   src={VirufyLogo}
@@ -327,6 +329,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 />
               )}
             </Link>
+
+            {/* Desktop Virufy Logo */}
             <Link
               href={`/${lang}`}
               className="lg-space-x-6 hidden lg:flex lg:rounded-full lg:bg-white lg:bg-opacity-80 lg:p-2"
@@ -338,8 +342,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 basePath={basePath}
               />
             </Link>
+
             {/* Mobile Search Bar */}
-            <div className="mt-2 flex items-center justify-start rounded-full bg-opacity-80 px-5 py-2 text-black lg:hidden">
+            <div className={`mt-2 flex items-center justify-start rounded-full bg-opacity-80 px-12 py-2 text-black lg:hidden`}>
               <div className="relative mb-4 w-[125px]">
                 {renderSearchInput('w-full')}
                 {renderSearchDropdown()}
@@ -347,7 +352,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             </div>
 
             {/* Mobile Donate Button */}
-            {isHomePage && (
+            {isHomePage && !navbar && (
               <button
                 onClick={() => setShowModal(true)}
                 className={`h-[32px] w-[100px] lg:hidden h-[28px] md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
@@ -356,8 +361,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
               </button>
             )}
 
-            {/* // hamburger and x button */}
-            <div className={`lg:hidden ${isHomePage ? 'absolute left-3 top-4' : ''}`}>
+            {/* Hamburger Menu Toggle (mobile) */}
+            <div className={`lg:hidden absolute left-3 top-4`}>
               <button
                 className="rounded-lg p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
                 onClick={() => setNavbar(!navbar)}
@@ -365,7 +370,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 {navbar ? (
                   <ExportedImage
                     className="h-[18px] w-[30px]"
-                    src={isHomePage ? WhiteCloseMenuIcon : CloseMenuIcon}
+                    src={isHomePage || navbar ? WhiteCloseMenuIcon : CloseMenuIcon}
                     alt="close menu icon"
                     basePath={basePath}
                   />
@@ -380,52 +385,56 @@ export default function Navbar({ lang }: { lang: Locale }) {
               </button>
             </div>
           </div>
-          {/* dropdown for mobile */}
+          {/* Dropdown (mobile) and Desktop Nav Links */}
           <div className="">
             <div
-              className={`relative flex-1 justify-self-center pb-3 lg:mt-0 lg:block lg:pb-0 ${
+              className={`${
                 navbar
-                  ? 'flex-column h-full overflow-hidden text-center'
-                  : 'hidden'
+                  ? 'fixed top-20 bottom-0 right-0 left-0 bg-black overflow-y-auto'
+                  : 'relative flex-1 justify-self-start pb-3 lg:mt-0 lg:block lg:pb-0 hidden'
               }`}
             >
               {/* desktop navbar links */}
               <ul
                 className={`items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0 xl:space-x-9 ${
                   navbar
-                    ? 'flex-column w-full bg-white pb-5 text-center'
+                    ? 'flex-column w-full pb-5 pl-5 text-left text-[24px] md:text-[36px]'
                     : 'hidden'
                 }`}
               >
                 <div
-                  className={`lg: items-center justify-center space-y-8 rounded-full bg-white bg-opacity-80 p-2 lg:flex lg:space-x-6 lg:space-y-0 lg:px-10 xl:space-x-9 ${
-                    navbar ? '' : 'hidden'
-                  }`}
+                  className={`
+                    lg:items-center justify-center space-y-8 lg:rounded-full bg-black lg:bg-white lg:bg-opacity-80 p-2 lg:flex lg:space-x-6 lg:space-y-0 lg:px-10 xl:space-x-9 
+                    ${navbar ? '' : 'hidden'}                  
+                    `}
                 >
-                  <li className="text-black">
+                  {/* Home */}
+                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Home'
                             ? 'solid border-b-2 py-2'
-                            : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
+                            : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}`}
+                        onClick={handleNavClick}
                       >
                         {home}
                       </Link>
                     </div>
                   </li>
-                  {/* technology link */}
-                  <li className="text-black">
+                  {/* Technology */}
+                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Technology'
-                            ? 'solid peer border-b-2 py-2 text-black'
-                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
+                            ? 'solid peer border-b-2 py-2'
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}/ai`}
+                        onClick={handleNavClick}
                       >
                         {ourTechnology?.section}
                       </Link>
@@ -487,42 +496,52 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </div>
                   </li> */}
 
-                  {/* about us link */}
-                  <li className="text-white">
+                  {/* About Us */}
+                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'About Us'
-                            ? 'solid peer border-b-2 py-2 text-black'
-                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
+                            ? 'solid peer border-b-2 py-2'
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         } whitespace-nowrap`}
                         href={`/${lang}/story`}
+                        onClick={handleNavClick}
                       >
                         {aboutUs?.section}
                       </Link>
-
+                      
+                      {/* Dropdown for About Us */}
                       <div
-                        className={`absolute w-[200px] flex-col rounded-xl bg-white bg-opacity-50 text-center lg:drop-shadow-lg ${
+                        className={`absolute w-[200px] flex-col rounded-xl lg:bg-white/50 lg:drop-shadow-lg ${
                           navbar
-                            ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform sm:bg-white sm:bg-opacity-0'
-                            : 'ml-[-60px] hidden'
+                            ? 'relative z-10 flex transform sm:bg-white sm:bg-opacity-0 text-left text-[18px] md:text-[21px] font-light'
+                            : 'ml-[-60px] text-center hidden'
                         } hover:flex peer-hover:flex`}
                       >
+                        {/* Advisors */}
                         <Link
-                          className="pb-3 pt-6 text-black hover:font-bold"
+                          className="pb-1 pt-3 lg:pb-3 lg:pt-6 hover:font-bold"
                           href={`/${lang}/advisors`}
+                          onClick={handleNavClick}
                         >
                           {aboutUs?.advisors}
                         </Link>
+
+                        {/* Our Supporters */}
                         <Link
-                          className="py-3 text-black hover:font-bold"
+                          className="py-1 lg:py-3 hover:font-bold"
                           href={`/${lang}/supporters`}
+                          onClick={handleNavClick}
                         >
                           {aboutUs?.ourSupporters}
                         </Link>
+
+                        {/* One Young World */}
                         <Link
-                          className="py-3 text-black hover:font-bold"
+                          className="py-1 lg:py-3 hover:font-bold"
                           href={`/${lang}/one-young-world`}
+                          onClick={handleNavClick}
                         >
                           {aboutUs?.oneYoungWorld}
                         </Link>
@@ -530,50 +549,61 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </div>
                   </li>
 
-                  {/* Media link */}
-                  <li className="text-black">
+                  {/* Media */}
+                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Media'
-                            ? 'solid peer border-b-2 py-2 text-black'
-                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
+                            ? 'solid peer border-b-2 py-2'
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         } `}
                         href={`/${lang}/news`}
+                        onClick={handleNavClick}
                       >
                         {media?.section}
                       </Link>
+
+                      {/* Dropdown for Media */}
                       <div
-                        className={`absolute w-[200px] flex-col rounded-xl bg-white bg-opacity-50 text-center lg:drop-shadow-lg ${
+                        className={`absolute w-[200px] flex-col rounded-xl lg:bg-white/50 lg:drop-shadow-lg ${
                           navbar
-                            ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform sm:bg-opacity-0'
-                            : 'ml-[-75px] hidden'
+                            ? 'relative z-10 flex transform sm:bg-opacity-0 text-left text-[18px] md:text-[21px] font-light'
+                            : 'ml-[-75px] text-center hidden'
                         } hover:flex peer-hover:flex`}
                       >
+                        {/* News */}
                         <Link
-                          className="pb-3 pt-6 text-black hover:font-bold"
+                          className="pt-3 pb-1 lg:pb-3 lg:pt-6 hover:font-bold"
                           href={`/${lang}/news`}
+                          onClick={handleNavClick}
                         >
                           {media?.pressReleases}
                         </Link>
+
+                        {/* Publications */}
                         <Link
-                          className="py-3 text-black hover:font-bold"
+                          className="py-1 lg:py-3 hover:font-bold"
                           href={`/${lang}/publications`}
+                          onClick={handleNavClick}
                         >
                           {media?.ourResearch}
                         </Link>
                       </div>
                     </div>
                   </li>
-                  <li className="text-black">
+
+                  {/* FAQ */}
+                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'FAQ'
-                            ? 'solid peer border-b-2 py-2 text-black'
-                            : 'peer relative py-2 text-black before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
+                            ? 'solid peer border-b-2 py-2'
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}/faq`}
+                        onClick={handleNavClick}
                       >
                         {faq}
                       </Link>
@@ -586,30 +616,31 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       {renderSearchDropdown()}
                     </div>
                   </li>
-
-                  <li>
-                    <LocaleSelect />
+                  
+                  {/* Language Selector */}
+                  <li className={`${navbar ? '-ml-3 relative top-[-24px]' : ''}`}>
+                    <LocaleSelect isNavbar={navbar}/>
                   </li>
                 </div>
-                <div className="sm:flex-column lg:flex">
-                  <li
-                    className={`text-[#393939] lg:mx-5 ${navbar ? 'pb-10' : ''}`}
-                  >
-                    <Link href={`/${lang}/join-us`}>
+
+                {/* Join Us and Donate Buttons */}
+                <div className={`lg:flex ${navbar ? 'text-white pt-14 flex flex-row justify-center items-center gap-x-8 md:gap-x-20' : 'text-black'}`}>
+                  {/* Join Us */}
+                  <li className={`text-[#393939] lg:mx-5 ${navbar ? 'pb-10' : ''}`}>
+                    <Link href={`/${lang}/join-us`} onClick={handleNavClick}>
                       <button
-                        className={`md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] border border-solid text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                        className={`md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] md:h-[60px] md:w-[180px] md:text-xl border border-solid text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                       >
                         {joinUs ? joinUs.buttonText : ''}
                       </button>
                     </Link>
                   </li>
-
-                  <li
-                    className={`text-[#393939] ${navbar ? 'flex-column pb-10' : ''}`}
-                  >
+                  
+                  {/* Donate */}
+                  <li className={`text-[#393939] ${navbar ? 'flex-column pb-10' : ''}`}>
                     <button
                       onClick={() => setShowModal(true)}
-                      className={`md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                      className={`md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] md:h-[60px] md:w-[180px] md:text-xl text-base font-semibold' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                     >
                       <Link href="#">{donate.buttonText}</Link>
                     </button>
