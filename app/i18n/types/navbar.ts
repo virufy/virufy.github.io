@@ -1,3 +1,5 @@
+// app/i18n/types/navbar.ts
+
 export interface NavbarType {
   home: string;
   ourTechnology: OurTechnology;
@@ -37,11 +39,11 @@ export interface Media {
   ourResearch: string;
 }
 
-interface DonateSection {
+export interface DonateSection {
   buttonText: string;
   optionsTitle: string;
 }
 
 export interface JoinUsSection {
   buttonText: string;
-}  
+}
