@@ -12,7 +12,6 @@ import { usei18n } from '../../i18n';
 
 import Video from './Video';
 import { useState } from 'react';
-import amilsStory from '@/app/i18n/en/amilsStory';
 
 const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
@@ -21,40 +20,21 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const [desktopTab, setDesktopTab] = useState(sectionAmil.tabsAmil[0]);
   const [mobileTab, setMobileTab] = useState(sectionAmil.tabsAmil[4]);
   const [activeTab, setActiveTab] = useState(String);
-
+  console.log(activeTab);
   const desktopTabs = [
-    {
-      id: amilsStory.sectionAmil.tabsAmil[0],
-      content: amilsStory.sectionAmil.textAmil,
-    },
-    {
-      id: amilsStory.sectionAmil.tabsAmil[1],
-      content: amilsStory.sectionAmil.textAmil,
-    },
-    {
-      id: amilsStory.sectionAmil.tabsAmil[2],
-      content: amilsStory.sectionAmil.textAmil,
-    },
-    {
-      id: amilsStory.sectionAmil.tabsAmil[3],
-      content: amilsStory.sectionAmil.textAmil,
-    },
-    {
-      id: amilsStory.sectionAmil.tabsAmil[5],
-      content: amilsStory.sectionAmil.textAmil,
-    },
+    { id: sectionAmil.tabsAmil[0], content: sectionAmil.textAmil },
+    { id: sectionAmil.tabsAmil[1], content: sectionAmil.textAmil },
+    { id: sectionAmil.tabsAmil[2], content: sectionAmil.textAmil },
+    { id: sectionAmil.tabsAmil[3], content: sectionAmil.textAmil },
+    { id: sectionAmil.tabsAmil[5], content: sectionAmil.textAmil },
   ];
   const mobileTabs = [
     {
-      id: amilsStory.sectionAmil.tabsAmil[4],
+      id: sectionAmil.tabsAmil[4],
       border: 'left',
-      content: amilsStory.sectionAmil.textAmil,
+      content: sectionAmil.textAmil,
     },
-    {
-      id: amilsStory.sectionAmil.tabsAmil[5],
-      border: 'right',
-      content: amilsStory.sectionAmil,
-    },
+    { id: sectionAmil.tabsAmil[5], border: 'right', content: sectionAmil },
   ];
   return (
     <>
