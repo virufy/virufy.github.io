@@ -1,2 +1,0 @@
-(this["webpackJsonpvirufy-study"]=this["webpackJsonpvirufy-study"]||[]).push([[81],{425:function(e,t,n){"use strict";n.r(t);var r=n(8),a=n.n(r),c=n(516),s=n(314);test("renders learn react link",(function(){var e=(0,Object(c.a)(a.a.createElement(s.default,null)).getByText)(/learn react/i);expect(e).toBeInTheDocument()}))}}]);
-//# sourceMappingURL=81.8282985c.chunk.js.map
