@@ -17,7 +17,8 @@ export interface PressReleaseSection {
 }
 
 export interface NewsCard extends PublicationCard {
-  date: any;
+  linkText: string;
+  date: string;
   subText: string;
   year?: number;
 }
