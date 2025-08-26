@@ -13,7 +13,7 @@ type OywProps = {
 const OneYoungWorld = ({
   lang,
   oywSection: {
-    virufyAndOyw: { subTitle, texts, videoUrl, videoTitle },
+    virufyAndOyw: { subTitle, texts /*videoUrl, videoTitle*/ },
     whyOyw: { title: whyOywTitle, cards },
     volunteerStories: { title: volunteerTitle, text, testimonials, buttonText },
   },
@@ -41,13 +41,13 @@ const OneYoungWorld = ({
               </div>
             </div>
 
-            <iframe
+            {/* <iframe
               className="aspect-video w-full px-4 py-1 md:px-16 md:py-9"
               src={videoUrl}
               title={videoTitle}
               allow="fullscreen"
               referrerPolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            ></iframe> */}
           </div>
         </section>
 
