@@ -13,7 +13,7 @@ type OywProps = {
 const OneYoungWorld = ({
   lang,
   oywSection: {
-    virufyAndOyw: { subTitle, texts, videoUrl, videoTitle },
+    virufyAndOyw: { subTitle, texts /*videoUrl, videoTitle*/ },
     whyOyw: { title: whyOywTitle, cards },
     volunteerStories: { title: volunteerTitle, text, testimonials, buttonText },
   },
@@ -41,13 +41,13 @@ const OneYoungWorld = ({
               </div>
             </div>
 
-            <iframe
+            {/* <iframe
               className="aspect-video w-full px-4 py-1 md:px-16 md:py-9"
               src={videoUrl}
               title={videoTitle}
               allow="fullscreen"
               referrerPolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            ></iframe> */}
           </div>
         </section>
 
@@ -61,7 +61,10 @@ const OneYoungWorld = ({
             {/* Cards Container */}
             <div className="space-y-16 rounded-2xl bg-[#3578de4f] py-10 pr-4 font-medium md:grid md:grid-cols-2 md:gap-12 md:space-x-0 md:space-y-0 md:bg-inherit md:py-0">
               {cards.map((card) => (
-                <div key={card.title} className="flex justify-center space-x-2 text-[#3579de] bg-[#f5f5f5] p-5">
+                <div
+                  key={card.title}
+                  className="flex justify-center space-x-2 bg-[#f5f5f5] p-5 text-[#3579de]"
+                >
                   <ExportedImage
                     className="my-auto h-[80px] w-[80px] lg:h-[100px] lg:w-[100px]"
                     src={card.image}
