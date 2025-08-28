@@ -48,7 +48,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const isHomePage = currPathname === `/${lang}/`;
   const [showSearch, setShowSearch] = useState(false);
   const handleNavClick = () => setNavbar(false);
-  const inputRef = useRef<HTMLInputElement>(null);
 
   // Mobile search bar color configuration
   // Applies search bar color based on the current page
@@ -76,6 +75,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const pageColor = colors[pageColorKey];
 
   const dropdownRef = useRef<HTMLUListElement | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
   const DEBOUNCE_DELAY = 400;
 
   useEffect(() => {
@@ -170,22 +170,18 @@ export default function Navbar({ lang }: { lang: Locale }) {
       }
       const target = event.target as HTMLElement;
       if (
-        dropdownRef.current &&
+        (dropdownRef.current &&
         !dropdownRef.current.contains(target) &&
-        !target.closest('.search-input-container')
-      ) {
-        clearResults();
-        setHasSearched(false);
-        setShowSearch(false);
-      }
-      if (
-        inputRef.current &&
+        !target.closest('.search-input-container')) ||
+        (inputRef.current &&
         !inputRef.current.contains(target) &&
-        !target.closest('.search-input-container')
+        !target.closest('.search-input-container'))
       ) {
         clearResults();
         setHasSearched(false);
-        setShowSearch(false);
+        if (window.innerWidth < SCREEN_SIZE) {
+          setShowSearch(false);
+        }
       }
     };
 
@@ -210,6 +206,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         placeholder={searchPlaceholder}
         value={query}
         disabled={!isReady}
+        autoFocus
         onChange={(e) => {
           const value = e.target.value;
           setQuery(value);
@@ -250,7 +247,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         </div>
       )}
       <div 
-        className={`absolute top-2.5 flex h-full lg:right-0 lg:top-1 ${showSearch ? 'right-4 top-2.5' : `left-9 md:-left-1 ${navbar ? 'left-11 md:left-2.5' : ''}`}`}
+        className={`absolute top-2.5 flex h-full lg:right-0 lg:top-1 ${showSearch ? 'right-4 top-2.5' : `left-9 md:-left-1 ${navbar ? 'left-[2.75rem] md:left-1' : ''}`}`}
         onClick={() => {
           if (window.innerWidth < SCREEN_SIZE) {
             setShowSearch((prev) => !prev);
@@ -285,7 +282,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     (hasSearched && showSearch) && (
       <ul
         ref={dropdownRef}
-        className={`absolute left-1/2 top-[58px] z-50 max-h-96 w-[86vw] lg:w-[70vw] -translate-x-1/2 overflow-y-auto rounded-md ${navbar ? `${colors['black'].bg}` : `${pageColor.bg}`} lg:bg-white lg:bg-opacity-85 p-4 shadow-lg`}
+        className={`absolute left-1/2 top-[58px] z-50 max-h-96 w-[86vw] lg:w-[70vw] -translate-x-1/2 overflow-y-auto border border-gray lg:border-0 rounded-md ${navbar ? `${colors['black'].bg}` : `${pageColor.bg}`} lg:bg-white lg:bg-opacity-85 p-4 shadow-lg`}
         onClick={(e) => e.stopPropagation()}
       >
         {results.filter((r) => r.url).length > 0 ? (
@@ -348,7 +345,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             <Link
               href={`/${lang}`}
               onClick={handleNavClick}
-              className={`absolute right-3 flex rounded-full bg-opacity-80 px-3 py-2 text-black lg:hidden z-10 mt-3 ${navbar ? 'mt-5 right-9' : ''}`}
+              className={`absolute right-3 flex rounded-full bg-opacity-80 px-3 py-2 text-black lg:hidden z-10 mt-3 ${navbar ? 'mt-5 right-5' : ''}`}
             >
               {(!isHomePage || navbar) && (
                 <ExportedImage
@@ -395,7 +392,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             {/* Hamburger Menu Toggle (mobile) */}
             <div className={`lg:hidden absolute left-3 ${navbar ? 'top-4 left-5' : 'top-2'}`}>
               <button
-                className="rounded-lg p-2 text-gray-700 outline-none focus:border focus:border-gray-400"
+                className="rounded-lg p-2 text-gray-700 outline-none"
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
