@@ -22,7 +22,7 @@ const SupportersPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       {/* Globe background img */}
       <div className="relative -top-24 flex justify-center">
         <ExportedImage
-          className="h-full max-h-[700px] w-full object-cover"
+          className="h-full min-h-[400px] max-h-[700px] w-full object-cover"
           src={BgHeader}
           alt=""
           priority
