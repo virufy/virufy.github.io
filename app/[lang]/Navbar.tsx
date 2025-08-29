@@ -206,7 +206,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         placeholder={searchPlaceholder}
         value={query}
         disabled={!isReady}
-        autoFocus
+        autoFocus={window.innerWidth < SCREEN_SIZE}
         onChange={(e) => {
           const value = e.target.value;
           setQuery(value);
@@ -327,7 +327,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   return (
     <div className={`w-full bg-transparent absolute ${navbar ? '' : 'p-2'} lg:p-0`}>
-      <nav className={`sticky z-[100] w-full bg-opacity-80 rounded-full ${pageColor.bg} h-[50px] lg:bg-transparent`}>
+      <nav className={`sticky z-[100] w-full bg-opacity-80 rounded-full ${showSearch ? '' : `${pageColor.bg}`} h-[50px] lg:bg-transparent`}>
         {/* donate modal */}
         {showModal ? (
           <div onClick={() => setShowModal(false)}>
@@ -383,7 +383,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
             {/* Mobile Search Bar */}
             <div className={`-mt-1 px-12 py-2 lg:hidden`}>
-              <div className={`${navbar ? 'w-[90vw] mt-2' : 'w-[86vw]'} md:w-[250px]`}>
+              <div className={`${navbar ? 'w-[90vw] sm:w-[94vw] mt-2' : 'w-[86vw] sm:w-[90vw]'} md:w-[250px]`}>
                 {renderSearchInput('w-full -ml-9 md:ml-1')}
                 {renderSearchDropdown()}
               </div>
@@ -443,7 +443,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Home'
                             ? 'solid border-b-2 py-2'
-                            : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
+                            : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}`}
                         onClick={handleNavClick}
@@ -459,7 +459,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Technology'
                             ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}/ai`}
                         onClick={handleNavClick}
@@ -531,7 +531,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'About Us'
                             ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         } whitespace-nowrap`}
                         href={`/${lang}/story`}
                         onClick={handleNavClick}
@@ -584,7 +584,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Media'
                             ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         } `}
                         href={`/${lang}/news`}
                         onClick={handleNavClick}
@@ -628,7 +628,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'FAQ'
                             ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-black before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}/faq`}
                         onClick={handleNavClick}
