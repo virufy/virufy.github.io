@@ -84,7 +84,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             buttonRoute={`/${lang}/amils-story`}
             ContainerTitleProps={{ style: { paddingLeft: '20px' } }}
             ContainerTextProps={{ style: { paddingLeft: '20px' } }}
-            alt="Amil Khanzada's headshot Image"
+            alt="Founder and CEO Amil Khanzada"
           />
 
           {/* Advisors Title */}

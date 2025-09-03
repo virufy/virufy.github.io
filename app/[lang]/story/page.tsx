@@ -21,96 +21,99 @@ const StoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = usei18n(lang);
 
   return (
-    <div className="relative pb-24">
-      {/* About Us/Hero Section */}
-      <section>
-        <div className="relative w-full overflow-hidden py-[80px]">
-          <ExportedImage
-            className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
-            src={About_us_bg}
-            alt="About us background image"
-            width={1512}
-            height={9070}
-            priority
-            basePath={basePath}
-          />
+    <>
+      <div className="relative pb-24">
+        {/* About Us/Hero Section */}
+        <section>
+          <div className="relative w-full overflow-hidden py-[80px]">
+            <ExportedImage
+              className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
+              src={About_us_bg}
+              alt="About us background image"
+              width={1512}
+              height={9070}
+              priority
+              basePath={basePath}
+            />
 
-          {/* Text Container */}
-          <div className="relative flex flex-col items-center justify-center sm:pt-[50px] lg:pt-[180px]">
-            {/* Sizing & Spacing Container */}
-            <div className="space-y-6 rounded-[64px] bg-white p-5 text-center font-medium text-black opacity-85 sm:w-[420px] sm:p-[40px] lg:w-full lg:max-w-2xl lg:px-10 lg:text-left">
-              {/* Our Misiion Text */}
-              <div className="pb-10">
-                <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
-                  {MissionSection.title}
-                </h2>
-                {MissionSection.texts.map((el, i) => (
-                  // render fragment or link component in paragraph element
-                  <p
-                    className="justify-center py-5 text-center lg:text-xl"
-                    key={i}
-                  >
-                    {el.map((text, i) =>
-                      text.type === 'text' ? (
-                        <Fragment key={i}>{text.text}</Fragment>
-                      ) : (
-                        <Link
-                          className="text-green-500"
-                          key={i}
-                          href={`/${lang}${text.url}`}
-                        >
-                          {text.text}
-                        </Link>
-                      )
-                    )}
-                  </p>
-                ))}
-              </div>
-              {/* Story Text */}
-              <div>
-                <h2 className="pb-10 text-center text-5xl font-normal">
-                  {storySection.title}
-                </h2>
-                {storySection.texts.map((el, i) => (
-                  // render fragment or link component in paragraph element
-                  <p
-                    className="justify-center py-5 text-center lg:text-xl"
-                    key={i}
-                  >
-                    {el.map((text, i) =>
-                      text.type === 'text' ? (
-                        <Fragment key={i}>{text.text}</Fragment>
-                      ) : (
-                        <Link
-                          className="text-green-500"
-                          key={i}
-                          href={`/${lang}${text.url}`}
-                        >
-                          {text.text}
-                        </Link>
-                      )
-                    )}
-                  </p>
-                ))}
-              </div>
-              <div className="pb-5">
-                <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
-                  {privacySection.title}
-                </h2>
-                {privacySection.texts.map((text, i) => (
-                  <p
-                    className="text-center leading-10 lg:text-xl lg:leading-normal"
-                    key={i}
-                  >
-                    {text}
-                  </p>
-                ))}
+            {/* Text Container */}
+            <div className="relative flex flex-col items-center justify-center sm:pt-[50px] lg:pt-[180px]">
+              {/* Sizing & Spacing Container */}
+              <div className="space-y-6 rounded-[64px] bg-white p-5 text-center font-medium text-black opacity-85 sm:w-[420px] sm:p-[40px] lg:w-full lg:max-w-2xl lg:px-10 lg:text-left">
+                {/* Our Misiion Text */}
+                <div className="pb-10">
+                  <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
+                    {MissionSection.title}
+                  </h2>
+                  {MissionSection.texts.map((el, i) => (
+                    // render fragment or link component in paragraph element
+                    <p
+                      className="justify-center py-5 text-center lg:text-xl"
+                      key={i}
+                    >
+                      {el.map((text, i) =>
+                        text.type === 'text' ? (
+                          <Fragment key={i}>{text.text}</Fragment>
+                        ) : (
+                          <Link
+                            className="text-green-500"
+                            key={i}
+                            href={`/${lang}${text.url}`}
+                          >
+                            {text.text}
+                          </Link>
+                        )
+                      )}
+                    </p>
+                  ))}
+                </div>
+                {/* Story Text */}
+                <div>
+                  <h2 className="pb-10 text-center text-5xl font-normal">
+                    {storySection.title}
+                  </h2>
+                  {storySection.texts.map((el, i) => (
+                    // render fragment or link component in paragraph element
+                    <p
+                      className="justify-center py-5 text-center lg:text-xl"
+                      key={i}
+                    >
+                      {el.map((text, i) =>
+                        text.type === 'text' ? (
+                          <Fragment key={i}>{text.text}</Fragment>
+                        ) : (
+                          <Link
+                            className="text-green-500"
+                            key={i}
+                            href={`/${lang}${text.url}`}
+                          >
+                            {text.text}
+                          </Link>
+                        )
+                      )}
+                    </p>
+                  ))}
+                </div>
+                <div className="pb-5">
+                  <h2 className="mb-10 text-center text-4xl font-normal sm:text-5xl">
+                    {privacySection.title}
+                  </h2>
+                  {privacySection.texts.map((text, i) => (
+                    <p
+                      className="text-center leading-10 lg:text-xl lg:leading-normal"
+                      key={i}
+                    >
+                      {text}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+      <div className="h-[98px] bg-gradient-to-b from-transparent to-black"></div>
+    </>
   );
 };
 

@@ -3,6 +3,19 @@ import { type AmilsStory } from '../types/amilsStory';
 const amilsStory: AmilsStory = {
   sectionAmil: {
     titleAmil: 'Amil’s Story',
+    tabsAmil: [
+      'Early Life',
+      'Professional Growth',
+      'Global Impact',
+      'Founding Virufy',
+      "Amil's Story",
+      'Publications',
+    ],
+    imgCaption: [
+      'Amil with nursing staff supporting Virufy’s clinical studies in Columbia, South America.',
+      'Amil with Japanese students and staff in ZenIT programming school.',
+      'Amil’s encounter with former Prime Minister and current NATO president Mark Rutte.',
+    ],
     textAmil: [
       "Born and raised in the Silicon Valley in an immigrant family, Amil attended homeschooling and began studying at community college while 14 years old. Amil father's dedication to social service shaped him, with a childhood filled with volunteer activities such as feeding the homeless at soup kitchens. Soon after, Amil's father passed away in a fatal car crash with a drunk driver. Although struggling emotionally with the loss of his hero, Amil took his first job as a software consultant developing image recognition technology for automated grading of tests in K-12 schools.",
       'After receiving his B.A. in Computer Science from University of California, Berkeley, Amil joined Hewlett-Packard (HP) in Silicon Valley to work full-time as a software engineer developing security log standardization software for ArcSight, a Security Information and Event Management System (SIEM).',

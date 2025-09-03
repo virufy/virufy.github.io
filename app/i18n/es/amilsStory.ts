@@ -3,6 +3,19 @@ import { type AmilsStory } from '../types/amilsStory';
 const amilsStory: AmilsStory = {
   sectionAmil: {
     titleAmil: 'Historia de Amil',
+    tabsAmil: [
+      'Vida temprana',
+      'Crecimiento profesional',
+      'Impacto global',
+      'Fundación de Virufy',
+      'La historia de Amil',
+      'Publicaciones',
+    ],
+    imgCaption: [
+      'Amil con el personal de enfermería apoyando los estudios clínicos de Virufy en Colombia, Sudamérica.',
+      'Amil con estudiantes y personal japoneses en la escuela de programación ZenIT.',
+      'El encuentro de Amil con el ex primer ministro y actual presidente de la OTAN, Mark Rutte.',
+    ],
     textAmil: [
       'Amil nació y creció en Silicon Valley en una familia inmigrante. Fue educado en casa y comenzó a estudiar en un colegio comunitario a los 14 años. La dedicación de su padre al servicio social lo marcó profundamente, con una infancia llena de actividades de voluntariado como alimentar a personas sin hogar en comedores comunitarios. Poco después, el padre de Amil falleció en un accidente automovilístico provocado por un conductor ebrio. Aunque sufrió emocionalmente por la pérdida de su héroe, Amil consiguió su primer trabajo como consultor de software desarrollando tecnología de reconocimiento de imágenes para la calificación automatizada de exámenes en escuelas de nivel K-12.',
       'Después de obtener su licenciatura en Ciencias de la Computación en la Universidad de California, Berkeley, Amil se unió a Hewlett-Packard (HP) en Silicon Valley para trabajar a tiempo completo como ingeniero de software desarrollando software de estandarización de registros de seguridad para ArcSight, un sistema de gestión de información y eventos de seguridad (SIEM).',

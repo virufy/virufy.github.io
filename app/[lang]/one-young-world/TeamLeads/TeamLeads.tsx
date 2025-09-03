@@ -3,7 +3,7 @@ import TeamLeadCard from './TeamLeadCard';
 
 const TeamLeads = ({ cards }: TeamLeadsType) => {
   return (
-    <article className="mx-auto flex items-center justify-center pt-10 md:pt-16 pb-8">
+    <article className="mx-auto flex items-center justify-center pb-8 pt-10 md:pt-16 md:opacity-95">
       {/* Team Leads Container */}
       <div className="px-4 sm:px-6">
         {/* Cards Container */}

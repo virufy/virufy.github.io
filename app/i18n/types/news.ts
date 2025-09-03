@@ -1,4 +1,7 @@
-import { type PublicationCard } from './publications';
+export interface PublicationCard {
+  title: string;
+  url: string;
+}
 
 export interface PressReleases {
   pressReleaseSection: PressReleaseSection;
@@ -10,5 +13,8 @@ export interface PressReleaseSection {
 }
 
 export interface NewsCard extends PublicationCard {
+  linkText?: string;
+  date: string;
   subText: string;
+  year?: number;
 }

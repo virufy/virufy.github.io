@@ -78,7 +78,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="relative -mb-24 bg-[#255292]">
+      <div className="relative bg-[#255292]">
         <ExportedImage
           src={WaveBackground}
           alt=""
@@ -106,6 +106,7 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             </div>
           </div>
         </section>
+        <div className="h-[98px] bg-gradient-to-b from-transparent to-black"></div>
       </div>
     </div>
   );
