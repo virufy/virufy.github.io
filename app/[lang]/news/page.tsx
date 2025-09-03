@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Head from 'next/head';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
@@ -11,39 +11,56 @@ import NewsCard from './NewsCard';
 
 type Props = { params: { lang: Locale } };
 
+// Safely derive a 4-digit year from diverse date strings or a numeric year field.
+const safeYear = (card: { date?: string; year?: number | string }) => {
+  // Prefer explicit numeric year if present
+  if (card?.year != null && Number.isFinite(Number(card.year))) {
+    return Number(card.year);
+  }
+
+  const d = card?.date;
+  if (typeof d === 'string') {
+    // ISO-like: 2020-08-01 / 2020-08 / 2020-08-01T...
+    const iso = d.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?(?:[T ].*)?$/);
+    if (iso) return Number(iso[1]);
+
+    // Free text like "Aug 2020", "Released in 2020", or ranges "2019–2020"
+    // Find all 4-digit years and pick the latest (so "2019–2020" -> 2020)
+    const matches = Array.from(d.matchAll(/\b(19|20)\d{2}\b/g)).map(m => Number(m[0]));
+    if (matches.length) return Math.max(...matches);
+  }
+
+  return undefined;
+};
+
 const NewsPage = ({ params: { lang } }: Props) => {
   const {
     pressReleases: { pressReleaseSection, pressReleaseCards },
   } = usei18n(lang);
 
-  // Collect unique, sorted years
+  // Unique years, desc, using safeYear (no Date.parse)
   const years = useMemo(() => {
-    const ys = Array.from(
+    return Array.from(
       new Set(
-        pressReleaseCards
-          .map((card) => {
-            if (typeof card.date === 'string' && !isNaN(Date.parse(card.date))) {
-              return new Date(card.date).getFullYear();
-            }
-            return card.year;
-          })
-          .filter(Boolean) as number[]
+        (pressReleaseCards || [])
+          .map(safeYear)
+          .filter((y): y is number => Number.isFinite(y))
       )
     ).sort((a, b) => b - a);
-    return ys;
   }, [pressReleaseCards]);
 
-  const [selectedYear, setSelectedYear] = useState<number>(years[0] ?? new Date().getFullYear());
+  // Default to latest available year; sync if years change
+  const [selectedYear, setSelectedYear] = useState<number | null>(years[0] ?? null);
+  useEffect(() => {
+    if (years.length > 0 && (selectedYear == null || !years.includes(selectedYear))) {
+      setSelectedYear(years[0]);
+    }
+  }, [years]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Filter cards by selected year
+  // Cards for the chosen year (again via safeYear)
   const displayedCards = useMemo(() => {
-    return pressReleaseCards.filter((card) => {
-      const y =
-        typeof card.date === 'string' && !isNaN(Date.parse(card.date))
-          ? new Date(card.date).getFullYear()
-          : card.year;
-      return y === selectedYear;
-    });
+    if (selectedYear == null) return pressReleaseCards;
+    return (pressReleaseCards || []).filter((card) => safeYear(card) === selectedYear);
   }, [pressReleaseCards, selectedYear]);
 
   return (
@@ -61,11 +78,12 @@ const NewsPage = ({ params: { lang } }: Props) => {
         <section>
           <div className="relative bg-[#2b5290]">
             <ExportedImage
-              className="absolute inset-0 h-full w-full object-cover opacity-30"
+              className="absolute inset-0 h-full w-full object-cover opacity-30 pointer-events-none" // don't block taps
               src={PressReleasesBackground}
               alt=""
               priority
               basePath={basePath}
+              aria-hidden
             />
 
             <div className="mx-auto flex max-w-xl flex-col items-center justify-center px-10 py-64 text-center font-medium opacity-95">
@@ -74,24 +92,23 @@ const NewsPage = ({ params: { lang } }: Props) => {
               </h1>
             </div>
 
-            {/* Dropdown: half-rectangle, centered, bottom flush with divider */}
-            {/* Dropdown: centered on divider, with chevron cap like the screenshot */}
+            {/* Dropdown: centered on divider */}
             {years.length > 0 && (
               <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20">
                 <div className="relative w-[289px] h-[26px]">
-                  {/* The select */}
                   <select
-                    value={selectedYear}
+                    value={selectedYear ?? ''}
                     onChange={(e) => setSelectedYear(Number(e.target.value))}
                     className="
-          w-[289px] h-[26px]
-          [appearance:none] [-webkit-appearance:none] [-moz-appearance:none] [&::-ms-expand]:hidden
-          bg-[#154498] text-white text-sm text-center
-          leading-[26px] px-4 pr-12     /* reserve space for the cap + chevron */
-          rounded-t-[13px] rounded-b-none               /* half-rectangle; use rounded-full for full pill */
-          focus:outline-none focus:ring-0
-          cursor-pointer
-        "
+                      w-[289px] h-[26px]
+                      [appearance:none] [-webkit-appearance:none] [-moz-appearance:none] [&::-ms-expand]:hidden
+                      bg-[#154498] text-white text-sm text-center
+                      leading-[26px] px-4 pr-12
+                      rounded-t-[13px] rounded-b-none
+                      focus:outline-none focus:ring-0
+                      cursor-pointer
+                    "
+                    aria-label="Filter press releases by year"
                   >
                     {years.map((y) => (
                       <option key={y} value={y} className="text-center w-[51px] h-[24px]">
@@ -100,15 +117,22 @@ const NewsPage = ({ params: { lang } }: Props) => {
                     ))}
                   </select>
 
-                  {/* Right 'cap' behind the chevron (gives that rounded darker end) */}
-                  
-
-                  {/* Chevron inside the cap */}
+                  {/* Chevron */}
                   <svg
                     className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2"
-                    width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
                   >
-                    <path d="M7 10l5 5 5-5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path
+                      d="M7 10l5 5 5-5"
+                      stroke="white"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
                   </svg>
                 </div>
               </div>

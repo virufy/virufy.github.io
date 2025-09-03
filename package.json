@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "flexsearch": "^0.8.161",
+    "i": "^0.3.7",
     "jimp": "^1.6.0",
     "lodash.debounce": "^4.0.8",
     "next": "^14.2.30",
