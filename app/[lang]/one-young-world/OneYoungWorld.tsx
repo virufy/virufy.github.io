@@ -49,7 +49,6 @@ const OneYoungWorld = ({
               allow="fullscreen"
               referrerPolicy="strict-origin-when-cross-origin"
             ></iframe> */}
-            ></iframe> */}
           </div>
         </section>
 
