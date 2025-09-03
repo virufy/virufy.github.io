@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/elderlycare/precache-manifest.94fae053f6fcd698fd900eaf96638176.js"
+  "/elderlycare/precache-manifest.633212422b92ec7879f59a66a7de0ba8.js"
 );
 
 self.addEventListener('message', (event) => {
