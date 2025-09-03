@@ -26,7 +26,9 @@ const safeYear = (card: { date?: string; year?: number | string }) => {
 
     // Free text like "Aug 2020", "Released in 2020", or ranges "2019–2020"
     // Find all 4-digit years and pick the latest (so "2019–2020" -> 2020)
-    const matches = Array.from(d.matchAll(/\b(19|20)\d{2}\b/g)).map(m => Number(m[0]));
+    const matches = Array.from(d.matchAll(/\b(19|20)\d{2}\b/g)).map((m) =>
+      Number(m[0])
+    );
     if (matches.length) return Math.max(...matches);
   }
 
@@ -50,9 +52,14 @@ const NewsPage = ({ params: { lang } }: Props) => {
   }, [pressReleaseCards]);
 
   // Default to latest available year; sync if years change
-  const [selectedYear, setSelectedYear] = useState<number | null>(years[0] ?? null);
+  const [selectedYear, setSelectedYear] = useState<number | null>(
+    years[0] ?? null
+  );
   useEffect(() => {
-    if (years.length > 0 && (selectedYear == null || !years.includes(selectedYear))) {
+    if (
+      years.length > 0 &&
+      (selectedYear == null || !years.includes(selectedYear))
+    ) {
       setSelectedYear(years[0]);
     }
   }, [years]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -60,7 +67,9 @@ const NewsPage = ({ params: { lang } }: Props) => {
   // Cards for the chosen year (again via safeYear)
   const displayedCards = useMemo(() => {
     if (selectedYear == null) return pressReleaseCards;
-    return (pressReleaseCards || []).filter((card) => safeYear(card) === selectedYear);
+    return (pressReleaseCards || []).filter(
+      (card) => safeYear(card) === selectedYear
+    );
   }, [pressReleaseCards, selectedYear]);
 
   return (
@@ -78,7 +87,7 @@ const NewsPage = ({ params: { lang } }: Props) => {
         <section>
           <div className="relative bg-[#2b5290]">
             <ExportedImage
-              className="absolute inset-0 h-full w-full object-cover opacity-30 pointer-events-none" // don't block taps
+              className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-30" // don't block taps
               src={PressReleasesBackground}
               alt=""
               priority
@@ -94,24 +103,20 @@ const NewsPage = ({ params: { lang } }: Props) => {
 
             {/* Dropdown: centered on divider */}
             {years.length > 0 && (
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 z-20">
-                <div className="relative w-[289px] h-[26px]">
+              <div className="absolute bottom-0 left-1/2 z-20 -translate-x-1/2">
+                <div className="relative h-[26px] w-[289px]">
                   <select
                     value={selectedYear ?? ''}
                     onChange={(e) => setSelectedYear(Number(e.target.value))}
-                    className="
-                      w-[289px] h-[26px]
-                      [appearance:none] [-webkit-appearance:none] [-moz-appearance:none] [&::-ms-expand]:hidden
-                      bg-[#154498] text-white text-sm text-center
-                      leading-[26px] px-4 pr-12
-                      rounded-t-[13px] rounded-b-none
-                      focus:outline-none focus:ring-0
-                      cursor-pointer
-                    "
+                    className="h-[26px] w-[289px] cursor-pointer rounded-b-none rounded-t-[13px] bg-[#154498] px-4 pr-12 text-center text-sm leading-[26px] text-white [-moz-appearance:none] [-webkit-appearance:none] [appearance:none] focus:outline-none focus:ring-0 [&::-ms-expand]:hidden"
                     aria-label="Filter press releases by year"
                   >
                     {years.map((y) => (
-                      <option key={y} value={y} className="text-center w-[51px] h-[24px]">
+                      <option
+                        key={y}
+                        value={y}
+                        className="h-[24px] w-[51px] text-center"
+                      >
                         {y}
                       </option>
                     ))}
@@ -141,18 +146,22 @@ const NewsPage = ({ params: { lang } }: Props) => {
         </section>
 
         {/* Press Releases Section */}
-        <div className="relative -mb-24 bg-[#255292] pb-24">
+        <div className="relative bg-[#255292] pb-24">
           <section className="flex justify-center">
             {/* spacing so cards don’t collide with the dropdown edge */}
             <div className="grid gap-8 px-10 pt-16 lg:grid-cols-2 lg:px-16">
               {displayedCards.map((pressRelease, i) => (
-                <div key={i} className="rounded-xl bg-white px-10 py-8 text-left">
+                <div
+                  key={i}
+                  className="rounded-xl bg-white px-10 py-8 text-left"
+                >
                   <NewsCard {...pressRelease} />
                 </div>
               ))}
             </div>
           </section>
         </div>
+        <div className="h-[98px] bg-gradient-to-b from-[#255292] to-black"></div>
       </div>
     </>
   );

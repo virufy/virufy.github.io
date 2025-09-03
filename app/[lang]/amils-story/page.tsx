@@ -155,7 +155,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     setDesktopTab(tab.id);
                     setActiveTab(tab.id);
                   }}
-                  className={`w-[50%] bg-[#255292] pt-10 text-xl xl:mx-10 xl:text-2xl ${
+                  className={`w-[50%] bg-[#255292] pt-10 text-xl md:text-base lg:text-lg xl:text-2xl ${
                     activeTab === tab.id
                       ? 'underline decoration-[#30da74ff] decoration-[3px] underline-offset-[16px]'
                       : ''
