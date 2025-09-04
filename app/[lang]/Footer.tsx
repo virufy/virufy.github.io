@@ -14,8 +14,12 @@ const Footer = ({ lang }: { lang: Locale }) => {
   const [showModalMyInformation, setShowModalMyInformation] = useState(false);
 
   type FooterPrivacyLink =
-    { label: string; showModal: Dispatch<SetStateAction<boolean>>; endpoint?: never; }
-    | { label: string; endpoint: string; showModal?: never; };
+    | {
+        label: string;
+        showModal: Dispatch<SetStateAction<boolean>>;
+        endpoint?: never;
+      }
+    | { label: string; endpoint: string; showModal?: never };
 
   const footerPrivacyLinks: FooterPrivacyLink[] = [
     {
@@ -51,7 +55,7 @@ const Footer = ({ lang }: { lang: Locale }) => {
 
   return (
     <>
-      <div>
+      <div className="">
         {showModalMyInformation ? (
           <SellMyInformationModal
             lang={lang}

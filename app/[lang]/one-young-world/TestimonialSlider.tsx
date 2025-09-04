@@ -29,13 +29,13 @@ const TestimonialSlider = ({
       <button
         disabled={imageIndex <= 0}
         onClick={showPrevImage}
-        className="h-[48px] w-[48px] rounded-full bg-[#3578de] bg-opacity-30 text-2xl disabled:opacity-0"
+        className="mr-4 h-[48px] w-[48px] rounded-full bg-[#3578de] bg-opacity-30 text-2xl disabled:opacity-0"
       >
         &lt;
       </button>
 
       {/* Card Container */}
-      <div className="w-48 sm:w-64 md:w-auto md:max-w-[450px]">
+      <div className="w-[21rem] md:w-auto md:max-w-[450px]">
         <div className="flex overflow-hidden">
           {testimonials.map((testimonial, i) => (
             <TestimonialCard key={i} {...testimonial} imageIndex={imageIndex} />

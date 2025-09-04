@@ -13,7 +13,7 @@ type OywProps = {
 const OneYoungWorld = ({
   lang,
   oywSection: {
-    virufyAndOyw: { subTitle, texts, videoUrl, videoTitle },
+    virufyAndOyw: { subTitle, texts /*videoUrl, videoTitle*/ },
     whyOyw: { title: whyOywTitle, cards },
     volunteerStories: { title: volunteerTitle, text, testimonials, buttonText },
   },
@@ -41,13 +41,13 @@ const OneYoungWorld = ({
               </div>
             </div>
 
-            <iframe
+            {/* <iframe
               className="aspect-video w-full px-4 py-1 md:px-16 md:py-9"
               src={videoUrl}
               title={videoTitle}
               allow="fullscreen"
               referrerPolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            ></iframe> */}
           </div>
         </section>
 
@@ -59,17 +59,22 @@ const OneYoungWorld = ({
             </h2>
 
             {/* Cards Container */}
-            <div className="space-y-16 rounded-2xl bg-[#3578de4f] py-10 pr-4 font-medium md:grid md:grid-cols-2 md:gap-12 md:space-x-0 md:space-y-0 md:bg-inherit md:py-0">
+            <div className="space-y-0 rounded-2xl bg-white pl-4 pr-4 font-medium md:grid md:grid-cols-2 md:space-x-0 md:py-0">
               {cards.map((card) => (
-                <div key={card.title} className="flex justify-center space-x-2 text-[#3579de] bg-[#f5f5f5] p-5">
+                <div
+                  key={card.title}
+                  className="flex justify-center space-x-2 bg-white p-4 text-black md:px-12"
+                >
                   <ExportedImage
-                    className="my-auto h-[80px] w-[80px] lg:h-[100px] lg:w-[100px]"
+                    className="my-auto mr-4 h-[80px] w-[80px] lg:h-[100px] lg:w-[100px]"
                     src={card.image}
                     alt={card.altText}
                     basePath={basePath}
                   />
                   <div className="space-y-4">
-                    <h3 className="text-lg md:text-xl">{card.title}</h3>
+                    <h3 className="text-lg font-bold md:text-xl">
+                      {card.title}
+                    </h3>
                     <p className="text-sm md:text-base">{card.text}</p>
                   </div>
                 </div>
