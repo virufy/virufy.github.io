@@ -40,6 +40,11 @@ const advisorOrder = [
   'shirin',
   'maurino',
 ];
+export const metadata = {
+  title: 'Virufy Advisors | Global Experts Supporting AI in Healthcare',
+  description:
+    'Meet the Virufy advisors — global leaders and experts guiding our mission to harness AI for healthcare innovation.',
+};
 const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     people: { titleImage, sectionMeetOurFounder, sectionAdvisors },
@@ -51,7 +56,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       <ExportedImage
         className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
         src={AdvisorsNewBackground}
-        alt="Advisors page background"
+        alt="Virufy Global Advisors - Leaders Supporting AI in Healthcare"
         width={1512}
         height={9070}
         priority
