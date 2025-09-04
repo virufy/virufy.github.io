@@ -255,7 +255,7 @@ const people: People = {
       les: {
         img: LesAtlas,
         name: 'Dr. Les Atlas',
-        role: 'Audio and Machine Learning Advisor',
+        role: 'Chief Scientist',
         texts: [
           'Professor of Electrical and Computer Engineering - University of Washington',
           'Ph.D. Electrical Engineering, Stanford',
