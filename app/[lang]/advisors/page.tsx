@@ -51,7 +51,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       <ExportedImage
         className="fixed left-0 top-0 z-[-10] h-full w-full object-cover"
         src={AdvisorsNewBackground}
-        alt="Advisors page background"
+        alt="Virufy Global Advisors - Leaders Supporting AI in Healthcare"
         width={1512}
         height={9070}
         priority
