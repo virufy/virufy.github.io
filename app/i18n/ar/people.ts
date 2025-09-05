@@ -30,6 +30,7 @@ import {
   VictorWang,
   ZafarShahid,
   MaurinoFlora,
+  AmirKhan,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -330,6 +331,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
+      amir: {
+        img: AmirKhan,
+        name: 'أمير خان',
+        role: 'مستشار الجاذبية التنفيذية',
+        texts: [
+          'الرئيس التنفيذي لشركة Digital Gravitas في وادي السيليكون',
+          'معهد مودا بورجو، ميلانو',
+        ],
+        link: 'https://virufy.org/en/advisors/',
+      },
     },
     advisorOrder: [
       'adam',
@@ -363,6 +374,7 @@ const people: People = {
       'victor',
       'zafar',
       'maurino',
+      'amir',
     ],
   },
 };
