@@ -32,7 +32,7 @@ export default function SupportersPage({
           basePath={basePath}
           fill
           unoptimized={unoptimized}
-          className="object-cover"
+          className="h-full min-h-[400px] max-h-[700px] w-full object-cover"
         />
         <Title
           Text={title}

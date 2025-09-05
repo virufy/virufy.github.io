@@ -30,6 +30,7 @@ import {
   VictorWang,
   ZafarShahid,
   MaurinoFlora,
+  AmirKhan,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -287,7 +288,7 @@ const people: People = {
       },
       kohei: {
         img: KoheiWakamiya,
-        name: '若宮 耕平',
+        name: '若宮幸平',
         role: '音声AI顧問',
         texts: ['音声AIアドバイザー', '九州大学'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_ja.html',
@@ -323,6 +324,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
+      amir: {
+        img: AmirKhan,
+        name: 'アミール・カーン',
+        role: 'エグゼクティブ・グラビタス・アドバイザー',
+        texts: [
+          'Digital Gravitas シリコンバレー CEO',
+          'モーダ・ブルゴ研究所、ミラノ',
+        ],
+        link: 'https://virufy.org/en/advisors/',
+      },
     },
     advisorOrder: [
       'adam',
@@ -356,6 +367,7 @@ const people: People = {
       'victor',
       'zafar',
       'maurino',
+      'amir',
     ],
   },
 };

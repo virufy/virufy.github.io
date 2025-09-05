@@ -552,7 +552,7 @@ const footer: Footer = {
               {
                 type: 'link',
                 text: 'Privacy Policy',
-                href: 'https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view',
+                href: '/en/privacy-policy/en',
               },
             ],
           },
