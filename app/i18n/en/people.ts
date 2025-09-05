@@ -30,6 +30,7 @@ import {
   VictorWang,
   ZafarShahid,
   MaurinoFlora,
+  AmirKhan,
 } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
@@ -333,6 +334,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
+      amir: {
+        img: AmirKhan,
+        name: 'Amir Khan',
+        role: 'Executive Gravitas Advisor',
+        texts: [
+          'CEO Digital Gravitas Silicon Valley',
+          'Istituto di Moda Burgo, Milan',
+        ],
+        link: 'https://virufy.org/en/advisors/',
+      },
     },
     advisorOrder: [
       'adam',
@@ -366,6 +377,7 @@ const people: People = {
       'victor',
       'zafar',
       'maurino',
+      'amir',
     ],
   },
 };
