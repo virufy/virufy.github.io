@@ -63,7 +63,7 @@ const PublicationsPage = ({
         </section>
 
         {/* Gradient Overlay Container */}
-        <div className="relative -mb-24 bg-[#255292]">
+        <div className="relative bg-[#255292]">
           <ExportedImage
             src={HexagonDottedBackground}
             className="absolute h-full w-full object-cover opacity-30"
@@ -101,6 +101,7 @@ const PublicationsPage = ({
               </button>
             </div>
           </section>
+          <div className="h-[98px] bg-gradient-to-b from-[#255292] to-black"></div>
         </div>
       </div>
     </>

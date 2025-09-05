@@ -1,3 +1,4 @@
+import {} from '@/public/images/advisors';
 import { type People } from '../types/people';
 
 const people: People = {
@@ -312,6 +313,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
+      amir: {
+        img: AmirKhan,
+        name: 'Amir Khan',
+        role: 'Asesor ejecutivo de Gravitas',
+        texts: [
+          'CEO Digital Gravitas Silicon Valley',
+          'Instituto de Moda Burgo, Milán',
+        ],
+        link: 'https://virufy.org/en/advisors/',
+      },
     },
     advisorOrder: [
       'adam',
@@ -345,6 +356,7 @@ const people: People = {
       'victor',
       'zafar',
       'maurino',
+      'amir',
     ],
   },
 };

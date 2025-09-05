@@ -9,22 +9,22 @@ const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
   }
 
   return (
-    <div className="text-left shadow-md md:max-w-[240px] rounded-xl overflow-hidden bg-white">
+    <div className="overflow-hidden rounded-xl bg-white text-left shadow-md md:max-w-[240px]">
       {/* Image fully opaque with no brightness filter */}
       <ExportedImage
-        className="h-[240px] w-[180px] object-cover md:h-[320px] md:w-[240px] brightness-100"
+        className="object-cover brightness-100 md:h-[320px] md:w-[240px]"
         src={image}
         alt={altText}
         basePath={basePath}
       />
 
       {/* Text block with solid background */}
-      <div className="px-3 py-2 text-black">
-        <h2 className="text-sm font-semibold md:text-base">{name}</h2>
+      <div className="bg-white px-3 py-2 text-black">
+        <h2 className="text-base font-bold">{name}</h2>
         {paddedTexts.map((text, i) => (
           <p
             key={i}
-            className="text-[10px] md:text-sm leading-snug min-h-[1.2rem]"
+            className="min-h-[1.2rem] text-[10px] text-sm font-bold leading-snug"
           >
             {text}
           </p>

@@ -1,3 +1,37 @@
+import {
+  AdamLeipzig,
+  AyomideOwoyemi,
+  FaisalCheema,
+  FumihikoYokota,
+  GlennMuschert,
+  HiroyukiKunishima,
+  JureLeskovec,
+  JesseBump,
+  KaraMeister,
+  KhwajaShaik,
+  KoheiWakamiya,
+  KutsunaSatoshi,
+  LesAtlas,
+  MadhavDatt,
+  MarkHaseltine,
+  MayXu,
+  MelissaDyrdahl,
+  MertPilanci,
+  NobuyoOzawa,
+  RafiAzimKhan,
+  RichardNall,
+  RokSosic,
+  RonanDunlop,
+  ShirinHasan,
+  TamerFahmy,
+  TetsujiMadarame,
+  ThomasMahoney,
+  TsutomuIto,
+  VictorWang,
+  ZafarShahid,
+  MaurinoFlora,
+  AmirKhan,
+} from '@/public/images/advisors';
 import { type People } from '../types/people';
 
 const people: People = {
@@ -222,7 +256,7 @@ const people: People = {
       les: {
         img: './../images/advisors/les-atlas.webp',
         name: 'Dr. Les Atlas',
-        role: 'Audio and Machine Learning Advisor',
+        role: 'Chief Scientist',
         texts: [
           'Professor of Electrical and Computer Engineering - University of Washington',
           'Ph.D. Electrical Engineering, Stanford',
@@ -300,6 +334,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
+      amir: {
+        img: AmirKhan,
+        name: 'Amir Khan',
+        role: 'Executive Gravitas Advisor',
+        texts: [
+          'CEO Digital Gravitas Silicon Valley',
+          'Istituto di Moda Burgo, Milan',
+        ],
+        link: 'https://virufy.org/en/advisors/',
+      },
     },
     advisorOrder: [
       'adam',
@@ -333,6 +377,7 @@ const people: People = {
       'victor',
       'zafar',
       'maurino',
+      'amir',
     ],
   },
 };
