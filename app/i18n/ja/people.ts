@@ -288,7 +288,7 @@ const people: People = {
       },
       kohei: {
         img: KoheiWakamiya,
-        name: '若宮 耕平',
+        name: '若宮幸平',
         role: '音声AI顧問',
         texts: ['音声AIアドバイザー', '九州大学'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_ja.html',
