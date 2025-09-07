@@ -24,9 +24,10 @@ const flagIcons: Record<Locale, StaticImageData> = {
 
 type LocaleSelectProps = {
   isNavbar?: boolean;
+  textColor?: string;
 }
 
-const LocaleSelect = ({ isNavbar = false }: LocaleSelectProps) => {
+const LocaleSelect = ({ isNavbar = false, textColor = 'white' }: LocaleSelectProps) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
@@ -67,7 +68,7 @@ const LocaleSelect = ({ isNavbar = false }: LocaleSelectProps) => {
     <div className="relative inline-block lg:pr-6" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className={`flex ${isNavbar ? 'w-28' : 'w-40'} items-center bg-transparent pt-2 pb-1 lg:p-3 text-xl font-bold text-white lg:text-black hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:px-0 ${
+        className={`flex ${isNavbar ? 'w-28' : 'w-40'} items-center bg-transparent pt-2 pb-1 lg:p-3 text-xl font-bold lg:font-medium text-white lg:text-${textColor} hover:font-bold focus:outline-none lg:w-12 lg:border-none lg:px-0 ${
           dropdownOpen ? 'border-l border-r border-t border-gray-500' : ''
         }`}
       >
@@ -77,7 +78,7 @@ const LocaleSelect = ({ isNavbar = false }: LocaleSelectProps) => {
           className={`mr-2 h-5 w-5 ${isNavbar ? 'ml-4' : 'ml-10 lg:ml-2'}`}
         />
         {locale.toUpperCase()}
-        <ArrowIcon isActive={dropdownOpen} isWhite={isNavbar} />
+        <ArrowIcon isActive={dropdownOpen} isNavbar={isNavbar} isWhite={textColor=='white'} />
       </button>
       {dropdownOpen && (
         <div className={`absolute z-10 ${isNavbar ? 'w-28' : 'w-40'} border-b border-l border-r border-gray-500 bg-black shadow-md shadow-gray-500 lg:-left-2 lg:mt-0 lg:w-28 lg:border-none lg:bg-transparent lg:shadow-none`}>
@@ -87,7 +88,7 @@ const LocaleSelect = ({ isNavbar = false }: LocaleSelectProps) => {
               <button
                 key={localeOption}
                 onClick={() => handleLocaleChange(localeOption as Locale)}
-                className="flex w-[75px] items-center bg-black bg-opacity-50 lg:bg-white lg:bg-opacity-50 px-3 py-2 text-left text-sm text-white lg:text-black hover:font-bold"
+                className={`flex w-[75px] items-center bg-black bg-opacity-50 lg:bg-white lg:bg-opacity-50 px-3 py-2 text-left text-sm text-white lg:text-${textColor} hover:font-bold`}
               >
                 <ExportedImage
                   src={flagIcons[localeOption]}
