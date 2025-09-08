@@ -266,7 +266,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
   };
 
   useEffect(() => {
-    if (searchParams.get('modal') === 'donate') {
+    const search = new URLSearchParams(window.location.search);
+    if (search.get('modal') === 'donate') {
       setShowModal(true);
     } else {
       setShowModal(false);
