@@ -34,25 +34,32 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }, // re add coughcheck here when needed
   } = usei18n(lang);
 
-  const [navbar, setNavbar] = useState(false); // Mobile navbar
-  const [showModal, setShowModal] = useState(false); // Donate modal
-  const [activeLink, setActiveLink] = useState('');
-
-  const currPathname = usePathname();
-  const { results, performSearch, clearResults, isReady } = useSearch(lang);
-  const [query, setQuery] = useState('');
+  /** State variables */
+  const [navbar, setNavbar] = useState(false); // Mobile navbar open/close
+  const [showSearch, setShowSearch] = useState(false); // Mobile search bar visibility
+  const [showModal, setShowModal] = useState(false); // Donate modal visibility
+  const [activeLink, setActiveLink] = useState(''); // Current active navbar link
+  const [query, setQuery] = useState(''); // Search query text
   const [hasSearched, setHasSearched] = useState(false);
+
+  /** Hooks */
+  const currPathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
   const isRedirecting = useRef(false);
+  const { results, performSearch, clearResults, isReady } = useSearch(lang);
 
+  /** Refs */
+  const dropdownRef = useRef<HTMLUListElement | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  /** Constants */
+  const SCREEN_SIZE = 1265;
+  const DEBOUNCE_DELAY = 400;
   const isHomePage = currPathname === `/${lang}/`;
-  const [showSearch, setShowSearch] = useState(false);
-  const handleNavClick = () => setNavbar(false);
 
-  // Mobile search bar color configuration
-  // Applies search bar color based on the current page
-  const colors = {
+  /** Search bar color by page (mobile) */
+  const searchColors = {
     darkBlue: {
       bg: 'bg-[#11294f]',
       text: 'text-[#bdc1ca]',
@@ -89,7 +96,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
       searchTitle: '',
     },
   };
-  const pageToColor: Record<string, keyof typeof colors> = {
+
+  const pageToSearchColor: Record<string, keyof typeof searchColors> = {
     '': 'darkBlue',
     'ai/': 'darkBlue',
     'story/': 'white',
@@ -102,13 +110,46 @@ export default function Navbar({ lang }: { lang: Locale }) {
     'faq/': 'blue',
     'join-us/': 'blue',
   };
-  const pageColorKey = pageToColor[currPathname.slice(4)] || 'black';
-  const pageColor = colors[pageColorKey];
 
-  const dropdownRef = useRef<HTMLUListElement | null>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const DEBOUNCE_DELAY = 400;
+  const pageSearchColorKey =
+    pageToSearchColor[currPathname.slice(4)] || 'black';
+  const pageSearchColor = searchColors[pageSearchColorKey];
 
+  /** Nav bar color by page (desktop) */
+  const navColors = {
+    white: {
+      bg: 'bg-white bg-opacity-80',
+      text: 'text-black ',
+      color: 'black',
+    },
+    shadow: {
+      bg: 'bg-black bg-opacity-10',
+      text: 'text-black',
+      color: 'black',
+    },
+    transparent: { bg: 'bg-transparent', text: 'text-white', color: 'white' },
+  };
+
+  const pageToNavColor: Record<string, keyof typeof navColors> = {
+    '': 'transparent',
+    'ai/': 'transparent',
+    'story/': 'white',
+    'advisors/': 'shadow',
+    'supporters/': 'transparent',
+    'one-young-world/': 'transparent',
+    'amils-story/': 'transparent',
+    'news/': 'transparent',
+    'publications/': 'transparent',
+    'faq/': 'transparent',
+    'join-us/': 'transparent',
+  };
+
+  const pageNavColorKey = pageToNavColor[currPathname.slice(4)] || 'black';
+  const pageNavColor = navColors[pageNavColorKey];
+
+  /** Effects */
+
+  // Highlight active link based on route
   useEffect(() => {
     const links = [
       { label: 'Home', route: [`/${lang}`] },
@@ -145,15 +186,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
     });
   }, [currPathname, lang]);
 
+  // Close mobile navbar on route change
   useEffect(() => {
     if (typeof window !== 'undefined') {
       setNavbar(false);
     }
   }, [currPathname]);
 
-  const SCREEN_SIZE = 1265;
-
-  // Handles navbar and search bar visibility based on screen size and page navigation
+  // Handle resize events (search bar and navbar)
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
@@ -173,25 +213,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, [currPathname]);
 
-  // Prevents scrolling main page on mobile if hamburger menu is open
+  // Prevent body scroll when mobile navbar is open
   useEffect(() => {
-    if (navbar) {
-      document.body.style.overflow = 'hidden'; // prevent scrolling
-    } else {
-      document.body.style.overflow = ''; // enable scrolling
-    }
+    document.body.style.overflow = navbar ? 'hidden' : '';
   }, [navbar]);
-
-  const debouncedSearch = useMemo(
-    () =>
-      debounce((value: string) => {
-        if (isReady) {
-          performSearch(value);
-          setHasSearched(true);
-        }
-      }, DEBOUNCE_DELAY),
-    [isReady]
-  );
 
   // Collapse dropdown and search bar on outside click
   useEffect(() => {
@@ -222,6 +247,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
     };
   }, []);
 
+  /** Helpers */
+  const handleNavClick = () => setNavbar(false);
   const closeModal = () => {
     const params = new URLSearchParams(window.location.search);
     params.delete('modal');
@@ -246,6 +273,19 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, [searchParams]);
 
+  /** Debounce search */
+  const debouncedSearch = useMemo(
+    () =>
+      debounce((value: string) => {
+        if (isReady) {
+          performSearch(value);
+          setHasSearched(true);
+        }
+      }, DEBOUNCE_DELAY),
+    [isReady]
+  );
+
+  /** Search rendering */
   {
     /* Renders the search input field with search and clear icons */
   }
@@ -271,7 +311,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
               debouncedSearch(value);
             }
           }}
-          className={`border-gray z-10 h-full w-full rounded-full border p-5 focus:outline-none ${navbar ? `${colors['black'].bg} ${colors['black'].text} ${colors['black'].placeholder}` : `${pageColor.bg} ${pageColor.text} ${pageColor.placeholder}`} lg:rounded-none lg:border-0 lg:border-b lg:border-black lg:bg-transparent lg:p-0 lg:text-black lg:placeholder-black`}
+          className={`border-gray z-10 h-full w-full rounded-full border p-5 focus:outline-none ${navbar ? `${searchColors['black'].bg} ${searchColors['black'].text} ${searchColors['black'].placeholder}` : `${pageSearchColor.bg} ${pageSearchColor.text} ${pageSearchColor.placeholder}`} lg:border-0 lg:border-b lg:p-0 lg:border-${pageNavColor.color} lg:rounded-none lg:bg-transparent lg:${pageNavColor.text} lg:placeholder-${pageNavColor.color}`}
         />
       )}
       {showSearch && query && (
@@ -286,7 +326,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           {/* SVG for "×" (close) button inside search bar */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className={`h-4 w-4 ${navbar ? `${colors['black'].text}` : `${pageColor.text}`} lg:text-black`}
+            className={`h-4 w-4 ${navbar ? `${searchColors['black'].text}` : `${pageSearchColor.text}`} lg:${pageNavColor.text}`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -307,7 +347,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       >
         {/* SVG for search icon inside search bar */}
         <svg
-          className={`pointer-events-none h-[22px] w-[22px] lg:text-black ${navbar ? `${colors['black'].text}` : `${pageColor.text}`}`}
+          className={`pointer-events-none h-[22px] w-[22px] lg:${pageNavColor.text} ${navbar ? `${searchColors['black'].text}` : `${pageSearchColor.text}`}`}
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -320,15 +360,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
     </div>
   );
 
-  {
-    /* Displays search results in a dropdown; clicking a result navigates to its URL */
-  }
+  /* Displays search results in a dropdown; clicking a result navigates to its URL */
   const renderSearchDropdown = () =>
     hasSearched &&
     showSearch && (
       <ul
         ref={dropdownRef}
-        className={`border-gray absolute left-1/2 top-[58px] z-50 max-h-96 w-[86vw] -translate-x-1/2 overflow-y-auto rounded-md border lg:w-[70vw] lg:border-0 ${navbar ? `${colors['black'].bg}` : `${pageColor.bg}`} p-4 shadow-lg lg:bg-white lg:bg-opacity-85`}
+        className={`border-gray absolute left-1/2 top-[58px] z-50 max-h-96 w-[86vw] -translate-x-1/2 overflow-y-auto rounded-md border lg:w-[70vw] lg:border-0 ${navbar ? `${searchColors['black'].bg}` : `${pageSearchColor.bg}`} p-4 shadow-lg lg:bg-white lg:bg-opacity-85`}
         onClick={(e) => e.stopPropagation()}
       >
         {results.filter((r) => r.url).length > 0 ? (
@@ -337,7 +375,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             .map((r) => (
               <li
                 key={`${r.id}-${r.url}`}
-                className={`cursor-pointer border-b px-4 py-2 last:border-b-0 ${navbar ? `${colors['black'].searchHover}` : `${pageColor.searchHover}`} lg:hover:bg-gray-100`}
+                className={`cursor-pointer border-b px-4 py-2 last:border-b-0 ${navbar ? `${searchColors['black'].searchHover}` : `${pageSearchColor.searchHover}`} lg:hover:bg-gray-100`}
                 onMouseDown={() => {
                   isRedirecting.current = true;
                 }}
@@ -358,19 +396,21 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 }}
               >
                 <div
-                  className={`font-semibold ${pageColor.searchTitle} lg:text-black`}
+                  className={`font-semibold ${pageSearchColor.searchTitle} lg:text-black`}
                 >
                   {r.title}
                 </div>
                 <div
-                  className={`mt-1 line-clamp-2 text-sm ${pageColor.text} lg:text-gray-700`}
+                  className={`mt-1 line-clamp-2 text-sm ${pageSearchColor.text} lg:text-gray-700`}
                 >
                   {r.content}
                 </div>
               </li>
             ))
         ) : (
-          <li className={`py-4 text-center ${pageColor.text} lg:text-gray-500`}>
+          <li
+            className={`py-4 text-center ${pageSearchColor.text} lg:text-gray-500`}
+          >
             {noResultsPlaceholder}
           </li>
         )}
@@ -382,7 +422,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       className={`absolute w-full bg-transparent ${navbar ? '' : 'p-2'} lg:p-0`}
     >
       <nav
-        className={`sticky z-[100] w-full rounded-full bg-opacity-80 ${showSearch ? '' : `${pageColor.bg}`} h-[50px] lg:bg-transparent`}
+        className={`sticky z-[100] w-full rounded-full bg-opacity-80 ${pageSearchColor.bg} h-[50px] lg:bg-transparent`}
       >
         {/* donate modal */}
         {showModal ? (
@@ -393,7 +433,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
         {/* Navbar container */}
         <div
-          className={`lg:max-w-8lg justify-between ${navbar ? 'bg-black' : ''} px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 xl:mx-9${navbar ? 'flex h-screen' : ''}`}
+          className={`lg:max-w-8lg justify-between ${navbar ? 'bg-black' : ''} px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 ${navbar ? 'h-screen' : ''}`}
         >
           <div className="flex items-center justify-between lg:block lg:py-5">
             {/* Mobile Virufy Logo */}
@@ -415,7 +455,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             {/* Desktop Virufy Logo */}
             <Link
               href={`/${lang}`}
-              className="lg-space-x-6 hidden lg:flex lg:rounded-full lg:bg-white lg:bg-opacity-80 lg:p-2"
+              className={`lg-space-x-6 hidden lg:flex lg:p-2`}
             >
               <ExportedImage
                 className="h-[48px] w-[160px]"
@@ -464,7 +504,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <ExportedImage
                     className="h-[18px] w-[30px]"
                     src={
-                      pageColorKey !== 'white'
+                      pageSearchColorKey !== 'white'
                         ? WhiteHamburgerMenuIcon
                         : HamburgerMenuIcon
                     }
@@ -493,16 +533,16 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 }`}
               >
                 <div
-                  className={`justify-center space-y-8 bg-black p-2 lg:flex lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-white lg:bg-opacity-80 lg:px-10 xl:space-x-9 ${navbar ? '' : 'hidden'} `}
+                  className={`justify-center space-y-8 bg-black lg:items-center lg:rounded-full ${navbar ? 'text-white' : `${pageNavColor.text} ${pageNavColor.bg}`} p-2 lg:flex lg:space-x-6 lg:space-y-0 lg:px-10 xl:space-x-9 ${navbar ? '' : 'hidden'} `}
                 >
                   {/* Home */}
-                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
+                  <li>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Home'
                             ? 'solid border-b-2 py-2'
-                            : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 lg:before:bg-black ${navbar ? '' : 'md:text-sm lg:text-lg'}`
+                            : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}`}
                         onClick={handleNavClick}
@@ -512,13 +552,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </div>
                   </li>
                   {/* Technology */}
-                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
+                  <li>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Technology'
                             ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 lg:before:bg-black ${navbar ? '' : 'md:text-sm lg:text-lg'}`
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}/ai`}
                         onClick={handleNavClick}
@@ -584,13 +624,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </li> */}
 
                   {/* About Us */}
-                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
+                  <li>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'About Us'
                             ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 lg:before:bg-black ${navbar ? '' : 'md:text-sm lg:text-lg'}`
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
                         } whitespace-nowrap`}
                         href={`/${lang}/story`}
                         onClick={handleNavClick}
@@ -637,13 +677,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </li>
 
                   {/* Media */}
-                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
+                  <li>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'Media'
                             ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 lg:before:bg-black ${navbar ? '' : 'md:text-sm lg:text-lg'}`
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
                         } `}
                         href={`/${lang}/news`}
                         onClick={handleNavClick}
@@ -681,13 +721,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </li>
 
                   {/* FAQ */}
-                  <li className={`${navbar ? 'text-white' : 'text-black'}`}>
+                  <li>
                     <div>
                       <Link
                         className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
                           activeLink === 'FAQ'
                             ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 lg:before:bg-black ${navbar ? '' : 'md:text-sm lg:text-lg'}`
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
                         }`}
                         href={`/${lang}/faq`}
                         onClick={handleNavClick}
@@ -708,7 +748,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <li
                     className={`${navbar ? 'relative top-[-24px] -ml-3' : ''}`}
                   >
-                    <LocaleSelect isNavbar={navbar} />
+                    <LocaleSelect
+                      isNavbar={navbar}
+                      textColor={pageNavColor.color}
+                    />
                   </li>
                 </div>
 
@@ -722,7 +765,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   >
                     <Link href={`/${lang}/join-us`} onClick={handleNavClick}>
                       <button
-                        className={`md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] border border-solid text-base font-semibold md:h-[60px] md:w-[180px] md:text-xl' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                        className={`shadow-[4px_4px_6px_rgba(0,0,0,0.2)] lg:h-[48px] lg:w-[140px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] border border-solid text-base font-semibold md:h-[60px] md:w-[180px] md:text-xl' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                       >
                         {joinUs ? joinUs.buttonText : ''}
                       </button>
@@ -731,11 +774,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
                   {/* Donate */}
                   <li
-                    className={`text-[#393939] ${navbar ? 'flex-column pb-10' : ''}`}
+                    className={`text-[#393939] lg:pr-10 ${navbar ? 'flex-column pb-10' : ''}`}
                   >
                     <button
                       onClick={openModal}
-                      className={`md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold md:h-[60px] md:w-[180px] md:text-xl' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                      className={`shadow-[4px_4px_6px_rgba(0,0,0,0.2)] md:h-[42px] md:w-[125px] lg:h-[48px] lg:w-[140px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold md:h-[60px] md:w-[180px] md:text-xl' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                     >
                       <Link href="#">{donate.buttonText}</Link>
                     </button>
