@@ -15,8 +15,14 @@ export default function DonateModal({
 }) {
   return (
     <>
-      <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none">
-        <div className="relative mx-auto h-[500px] w-[300px] md:w-[500px]">
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto overflow-x-hidden outline-none focus:outline-none"
+        onClick={close}
+      >
+        <div
+          className="relative mx-auto h-[500px] w-[300px] md:w-[500px]"
+          onClick={(e) => e.stopPropagation()}
+        >
           {/*content*/}
           <div className="relative flex w-full flex-col rounded-2xl border-0 bg-white shadow-lg outline-none focus:outline-none">
             {/*header*/}
