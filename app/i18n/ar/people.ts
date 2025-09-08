@@ -98,8 +98,8 @@ const people: People = {
         name: 'توماس ماهوني',
         role: 'مستشار الأعمال والصحة العامة',
         texts: [
-          'مساعد قسم، قسم الأمراض المعدية، جامعة هارفارد',
-          'ماجستير إدارة الأعمال، كلية وارتون، جامعة بنسلفانيا',
+          'زميل مشارك، قسم المناعة والأمراض المعدية',
+          'كلية هارفارد تي إتش تشان للصحة العامة',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
@@ -339,7 +339,7 @@ const people: People = {
           'الرئيس التنفيذي لشركة Digital Gravitas في وادي السيليكون',
           'معهد مودا بورجو، ميلانو',
         ],
-        link: 'https://virufy.org/en/advisors/',
+        link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
     },
     advisorOrder: [

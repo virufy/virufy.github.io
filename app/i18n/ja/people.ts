@@ -95,8 +95,8 @@ const people: People = {
         name: 'トーマス・マホニー',
         role: 'ビジネスおよび公衆衛生アドバイザー',
         texts: [
-          'ハーバード大学感染症学部助手',
-          'ペンシルバニア大学ウォートンスクールMBA',
+          '免疫学・感染症学科准教授',
+          'ハーバード大学T.H.チャン公衆衛生大学院',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
@@ -332,7 +332,7 @@ const people: People = {
           'Digital Gravitas シリコンバレー CEO',
           'モーダ・ブルゴ研究所、ミラノ',
         ],
-        link: 'https://virufy.org/en/advisors/',
+        link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
     },
     advisorOrder: [
