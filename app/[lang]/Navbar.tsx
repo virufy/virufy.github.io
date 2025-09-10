@@ -104,7 +104,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     'join-us/': 'transparent',
   };
 
-  const pageNavColorKey = pageToNavColor[currPathname.slice(4)] || 'black';
+  const pageNavColorKey = pageToNavColor[currPathname.slice(4)] || 'white';
   const pageNavColor = navColors[pageNavColorKey];
 
   /** Effects */
