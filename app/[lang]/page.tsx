@@ -13,20 +13,18 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   } = usei18n(lang);
 
   return (
-    <div className="relative flex flex-col items-center justify-center">
+    <div className="relative flex flex-col items-center justify-center bg-[#0A0A0A]">
       <div className="w-full overflow-hidden">
         <div className="relative flex justify-center overflow-hidden">
           {/* Desktop Background Image */}
-          <div className="hidden md:block w-screen brightness-100 contrast-100">
+          <div className="hidden md:block w-full brightness-100 contrast-100">
             <ExportedImage
-              className="w-screen object-cover"
+              className="h-full w-screen object-cover"
               src={BgHeader}
               alt=""
               priority
               basePath={basePath}
             />
-            {/* Blur transition (How It Works -> YHOP) */}
-            <div className="absolute bottom-0 w-full hidden md:block h-[98px] bg-gradient-to-b from-transparent to-[#011633]"></div>
           </div>
 
           {/* Mobile Background Image */}
@@ -49,7 +47,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     <Title
                       Text={introSection.text}
                       H=""
-                      TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#ffffff] via-[#ffffff] to-[#1f3b70] text-base leading-9 sm:text-base sm:leading-9 md:text-3xl md:leading-10 lg:text-4xl lg:leading-11 xl:text-5xl xl:leading-[3.5rem]"
+                      TitleClassProps="text-white text-base leading-9 sm:text-base sm:leading-9 md:text-3xl md:leading-10 lg:text-4xl lg:leading-11 xl:text-5xl xl:leading-[3.5rem]"
                     />
                   </div>
                   <div className="mt-[16.2rem] flex flex-col sm:text-center sm:mt-[19rem] md:mt-0 lg:mt-12">
@@ -57,7 +55,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     <Title
                       Text={introSection.text2}
                       H=""
-                      TitleClassProps="font-black md:font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#36d779] via-[#36d779] to-[#15495e] text-base text-lg sm:leading-9 md:text-3xl md:leading-10 lg:text-4xl lg:leading-11 xl:text-5xl xl:leading-[3.5rem]"
+                      TitleClassProps="font-black md:font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#36d779] to-[#319fb6] text-base text-lg sm:leading-9 md:text-3xl md:leading-10 lg:text-4xl lg:leading-11 xl:text-5xl xl:leading-[3.5rem]"
                       style={{
                         WebkitTextStroke: '0.5px #183360',
                       }}
@@ -93,7 +91,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     {introSection.disclaimers.map((disclaimer, i) => (
                       <p
                         key={i}
-                        className="lg:ml-32 xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:text-base lg:leading-6 xl:leading-7"
+                        className="xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:text-base lg:leading-6 xl:leading-7"
                       >
                         {disclaimer}
                       </p>
@@ -132,16 +130,16 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       {introSection.buttonText}
                     </button>
                   </Link>
-                </div>                
-              </div>              
-            </div>        
-          </div>          
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* Blur here */}
       </div>
+
       {/* Bottom section of home page */}
-      <div className="flex min-h-[1050px] w-full flex-col items-center justify-center bg-[#011633] pb-8 xl:min-h-[1273px]">
-        <div className="flex w-full items-center justify-center px-4 md:px-20 md:pt-10 xl:px-40">
+      <div className="flex min-h-[1050px] w-full flex-col items-center justify-center bg-[#011633] md:bg-[#0b0b0b] pb-8 xl:min-h-[1273px]">
+        <div className="flex w-full items-center justify-center px-4 xl:px-12">
           <div className="flex w-full flex-col items-center rounded-3xl bg-[#07193d] pb-8">
             <div className="mx-auto w-full max-w-screen-xl">
               {/* Your health title and text */}
@@ -150,21 +148,20 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <Title
                   Text={section2.text}
                   H=""
-                  TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#36d779] via-[#36d779] to-[#15495e] text-xl font-black md:font-black sm:leading-9 md:text-4xl md:leading-10 lg:leading-[2.75rem] xl:text-5xl xl:leading-[3.5rem]"
+                  TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#36d779] to-[#319fb6] text-xl font-black md:font-normal sm:leading-9 md:text-4xl md:leading-10 lg:leading-[2.75rem] xl:text-5xl xl:leading-[3.5rem]"
                   style={{
                     WebkitTextStroke: '0.5px #183360',
                   }}
                 />
-                <p className="max-w-7xl mt-4 px-0.5 text-sm leading-4 text-white md:text-lg md:leading-7 md:px-20 xl:px-0 lg:text-xl lg:leading-8 xl:px-40 xl:text-2xl xl:font-bold xl:leading-10">
+                <p className="mt-4 px-0.5 text-sm leading-4 text-white md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:px-40 xl:text-2xl xl:font-bold xl:leading-10">
                   {section2.subtext}
                 </p>
               </div>
 
               {/* Text next to phone img */}
-              <div className="mt-0 flex w-full flex-col justify-between px-8 text-center sm:flex-col md:px-20 xl:px-0 xl:my-4 xl:flex-row xl:text-start xl:justify-center">
-                {/* Text block */}
-                <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-auto xl:pl-16">
-                  <div className="mb-0 md:mb-4 mt-0 pt-0 md:pt-8 xl:mt-4 xl:pt-0 xl:w-[500px]">
+              <div className="mt-0 flex w-full flex-col justify-between px-8 text-center sm:flex-col xl:mt-8 xl:flex-row xl:px-24 xl:text-start">
+                <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-1/2 xl:items-start xl:px-24">
+                  <div className="mb-0 md:mb-4 mt-0 pt-0 md:pt-8 xl:mt-4 xl:pt-0">
                     {section2.title.map((item, i) => (
                       <Fragment key={i}>
                         <Title
@@ -180,7 +177,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   </div>
 
                   {/* Disclaimer */}
-                  <div className="mt-0 flex w-full flex-col items-center xl:mt-4 xl:items-start xl:w-[500px]">
+                  <div className="mt-0 flex w-full flex-col items-center xl:mt-16 xl:items-start">
                     <div className="w-full">
                       <p className="px-0 md:px-8 text-center text-xs text-gray-400 font-thin lg:text-base xl:px-0 xl:text-left">
                         {section2.disclaimer}
@@ -190,10 +187,10 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </div>
 
                 {/* Phone img */}
-                <div className="order-1 flex justify-center my-8 md:mt-6 xl:order-2 xl:mt-0">
+                <div className="order-1 flex justify-center xl:order-2 xl:mt-0 xl:w-1/2">
                   <div className="relative w-auto">
                     <ExportedImage
-                      className="h-[300px] w-auto xl:h-[700px] object-contain"
+                      className="h-[300px] w-auto xl:h-[800px]"
                       src={VirufyMobilePhone}
                       alt="mobile phone with Virufy's logo"
                       priority
@@ -207,7 +204,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               <div className="mx-auto mb-8 mt-8 flex w-full max-w-md items-center justify-center px-0 md:max-w-lg xl:mt-0">
                 <Link href={`/${lang}/ai`}>
                   <button
-                    className="medium primary h-[36px] w-[150px] md:h-[45px] md:w-[185px] text-white xl:text-xl xl:h-[65px] xl:w-[250px]"
+                    className="medium primary h-[36px] w-[150px] md:h-[45px] md:w-[315px] text-white xl:h-[65px] xl:w-[250px]"
                     style={{ 
                       borderRadius: '50px',
                       background: 'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
@@ -222,9 +219,8 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           </div>
         </div>
       </div>
-
       {/* Blur transition to footer */}
-      <div className="absolute bottom-0 block w-full h-10 bg-gradient-to-b from-transparent to-[#000000]"></div>
+      <div className="block md:hidden w-full h-10 bg-gradient-to-b from-[#011633] to-[#000000]"></div>
     </div>
   );
 };

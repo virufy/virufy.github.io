@@ -3,10 +3,10 @@ import ArrowDownIcon from '@/public/icons/icon-arrow-down.png';
 import ArrowDownIconWhite from '@/public/icons/icon-arrow-down-white.png';
 import ExportedImage from 'next-image-export-optimizer';
 
-const ArrowIcon = ({ isActive, isNavbar, isWhite }: { isActive: boolean; isNavbar?: boolean; isWhite?: boolean }) => {
+const ArrowIcon = ({ isActive, isWhite }: { isActive: boolean; isWhite?: boolean }) => {
   const altText = isActive ? 'arrow up icon' : 'arrow down icon';
   const rotateStyle = isActive ? 'rotate-180' : 'rotate-0';
-  const src = (isNavbar || isWhite) ? ArrowDownIconWhite : ArrowDownIcon;
+  const src = isWhite ? ArrowDownIconWhite : ArrowDownIcon;
 
   return (
     <ExportedImage
