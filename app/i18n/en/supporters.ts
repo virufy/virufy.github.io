@@ -10,6 +10,7 @@ import {
   IdimeLogo,
   LifeScienceLogo,
   LockedJarLogo,
+  MicrosoftLogo,
   NexusTaxServicesLogo,
   NuvuLogo,
   OlarteLogo,
@@ -39,6 +40,7 @@ const supporters: Supporters = {
   },
   supportersList: [
     { img: AWSLogo, alt: 'AWS', link: 'https://aws.amazon.com/' },
+    { img: MicrosoftLogo, alt: 'Microsoft', link: 'https://www.microsoft.com/' },
     { img: ResponseInnovationLabLogo, alt: 'Response Innovation Lab', link: 'https://www.responseinnovationlab.com/' },
     { img: OneYoungWorldLogo, alt: 'One Young World', link: 'https://www.oneyoungworld.com/counsellors' },
     { img: H4RLogo, alt: 'H4R', link: 'https://h4r.stanford.edu/' },
