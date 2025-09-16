@@ -1,37 +1,4 @@
-import {
-  AyomideOwoyemi,
-  FaisalCheema,
-  FumihikoYokota,
-  GlennMuschert,
-  HiroyukiKunishima,
-  JureLeskovec,
-  JesseBump,
-  KaraMeister,
-  KhwajaShaik,
-  KutsunaSatoshi,
-  LesAtlas,
-  MadhavDatt,
-  AdamLeipzig,
-  KoheiWakamiya,
-  MarkHaseltine,
-  MayXu,
-  MelissaDyrdahl,
-  MertPilanci,
-  NobuyoOzawa,
-  RafiAzimKhan,
-  RichardNall,
-  RokSosic,
-  RonanDunlop,
-  ShirinHasan,
-  TamerFahmy,
-  TetsujiMadarame,
-  ThomasMahoney,
-  TsutomuIto,
-  VictorWang,
-  ZafarShahid,
-  MaurinoFlora,
-  AmirKhan,
-} from '@/public/images/advisors';
+import {} from '@/public/images/advisors';
 import { type People } from '../types/people';
 
 const people: People = {
@@ -331,7 +298,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: AmirKhan,
+        img: './../images/advisors/amir-khan.webp',
         name: 'أمير خان',
         role: 'مستشار الجاذبية التنفيذية',
         texts: [

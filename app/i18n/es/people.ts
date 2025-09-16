@@ -314,7 +314,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: AmirKhan,
+        img: './../images/advisors/amir-khan.webp',
         name: 'Amir Khan',
         role: 'Asesor ejecutivo de Gravitas',
         texts: [

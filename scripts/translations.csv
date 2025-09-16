@@ -14,6 +14,15 @@ ai.aiSection.aiCards.1.title,02,02,02,02
 ai.aiSection.aiCards.1.text,تقوم الخوارزمية بفحص العناصر المختلفة للسعال، مثل المدة والتكرار ودرجة الصوت. ومن خلال الاستفادة من قاعدة بيانات شاملة، يقارن الذكاء الاصطناعي بدقة أنماط السعال المسجلة مع المؤشرات المعروفة لأمراض الجهاز التنفسي، مما يسمح بالكشف المبكر عن المشكلات الصحية المحتملة.,"The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.","El algoritmo examina varios elementos de la tos, como la duración, la frecuencia y la intensidad. Aprovechando una base de datos completa, AI compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite la detección temprana de posibles problemas de salud.",AIは、咳の持続時間、頻度、音程など、さまざまな要素を精査します。包括的なデータベースを利用して、記録された咳のパターンを呼吸器疾患の既存の指標と慎重に比較し、潜在的な健康問題の早期発見を可能にします。
 ai.aiSection.aiCards.1.style,text-[2.5rem] sm:text-6xl,text-[2.5rem] sm:text-6xl,text-[2.5rem] sm:text-6xl,text-[2.5rem] sm:text-6xl
 amilsStory.sectionAmil.titleAmil,قصة أميل,Amil’s Story,Historia de Amil,アミルのストーリー
+amilsStory.sectionAmil.tabsAmil.0,مرحلة الطفولة,Early Life,Vida temprana,幼少期
+amilsStory.sectionAmil.tabsAmil.1,النمو المهني,Professional Growth,Crecimiento profesional,専門的な成長
+amilsStory.sectionAmil.tabsAmil.2,التأثير العالمي,Global Impact,Impacto global,世界的な影響
+amilsStory.sectionAmil.tabsAmil.3,تأسيس فيروفي,Founding Virufy,Fundación de Virufy,Virufyの設立
+amilsStory.sectionAmil.tabsAmil.4,قصة أمل,Amil's Story,La historia de Amil,アミルの物語
+amilsStory.sectionAmil.tabsAmil.5,منشورات,Publications,Publicaciones,出版物
+amilsStory.sectionAmil.imgCaption.0,أميل مع طاقم التمريض الداعم لدراسات فيروفي السريرية في كولومبيا بأمريكا الجنوبية.,"Amil with nursing staff supporting Virufy’s clinical studies in Columbia, South America.","Amil con el personal de enfermería apoyando los estudios clínicos de Virufy en Colombia, Sudamérica.",アミルが南米コロンビアでVirufyの臨床試験を支援する看護スタッフと共に。
+amilsStory.sectionAmil.imgCaption.1,أميل مع الطلاب والموظفين اليابانيين في مدرسة البرمجة ZenIT.,Amil with Japanese students and staff in ZenIT programming school.,Amil con estudiantes y personal japoneses en la escuela de programación ZenIT.,アミルがZenITプログラミングスクールで日本の学生やスタッフと共に。
+amilsStory.sectionAmil.imgCaption.2,لقاء أميل مع رئيس الوزراء السابق والرئيس الحالي لحلف الناتو مارك روتّه.,Amil’s encounter with former Prime Minister and current NATO president Mark Rutte.,"El encuentro de Amil con el ex primer ministro y actual presidente de la OTAN, Mark Rutte.",アミルが元首相で現在のNATO議長マーク・ルッテと出会った場面。
 amilsStory.sectionAmil.textAmil.0,وُلد أميل ونشأ في وادي السيليكون ضمن عائلة مهاجرة، حيث تلقى التعليم في المنزل وبدأ الدراسة في الكلية المجتمعية وهو في الرابعة عشرة من عمره. تأثر أميل بتفاني والده في الخدمة الاجتماعية، وقضى طفولته في أنشطة تطوعية مثل إطعام المشردين في مطابخ الطعام. بعد ذلك بفترة وجيزة، توفي والد أميل في حادث سيارة مأساوي بسبب سائق مخمور. وعلى الرغم من الصراع العاطفي مع فقدان بطله، حصل أميل على أول وظيفة له كمستشار برمجيات يعمل على تطوير تقنية التعرف على الصور للتصحيح التلقائي للاختبارات في مدارس K-12.,"Born and raised in the Silicon Valley in an immigrant family, Amil attended homeschooling and began studying at community college while 14 years old. Amil father's dedication to social service shaped him, with a childhood filled with volunteer activities such as feeding the homeless at soup kitchens. Soon after, Amil's father passed away in a fatal car crash with a drunk driver. Although struggling emotionally with the loss of his hero, Amil took his first job as a software consultant developing image recognition technology for automated grading of tests in K-12 schools.","Amil nació y creció en Silicon Valley en una familia inmigrante. Fue educado en casa y comenzó a estudiar en un colegio comunitario a los 14 años. La dedicación de su padre al servicio social lo marcó profundamente, con una infancia llena de actividades de voluntariado como alimentar a personas sin hogar en comedores comunitarios. Poco después, el padre de Amil falleció en un accidente automovilístico provocado por un conductor ebrio. Aunque sufrió emocionalmente por la pérdida de su héroe, Amil consiguió su primer trabajo como consultor de software desarrollando tecnología de reconocimiento de imágenes para la calificación automatizada de exámenes en escuelas de nivel K-12.",移民家庭でシリコンバレーに生まれ育ったアミルは、ホームスクーリングを受け、14歳でコミュニティカレッジでの学びを始めました。アミルの父は社会奉仕に尽力しており、彼はホームレスに食事を提供するスープキッチンでのボランティア活動などに参加しながら育ちました。ほどなくして、アミルの父は飲酒運転の車との交通事故で亡くなりました。英雄を失った悲しみを乗り越えながら、アミルはK-12の学校でテストの自動採点技術を開発するソフトウェアコンサルタントとして初めての仕事を手にしました。
 amilsStory.sectionAmil.textAmil.1,بعد حصوله على درجة البكالوريوس في علوم الكمبيوتر من جامعة كاليفورنيا في بيركلي، انضم أميل إلى شركة هيوليت باكارد (HP) في وادي السيليكون للعمل بدوام كامل كمهندس برمجيات يطور برامج توحيد سجلات الأمان لنظام إدارة معلومات وأمن الأمان (SIEM) الخاص بـ ArcSight.,"After receiving his B.A. in Computer Science from University of California, Berkeley, Amil joined Hewlett-Packard (HP) in Silicon Valley to work full-time as a software engineer developing security log standardization software for ArcSight, a Security Information and Event Management System (SIEM).","Después de obtener su licenciatura en Ciencias de la Computación en la Universidad de California, Berkeley, Amil se unió a Hewlett-Packard (HP) en Silicon Valley para trabajar a tiempo completo como ingeniero de software desarrollando software de estandarización de registros de seguridad para ArcSight, un sistema de gestión de información y eventos de seguridad (SIEM).",カリフォルニア大学バークレー校でコンピュータサイエンスの学士号を取得後、アミルはシリコンバレーのヒューレット・パッカード（HP）にフルタイムのソフトウェアエンジニアとして入社し、ArcSight（セキュリティ情報とイベント管理システム：SIEM）のためのセキュリティログ標準化ソフトウェアを開発しました。
 amilsStory.sectionAmil.textAmil.2,بحثًا عن منزل جديد، انتقل أميل إلى المقر الرئيسي لشركة HP في طوكيو لتولي دور مستشار للأمن السيبراني، حيث سافر عبر هونغ كونغ وطوكيو وأستراليا لنشر حلول SIEM في مواقع العملاء في صناعة البنوك.,"Seeking a new home, Amil transferred to HP’s Tokyo headquarters to take on a role as cybersecurity consultant, in which he traveled across Hong Kong, Tokyo, and Australia to deploy SIEM solutions at customer sites in the banking industry.","En busca de un nuevo hogar, Amil se trasladó a la sede de HP en Tokio para desempeñarse como consultor de ciberseguridad, lo que lo llevó a viajar por Hong Kong, Tokio y Australia para implementar soluciones SIEM en sitios de clientes del sector bancario.",新たな拠点を求めて、アミルはHPの東京本社に転勤し、サイバーセキュリティコンサルタントとして銀行業界の顧客サイトにSIEMソリューションを展開するため、香港、東京、オーストラリアを飛び回りました。
@@ -374,7 +383,7 @@ footer.privacyPolicy.body.7.question,الولايات المتحدة,United Stat
 footer.privacyPolicy.body.7.answer.0.type,paragraph,paragraph,paragraph,paragraph
 footer.privacyPolicy.body.7.answer.0.content.0.type,link,link,link,link
 footer.privacyPolicy.body.7.answer.0.content.0.text,سياسة الخصوصية,Privacy Policy,Política de Privacidad,プライバシーポリシー
-footer.privacyPolicy.body.7.answer.0.content.0.href,https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view,https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view,https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view,https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view
+footer.privacyPolicy.body.7.answer.0.content.0.href,https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view,/en/privacy-policy/en,https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view,https://drive.google.com/file/d/1EB_9q8nSxvJXWMtCfxCWmisM-n03TJYz/view
 footer.privacyPolicy.body.8.question,أوروبا,Europe,Europa,ヨーロッパ
 footer.privacyPolicy.body.8.answer.0.type,paragraph,paragraph,paragraph,paragraph
 footer.privacyPolicy.body.8.answer.0.content.0.type,link,link,link,link
@@ -1140,21 +1149,21 @@ oneYoungWorld.oyw.virufyAndOyw.videoTitle,رؤية Virufy والدعوة إلى 
 oneYoungWorld.oyw.whyOyw.title,لماذا وان يونغ وورلد؟,Why One Young World?,¿Por qué One Young World?,なぜOne Young Worldなのか？
 oneYoungWorld.oyw.whyOyw.cards.0.title,مدفوعة بالسفراء,Ambassador driven,Impulsado por embajadores,大使主導
 oneYoungWorld.oyw.whyOyw.cards.0.text,يتطابق هيكلنا التنظيمي مع One Young World مع سفراء الشباب الذين يقومون بتنسيق العمليات في كل منطقة.,Our organization structure matches One Young World with youth ambassadors coordinating operations in each region.,"Nuestra estructura organizativa coincide con One Young World, con jóvenes embajadores liderando las operaciones en cada país, con embajadores coordinadores regionales.",私たちの組織構造は、各地域で活動を調整する若者の大使と共にOne Young Worldにマッチしています。
-oneYoungWorld.oyw.whyOyw.cards.0.image,./../images/oneYoungWorld/icon-female.png,./../images/oneYoungWorld/icon-female.png,./../images/oneYoungWorld/icon-female.png,./../images/oneYoungWorld/icon-female.png
+oneYoungWorld.oyw.whyOyw.cards.0.image,./../images/oneYoungWorld/icon-female.png,/icons/icon-female.png,/icons/icon-female.png,./../images/oneYoungWorld/icon-female.png
 oneYoungWorld.oyw.whyOyw.cards.0.altText,,,,
 oneYoungWorld.oyw.whyOyw.cards.1.title,يقودها الشباب,Youth led,Liderado por jóvenes,若者がリード
 oneYoungWorld.oyw.whyOyw.cards.1.text,فريقنا المتنامي يقوده محترفون شباب من أكثر من عشرة دول مع إشراف قريب من قادة الصناعة العالميين.,Our growing team is led by young professionals from over a dozen countries with close advisory from global industry leaders.,Nuestro equipo en crecimiento está dirigido por jóvenes de más de una docena de países y asesorado por líderes globales.,私たちの成長するチームは、世界中の若い専門家によって率いられており、グローバルな業界リーダーからの緊密なアドバイスを受けています。
-oneYoungWorld.oyw.whyOyw.cards.1.image,./../images/oneYoungWorld/icon-youth-in-circle.png,./../images/oneYoungWorld/icon-youth-in-circle.png,./../images/oneYoungWorld/icon-youth-in-circle.png,./../images/oneYoungWorld/icon-youth-in-circle.png
+oneYoungWorld.oyw.whyOyw.cards.1.image,./../images/oneYoungWorld/icon-youth-in-circle.png,/icons/icon-youth-in-circle.png,/icons/icon-youth-in-circle.png,./../images/oneYoungWorld/icon-youth-in-circle.png
 oneYoungWorld.oyw.whyOyw.cards.1.altText,,,,
 oneYoungWorld.oyw.whyOyw.cards.2.title,مركزة على التأثير العالمي,Focused on global impact,Enfocados en el impacto global,グローバルインパクトに焦点
 oneYoungWorld.oyw.whyOyw.cards.2.text,هدفنا من اليوم الأول كان تقديم حلول عادلة لجميع الناس في جميع البلدان حول العالم.,Our aim from day one has been to provide equitable solutions for all people in all countries across the world.,Recopilamos datos y proporcionamos soluciones equitativas para personas en países en desarrollo de todo el mundo.,私たちの目標は、設立当初から、世界中のすべての国のすべての人々に公平な解決策を提供することです。
-oneYoungWorld.oyw.whyOyw.cards.2.image,./../images/oneYoungWorld/icon-man-lifting-globe.png,./../images/oneYoungWorld/icon-man-lifting-globe.png,./../images/oneYoungWorld/icon-man-lifting-globe.png,./../images/oneYoungWorld/icon-man-lifting-globe.png
+oneYoungWorld.oyw.whyOyw.cards.2.image,./../images/oneYoungWorld/icon-man-lifting-globe.png,/icons/icon-man-lifting-globe.png,/icons/icon-man-lifting-globe.png,./../images/oneYoungWorld/icon-man-lifting-globe.png
 oneYoungWorld.oyw.whyOyw.cards.2.altText,,,,
 oneYoungWorld.oyw.whyOyw.cards.3.title,تمثيل متنوع,Diverse representation,Representación diversa,多様な代表者
 oneYoungWorld.oyw.whyOyw.cards.3.text,يضم فريقنا ممثلين من أكثر من 50 جامعة و25 دولة، وقد تلقى الدعم من العشرات من سفراء One Young World.,Our team has representation from over 50 universities and 25 countries and has received support from dozens of One Young World ambassadors.,"Nuestro equipo tiene representación de más de 25 universidades y 15 países, e incluye a más de 10 embajadores de One Young World.",私たちのチームは、50以上の大学と25カ国からの代表者で構成されており、多くのOne Young World大使からサポートを受けています。
-oneYoungWorld.oyw.whyOyw.cards.3.image,./../images/oneYoungWorld/icon-globe-with-markers.png,./../images/oneYoungWorld/icon-globe-with-markers.png,./../images/oneYoungWorld/icon-globe-with-markers.png,./../images/oneYoungWorld/icon-globe-with-markers.png
+oneYoungWorld.oyw.whyOyw.cards.3.image,./../images/oneYoungWorld/icon-globe-with-markers.png,/icons/icon-globe-with-markers.png,/icons/icon-globe-with-markers.png,./../images/oneYoungWorld/icon-globe-with-markers.png
 oneYoungWorld.oyw.whyOyw.cards.3.altText,,,,
-oneYoungWorld.oyw.volunteerStories.title,شهادات المتطوعين,Volunteer Testimonials,Historias de Voluntarios,ボランティアの声
+oneYoungWorld.oyw.volunteerStories.title,شهادات المتطوعين,Volunteer Stories,Historias de Voluntarios,ボランティアの声
 oneYoungWorld.oyw.volunteerStories.text,تطوع العديد من السفراء في Virufy وقدموا شهاداتهم. لدينا ثقة قوية في أعضاء مجتمع One Young World ونرحب ترحيبًا حارًا بأي سفراء مهتمين بالمساهمة.,Several ambassadors have volunteered at Virufy and have given testimonials. We have strong trust in members of the One Young World community and warmly welcome any ambassadors interested to contribute.,"Nuestro equipo está dirigido por estudiantes dedicados al bien social de instituciones de renombre como Stanford, Princeton y One Young World. Tenemos una fuerte confianza en los miembros de la comunidad de One Young World y damos la bienvenida a cualquier embajador interesado en unirse.",複数の大使がVirufyでボランティア活動を行い、感想を寄せています。私たちはOne Young Worldコミュニティのメンバーを強く信頼しており、寄与を希望するすべての大使を心から歓迎します。
 oneYoungWorld.oyw.volunteerStories.testimonials.0.name,سيباستيان بيدرازا,Sebastian Pedraza,Sebastián Pedraza,セバスティアン・ペドラサ
 oneYoungWorld.oyw.volunteerStories.testimonials.0.origin,كولومبيا,Colombia,Colombia,コロンビア
@@ -1200,8 +1209,8 @@ people.sectionAdvisors.advisors.glenn.texts.1,دكتوراه. علم الاجت�
 people.sectionAdvisors.advisors.glenn.link,https://www.ku.ac.ae/college-people/glenn-muschert,https://www.ku.ac.ae/college-people/glenn-muschert,https://www.ku.ac.ae/college-people/glenn-muschert,https://www.ku.ac.ae/college-people/glenn-muschert
 people.sectionAdvisors.advisors.thomas.name,توماس ماهوني,Thomas Mahoney,Thomas Mahoney,トーマス・マホニー
 people.sectionAdvisors.advisors.thomas.role,مستشار الأعمال والصحة العامة,Business & Public Health Advisor,Asesor de negocios y salud pública,ビジネスおよび公衆衛生アドバイザー
-people.sectionAdvisors.advisors.thomas.texts.0,مساعد قسم، قسم الأمراض المعدية، جامعة هارفارد,"Department Associate, Infectious Diseases Department, Harvard University","Asociado de Departamento, Departamento de Enfermedades Infecciosas, Universidad de Harvard",ハーバード大学感染症学部助手
-people.sectionAdvisors.advisors.thomas.texts.1,ماجستير إدارة الأعمال، كلية وارتون، جامعة بنسلفانيا,"MBA, The Wharton School, University of Pennsylvania","MBA, The Wharton School, Universidad de Pensilvania",ペンシルバニア大学ウォートンスクールMBA
+people.sectionAdvisors.advisors.thomas.texts.0,زميل مشارك، قسم المناعة والأمراض المعدية,"Associate, Dept. of Immunology & Infectious Diseases","Asociado, Departamento de Inmunología y Enfermedades Infecciosas",免疫学・感染症学科准教授
+people.sectionAdvisors.advisors.thomas.texts.1,كلية هارفارد تي إتش تشان للصحة العامة,Harvard T.H. Chan School of Public Health,Escuela de Salud Pública T.H. Chan de Harvard,ハーバード大学T.H.チャン公衆衛生大学院
 people.sectionAdvisors.advisors.thomas.link,https://www.linkedin.com/in/tom-mahoney-lifesci/,https://www.linkedin.com/in/tom-mahoney-lifesci/,https://www.linkedin.com/in/tom-mahoney-lifesci/,https://www.linkedin.com/in/tom-mahoney-lifesci/
 people.sectionAdvisors.advisors.madhav.name,مادهف دات,Madhav Datt,Madhav Datt,マダブ・ダット
 people.sectionAdvisors.advisors.madhav.role,مستشار تنفيذي غير ربحي,Executive Nonprofit Advisor,Asesor Ejecutivo de Organizaciones sin Fines de Lucro,エグゼクティブ非営利アドバイザー
@@ -1284,7 +1293,7 @@ people.sectionAdvisors.advisors.tsutomu.texts.0,مؤسس - Tannan FM Radio,Found
 people.sectionAdvisors.advisors.tsutomu.texts.1,المدير المعماري، قطار الرصاصة,"Lead Architect, Bullet Train","Arquitecto Principal, Tren Bala",新幹線主任設計者
 people.sectionAdvisors.advisors.tsutomu.link,http://tannan.fm/contents/about-us.html,http://tannan.fm/contents/about-us.html,http://tannan.fm/contents/about-us.html,http://tannan.fm/contents/about-us.html
 people.sectionAdvisors.advisors.les.name,الدكتور ليس أطلس,Dr. Les Atlas,Dr. Les Atlas,レス・アトラス博士
-people.sectionAdvisors.advisors.les.role,مستشار الصوت والتعلم الآلي,Audio and Machine Learning Advisor,Asesor de Audio e Inteligencia Artificial,オーディオおよび機械学習アドバイザー
+people.sectionAdvisors.advisors.les.role,مستشار الصوت والتعلم الآلي,Chief Scientist,Asesor de Audio e Inteligencia Artificial,オーディオおよび機械学習アドバイザー
 people.sectionAdvisors.advisors.les.texts.0,أستاذ الهندسة الكهربائية وعلوم الكمبيوتر - جامعة واشنطن,Professor of Electrical and Computer Engineering - University of Washington,Profesor de Ingeniería Eléctrica y de Computación - Universidad de Washington,ワシントン大学電気・コンピュータ工学教授
 people.sectionAdvisors.advisors.les.texts.1,دكتوراه في الهندسة الكهربائية، جامعة ستانفورد,"Ph.D. Electrical Engineering, Stanford","Ph.D. en Ingeniería Eléctrica, Stanford",スタンフォード大学電気工学博士
 people.sectionAdvisors.advisors.les.link,https://people.ece.uw.edu/atlas/,https://people.ece.uw.edu/atlas/,https://people.ece.uw.edu/atlas/,https://people.ece.uw.edu/atlas/
@@ -1305,7 +1314,7 @@ people.sectionAdvisors.advisors.fumihiko.name,فوميهيكو يوكوتا,Fumi
 people.sectionAdvisors.advisors.fumihiko.role,مستشار الصحة العامة,Public Health Advisor,Asesor de Salud Pública,公衆衛生アドバイザー
 people.sectionAdvisors.advisors.fumihiko.texts.0,أستاذ مساعد في الوبائيات، جامعة كيوشو,"Associate Professor of Epidemiology, Kyushu University","Profesor Asociado de Epidemiología, Universidad de Kyushu",疫学准教授　九州大学
 people.sectionAdvisors.advisors.fumihiko.link,https://q-aos.kyushu-u.ac.jp/en/staff/members/yokota-fumihiko,https://q-aos.kyushu-u.ac.jp/en/staff/1770/,https://q-aos.kyushu-u.ac.jp/en/staff/1770/,https://q-aos.kyushu-u.ac.jp/en/staff/1770/
-people.sectionAdvisors.advisors.kohei.name,كوهي واكاميا,Kohei Wakamiya,Kohei Wakamiya,若宮 耕平
+people.sectionAdvisors.advisors.kohei.name,كوهي واكاميا,Kohei Wakamiya,Kohei Wakamiya,若宮幸平
 people.sectionAdvisors.advisors.kohei.role,مستشار الذكاء الاصطناعي الصوتي,Audio AI Advisor,Asesor de Inteligencia Artificial de Voz,音声AI顧問
 people.sectionAdvisors.advisors.kohei.texts.0,أستاذ مساعد تصميم الصوتيات,Acoustic Design Assistant Professor,Profesor Asistente de Diseño Acústico,音声AIアドバイザー
 people.sectionAdvisors.advisors.kohei.texts.1,جامعة كيوشو,Kyushu University,Universidad de Kyushu,九州大学
@@ -1326,6 +1335,11 @@ people.sectionAdvisors.advisors.maurino.role,مستشار برنامج الأج�
 people.sectionAdvisors.advisors.maurino.texts.0,المدير العام لشركة أبوميد للاستشارات,"Managing Director, Apomed Consultants","Director General, Apomed Consultants",アポメッド・コンサルタンツ マネージング・ディレクター
 people.sectionAdvisors.advisors.maurino.texts.1,ماجستير في إدارة الهندسة، جامعة سانتا كلارا,"M.S. Engineering Management, Santa Clara University","Maestría en Gestión de Ingeniería, Universidad de Santa Clara",サンタクララ大学工学管理学修士
 people.sectionAdvisors.advisors.maurino.link,https://www.linkedin.com/in/maurino-f-a230971/,https://www.linkedin.com/in/maurino-f-a230971/,https://www.linkedin.com/in/maurino-f-a230971/,https://www.linkedin.com/in/maurino-f-a230971/
+people.sectionAdvisors.advisors.amir.name,أمير خان,Amir Khan,Amir Khan,アミール・カーン
+people.sectionAdvisors.advisors.amir.role,مستشار الجاذبية التنفيذية,Executive Gravitas Advisor,Asesor ejecutivo de Gravitas,エグゼクティブ・グラビタス・アドバイザー
+people.sectionAdvisors.advisors.amir.texts.0,الرئيس التنفيذي لشركة Digital Gravitas في وادي السيليكون,CEO Digital Gravitas Silicon Valley,CEO Digital Gravitas Silicon Valley,Digital Gravitas シリコンバレー CEO
+people.sectionAdvisors.advisors.amir.texts.1,معهد مودا بورجو، ميلانو,"Istituto di Moda Burgo, Milan","Instituto de Moda Burgo, Milán",モーダ・ブルゴ研究所、ミラノ
+people.sectionAdvisors.advisors.amir.link,https://www.linkedin.com/in/the-amir-khan/,https://www.linkedin.com/in/the-amir-khan/,https://www.linkedin.com/in/the-amir-khan/,https://www.linkedin.com/in/the-amir-khan/
 people.sectionAdvisors.advisorOrder.0,adam,adam,adam,adam
 people.sectionAdvisors.advisorOrder.1,ayomide,ayomide,ayomide,ayomide
 people.sectionAdvisors.advisorOrder.2,faisal,faisal,faisal,faisal
@@ -1357,6 +1371,7 @@ people.sectionAdvisors.advisorOrder.27,tsutomu,tsutomu,tsutomu,tsutomu
 people.sectionAdvisors.advisorOrder.28,victor,victor,victor,victor
 people.sectionAdvisors.advisorOrder.29,zafar,zafar,zafar,zafar
 people.sectionAdvisors.advisorOrder.30,maurino,maurino,maurino,maurino
+people.sectionAdvisors.advisorOrder.31,amir,amir,amir,amir
 publications.publicationsSection.title,المنشورات,Publications,Publicaciones,出版物
 publications.publicationsSection.texts.0,يمكنك العثور أدناه على العديد من أوراقنا التي تعرض التطور والعلم وراء قوة Virufy,Below you can find several of our papers that showcase the development and science behind the power of Virufy.,A continuación puede encontrar varios de nuestros artículos que muestran el desarrollo y la ciencia detrás del poder de Virufy.,以下では、Virufyの開発とその科学的根拠を示すいくつかの論文をご覧いただけます。
 publications.publicationsCards.0.title,محول متعدد النماذج الهرمي للكشف التلقائي عن COVID-19,Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19,Transformador Multimodal Jerárquico para Detección Automática de COVID-19,COVID-19自動検出のための階層型マルチモデルトランスフォーマー
@@ -1381,6 +1396,10 @@ publications.publicationsCards.4.url,https://ui.adsabs.harvard.edu/abs/2020arXiv
 publications.publicationsCards.4.linkText,اقرأ المزيد,Read More,Leer más,続きを読む
 publications.collaborateSection.title,هل ترغب في التعاون البحثي؟,Interested for research collaboration?,Ayudemos al mundo y salvemos vidas registrando tu tos,私たちの研究に協力しませんか？
 publications.collaborateSection.linkText,انضم إلى فريقنا,Join Our Team,Comparte tu tos,チームに参加
+shareYourCough.title,دراسة جمع بيانات السعال المتعلقة بكوفيد-19,Covid-19 Cough Data Collection Study,Estudio de recopilación de datos sobre la tos de Covid-19,Covid-19咳データ収集調査
+shareYourCough.text,منظمة بحثية غير ربحية مستقلة,An Independent Nonprofit Research Organization,Una organización de investigación independiente sin fines de lucro,独立非営利研究機関
+shareYourCough.linkUrl,https://virufy.org/study/welcome,https://virufy.org/study/welcome,https://virufy.org/study/welcome,https://virufy.org/study/welcome
+shareYourCough.linkText,لنبدأ!,Let's Start!,¡Empecemos!,さあ、始めましょう！
 story.storySection.title,"كيف بدأت الفكرة ",How It Started,Cómo empezó,どのように始まったか
 story.storySection.texts.0.0.type,text,text,text,text
 story.storySection.texts.0.0.text,عندما ضربت الجائحة،,"When the pandemic hit, ","Cuando llegó la pandemia, ",パンデミックの際、
@@ -1422,70 +1441,48 @@ supporters.contactusform.emailtitle,البريد الإلكتروني,Email,Corr
 supporters.contactusform.texttitle,الرسالة,Message,Mensaje,メッセージ
 supporters.contactusform.textplaceholder,أدخل رسالة,Enter Message,Escribe tu mensaje,メッセージを入力する
 supporters.contactusform.submitButtonText,تأكيد,Submit,Enviar,送信する
-supporters.supportersList.0.img,./../images/supporters/h4r.png,@/images/supporters/H4RLogo.png,@/images/supporters/H4RLogo.png,@/images/supporters/H4RLogo.png
-supporters.supportersList.0.alt,H4R,H4R,H4R,H4R
-supporters.supportersList.0.link,https://h4r.stanford.edu/,https://h4r.stanford.edu/,https://h4r.stanford.edu/,https://h4r.stanford.edu/
-supporters.supportersList.1.img,./../images/supporters/aws.png,@/images/supporters/AWSLogo.png,@/images/supporters/AWSLogo.png,@/images/supporters/AWSLogo.png
-supporters.supportersList.1.alt,AWS,AWS,AWS,AWS
-supporters.supportersList.1.link,https://aws.amazon.com/,https://aws.amazon.com/,https://aws.amazon.com/,https://aws.amazon.com/
-supporters.supportersList.2.img,./../images/supporters/drive.png,@/images/supporters/DriveLogo.png,@/images/supporters/DriveLogo.png,@/images/supporters/DriveLogo.png
-supporters.supportersList.2.alt,Drive,Drive,Drive,Drive
-supporters.supportersList.2.link,https://drive.hhs.gov/,https://drive.hhs.gov/,https://drive.hhs.gov/,https://drive.hhs.gov/
-supporters.supportersList.3.img,./../images/supporters/one-young-world.png,@/images/supporters/OneYoungWorldLogo.png,@/images/supporters/OneYoungWorldLogo.png,@/images/supporters/OneYoungWorldLogo.png
+supporters.supportersList.0.alt,H4R,AWS,H4R,H4R
+supporters.supportersList.0.link,https://h4r.stanford.edu/,https://aws.amazon.com/,https://h4r.stanford.edu/,https://h4r.stanford.edu/
+supporters.supportersList.1.alt,AWS,Microsoft,AWS,AWS
+supporters.supportersList.1.link,https://aws.amazon.com/,https://www.microsoft.com/,https://aws.amazon.com/,https://aws.amazon.com/
+supporters.supportersList.2.alt,Drive,Response Innovation Lab,Drive,Drive
+supporters.supportersList.2.link,https://drive.hhs.gov/,https://www.responseinnovationlab.com/,https://drive.hhs.gov/,https://drive.hhs.gov/
 supporters.supportersList.3.alt,One Young World,One Young World,One Young World,One Young World
 supporters.supportersList.3.link,https://www.oneyoungworld.com/counsellors,https://www.oneyoungworld.com/counsellors,https://www.oneyoungworld.com/counsellors,https://www.oneyoungworld.com/counsellors
-supporters.supportersList.4.img,./../images/supporters/pillsbury.png,@/images/supporters/PillsburyLogo.png,@/images/supporters/PillsburyLogo.png,@/images/supporters/PillsburyLogo.png
-supporters.supportersList.4.alt,Pillsbury,Pillsbury,Pillsbury,Pillsbury
-supporters.supportersList.4.link,https://www.pillsburylaw.com/en/,https://www.pillsburylaw.com/en/,https://www.pillsburylaw.com/en/,https://www.pillsburylaw.com/en/
-supporters.supportersList.5.img,./../images/supporters/university-fukui.png,@/images/supporters/UniversityFukuiLogo.png,@/images/supporters/UniversityFukuiLogo.png,@/images/supporters/UniversityFukuiLogo.png
-supporters.supportersList.5.alt,University Fukui,University Fukui,University Fukui,University Fukui
-supporters.supportersList.5.link,https://www.u-fukui.ac.jp/eng,https://www.u-fukui.ac.jp/eng,https://www.u-fukui.ac.jp/eng,https://www.u-fukui.ac.jp
-supporters.supportersList.6.img,./../images/supporters/idime.png,@/images/supporters/IdimeLogo.png,@/images/supporters/IdimeLogo.png,@/images/supporters/IdimeLogo.png
-supporters.supportersList.6.alt,Idime,Idime,Idime,Idime
-supporters.supportersList.6.link,https://idime.com.co/,https://idime.com.co/,https://idime.com.co/,https://idime.com.co/
-supporters.supportersList.7.img,./../images/supporters/cj-partners.png,@/images/supporters/CJPartnersLogo.png,@/images/supporters/CJPartnersLogo.png,@/images/supporters/CJPartnersLogo.png
-supporters.supportersList.7.alt,CJ Partners,CJ Partners,CJ Partners,CJ Partners
-supporters.supportersList.7.link,https://www.cj-partners.com/,https://www.cj-partners.com/,https://www.cj-partners.com/,https://www.cj-partners.com/
-supporters.supportersList.8.img,./../images/supporters/xoor.png,@/images/supporters/XoorLogo.png,@/images/supporters/XoorLogo.png,@/images/supporters/XoorLogo.png
-supporters.supportersList.8.alt,Xoor,Xoor,Xoor,Xoor
-supporters.supportersList.8.link,https://xoor.io/en/,https://xoor.io/en/,https://xoor.io/en/,https://xoor.io/en/
-supporters.supportersList.9.img,./../images/supporters/sherlock-communications.png,@/images/supporters/SherlockCommunicationsLogo.png,@/images/supporters/SherlockCommunicationsLogo.png,@/images/supporters/SherlockCommunicationsLogo.png
-supporters.supportersList.9.alt,Sherlock Communications,Sherlock Communications,Sherlock Communications,Sherlock Communications
-supporters.supportersList.9.link,https://www.sherlockcomms.com/,https://www.sherlockcomms.com/,https://www.sherlockcomms.com/,https://www.sherlockcomms.com/
-supporters.supportersList.10.img,./../images/supporters/nuvu.png,@/images/supporters/NuvuLogo.png,@/images/supporters/NuvuLogo.png,@/images/supporters/NuvuLogo.png
-supporters.supportersList.10.alt,Nuvu,Nuvu,Nuvu,Nuvu
-supporters.supportersList.10.link,https://www.nuvu.cc/,https://www.nuvu.cc/,https://www.nuvu.cc/,https://www.nuvu.cc/
-supporters.supportersList.11.img,./../images/supporters/spi.png,@/images/supporters/SPILogo.png,@/images/supporters/SPILogo.png,@/images/supporters/SPILogo.png
-supporters.supportersList.11.alt,SPI,SPI,SPI,SPI
-supporters.supportersList.11.link,https://spiamericas.com/en/home/,https://spiamericas.com/en/home/,https://spiamericas.com/en/home/,https://spiamericas.com/en/home/
-supporters.supportersList.12.img,./../images/supporters/devlights.png,@/images/supporters/DevlightsLogo.png,@/images/supporters/DevlightsLogo.png,@/images/supporters/DevlightsLogo.png
-supporters.supportersList.12.alt,Devlights,Devlights,Devlights,Devlights
-supporters.supportersList.12.link,https://www.devlights.com/,https://www.devlights.com/,https://www.devlights.com/,https://www.devlights.com/
-supporters.supportersList.13.img,./../images/supporters/fenwick.png,@/images/supporters/FenwickLogo.png,@/images/supporters/FenwickLogo.png,@/images/supporters/FenwickLogo.png
-supporters.supportersList.13.alt,Fenwick,Fenwick,Fenwick,Fenwick
-supporters.supportersList.13.link,https://www.fenwick.com/,https://www.fenwick.com/,https://www.fenwick.com/,https://www.fenwick.com/
-supporters.supportersList.14.img,./../images/supporters/olarte.png,@/images/supporters/OlarteLogo.png,@/images/supporters/OlarteLogo.png,@/images/supporters/OlarteLogo.png
-supporters.supportersList.14.alt,Olarte Moure,Olarte Moure,Olarte Moure,Olarte Moure
-supporters.supportersList.14.link,https://www.olartemoure.com/,https://www.olartemoure.com/,https://www.olartemoure.com/,https://www.olartemoure.com/
-supporters.supportersList.15.img,./../images/supporters/locked-jar.png,@/images/supporters/LockedJarLogo.png,@/images/supporters/CJPartnersLogo.png,@/images/supporters/CJPartnersLogo.png
-supporters.supportersList.15.alt,Locked Jar,Locked Jar,Locked Jar,Locked Jar
-supporters.supportersList.15.link,https://www.lockedjar.com/,https://www.lockedjar.com/,https://www.lockedjar.com/,https://www.lockedjar.com/
-supporters.supportersList.16.img,./../images/supporters/response-innovation-lab.png,@/images/supporters/ResponseInnovationLabLogo.png,@/images/supporters/ResponseInnovationLabLogo.png,@/images/supporters/ResponseInnovationLabLogo.png
-supporters.supportersList.16.alt,Response Innovation Lab,Response Innovation Lab,Response Innovation Lab,Response Innovation Lab
-supporters.supportersList.16.link,https://www.responseinnovationlab.com/,https://www.responseinnovationlab.com/,https://www.responseinnovationlab.com/,https://www.responseinnovationlab.com/
-supporters.supportersList.17.img,./../images/supporters/takemoto-lab.png,@/images/supporters/TakemotoLabLogo.png,@/images/supporters/TakemotoLabLogo.png,@/images/supporters/TakemotoLabLogo.png
+supporters.supportersList.4.alt,Pillsbury,H4R,Pillsbury,Pillsbury
+supporters.supportersList.4.link,https://www.pillsburylaw.com/en/,https://h4r.stanford.edu/,https://www.pillsburylaw.com/en/,https://www.pillsburylaw.com/en/
+supporters.supportersList.5.alt,University Fukui,Drive,University Fukui,University Fukui
+supporters.supportersList.5.link,https://www.u-fukui.ac.jp/eng,https://drive.hhs.gov/,https://www.u-fukui.ac.jp/eng,https://www.u-fukui.ac.jp
+supporters.supportersList.6.alt,Idime,University Fukui,Idime,Idime
+supporters.supportersList.6.link,https://idime.com.co/,https://www.u-fukui.ac.jp/eng,https://idime.com.co/,https://idime.com.co/
+supporters.supportersList.7.alt,CJ Partners,Idime,CJ Partners,CJ Partners
+supporters.supportersList.7.link,https://www.cj-partners.com/,https://idime.com.co/,https://www.cj-partners.com/,https://www.cj-partners.com/
+supporters.supportersList.8.alt,Xoor,Pillsbury,Xoor,Xoor
+supporters.supportersList.8.link,https://xoor.io/en/,https://www.pillsburylaw.com/en/,https://xoor.io/en/,https://xoor.io/en/
+supporters.supportersList.9.alt,Sherlock Communications,Xoor,Sherlock Communications,Sherlock Communications
+supporters.supportersList.9.link,https://www.sherlockcomms.com/,https://xoor.io/en/,https://www.sherlockcomms.com/,https://www.sherlockcomms.com/
+supporters.supportersList.10.alt,Nuvu,Sherlock Communications,Nuvu,Nuvu
+supporters.supportersList.10.link,https://www.nuvu.cc/,https://www.sherlockcomms.com/,https://www.nuvu.cc/,https://www.nuvu.cc/
+supporters.supportersList.11.alt,SPI,Nuvu,SPI,SPI
+supporters.supportersList.11.link,https://spiamericas.com/en/home/,https://www.nuvu.cc/,https://spiamericas.com/en/home/,https://spiamericas.com/en/home/
+supporters.supportersList.12.alt,Devlights,SPI,Devlights,Devlights
+supporters.supportersList.12.link,https://www.devlights.com/,https://spiamericas.com/en/home/,https://www.devlights.com/,https://www.devlights.com/
+supporters.supportersList.13.alt,Fenwick,Devlights,Fenwick,Fenwick
+supporters.supportersList.13.link,https://www.fenwick.com/,https://www.devlights.com/,https://www.fenwick.com/,https://www.fenwick.com/
+supporters.supportersList.14.alt,Olarte Moure,Fenwick,Olarte Moure,Olarte Moure
+supporters.supportersList.14.link,https://www.olartemoure.com/,https://www.fenwick.com/,https://www.olartemoure.com/,https://www.olartemoure.com/
+supporters.supportersList.15.alt,Locked Jar,Olarte Moure,Locked Jar,Locked Jar
+supporters.supportersList.15.link,https://www.lockedjar.com/,https://www.olartemoure.com/,https://www.lockedjar.com/,https://www.lockedjar.com/
+supporters.supportersList.16.alt,Response Innovation Lab,Locked Jar,Response Innovation Lab,Response Innovation Lab
+supporters.supportersList.16.link,https://www.responseinnovationlab.com/,https://www.lockedjar.com/,https://www.responseinnovationlab.com/,https://www.responseinnovationlab.com/
 supporters.supportersList.17.alt,Takemoto Lab,Takemoto Lab,Takemoto Lab,Takemoto Lab
 supporters.supportersList.17.link,http://www.hisac.u-fukui.ac.jp/imlabo/home.html,http://www.hisac.u-fukui.ac.jp/imlabo/home.html,http://www.hisac.u-fukui.ac.jp/imlabo/home.html,http://www.hisac.u-fukui.ac.jp/imlabo/home.html
-supporters.supportersList.18.img,./../images/supporters/life-science.png,@/images/supporters/LifeScienceLogo.png,@/images/supporters/LifeScienceLogo.png,@/images/supporters/LifeScienceLogo.png
 supporters.supportersList.18.alt,Life Science Washington,Life Science Washington,Life Science Washington,Life Science Washington
 supporters.supportersList.18.link,https://www.lswinstitute.org/,https://www.lswinstitute.org/,https://www.lswinstitute.org/,https://www.lswinstitute.org/
-supporters.supportersList.19.img,./../images/supporters/candido-costa-and-cancio.png,@/images/supporters/CandidoCostaAndCancioLogo.png,@/images/supporters/CandidoCostaAndCancioLogo.png,@/images/supporters/CandidoCostaAndCancioLogo.png
 supporters.supportersList.19.alt,Candido Costa & Cancio,Candido Costa & Cancio,Candido Costa & Cancio,Candido Costa & Cancio
 supporters.supportersList.19.link,https://cccadv.com.br/site/en/home/,https://cccadv.com.br/site/en/home/,https://cccadv.com.br/site/en/home/,https://cccadv.com.br/site/en/home/
-supporters.supportersList.20.img,./../images/supporters/arkangel-ai.png,@/images/supporters/ArkangelAiLogo.png,@/images/supporters/ArkangelAiLogo.png,@/images/supporters/ArkangelAiLogo.png
 supporters.supportersList.20.alt,Arkangel Ai,Arkangel Ai,Arkangel Ai,Arkangel Ai
 supporters.supportersList.20.link,https://www.arkangel.ai/,https://www.arkangel.ai/,https://www.arkangel.ai/,https://www.arkangel.ai/
-supporters.supportersList.21.img,./../images/supporters/nexus-tax-services.png,@/images/supporters/NexusTaxServicesLogo.png,@/images/supporters/NexusTaxServicesLogo.png,@/images/supporters/NexusTaxServicesLogo.png
 supporters.supportersList.21.alt,Nexus Tax Services,Nexus Tax Services,Nexus Tax Services,Nexus Tax Services
 supporters.supportersList.21.link,https://nexustaxaccountants.com/,https://nexustaxaccountants.com/,https://nexustaxaccountants.com/,https://nexustaxaccountants.com/
 teamLeads.title,سفراء OYW,OYW Ambassadors,Embajadores de OYW,OYWアンバサダー
@@ -1764,6 +1761,28 @@ paper.papers.section3.readMoreLink,,Read more...,,
 paper.papers.section7.date,,October 2022,,
 paper.papers.section7.title,,Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19,,
 paper.papers.section7.readMoreLink,,Read more...,,
+supporters.supportersList.0.img,,/public/logos_transparent/aws.png,,
+supporters.supportersList.1.img,,/public/logos_transparent/aws.png,,
+supporters.supportersList.3.img,,/public/logos_transparent/one-young-world.png,,
+supporters.supportersList.4.img,,/public/logos_transparent/h4r.png,,
+supporters.supportersList.5.img,,/public/logos_transparent/drive.png,,
+supporters.supportersList.6.img,,/public/logos_transparent/university-fukui.png,,
+supporters.supportersList.7.img,,/public/logos_transparent/idime.png,,
+supporters.supportersList.8.img,,/public/logos_transparent/pillsbury.png,,
+supporters.supportersList.9.img,,/public/logos_transparent/xoor.png,,
+supporters.supportersList.10.img,,/public/logos_transparent/sherlock-communications.png,,
+supporters.supportersList.11.img,,/public/logos_transparent/nuvu.png,,
+supporters.supportersList.12.img,,/public/logos_transparent/spi.png,,
+supporters.supportersList.13.img,,/public/logos_transparent/devlights.png,,
+supporters.supportersList.14.img,,/public/logos_transparent/fenwick.png,,
+supporters.supportersList.15.img,,/public/logos_transparent/olarte-moure.png,,
+supporters.supportersList.16.img,,/public/logos_transparent/locked-jar.png,,
+supporters.supportersList.22.img,,/public/logos_transparent/nuvu.png,,
+supporters.supportersList.22.alt,,Nuvu,,
+supporters.supportersList.22.link,,https://www.nuvu.cc/,,
+supporters.supportersList.23.img,,/public/logos_transparent/cj-partners.png,,
+supporters.supportersList.23.alt,,CJ Partners,,
+supporters.supportersList.23.link,,https://www.cj-partners.com/,,
 teamLeads.cards.5.texts.2,,Clinical Statistics,,
 teamLeads.cards.7.texts.1,,USA,,
 teamLeads.cards.8.texts.1,,"LATAM, Peru",,

@@ -252,7 +252,7 @@ const people: People = {
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
       },
       kohei: {
-        img: KoheiWakamiya,
+        img: './../images/advisors/kohei-wakamiya.webp',
         name: '若宮幸平',
         role: '音声AI顧問',
         texts: ['音声AIアドバイザー', '九州大学'],
@@ -290,7 +290,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: AmirKhan,
+        img: './../images/advisors/amir-khan.webp',
         name: 'アミール・カーン',
         role: 'エグゼクティブ・グラビタス・アドバイザー',
         texts: [
