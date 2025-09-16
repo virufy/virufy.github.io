@@ -3,6 +3,7 @@ export { default as BgHeader } from './bg-header.webp';
 
 export { default as AWSLogo } from '../../logos_transparent/aws.png';
 export { default as ArkangelAiLogo } from '../../logos/arkangel-ai.webp';
+export { default as MicrosoftLogo } from '../../logos_transparent/Microsoft.png';
 export { default as CandidoCostaAndCancioLogo } from '../../logos/candido-costa-and-cancio.webp';
 export { default as CJPartnersLogo } from '../../logos_transparent/cj-partners.png';
 export { default as DevlightsLogo } from '../../logos_transparent/devlights.png';

@@ -1,3 +1,28 @@
+import {
+  ArkangelAiLogo,
+  AWSLogo,
+  CandidoCostaAndCancioLogo,
+  CJPartnersLogo,
+  DevlightsLogo,
+  DriveLogo,
+  FenwickLogo,
+  H4RLogo,
+  IdimeLogo,
+  LifeScienceLogo,
+  LockedJarLogo,
+  MicrosoftLogo,
+  NexusTaxServicesLogo,
+  NuvuLogo,
+  OlarteLogo,
+  OneYoungWorldLogo,
+  PillsburyLogo,
+  ResponseInnovationLabLogo,
+  SherlockCommunicationsLogo,
+  SPILogo,
+  TakemotoLabLogo,
+  UniversityFukuiLogo,
+  XoorLogo,
+} from '@/public/images/supporters';
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {
@@ -15,6 +40,11 @@ const supporters: Supporters = {
   },
   supportersList: [
     { img: AWSLogo, alt: 'AWS', link: 'https://aws.amazon.com/' },
+    {
+      img: MicrosoftLogo,
+      alt: 'Microsoft',
+      link: 'https://www.microsoft.com/',
+    },
     {
       img: ResponseInnovationLabLogo,
       alt: 'Response Innovation Lab',

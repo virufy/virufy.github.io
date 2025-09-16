@@ -64,8 +64,8 @@ const people: People = {
         name: 'Thomas Mahoney',
         role: 'Asesor de negocios y salud pública',
         texts: [
-          'Asociado de Departamento, Departamento de Enfermedades Infecciosas, Universidad de Harvard',
-          'MBA, The Wharton School, Universidad de Pensilvania',
+          'Asociado, Departamento de Inmunología y Enfermedades Infecciosas',
+          'Escuela de Salud Pública T.H. Chan de Harvard',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
@@ -321,7 +321,7 @@ const people: People = {
           'CEO Digital Gravitas Silicon Valley',
           'Instituto de Moda Burgo, Milán',
         ],
-        link: 'https://virufy.org/en/advisors/',
+        link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
     },
     advisorOrder: [
