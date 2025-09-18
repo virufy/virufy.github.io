@@ -91,7 +91,8 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             priority
             basePath={basePath}
           />
-
+          {/* Blur transition */}
+          <div className="absolute bottom-0 w-full block md:hidden h-[30px] bg-gradient-to-b from-transparent to-[#20376b]"></div>
           {/* Text and Input Container */}
           <div className="relative flex flex-col items-center justify-center pb-8 pt-32 md:pb-32 md:pt-72">
             {/* Sizing & Spacing Container */}
@@ -148,7 +149,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
 
       {/* Gradient Overlay Container */}
-      <div className="-mb-24 bg-[#20376b] text-white">
+      <div className="-mb-24 bg-[#20376b] text-white pb-6 md:pb-0">
         {/* Topics Section */}
         <section>
           {/* Title and Topic Cards Container */}
@@ -181,23 +182,26 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             </h2>
 
             {/* Questions Container */}
-            <div className="max-w-md rounded-lg border-b bg-white text-xs text-black last:border-b-0 md:max-w-2xl md:text-base lg:max-w-4xl xl:max-w-5xl">
+            <div className="max-w-md rounded-lg border-b bg-[#172b50] md:bg-white text-sm last:border-b-0 md:max-w-2xl md:text-base lg:max-w-4xl xl:max-w-5xl">
               {filteredQuestions &&
                 filteredQuestions.map((content) => (
                   <AccordionItem
                     {...content}
                     lang={lang}
                     key={content.question}
-                    className="!text-black"
+                    className="!text-white md:!text-black"
+                    isFaq={true}
                   />
                 ))}
             </div>
           </div>
         </section>
       </div>
+      <div className="absolute bottom-0 block w-full h-10 bg-gradient-to-b from-transparent to-[#000000]"></div>
     </div>
     </>
   );
 };
 
 export default FAQPage;
+ 
