@@ -18,7 +18,7 @@ interface ContactUs {
 }
 
 type SupporterImg = {
-  img: StaticImageData;
+  img: string | StaticImageData;
   alt: string;
   link: string;
 };

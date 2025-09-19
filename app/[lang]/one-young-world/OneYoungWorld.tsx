@@ -45,7 +45,7 @@ const OneYoungWorld = ({
               className="aspect-video w-full px-4 py-1 md:px-16 md:py-9"
               src={videoUrl}
               title={videoTitle}
-              allow="fullscreen"
+              allowFullScreen
               referrerPolicy="strict-origin-when-cross-origin"
             ></iframe> */}
           </div>
@@ -70,6 +70,9 @@ const OneYoungWorld = ({
                     src={card.image}
                     alt={card.altText}
                     basePath={basePath}
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                   <div className="space-y-4">
                     <h3 className="text-lg font-bold md:text-xl">

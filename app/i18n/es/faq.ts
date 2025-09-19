@@ -1,19 +1,8 @@
-import {
-  BgHeader,
-  GlobeIcon,
-  MonitorIcon,
-  PhoneInHandIcon,
-  PrivacyIcon,
-  QuestionMarkIcon,
-  RecycleIcon,
-  SearchIcon,
-} from '@/public/images/faq';
-
 import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: BgHeader,
+    img: './../images/faq/bg-header.webp',
     altText: '',
     title: [
       {
@@ -31,7 +20,7 @@ const faq: FAQ = {
     ],
     input: {
       placeholder: 'Comienza a escribir tu búsqueda...',
-      img: SearchIcon,
+      img: './../images/faq/icon-search.png',
       altText: 'ícono de búsqueda',
     },
     texts: [
@@ -55,37 +44,37 @@ const faq: FAQ = {
       // Removed in 6.2 Redesign
       // {
       //   title: 'Preguntas Comunes',
-      //   img: QuestionMarkIcon,
+      //   img: './../images/faq/icon-question-mark.png',
       //   altText: '',
       // },
       {
         title: 'Aplicación Virufy',
-        img: PhoneInHandIcon,
+        img: './../images/faq/icon-phone-in-hand.png',
         altText: '',
       },
       {
         title: 'Acerca de Virufy',
-        img: GlobeIcon,
+        img: './../images/faq/icon-globe.png',
         altText: '',
       },
       {
         title: 'Acerca de la IA',
-        img: RecycleIcon,
+        img: './../images/faq/icon-recycle.png',
         altText: '',
       },
       {
         title: 'Finanzas',
-        img: MonitorIcon,
+        img: './../images/faq/icon-monitor.png',
         altText: '',
       },
       {
         title: 'Privacidad',
-        img: PrivacyIcon,
+        img: './../images/faq/icon-privacy.png',
         altText: '',
       },
       {
         title: 'Otros',
-        img: QuestionMarkIcon,
+        img: './../images/faq/icon-question-mark.png',
         altText: '',
       },
     ],

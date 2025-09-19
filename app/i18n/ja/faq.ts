@@ -1,19 +1,8 @@
-import {
-  BgHeader,
-  GlobeIcon,
-  MonitorIcon,
-  PhoneInHandIcon,
-  PrivacyIcon,
-  QuestionMarkIcon,
-  RecycleIcon,
-  SearchIcon,
-} from '@/public/images/faq';
-
 import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: BgHeader,
+    img: './../images/faq/bg-header.webp',
     altText: '',
     title: [
       {
@@ -31,7 +20,7 @@ const faq: FAQ = {
     ],
     input: {
       placeholder: '検索ワードを入力...',
-      img: SearchIcon,
+      img: './../images/faq/icon-search.png',
       altText: '検索アイコン',
     },
     texts: [
@@ -55,37 +44,37 @@ const faq: FAQ = {
       // Removed in 6.2 Redesign
       // {
       //   title: 'よくある質問',
-      //   img: QuestionMarkIcon,
+      //   img: './../images/faq/icon-question-mark.png',
       //   altText: '',
       // },
       {
         title: 'Virufyアプリ',
-        img: PhoneInHandIcon,
+        img: './../images/faq/icon-phone-in-hand.png',
         altText: '',
       },
       {
         title: 'Virufyについて',
-        img: GlobeIcon,
+        img: './../images/faq/icon-globe.png',
         altText: '',
       },
       {
         title: 'AIについて',
-        img: RecycleIcon,
+        img: './../images/faq/icon-recycle.png',
         altText: '',
       },
       {
         title: '財務',
-        img: MonitorIcon,
+        img: './../images/faq/icon-monitor.png',
         altText: '',
       },
       {
         title: 'プライバシー',
-        img: PrivacyIcon,
+        img: './../images/faq/icon-privacy.png',
         altText: '',
       },
       {
         title: 'その他',
-        img: QuestionMarkIcon,
+        img: './../images/faq/icon-question-mark.png',
         altText: '',
       },
     ],

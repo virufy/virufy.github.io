@@ -16,6 +16,7 @@
     "preview": "npx serve out"
   },
   "dependencies": {
+    "csv-parse": "^6.1.0",
     "flexsearch": "^0.8.161",
     "i": "^0.3.7",
     "jimp": "^1.6.0",
@@ -23,28 +24,32 @@
     "next": "^14.2.30",
     "next-image-export-optimizer": "^1.14.1",
     "next-intl": "^4.1.0",
+    "papaparse": "^5.5.3",
     "react": "^18",
     "react-dom": "^18",
     "react-ga4": "^2.1.0",
     "react-player": "^2.16.0",
-    "sharp": "^0.34.3"
+    "sharp": "^0.34.3",
+    "ts-morph": "^26.0.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.53.0",
+    "@types/csv-parse": "^1.1.12",
     "@types/lodash.debounce": "^4.0.9",
     "@types/node": "20.14.15",
+    "@types/papaparse": "^5.3.16",
     "@types/react": "18.3.3",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
-    "netlify-cli": "^22.2.2",
+    "netlify-cli": "^23.1.4",
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
     "tsx": "^4.19.3",
-    "typescript": "5.5.4"
+    "typescript": "^5.9.2"
   }
 }
