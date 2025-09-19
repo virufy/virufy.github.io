@@ -66,6 +66,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               >
                 {tab.id}
               </button>
+              
             ))}
           </div>
           {/* Tab Content */}
