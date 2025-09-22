@@ -149,6 +149,15 @@ const jobListing: JobListing = {
       ],
     },
     {
+      category: 'Fundraising',
+      positions: [
+        {
+          title: 'Grant Writer',
+          id: 27,
+        },
+      ],
+    },
+    {
       category: 'General',
       positions: [
         {

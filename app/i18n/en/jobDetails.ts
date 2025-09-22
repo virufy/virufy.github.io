@@ -786,7 +786,8 @@ const jobDetails: JobDetails = {
   // General Job Application
   '26': {
     title: 'General Volunteer Application',
-    description: 'Seeking individuals who are passionate about global health and want to contribute on a part-time volunteer basis, even if a specific role isn\'t currently listed. This is your opportunity to tell us how you\'d like to support Virufy\'s mission to harness AI for pandemic detection and response.',
+    description:
+      "Seeking individuals who are passionate about global health and want to contribute on a part-time volunteer basis, even if a specific role isn't currently listed. This is your opportunity to tell us how you'd like to support Virufy's mission to harness AI for pandemic detection and response.",
     responsibilities: [
       'Define product roadmap and manage product backlog.',
       'Analyze user needs and market conditions.',
@@ -799,7 +800,7 @@ const jobDetails: JobDetails = {
       'Age 18 or over.',
       'Legally authorized to work in the United States (We do not sponsor Visas).',
       'High School Graduate or College Degree.',
-      'Valid Photo ID (Driver\'s License or Passport).',
+      "Valid Photo ID (Driver's License or Passport).",
       'Must Be Multi-Lingual (English, Spanish & Portuguese).',
     ],
     desiredSkills: [
@@ -809,7 +810,32 @@ const jobDetails: JobDetails = {
       'Strong sense of responsibility.',
     ],
     hours: ['10+ hours per week while actively localizing policies.'],
-    questions: ['Reach out to frederick.cosper@virufy.org and we will get back to you promptly.'],
+    questions: [
+      'Reach out to frederick.cosper@virufy.org and we will get back to you promptly.',
+    ],
+  },
+  '27': {
+    title: 'Grant Writer',
+    description:
+      'Seeking an individual to contribute on a part-time volunteer basis and be responsible for drafting grant proposals on Virufy’s behalf to help secure funding from foundations, corporations, private donors, and fiscal nonprofit sponsors. We are looking for a strong writer to create a compelling narrative around Virufy’s mission and business plan, so that our group will be competitive among thousands of other grant apps.',
+    responsibilities: [
+      'Research potential funding sources and grant opportunities.',
+      'Write, edit, and submit grant proposals.',
+      'Collaborate with program staff to gather necessary information and data.',
+      'Track grant submissions and manage deadlines.',
+      'Clinical experience is a plus.',
+    ],
+    minQualifications: [
+      'Excellent writing, communication, and organizational skills.',
+      'Familiarity with health technology or related fields is a plus.',
+      'Ability to work independently and as part of a team.',
+      'Experience is not necessary; enthusiasm and willingness to learn are encouraged.',
+    ],
+    desiredSkills: [],
+    hours: ['Minimum 5 hours per week (flexible).'],
+    questions: [
+      'Please submit your resume to sheeba.alam@virufy.org. We look forward to hearing from you!',
+    ],
   },
 };
 
