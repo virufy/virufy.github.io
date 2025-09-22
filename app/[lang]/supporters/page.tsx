@@ -42,8 +42,14 @@ export default function SupportersPage({
           TitleClassProps="absolute inset-0 flex items-center justify-center text-white text-center italic font-bold"
         />
         <button
-          className={`${ButtonType.primary} absolute left-1/2 top-[78%] h-[28px] w-[92px] -translate-x-1/2 rounded-full text-xs md:top-[80%] md:h-[65px] md:w-[250px] md:text-lg md:font-semibold`}
           onClick={() => setShowModal(true)}
+          className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl
+             absolute left-1/2 top-[78%] -translate-x-1/2 md:top-[80%] rounded-full"
+          style={{
+            borderRadius: '50px',
+            background: 'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+            border: '2px solid #3fcf94',
+          }}
         >
           {buttontext}
         </button>
