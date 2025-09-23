@@ -1,4 +1,4 @@
-import { Fukuoka, TeamMember } from '../types/fukuoka';
+import type { Fukuoka, TeamMember } from '../types/fukuoka';
 
 export const teamMembers: TeamMember[] = [
   {
