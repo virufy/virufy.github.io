@@ -64,11 +64,18 @@ const AiPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               <div className="space-y-16">
                 <p className="text-xl">{heroSection.text}</p>
                 <div>
-                  <Link
-                    className="rounded-full bg-white px-10 py-6 text-sm font-medium text-black lg:px-8 lg:py-4 lg:text-lg"
-                    href={`/${lang}/${heroSection.url}`}
-                  >
-                    {heroSection.linkText}
+                  <Link href={`/${lang}/${heroSection.url}`}>
+                    <button
+                      className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
+                      style={{
+                        borderRadius: '50px',
+                        background:
+                          'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+                        border: '2px solid #3fcf94',
+                      }}
+                    >
+                      {heroSection.linkText}
+                    </button>
                   </Link>
                 </div>
               </div>
