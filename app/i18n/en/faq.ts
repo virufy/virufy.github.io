@@ -2,7 +2,7 @@ import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: './../images/faq/bg-header.webp',
+    img: '/images/faq/nextImageExportOptimizer/bg-ai-hand-opt-1080.webp',
     altText: '',
     title: [
       {
@@ -20,7 +20,7 @@ const faq: FAQ = {
     ],
     input: {
       placeholder: 'Start typing your search...',
-      img: './../images/faq/icon-search.png',
+      img: '/icons/icon-search.png',
       altText: 'search icon',
     },
     texts: [
@@ -49,32 +49,32 @@ const faq: FAQ = {
       // },
       {
         title: 'Virufy App',
-        img: './../images/faq/icon-phone-in-hand.png',
+        img: '/icons/icon-phone-in-hand-white.png',
         altText: '',
       },
       {
         title: 'About Virufy',
-        img: './../images/faq/icon-globe.png',
+        img: '/icons/icon-globe-white.png',
         altText: '',
       },
       {
         title: 'About AI',
-        img: './../images/faq/icon-recycle.png',
+        img: '../../icons/icon-recycle-white.png',
         altText: '',
       },
       {
         title: 'Finances',
-        img: './../images/faq/icon-monitor.png',
+        img: '/icons/icon-monitor-white.png',
         altText: '',
       },
       {
         title: 'Privacy',
-        img: './../images/faq/icon-privacy.png',
+        img: '/icons/icon-privacy-white.png',
         altText: '',
       },
       {
         title: 'Other',
-        img: './../images/faq/icon-question-mark.png',
+        img: '/icons/icon-question-mark-white.png',
         altText: '',
       },
     ],

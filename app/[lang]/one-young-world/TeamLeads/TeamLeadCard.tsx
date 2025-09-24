@@ -16,6 +16,9 @@ const TeamLeadCard = ({ name, texts, image, altText }: TeamLeadCard) => {
         src={image}
         alt={altText}
         basePath={basePath}
+        width={240}
+        height={320}
+        priority
       />
 
       {/* Text block with solid background */}
