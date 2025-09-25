@@ -1,28 +1,3 @@
-import {
-  ArkangelAiLogo,
-  AWSLogo,
-  CandidoCostaAndCancioLogo,
-  CJPartnersLogo,
-  DevlightsLogo,
-  DriveLogo,
-  FenwickLogo,
-  H4RLogo,
-  IdimeLogo,
-  LifeScienceLogo,
-  LockedJarLogo,
-  MicrosoftLogo,
-  NexusTaxServicesLogo,
-  NuvuLogo,
-  OlarteLogo,
-  OneYoungWorldLogo,
-  PillsburyLogo,
-  ResponseInnovationLabLogo,
-  SherlockCommunicationsLogo,
-  SPILogo,
-  TakemotoLabLogo,
-  UniversityFukuiLogo,
-  XoorLogo,
-} from '@/public/images/supporters';
 import { type Supporters } from '../types/supporters';
 
 const supporters: Supporters = {

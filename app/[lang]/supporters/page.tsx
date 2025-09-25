@@ -6,7 +6,6 @@ import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
-import { ButtonType } from '../themes';
 import ModalSupporter from '../components/ModalSupporter';
 import { useState } from 'react';
 
@@ -43,11 +42,11 @@ export default function SupportersPage({
         />
         <button
           onClick={() => setShowModal(true)}
-          className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl
-             absolute left-1/2 top-[78%] -translate-x-1/2 md:top-[80%] rounded-full"
+          className="medium primary absolute left-1/2 top-[78%] -translate-x-1/2 rounded-full px-2 py-2 text-xs text-white md:top-[80%] md:px-16 md:py-4 md:text-base md:text-xl"
           style={{
             borderRadius: '50px',
-            background: 'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+            background:
+              'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
             border: '2px solid #3fcf94',
           }}
         >

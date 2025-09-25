@@ -7,7 +7,13 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
-import { SplashBackground, WaveBackground } from '@/public/images/ai/index';
+import { SplashBackground, WaveBackground } from '@/public/images/ai/index'
+
+import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
+import type { Metadata } from 'next';
+import { Fragment } from 'react';
+
 import { usei18n } from '../../i18n';
 import AiCard from './AiCard';
 

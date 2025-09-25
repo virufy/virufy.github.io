@@ -2,7 +2,7 @@ import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: './../images/faq/bg-header.webp',
+    img: '/images/faq/nextImageExportOptimizer/bg-ai-hand-opt-1080.webp',
     altText: '',
     title: [
       {
@@ -20,7 +20,7 @@ const faq: FAQ = {
     ],
     input: {
       placeholder: 'ابدأ الكتابة للبحث...',
-      img: './../images/faq/icon-search.png',
+      img: '/icons/icon-search.png',
       altText: 'أيقونة البحث',
     },
     texts: [
@@ -41,40 +41,34 @@ const faq: FAQ = {
   topicsSection: {
     title: 'مواضيع الأسئلة الشائعة',
     cards: [
-      // Removed in 6.2 Redesign
-      // {
-      //   title: 'الأسئلة الشائعة',
-      //   img: './../images/faq/icon-question-mark.png',
-      //   altText: '',
-      // },
       {
         title: 'تطبيق Virufy',
-        img: './../images/faq/icon-phone-in-hand.png',
+        img: '/icons/icon-phone-in-hand-white.png',
         altText: '',
       },
       {
         title: 'حول Virufy',
-        img: './../images/faq/icon-globe.png',
+        img: '/icons/icon-globe-white.png',
         altText: '',
       },
       {
         title: 'حول الذكاء الاصطناعي',
-        img: './../images/faq/icon-recycle.png',
+        img: '/icons/icon-recycle-white.png',
         altText: '',
       },
       {
         title: 'الشؤون المالية',
-        img: './../images/faq/icon-monitor.png',
+        img: '/icons/icon-monitor-white.png',
         altText: '',
       },
       {
         title: 'الخصوصية',
-        img: './../images/faq/icon-privacy.png',
+        img: '/icons/icon-privacy-white.png',
         altText: '',
       },
       {
         title: 'أخرى',
-        img: './../images/faq/icon-question-mark.png',
+        img: '/icons/icon-question-mark-white.png',
         altText: '',
       },
     ],

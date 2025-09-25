@@ -36,10 +36,14 @@ const TopicCard = ({
       className={`flex cursor-pointer flex-col justify-between space-y-2 rounded-xl px-6 py-4 text-center shadow-lg sm:px-9 ${bgStyle}`}
     >
       <ExportedImage
-        className="mx-auto filter md:invert"
+        className="mx-auto h-[32px] w-auto filter md:invert"
         src={img}
         alt={altText}
         basePath={basePath}
+        width={32}
+        height={32}
+        priority
+        unoptimized={true}
       />
       <h3 className={'text-white md:text-black'}>{title}</h3>
     </div>
