@@ -793,7 +793,8 @@ const jobDetails: JobDetails = {
   },
   '26': {
     title: 'Solicitud general de voluntariado',
-    description: 'Buscando personas apasionadas por la salud global y que quieran contribuir como voluntarios a tiempo parcial, incluso si una función específica no figura actualmente en la lista. Esta es su oportunidad para decirnos cómo le gustaría apoyar la misión de Virufy de aprovechar la IA para la detección y respuesta a pandemias.',
+    description:
+      'Buscando personas apasionadas por la salud global y que quieran contribuir como voluntarios a tiempo parcial, incluso si una función específica no figura actualmente en la lista. Esta es su oportunidad para decirnos cómo le gustaría apoyar la misión de Virufy de aprovechar la IA para la detección y respuesta a pandemias.',
     responsibilities: [
       'Definir la hoja de ruta del producto y gestionar la cartera de productos.',
       'Analizar las necesidades de los usuarios y las condiciones del mercado.',
@@ -815,8 +816,35 @@ const jobDetails: JobDetails = {
       'Habilidades de comunicación excepcionales.',
       'Fuerte sentido de responsabilidad.',
     ],
-    hours: ['Más de 10 horas por semana mientras localiza políticas activamente.'],
-    questions: ['Comunícate con frederick.cosper@virufy.org y te responderemos con prontitud.'],
+    hours: [
+      'Más de 10 horas por semana mientras localiza políticas activamente.',
+    ],
+    questions: [
+      'Comunícate con frederick.cosper@virufy.org y te responderemos con prontitud.',
+    ],
+  },
+  '27': {
+    title: 'Redactor/a de Subvenciones',
+    description:
+      'Buscamos a una persona que quiera contribuir de forma voluntaria a tiempo parcial y que sea responsable de redactar propuestas de subvenciones en nombre de Virufy para ayudar a asegurar financiamiento de fundaciones, corporaciones, donantes privados y patrocinadores sin fines de lucro. Buscamos a un/a redactor/a con buenas habilidades para crear una narrativa convincente sobre la misión y el plan de negocios de Virufy, para que nuestro grupo sea competitivo entre miles de otras solicitudes de subvención.',
+    responsibilities: [
+      'Investigar posibles fuentes de financiamiento y oportunidades de subvención.',
+      'Redactar, editar y enviar propuestas de subvenciones.',
+      'Colaborar con el personal del programa para recopilar la información y los datos necesarios.',
+      'Hacer seguimiento de las solicitudes de subvención y gestionar los plazos.',
+      'La experiencia clínica es una ventaja.',
+    ],
+    minQualifications: [
+      'Excelentes habilidades de redacción, comunicación y organización.',
+      'Familiaridad con tecnología en salud u otros campos relacionados es una ventaja.',
+      'Capacidad para trabajar de forma independiente y en equipo.',
+      'No es necesaria experiencia previa; se valora el entusiasmo y las ganas de aprender.',
+    ],
+    desiredSkills: [],
+    hours: ['Mínimo 5 horas por semana (flexible).'],
+    questions: [
+      'Por favor, envía tu currículum a sheeba.alam@virufy.org. ¡Esperamos saber de ti!',
+    ],
   },
 };
 
