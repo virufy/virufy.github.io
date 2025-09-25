@@ -245,7 +245,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [clearResults]);
 
   /** Helpers */
   const handleNavClick = () => setNavbar(false);
@@ -283,7 +283,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           setHasSearched(true);
         }
       }, DEBOUNCE_DELAY),
-    [isReady]
+    [isReady, performSearch]
   );
 
   /** Search rendering */
