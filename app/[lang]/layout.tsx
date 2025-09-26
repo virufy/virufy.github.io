@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import SearchProvider from './SearchProvider';
 import ModalCookie from './components/ModalCookie';
 import { Suspense } from 'react';
+import Script from 'next/script';
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -18,14 +19,31 @@ export default async function LangLayout({
 }>) {
   return (
     <>
-      <SearchProvider>
-        <Suspense fallback={null}>
-          <Navbar lang={lang} />
-        </Suspense>
-        <ModalCookie lang={lang} />
-        <section>{children}</section>
-        <Footer lang={lang} />
-      </SearchProvider>
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-350868067"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-350868067');
+          `}
+        </Script>
+      </head>
+      <body>
+        <SearchProvider>
+          <Suspense fallback={null}>
+            <Navbar lang={lang} />
+          </Suspense>
+          <ModalCookie lang={lang} />
+          <section>{children}</section>
+          <Footer lang={lang} />
+        </SearchProvider>
+      </body>
     </>
   );
 }
