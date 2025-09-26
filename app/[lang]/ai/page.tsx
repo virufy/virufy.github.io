@@ -4,16 +4,9 @@ import { Fragment, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import ExportedImage from 'next-image-export-optimizer';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { SplashBackground, WaveBackground } from '@/public/images/ai/index'
-
-import ExportedImage from 'next-image-export-optimizer';
-import Link from 'next/link';
-import type { Metadata } from 'next';
-import { Fragment } from 'react';
-
 import { usei18n } from '../../i18n';
 import AiCard from './AiCard';
 
@@ -130,58 +123,61 @@ export default function AiPage({ params: { lang } }: { params: { lang: Locale } 
 
   // Style
   return (
-    <div className="relative">
-      {/* =================== HERO =================== */}
-      <section>
-        <div className="relative bg-[#4883e3]">
-          <ExportedImage
-            className="absolute h-full w-full object-cover opacity-30"
-            src={SplashBackground}
-            alt=""
-            priority
-            basePath={basePath}
-          />
+  <div className="relative">
+    <section>
+      <div className="relative bg-[#4883e3]">
+        <ExportedImage
+          className="absolute h-full w-full object-cover opacity-30"
+          src={SplashBackground}
+          alt=""
+          priority
+          basePath={basePath}
+        />
 
-          <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-center px-6 pb-16 pt-28 md:pb-28 md:pt-36">
-            <div className="text-center text-white md:text-left md:self-center">
-              <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
-                {heroSection.title.map((t: any, i: number) =>
-                  t.type === 'text' ? (
-                    <Fragment key={i}>{t.text} </Fragment>
-                  ) : (
-                    <span key={i} className="font-extrabold text-[#1ecf7a]">
-                      {t.text}
-                    </span>
-                  )
-                )}
+        <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-center px-6 pb-16 pt-28 md:pb-28 md:pt-36">
+          <div className="text-center text-white md:text-left md:self-center">
+            <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
+              {heroSection.title.map((t: any, i: number) =>
+                t.type === 'text' ? (
+                  <Fragment key={i}>{t.text} </Fragment>
+                ) : (
+                  <span key={i} className="font-extrabold text-[#1ecf7a]">
+                    {t.text}
+                  </span>
+                )
+              )}
+            </h1>
 
-             </h1>
-              <p className="mt-5 text-lg opacity-95 md:max-w-2xl">{heroSection.text}</p>
-              </h2>
-              {/* Text & Link Container */}
-              <div className="space-y-16">
-                <p className="text-xl">{heroSection.text}</p>
-                <div>
-                  <Link href={`/${lang}/${heroSection.url}`}>
-                    <button
-                      className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
-                      style={{
-                        borderRadius: '50px',
-                        background:
-                          'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
-                        border: '2px solid #3fcf94',
-                      }}
-                    >
-                      {heroSection.linkText}
-                    </button>
-                  </Link>
-                </div>
+            <p className="mt-5 text-lg opacity-95 md:max-w-2xl">
+              {heroSection.text}
+            </p>
+
+            {/* Text & Link Container */}
+            <div className="space-y-16">
+              <p className="text-xl">{heroSection.text}</p>
+              <div>
+                <Link href={`/${lang}/${heroSection.url}`}>
+                  <button
+                    className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
+                    style={{
+                      borderRadius: '50px',
+                      background:
+                        'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+                      border: '2px solid #3fcf94',
+                    }}
+                  >
+                    {heroSection.linkText}
+                  </button>
+                </Link>
               </div>
-
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+  </div>
+);
+
 
       {/* =================== BODY =================== */}
       <div className="relative bg-[#255292]">
