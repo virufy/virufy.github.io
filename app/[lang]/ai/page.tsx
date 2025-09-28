@@ -38,7 +38,7 @@ function cx(...xs: Array<string | false | null | undefined>) {
   return xs.filter(Boolean).join(' ');
 }
 
-//Publications
+// Publications
 
 const publicationsData: PublicationsItem[] = [
   {
@@ -133,7 +133,7 @@ function TabbedContent({
 
   return (
     <>
-      {/* Tabs under hero section*/}
+      {/* Tabs under hero section */}
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="flex justify-center md:justify-center">
           <nav role="tablist" aria-label="AI Tabs">
@@ -237,7 +237,7 @@ export default function AiPage({ params: { lang } }: { params: { lang: Locale } 
 
   return (
     <div className="relative">
-     {/*HERO */}
+      {/* HERO */}
       <section>
         <div className="relative bg-[#4883e3]">
           <ExportedImage
