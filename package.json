@@ -29,7 +29,7 @@
     "react-dom": "^18",
     "react-ga4": "^2.1.0",
     "react-player": "^2.16.0",
-    "sharp": "^0.34.3",
+    "sharp": "^0.34.4",
     "ts-morph": "^26.0.0"
   },
   "devDependencies": {
