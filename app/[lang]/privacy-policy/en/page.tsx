@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
             <br></br>Privacy Policy
           </h1>
           <p>
-            <i>Last updated: July 28, 2025</i>
+            <i>Last updated: September 30, 2025</i>
           </p>
           <p>
             The Covid Detection Foundation d.b.a. Virufy (“Virufy”, “we”, “us”
@@ -333,28 +333,28 @@ const PrivacyPolicy = () => {
               <li className="font-bold">A. Provide the Services</li>
 
               <ul className="mx-5 my-2 list-disc">
-                <li>Managing your personal information;</li>
+                <li>managing your personal information;</li>
                 <li>
-                  Providing access to certain areas, functionalities, and
+                  providing access to certain areas, functionalities, and
                   features of the Services;
                 </li>
-                <li>Communicating with you;</li>
-                <li>Answering requests;</li>
+                <li>communicating with you;</li>
+                <li>answering requests;</li>
                 <li>
-                  Developing, training, and fine-tuning models, algorithms, and
+                  developing, training, and fine-tuning models, algorithms, and
                   artificial intelligence technologies to analyze your cough
                   audio recordings in order to better determine signs of
                   COVID-19 and other disease detection;
                 </li>
                 <li>
-                  Sharing personal information with third parties as needed to
+                  sharing personal information with third parties as needed to
                   provide the Services;
                 </li>
                 <li>
-                  Processing your financial information and other payment
+                  processing your financial information and other payment
                   methods for donations; and
                 </li>
-                <li>Allowing you to register for events.</li>
+                <li>allowing you to register for events.</li>
               </ul>
 
               <p>
@@ -373,53 +373,53 @@ const PrivacyPolicy = () => {
               </p>
 
               <ul className="mx-5 my-2 list-disc">
-                <li>Providing the Services;</li>
+                <li>providing the Services;</li>
                 <li>
-                  Pursuing our legitimate interests such as direct marketing,
+                  pursuing our legitimate interests such as direct marketing,
                   research and development (including marketing research),
                   network and information security, and fraud prevention;
                 </li>
                 <li>
-                  Detecting security incidents, protecting against malicious,
+                  detecting security incidents, protecting against malicious,
                   deceptive, fraudulent or illegal activity, and prosecuting
                   those responsible for that activity;
                 </li>
-                <li>Carrying out analytics;</li>
-                <li>Measuring interest and engagement in the Services;</li>
-                <li>Improving, upgrading, or enhancing the Services;</li>
+                <li>carrying out analytics;</li>
+                <li>measuring interest and engagement in the Services;</li>
+                <li>improving, upgrading, or enhancing the Services;</li>
                 <li>
-                  Analyzing, improving, upgrading, and/or enhancing the Services
+                  analyzing, improving, upgrading, and/or enhancing the Services
                   through the use of artificial intelligence and other methods;
                 </li>
-                <li>Developing new products and services;</li>
+                <li>developing new products and services;</li>
                 <li>
-                  Creating de-identified and/or aggregated information to
+                  creating de-identified and/or aggregated information to
                   conduct anonymized demographic analysis of respiratory and
                   related disease cases;
                 </li>
                 <li>
-                  Running clinical research studies and other research
+                  running clinical research studies and other research
                   activities;
                 </li>
                 <li>
-                  Processing applications if you apply for a job we post on our
+                  processing applications if you apply for a job we post on our
                   Website;
                 </li>
-                <li>Ensuring internal quality control and safety;</li>
+                <li>ensuring internal quality control and safety;</li>
                 <li>
-                  Authenticating and verifying individual identities, including
+                  authenticating and verifying individual identities, including
                   requests to exercise your rights under this Privacy Notice;
                 </li>
                 <li>
-                  Debugging to identify and repair errors with the Services;
+                  debugging to identify and repair errors with the Services;
                 </li>
                 <li>
-                  Auditing relating to interactions, transactions, and other
+                  auditing relating to interactions, transactions, and other
                   compliance activities;
                 </li>
-                <li>Enforcing our agreements and policies; and</li>
+                <li>enforcing our agreements and policies; and</li>
                 <li>
-                  Carrying out activities that are required to comply with our
+                  carrying out activities that are required to comply with our
                   legal obligations.
                 </li>
               </ul>
@@ -551,7 +551,9 @@ const PrivacyPolicy = () => {
                     Once your personal information is shared with our strategic
                     partner, it will also be subject to our strategic partner’s
                     privacy policy. We are not responsible for the processing of
-                    personal information by our strategic partners.
+                    personal information by our strategic partners. we recommend
+                    you to carefully review our strategic partners’ privacy
+                    policy to understand your privacy rights.
                   </p>
                 </li>
                 <li className="my-2">
@@ -586,7 +588,10 @@ const PrivacyPolicy = () => {
                 reorganization, bankruptcy, receivership, purchase or sale of
                 assets, transition of service to another provider, or other
                 similar corporate transaction, your personal information may be
-                shared, sold, or transferred as part of such a transaction.
+                shared, sold, or transferred as part of such a transaction. In
+                the event that this occurs, we may require the provider to
+                maintain a similar privacy policy or include such a requirement
+                as a term of the corporate transaction.
               </p>
             </ul>
           </section>
@@ -795,8 +800,8 @@ const PrivacyPolicy = () => {
               <li className="my-2">
                 <strong>Necessary to Protect Vital Interests:</strong> Our
                 processing of your personal information may be necessary to
-                protect the vital interests of you if you are physically or
-                legally incapable of giving consent.
+                protect your vital interests if you are physically or legally
+                incapable of giving consent.
               </li>
 
               <li className="my-2">
@@ -871,7 +876,7 @@ const PrivacyPolicy = () => {
 
             <p className="my-2">
               For the United Kingdom, you may lodge a complaint with the
-              Information Commissioner’s Office (ICO) by clinking here:{' '}
+              Information Commissioner’s Office (ICO) by clicking here:{' '}
               <a className="text-blue-500 underline" href="https://virufy.org/">
                 https://ico.org.uk/make-a-complaint/.
               </a>
@@ -1337,34 +1342,36 @@ const PrivacyPolicy = () => {
             <p className="my-2">These general categories of third parties:</p>
             <ul className="mx-5 my-2 list-disc">
               <li className="my-2">
-                Research, academic, nonprofit, and business collaborators
+                research, academic, nonprofit, and business collaborators;
               </li>
-              <li className="my-2">Product co-promotion partners</li>
-              <li className="my-2">Product co-development partners</li>
+              <li className="my-2">product co-promotion partners;</li>
+              <li className="my-2">product co-development partners;</li>
               <li className="my-2">
-                Service providers (including those hosting or analyzing data on
+                service providers (including those hosting or analyzing data on
                 our behalf, those assisting with fraud prevention, those
                 assisting in program administration, those assisting in incident
                 management and reporting, those administering our call center
                 and websites, and those who assist with our information
-                technology and security programs)
+                technology and security programs);
               </li>
-              <li className="my-2">Emergency personnel</li>
+              <li className="my-2">emergency personnel;</li>
               <li className="my-2">
-                Authorized/legal representatives, family members, and caregivers
+                authorized/legal representatives, family members, and
+                caregivers;
               </li>
               <li className="my-2">
-                Third parties (including those with whom Virufy has joint
+                third parties (including those with whom Virufy has joint
                 marketing and similar arrangements, those who provide marketing
                 and data analytics services, those who provide program
                 enrollment or product fulfillment, payment, and authorization,
                 other third parties as necessary to complete transactions and
-                provide products or Services, or where required by law)
+                provide products or Services, or where required by law);
               </li>
               <li className="my-2">
-                Lawyers, auditors, and consultants providing services to Virufy
+                lawyers, auditors, and consultants providing services to Virufy;
+                and
               </li>
-              <li className="my-2">Legal and regulatory bodies</li>
+              <li className="my-2">legal and regulatory bodies.</li>
             </ul>
             <p className="my-2">
               In addition, we may share or disclose consumer health data as
