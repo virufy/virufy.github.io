@@ -180,7 +180,7 @@ function TabbedContent({
             ))}
 
             {/* Centered CTA */}
-            <div className="mt-10 flex justify-center">
+            {/*<div className="mt-10 flex justify-center">
               <div className="mt-4">
                 <Link
                   href={`/${lang}/publications`}
@@ -189,7 +189,7 @@ function TabbedContent({
                   Demo App
                 </Link>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
 
