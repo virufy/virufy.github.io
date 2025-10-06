@@ -11,7 +11,7 @@ import { usei18n } from '../../i18n';
 import AiCard from './AiCard';
 import { type AiCard as AiCardProps } from '@/app/i18n/types/ai';
 
-// Types 
+// Types
 
 type TabKey = 'technology' | 'research';
 
@@ -28,7 +28,12 @@ type CTA = { demoAppUrl?: string; joinUrl?: string };
 
 type I18nReturn = {
   ai: {
-    heroSection: { title: TitleText[]; text: string; url: string; linkText: string };
+    heroSection: {
+      title: TitleText[];
+      text: string;
+      url: string;
+      linkText: string;
+    };
     aiSection: { title: string; aiCards: AiCardProps[] };
   };
   cta?: CTA;
@@ -42,7 +47,8 @@ function cx(...xs: Array<string | false | null | undefined>) {
 
 const publicationsData: PublicationsItem[] = [
   {
-    title: 'Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19',
+    title:
+      'Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19',
     date: 'October 2022',
     href: 'https://example.com/paper1',
     cta: 'Read More',
@@ -60,25 +66,34 @@ const publicationsData: PublicationsItem[] = [
     cta: 'Read More',
   },
   {
-    title: 'Virufy: Global Applicability of Crowdsourced and Clinical Data sets for AI Detection',
+    title:
+      'Virufy: Global Applicability of Crowdsourced and Clinical Data sets for AI Detection',
     date: 'November 2022',
     href: 'https://example.com/paper4',
     cta: 'Read More',
   },
   {
-    title: 'Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems',
+    title:
+      'Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems',
     date: 'September 2021',
     href: 'https://example.com/paper5',
     cta: 'Read More',
   },
 ];
 
-function PublicationCard({ title, date, href, cta = 'Read More' }: PublicationsItem) {
+function PublicationCard({
+  title,
+  date,
+  href,
+  cta = 'Read More',
+}: PublicationsItem) {
   return (
-    <article className="rounded-2xl w-full md:w-[1172px] bg-white text-black shadow-xl">
+    <article className="w-full rounded-2xl bg-white text-black shadow-xl md:w-[1172px]">
       <div className="flex flex-col gap-4 p-5 md:flex-row md:items-center md:justify-between md:gap-6 md:p-6">
         <div className="flex-1">
-          <h3 className="text-base font-bold md:text-lg leading-snug">{title}</h3>
+          <h3 className="text-base font-bold leading-snug md:text-lg">
+            {title}
+          </h3>
           <div className="mt-2 flex items-center gap-2 text-xs font-bold text-black/70 md:text-sm">
             <span className="inline-block h-2 w-2 rounded-full bg-black/70" />
             <span>{date}</span>
@@ -89,7 +104,7 @@ function PublicationCard({ title, date, href, cta = 'Read More' }: PublicationsI
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full text-sm font-bold transition bg-[#0E3273] text-white hover:bg-[#0E3273]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-600 px-6 py-2"
+            className="inline-flex items-center justify-center rounded-full bg-[#0E3273] px-6 py-2 text-sm font-bold text-white transition hover:bg-[#0E3273]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-600"
             aria-label={`${cta}: ${title}`}
           >
             {cta}
@@ -109,7 +124,12 @@ function TabbedContent({
   cta,
 }: {
   lang: Locale;
-  heroSection: { title: TitleText[]; text: string; url: string; linkText: string };
+  heroSection: {
+    title: TitleText[];
+    text: string;
+    url: string;
+    linkText: string;
+  };
   aiSection: { title: string; aiCards: AiCardProps[] };
   cta?: CTA;
 }) {
@@ -149,11 +169,15 @@ function TabbedContent({
                   id={`tab-${key}`}
                   onClick={() => setTab(key)}
                   className={cx(
-                    'w-32 h-9 font-bold transition border-b-2 bg-transparent',
-                    active ? 'text-white border-[#30DA74]' : 'text-white/80 hover:text-white border-transparent'
+                    'h-9 w-32 border-b-2 bg-transparent font-bold transition',
+                    active
+                      ? 'border-[#30DA74] text-white'
+                      : 'border-transparent text-white/80 hover:text-white'
                   )}
                 >
-                  {key === 'technology' ? 'Technology' : heroSection.linkText || 'Our Research'}
+                  {key === 'technology'
+                    ? 'Technology'
+                    : heroSection.linkText || 'Our Research'}
                 </button>
               );
             })}
@@ -170,26 +194,31 @@ function TabbedContent({
           hidden={currentTab !== 'technology'}
           className="space-y-10"
         >
-          <h2 className="text-center text-3xl font-semibold text-white md:text-center">{aiSection.title}</h2>
+          <h2 className="text-center text-3xl font-semibold text-white md:text-center">
+            {aiSection.title}
+          </h2>
 
           <div className="grid gap-8 md:grid-cols-1">
             {aiSection.aiCards.map((card, idx) => (
-              <div key={card.title || idx} className="rounded-2xl bg-white text-[#123465] shadow-xl px-6 py-6 md:px-10 md:py-8">
+              <div
+                key={card.title || idx}
+                className="rounded-2xl bg-white px-6 py-6 text-[#123465] shadow-xl md:px-10 md:py-8"
+              >
                 <AiCard {...card} />
               </div>
             ))}
 
             {/* Centered CTA */}
-            {/*<div className="mt-10 flex justify-center">
+            <div className="mt-10 flex justify-center">
               <div className="mt-4">
                 <Link
                   href={`/${lang}/publications`}
-                  className="inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-bold shadow-md bg-[#0E3273] text-white hover:opacity-90 transition"
+                  className="inline-flex items-center justify-center rounded-full bg-[#0E3273] px-6 py-3 text-base font-bold text-white shadow-md transition hover:opacity-90"
                 >
                   Demo App
                 </Link>
               </div>
-            </div>*/}
+            </div>
           </div>
         </div>
 
@@ -201,7 +230,9 @@ function TabbedContent({
           hidden={currentTab !== 'research'}
           className="space-y-8"
         >
-          <h2 className="text-center text-3xl font-semibold text-white md:text-left">{heroSection.linkText || 'Our Research'}</h2>
+          <h2 className="text-center text-3xl font-semibold text-white md:text-left">
+            {heroSection.linkText || 'Our Research'}
+          </h2>
 
           <div className="space-y-6">
             {publicationsData.map((p) => (
@@ -211,11 +242,13 @@ function TabbedContent({
 
           {/* Bottom callout */}
           <div className="mt-10 flex flex-col items-center text-center">
-            <p className="text-white/90">Interested in collaborating on our research?</p>
+            <p className="text-white/90">
+              Interested in collaborating on our research?
+            </p>
             <div className="mt-4">
               <Link
                 href={cta?.joinUrl || `/${lang}/join-us`}
-                className="inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-bold shadow-md bg-[#0E3273] text-white hover:opacity-90 transition"
+                className="inline-flex items-center justify-center rounded-full bg-[#0E3273] px-6 py-3 text-base font-bold text-white shadow-md transition hover:opacity-90"
               >
                 Join our Team
               </Link>
@@ -229,7 +262,11 @@ function TabbedContent({
 
 // Page Component
 
-export default function AiPage({ params: { lang } }: { params: { lang: Locale } }) {
+export default function AiPage({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
   const {
     ai: { heroSection, aiSection },
     cta,
@@ -249,7 +286,7 @@ export default function AiPage({ params: { lang } }: { params: { lang: Locale } 
           />
 
           <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-center px-6 pb-16 pt-28 md:pb-28 md:pt-36">
-            <div className="text-center text-white md:text-left md:self-center">
+            <div className="text-center text-white md:self-center md:text-left">
               <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
                 {(heroSection.title as TitleText[]).map((t, i) =>
                   t.type === 'text' ? (
@@ -262,7 +299,9 @@ export default function AiPage({ params: { lang } }: { params: { lang: Locale } 
                 )}
               </h1>
 
-              <p className="mt-5 text-lg opacity-95 md:max-w-2xl">{heroSection.text}</p>
+              <p className="mt-5 text-lg opacity-95 md:max-w-2xl">
+                {heroSection.text}
+              </p>
             </div>
           </div>
         </div>
@@ -279,8 +318,19 @@ export default function AiPage({ params: { lang } }: { params: { lang: Locale } 
         />
 
         {/* Everything using useSearchParams is inside Suspense */}
-        <Suspense fallback={<div className="mx-auto max-w-6xl px-6 py-10 text-white">Loading…</div>}>
-          <TabbedContent lang={lang} heroSection={heroSection} aiSection={aiSection} cta={cta} />
+        <Suspense
+          fallback={
+            <div className="mx-auto max-w-6xl px-6 py-10 text-white">
+              Loading…
+            </div>
+          }
+        >
+          <TabbedContent
+            lang={lang}
+            heroSection={heroSection}
+            aiSection={aiSection}
+            cta={cta}
+          />
         </Suspense>
 
         <div className="h-[98px] bg-gradient-to-b from-transparent to-black" />

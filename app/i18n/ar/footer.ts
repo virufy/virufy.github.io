@@ -640,6 +640,12 @@ const footer: Footer = {
     textTwo:
       '©2025 فيروفي | فيروفي هي علامة تجارية لمؤسسة الكشف عن كوفيد، وهي مؤسسة غير ربحية في كاليفورنيا | جميع الحقوق محفوظة',
   },
+  IntellectualProperty: {
+    title: '',
+    body: '',
+    patentTitle: '',
+    addpatentpending: '',
+  },
 };
 
 export default footer;

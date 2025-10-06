@@ -19,31 +19,28 @@ export default async function LangLayout({
 }>) {
   return (
     <>
-      <head>
-        {/* Google tag (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-350868067"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-350868067');
-          `}
-        </Script>
-      </head>
-      <body>
-        <SearchProvider>
-          <Suspense fallback={null}>
-            <Navbar lang={lang} />
-          </Suspense>
-          <ModalCookie lang={lang} />
-          <section>{children}</section>
-          <Footer lang={lang} />
-        </SearchProvider>
-      </body>
+      {/* Google Tag Scripts */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-350868067"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-350868067');
+        `}
+      </Script>
+
+      <SearchProvider>
+        <Suspense fallback={null}>
+          <Navbar lang={lang} />
+        </Suspense>
+        <ModalCookie lang={lang} />
+        <section>{children}</section>
+        <Footer lang={lang} />
+      </SearchProvider>
     </>
   );
 }

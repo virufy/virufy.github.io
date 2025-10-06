@@ -5,6 +5,7 @@ export interface Footer {
   personalInfo: PersonalInfo;
   privacyPolicy: PrivacyPolicy;
   nonProfitSection: NonProfitSection;
+  IntellectualProperty?: IntellectualProperty;
 }
 
 interface CookiePolicy {
@@ -25,4 +26,10 @@ interface NonProfitSection {
   title: string;
   textOne: string;
   textTwo: string;
+}
+interface IntellectualProperty {
+  title: string;
+  body: string;
+  patentTitle: string;
+  addpatentpending: string;
 }

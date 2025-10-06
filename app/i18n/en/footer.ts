@@ -697,6 +697,12 @@ const footer: Footer = {
     textTwo:
       '©2025 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved',
   },
+  IntellectualProperty: {
+    title: 'Intellectual Property',
+    body: 'The technology and services provided by Virufy are protected by patents in the United States and other jurisdictions.',
+    patentTitle: 'Protected by U.S. Patent No. 12,444,502.',
+    addpatentpending: 'Additional patents pending.',
+  },
 };
 
 export default footer;
