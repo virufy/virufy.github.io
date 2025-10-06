@@ -55,10 +55,9 @@ jobs:
             npm install sharp --ignore-engines --force
           fi
 
-      - name: Build and export Next.js site
+      - name: Build Next.js static site
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build
-          ${{ steps.detect-package-manager.outputs.runner }} next export
 
       - name: Upload artifact for deployment
         uses: actions/upload-pages-artifact@v3
