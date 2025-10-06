@@ -29,7 +29,7 @@ const oneYoungWorld: OneYoungWorld = {
         {
           title: '大使主導',
           text: '私たちの組織構造は、各地域で活動を調整する若者の大使と共にOne Young Worldにマッチしています。',
-          image: '../../icons/oneYoungWorld/icon-female.png',
+          image: '../../icons/icon-female.png',
           altText: '',
         },
         {
@@ -41,13 +41,13 @@ const oneYoungWorld: OneYoungWorld = {
         {
           title: 'グローバルインパクトに焦点',
           text: '私たちの目標は、設立当初から、世界中のすべての国のすべての人々に公平な解決策を提供することです。',
-          image: '../../icons/oneYoungWorld/icon-man-lifting-globe.png',
+          image: '../../icons/icon-man-lifting-globe.png',
           altText: '',
         },
         {
           title: '多様な代表者',
           text: '私たちのチームは、50以上の大学と25カ国からの代表者で構成されており、多くのOne Young World大使からサポートを受けています。',
-          image: '../../icons/oneYoungWorld/icon-globe-with-markers.png',
+          image: '../../icons/icon-globe-with-markers.png',
           altText: '',
         },
       ],
