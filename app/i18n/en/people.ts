@@ -292,7 +292,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },
       maurino: {
-        img: './../images/advisors/maurino-flora.webp',
+        img: './../images/advisors/Maurino-Flora.webp',
         name: 'Maurino Flora',
         role: 'Medical Device Program Advisor',
         texts: [
