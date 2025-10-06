@@ -118,7 +118,7 @@ const teamLeads: TeamLeadsType = {
     {
       name: 'Leonard Burhz',
       texts: ['Embajador OYW, Irlanda'],
-      image: '../../images/oneYoungWorld/teamLeads/leonard.jpg',
+      image: '../../images/oneYoungWorld/teamLeads/leonard.webp',
       altText: 'imagen de Leonard Burhz',
     },
     {

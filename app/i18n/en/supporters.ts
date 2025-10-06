@@ -25,7 +25,7 @@ const supporters: Supporters = {
       link: 'https://aws.amazon.com/',
     },
     {
-      img: '../../logos_transparent/microsoft.png',
+      img: '../../logos_transparent/Microsoft.png',
       alt: 'Microsoft',
       link: 'https://www.microsoft.com/',
     },
@@ -123,11 +123,6 @@ const supporters: Supporters = {
       img: '../../logos/nexus-tax-services.webp',
       alt: 'Nexus Tax Services',
       link: 'https://nexustaxaccountants.com/',
-    },
-    {
-      img: '../../logos_transparent/nuvu.png',
-      alt: 'Nuvu',
-      link: 'https://www.nuvu.cc/',
     },
     {
       img: '../../logos_transparent/cj-partners.png',

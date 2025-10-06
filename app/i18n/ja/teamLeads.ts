@@ -115,7 +115,7 @@ const teamLeads: TeamLeadsType = {
     {
       name: 'レオナルド・ブルズ',
       texts: ['OYW大使、アイルランド'],
-      image: '../../images/oneYoungWorld/teamLeads/leonard.jpg',
+      image: '../../images/oneYoungWorld/teamLeads/leonard.webp',
       altText: 'レオナルド・ブルズの画像',
     },
     {

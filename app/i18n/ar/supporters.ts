@@ -25,9 +25,14 @@ const supporters: Supporters = {
       link: 'https://aws.amazon.com/',
     },
     {
-      img: '../../logos_transparent/drive.png',
-      alt: 'Drive',
-      link: 'https://drive.hhs.gov/',
+      img: '../../logos_transparent/Microsoft.png',
+      alt: 'Microsoft',
+      link: 'https://www.microsoft.com/',
+    },
+    {
+      img: '../../logos/response-innovation-lab.webp',
+      alt: 'Response Innovation Lab',
+      link: 'https://www.responseinnovationlab.com/',
     },
     {
       img: '../../logos_transparent/one-young-world.png',
@@ -35,9 +40,9 @@ const supporters: Supporters = {
       link: 'https://www.oneyoungworld.com/counsellors',
     },
     {
-      img: '../../logos_transparent/pillsbury.png',
-      alt: 'Pillsbury',
-      link: 'https://www.pillsburylaw.com/en/',
+      img: '../../logos_transparent/drive.png',
+      alt: 'Drive',
+      link: 'https://drive.hhs.gov/',
     },
     {
       img: '../../logos_transparent/university-fukui.png',
@@ -50,9 +55,9 @@ const supporters: Supporters = {
       link: 'https://idime.com.co/',
     },
     {
-      img: '../../logos_transparent/cj-partners.png',
-      alt: 'CJ Partners',
-      link: 'https://www.cj-partners.com/',
+      img: '../../logos_transparent/pillsbury.png',
+      alt: 'Pillsbury',
+      link: 'https://www.pillsburylaw.com/en/',
     },
     {
       img: '../../logos_transparent/xoor.png',
@@ -95,11 +100,6 @@ const supporters: Supporters = {
       link: 'https://www.lockedjar.com/',
     },
     {
-      img: '../../logos/response-innovation-lab.webp',
-      alt: 'Response Innovation Lab',
-      link: 'https://www.responseinnovationlab.com/',
-    },
-    {
       img: '../../logos/takemoto-lab.webp',
       alt: 'Takemoto Lab',
       link: 'http://www.hisac.u-fukui.ac.jp/imlabo/home.html',
@@ -124,7 +124,11 @@ const supporters: Supporters = {
       alt: 'Nexus Tax Services',
       link: 'https://nexustaxaccountants.com/',
     },
+    {
+      img: '../../logos_transparent/cj-partners.png',
+      alt: 'CJ Partners',
+      link: 'https://www.cj-partners.com/',
+    },
   ],
 };
-
 export default supporters;

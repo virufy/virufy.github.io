@@ -115,7 +115,7 @@ const teamLeads: TeamLeadsType = {
     {
       name: 'ليونارد بورز',
       texts: ['سفير OYW، أيرلندا'],
-      image: '../../images/oneYoungWorld/teamLeads/leonard.jpg',
+      image: '../../images/oneYoungWorld/teamLeads/leonard.webp',
       altText: 'صورة ليونارد بورز',
     },
     {
