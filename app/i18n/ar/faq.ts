@@ -2,7 +2,7 @@ import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: '/images/faq/nextImageExportOptimizer/bg-ai-hand-opt-1080.webp',
+    img: '../../images/faq/nextImageExportOptimizer/bg-ai-hand-opt-1080.webp',
     altText: '',
     title: [
       {
@@ -20,7 +20,7 @@ const faq: FAQ = {
     ],
     input: {
       placeholder: 'ابدأ الكتابة للبحث...',
-      img: '/icons/icon-search.png',
+      img: '../../icons/icon-search.png',
       altText: 'أيقونة البحث',
     },
     texts: [

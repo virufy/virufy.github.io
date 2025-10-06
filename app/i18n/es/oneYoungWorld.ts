@@ -3,7 +3,7 @@ import { type OneYoungWorld } from '../types/oneYoungWorld';
 const oneYoungWorld: OneYoungWorld = {
   header: {
     text: 'Empresas y organizaciones nos respaldan desde su amplio conocimiento y nos brindan seguridad y certeza en lo que hacemos.',
-    image: '/images/oneYoungWorld/bg-header.webp',
+    image: '../../images/oneYoungWorld/bg-header.webp',
     altText: '',
   },
   navbarTexts: {
@@ -11,7 +11,7 @@ const oneYoungWorld: OneYoungWorld = {
     teamLeads: 'Embajadores del equipo',
   },
   oyw: {
-    bgImage: '/images/oneYoungWorld/bg-body.webp',
+    bgImage: '../../images/oneYoungWorld/bg-body.webp',
     altText: '',
     virufyAndOyw: {
       title: 'One Young World',
@@ -29,25 +29,25 @@ const oneYoungWorld: OneYoungWorld = {
         {
           title: 'Impulsado por embajadores',
           text: 'Nuestra estructura organizativa coincide con One Young World, con jóvenes embajadores liderando las operaciones en cada país, con embajadores coordinadores regionales.',
-          image: '/icons/icon-female.png',
+          image: '../../icons/icon-female.png',
           altText: '',
         },
         {
           title: 'Liderado por jóvenes',
           text: 'Nuestro equipo en crecimiento está dirigido por jóvenes de más de una docena de países y asesorado por líderes globales.',
-          image: '/icons/icon-youth-in-circle.png',
+          image: '../../icons/icon-youth-in-circle.png',
           altText: '',
         },
         {
           title: 'Enfocados en el impacto global',
           text: 'Recopilamos datos y proporcionamos soluciones equitativas para personas en países en desarrollo de todo el mundo.',
-          image: '/icons/icon-man-lifting-globe.png',
+          image: '../../icons/icon-man-lifting-globe.png',
           altText: '',
         },
         {
           title: 'Representación diversa',
           text: 'Nuestro equipo tiene representación de más de 25 universidades y 15 países, e incluye a más de 10 embajadores de One Young World.',
-          image: '/icons/icon-globe-with-markers.png',
+          image: '../../icons/icon-globe-with-markers.png',
           altText: '',
         },
       ],
@@ -59,7 +59,8 @@ const oneYoungWorld: OneYoungWorld = {
         {
           name: 'Sebastián Pedraza',
           origin: 'Colombia',
-          image: '/images/oneYoungWorld/testimonials/sebastian-square-pic.webp',
+          image:
+            '../../images/oneYoungWorld/testimonials/sebastian-square-pic.webp',
           altText: 'Imagen de Sebastián Pedraza',
           testimonial: `“Virufy une el poder de la juventud y la tecnología para transformar el mundo. Esperamos que esta solución llegue a todo el mundo y se convierta en un apoyo para los médicos, especialmente en países de bajos ingresos.”`,
         },
@@ -67,7 +68,7 @@ const oneYoungWorld: OneYoungWorld = {
           name: 'Gonzalo Roiffe',
           origin: 'Argentina',
           image:
-            './../images/oneYoungWorld/testimonials/gonzalo-square-pic.webp',
+            '../../images/oneYoungWorld/testimonials/gonzalo-square-pic.webp',
           altText: 'Imagen de Gonzalo Roiffe',
           testimonial: `“Virufy tendrá un impacto global, sin importar el origen o el estatus social de los usuarios. Así es como se siente cambiar el statu quo.”`,
         },
@@ -75,7 +76,7 @@ const oneYoungWorld: OneYoungWorld = {
           name: 'Marcos Deza',
           origin: 'Argentina',
           image:
-            './../images/oneYoungWorld/testimonials/marcos-square-pic.webp',
+            '../../images/oneYoungWorld/testimonials/marcos-square-pic.webp',
           altText: 'Imagen de Marcos Deza',
           testimonial: `“Creo que Virufy desarrollará una solución muy precisa y esto será útil para todo el mundo en cada industria. Así que animo a todos a tomar unos minutos y contribuir con nosotros.”`,
         },

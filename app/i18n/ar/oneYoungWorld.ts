@@ -29,25 +29,25 @@ const oneYoungWorld: OneYoungWorld = {
         {
           title: 'مدفوعة بالسفراء',
           text: 'يتطابق هيكلنا التنظيمي مع One Young World مع سفراء الشباب الذين يقومون بتنسيق العمليات في كل منطقة.',
-          image: './../images/oneYoungWorld/icon-female.png',
+          image: '../../images/oneYoungWorld/icon-female.png',
           altText: '',
         },
         {
           title: 'يقودها الشباب',
           text: 'فريقنا المتنامي يقوده محترفون شباب من أكثر من عشرة دول مع إشراف قريب من قادة الصناعة العالميين.',
-          image: './../images/oneYoungWorld/icon-youth-in-circle.png',
+          image: '../../images/oneYoungWorld/icon-youth-in-circle.png',
           altText: '',
         },
         {
           title: 'مركزة على التأثير العالمي',
           text: 'هدفنا من اليوم الأول كان تقديم حلول عادلة لجميع الناس في جميع البلدان حول العالم.',
-          image: './../images/oneYoungWorld/icon-man-lifting-globe.png',
+          image: '../../images/oneYoungWorld/icon-man-lifting-globe.png',
           altText: '',
         },
         {
           title: 'تمثيل متنوع',
           text: 'يضم فريقنا ممثلين من أكثر من 50 جامعة و25 دولة، وقد تلقى الدعم من العشرات من سفراء One Young World.',
-          image: './../images/oneYoungWorld/icon-globe-with-markers.png',
+          image: '../../images/oneYoungWorld/icon-globe-with-markers.png',
           altText: '',
         },
       ],
@@ -60,7 +60,7 @@ const oneYoungWorld: OneYoungWorld = {
           name: 'سيباستيان بيدرازا',
           origin: 'كولومبيا',
           image:
-            './../images/oneYoungWorld/testimonials/sebastian-square-pic.webp',
+            './..images/oneYoungWorld/testimonials/sebastian-square-pic.webp',
           altText: 'صورة سيباستيان بيدرازا',
           testimonial: `“يوحد Virufy قوة الشباب والتكنولوجيا لتحويل العالم. ونأمل أن يصل هذا الحل إلى العالم أجمع، وأن يصبح سندا للأطباء، خاصة في الدول ذات الدخل المنخفض.”`,
         },
@@ -68,7 +68,7 @@ const oneYoungWorld: OneYoungWorld = {
           name: 'جونزالو رويفي',
           origin: 'الأرجنتين',
           image:
-            './../images/oneYoungWorld/testimonials/gonzalo-square-pic.webp',
+            '../..images/oneYoungWorld/testimonials/gonzalo-square-pic.webp',
           altText: 'صورة جونزالو رويفي',
           testimonial: `“سيؤثر فيروس Virufy على مستوى العالم، بغض النظر عن خلفية المستخدمين أو حالتهم الاجتماعية. هذا هو ما يبدو عليه تغيير الوضع الراهن.”`,
         },
@@ -76,7 +76,7 @@ const oneYoungWorld: OneYoungWorld = {
           name: 'ماركوس ديزا',
           origin: 'الأرجنتين',
           image:
-            './../images/oneYoungWorld/testimonials/marcos-square-pic.webp',
+            '../..images/oneYoungWorld/testimonials/marcos-square-pic.webp',
           altText: 'صورة ماركوس ديزا',
           testimonial: `“أعتقد أن Virufy سوف يطور حلاً دقيقًا للغاية وسيكون مفيدًا للعالم أجمع في كل صناعة. لذلك أشجع الجميع على تخصيص بعض الدقائق والمساهمة معنا.”`,
         },
