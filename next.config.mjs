@@ -11,6 +11,7 @@ const nextConfig = {
     loader: 'custom',
     imageSizes: [256, 384],
     deviceSizes: [750, 1080, 1920, 3840],
+    unoptimized: true,
   },
   transpilePackages: ['next-image-export-optimizer'],
   env: {
