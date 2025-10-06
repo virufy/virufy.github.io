@@ -698,6 +698,12 @@ const footer: Footer = {
     textTwo:
       '©2025 Virufy | VIRUFY es una marca registrada de The Covid Detection Foundation, una corporación sin fines de lucro en California | Todos los derechos reservados',
   },
+  IntellectualProperty: {
+    title: '',
+    body: '',
+    patentTitle: '',
+    addpatentpending: '',
+  },
 };
 
 export default footer;

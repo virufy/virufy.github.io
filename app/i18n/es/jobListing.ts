@@ -149,6 +149,15 @@ const jobListing: JobListing = {
       ],
     },
     {
+      category: 'Recaudación de fondos',
+      positions: [
+        {
+          title: 'Redactor/a de Subvenciones',
+          id: 27,
+        },
+      ],
+    },
+    {
       category: 'General',
       positions: [
         {

@@ -22,7 +22,7 @@ export type AdvisorsMap = Record<string, Advisor>;
 export type AdvisorOrder = (keyof AdvisorsMap)[];
 
 type Advisor = {
-  img: StaticImageData;
+  img: StaticImageData | string;
   name: string;
   role: string;
   texts: string[];

@@ -6,7 +6,6 @@ import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usei18n } from '../../i18n';
 import Title from '../components/Title';
-import { ButtonType } from '../themes';
 import ModalSupporter from '../components/ModalSupporter';
 import { useState } from 'react';
 
@@ -14,7 +13,9 @@ const unoptimized = process.env.NODE_ENV !== 'production';
 
 export default function SupportersPage({
   params: { lang },
-}: { params: { lang: Locale } }) {
+}: {
+  params: { lang: Locale };
+}) {
   const {
     supporters: { title, buttontext, supportersList, contactusform },
   } = usei18n(lang);
@@ -24,7 +25,7 @@ export default function SupportersPage({
 
   return (
     <div className="bg-white">
-      <div className="relative w-full h-[260px] md:h-[520px]">
+      <div className="relative h-[260px] w-full md:h-[520px]">
         <ExportedImage
           src={BgHeader}
           alt=""
@@ -32,7 +33,7 @@ export default function SupportersPage({
           basePath={basePath}
           fill
           unoptimized={unoptimized}
-          className="h-full min-h-[400px] max-h-[700px] w-full object-cover"
+          className="h-full max-h-[700px] min-h-[400px] w-full object-cover"
         />
         <Title
           Text={title}
@@ -40,8 +41,14 @@ export default function SupportersPage({
           TitleClassProps="absolute inset-0 flex items-center justify-center text-white text-center italic font-bold"
         />
         <button
-          className={`${ButtonType.primary} absolute left-1/2 top-[78%] -translate-x-1/2 rounded-full h-[28px] w-[92px] text-xs md:top-[80%] md:h-[65px] md:w-[250px] md:text-lg md:font-semibold`}
           onClick={() => setShowModal(true)}
+          className="medium primary absolute left-1/2 top-[78%] -translate-x-1/2 rounded-full px-2 py-2 text-xs text-white md:top-[80%] md:px-16 md:py-4 md:text-base md:text-xl"
+          style={{
+            borderRadius: '50px',
+            background:
+              'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+            border: '2px solid #3fcf94',
+          }}
         >
           {buttontext}
         </button>

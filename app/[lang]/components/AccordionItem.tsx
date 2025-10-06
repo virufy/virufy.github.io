@@ -7,9 +7,10 @@ import AccordionItemParagraph from './AccordionItemParagraph';
 interface AccordionItemProps extends QA {
   lang: Locale;
   className?: string;
+  isFaq?: boolean;
 }
 
-const AccordionItem = ({ question, answer, lang, className='' }: AccordionItemProps) => {
+const AccordionItem = ({ question, answer, lang, className='', isFaq=false }: AccordionItemProps) => {
   const [isActive, setIsActive] = useState(false);
   const borderTransitionStyle = isActive
     ? 'border-t border-gray-400'
@@ -28,7 +29,7 @@ const AccordionItem = ({ question, answer, lang, className='' }: AccordionItemPr
         onClick={() => setIsActive(!isActive)}
       >
         <h3 className="pr-6 font-semibold">{question}</h3>
-        <ArrowIcon isActive={isActive} />
+        <ArrowIcon isActive={isActive} isFaq={isFaq}/>
       </div>
 
       {/* Answer Container */}

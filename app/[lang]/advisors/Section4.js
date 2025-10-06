@@ -1,8 +1,8 @@
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import TitleText from '../components/TitleText';
-import Button from './Button';
 import AmilImage from '@/public/images/advisors/AmilImage.jpg';
+import Link from 'next/link';
 
 export default function Section4({
   ContainerTitleProps,
@@ -20,17 +20,12 @@ export default function Section4({
     <div className="mx-10 mb-10 mt-40 flex flex-col space-y-4 text-center">
       {/* Mobile Image */}
       <div className="mb-8 flex w-full justify-center lg:hidden">
-        <ExportedImage
-          src={AmilImage}
-          alt={alt}
-          priority
-          basePath={basePath}
-        />
+        <ExportedImage src={AmilImage} alt={alt} priority basePath={basePath} />
       </div>
 
       {/* Mobile Text Card */}
       <div className="flex w-full flex-col items-center gap-5 text-center lg:hidden">
-        <div className="w-full p-6 rounded-xl shadow-lg bg-black bg-opacity-10 backdrop-blur-sm">
+        <div className="w-full rounded-xl bg-black bg-opacity-10 p-6 shadow-lg backdrop-blur-sm">
           <TitleText
             TitleSize={TitleSize1}
             TitleLabel={TitleLabel1}
@@ -52,17 +47,19 @@ export default function Section4({
             TextClassProps={'text-black font-medium'}
           />
         </div>
-        <Button
-          size="medium"
-          type="primary"
-          path={buttonRoute}
-          label={labelButton}
-          style={{}}
-          radius="50px"
-          gradientBackground="white"
-          width="250px"
-          height="65px"
-        />
+        <Link href={buttonRoute}>
+          <button
+            className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
+            style={{
+              borderRadius: '50px',
+              background:
+                'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+              border: '2px solid #3fcf94',
+            }}
+          >
+            {labelButton}
+          </button>
+        </Link>
       </div>
 
       {/* Desktop Layout */}
@@ -75,9 +72,9 @@ export default function Section4({
             basePath={basePath}
           />
         </div>
-        <div className="flex w-1/2 flex-col items-start justify-start sm:justify-center gap-6">
+        <div className="flex w-1/2 flex-col items-start justify-start gap-6 sm:justify-center">
           {/* Text box with softer background */}
-          <div className="w-full flex flex-col gap-5 text-left p-6 rounded-xl shadow-lg bg-black bg-opacity-10 backdrop-blur-sm">
+          <div className="flex w-full flex-col gap-5 rounded-xl bg-black bg-opacity-10 p-6 text-left shadow-lg backdrop-blur-sm">
             <TitleText
               TitleSize={TitleSize1}
               TitleLabel={TitleLabel1}
@@ -99,19 +96,20 @@ export default function Section4({
               TextClassProps={'text-black font-medium'}
             />
           </div>
-          <div className="hidden sm:flex mt-6">
-            <Button
-              size="medium"
-              type="primary"
-              path={buttonRoute}
-              label={labelButton}
-              style={{}}
-              radius="50px"
-              gradientBackground="white"
-              width="250px"
-              height="65px"
-              
-            />
+          <div className="mt-6 hidden sm:flex">
+            <Link href={buttonRoute}>
+              <button
+                className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
+                style={{
+                  borderRadius: '50px',
+                  background:
+                    'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+                  border: '2px solid #3fcf94',
+                }}
+              >
+                {labelButton}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

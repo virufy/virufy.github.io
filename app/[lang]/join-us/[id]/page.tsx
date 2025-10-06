@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { usei18n } from '../../../i18n';
 import Title from '../../components/Title';
 
-const NUM_JOB_OPENINGS = 26;
+const NUM_JOB_OPENINGS = 27; // Update this when a new job is added
 
 export function generateStaticParams() {
   const staticParams: { lang: Locale; id: string }[] = [];
@@ -102,7 +102,7 @@ const JobDetailPage = ({
           />
         </div>
       ) : (
-        <div className="mx-auto flex max-w-[1440px] justify-center">
+        <div className="mx-auto flex max-w-[1440px] justify-center pt-24">
           <div className="flex max-w-[1100px] flex-col items-center lg:ml-[10rem]">
             <div className="mt-10 flex w-full flex-1 items-center px-2 lg:mt-20">
               <div className="flex w-full flex-col gap-5 px-10 text-start lg:items-start">

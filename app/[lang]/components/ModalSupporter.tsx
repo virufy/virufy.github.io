@@ -1,5 +1,6 @@
 'use client';
-import { ChangeEvent, FormEvent, useState } from 'react';
+import type { ChangeEvent, FormEvent } from 'react';
+import { useState } from 'react';
 import { ButtonType } from '../themes';
 
 export default function ModalSupporter({

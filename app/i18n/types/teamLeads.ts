@@ -8,6 +8,6 @@ export interface TeamLeadsType {
 export interface TeamLeadCard {
   name: string;
   texts: string[];
-  image: StaticImageData;
+  image: string | StaticImageData;
   altText: string;
 }

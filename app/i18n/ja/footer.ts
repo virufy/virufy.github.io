@@ -697,6 +697,12 @@ const footer: Footer = {
     textTwo:
       '©2025 Virufy | VIRUFYは、カリフォルニア州の非営利団体The Covid Detection Foundationの商標です。 | 無断転載禁止',
   },
+  IntellectualProperty: {
+    title: '',
+    body: '',
+    patentTitle: '',
+    addpatentpending: '',
+  },
 };
 
 export default footer;

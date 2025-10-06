@@ -7,6 +7,6 @@ export interface TypeText {
 }
 
 export interface ImageText {
-  img: StaticImageData;
+  img: StaticImageData | string;
   altText: string;
 }

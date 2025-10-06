@@ -148,6 +148,15 @@ const jobListing: JobListing = {
       ],
     },
     {
+      category: 'جمع التبرعات',
+      positions: [
+        {
+          title: 'الكاتب غرانت',
+          id: 27,
+        },
+      ],
+    },
+    {
       category: 'عام',
       positions: [
         {

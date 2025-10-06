@@ -149,6 +149,15 @@ const jobListing: JobListing = {
       ],
     },
     {
+      category: '資金調達',
+      positions: [
+        {
+          title: '助成金ライター',
+          id: 27,
+        },
+      ],
+    },
+    {
       category: '一般的な',
       positions: [
         {

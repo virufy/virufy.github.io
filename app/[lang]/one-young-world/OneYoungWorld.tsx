@@ -46,7 +46,7 @@ const OneYoungWorld = ({
               className="aspect-video w-full px-4 py-1 md:px-16 md:py-9"
               src={videoUrl}
               title={videoTitle}
-              allow="fullscreen"
+              allowFullScreen
               referrerPolicy="strict-origin-when-cross-origin"
             ></iframe> */}
           </div>
@@ -71,6 +71,9 @@ const OneYoungWorld = ({
                     src={card.image}
                     alt={card.altText}
                     basePath={basePath}
+                    width={100}
+                    height={100}
+                    unoptimized
                   />
                   <div className="space-y-4">
                     <h3 className="text-lg font-bold md:text-xl">
@@ -99,11 +102,18 @@ const OneYoungWorld = ({
             <TestimonialSlider testimonials={testimonials} />
 
             {/* Updated Button Style */}
-            <Link
-              href={`/${lang}/join-us`}
-              className="inline-block rounded-full border-2 border-white bg-gradient-to-br from-[#1c3f94] to-[#2a5bd7] px-6 py-3 text-sm font-medium text-white shadow-md transition-transform duration-300 hover:scale-105 md:px-12 md:py-4 md:text-base"
-            >
-              {buttonText}
+            <Link href={`/${lang}/join-us}`}>
+              <button
+                className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
+                style={{
+                  borderRadius: '50px',
+                  background:
+                    'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+                  border: '2px solid #3fcf94',
+                }}
+              >
+                {buttonText}
+              </button>
             </Link>
           </div>
         </section>

@@ -7,17 +7,16 @@ import {
   PhoneHeader,
 } from '@/public/images/publications/index';
 import ExportedImage from 'next-image-export-optimizer';
-import { useRouter } from 'next/navigation';
 import { usei18n } from '../../i18n';
 import PublicationCard from './PublicationCard';
 import Head from 'next/head';
+import Link from 'next/link';
 
 const PublicationsPage = ({
   params: { lang },
 }: {
   params: { lang: Locale };
 }) => {
-  const router = useRouter();
   const {
     publications: {
       publicationsSection,
@@ -90,15 +89,22 @@ const PublicationsPage = ({
           {/* Join Our Team Section */}
           <section>
             <div className="relative mx-auto max-w-4xl space-y-24 px-8 py-40 text-center font-medium text-white md:space-y-14">
-              <h2 className="text-4xl leading-normal md:leading-relaxed">
+              <h2 className="mb-16 text-4xl leading-normal md:leading-relaxed">
                 {collaborateSection.title}
               </h2>
-              <button
-                className="rounded-full bg-white p-6 text-xl font-medium text-black sm:px-8 sm:text-2xl md:px-8 md:py-4 md:text-lg"
-                onClick={() => router.push(`/${lang}/join-us`)}
-              >
-                {collaborateSection.linkText}
-              </button>
+              <Link href={`/${lang}/join-us`}>
+                <button
+                  className="medium primary p-6 px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
+                  style={{
+                    borderRadius: '50px',
+                    background:
+                      'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
+                    border: '2px solid #3fcf94',
+                  }}
+                >
+                  {collaborateSection.linkText}
+                </button>
+              </Link>
             </div>
           </section>
           <div className="h-[98px] bg-gradient-to-b from-[#255292] to-black"></div>
