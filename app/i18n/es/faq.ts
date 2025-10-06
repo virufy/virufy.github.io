@@ -43,32 +43,32 @@ const faq: FAQ = {
     cards: [
       {
         title: 'Aplicación Virufy',
-        img: '/icons/icon-phone-in-hand-white.png',
+        img: '../../icons/icon-phone-in-hand-white.png',
         altText: '',
       },
       {
         title: 'Acerca de Virufy',
-        img: '/icons/icon-globe-white.png',
+        img: '../../icons/icon-globe-white.png',
         altText: '',
       },
       {
         title: 'Acerca de la IA',
-        img: '/icons/icon-recycle-white.png',
+        img: '../../icons/icon-recycle-white.png',
         altText: '',
       },
       {
         title: 'Finanzas',
-        img: '/icons/icon-monitor-white.png',
+        img: '../../icons/icon-monitor-white.png',
         altText: '',
       },
       {
         title: 'Privacidad',
-        img: '/icons/icon-privacy-white.png',
+        img: '../../icons/icon-privacy-white.png',
         altText: '',
       },
       {
         title: 'Otros',
-        img: '/icons/icon-question-mark-white.png',
+        img: '../../icons/icon-question-mark-white.png',
         altText: '',
       },
     ],

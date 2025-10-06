@@ -43,32 +43,32 @@ const faq: FAQ = {
     cards: [
       {
         title: 'تطبيق Virufy',
-        img: '/icons/icon-phone-in-hand-white.png',
+        img: '../../icons/icon-phone-in-hand-white.png',
         altText: '',
       },
       {
         title: 'حول Virufy',
-        img: '/icons/icon-globe-white.png',
+        img: '../../icons/icon-globe-white.png',
         altText: '',
       },
       {
         title: 'حول الذكاء الاصطناعي',
-        img: '/icons/icon-recycle-white.png',
+        img: '../../icons/icon-recycle-white.png',
         altText: '',
       },
       {
         title: 'الشؤون المالية',
-        img: '/icons/icon-monitor-white.png',
+        img: '../../icons/icon-monitor-white.png',
         altText: '',
       },
       {
         title: 'الخصوصية',
-        img: '/icons/icon-privacy-white.png',
+        img: '../../icons/icon-privacy-white.png',
         altText: '',
       },
       {
         title: 'أخرى',
-        img: '/icons/icon-question-mark-white.png',
+        img: '../../icons/icon-question-mark-white.png',
         altText: '',
       },
     ],

@@ -49,12 +49,12 @@ const faq: FAQ = {
       // },
       {
         title: 'Virufy App',
-        img: '/icons/icon-phone-in-hand-white.png',
+        img: '../../icons/icon-phone-in-hand-white.png',
         altText: '',
       },
       {
         title: 'About Virufy',
-        img: '/icons/icon-globe-white.png',
+        img: '../../icons/icon-globe-white.png',
         altText: '',
       },
       {
@@ -64,17 +64,17 @@ const faq: FAQ = {
       },
       {
         title: 'Finances',
-        img: '/icons/icon-monitor-white.png',
+        img: '../../icons/icon-monitor-white.png',
         altText: '',
       },
       {
         title: 'Privacy',
-        img: '/icons/icon-privacy-white.png',
+        img: '../../icons/icon-privacy-white.png',
         altText: '',
       },
       {
         title: 'Other',
-        img: '/icons/icon-question-mark-white.png',
+        img: '../../icons/icon-question-mark-white.png',
         altText: '',
       },
     ],
