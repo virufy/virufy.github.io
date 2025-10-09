@@ -19,17 +19,23 @@ export default function DonateModal({
     platform: 'PayPal' | 'GoFundMe',
     url: string
   ) => {
-    // Track the button click event with Google Analytics
-    window.gtag?.('event', 'donation_button_click', {
-      button_name: platform,
-    });
-    //console.log('gtag exists?', !!window.gtag);
-    //console.log(`✅ Tracked donation button: ${platform}`);
+    if (!window.gtag) return;
 
-    // Delay navigation slightly to ensure the event is sent
-    setTimeout(() => {
+    // Event callback to open the link after firing conversion
+    const callback = () => {
       window.open(url, '_blank');
-    }, 200); // 200ms delay
+    };
+
+    // Fire Google Ads conversion
+    window.gtag('event', 'conversion', {
+      send_to: 'AW-350868067/783TCOnLmaobEOOkp6cB',
+      value: 1.0, // optional: adjust if you track donation amount
+      currency: 'USD',
+      event_callback: callback,
+    });
+
+    // Fallback: in case the callback doesn't fire in 1 second
+    setTimeout(callback, 1000);
   };
 
   return (
