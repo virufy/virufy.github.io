@@ -8,10 +8,14 @@ import { usei18n } from '@/app/i18n';
 import ReactGA from 'react-ga4';
 import { usePathname } from 'next/navigation';
 
-const ModalCookie = ({ lang }: { lang: Locale }) => {
+interface ModalCookieProps {
+  lang: Locale;
+  onConsentChange: (consent: boolean) => void;
+}
+const ModalCookie = ({ lang, onConsentChange }: ModalCookieProps) => {
   const pathname = usePathname();
   const dateAccessed = new Date().toISOString();
-  
+
   const trackPageview = useCallback(
     (url: string) => {
       ReactGA.initialize('G-ZV5G86ZDRG');
@@ -33,24 +37,27 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
   useEffect(() => {
     const consent = localStorage.getItem('CookieConsent');
 
-    if (!consent) { // user hasn't decided yet, show modal
-      setShowModal(true); 
-    } else if (consent === 'accepted') { // user accepted cookies, start tracking
+    if (!consent) {
+      // user hasn't decided yet, show modal
+      setShowModal(true);
+    } else if (consent === 'accepted') {
+      // user accepted cookies, start tracking
       trackPageview(pathname);
     }
   }, [pathname, trackPageview]);
 
-  const acceptCookies = (): void => {
+  const acceptCookies = () => {
     setShowModal(false);
     localStorage.setItem('CookieConsent', 'accepted');
     trackPageview(pathname);
-  }
+    onConsentChange(true); // notify parent
+  };
 
-  const rejectCookies = (): void => {
+  const rejectCookies = () => {
     setShowModal(false);
     localStorage.setItem('CookieConsent', 'rejected');
-    // user rejected cookies, no tracking
-  }
+    onConsentChange(false); // notify parent
+  };
 
   return (
     <>
@@ -95,7 +102,7 @@ const ModalCookie = ({ lang }: { lang: Locale }) => {
                     >
                       {yes}
                     </button>
-                    <button 
+                    <button
                       className="mx-auto mt-6 flex w-[260px] justify-center rounded-3xl border border-red-500 bg-gray-200 px-6 py-2 font-bold text-red-500 outline-none transition-all duration-150 ease-linear hover:bg-gray-300 md:w-[320px] md:font-medium"
                       type="button"
                       onClick={rejectCookies}
