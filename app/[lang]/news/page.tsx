@@ -145,22 +145,7 @@ const NewsPage = ({ params: { lang } }: Props) => {
           </div>
         </section>
 
-        {/* Press Releases Section */}
-        <div className="relative bg-[#255292] pb-24">
-          <section className="flex justify-center">
-            {/* spacing so cards don’t collide with the dropdown edge */}
-            <div className="grid gap-8 px-10 pt-16 lg:grid-cols-2 lg:px-16">
-              {displayedCards.map((pressRelease, i) => (
-                <div
-                  key={i}
-                  className="rounded-xl bg-white px-10 py-8 text-left"
-                >
-                  <NewsCard {...pressRelease} />
-                </div>
-              ))}
-            </div>
-          </section>
-        </div>
+      
         <div className="h-[98px] bg-gradient-to-b from-[#255292] to-black"></div>
       </div>
     </>
