@@ -11,6 +11,21 @@ const people: People = {
       'Candidato a MBA, Haas School of Business Candidato a Maestría en Ingeniería, Departamento de Ingeniería Eléctrica y Ciencias de la Computación',
     button: 'Lea la historia de Amil',
   },
+  sectionCategories: {
+    title: 'Explorar experiencia por categoría',
+    buttons: {
+      all: 'Todo', 
+      ai: 'Inteligencia Artificial / Aprendizaje Automático', 
+      health: 'Salud Pública / Epidemiología', 
+      technology: 'Tecnología',
+      clinical: 'Clínico',
+      marketing: 'Marketing',
+      business: 'Estrategia Empresarial',
+      legal: 'Legal',
+      regulatory: 'Asuntos Regulatorios',
+      cyber: 'Ciberseguridad',
+    },
+  },
   sectionAdvisors: {
     title: 'Asesores',
     advisors: {

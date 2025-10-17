@@ -10,6 +10,21 @@ const people: People = {
       '福井大学工学博士候補。元UCバークレー経営学修士＆工学修士（データサイエンス）共同学位プログラム学生。',
     button: 'アミルのストーリーを読む',
   },
+  sectionCategories: {
+    title: 'カテゴリ別に専門知識を閲覧する',
+    buttons: {
+      all: '全て', 
+      ai: '人工知能 / 機械学習', 
+      health: '公衆衛生 / 疫学', 
+      technology: 'テクノロジー',
+      clinical: '臨床',
+      marketing: 'マーケティング',
+      business: '事業戦略',
+      legal: '法律上の',
+      regulatory: '規制関連事項',
+      cyber: 'サイバーセキュリティ',
+    },
+  },
   sectionAdvisors: {
     title: 'アドバイザー',
     advisors: {
