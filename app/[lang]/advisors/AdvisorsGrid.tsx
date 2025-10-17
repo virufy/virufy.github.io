@@ -58,9 +58,9 @@ const AdvisorsGrid = ({ lang, advisorOrder} : AdvisorsGridProps) => {
 
 
       {/* Advisor Card Section */}
-      <div className="pb-24 px-1">
+      <div className="pb-24 px-2 sm:px-8 md:px-16 lg:px-24">
         {/* Advisors Cards */}
-        <div className="grid grid-cols-[repeat(auto-fit,_18%)] md:grid-cols-[repeat(auto-fit,_8.5%)] justify-center text-black gap-4 sm:gap-y-6 sm:gap-x-8 lg:gap-x-10 lg:gap-y-10">
+        <div className="grid grid-cols-4 md:grid-cols-8 text-black gap-4 sm:gap-y-6 sm:gap-x-8 lg:gap-x-10 lg:gap-y-10">
           {filteredAdvisors.map((id, index) => {
             const advisor = sectionAdvisors.advisors[id];
             const category = advisorCategories[id];
@@ -73,18 +73,24 @@ const AdvisorsGrid = ({ lang, advisorOrder} : AdvisorsGridProps) => {
             }
 
             const { img, name, role, texts, link } = advisor;
+            const advisorsInLastRow = totalAdvisors % 4; // for md screens and up
+            const advisorPositionInGrid = totalAdvisors - advisorsInLastRow;
 
             return (
               <div
                 key={id}
                 className={`
                   bg-white rounded-2xl text-center col-span-2
-                  ${ (totalAdvisors % 2 != 0 && index + 1 == totalAdvisors) ? `col-start-2` : "col-start-auto" }
-                  ${ [1, 2, 3].map(n => 
-                      totalAdvisors % 4 == n && index == totalAdvisors - (totalAdvisors % 4)
-                      ? `md:col-start-${5-n}`
-                      : ""
-                  ).find(Boolean) || "md:col-start-auto" }
+                  ${totalAdvisors % 2 != 0 && index + 1 == totalAdvisors ? "col-start-2" : "" }
+                  ${advisorsInLastRow == 1 && index == advisorPositionInGrid 
+                    ? "md:col-start-4" 
+                    : `${advisorsInLastRow == 2 && index == advisorPositionInGrid 
+                      ? "md:col-start-3" 
+                      : `${advisorsInLastRow == 3 && index == advisorPositionInGrid 
+                        ? "md:col-start-2" 
+                        : "md:col-start-auto"}`
+                      }`
+                  }
                 `} // ^ logic for centering the last row of advisors using grid positioning
               >
                 {/* Advisor Headshot */}
