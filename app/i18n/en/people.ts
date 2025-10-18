@@ -11,8 +11,23 @@ const people: People = {
       'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
     button: `Read Amil's Story`,
   },
+  sectionCategories: {
+    title: 'Browse expertise by category',
+    buttons: {
+      all: 'All', 
+      ai: 'AI / Machine Learning', 
+      health: 'Public Health / Epidemiology', 
+      technology: 'Technology',
+      clinical: 'Clinical',
+      marketing: 'Marketing',
+      business:'Business Strategy',
+      legal: 'Legal',
+      regulatory: 'Regulatory Affairs',
+      cyber: 'Cybersecurity',
+    },
+  },
   sectionAdvisors: {
-    title: 'Advisors',
+    title: 'Our Advisors',
     advisors: {
       kara: {
         img: './../images/advisors/kara-meister.webp',

@@ -11,6 +11,21 @@ const people: People = {
       '福井大学 工学博士課程 在籍。カリフォルニア大学バークレー校で、MBAおよび工学修士（データサイエンス）の共同学位プログラムを取得。',
     button: 'アミルのストーリーを読む',
   },
+  sectionCategories: {
+    title: 'カテゴリ別に専門知識を閲覧する',
+    buttons: {
+      all: '全て', 
+      ai: '人工知能 / 機械学習', 
+      health: '公衆衛生 / 疫学', 
+      technology: 'テクノロジー',
+      clinical: '臨床',
+      marketing: 'マーケティング',
+      business: '事業戦略',
+      legal: '法律上の',
+      regulatory: '規制関連事項',
+      cyber: 'サイバーセキュリティ',
+    },
+  },
   sectionAdvisors: {
     title: 'アドバイザー',
     advisors: {
