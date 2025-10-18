@@ -1,5 +1,5 @@
 'use client';
-
+import PublicationCard from './PublicationCard';
 import { Fragment, useMemo, useCallback, Suspense } from 'react';
 import Link from 'next/link';
 import ExportedImage from 'next-image-export-optimizer';
@@ -16,13 +16,6 @@ import { type AiCard as AiCardProps } from '@/app/i18n/types/ai';
 type TabKey = 'technology' | 'research';
 
 type TitleText = { type: string; text: string };
-
-type PublicationsItem = {
-  title: string;
-  date: string; // e.g., 'October 2022'
-  href: string;
-  cta?: string;
-};
 
 type CTA = { demoAppUrl?: string; joinUrl?: string };
 
@@ -45,76 +38,6 @@ function cx(...xs: Array<string | false | null | undefined>) {
 
 // Publications
 
-const publicationsData: PublicationsItem[] = [
-  {
-    title:
-      'Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19',
-    date: 'October 2022',
-    href: 'https://example.com/paper1',
-    cta: 'Read More',
-  },
-  {
-    title: 'Covid 10 Calculator – Positive U.S. Socio-Economic Impact',
-    date: 'January 2022',
-    href: 'https://example.com/paper2',
-    cta: 'Read More',
-  },
-  {
-    title: 'Using Deep Learning with Large Aggregated Datasets for Covid-19',
-    date: 'January 2022',
-    href: 'https://example.com/paper3',
-    cta: 'Read More',
-  },
-  {
-    title:
-      'Virufy: Global Applicability of Crowdsourced and Clinical Data sets for AI Detection',
-    date: 'November 2022',
-    href: 'https://example.com/paper4',
-    cta: 'Read More',
-  },
-  {
-    title:
-      'Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems',
-    date: 'September 2021',
-    href: 'https://example.com/paper5',
-    cta: 'Read More',
-  },
-];
-
-function PublicationCard({
-  title,
-  date,
-  href,
-  cta = 'Read More',
-}: PublicationsItem) {
-  return (
-    <article className="w-full rounded-2xl bg-white text-black shadow-xl md:w-[1172px]">
-      <div className="flex flex-col gap-4 p-5 md:flex-row md:items-center md:justify-between md:gap-6 md:p-6">
-        <div className="flex-1">
-          <h3 className="text-base font-bold leading-snug md:text-lg">
-            {title}
-          </h3>
-          <div className="mt-2 flex items-center gap-2 text-xs font-bold text-black/70 md:text-sm">
-            <span className="inline-block h-2 w-2 rounded-full bg-black/70" />
-            <span>{date}</span>
-          </div>
-        </div>
-        <div className="shrink-0">
-          <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-[#0E3273] px-6 py-2 text-sm font-bold text-white transition hover:bg-[#0E3273]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-600"
-            aria-label={`${cta}: ${title}`}
-          >
-            {cta}
-          </a>
-        </div>
-      </div>
-    </article>
-  );
-}
-
 // Tabbed Content
 
 function TabbedContent({
@@ -136,7 +59,9 @@ function TabbedContent({
   const pathname = usePathname();
   const search = useSearchParams();
   const router = useRouter();
-
+  const {
+    publications: { publicationsCards },
+  } = usei18n(lang);
   const currentTab: TabKey = useMemo(() => {
     const q = (search.get('tab') || '').toLowerCase();
     return q === 'research' ? 'research' : 'technology';
@@ -234,11 +159,11 @@ function TabbedContent({
             {heroSection.linkText || 'Our Research'}
           </h2>
 
-          <div className="space-y-6">
-            {publicationsData.map((p) => (
-              <PublicationCard key={p.title} {...p} />
-            ))}
-          </div>
+          {publicationsCards.map((publication, i) => (
+            <div key={i} className=" ">
+              <PublicationCard {...publication} />
+            </div>
+          ))}
 
           {/* Bottom callout */}
           <div className="mt-10 flex flex-col items-center text-center">
