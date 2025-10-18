@@ -5,7 +5,7 @@ export interface Footer {
   personalInfo: PersonalInfo;
   privacyPolicy: PrivacyPolicy;
   nonProfitSection: NonProfitSection;
-  IntellectualProperty?: IntellectualProperty;
+  IntellectualProperty: IntellectualProperty;
 }
 
 interface CookiePolicy {
