@@ -12,6 +12,7 @@ import { fileURLToPath } from "url";
 
 import type { QA } from '../app/i18n/types/faq';
 import type { TypeText } from '../app/i18n/types/baseInterfaces';
+import type { StorySectionText } from '../app/i18n/types/story';
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -39,6 +40,7 @@ let data : {
     await parsePublications(lang);
     await parseFaq(lang);
     await parseHome(lang);
+    await parseStory(lang);
 
     // Create/update search-index files
     outputPath = path.join(__dirname, `../public/search-index/test-${lang}.json`); // To be changed once finished with the script
@@ -63,6 +65,7 @@ async function loadFile(lang: string, file: string) {
     const filePath = `../app/i18n/${lang}/${file}.ts`;
 
     const mod = await import (filePath);
+    if (!mod) throw new Error(`❌ Module "${file}.ts" for language "${lang}" loaded but is empty or invalid.`);
     return mod.default || mod;
   } catch (err) {
     console.error(`❌ Failed to load ${file}.ts for language ${lang}:`, err);
@@ -73,18 +76,13 @@ async function loadFile(lang: string, file: string) {
 /**
  * Below are all the functions for parsing every langauge's .ts files:
  * 
- * Done: ai, faq, home, publications, 
+ * Done: ai, faq, home, publications, story
  * 
  * To be done: amilsStory, jobDetails, jobListing, news, oneYoungWorld, 
- * people, shareYourCough, story, supporters, teamLeads
+ * people, shareYourCough, supporters, teamLeads
  */
 async function parseAi(lang: string) {
   const content = await loadFile(lang, "ai");
-
-  if (!content) {
-    console.warn(`⚠️ Could not load AI content for language: ${lang}`);
-    return;
-  }
   
   // heroSection
   data.push({
@@ -111,16 +109,10 @@ async function parseAi(lang: string) {
       }
     );
   }
-  return lang;
 }
 
 async function parsePublications(lang: string) {
   const content = await loadFile(lang, "publications");
-
-  if (!content) {
-    console.warn(`⚠️ Could not load Publications content for language: ${lang}`);
-    return;
-  }
 
   // publicationsSection 
   data.push({
@@ -145,16 +137,10 @@ async function parsePublications(lang: string) {
       }
     )
   }
-  return lang;
 }
 
 async function parseFaq(lang: string) {
   const content = await loadFile(lang, "faq");
-
-  if (!content) {
-    console.warn(`⚠️ Could not load FAQ content for language: ${lang}`);
-    return;
-  }
 
   // All FAQs
   if (content.questionsSection?.questionsByTopic) {
@@ -166,29 +152,23 @@ async function parseFaq(lang: string) {
           id: `${lang}-faq-${formatTextToId(topic)}-${index + 1}`,
           lang: lang,
           title: qa.question,
-          content: qa.answer[0].content.map(c => c.text).join(''),
+          content: qa.answer[0].content.map(c => c.text).join(' '),
           url: `/${lang}/ai`,
         });
       });
     }
   }
-  return lang;
 }
 
 async function parseHome(lang: string) {
   const content = await loadFile(lang, "home");
-
-  if (!content) {
-    console.warn(`⚠️ Could not load Home content for language: ${lang}`);
-    return;
-  }
 
   // Virufy introduction
   data.push({
     id: `${lang}-home-${formatTextToId(content.introSection.text)}`,
     lang: lang,
     title: content.introSection.text,
-    content: content.introSection.subText.flat().map((item: TypeText) => item.text).join(''),
+    content: content.introSection.subText.flat().map((item: TypeText) => item.text).join(' '),
     url: `/${lang}`,
   });
 
@@ -197,7 +177,7 @@ async function parseHome(lang: string) {
     id: `${lang}-home-${formatTextToId(content.introSection.mainText2)}`,
     lang: lang,
     title: content.introSection.mainText2,
-    content: content.introSection.subText2.flat().map((item: TypeText) => item.text).join(''),
+    content: content.introSection.subText2.flat().map((item: TypeText) => item.text).join(' '),
     url: `/${lang}`,
   });
 
@@ -223,5 +203,35 @@ async function parseHome(lang: string) {
       url: `/${lang}`,
     });
   }
-  return lang;
+}
+
+async function parseStory(lang: string) {
+  const content = await loadFile(lang, "story");
+
+  // How it started
+  data.push({
+    id: `${lang}-story-${formatTextToId(content.storySection.title)}`,
+    lang: lang,
+    title: content.storySection.title,
+    content: content.storySection.texts.flat().map((item: StorySectionText) => item.text).join(' '),
+    url: `/${lang}/story`,
+  });
+
+  // Our Mission
+  data.push({
+    id: `${lang}-story-${formatTextToId(content.MissionSection.title)}`,
+    lang: lang,
+    title: content.MissionSection.title,
+    content: content.MissionSection.texts.flat().map((item: StorySectionText) => item.text).join(' '),
+    url: `/${lang}/story`,
+  });
+
+  // Commitment to Privacy
+  data.push({
+    id: `${lang}-story-${formatTextToId(content.privacySection.title)}`,
+    lang: lang,
+    title: content.privacySection.title,
+    content: content.privacySection.texts.join(' '),
+    url: `/${lang}/story`,
+  });
 }
