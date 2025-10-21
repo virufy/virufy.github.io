@@ -132,8 +132,8 @@ function TabbedContent({
                 <AiCard {...card} />
               </div>
             ))}
-
-            {/* Centered CTA */}
+           
+            {/* commenting the button 
             <div className="mt-10 flex justify-center">
               <div className="mt-4">
                 <Link
@@ -143,7 +143,7 @@ function TabbedContent({
                   Demo App
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
