@@ -13,6 +13,7 @@ import { fileURLToPath } from "url";
 import type { QA } from '../app/i18n/types/faq';
 import type { TypeText } from '../app/i18n/types/baseInterfaces';
 import type { StorySectionText } from '../app/i18n/types/story';
+import type { JobDetail } from "@/app/i18n/types/jobDetails";
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -41,6 +42,7 @@ let data : {
     await parseFaq(lang);
     await parseHome(lang);
     await parseStory(lang);
+    await parseJobDetails(lang);
 
     // Create/update search-index files
     outputPath = path.join(__dirname, `../public/search-index/test-${lang}.json`); // To be changed once finished with the script
@@ -54,10 +56,6 @@ let data : {
 
 
 // -------------- FUNCTIONS BELOW ----------------
-
-function formatTextToId(text: string) {
-  return text.toLowerCase().replace(/[\s,]+/g, '-');
-}
 
 // Dynamically load a file for a given language
 async function loadFile(lang: string, file: string) {
@@ -76,9 +74,9 @@ async function loadFile(lang: string, file: string) {
 /**
  * Below are all the functions for parsing every langauge's .ts files:
  * 
- * Done: ai, faq, home, publications, story
+ * Done: ai, faq, home, publications, story, jobDetails
  * 
- * To be done: amilsStory, jobDetails, jobListing, news, oneYoungWorld, 
+ * To be done: amilsStory, news, oneYoungWorld, 
  * people, shareYourCough, supporters, teamLeads
  */
 async function parseAi(lang: string) {
@@ -146,10 +144,10 @@ async function parseFaq(lang: string) {
   if (content.questionsSection?.questionsByTopic) {
     const faqData = content.questionsSection.questionsByTopic;
 
-    for (const [topic, qas] of Object.entries(faqData)) {        
+    for (const qas of Object.values(faqData)) {        
       (qas as QA[]).forEach((qa, index) => {
         data.push({
-          id: `${lang}-faq-${formatTextToId(topic)}-${index + 1}`,
+          id: `${lang}-faq-${index + 1}`,
           lang: lang,
           title: qa.question,
           content: qa.answer[0].content.map(c => c.text).join(' '),
@@ -165,7 +163,7 @@ async function parseHome(lang: string) {
 
   // Virufy introduction
   data.push({
-    id: `${lang}-home-${formatTextToId(content.introSection.text)}`,
+    id: `${lang}-home-intro`,
     lang: lang,
     title: content.introSection.text,
     content: content.introSection.subText.flat().map((item: TypeText) => item.text).join(' '),
@@ -174,7 +172,7 @@ async function parseHome(lang: string) {
 
   // How it Works
   data.push({
-    id: `${lang}-home-${formatTextToId(content.introSection.mainText2)}`,
+    id: `${lang}-home-how-it-works`,
     lang: lang,
     title: content.introSection.mainText2,
     content: content.introSection.subText2.flat().map((item: TypeText) => item.text).join(' '),
@@ -183,7 +181,7 @@ async function parseHome(lang: string) {
 
   // Your Health, Our Priority (YHOP)
   data.push({
-    id: `${lang}-home-${formatTextToId(content.section2.text)}`,
+    id: `${lang}-home-health-priority`,
     lang: lang,
     title: content.section2.text,
     content: content.section2.subtext,
@@ -210,7 +208,7 @@ async function parseStory(lang: string) {
 
   // How it started
   data.push({
-    id: `${lang}-story-${formatTextToId(content.storySection.title)}`,
+    id: `${lang}-story-how-it-started`,
     lang: lang,
     title: content.storySection.title,
     content: content.storySection.texts.flat().map((item: StorySectionText) => item.text).join(' '),
@@ -219,7 +217,7 @@ async function parseStory(lang: string) {
 
   // Our Mission
   data.push({
-    id: `${lang}-story-${formatTextToId(content.MissionSection.title)}`,
+    id: `${lang}-story-our-mission`,
     lang: lang,
     title: content.MissionSection.title,
     content: content.MissionSection.texts.flat().map((item: StorySectionText) => item.text).join(' '),
@@ -228,10 +226,25 @@ async function parseStory(lang: string) {
 
   // Commitment to Privacy
   data.push({
-    id: `${lang}-story-${formatTextToId(content.privacySection.title)}`,
+    id: `${lang}-story-privacy-commitment`,
     lang: lang,
     title: content.privacySection.title,
     content: content.privacySection.texts.join(' '),
     url: `/${lang}/story`,
+  });
+}
+
+async function parseJobDetails(lang: string) {
+  const content = await loadFile(lang, "jobDetails");
+  const jobs = Object.values(content as Record<string, JobDetail>);
+
+  jobs.forEach((job, index) => {
+    data.push({
+      id: `${lang}-job-${index + 1}`,
+      lang: lang,
+      title: job.title,
+      content: job.description,
+      url: `/${lang}/join-us`,
+    });
   });
 }
