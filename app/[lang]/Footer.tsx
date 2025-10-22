@@ -8,7 +8,13 @@ import SellMyInformationModal from './components/footer/SellMyInformationModal';
 
 const Footer = ({ lang }: { lang: Locale }) => {
   const {
-    footer: { cookiePolicy, privacyPolicy, personalInfo, nonProfitSection },
+    footer: {
+      cookiePolicy,
+      privacyPolicy,
+      personalInfo,
+      nonProfitSection,
+      IntellectualProperty,
+    },
   } = usei18n(lang);
 
   const [showModalMyInformation, setShowModalMyInformation] = useState(false);
@@ -33,6 +39,10 @@ const Footer = ({ lang }: { lang: Locale }) => {
     {
       label: personalInfo.title,
       endpoint: 'do-not-sell-my-data',
+    },
+    {
+      label: IntellectualProperty.title,
+      endpoint: 'Intellectual-Property',
     },
   ];
 
