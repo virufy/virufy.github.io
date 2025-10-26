@@ -36,3 +36,4 @@ export { default as YukitoshiNakatani } from './yukitoshi-nakatani.webp';
 export { default as ZafarShahid } from './zafar-shahid.webp';
 export { default as MaurinoFlora } from './Maurino-Flora.webp';
 export { default as AmirKhan } from './AmirKhan.webp';
+export { default as OhmoriTakeshiImg } from './ohmori-takeshi.webp';
