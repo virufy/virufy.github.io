@@ -71,7 +71,7 @@ jobs:
 
       - name: Build and export
         run: |
-          ${{ steps.detect-package-manager.outputs.runner }} npm run build
+          npm run build
           npx next-image-export-optimizer
 
       - name: Upload artifact
