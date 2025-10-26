@@ -13,6 +13,7 @@
     "test-report": "npx playwright show-report",
     "test-ui": "npx playwright test --ui",
     "postbuild": "node scripts/generate-redirects.js",
+    "postexport": "node scripts/generate-redirects.js",
     "preview": "npx serve out"
   },
   "dependencies": {
