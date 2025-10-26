@@ -699,10 +699,10 @@ const footer: Footer = {
       '©2025 Virufy | VIRUFY es una marca registrada de The Covid Detection Foundation, una corporación sin fines de lucro en California | Todos los derechos reservados',
   },
   IntellectualProperty: {
-    title: '',
-    body: '',
-    patentTitle: '',
-    addpatentpending: '',
+    title: 'Propiedad intelectual ',
+    body: 'La tecnología y los servicios que ofrece Virufy están protegidos por patentes en Estados Unidos y otras jurisdicciones.',
+    patentTitle: 'Protegido por la patente estadounidense n.° 12.444.502.',
+    addpatentpending: 'Patentes adicionales pendientes.',
   },
 };
 

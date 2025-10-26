@@ -6,7 +6,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
   return (
     <>
       <div className="relative flex justify-center overflow-hidden bg-gradient-to-b from-black to-[#4064AD] pt-24 text-white">
-        <div className="flex max-w-7xl flex-col space-y-6 px-8 py-20 sm:px-12 lg:px-40">
+        <div className="flex w-full flex-col space-y-6 px-8 py-20 sm:px-12 md:max-w-7xl lg:px-40">
           <h1 className="text-center font-bold">
             Virufy
             <br></br>Privacy Policy
