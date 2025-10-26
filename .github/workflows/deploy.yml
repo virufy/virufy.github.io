@@ -68,6 +68,9 @@ jobs:
             npm install sharp --force
           fi
 
+      - name: generate redirects
+        run: node ./scripts/generate-redirects.js
+        
       - name: Build and export
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build
