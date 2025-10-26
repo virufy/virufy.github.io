@@ -40,6 +40,7 @@ const advisorOrder = [
   'shirin',
   'maurino',
   'amir',
+  'ohmori',
 ];
 export const metadata = {
   title: 'Virufy Advisors | Global Experts Supporting AI in Healthcare',

@@ -311,6 +311,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
+      ohmori: {
+        img: './../images/advisors/ohmori-takeshi.webp',
+        name: 'Takeshi Ohmori',
+        role: 'Japan Cybersecurity Advisor',
+        texts: [
+          'Former Senior Director, Security Consulting - Synopsys/Black Duck',
+          'Bachelor of Engineering, Biophysical Engineering - Osaka University',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/', 
+      },
     },
     advisorOrder: [
       'adam',
@@ -345,6 +355,7 @@ const people: People = {
       'zafar',
       'maurino',
       'amir',
+      'ohmori',
     ],
   },
 };
