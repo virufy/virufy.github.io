@@ -26,8 +26,8 @@ export const navbar: NavbarType = {
   },
   faq: 'FAQ',
   donate: {
-    buttonText: 'Donate',
-    optionsTitle: 'Donate Options',
+    buttonText: 'Support Us',
+    optionsTitle: 'Ways to Support Us',
   },
   joinUs: {
     buttonText: 'Join Us',
