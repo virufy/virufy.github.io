@@ -27,7 +27,6 @@ const advisorOrder = [
   'mark',
   'faisal',
   'mert',
-  'tetsuji',
   'victor',
   'adam',
   'rok',
