@@ -17,7 +17,7 @@ export default function SupportersPage({
   params: { lang: Locale };
 }) {
   const {
-    supporters: { title, buttontext, supportersList, contactusform },
+    supporters: { title, buttontext, supportersList, contactusform, oursupporters },
   } = usei18n(lang);
 
   const [showModal, setShowModal] = useState(false);
@@ -72,7 +72,7 @@ export default function SupportersPage({
         <div className="flex w-full max-w-[1440px] flex-col items-center justify-center">
           <div className="mb-10 mt-10 w-full text-center">
             <h2 className="text-1xl relative inline-block font-semibold text-blue-700 md:text-4xl">
-              Our Supporters
+              {oursupporters}
               <div className="absolute bottom-[-8px] left-[-10%] h-[2px] w-[120%] bg-green-500 md:bottom-[-12px] md:h-[3px]" />
             </h2>
           </div>

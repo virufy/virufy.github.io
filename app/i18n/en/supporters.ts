@@ -13,6 +13,7 @@ const supporters: Supporters = {
     textplaceholder: 'Enter Message',
     submitButtonText: 'Submit',
   },
+  oursupporters: 'Our Supporters',
   supportersList: [
     {
       img: '../../logos_transparent/h4r.png',

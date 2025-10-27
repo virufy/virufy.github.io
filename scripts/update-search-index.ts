@@ -14,6 +14,9 @@ import type { QA } from '../app/i18n/types/faq';
 import type { TypeText } from '../app/i18n/types/baseInterfaces';
 import type { StorySectionText } from '../app/i18n/types/story';
 import type { JobDetail } from "@/app/i18n/types/jobDetails";
+import type { TeamLeadCard } from "@/app/i18n/types/teamLeads";
+import type { People } from "@/app/i18n/types/people";
+import type { NewsCard } from "@/app/i18n/types/news";
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -41,8 +44,13 @@ let data : {
     await parsePublications(lang);
     await parseFaq(lang);
     await parseHome(lang);
-    await parseStory(lang);
     await parseJobDetails(lang);
+    await parseStory(lang);
+    await parseTeamLeads(lang);
+    await parseSupporters(lang);
+    await parsePeople(lang);
+    await parseNews(lang);
+  
 
     // Create/update search-index files
     outputPath = path.join(__dirname, `../public/search-index/test-${lang}.json`); // To be changed once finished with the script
@@ -74,33 +82,36 @@ async function loadFile(lang: string, file: string) {
 /**
  * Below are all the functions for parsing every langauge's .ts files:
  * 
- * Done: ai, faq, home, publications, story, jobDetails
+ * ai, faq, home, publications, story, jobDetails, teamLeads, 
+ * supporters, people, news
  * 
- * To be done: amilsStory, news, oneYoungWorld, 
- * people, shareYourCough, supporters, teamLeads
+ * To be done: amilsStory, oneYoungWorld, shareYourCough
  */
 async function parseAi(lang: string) {
   const content = await loadFile(lang, "ai");
+  const hero = content.heroSection;
+  const ai = content.aiSection;
+
   
   // heroSection
   data.push({
     id: `${lang}-ai-hero`,
     lang: lang,
-    title: (content.heroSection.title as { type: string; text: string }[])
+    title: (hero.title as { type: string; text: string }[])
       .map(item => item.text)
       .join(' '),
-    content: content.heroSection.text,
+    content: hero.text,
     url: `/${lang}/ai`,
   });
 
   // All aiCards
-  if (content.aiSection?.aiCards?.length) {
-    content.aiSection.aiCards.forEach(
+  if (ai?.aiCards?.length) {
+    ai.aiCards.forEach(
       (card: { title: string; text: string }, index: number) => {
         data.push({
           id: `${lang}-ai-0${index + 1}`,
           lang: lang,
-          title: `${content.aiSection!.title} - ${card.title}`,
+          title: `${ai!.title} - ${card.title}`,
           content: card.text,
           url: `/${lang}/ai`,
         });
@@ -111,24 +122,26 @@ async function parseAi(lang: string) {
 
 async function parsePublications(lang: string) {
   const content = await loadFile(lang, "publications");
+  const pubSection = content.publicationsSection;
+  const pubCards = content.publicationsCards;
 
   // publicationsSection 
   data.push({
     id: `${lang}-media-publications`,
     lang: lang,
-    title: content.publicationsSection.title,
-    content: content.publicationsSection.texts[0],
+    title: pubSection.title,
+    content: pubSection.texts[0],
     url: `/${lang}/publications`,
   });
 
   // All publicationsCards
-  if (content.publicationsCards?.length) {
-    content.publicationsCards.forEach(
+  if (pubCards?.length) {
+    pubCards.forEach(
       (card: { title: string, url: string }, index: number) => {
         data.push({
           id: `${lang}-media-publications-${index + 1}`,
           lang: lang,
-          title: content.publicationsSection.title,
+          title: pubSection.title,
           content: card.title,
           url: card.url,
         });
@@ -160,13 +173,17 @@ async function parseFaq(lang: string) {
 
 async function parseHome(lang: string) {
   const content = await loadFile(lang, "home");
+  const intro = content.introSection;
+  const howItWorks = content.introSection;
+  const yhop = content.section2;
+
 
   // Virufy introduction
   data.push({
     id: `${lang}-home-intro`,
     lang: lang,
-    title: content.introSection.text,
-    content: content.introSection.subText.flat().map((item: TypeText) => item.text).join(' '),
+    title: intro.text,
+    content: intro.subText.flat().map((item: TypeText) => item.text).join(' '),
     url: `/${lang}`,
   });
 
@@ -174,8 +191,8 @@ async function parseHome(lang: string) {
   data.push({
     id: `${lang}-home-how-it-works`,
     lang: lang,
-    title: content.introSection.mainText2,
-    content: content.introSection.subText2.flat().map((item: TypeText) => item.text).join(' '),
+    title: howItWorks.mainText2,
+    content: howItWorks.subText2.flat().map((item: TypeText) => item.text).join(' '),
     url: `/${lang}`,
   });
 
@@ -183,15 +200,15 @@ async function parseHome(lang: string) {
   data.push({
     id: `${lang}-home-health-priority`,
     lang: lang,
-    title: content.section2.text,
-    content: content.section2.subtext,
+    title: yhop.text,
+    content: yhop.subtext,
     url: `/${lang}`,
   });
 
   // YHOP features
-  for (let i = 0; i < content.section2.title.length; i++) {
-    const title = content.section2.title[i];
-    const sub = content.section2.sub[i];
+  for (let i = 0; i < yhop.title.length; i++) {
+    const title = yhop.title[i];
+    const sub = yhop.sub[i];
 
     data.push({
       id: `${lang}-home-health-feature-${i + 1}`,
@@ -205,13 +222,16 @@ async function parseHome(lang: string) {
 
 async function parseStory(lang: string) {
   const content = await loadFile(lang, "story");
+  const story = content.storySection;
+  const mission = content.MissionSection;
+  const privacy = content.privacySection;
 
   // How it started
   data.push({
     id: `${lang}-story-how-it-started`,
     lang: lang,
-    title: content.storySection.title,
-    content: content.storySection.texts.flat().map((item: StorySectionText) => item.text).join(' '),
+    title: story.title,
+    content: story.texts.flat().map((item: StorySectionText) => item.text).join(' '),
     url: `/${lang}/story`,
   });
 
@@ -219,8 +239,8 @@ async function parseStory(lang: string) {
   data.push({
     id: `${lang}-story-our-mission`,
     lang: lang,
-    title: content.MissionSection.title,
-    content: content.MissionSection.texts.flat().map((item: StorySectionText) => item.text).join(' '),
+    title: mission.title,
+    content: mission.texts.flat().map((item: StorySectionText) => item.text).join(' '),
     url: `/${lang}/story`,
   });
 
@@ -228,8 +248,8 @@ async function parseStory(lang: string) {
   data.push({
     id: `${lang}-story-privacy-commitment`,
     lang: lang,
-    title: content.privacySection.title,
-    content: content.privacySection.texts.join(' '),
+    title: privacy.title,
+    content: privacy.texts.join(' '),
     url: `/${lang}/story`,
   });
 }
@@ -245,6 +265,62 @@ async function parseJobDetails(lang: string) {
       title: job.title,
       content: job.description,
       url: `/${lang}/join-us`,
+    });
+  });
+}
+
+async function parseTeamLeads(lang: string) {
+  const content = await loadFile(lang, "teamLeads");
+  const cards = content.cards;
+
+  cards.forEach((card: TeamLeadCard, index: number) => {
+    data.push({
+      id: `${lang}-teamleads-${index + 1}`,
+      lang: lang,
+      title: card.name,
+      content: card.texts.filter(text => text.trim() !== '').join(' | '),
+      url: `/${lang}/one-young-world`,
+    });
+  });
+}
+
+async function parseSupporters(lang: string) {
+  const content = await loadFile(lang, "supporters"); 
+
+  data.push({
+    id: `${lang}-supporters`,
+    lang: lang,
+    title: content.oursupporters,
+    content: `${content.title} (${content.supportersList.map((s: { alt: string }) => s.alt).join(' | ')})`,
+    url: `/${lang}/supporters`,
+  });
+}
+
+async function parsePeople(lang: string) {
+  const content = await loadFile(lang, "people") as People;
+  const advisors = Object.values(content.sectionAdvisors.advisors);
+
+  advisors.forEach((advisor, index) => {
+    data.push({
+      id: `${lang}-advisors-${index + 1}`,
+      lang: lang,
+      title: advisor.name,
+      content: `${advisor.role} (${advisor.texts.join(' | ')})`,
+      url: `/${lang}/advisors`,
+    });
+  });
+}
+
+async function parseNews(lang: string) {
+  const content = await loadFile(lang, "news");
+
+  content.pressReleaseCards.forEach((card: NewsCard, index: number) => {
+    data.push({
+      id: `${lang}-news-${index + 1}`,
+      lang: lang,
+      title: card.title,
+      content: card.subText || card.date,
+      url: `/${lang}/news`,
     });
   });
 }
