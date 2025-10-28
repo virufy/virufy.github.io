@@ -13,6 +13,7 @@ const supporters: Supporters = {
     textplaceholder: 'أدخل رسالة',
     submitButtonText: 'تأكيد',
   },
+  oursupporters: 'أنصارنا',
   supportersList: [
     {
       img: '../../logos_transparent/h4r.png',

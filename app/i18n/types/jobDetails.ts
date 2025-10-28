@@ -1,6 +1,6 @@
 export type JobDetails = { [key: string]: JobDetail };
 
-interface JobDetail {
+export interface JobDetail {
   title: string;
   description: string;
   responsibilities: string[];

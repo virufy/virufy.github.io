@@ -14,6 +14,7 @@ const supporters: Supporters = {
     textplaceholder: 'Escribe tu mensaje',
     submitButtonText: 'Enviar',
   },
+  oursupporters: 'Nuestros seguidores',
   supportersList: [
     {
       img: '../../logos_transparent/h4r.png',
