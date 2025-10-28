@@ -14,13 +14,13 @@ const people: People = {
   sectionCategories: {
     title: 'Browse expertise by category',
     buttons: {
-      all: 'All', 
-      ai: 'AI / Machine Learning', 
-      health: 'Public Health / Epidemiology', 
+      all: 'All',
+      ai: 'AI / Machine Learning',
+      health: 'Public Health / Epidemiology',
       technology: 'Technology',
       clinical: 'Clinical',
       marketing: 'Marketing',
-      business:'Business Strategy',
+      business: 'Business Strategy',
       legal: 'Legal',
       regulatory: 'Regulatory Affairs',
       cyber: 'Cybersecurity',
@@ -79,8 +79,8 @@ const people: People = {
         name: 'Thomas Mahoney',
         role: 'Business & Public Health Advisor',
         texts: [
-          'Associate, Dept. of Immunology & Infectious Diseases',
-          'Harvard T.H. Chan School of Public Health',
+          'Department Associate, Infectious Diseases Department, Harvard University MBA',
+          'The Wharton School, University of Pennsylvania',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
@@ -159,16 +159,6 @@ const people: People = {
           'Asst. Professor of AI - Stanford University, Electrical Engineering',
         ],
         link: 'https://stanford.edu/~pilanci/',
-      },
-      tetsuji: {
-        img: './../images/advisors/tetsuji-madarame.webp',
-        name: 'Tetsuji Madarame',
-        role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
-        texts: [
-          'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
-          'MBA - Stanford GSB',
-        ],
-        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       victor: {
         img: './../images/advisors/victor-wang.webp',
@@ -334,7 +324,7 @@ const people: People = {
           'Former Senior Director, Security Consulting - Synopsys/Black Duck',
           'Bachelor of Engineering, Biophysical Engineering - Osaka University',
         ],
-        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/', 
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
     },
     advisorOrder: [
@@ -363,7 +353,6 @@ const people: People = {
       'ronan',
       'shirin',
       'tamer',
-      'tetsuji',
       'thomas',
       'tsutomu',
       'victor',

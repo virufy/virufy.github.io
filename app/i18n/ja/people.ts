@@ -1,6 +1,5 @@
-import { } from '@/public/images/advisors';
+import {} from '@/public/images/advisors';
 import { type People } from '../types/people';
-
 
 const people: People = {
   titleImage: '私たちは世界中から団結し、咳一つ一つから感染症を克服します。',
@@ -14,9 +13,9 @@ const people: People = {
   sectionCategories: {
     title: 'カテゴリ別に専門知識を閲覧する',
     buttons: {
-      all: '全て', 
-      ai: '人工知能 / 機械学習', 
-      health: '公衆衛生 / 疫学', 
+      all: '全て',
+      ai: '人工知能 / 機械学習',
+      health: '公衆衛生 / 疫学',
       technology: 'テクノロジー',
       clinical: '臨床',
       marketing: 'マーケティング',
@@ -98,7 +97,10 @@ const people: People = {
         img: './../images/advisors/may-xu.webp',
         name: 'メイ・シュー',
         role: 'データ & AI プロダクト戦略アドバイザー',
-        texts: ['創業者 / エグゼクティブコーチ', 'スタンフォード大学 修士（理学）'],
+        texts: [
+          '創業者 / エグゼクティブコーチ',
+          'スタンフォード大学 修士（理学）',
+        ],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
       },
       zafar: {
@@ -135,7 +137,10 @@ const people: People = {
         img: './../images/advisors/mark-haseltine.webp',
         name: 'マーク・ハゼルタイン',
         role: '顧問',
-        texts: ['元edX、GoDaddy CTO/CPO', 'マサチューセッツ工科大学 学士（コンピュータサイエンス）'],
+        texts: [
+          '元edX、GoDaddy CTO/CPO',
+          'マサチューセッツ工科大学 学士（コンピュータサイエンス）',
+        ],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       faisal: {
@@ -153,16 +158,6 @@ const people: People = {
         role: '人工知能アドバイザー',
         texts: ['スタンフォード大学 助教（電気工学科人工知能）'],
         link: 'https://stanford.edu/~pilanci/',
-      },
-      tetsuji: {
-        img: './../images/advisors/tetsuji-madarame.webp',
-        name: '斑目哲司',
-        role: '本郵船 技術企画 主席フェロー',
-        texts: [
-          '投資諮問委員会 メンバー, theDOCK（海事・物流テックVC）',
-          'スタンフォード大学 経営大学院（GSB） MBA',
-        ],
-        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       victor: {
         img: './../images/advisors/victor-wang.webp',
@@ -243,7 +238,9 @@ const people: People = {
         img: './../images/advisors/jesse-bump.webp',
         name: 'ジェシー・バンプ博士',
         role: '公衆衛生アドバイザー',
-        texts: ['ハーバード大学 T.H.チャン公衆衛生大学院 グローバルヘルス・人口学部'],
+        texts: [
+          'ハーバード大学 T.H.チャン公衆衛生大学院 グローバルヘルス・人口学部',
+        ],
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       nobuyo: {
@@ -325,7 +322,6 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
-
     },
     advisorOrder: [
       'adam',
@@ -365,8 +361,4 @@ const people: People = {
   },
 };
 
-
 export default people;
-
-
-
