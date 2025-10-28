@@ -3,8 +3,7 @@
  * 
  * Run in terminal: 
  * node --loader ts-node/esm scripts/update-search-index.ts
- * 
-*/
+ */
 
 import fs from "fs";
 import path from "path";
@@ -50,6 +49,9 @@ let data : {
     await parseSupporters(lang);
     await parsePeople(lang);
     await parseNews(lang);
+    await parseAmilsStory(lang);
+    await parseOneYoungWorld(lang);
+    await parseShareYourCough(lang);
   
 
     // Create/update search-index files
@@ -83,9 +85,7 @@ async function loadFile(lang: string, file: string) {
  * Below are all the functions for parsing every langauge's .ts files:
  * 
  * ai, faq, home, publications, story, jobDetails, teamLeads, 
- * supporters, people, news
- * 
- * To be done: amilsStory, oneYoungWorld, shareYourCough
+ * supporters, people, news, amilsStory, oneYoungWorld, shareYourCough
  */
 async function parseAi(lang: string) {
   const content = await loadFile(lang, "ai");
@@ -322,5 +322,67 @@ async function parseNews(lang: string) {
       content: card.subText || card.date,
       url: `/${lang}/news`,
     });
+  });
+}
+
+async function parseAmilsStory(lang: string) {
+  const content = await loadFile(lang, "amilsStory");
+  const tabs = content.sectionAmil.tabsAmil;
+  const texts = content.sectionAmil.textAmil;
+
+  const combinations = [
+    { tabIndex: 0, textIndices: [0, 1] },
+    { tabIndex: 1, textIndices: [2, 3] },
+    { tabIndex: 2, textIndices: [4] },
+    { tabIndex: 3, textIndices: [5, 6] },
+  ];
+
+  for (let i = 0; i < tabs.length - 2; i++) {
+    const { tabIndex, textIndices } = combinations[i];
+    const combinedText = textIndices.map(idx => String(texts[idx] ?? "")).join(" ");
+
+    data.push({
+      id: `${lang}-amilsStory-${i + 1}`,
+      lang: lang,
+      title: tabs[tabIndex],
+      content: combinedText,
+      url: `/${lang}/amils-story`,
+    });
+  }
+}
+
+async function parseOneYoungWorld(lang: string) {
+  const content = await loadFile(lang, "oneYoungWorld");
+  const oywIntro = content.oyw.virufyAndOyw;
+  const oywWhy = content.oyw.whyOyw;
+
+  // OYW intro
+  data.push({
+    id: `${lang}-oyw-intro`,
+    lang: lang,
+    title: oywIntro.title,
+    content: oywIntro.texts.join(" "),
+    url: `/${lang}/one-young-world`,
+  });
+
+  // OYW why
+  data.push({
+    id: `${lang}-oyw-why`,
+    lang: lang,
+    title: oywWhy.title,
+    content: oywWhy.cards.map((card: { text: string }) => card.text).join(" "),
+    url: `/${lang}/one-young-world`,
+  });
+}
+
+async function parseShareYourCough(lang: string) {
+  const content = await loadFile(lang, "shareYourCough");
+
+  data.push({
+    id: `${lang}-share-your-cough`,
+    lang: lang,
+    title: content.title,
+    content: content.text,
+    url: `/${lang}/study/welcome`,
   });
 }
