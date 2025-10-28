@@ -3,6 +3,8 @@
  * 
  * Run in terminal: 
  * node --loader ts-node/esm scripts/update-search-index.ts
+ * OR
+ * npm run upd-search
  */
 
 import fs from "fs";
@@ -55,7 +57,7 @@ let data : {
   
 
     // Create/update search-index files
-    outputPath = path.join(__dirname, `../public/search-index/test-${lang}.json`); // To be changed once finished with the script
+    outputPath = path.join(__dirname, `../public/search-index/${lang}.json`); // To be changed once finished with the script
 
     fs.mkdirSync(path.dirname(outputPath), { recursive: true });
     fs.writeFileSync(outputPath, JSON.stringify(data, null, 2), "utf-8");
@@ -256,15 +258,15 @@ async function parseStory(lang: string) {
 
 async function parseJobDetails(lang: string) {
   const content = await loadFile(lang, "jobDetails");
-  const jobs = Object.values(content as Record<string, JobDetail>);
+  const entries = Object.entries(content as Record<string, JobDetail>);
 
-  jobs.forEach((job, index) => {
+  entries.forEach(([key, job]) => {
     data.push({
-      id: `${lang}-job-${index + 1}`,
+      id: `${lang}-job-${key}`,
       lang: lang,
       title: job.title,
       content: job.description,
-      url: `/${lang}/join-us`,
+      url: `/${lang}/join-us/${key}`,
     });
   });
 }
