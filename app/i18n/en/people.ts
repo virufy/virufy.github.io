@@ -64,8 +64,8 @@ const people: People = {
         name: 'Thomas Mahoney',
         role: 'Business & Public Health Advisor',
         texts: [
-          'Associate, Dept. of Immunology & Infectious Diseases',
-          'Harvard T.H. Chan School of Public Health',
+          'Department Associate, Infectious Diseases Department, Harvard University MBA',
+          'The Wharton School, University of Pennsylvania',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
