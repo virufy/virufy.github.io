@@ -12,7 +12,7 @@ const advisorOrder = [
   'thomas', 'madhav', 'may', 'rafi', 'nobuyo', 'hiroyuki', 'fumihiko',
   'ronan', 'mark', 'faisal', 'mert', 'tetsuji', 'victor', 'adam',
   'rok', 'richard', 'khwaja', 'ayomide', 'tsutomu', 'kohei', 'tamer',
-  'shirin', 'maurino', 'amir',
+  'shirin', 'maurino', 'amir','ohmori',
 ];
 
 export const metadata = {

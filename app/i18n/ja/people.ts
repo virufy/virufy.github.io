@@ -1,4 +1,4 @@
-import {} from '@/public/images/advisors';
+import { } from '@/public/images/advisors';
 import { type People } from '../types/people';
 
 
@@ -315,6 +315,17 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
+      ohmori: {
+        img: './../images/advisors/ohmori-takeshi.webp',
+        name: 'Takeshi Ohmori', // ← if you can, please write the name in kanji/kana
+        role: '日本サイバーセキュリティアドバイザー',
+        texts: [
+          '元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ',
+          '大阪大学 工学部 生物物理工学科 学士',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
+      },
+
     },
     advisorOrder: [
       'adam',
@@ -349,6 +360,7 @@ const people: People = {
       'zafar',
       'maurino',
       'amir',
+      'ohmori',
     ],
   },
 };

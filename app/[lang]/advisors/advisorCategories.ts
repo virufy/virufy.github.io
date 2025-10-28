@@ -46,6 +46,9 @@ const advisorCategories: Record<string, string> = {
   // Regulatory Affairs
   shirin: 'regulatory',
   maurino: 'regulatory',
+
+  // Cybersecurity
+  ohmori: 'cyber',
 };
 
 export default advisorCategories;

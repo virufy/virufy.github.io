@@ -17,10 +17,10 @@ const home: HomeType = {
       },
       {
         type: 'text',
-        text: ', the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing and cough patterns and provide insights into potential infection symptoms.',
+        text: ', the cutting-edge app that utilizes audio and generative AI to analyze your breathing patterns and provide insights into potential infection symptoms.',
       },
     ],
-    [
+    /*[
     
       {
         type: 'text',
@@ -33,7 +33,7 @@ const home: HomeType = {
         type: 'text',
         text: ' We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
       },
-    ],
+    ],*/
     
 
     ],
