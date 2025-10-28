@@ -12,10 +12,11 @@
     "test": "npx playwright test",
     "test-report": "npx playwright show-report",
     "test-ui": "npx playwright test --ui",
+    "prebuild": "npm run upd-search",
     "postbuild": "node scripts/generate-redirects.js",
     "preview": "npx serve out",
-    "upd-search": "node --loader ts-node/esm scripts/update-search-index.ts"
-    "postexport": "node scripts/generate-redirects.js",
+    "upd-search": "node --loader ts-node/esm scripts/update-search-index.ts",
+    "postexport": "node scripts/generate-redirects.js"
   },
   "dependencies": {
     "csv-parse": "^6.1.0",
