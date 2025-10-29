@@ -314,7 +314,7 @@ const people: People = {
       },
       ohmori: {
         img: './../images/advisors/ohmori-takeshi.webp',
-        name: 'Takeshi Ohmori', // ← if you can, please write the name in kanji/kana
+        name: '大森健史',
         role: '日本サイバーセキュリティアドバイザー',
         texts: [
           '元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ',
