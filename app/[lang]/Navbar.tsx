@@ -656,6 +656,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           {aboutUs?.advisors}
                         </Link>
 
+                        {/* Our Founder */}
+                        <Link
+                          className="py-1 hover:font-bold lg:py-3"
+                          href={`/${lang}/amils-story`}
+                          onClick={handleNavClick}
+                        >
+                          {aboutUs?.ourFounder}
+                        </Link>
+
                         {/* Our Supporters */}
                         <Link
                           className="py-1 hover:font-bold lg:py-3"

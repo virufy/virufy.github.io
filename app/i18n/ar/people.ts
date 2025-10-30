@@ -303,7 +303,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: './../images/advisors/amir-khan.webp',
+        img: './../images/advisors/AmirKhan.webp',
         name: 'أمير خان',
         role: 'مستشار الجاذبية التنفيذية',
         texts: [
@@ -311,6 +311,16 @@ const people: People = {
           'معهد مودا بورجو، ميلانو',
         ],
         link: 'https://www.linkedin.com/in/the-amir-khan/',
+      },
+      ohmori: {
+        img: './../images/advisors/ohmori-takeshi.webp',
+        name: 'تاكيشي أوموري',
+        role: 'مستشار الأمن السيبراني في اليابان',
+        texts: [
+          'مدير أول سابق، استشارات الأمن - Synopsys/Black Duck',
+          'بكالوريوس في الهندسة الحيوية الفيزيائية - جامعة أوساكا',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
     },
     advisorOrder: [

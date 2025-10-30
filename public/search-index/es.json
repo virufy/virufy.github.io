@@ -241,7 +241,7 @@
     "id": "es-home-how-it-works",
     "lang": "es",
     "title": "Cómo Funciona",
-    "content": "Con solo una simple tos intencional en el micrófono de tu dispositivo,  Virufy  aprovecha el poder de la inteligencia artificial para detectar patrones de sonido únicos asociados con enfermedades respiratorias, como COVID-19, tuberculosis, gripe, RSV, EPOC y asma.",
+    "content": "Con solo una simple tos intencional en el micrófono de tu dispositivo,  Virufy  aprovecha el poder de la inteligencia artificial para detectar patrones de sonido únicos asociados con enfermedades respiratorias, como COVID-19, neumonía, gripe, RSV, EPOC y asma.",
     "url": "/es"
   },
   {
@@ -723,127 +723,127 @@
   {
     "id": "es-advisors-15",
     "lang": "es",
-    "title": "Tetsuji Madarame",
-    "content": "Fellow Principal, Planificación Tecnológica, Japan Freight Railway (Consejo Asesor de Inversiones, theDOCK, VC de Tecnología Marítima y Logística | MBA - Escuela de Negocios de la Universidad de Stanford)",
-    "url": "/es/advisors"
-  },
-  {
-    "id": "es-advisors-16",
-    "lang": "es",
     "title": "Victor Wang",
     "content": "Asesor Ejecutivo (Fundador y Presidente - China Silicon Valley | MBA - Escuela de Negocios de la Universidad de Stanford)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-17",
+    "id": "es-advisors-16",
     "lang": "es",
     "title": "Adam Leipzig",
     "content": "Asesor Ejecutivo (Director Ejecutivo de Entertainment Media Partners | Ex Presidente de National Geographic Films | Miembro del profesorado profesional en la Escuela de Negocios de Berkeley Haas)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-18",
+    "id": "es-advisors-17",
     "lang": "es",
     "title": "Rok Sosic",
     "content": "Asesor de Inteligencia Artificial (Ingeniero de Investigación Senior | Escuela de Ingeniería de Stanford)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-19",
+    "id": "es-advisors-18",
     "lang": "es",
     "title": "Richard Nall",
     "content": "Asesor de Marketing (CEO - The Brand Garden | Maestría en Liderazgo Organizacional - Henley)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-20",
+    "id": "es-advisors-19",
     "lang": "es",
     "title": "Khwaja Shaik",
     "content": "Director de Tecnología - IBM (MOSH, Vicepresidente, Miembro de la Junta | Miembro de la Junta - Universidad de North Florida Computing)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-21",
+    "id": "es-advisors-20",
     "lang": "es",
     "title": "Ayomide Owoyemi",
     "content": "Asesor Clínico Ejecutivo (PhD en Ciencias Biomédicas - Universidad de Illinois Chicago | Embajador - One Young World Nigeria)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-22",
+    "id": "es-advisors-21",
     "lang": "es",
     "title": "Tsutomu Ito",
     "content": "Asesor Visionario Ejecutivo (Fundador - Tannan FM Radio | Arquitecto Principal, Tren Bala)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-23",
+    "id": "es-advisors-22",
     "lang": "es",
     "title": "Dr. Les Atlas",
     "content": "Asesor de Audio e Inteligencia Artificial (Profesor de Ingeniería Eléctrica y de Computación - Universidad de Washington | Ph.D. en Ingeniería Eléctrica, Stanford)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-24",
+    "id": "es-advisors-23",
     "lang": "es",
     "title": "Jesse Bump, Ph.D., MPH, FRSA",
     "content": "Asesor de Salud Poblacional (Departamento de Salud Global y Población | Escuela de Salud Pública T.H. Chan de Harvard)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-25",
+    "id": "es-advisors-24",
     "lang": "es",
     "title": "Nobuyo Ozawa",
     "content": "Líder de Desarrollo Clínico en Japón (Gerente de Grupo, Departamento de Desarrollo Clínico, CRO)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-26",
+    "id": "es-advisors-25",
     "lang": "es",
     "title": "Hiroyuki Kunishima",
     "content": "Asesor de Enfermedades Infecciosas (Departamento de Enfermedades Infecciosas, Hospital Universitario St. Marianna)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-27",
+    "id": "es-advisors-26",
     "lang": "es",
     "title": "Fumihiko Yokota",
     "content": "Asesor de Salud Pública (Profesor Asociado de Epidemiología, Universidad de Kyushu)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-28",
+    "id": "es-advisors-27",
     "lang": "es",
     "title": "Kohei Wakamiya",
     "content": "Asesor de Inteligencia Artificial de Voz (Profesor Asistente de Diseño Acústico | Universidad de Kyushu)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-29",
+    "id": "es-advisors-28",
     "lang": "es",
     "title": "Tamer Fahmy",
     "content": "Asesor de Mercado de Medio Oriente y África (Ex Dräger/Philips MedTech - Sueño y Cuidados Respiratorios | MBA, SP Jain School of Global Management | BSc en Ingeniería Biomédica, Universidad de El Cairo)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-30",
+    "id": "es-advisors-29",
     "lang": "es",
     "title": "Shirin Hasan",
     "content": "Asesora de Asuntos Regulatorios (Ex Directora de Asuntos Clínicos, Medtronic | M.S., Bioquímica, Universidad de Mumbai)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-31",
+    "id": "es-advisors-30",
     "lang": "es",
     "title": "Flora Maurino",
     "content": "Asesor del Programa de Dispositivos Médicos (Director General, Apomed Consultants | Maestría en Gestión de Ingeniería, Universidad de Santa Clara)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-32",
+    "id": "es-advisors-31",
     "lang": "es",
     "title": "Amir Khan",
     "content": "Asesor ejecutivo de Gravitas (CEO Digital Gravitas Silicon Valley | Instituto de Moda Burgo, Milán)",
+    "url": "/es/advisors"
+  },
+  {
+    "id": "es-advisors-32",
+    "lang": "es",
+    "title": "Takeshi Ohmori",
+    "content": "Asesor de Ciberseguridad en Japón (Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck | Licenciatura en Ingeniería Biofísica - Universidad de Osaka)",
     "url": "/es/advisors"
   },
   {

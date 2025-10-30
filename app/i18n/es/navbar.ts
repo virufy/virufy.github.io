@@ -15,6 +15,7 @@ export const navbar: NavbarType = {
   aboutUs: {
     section: 'Sobre Nosotros',
     advisors: 'Asesores',
+    ourFounder: 'Nuestro Fundador',
     ourSupporters: 'Nuestros Apoyantes',
     blog: 'Blog',
     oneYoungWorld: 'Un Mundo Joven',
@@ -33,7 +34,7 @@ export const navbar: NavbarType = {
     buttonText: 'Únete a Nosotros',
   },
   searchPlaceholder: 'Buscar...',
-  noResultsPlaceholder:'No se encontraron resultados',
+  noResultsPlaceholder: 'No se encontraron resultados',
 };
 
 export default navbar;

@@ -319,7 +319,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: './../images/advisors/amir-khan.webp',
+        img: './../images/advisors/AmirKhan.webp',
         name: 'Amir Khan',
         role: 'Asesor ejecutivo de Gravitas',
         texts: [
@@ -327,6 +327,16 @@ const people: People = {
           'Instituto de Moda Burgo, Milán',
         ],
         link: 'https://www.linkedin.com/in/the-amir-khan/',
+      },
+      ohmori: {
+        img: './../images/advisors/ohmori-takeshi.webp',
+        name: 'Takeshi Ohmori',
+        role: 'Asesor de Ciberseguridad en Japón',
+        texts: [
+          'Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck',
+          'Licenciatura en Ingeniería Biofísica - Universidad de Osaka',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
     },
     advisorOrder: [
@@ -361,6 +371,7 @@ const people: People = {
       'zafar',
       'maurino',
       'amir',
+      'ohmori',
     ],
   },
 };

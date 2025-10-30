@@ -6,40 +6,36 @@ const home: HomeType = {
     text2: 'Your Digital Health Companion',
     subText: [
       [
-
-      {
-        type: 'text',
-        text: 'Introducing ',
-      },
-      {
-        type: 'span',
-        text: 'Virufy',
-      },
-      {
-        type: 'text',
-        text: ', the cutting-edge app that utilizes audio and generative AI to analyze your breathing patterns and provide insights into potential infection symptoms.',
-      },
-    ],
-    /*[
-    
-      {
-        type: 'text',
-        text: ' Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
-      },
-    ],
-    [
-  
-      {
-        type: 'text',
-        text: ' We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
-      },
-    ],*/
-    
-
+        {
+          type: 'text',
+          text: 'Introducing ',
+        },
+        {
+          type: 'span',
+          text: 'Virufy',
+        },
+        {
+          type: 'text',
+          text: ', the cutting-edge app that utilizes audio and generative AI to analyze your breathing patterns and provide insights into potential infection symptoms.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: ' Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: ' We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
+        },
+      ],
     ],
     buttonText: 'Share your cough',
     disclaimers: [
-      '*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad).', '*The app is still under development, support us by contributing your cough sounds into our data collection app.'
+      '*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad).',
+      '*The app is still under development, support us by contributing your cough sounds into our data collection app.',
     ],
     mainText2: 'How It Works',
     subText2: [
@@ -53,7 +49,7 @@ const home: HomeType = {
       },
       {
         type: 'text',
-        text: ' harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, TB, flu, RSV, COPD, and asthma.',
+        text: ' harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, pneumonia, flu, RSV, COPD, and asthma.',
       },
     ],
   },

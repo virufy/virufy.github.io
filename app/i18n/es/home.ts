@@ -6,33 +6,31 @@ const home: HomeType = {
     text2: 'Tu Compañero de Salud Digital',
     subText: [
       [
-      
-      {
-        type: 'text',
-        text: 'Presentamos ',
-      },
-      {
-        type: 'span',
-        text: 'Virufy',
-      },
-      {
-        type: 'text',
-        text: ', la aplicación de vanguardia que utiliza algoritmos avanzados de audio e IA generativa para analizar tus patrones de respiración y proporcionar información sobre posibles síntomas de infección.',
-      },
-    ],
-    [
-      {
-        type:'text',
-        text: 'Nuestro enfoque innovador tiene como objetivo ofrecer una detección previa superior de enfermedades respiratorias para pacientes, médicos y gobiernos, especialmente en países de bajos ingresos.',
-      },
-
-    ],
-    [
-      {
-        type:'text',
-        text:'Aspiramos a ser la organización sin fines de lucro líder en la identificación de enfermedades mediante tecnología, transformando la atención médica global e inspirando a otros a apoyar e invertir en esta misión con nosotros.'
-      },
-    ],
+        {
+          type: 'text',
+          text: 'Presentamos ',
+        },
+        {
+          type: 'span',
+          text: 'Virufy',
+        },
+        {
+          type: 'text',
+          text: ', la aplicación de vanguardia que utiliza algoritmos avanzados de audio e IA generativa para analizar tus patrones de respiración y proporcionar información sobre posibles síntomas de infección.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Nuestro enfoque innovador tiene como objetivo ofrecer una detección previa superior de enfermedades respiratorias para pacientes, médicos y gobiernos, especialmente en países de bajos ingresos.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          text: 'Aspiramos a ser la organización sin fines de lucro líder en la identificación de enfermedades mediante tecnología, transformando la atención médica global e inspirando a otros a apoyar e invertir en esta misión con nosotros.',
+        },
+      ],
     ],
     buttonText: 'Comparte tu tos',
     disclaimers: [
@@ -51,7 +49,7 @@ const home: HomeType = {
       },
       {
         type: 'text',
-        text: ' aprovecha el poder de la inteligencia artificial para detectar patrones de sonido únicos asociados con enfermedades respiratorias, como COVID-19, tuberculosis, gripe, RSV, EPOC y asma.',
+        text: ' aprovecha el poder de la inteligencia artificial para detectar patrones de sonido únicos asociados con enfermedades respiratorias, como COVID-19, neumonía, gripe, RSV, EPOC y asma.',
       },
     ],
   },

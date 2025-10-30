@@ -15,6 +15,7 @@ export const navbar: NavbarType = {
   aboutUs: {
     section: '私たちについて',
     advisors: 'アドバイザー',
+    ourFounder: '当社の創業者',
     ourSupporters: 'サポーター',
     blog: 'ブログ',
     oneYoungWorld: 'One Young World',
@@ -30,10 +31,10 @@ export const navbar: NavbarType = {
     optionsTitle: '寄付方法',
   },
   joinUs: {
-    buttonText: '参加する', 
+    buttonText: '参加する',
   },
   searchPlaceholder: '検索...',
-  noResultsPlaceholder:'結果が見つかりませんでした',
+  noResultsPlaceholder: '結果が見つかりませんでした',
 };
 
 export default navbar;

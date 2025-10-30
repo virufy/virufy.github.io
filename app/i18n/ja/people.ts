@@ -303,7 +303,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: './../images/advisors/amir-khan.webp',
+        img: './../images/advisors/AmirKhan.webp',
         name: 'アミール・カーン',
         role: 'エグゼクティブ・グラヴィタスアドバイザー',
         texts: [

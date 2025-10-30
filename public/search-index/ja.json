@@ -241,7 +241,7 @@
     "id": "ja-home-how-it-works",
     "lang": "ja",
     "title": "仕組み",
-    "content": "デバイスのマイクに向かって咳をするだけで、 Virufy は人工知能を活用し、新型コロナウイルス、結核、インフルエンザ、RSウイルス、COPD、喘息などの呼吸器疾患に関連する独自の音パターンを検出します。",
+    "content": "デバイスのマイクに向かって咳をするだけで、 Virufy は人工知能を活用し、新型コロナウイルス、肺炎、インフルエンザ、RSウイルス、COPD、喘息などの呼吸器疾患に関連する独自の音パターンを検出します。",
     "url": "/ja"
   },
   {
@@ -723,127 +723,127 @@
   {
     "id": "ja-advisors-15",
     "lang": "ja",
-    "title": "斑目哲司",
-    "content": "本郵船 技術企画 主席フェロー (投資諮問委員会 メンバー, theDOCK（海事・物流テックVC） | スタンフォード大学 経営大学院（GSB） MBA)",
-    "url": "/ja/advisors"
-  },
-  {
-    "id": "ja-advisors-16",
-    "lang": "ja",
     "title": "ヴィクター・ワン",
     "content": "顧問 (China Silicon Valley 創設者・会長 | スタンフォード大学 経営大学院 MBA)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-17",
+    "id": "ja-advisors-16",
     "lang": "ja",
     "title": "アダム・ライプチヒ",
     "content": "顧問 (Entertainment Media Partners CEO | 元ナショナルジオグラフィックフィルムズ 社長 | カリフォルニア大学 バークレー校 教員（ハース経営大学院）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-18",
+    "id": "ja-advisors-17",
     "lang": "ja",
     "title": "ロック・ソシッチ",
     "content": "人工知能アドバイザー (スタンフォード大学 主任研究助手（工学部）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-19",
+    "id": "ja-advisors-18",
     "lang": "ja",
     "title": "リチャード・ナル",
     "content": "マーケティイングアドバイザー (The Brand Garden 最高経営責任者（CEO） | ヘンリー大学 組織リーダーシップ 修士（M.A.）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-20",
+    "id": "ja-advisors-19",
     "lang": "ja",
     "title": "クワジャ・シェイク",
     "content": "最高技術責任者（CTO） (IBM / MOSH 副会長・理事 | ノースフロリダ大学 コンピューティング学部 理事)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-21",
+    "id": "ja-advisors-20",
     "lang": "ja",
     "title": "アヨミデ・オウォイェミ",
     "content": "臨床アドバイザー (One Young World ナイジェリア 大使 | イリノイ大学シカゴ校 生物医学科学 博士（Ph.D.）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-22",
+    "id": "ja-advisors-21",
     "lang": "ja",
     "title": "伊藤努",
     "content": "経営ビジョンアドバイザー (丹南FMラジオ 創設者 | 新幹線 主任設計者)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-23",
+    "id": "ja-advisors-22",
     "lang": "ja",
     "title": "レス・アトラス博士",
     "content": "主任研究者 (ワシントン大学 教授（電気・コンピュータ工学） | スタンフォード大学 博士（電気工学）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-24",
+    "id": "ja-advisors-23",
     "lang": "ja",
     "title": "ジェシー・バンプ博士",
     "content": "公衆衛生アドバイザー (ハーバード大学 T.H.チャン公衆衛生大学院 グローバルヘルス・人口学部)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-25",
+    "id": "ja-advisors-24",
     "lang": "ja",
     "title": "小澤信代",
     "content": "臨床開発統括責任者 (CRO 臨床開発部 部長)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-26",
+    "id": "ja-advisors-25",
     "lang": "ja",
     "title": "國島広之",
     "content": "感染症アドバイザー (聖マリアンナ医科大学病院 感染症科)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-27",
+    "id": "ja-advisors-26",
     "lang": "ja",
     "title": "横田文彦",
     "content": "公衆衛生アドバイザー (九州大学 准教授（疫学）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-28",
+    "id": "ja-advisors-27",
     "lang": "ja",
     "title": "若宮幸平",
     "content": "音響AIアドバイザー (九州大学 助教（音響設計）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-29",
+    "id": "ja-advisors-28",
     "lang": "ja",
     "title": "タメル・ファハミー",
     "content": "中東・アフリカ市場アドバイザー (元ドレーゲル/フィリップスメドテック 睡眠・呼吸ケア部門 | SP Jain グローバル経営大学院 MBA | カイロ大学学士（生物医学工学）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-30",
+    "id": "ja-advisors-29",
     "lang": "ja",
     "title": "シリン・ハサン",
     "content": "臨床・医療・薬事アドバイザー (元メドトロニック 臨床部門長 | サンノゼ州立大学／スタンフォード大学 修士（生化学）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-31",
+    "id": "ja-advisors-30",
     "lang": "ja",
     "title": "マウリノ・フローラ",
     "content": "医療機器プログラムアドバイザー (Apomed Consultants マネージングディレクター | サンタクララ大学 工学マネジメント 修士（M.S.）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-32",
+    "id": "ja-advisors-31",
     "lang": "ja",
     "title": "アミール・カーン",
     "content": "エグゼクティブ・グラヴィタスアドバイザー (Digital Gravitas Silicon Valley 最高経営責任者（CEO） | イタリア モーダ・ブルゴ学院（ミラノ）)",
+    "url": "/ja/advisors"
+  },
+  {
+    "id": "ja-advisors-32",
+    "lang": "ja",
+    "title": "大森健史",
+    "content": "日本サイバーセキュリティアドバイザー (元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ | 大阪大学 工学部 生物物理工学科 学士)",
     "url": "/ja/advisors"
   },
   {

@@ -234,14 +234,14 @@
     "id": "en-home-intro",
     "lang": "en",
     "title": "Welcome to Virufy",
-    "content": "Introducing  Virufy , the cutting-edge app that utilizes advanced audio and generative AI algorithms to analyze your breathing and cough patterns and provide insights into potential infection symptoms.  Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.  We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.",
+    "content": "Introducing  Virufy , the cutting-edge app that utilizes audio and generative AI to analyze your breathing patterns and provide insights into potential infection symptoms.  Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.  We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.",
     "url": "/en"
   },
   {
     "id": "en-home-how-it-works",
     "lang": "en",
     "title": "How It Works",
-    "content": "With just a simple intentional cough into your device's microphone,  Virufy  harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, TB, flu, RSV, COPD, and asthma.",
+    "content": "With just a simple intentional cough into your device's microphone,  Virufy  harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, pneumonia, flu, RSV, COPD, and asthma.",
     "url": "/en"
   },
   {
@@ -723,127 +723,127 @@
   {
     "id": "en-advisors-15",
     "lang": "en",
-    "title": "Tetsuji Madarame",
-    "content": "Principal Fellow, Tech Planning, Japan Freight Railway (Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC | MBA - Stanford GSB)",
-    "url": "/en/advisors"
-  },
-  {
-    "id": "en-advisors-16",
-    "lang": "en",
     "title": "Victor Wang",
     "content": "Executive Advisor (Founder & Chairman - China Silicon Valley | MBA - Stanford GSB)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-17",
+    "id": "en-advisors-16",
     "lang": "en",
     "title": "Adam Leipzig",
     "content": "Executive Advisor (CEO, Entertainment Media Partners | Former President, National Geographic Films | Professional Faculty, Berkeley Haas School of Business)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-18",
+    "id": "en-advisors-17",
     "lang": "en",
     "title": "Rok Sosic",
     "content": "Artificial Intelligence Advisor (Senior Research Engineer | Stanford School of Engineering)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-19",
+    "id": "en-advisors-18",
     "lang": "en",
     "title": "Richard Nall",
     "content": "Marketing Advisor (CEO - The Brand Garden | Master's Organizational Leadership - Henley)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-20",
+    "id": "en-advisors-19",
     "lang": "en",
     "title": "Khwaja Shaik",
     "content": "Chief Technology Officer - IBM (MOSH, Vice Chair, Board Member | Board Member - University of North Florida Computing)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-21",
+    "id": "en-advisors-20",
     "lang": "en",
     "title": "Ayomide Owoyemi",
     "content": "Executive Clinical Advisor (PhD Biomedical Sciences - University of Illinois Chicago | Ambassador - One Young World Nigeria)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-22",
+    "id": "en-advisors-21",
     "lang": "en",
     "title": "Tsutomu Ito",
     "content": "Executive Visionary Advisor (Founder - Tannan FM Radio | Lead Architect, Bullet Train)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-23",
+    "id": "en-advisors-22",
     "lang": "en",
     "title": "Dr. Les Atlas",
     "content": "Chief Scientist (Professor of Electrical and Computer Engineering - University of Washington | Ph.D. Electrical Engineering, Stanford)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-24",
+    "id": "en-advisors-23",
     "lang": "en",
     "title": "Jesse Bump, Ph.D., MPH, FRSA",
     "content": "Population Health Advisor (Department of Global Health and Population | Harvard T.H. Chan School of Public Health)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-25",
+    "id": "en-advisors-24",
     "lang": "en",
     "title": "Nobuyo Ozawa",
     "content": "Japan Clinical Development Lead (Clinical Development Department Group Manager, CRO)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-26",
+    "id": "en-advisors-25",
     "lang": "en",
     "title": "Hiroyuki Kunishima",
     "content": "Infectious Diseases Advisor (Department of Infectious Diseases, St. Marianna University Hospital)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-27",
+    "id": "en-advisors-26",
     "lang": "en",
     "title": "Fumihiko Yokota",
     "content": "Public Health Advisor (Associate Professor of Epidemiology, Kyushu University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-28",
+    "id": "en-advisors-27",
     "lang": "en",
     "title": "Kohei Wakamiya",
     "content": "Audio AI Advisor (Acoustic Design Assistant Professor | Kyushu University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-29",
+    "id": "en-advisors-28",
     "lang": "en",
     "title": "Tamer Fahmy",
     "content": "Middle East & Africa Market Advisor (Former Dräger/Philips MedTech - Sleep & Respiratory Care | MBA, SP Jain School of Global Management | BSc Biomedical Engineering, Cairo University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-30",
+    "id": "en-advisors-29",
     "lang": "en",
     "title": "Shirin Hasan",
     "content": "Clinical, Medical, Regulatory Affairs Advisor (Former Head of Clinical Affairs, Medtronic | M.S., Biochemistry, SJSU/Stanford)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-31",
+    "id": "en-advisors-30",
     "lang": "en",
     "title": "Maurino Flora",
     "content": "Medical Device Program Advisor (Managing Director, Apomed Consultants | M.S. Engineering Management, Santa Clara University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-32",
+    "id": "en-advisors-31",
     "lang": "en",
     "title": "Amir Khan",
     "content": "Executive Gravitas Advisor (CEO Digital Gravitas Silicon Valley | Istituto di Moda Burgo, Milan)",
+    "url": "/en/advisors"
+  },
+  {
+    "id": "en-advisors-32",
+    "lang": "en",
+    "title": "Takeshi Ohmori",
+    "content": "Japan Cybersecurity Advisor (Former Senior Director, Security Consulting - Synopsys/Black Duck | Bachelor of Engineering, Biophysical Engineering - Osaka University)",
     "url": "/en/advisors"
   },
   {
