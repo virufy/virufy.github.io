@@ -35,7 +35,6 @@ const advisorCategories: Record<string, string> = {
 
   // Business Strategy
   mark: 'business',
-  tetsuji: 'business',
   victor: 'business',
   adam: 'business',
   tsutomu: 'business',

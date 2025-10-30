@@ -14,9 +14,9 @@ const people: People = {
   sectionCategories: {
     title: 'Explorar experiencia por categoría',
     buttons: {
-      all: 'Todo', 
-      ai: 'Inteligencia Artificial / Aprendizaje Automático', 
-      health: 'Salud Pública / Epidemiología', 
+      all: 'Todo',
+      ai: 'Inteligencia Artificial / Aprendizaje Automático',
+      health: 'Salud Pública / Epidemiología',
       technology: 'Tecnología',
       clinical: 'Clínico',
       marketing: 'Marketing',
@@ -162,16 +162,6 @@ const people: People = {
           'Profesor Asistente de IA - Universidad de Stanford, Ingeniería Eléctrica',
         ],
         link: 'https://stanford.edu/~pilanci/',
-      },
-      tetsuji: {
-        img: './../images/advisors/tetsuji-madarame.webp',
-        name: 'Tetsuji Madarame',
-        role: 'Fellow Principal, Planificación Tecnológica, Japan Freight Railway',
-        texts: [
-          'Consejo Asesor de Inversiones, theDOCK, VC de Tecnología Marítima y Logística',
-          'MBA - Escuela de Negocios de la Universidad de Stanford',
-        ],
-        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       victor: {
         img: './../images/advisors/victor-wang.webp',
@@ -365,7 +355,6 @@ const people: People = {
       'ronan',
       'shirin',
       'tamer',
-      'tetsuji',
       'thomas',
       'tsutomu',
       'victor',

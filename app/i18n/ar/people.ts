@@ -14,9 +14,9 @@ const people: People = {
   sectionCategories: {
     title: 'تصفح الخبرات حسب الفئة',
     buttons: {
-      all: 'الجميع', 
-      ai: 'الذكاء الاصطناعي / التعلم الآلي', 
-      health: 'الصحة العامة / علم الأوبئة', 
+      all: 'الجميع',
+      ai: 'الذكاء الاصطناعي / التعلم الآلي',
+      health: 'الصحة العامة / علم الأوبئة',
       technology: 'تكنولوجيا',
       clinical: 'السريرية',
       marketing: 'تسويق',
@@ -157,16 +157,6 @@ const people: People = {
           'أستاذ مساعد في الذكاء الاصطناعي - جامعة ستانفورد، الهندسة الكهربائية',
         ],
         link: 'https://stanford.edu/~pilanci/',
-      },
-      tetsuji: {
-        img: './../images/advisors/tetsuji-madarame.webp',
-        name: 'تتسوجي مادارامي',
-        role: 'زميل رئيسي، تخطيط تقني، السكك الحديدية الشحن اليابانية',
-        texts: [
-          'مجلس استشاري استثماري، theDOCK، VC تقنيات الشحن واللوجستيات',
-          'MBA - جامعة ستانفورد لإدارة الأعمال',
-        ],
-        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       victor: {
         img: './../images/advisors/victor-wang.webp',
@@ -349,7 +339,6 @@ const people: People = {
       'ronan',
       'shirin',
       'tamer',
-      'tetsuji',
       'thomas',
       'tsutomu',
       'victor',

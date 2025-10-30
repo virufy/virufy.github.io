@@ -8,11 +8,38 @@ import AdvisorsGrid from './AdvisorsGrid';
 
 //use this list to reorder
 const advisorOrder = [
-  'kara', 'les', 'jesse', 'jure', 'zafar', 'melissa', 'kutsuna', 'glenn',
-  'thomas', 'madhav', 'may', 'rafi', 'nobuyo', 'hiroyuki', 'fumihiko',
-  'ronan', 'mark', 'faisal', 'mert', 'tetsuji', 'victor', 'adam',
-  'rok', 'richard', 'khwaja', 'ayomide', 'tsutomu', 'kohei', 'tamer',
-  'shirin', 'maurino', 'amir','ohmori',
+  'kara',
+  'les',
+  'jesse',
+  'jure',
+  'zafar',
+  'melissa',
+  'kutsuna',
+  'glenn',
+  'thomas',
+  'madhav',
+  'may',
+  'rafi',
+  'nobuyo',
+  'hiroyuki',
+  'fumihiko',
+  'ronan',
+  'mark',
+  'faisal',
+  'mert',
+  'victor',
+  'adam',
+  'rok',
+  'richard',
+  'khwaja',
+  'ayomide',
+  'tsutomu',
+  'kohei',
+  'tamer',
+  'shirin',
+  'maurino',
+  'amir',
+  'ohmori',
 ];
 
 export const metadata = {
@@ -24,7 +51,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     people: { titleImage, sectionAdvisors },
   } = usei18n(lang);
-  
+
   return (
     <div className="relative w-full overflow-hidden pt-[80px]">
       {/* Background Image */}
@@ -38,7 +65,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         basePath={basePath}
       />
 
-      <div className="flex flex-col justify-center items-center pt-20 pb-4 md:pt-40 md:pb-16 mx-10">  
+      <div className="mx-10 flex flex-col items-center justify-center pb-4 pt-20 md:pb-16 md:pt-40">
         {/* Our Advisors Title */}
         <Title
           H="h1"
@@ -54,8 +81,8 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         />
       </div>
 
-      <AdvisorsGrid lang={lang} advisorOrder={advisorOrder}/>
-        
+      <AdvisorsGrid lang={lang} advisorOrder={advisorOrder} />
+
       {/* Blur transition to footer */}
       <div className="absolute bottom-0 block h-20 w-full bg-gradient-to-b from-transparent to-[#000000]"></div>
     </div>
