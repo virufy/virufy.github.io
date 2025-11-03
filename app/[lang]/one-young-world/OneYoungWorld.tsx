@@ -2,7 +2,7 @@ import { type OywSection } from '@/app/i18n/types/oneYoungWorld';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
-import Link from 'next/link';
+
 import TestimonialSlider from './TestimonialSlider';
 
 type OywProps = {
@@ -11,11 +11,10 @@ type OywProps = {
 };
 
 const OneYoungWorld = ({
-  lang,
   oywSection: {
     virufyAndOyw: { subTitle, texts /*videoUrl, videoTitle*/ },
     whyOyw: { title: whyOywTitle, cards },
-    volunteerStories: { title: volunteerTitle, text, testimonials, buttonText },
+    volunteerStories: { title: volunteerTitle, text, testimonials },
   },
 }: OywProps) => {
   return (
