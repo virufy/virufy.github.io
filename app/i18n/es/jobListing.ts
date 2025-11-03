@@ -18,6 +18,15 @@ const jobListing: JobListing = {
     applyButtonText: 'Postularse a este Rol',
   },
   jobList: [
+     {
+      category: 'General',
+      positions: [
+        {
+          title: 'Solicitud de empleo general',
+          id: 26,
+        },
+      ],
+    },
     {
       category: 'Ingeniería',
       positions: [
@@ -154,15 +163,6 @@ const jobListing: JobListing = {
         {
           title: 'Redactor/a de Subvenciones',
           id: 27,
-        },
-      ],
-    },
-    {
-      category: 'General',
-      positions: [
-        {
-          title: 'Solicitud de empleo general',
-          id: 26,
         },
       ],
     },
