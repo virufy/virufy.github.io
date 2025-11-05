@@ -11,8 +11,23 @@ const people: People = {
       'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
     button: `Read Amil's Story`,
   },
+  sectionCategories: {
+    title: 'Browse expertise by category',
+    buttons: {
+      all: 'All',
+      ai: 'AI / Machine Learning',
+      health: 'Public Health / Epidemiology',
+      technology: 'Technology',
+      clinical: 'Clinical',
+      marketing: 'Marketing',
+      business: 'Business Strategy',
+      legal: 'Legal',
+      regulatory: 'Regulatory Affairs',
+      cyber: 'Cybersecurity',
+    },
+  },
   sectionAdvisors: {
-    title: 'Advisors',
+    title: 'Our Advisors',
     advisors: {
       kara: {
         img: './../images/advisors/kara-meister.webp',
@@ -144,16 +159,6 @@ const people: People = {
           'Asst. Professor of AI - Stanford University, Electrical Engineering',
         ],
         link: 'https://stanford.edu/~pilanci/',
-      },
-      tetsuji: {
-        img: './../images/advisors/tetsuji-madarame.webp',
-        name: 'Tetsuji Madarame',
-        role: 'Principal Fellow, Tech Planning, Japan Freight Railway',
-        texts: [
-          'Investment Advisory Board, theDOCK, Maritime and Logistics Tech VC',
-          'MBA - Stanford GSB',
-        ],
-        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       victor: {
         img: './../images/advisors/victor-wang.webp',
@@ -311,6 +316,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
+      ohmori: {
+        img: './../images/advisors/ohmori-takeshi.webp',
+        name: 'Takeshi Ohmori',
+        role: 'Japan Cybersecurity Advisor',
+        texts: [
+          'Former Senior Director, Security Consulting - Synopsys/Black Duck',
+          'Bachelor of Engineering, Biophysical Engineering - Osaka University',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
+      },
     },
     advisorOrder: [
       'adam',
@@ -338,13 +353,13 @@ const people: People = {
       'ronan',
       'shirin',
       'tamer',
-      'tetsuji',
       'thomas',
       'tsutomu',
       'victor',
       'zafar',
       'maurino',
       'amir',
+      'ohmori',
     ],
   },
 };

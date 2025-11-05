@@ -5,6 +5,7 @@ export type Supporters = {
   buttontext: string;
   supportersList: SupporterImg[];
   contactusform: ContactUs;
+  oursupporters: string;
 };
 
 interface ContactUs {

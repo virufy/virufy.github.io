@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/04770c6d-491f-47dd-bec7-3a6953d90f28/deploy-status)](https://app.netlify.com/projects/stagingvirufy/deploys)
+
 # Decoding hidden patterns in COVID-19 coughs with AI
 
 Virufy is a nonprofit research organization developing artificial intelligence (AI) technology to screen for COVID-19 from cough patterns, rapidly and at no cost through use of a smartphone. To learn more or get involved, visit our [website](https://gevuong.github.io/minimal-i18n-with-app-route).

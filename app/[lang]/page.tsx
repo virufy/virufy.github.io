@@ -97,7 +97,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </div>
 
                 {/* Disclaimers */}
-                <div className="flex flex-col items-start sm:ml-10 md:ml-0 md:mt-2 lg:mt-6">
+                <div className="flex flex-col items-start sm:ml-10 md:ml-0 md:mt-0 lg:mt-1">
                   <div className="w-full max-w-screen-lg">
                     {introSection.disclaimers.map((disclaimer, i) => (
                       <p

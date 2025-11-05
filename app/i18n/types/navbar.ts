@@ -28,6 +28,7 @@ export interface CoughCheckApp {
 export interface AboutUs {
   section: string;
   advisors: string;
+  ourFounder: string;
   ourSupporters: string;
   blog: string;
   oneYoungWorld: string;

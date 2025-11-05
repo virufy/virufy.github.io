@@ -11,6 +11,21 @@ const people: People = {
       'مرشح دكتوراه في الهندسة، جامعة فوكوي، اليابان. طالب سابق في برنامج الماجستير في إدارة الأعمال وماجستير الهندسة (علوم البيانات) في جامعة كاليفورنيا، بيركلي.',
     button: `اقرأ قصة أميل`,
   },
+  sectionCategories: {
+    title: 'تصفح الخبرات حسب الفئة',
+    buttons: {
+      all: 'الجميع',
+      ai: 'الذكاء الاصطناعي / التعلم الآلي',
+      health: 'الصحة العامة / علم الأوبئة',
+      technology: 'تكنولوجيا',
+      clinical: 'السريرية',
+      marketing: 'تسويق',
+      business: 'استراتيجية الأعمال',
+      legal: 'قانوني',
+      regulatory: 'الشؤون التنظيمية',
+      cyber: 'الأمن السيبراني',
+    },
+  },
   sectionAdvisors: {
     title: 'المستشارين',
     advisors: {
@@ -142,16 +157,6 @@ const people: People = {
           'أستاذ مساعد في الذكاء الاصطناعي - جامعة ستانفورد، الهندسة الكهربائية',
         ],
         link: 'https://stanford.edu/~pilanci/',
-      },
-      tetsuji: {
-        img: './../images/advisors/tetsuji-madarame.webp',
-        name: 'تتسوجي مادارامي',
-        role: 'زميل رئيسي، تخطيط تقني، السكك الحديدية الشحن اليابانية',
-        texts: [
-          'مجلس استشاري استثماري، theDOCK، VC تقنيات الشحن واللوجستيات',
-          'MBA - جامعة ستانفورد لإدارة الأعمال',
-        ],
-        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       victor: {
         img: './../images/advisors/victor-wang.webp',
@@ -298,7 +303,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: './../images/advisors/amir-khan.webp',
+        img: './../images/advisors/AmirKhan.webp',
         name: 'أمير خان',
         role: 'مستشار الجاذبية التنفيذية',
         texts: [
@@ -306,6 +311,16 @@ const people: People = {
           'معهد مودا بورجو، ميلانو',
         ],
         link: 'https://www.linkedin.com/in/the-amir-khan/',
+      },
+      ohmori: {
+        img: './../images/advisors/ohmori-takeshi.webp',
+        name: 'تاكيشي أوموري',
+        role: 'مستشار الأمن السيبراني في اليابان',
+        texts: [
+          'مدير أول سابق، استشارات الأمن - Synopsys/Black Duck',
+          'بكالوريوس في الهندسة الحيوية الفيزيائية - جامعة أوساكا',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
     },
     advisorOrder: [
@@ -334,7 +349,6 @@ const people: People = {
       'ronan',
       'shirin',
       'tamer',
-      'tetsuji',
       'thomas',
       'tsutomu',
       'victor',

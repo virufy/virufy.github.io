@@ -16,6 +16,7 @@ export const navbar: NavbarType = {
     section: 'معلومات عنا',
     advisors: 'المستشارين',
     ourSupporters: 'داعمونا',
+    ourFounder: 'مؤسسنا',
     blog: 'المدونة',
     oneYoungWorld: 'وان يونغ وورلد',
   },
@@ -33,7 +34,7 @@ export const navbar: NavbarType = {
     buttonText: 'انضم إلينا',
   },
   searchPlaceholder: 'يبحث...',
-  noResultsPlaceholder:'لم يتم العثور على نتائج' ,
+  noResultsPlaceholder: 'لم يتم العثور على نتائج',
 };
 
 export default navbar;

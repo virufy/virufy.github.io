@@ -11,6 +11,21 @@ const people: People = {
       'Candidato a MBA, Haas School of Business Candidato a Maestría en Ingeniería, Departamento de Ingeniería Eléctrica y Ciencias de la Computación',
     button: 'Lea la historia de Amil',
   },
+  sectionCategories: {
+    title: 'Explorar experiencia por categoría',
+    buttons: {
+      all: 'Todo',
+      ai: 'Inteligencia Artificial / Aprendizaje Automático',
+      health: 'Salud Pública / Epidemiología',
+      technology: 'Tecnología',
+      clinical: 'Clínico',
+      marketing: 'Marketing',
+      business: 'Estrategia Empresarial',
+      legal: 'Legal',
+      regulatory: 'Asuntos Regulatorios',
+      cyber: 'Ciberseguridad',
+    },
+  },
   sectionAdvisors: {
     title: 'Asesores',
     advisors: {
@@ -147,16 +162,6 @@ const people: People = {
           'Profesor Asistente de IA - Universidad de Stanford, Ingeniería Eléctrica',
         ],
         link: 'https://stanford.edu/~pilanci/',
-      },
-      tetsuji: {
-        img: './../images/advisors/tetsuji-madarame.webp',
-        name: 'Tetsuji Madarame',
-        role: 'Fellow Principal, Planificación Tecnológica, Japan Freight Railway',
-        texts: [
-          'Consejo Asesor de Inversiones, theDOCK, VC de Tecnología Marítima y Logística',
-          'MBA - Escuela de Negocios de la Universidad de Stanford',
-        ],
-        link: 'https://www.linkedin.com/in/tetsuji-madarame-6a337916b',
       },
       victor: {
         img: './../images/advisors/victor-wang.webp',
@@ -314,7 +319,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: './../images/advisors/amir-khan.webp',
+        img: './../images/advisors/AmirKhan.webp',
         name: 'Amir Khan',
         role: 'Asesor ejecutivo de Gravitas',
         texts: [
@@ -322,6 +327,16 @@ const people: People = {
           'Instituto de Moda Burgo, Milán',
         ],
         link: 'https://www.linkedin.com/in/the-amir-khan/',
+      },
+      ohmori: {
+        img: './../images/advisors/ohmori-takeshi.webp',
+        name: 'Takeshi Ohmori',
+        role: 'Asesor de Ciberseguridad en Japón',
+        texts: [
+          'Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck',
+          'Licenciatura en Ingeniería Biofísica - Universidad de Osaka',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
     },
     advisorOrder: [
@@ -350,13 +365,13 @@ const people: People = {
       'ronan',
       'shirin',
       'tamer',
-      'tetsuji',
       'thomas',
       'tsutomu',
       'victor',
       'zafar',
       'maurino',
       'amir',
+      'ohmori',
     ],
   },
 };

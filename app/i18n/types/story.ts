@@ -9,7 +9,7 @@ interface StorySection {
   texts: StorySectionText[][];
 }
 
-interface StorySectionText {
+export interface StorySectionText {
   type: string;
   text: string;
   url?: string;

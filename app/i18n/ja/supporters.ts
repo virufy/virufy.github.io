@@ -13,6 +13,7 @@ const supporters: Supporters = {
     textplaceholder: 'メッセージを入力する',
     submitButtonText: '送信する',
   },
+  oursupporters: '私たちのサポーター',
   supportersList: [
     {
       img: '../../logos_transparent/h4r.png',

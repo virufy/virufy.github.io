@@ -15,6 +15,7 @@ export const navbar: NavbarType = {
   aboutUs: {
     section: 'About Us',
     advisors: 'Advisors',
+    ourFounder: 'Our Founder',
     ourSupporters: 'Our Supporters',
     blog: 'Blog',
     oneYoungWorld: 'One Young World',
@@ -26,14 +27,14 @@ export const navbar: NavbarType = {
   },
   faq: 'FAQ',
   donate: {
-    buttonText: 'Donate',
-    optionsTitle: 'Donate Options',
+    buttonText: 'Support Us',
+    optionsTitle: 'Ways to Support Us',
   },
   joinUs: {
     buttonText: 'Join Us',
   },
-    searchPlaceholder: 'Search...',
-    noResultsPlaceholder: 'No Results Found',
+  searchPlaceholder: 'Search...',
+  noResultsPlaceholder: 'No Results Found',
 };
 
 export default navbar;

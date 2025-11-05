@@ -3,6 +3,7 @@ import { type StaticImageData } from 'next/image';
 export interface People {
   titleImage: string;
   sectionMeetOurFounder: sectionMeetOurFounder;
+  sectionCategories: sectionCategories;
   sectionAdvisors: sectionAdvisors;
 }
 
@@ -11,6 +12,11 @@ export interface sectionMeetOurFounder {
   titleAmil: string;
   textAmil: string;
   button: string;
+}
+
+export interface sectionCategories {
+  title: string;
+  buttons: Record<string, string>;
 }
 
 export interface sectionAdvisors {

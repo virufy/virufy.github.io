@@ -2,7 +2,7 @@ import { type OywSection } from '@/app/i18n/types/oneYoungWorld';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
-import Link from 'next/link';
+
 import TestimonialSlider from './TestimonialSlider';
 
 type OywProps = {
@@ -11,11 +11,10 @@ type OywProps = {
 };
 
 const OneYoungWorld = ({
-  lang,
   oywSection: {
     virufyAndOyw: { subTitle, texts /*videoUrl, videoTitle*/ },
     whyOyw: { title: whyOywTitle, cards },
-    volunteerStories: { title: volunteerTitle, text, testimonials, buttonText },
+    volunteerStories: { title: volunteerTitle, text, testimonials },
   },
 }: OywProps) => {
   return (
@@ -100,21 +99,6 @@ const OneYoungWorld = ({
             </div>
 
             <TestimonialSlider testimonials={testimonials} />
-
-            {/* Updated Button Style */}
-            <Link href={`/${lang}/join-us}`}>
-              <button
-                className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
-                style={{
-                  borderRadius: '50px',
-                  background:
-                    'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
-                  border: '2px solid #3fcf94',
-                }}
-              >
-                {buttonText}
-              </button>
-            </Link>
           </div>
         </section>
       </div>
