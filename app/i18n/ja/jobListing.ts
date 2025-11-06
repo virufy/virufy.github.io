@@ -18,6 +18,15 @@ const jobListing: JobListing = {
     applyButtonText: 'この役職に応募する',
   },
   jobList: [
+     {
+      category: '一般的な',
+      positions: [
+        {
+          title: '一般的な求人応募',
+          id: 26,
+        },
+      ],
+    },
     {
       category: 'エンジニアリング',
       positions: [
@@ -154,15 +163,6 @@ const jobListing: JobListing = {
         {
           title: '助成金ライター',
           id: 27,
-        },
-      ],
-    },
-    {
-      category: '一般的な',
-      positions: [
-        {
-          title: '一般的な求人応募',
-          id: 26,
         },
       ],
     },

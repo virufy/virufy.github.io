@@ -19,6 +19,15 @@ const jobListing: JobListing = {
   },
   jobList: [
     {
+      category: 'General',
+      positions: [
+        {
+          title: 'General Job Application',
+          id: 26,
+        },
+      ],
+    },
+    {
       category: 'Engineering',
       positions: [
         {
@@ -154,15 +163,6 @@ const jobListing: JobListing = {
         {
           title: 'Grant Writer',
           id: 27,
-        },
-      ],
-    },
-    {
-      category: 'General',
-      positions: [
-        {
-          title: 'General Job Application',
-          id: 26,
         },
       ],
     },
