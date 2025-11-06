@@ -19,7 +19,10 @@ export default function DonateModal({
     platform: 'PayPal' | 'GoFundMe',
     url: string
   ) => {
-    if (!window.gtag) return;
+    if (!window.gtag) {
+      window.open(url, '_blank');
+      return;
+    }
 
     // Event callback to open the link after firing conversion
     const callback = () => {
