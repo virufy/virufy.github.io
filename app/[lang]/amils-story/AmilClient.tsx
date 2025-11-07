@@ -39,6 +39,33 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
     <>
       <div className="relative mx-auto w-full items-center justify-center overflow-hidden bg-[#255292] md:pt-24">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-5 pt-20">
+          {/* left image */}
+          <div>
+           <img
+            src="/images/advisors/AmilImage.jpg"
+            alt="Amil"
+           className="rounded-2xl object-contain"
+            style={{ width: '95%', maxWidth: '350px', height: 'auto' }}
+           />
+         </div>
+         {/* text box */}
+          <div
+            className="rounded-xl bg-black/10 backdrop-blur-sm shadow-lg text-left"
+            style={{width: '80%', maxWidth: '450px', padding: '24px',}}
+            >
+            <h1 className="text-3xl md:text-4xl font-extrabold text-black">
+              Meet Our Founder
+            </h1>
+            <h2 className="mt-3 text-2xl md:text-3xl font-bold text-black">
+              Amil Khanzada
+            </h2>
+            <p className="mt-4 text-black/90 font-medium leading-relaxed">
+              Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA &amp;
+              Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.
+            </p>
+          </div>
+        </div>
         <div className="justify-items mx-auto flex h-[100%] w-auto w-full flex-col items-center">
           <div className="my-10 mt-[40px] h-[202px] w-[359.94px] md:h-[350px] md:w-[75%] lg:h-[618px] lg:w-[1102px]">
             <Video
