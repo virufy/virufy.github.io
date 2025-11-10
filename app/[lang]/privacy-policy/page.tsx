@@ -70,7 +70,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
             to the Connecticut Data Privacy Act, as amended, Nevada Consumer
             Health Data Privacy Law, or Washington My Health My Data Act, please
             see{' '}
-            <a className="text-blue-500 underline" href="#">
+            <a className="text-blue-500 underline" href="#content13">
               Annex A – Supplemental U.S. Consumer Health Data Privacy Notice.
             </a>
           </p>
@@ -299,7 +299,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               <p>
                 <i>
                   See{' '}
-                  <a className="text-blue-500 underline" href="#">
+                  <a className="text-blue-500 underline" href="#content8">
                     “Your Privacy Choices and Rights”
                   </a>{' '}
                   below to understand your choices regarding these Technologies.
@@ -412,7 +412,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                 <li>ensuring internal quality control and safety;</li>
                 <li>
                   authenticating and verifying individual identities, including
-                  requests to exercise your rights under this Privacy Notice;
+                  requests to exercise your rights under this Privacy Policy;
                 </li>
                 <li>
                   debugging to identify and repair errors with the Services;
@@ -436,7 +436,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               <p>
                 If you have any questions about our marketing practices, you may
                 contact us at any time as set forth in “
-                <a className="text-blue-500 underline" href="#">
+                <a className="text-blue-500 underline" href="#content12">
                   Contact Us
                 </a>
                 ” below.
@@ -466,7 +466,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               <p>
                 If you have questions about our automated decision making, you
                 may contact us as set forth in “
-                <a className="text-blue-500 underline" href="#">
+                <a className="text-blue-500 underline" href="#content12">
                   Contact Us
                 </a>
                 ” below.
@@ -624,7 +624,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               and rights. We will store your personal information associated
               with your participation in our study in an anonymized form which
               cannot identify you for the purposes mentioned in the “
-              <a className="text-blue-500 underline" href="#">
+              <a className="text-blue-500 underline" href="#content3">
                 How We Use Your Personal Information
               </a>
               ” section above.{' '}
@@ -665,7 +665,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               Commission-approved{' '}
               <a
                 className="text-blue-500 underline"
-                href="https://commission.europa.eu/system/files/2021-06/1_en_annexe_acte_autonome_cp_part1_v5_0.pdf"
+                href="https://eur-lex.europa.eu/eli/dec_impl/2021/914"
               >
                 Standard Contractual Clauses
               </a>
@@ -709,7 +709,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               <thead>
                 <tr>
                   <th className="border border-gray-300 p-2">
-                    <u>Privacy Notice Section</u>
+                    <u>Privacy Policy Section</u>
                   </th>
                   <th className="border border-gray-300 p-2">
                     <u>Lawful Basis:</u> <br /> Performance of a Contract (i.e.,
@@ -874,7 +874,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               contact details of the competent authorities in the following
               link:{' '}
               <a className="text-blue-500 underline" href="https://virufy.org/">
-                https://www.edpb.europa.eu/about-edpb/about-edpb/members_en.
+                https://www.edpb.europa.eu/about-edpb/about-edpb/members_en
               </a>
             </p>
 
@@ -882,7 +882,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               For the United Kingdom, you may lodge a complaint with the
               Information Commissioner’s Office (ICO) by clicking here:{' '}
               <a className="text-blue-500 underline" href="https://virufy.org/">
-                https://ico.org.uk/make-a-complaint/.
+                https://ico.org.uk/make-a-complaint/
               </a>
             </p>
           </section>
@@ -905,7 +905,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                   functionality found at the bottom of the email to opt out of
                   receiving future emails. Note that you will not be able to opt
                   out of certain communications (e.g., communications regarding
-                  the Services or updates to this Privacy Notice).
+                  the Services or updates to this Privacy Policy).
                 </li>
 
                 <li className="my-2">
@@ -914,7 +914,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                   receiving future text/SMS messages from us by following the
                   instructions in the text/SMS message you have received from us
                   or by otherwise contacting us as set forth in “
-                  <a className="text-blue-500 underline" href="#">
+                  <a className="text-blue-500 underline" href="#content12">
                     Contact Us
                   </a>
                   ” below.
@@ -931,7 +931,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                   your account, please use the standard deletion functionality
                   available via the Services or contact us using the information
                   set forth in “
-                  <a className="text-blue-500 underline" href="#">
+                  <a className="text-blue-500 underline" href="#content12">
                     Contact Us
                   </a>
                   ” below.
@@ -1096,7 +1096,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                 will result in the termination of your registration and
                 participation in the research. If you need any assistance to
                 exercise your rights, you may contact us as described in the “
-                <a className="text-blue-500 underline" href="#">
+                <a className="text-blue-500 underline" href="#content12">
                   Contact Us
                 </a>
                 ” section below.{' '}
@@ -1144,7 +1144,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               If you are a parent or guardian and believe your child has
               uploaded personal information to the Services in violation of
               applicable law, you may contact us as described in the “
-              <a className="text-blue-500 underline" href="#">
+              <a className="text-blue-500 underline" href="#content12">
                 Contact Us
               </a>
               ” section below.
@@ -1200,7 +1200,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                 className="text-blue-500 underline"
                 href="https://virufy.org/privacy_policy"
               >
-                Privacy Notice
+                Privacy Policy
               </a>
               .
             </p>
@@ -1246,7 +1246,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                 className="text-blue-500 underline"
                 href="https://virufy.org/privacy_policy"
               >
-                Privacy Notice
+                Privacy Policy
               </a>{' '}
               may also be considered consumer health data.
             </p>
@@ -1293,7 +1293,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                 className="text-blue-500 underline"
                 href="https://virufy.org/privacy_policy"
               >
-                Privacy Notice
+                Privacy Policy
               </a>{' '}
               and below.
             </p>
@@ -1302,13 +1302,16 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
             </h1>
             <p className="my-2">
               We collect and use consumer health data for the purposes and in
-              the manner described in the “How We Use Your Personal Information”
-              section of our{' '}
+              the manner described in the “
+              <a className="text-blue-500 underline" href="#content3">
+                How We Use Your Personal Information
+              </a>
+              ” section of our{' '}
               <a
                 className="text-blue-500 underline"
                 href="https://virufy.org/privacy_policy"
               >
-                Privacy Notice
+                Privacy Policy
               </a>
               .{' '}
             </p>
@@ -1332,7 +1335,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
             <p className="my-2">
               We may share each of the categories of consumer health data
               described above for the purposes described above and in the “How
-              We Use Your Personal Information” section of our Privacy Notice.
+              We Use Your Personal Information” section of our Privacy Policy.
             </p>
             <p className="my-2">
               We only share or disclose your consumer health data as needed to
@@ -1459,7 +1462,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
             <p className="my-2">
               You may submit a request pursuant to any of these rights by
               contacting us as described in the “
-              <a className="text-blue-500 underline" href="#">
+              <a className="text-blue-500 underline" href="#content12">
                 Contact Us
               </a>
               ” section.
@@ -1476,7 +1479,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               such as if we are legally prevented from doing so. If we deny your
               request, you have the right to appeal that denial by contacting us
               as described in the “
-              <a className="text-blue-500 underline" href="#">
+              <a className="text-blue-500 underline" href="#content12">
                 Contact Us
               </a>
               ” section. We will process and respond to your appeal within the
@@ -1511,7 +1514,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
           </section>
 
           <section aria-labelledby="def-personal-info">
-            <h1 id="content13" className="text-center font-bold">
+            <h1 id="content14" className="text-center font-bold">
               ANNEX B<br></br>CONSUMER HEALTH DATA AUTHORIZATION
             </h1>
             <p className="my-2">
@@ -1521,7 +1524,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                 className="text-blue-500 underline"
                 href="https://virufy.org/privacy_policy"
               >
-                Privacy Notice
+                Privacy Policy
               </a>
               ,{' '}
               <a
