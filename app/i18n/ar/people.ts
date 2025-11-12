@@ -318,7 +318,18 @@ const people: People = {
         role: 'مستشار الأمن السيبراني في اليابان',
         texts: [
           'مدير أول سابق، استشارات الأمن - Synopsys/Black Duck',
-          'بكالوريوس في الهندسة الحيوية الفيزيائية - جامعة أوساكا',
+          'محترف معتمد في أمن نظم المعلومات',
+          'مدير معتمد في أمن المعلومات',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
+      },
+      tomohiro: {
+        img: './../images/advisors/Tomohiro-Kimura.webp',
+        name: 'توموهيرو كيمورا',
+        role: 'مستشار تنفيذي للأعمال',
+        texts: [
+          'نائب الرئيس، RIPPA / عضو مجلس الإدارة، جامعة موساشينو',
+          'بكالوريوس في هندسة الكم - جامعة طوكيو',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
