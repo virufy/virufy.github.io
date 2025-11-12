@@ -344,7 +344,7 @@ const people: People = {
         name: 'Tomohiro Kimura',
         role: 'Asesor Ejecutivo de Negocios',
         texts: [
-          'Vicepresidente, RIPPA / Miembro de la Junta, Universidad de Musashino',
+          'Vicepresidente, RIIPA / Miembro de la Junta, Universidad de Musashino',
           'Licenciatura en Ingeniería Cuántica - Universidad de Tokio',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',

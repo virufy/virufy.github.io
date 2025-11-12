@@ -332,7 +332,7 @@ const people: People = {
         name: 'Tomohiro Kimura',
         role: 'Executive Business Advisor',
         texts: [
-          'Vice Chairman, RIPPA / Board Member, Musashino University',
+          'Vice Chairman, RIIPA / Board Member, Musashino University',
           'Bachelor of Quantum Engineering - University of Tokyo',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
