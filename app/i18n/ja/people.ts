@@ -318,7 +318,18 @@ const people: People = {
         role: '日本サイバーセキュリティアドバイザー',
         texts: [
           '元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ',
-          '大阪大学 工学部 生物物理工学科 学士',
+          '公認情報システムセキュリティプロフェッショナル',
+          '公認情報セキュリティマネージャー',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
+      },
+      tomohiro: {
+        img: './../images/advisors/Tomohiro-Kimura.webp',
+        name: '木村共宏',
+        role: 'エグゼクティブビジネスアドバイザー',
+        texts: [
+          'インド太平洋問題研究所 副理事長 / 武蔵野大学 理事',
+          '東京大学 工学部 システム量子工学科 学士',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },

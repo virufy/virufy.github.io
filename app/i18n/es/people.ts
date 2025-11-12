@@ -334,7 +334,18 @@ const people: People = {
         role: 'Asesor de Ciberseguridad en Japón',
         texts: [
           'Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck',
-          'Licenciatura en Ingeniería Biofísica - Universidad de Osaka',
+          'Profesional Certificado en Seguridad de Sistemas de Información',
+          'Gerente Certificado en Seguridad de la Información',
+        ],
+        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
+      },
+      tomohiro: {
+        img: './../images/advisors/Tomohiro-Kimura.webp',
+        name: 'Tomohiro Kimura',
+        role: 'Asesor Ejecutivo de Negocios',
+        texts: [
+          'Vicepresidente, RIIPA / Miembro del Consejo, Universidad de Musashino',
+          'Licenciatura en Ingeniería Cuántica - Universidad de Tokio',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
