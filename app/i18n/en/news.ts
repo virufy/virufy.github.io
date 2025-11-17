@@ -6,6 +6,13 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'GITEX Global 2025 - Dubai',
+      date: 'October 2025',
+      subText: '',
+      url: '/en/news/gitex-global-2025-dubai',
+      linkText: 'Read More',
+    },
+    {
       title: 'Virufy Showcases AI Respiratory screening Success at Abu Dhabi',
       date: 'June 2025',
       subText: '',
