@@ -6,11 +6,18 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'جيتكس العالمي 2025 – دبي',
+      date: 'أكتوبر 2025',
+      subText: '',
+      url: '/ar/news/gitex-global-2025-dubai',
+      linkText: 'اقرأ المزيد',
+    },
+    {
       title:
         'فيروفي تستعرض نجاحها في فحص الجهاز التنفسي باستخدام الذكاء الاصطناعي في أبوظبي',
       date: 'يونيو 2025',
       subText: '',
-      url: '/en/news/uae-adghw-apr-2025',
+      url: '/ar/news/uae-adghw-apr-2025',
       linkText: 'اقرأ المزيد',
     },
     {

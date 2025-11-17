@@ -6,10 +6,17 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'ジテックス・グローバル 2025（ドバイ）',
+      date: '2025年10月',
+      subText: '',
+      url: '/ja/news/gitex-global-2025-dubai',
+      linkText: '続きを読む',
+    },
+    {
       title: 'Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示',
       date: '2025年6月',
       subText: '',
-      url: '/en/news/uae-adghw-apr-2025',
+      url: '/ja/news/uae-adghw-apr-2025',
       linkText: '続きを読む',
     },
     {

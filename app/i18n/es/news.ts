@@ -6,11 +6,18 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'GITEX Global 2025 - Dubái',
+      date: 'Octubre de 2025',
+      subText: '',
+      url: '/es/news/gitex-global-2025-dubai',
+      linkText: 'Leer más',
+    },
+    {
       title:
         'Virufy demuestra el éxito de la detección respiratoria con IA en Abu Dabi',
       date: 'junio de 2025',
       subText: '',
-      url: '/en/news/uae-adghw-apr-2025',
+      url: '/es/news/uae-adghw-apr-2025',
       linkText: 'Leer más',
     },
     {
