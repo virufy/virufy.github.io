@@ -279,30 +279,30 @@ const faq: FAQ = {
         },
       ],
       Finances: [
-        {
-          question:
-            'Do I need to make any financial contribution to donate my cough?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'Virufy is currently only collecting coughs from certain countries, which can be found in our app: ',
-                },
-                {
-                  type: 'link',
-                  text: 'https://virufy.org/study',
-                  href: 'https://virufy.org/study',
-                },
-                {
-                  type: 'text',
-                  text: '.',
-                },
-              ],
-            },
-          ],
-        },
+        // {
+        //   question:
+        //     'Do I need to make any financial contribution to donate my cough?',
+        //   answer: [
+        //     {
+        //       type: 'paragraph',
+        //       content: [
+        //         {
+        //           type: 'text',
+        //           text: 'Virufy is currently only collecting coughs from certain countries, which can be found in our app: ',
+        //         },
+        //         {
+        //           type: 'link',
+        //           text: 'https://virufy.org/study',
+        //           href: 'https://virufy.org/study',
+        //         },
+        //         {
+        //           type: 'text',
+        //           text: '.',
+        //         },
+        //       ],
+        //     },
+        //   ],
+        // },
         {
           question: 'How many donors have you had in total?',
           answer: [
@@ -325,7 +325,7 @@ const faq: FAQ = {
               content: [
                 {
                   type: 'text',
-                  text: 'We are currently completely volunteer run. Our main budget requirements are for marketing and clinical studies for cough data collection. We would also need money for computation later on after scaling to a large user base.',
+                  text: 'We are currently completely volunteer run.',
                 },
               ],
             },
@@ -348,44 +348,44 @@ const faq: FAQ = {
         },
       ],
       Privacy: [
-        {
-          question: 'How will Virufy securely store my data?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at ',
-                },
-                {
-                  type: 'link',
-                  text: 'https://aws.amazon.com/en/privacy',
-                  href: 'https://aws.amazon.com/en/privacy',
-                },
-                {
-                  type: 'text',
-                  text: '. If you would like to learn more, please refer to the Virufy privacy policy.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question:
-            'Is my privacy ever at risk of being exposed when I donate my cough to Virufy?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'Our strong legal and information security teams have developed a DPIA to address potential risks and threats for your privacy. We will only store your personal data in an anonymized form (where you cannot be identified in any way) and in a secure database with restricted access. If you would like to learn more please refer to the Virufy Privacy Policy.',
-                },
-              ],
-            },
-          ],
-        },
+        // {
+        //   question: 'How will Virufy securely store my data?',
+        //   answer: [
+        //     {
+        //       type: 'paragraph',
+        //       content: [
+        //         {
+        //           type: 'text',
+        //           text: 'We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at ',
+        //         },
+        //         {
+        //           type: 'link',
+        //           text: 'https://aws.amazon.com/en/privacy',
+        //           href: 'https://aws.amazon.com/en/privacy',
+        //         },
+        //         {
+        //           type: 'text',
+        //           text: '. If you would like to learn more, please refer to the Virufy privacy policy.',
+        //         },
+        //       ],
+        //     },
+        //   ],
+        // },
+        // {
+        //   question:
+        //     'Is my privacy ever at risk of being exposed when I donate my cough to Virufy?',
+        //   answer: [
+        //     {
+        //       type: 'paragraph',
+        //       content: [
+        //         {
+        //           type: 'text',
+        //           text: 'Our strong legal and information security teams have developed a DPIA to address potential risks and threats for your privacy. We will only store your personal data in an anonymized form (where you cannot be identified in any way) and in a secure database with restricted access. If you would like to learn more please refer to the Virufy Privacy Policy.',
+        //         },
+        //       ],
+        //     },
+        //   ],
+        // },
         {
           question: 'Does Virufy have a privacy policy and cookie policy?',
           answer: [
@@ -394,7 +394,7 @@ const faq: FAQ = {
               content: [
                 {
                   type: 'text',
-                  text: 'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, participation in our cough donation study, contacting us, and volunteer applications. Refer to the footer for a detailed Privacy Policy and Cookie Policy.',
+                  text: 'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, contacting us, and volunteer applications. Refer to the footer for a detailed Privacy Policy and Cookie Policy.',
                 },
               ],
             },
@@ -408,7 +408,7 @@ const faq: FAQ = {
               content: [
                 {
                   type: 'text',
-                  text: 'If you opt-in to share your contact information (e.g., email and phone number) with us, we will not distribute any of this personal identifiable information to any third party. However, we may share your anonymized information, such as your cough sounds, with third parties in order to accelerate global research efforts to stop the COVID-19 pandemic and other future spreads of disease. More details can be found in our Privacy Policy and the data collection study Consent Form.',
+                  text: 'If you opt-in to share your contact information (e.g., email and phone number) with us, we will not distribute any of this personal identifiable information to any third party. More details can be found in our Privacy Policy.',
                 },
               ],
             },

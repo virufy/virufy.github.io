@@ -28,7 +28,7 @@ const home: HomeType = {
         },
       ],
     ],
-    buttonText: '咳の音を送信する',
+    buttonText: 'デモをお試しください',
     disclaimers: [
       '*ウェブブラウザとマイクを搭載したデバイス（iPhone、Android、パソコン、iPadなど）',
       '*現在、アプリは開発中です。データ収集のため、データ提供のご協力お願いします。',

@@ -32,7 +32,7 @@ const home: HomeType = {
         },
       ],
     ],
-    buttonText: 'Comparte tu tos',
+    buttonText: 'Pruebe nuestra demostración',
     disclaimers: [
       '*Cualquier dispositivo con un navegador web y micrófono (por ejemplo, iPhone, Android, laptop, iPad).',
       '*La aplicación aún está en desarrollo, apóyanos contribuyendo con tus sonidos de tos en nuestra aplicación de recolección de datos.',
