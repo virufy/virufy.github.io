@@ -156,26 +156,19 @@
   {
     "id": "es-faq-1",
     "lang": "es",
-    "title": "¿Necesito hacer alguna contribución financiera para donar mi tos?",
-    "content": "Virufy actualmente solo está recolectando toses de ciertos países, los cuales se pueden encontrar en nuestra app:  https://virufy.org/study .",
-    "url": "/es/ai"
-  },
-  {
-    "id": "es-faq-2",
-    "lang": "es",
     "title": "¿Cuántos donantes han tenido en total?",
     "content": "Tenemos más de 5,000 grabaciones de tos de más de 10 países, principalmente en Sudamérica y el sur de Asia. Algunas de estas son clínicas y otras han sido aportadas directamente por individuos a través de nuestra app.",
     "url": "/es/ai"
   },
   {
-    "id": "es-faq-3",
+    "id": "es-faq-2",
     "lang": "es",
     "title": "¿Cuáles son los gastos operativos de la organización?",
     "content": "Actualmente funcionamos completamente con voluntarios. Nuestras principales necesidades presupuestarias son para marketing y estudios clínicos para la recopilación de datos de tos. También necesitaríamos fondos para computación una vez que escalemos a una gran base de usuarios.",
     "url": "/es/ai"
   },
   {
-    "id": "es-faq-4",
+    "id": "es-faq-3",
     "lang": "es",
     "title": "¿El equipo recibe financiamiento? Si es así, ¿de dónde y cuánto? ¿En qué se utiliza?",
     "content": "Nos asociamos con varias universidades para solicitar subvenciones de I+D aprovechando nuestro estatus 501(c)(3).",
@@ -184,29 +177,8 @@
   {
     "id": "es-faq-1",
     "lang": "es",
-    "title": "¿Cómo almacenará Virufy mis datos de forma segura?",
-    "content": "Usamos Amazon Web Services (AWS) para la recopilación de datos de estudios de investigación. AWS almacena los datos en una aplicación segura con acceso y controles restringidos. Tus datos se almacenarán en AWS hasta que los descarguemos. Los almacenaremos en una base de datos con acceso restringido. Si deseas más información sobre cómo AWS almacena tus datos, por favor visita sus respectivas políticas de privacidad en  https://aws.amazon.com/en/privacy . Si deseas saber más, consulta la política de privacidad de Virufy.",
-    "url": "/es/ai"
-  },
-  {
-    "id": "es-faq-2",
-    "lang": "es",
-    "title": "¿Está mi privacidad en riesgo cuando dono mi tos a Virufy?",
-    "content": "Nuestros sólidos equipos legales y de seguridad de la información han desarrollado una DPIA para abordar posibles riesgos y amenazas a tu privacidad. Solo almacenaremos tus datos personales en forma anonimizada (donde no se te pueda identificar de ninguna manera) y en una base de datos segura con acceso restringido. Si deseas más información, consulta la Política de Privacidad de Virufy.",
-    "url": "/es/ai"
-  },
-  {
-    "id": "es-faq-3",
-    "lang": "es",
     "title": "¿Virufy tiene una política de privacidad y de cookies?",
     "content": "Virufy toma en serio la privacidad y protección de tu información personal. Nuestro equipo legal ha preparado una Política de Privacidad y una Política de Cookies detalladas para proteger la información personal que compartes con nosotros a través del uso de nuestro sitio web, la participación en nuestro estudio de donación de tos, el contacto con nosotros y las solicitudes de voluntariado. Consulta el pie de página para acceder a la Política de Privacidad y la Política de Cookies detalladas.",
-    "url": "/es/ai"
-  },
-  {
-    "id": "es-faq-4",
-    "lang": "es",
-    "title": "¿Se compartirán mis datos con terceros?",
-    "content": "Si optas por compartir tu información de contacto (por ejemplo, correo electrónico y número de teléfono) con nosotros, no distribuiremos ninguno de estos datos personales identificables a ningún tercero. Sin embargo, podemos compartir tu información anonimizada, como los sonidos de tu tos, con terceros para acelerar los esfuerzos de investigación global para detener la pandemia de COVID-19 y otras futuras propagaciones de enfermedades. Puedes encontrar más detalles en nuestra Política de Privacidad y el Formulario de Consentimiento del estudio de recopilación de datos.",
     "url": "/es/ai"
   },
   {
