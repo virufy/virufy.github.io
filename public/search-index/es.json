@@ -843,95 +843,109 @@
     "id": "es-advisors-32",
     "lang": "es",
     "title": "Takeshi Ohmori",
-    "content": "Asesor de Ciberseguridad en Japón (Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck | Licenciatura en Ingeniería Biofísica - Universidad de Osaka)",
+    "content": "Asesor de Ciberseguridad en Japón (Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck | Profesional Certificado en Seguridad de Sistemas de Información | Gerente Certificado en Seguridad de la Información)",
+    "url": "/es/advisors"
+  },
+  {
+    "id": "es-advisors-33",
+    "lang": "es",
+    "title": "Tomohiro Kimura",
+    "content": "Asesor Ejecutivo de Negocios (Vicepresidente, RIIPA / Miembro del Consejo, Universidad de Musashino | Licenciatura en Ingeniería Cuántica - Universidad de Tokio)",
     "url": "/es/advisors"
   },
   {
     "id": "es-news-1",
+    "lang": "es",
+    "title": "GITEX Global 2025 - Dubái",
+    "content": "Octubre de 2025",
+    "url": "/es/news"
+  },
+  {
+    "id": "es-news-2",
     "lang": "es",
     "title": "Virufy demuestra el éxito de la detección respiratoria con IA en Abu Dabi",
     "content": "junio de 2025",
     "url": "/es/news"
   },
   {
-    "id": "es-news-2",
+    "id": "es-news-3",
     "lang": "es",
     "title": "Virufy presentará tecnología innovadora de detección de COVID-19 en Prototypes for Humanity 2024 en Dubái",
     "content": "Noviembre 2024",
     "url": "/es/news"
   },
   {
-    "id": "es-news-3",
+    "id": "es-news-4",
     "lang": "es",
     "title": "Virufy lanza su app beta en Colombia, brindando detección de COVID-19 en casa a 4,500 usuarios",
     "content": "Febrero 2023",
     "url": "/es/news"
   },
   {
-    "id": "es-news-4",
+    "id": "es-news-5",
     "lang": "es",
     "title": "BARDA apoya el desarrollo de aplicaciones digitales basadas en IA/ML para la detección de enfermedades infecciosas visuales y auditivas",
     "content": "Contramedidas Médicas, Estados Unidos",
     "url": "/es/news"
   },
   {
-    "id": "es-news-5",
+    "id": "es-news-6",
     "lang": "es",
     "title": "Esta app busca diagnosticar Covid-19 con sólo toser frente al teléfono",
     "content": "Forbes, México",
     "url": "/es/news"
   },
   {
-    "id": "es-news-6",
+    "id": "es-news-7",
     "lang": "es",
     "title": "COVID-19: Aplicativo Virufy puede diagnosticar el virus mediante el análisis de la tos",
     "content": "MSN",
     "url": "/es/news"
   },
   {
-    "id": "es-news-7",
+    "id": "es-news-8",
     "lang": "es",
     "title": "VIRUFY: plataforma que permite detectar si estamos contagiados con COVID-19",
     "content": "Expreso, Lima, Perú",
     "url": "/es/news"
   },
   {
-    "id": "es-news-8",
+    "id": "es-news-9",
     "lang": "es",
     "title": "Embajador de One Young World Japón combate el COVID-19 utilizando IA",
     "content": "One Young World, Tokio, Japón",
     "url": "/es/news"
   },
   {
-    "id": "es-news-9",
+    "id": "es-news-10",
     "lang": "es",
     "title": "Embajadores de América del Norte en la primera línea de la respuesta al COVID-19",
     "content": "One Young World",
     "url": "/es/news"
   },
   {
-    "id": "es-news-10",
+    "id": "es-news-11",
     "lang": "es",
     "title": "Embajadores del Mes de Julio",
     "content": "One Young World",
     "url": "/es/news"
   },
   {
-    "id": "es-news-11",
+    "id": "es-news-12",
     "lang": "es",
     "title": "Miles asisten a los eventos digitales globales de OYW en julio: Un resumen de lo que te perdiste",
     "content": "One Young World",
     "url": "/es/news"
   },
   {
-    "id": "es-news-12",
+    "id": "es-news-13",
     "lang": "es",
     "title": "Caucus de One Young World Tokio 2020",
     "content": "One Young World",
     "url": "/es/news"
   },
   {
-    "id": "es-news-13",
+    "id": "es-news-14",
     "lang": "es",
     "title": "Presentación de Virufy en One Young World Tokio 2020 Caucus",
     "content": "One Young World, Tokio, Japón",

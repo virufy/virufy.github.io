@@ -25,6 +25,7 @@ const redirects = [
   {from: 'virumap-slides-jp', to: 'https://docs.google.com/presentation/d/1GqNirFzOrWsLoLaH5hSe8YVXTMMrWZ1gW5d56jICs30/edit?usp=sharing'},
   { from: 'join-jp', to: 'https://forms.gle/nxGbL1pd1R8Q27qe7' },
   { from: 'apply', to: 'https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform' },
+  {from: 'oyw', to: 'en/one-young-world'},
   // add more here
 ];
 
