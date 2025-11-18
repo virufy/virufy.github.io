@@ -156,26 +156,19 @@
   {
     "id": "en-faq-1",
     "lang": "en",
-    "title": "Do I need to make any financial contribution to donate my cough?",
-    "content": "Virufy is currently only collecting coughs from certain countries, which can be found in our app:  https://virufy.org/study .",
-    "url": "/en/ai"
-  },
-  {
-    "id": "en-faq-2",
-    "lang": "en",
     "title": "How many donors have you had in total?",
     "content": "We have more than 5,000 cough recordings from over 10 countries, mostly in South America and South Asia. Some of these are clinical, and others are contributed directly by individuals in our app.",
     "url": "/en/ai"
   },
   {
-    "id": "en-faq-3",
+    "id": "en-faq-2",
     "lang": "en",
     "title": "What are the operational expenses for the organization?",
-    "content": "We are currently completely volunteer run. Our main budget requirements are for marketing and clinical studies for cough data collection. We would also need money for computation later on after scaling to a large user base.",
+    "content": "We are currently completely volunteer run.",
     "url": "/en/ai"
   },
   {
-    "id": "en-faq-4",
+    "id": "en-faq-3",
     "lang": "en",
     "title": "Does the team get funding? If so, where and how much? What is it used on?",
     "content": "We partner with several universities to apply for R&D grants leveraging our 501(c)(3) status.",
@@ -184,29 +177,15 @@
   {
     "id": "en-faq-1",
     "lang": "en",
-    "title": "How will Virufy securely store my data?",
-    "content": "We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at  https://aws.amazon.com/en/privacy . If you would like to learn more, please refer to the Virufy privacy policy.",
+    "title": "Does Virufy have a privacy policy and cookie policy?",
+    "content": "Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, contacting us, and volunteer applications. Refer to the footer for a detailed Privacy Policy and Cookie Policy.",
     "url": "/en/ai"
   },
   {
     "id": "en-faq-2",
     "lang": "en",
-    "title": "Is my privacy ever at risk of being exposed when I donate my cough to Virufy?",
-    "content": "Our strong legal and information security teams have developed a DPIA to address potential risks and threats for your privacy. We will only store your personal data in an anonymized form (where you cannot be identified in any way) and in a secure database with restricted access. If you would like to learn more please refer to the Virufy Privacy Policy.",
-    "url": "/en/ai"
-  },
-  {
-    "id": "en-faq-3",
-    "lang": "en",
-    "title": "Does Virufy have a privacy policy and cookie policy?",
-    "content": "Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website, participation in our cough donation study, contacting us, and volunteer applications. Refer to the footer for a detailed Privacy Policy and Cookie Policy.",
-    "url": "/en/ai"
-  },
-  {
-    "id": "en-faq-4",
-    "lang": "en",
     "title": "Will my data be shared with third parties?",
-    "content": "If you opt-in to share your contact information (e.g., email and phone number) with us, we will not distribute any of this personal identifiable information to any third party. However, we may share your anonymized information, such as your cough sounds, with third parties in order to accelerate global research efforts to stop the COVID-19 pandemic and other future spreads of disease. More details can be found in our Privacy Policy and the data collection study Consent Form.",
+    "content": "If you opt-in to share your contact information (e.g., email and phone number) with us, we will not distribute any of this personal identifiable information to any third party. More details can be found in our Privacy Policy.",
     "url": "/en/ai"
   },
   {
@@ -843,95 +822,109 @@
     "id": "en-advisors-32",
     "lang": "en",
     "title": "Takeshi Ohmori",
-    "content": "Japan Cybersecurity Advisor (Former Senior Director, Security Consulting - Synopsys/Black Duck | Bachelor of Engineering, Biophysical Engineering - Osaka University)",
+    "content": "Japan Cybersecurity Advisor (Former Senior Director, Security Consulting - Synopsys/Black Duck | Certified Information Systems Security Professional | Certified Information Security Manager)",
+    "url": "/en/advisors"
+  },
+  {
+    "id": "en-advisors-33",
+    "lang": "en",
+    "title": "Tomohiro Kimura",
+    "content": "Executive Business Advisor (Vice Chairman, RIIPA / Board Member, Musashino University | Bachelor of Quantum Engineering - University of Tokyo)",
     "url": "/en/advisors"
   },
   {
     "id": "en-news-1",
+    "lang": "en",
+    "title": "GITEX Global 2025 - Dubai",
+    "content": "October 2025",
+    "url": "/en/news"
+  },
+  {
+    "id": "en-news-2",
     "lang": "en",
     "title": "Virufy Showcases AI Respiratory screening Success at Abu Dhabi",
     "content": "June 2025",
     "url": "/en/news"
   },
   {
-    "id": "en-news-2",
+    "id": "en-news-3",
     "lang": "en",
     "title": "Virufy to Showcase Innovative COVID-19 Screening Technology at Prototypes for Humanity 2024 in Dubai",
     "content": "November 2024",
     "url": "/en/news"
   },
   {
-    "id": "en-news-3",
+    "id": "en-news-4",
     "lang": "en",
     "title": "Virufy Beta App Launched in Colombia, Providing At-Home COVID-19 Detection to 4,500 Users",
     "content": "February 2023",
     "url": "/en/news"
   },
   {
-    "id": "en-news-4",
+    "id": "en-news-5",
     "lang": "en",
     "title": "BARDA supports development of novel AI/ML-based digital apps for visual and auditory symptomatic infectious disease detection",
     "content": "Medical Countermeasures, United States",
     "url": "/en/news"
   },
   {
-    "id": "en-news-5",
+    "id": "en-news-6",
     "lang": "en",
     "title": "Esta app busca diagnosticar Covid-19 con sólo toser frente al teléfono",
     "content": "Forbes, Mexico",
     "url": "/en/news"
   },
   {
-    "id": "en-news-6",
+    "id": "en-news-7",
     "lang": "en",
     "title": "COVID-19: Aplicativo Virufy puede diagnosticar el virus mediante el análisis de la tos",
     "content": "MSN",
     "url": "/en/news"
   },
   {
-    "id": "en-news-7",
+    "id": "en-news-8",
     "lang": "en",
     "title": "VIRUFY: plataforma que permite detectar si estamos contagiados con COVID-19",
     "content": "Expreso, Lima, Peru",
     "url": "/en/news"
   },
   {
-    "id": "en-news-8",
+    "id": "en-news-9",
     "lang": "en",
     "title": "One Young World Japan Ambassador Targets COVID-19 Using A.I.",
     "content": "One Young World, Tokyo, Japan",
     "url": "/en/news"
   },
   {
-    "id": "en-news-9",
+    "id": "en-news-10",
     "lang": "en",
     "title": "North American Ambassadors on the Frontlines of the COVID-19 Response",
     "content": "One Young World",
     "url": "/en/news"
   },
   {
-    "id": "en-news-10",
+    "id": "en-news-11",
     "lang": "en",
     "title": "Ambassadors of the Month July",
     "content": "One Young World",
     "url": "/en/news"
   },
   {
-    "id": "en-news-11",
+    "id": "en-news-12",
     "lang": "en",
     "title": "Thousands attend OYW's global digital events in July: A recap of what you've missed",
     "content": "One Young World",
     "url": "/en/news"
   },
   {
-    "id": "en-news-12",
+    "id": "en-news-13",
     "lang": "en",
     "title": "One Young World Tokyo 2020 Caucus",
     "content": "One Young World",
     "url": "/en/news"
   },
   {
-    "id": "en-news-13",
+    "id": "en-news-14",
     "lang": "en",
     "title": "Virufy Presentation to One Young World Tokyo 2020 Cacus",
     "content": "One Young World, Tokyo, Japan",

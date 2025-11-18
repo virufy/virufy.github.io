@@ -129,7 +129,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </p>
                 {/* Share your cough button */}
                 <div className="mt-4 flex w-full justify-center px-0 md:mt-2">
-                  <Link href={`/study`}>
+                  <Link href={`/demo`}>
                     <button
                       className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
                       style={{
