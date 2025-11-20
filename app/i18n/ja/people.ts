@@ -331,7 +331,7 @@ const people: People = {
           'インド太平洋問題研究所 副理事長 / 武蔵野大学 理事',
           '東京大学 工学部 システム量子工学科 学士',
         ],
-        link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
+        link: 'https://www.linkedin.com/in/tomohiro-%E5%85%B1%E5%AE%8F-kimura-%E6%9C%A8%E6%9D%91-7253ab39/',
       },
     },
     advisorOrder: [
