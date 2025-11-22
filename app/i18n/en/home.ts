@@ -32,7 +32,7 @@ const home: HomeType = {
         },
       ],
     ],
-    buttonText: 'Share your cough',
+    buttonText: 'Try our Demo',
     disclaimers: [
       '*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad).',
       '*The app is still under development, support us by contributing your cough sounds into our data collection app.',

@@ -276,30 +276,30 @@ const faq: FAQ = {
         },
       ],
       Finanzas: [
-        {
-          question:
-            '¿Necesito hacer alguna contribución financiera para donar mi tos?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'Virufy actualmente solo está recolectando toses de ciertos países, los cuales se pueden encontrar en nuestra app: ',
-                },
-                {
-                  type: 'link',
-                  text: 'https://virufy.org/study',
-                  href: 'https://virufy.org/study',
-                },
-                {
-                  type: 'text',
-                  text: '.',
-                },
-              ],
-            },
-          ],
-        },
+        // {
+        //   question:
+        //     '¿Necesito hacer alguna contribución financiera para donar mi tos?',
+        //   answer: [
+        //     {
+        //       type: 'paragraph',
+        //       content: [
+        //         {
+        //           type: 'text',
+        //           text: 'Virufy actualmente solo está recolectando toses de ciertos países, los cuales se pueden encontrar en nuestra app: ',
+        //         },
+        //         {
+        //           type: 'link',
+        //           text: 'https://virufy.org/study',
+        //           href: 'https://virufy.org/study',
+        //         },
+        //         {
+        //           type: 'text',
+        //           text: '.',
+        //         },
+        //       ],
+        //     },
+        //   ],
+        // },
         {
           question: '¿Cuántos donantes han tenido en total?',
           answer: [
@@ -345,44 +345,44 @@ const faq: FAQ = {
         },
       ],
       Privacidad: [
-        {
-          question: '¿Cómo almacenará Virufy mis datos de forma segura?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'Usamos Amazon Web Services (AWS) para la recopilación de datos de estudios de investigación. AWS almacena los datos en una aplicación segura con acceso y controles restringidos. Tus datos se almacenarán en AWS hasta que los descarguemos. Los almacenaremos en una base de datos con acceso restringido. Si deseas más información sobre cómo AWS almacena tus datos, por favor visita sus respectivas políticas de privacidad en ',
-                },
-                {
-                  type: 'link',
-                  text: 'https://aws.amazon.com/en/privacy',
-                  href: 'https://aws.amazon.com/en/privacy',
-                },
-                {
-                  type: 'text',
-                  text: '. Si deseas saber más, consulta la política de privacidad de Virufy.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question:
-            '¿Está mi privacidad en riesgo cuando dono mi tos a Virufy?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'Nuestros sólidos equipos legales y de seguridad de la información han desarrollado una DPIA para abordar posibles riesgos y amenazas a tu privacidad. Solo almacenaremos tus datos personales en forma anonimizada (donde no se te pueda identificar de ninguna manera) y en una base de datos segura con acceso restringido. Si deseas más información, consulta la Política de Privacidad de Virufy.',
-                },
-              ],
-            },
-          ],
-        },
+        // {
+        //   question: '¿Cómo almacenará Virufy mis datos de forma segura?',
+        //   answer: [
+        //     {
+        //       type: 'paragraph',
+        //       content: [
+        //         {
+        //           type: 'text',
+        //           text: 'Usamos Amazon Web Services (AWS) para la recopilación de datos de estudios de investigación. AWS almacena los datos en una aplicación segura con acceso y controles restringidos. Tus datos se almacenarán en AWS hasta que los descarguemos. Los almacenaremos en una base de datos con acceso restringido. Si deseas más información sobre cómo AWS almacena tus datos, por favor visita sus respectivas políticas de privacidad en ',
+        //         },
+        //         {
+        //           type: 'link',
+        //           text: 'https://aws.amazon.com/en/privacy',
+        //           href: 'https://aws.amazon.com/en/privacy',
+        //         },
+        //         {
+        //           type: 'text',
+        //           text: '. Si deseas saber más, consulta la política de privacidad de Virufy.',
+        //         },
+        //       ],
+        //     },
+        //   ],
+        // },
+        // {
+        //   question:
+        //     '¿Está mi privacidad en riesgo cuando dono mi tos a Virufy?',
+        //   answer: [
+        //     {
+        //       type: 'paragraph',
+        //       content: [
+        //         {
+        //           type: 'text',
+        //           text: 'Nuestros sólidos equipos legales y de seguridad de la información han desarrollado una DPIA para abordar posibles riesgos y amenazas a tu privacidad. Solo almacenaremos tus datos personales en forma anonimizada (donde no se te pueda identificar de ninguna manera) y en una base de datos segura con acceso restringido. Si deseas más información, consulta la Política de Privacidad de Virufy.',
+        //         },
+        //       ],
+        //     },
+        //   ],
+        // },
         {
           question: '¿Virufy tiene una política de privacidad y de cookies?',
           answer: [
@@ -397,20 +397,20 @@ const faq: FAQ = {
             },
           ],
         },
-        {
-          question: '¿Se compartirán mis datos con terceros?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'Si optas por compartir tu información de contacto (por ejemplo, correo electrónico y número de teléfono) con nosotros, no distribuiremos ninguno de estos datos personales identificables a ningún tercero. Sin embargo, podemos compartir tu información anonimizada, como los sonidos de tu tos, con terceros para acelerar los esfuerzos de investigación global para detener la pandemia de COVID-19 y otras futuras propagaciones de enfermedades. Puedes encontrar más detalles en nuestra Política de Privacidad y el Formulario de Consentimiento del estudio de recopilación de datos.',
-                },
-              ],
-            },
-          ],
-        },
+        // {
+        //   question: '¿Se compartirán mis datos con terceros?',
+        //   answer: [
+        //     {
+        //       type: 'paragraph',
+        //       content: [
+        //         {
+        //           type: 'text',
+        //           text: 'Si optas por compartir tu información de contacto (por ejemplo, correo electrónico y número de teléfono) con nosotros, no distribuiremos ninguno de estos datos personales identificables a ningún tercero. Sin embargo, podemos compartir tu información anonimizada, como los sonidos de tu tos, con terceros para acelerar los esfuerzos de investigación global para detener la pandemia de COVID-19 y otras futuras propagaciones de enfermedades. Puedes encontrar más detalles en nuestra Política de Privacidad y el Formulario de Consentimiento del estudio de recopilación de datos.',
+        //         },
+        //       ],
+        //     },
+        //   ],
+        // },
       ],
       Otros: [
         {

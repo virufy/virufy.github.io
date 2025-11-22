@@ -17,6 +17,15 @@ const jobListing: JobListing = {
     applyButtonText: 'التقديم على هذا الدور',
   },
   jobList: [
+     {
+      category: 'عام',
+      positions: [
+        {
+          title: 'طلب وظيفة عامة',
+          id: 26,
+        },
+      ],
+    },
     {
       category: 'الهندسة',
       positions: [
@@ -153,15 +162,6 @@ const jobListing: JobListing = {
         {
           title: 'الكاتب غرانت',
           id: 27,
-        },
-      ],
-    },
-    {
-      category: 'عام',
-      positions: [
-        {
-          title: 'طلب وظيفة عامة',
-          id: 26,
         },
       ],
     },

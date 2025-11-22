@@ -156,26 +156,12 @@
   {
     "id": "ja-faq-1",
     "lang": "ja",
-    "title": "咳の寄付には金銭的な負担は必要ですか？",
-    "content": "Virufyは現在、特定の国でのみ咳を収集しており、該当国はアプリで確認できます：  https://virufy.org/app 。",
-    "url": "/ja/ai"
-  },
-  {
-    "id": "ja-faq-2",
-    "lang": "ja",
     "title": "これまでに何人のドナーがいましたか？",
     "content": "南米や南アジアを中心に、10か国以上から5,000件以上の咳音録音があります。その一部は臨床的なものであり、他のものはアプリを通じて個人が直接提供したものです。",
     "url": "/ja/ai"
   },
   {
-    "id": "ja-faq-3",
-    "lang": "ja",
-    "title": "組織の運営費はどのくらいですか？",
-    "content": "現在、私たちは完全にボランティアによって運営されています。主な予算の必要項目は、咳データ収集のためのマーケティングと臨床研究です。また、将来的にユーザー基盤が大規模になった際には、計算処理のための資金も必要となります。",
-    "url": "/ja/ai"
-  },
-  {
-    "id": "ja-faq-4",
+    "id": "ja-faq-2",
     "lang": "ja",
     "title": "チームは資金提供を受けていますか？もし受けている場合、それはどのくらいで、どのように使われますか？",
     "content": "私たちは、501(c)(3)のステータスを活用して、R&D助成金を申請するために複数の大学と提携しています。",
@@ -184,29 +170,8 @@
   {
     "id": "ja-faq-1",
     "lang": "ja",
-    "title": "Virufyはどのようにして私のデータを安全に保管しますか？",
-    "content": "研究データ収集のためにAmazon Web Services（AWS）を使用しています。AWSはデータを安全なアプリケーション内に保存し、アクセスを制限します。データは私たちがダウンロードするまでAWSに保存されます。その後、制限されたアクセスを持つデータベースに保存されます。AWSがあなたのデータをどのように保護しているかについて詳しく知りたい場合は、AWSのプライバシーポリシーを参照してください：  https://aws.amazon.com/en/privacy 。詳細については、Virufyのプライバシーポリシーをご参照ください。",
-    "url": "/ja/ai"
-  },
-  {
-    "id": "ja-faq-2",
-    "lang": "ja",
-    "title": "Virufyに咳を寄付したときにプライバシーが侵害されるリスクはありますか？",
-    "content": "私たちの誇れる法務および情報セキュリティチームは、あなたのプライバシーに関する潜在的なリスクや脅威に対処するため、DPIA（データ保護影響評価）を開発しました。あなたの個人データは、識別できない形式で匿名化され、制限されたアクセスを持つ安全なデータベースに保存されます。詳細については、Virufyのプライバシーポリシーを参照してください。",
-    "url": "/ja/ai"
-  },
-  {
-    "id": "ja-faq-3",
-    "lang": "ja",
     "title": "Virufyにはプライバシーポリシーとクッキーポリシーがありますか？",
     "content": "Virufyはあなたの個人情報のプライバシーと保護を真剣に考えています。私たちの法務チームは、ウェブサイトの利用、咳の寄付研究への参加、問い合わせ、ボランティア申請を通じて提供された個人情報を保護するための詳細なプライバシーポリシーとクッキーポリシーを作成しました。詳細なプライバシー ポリシーと Cookie ポリシーについては、フッターを参照してください。",
-    "url": "/ja/ai"
-  },
-  {
-    "id": "ja-faq-4",
-    "lang": "ja",
-    "title": "私のデータは第三者と共有されますか？",
-    "content": "あなたが連絡先情報（メールアドレスや電話番号）を私たちと共有することを選択した場合、これらの個人を特定できる情報を第三者と共有することはありません。ただし、COVID-19パンデミックや将来の感染症の拡散を止めるためのグローバルな研究活動を促進させるために、咳音などの匿名化された情報を第三者と共有することがあります。詳細は、私たちのプライバシーポリシーやデータ収集研究の同意書に記載されています。",
     "url": "/ja/ai"
   },
   {
@@ -843,95 +808,109 @@
     "id": "ja-advisors-32",
     "lang": "ja",
     "title": "大森健史",
-    "content": "日本サイバーセキュリティアドバイザー (元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ | 大阪大学 工学部 生物物理工学科 学士)",
+    "content": "日本サイバーセキュリティアドバイザー (元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ | 公認情報システムセキュリティプロフェッショナル | 公認情報セキュリティマネージャー)",
+    "url": "/ja/advisors"
+  },
+  {
+    "id": "ja-advisors-33",
+    "lang": "ja",
+    "title": "木村共宏",
+    "content": "エグゼクティブビジネスアドバイザー (インド太平洋問題研究所 副理事長 / 武蔵野大学 理事 | 東京大学 工学部 システム量子工学科 学士)",
     "url": "/ja/advisors"
   },
   {
     "id": "ja-news-1",
+    "lang": "ja",
+    "title": "ジテックス・グローバル 2025（ドバイ）",
+    "content": "2025年10月",
+    "url": "/ja/news"
+  },
+  {
+    "id": "ja-news-2",
     "lang": "ja",
     "title": "Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示",
     "content": "2025年6月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-2",
+    "id": "ja-news-3",
     "lang": "ja",
     "title": "Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露",
     "content": "2024年11月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-3",
+    "id": "ja-news-4",
     "lang": "ja",
     "title": "Virufyベータ版アプリがコロンビアでリリース、4,500人のユーザーに自宅でCOVID-19検出を提供",
     "content": "2023年2月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-4",
+    "id": "ja-news-5",
     "lang": "ja",
     "title": "BARDA、視覚および聴覚症状に基づく感染症検出のための新しいAI/MLデジタルアプリの開発を支援",
     "content": "医療対策、アメリカ合衆国",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-5",
+    "id": "ja-news-6",
     "lang": "ja",
     "title": "このアプリは電話の前で咳をするだけでCOVID-19を診断することを目指しています",
     "content": "Forbes, メキシコ",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-6",
+    "id": "ja-news-7",
     "lang": "ja",
     "title": "COVID-19: Virufyアプリは咳の分析を通じてウイルスを診断可能",
     "content": "MSN",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-7",
+    "id": "ja-news-8",
     "lang": "ja",
     "title": "VIRUFY: COVID-19に感染しているかどうかを検出するプラットフォーム",
     "content": "Expreso, リマ, ペルー",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-8",
+    "id": "ja-news-9",
     "lang": "ja",
     "title": "One Young World日本アンバサダーがAIを活用してCOVID-19に挑む",
     "content": "One Young World, 東京, 日本",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-9",
+    "id": "ja-news-10",
     "lang": "ja",
     "title": "COVID-19対応の最前線に立つ北米アンバサダーたち",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-10",
+    "id": "ja-news-11",
     "lang": "ja",
     "title": "7月のアンバサダー・オブ・ザ・マンス",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-11",
+    "id": "ja-news-12",
     "lang": "ja",
     "title": "7月に開催されたOYWのグローバルデジタルイベントに数千人が参加：見逃した内容を振り返る",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-12",
+    "id": "ja-news-13",
     "lang": "ja",
     "title": "One Young World東京2020カーカス",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-13",
+    "id": "ja-news-14",
     "lang": "ja",
     "title": "One Young World東京2020カーカスでのVirufyプレゼンテーション",
     "content": "One Young World, 東京, 日本",
