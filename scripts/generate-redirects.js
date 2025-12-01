@@ -26,6 +26,7 @@ const redirects = [
   { from: 'join-jp', to: 'https://forms.gle/nxGbL1pd1R8Q27qe7' },
   { from: 'apply', to: 'https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform' },
   {from: 'oyw', to: 'en/one-young-world'},
+  {from: 'partners', to: 'en/advisors'},
   // add more here
 ];
 
