@@ -479,10 +479,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
               {/* Mobile Join Us, only appears on mobile homepage */}
               {isHomePage && !navbar && (
                 <button
-                  onClick={openModal}
                   className={`relative z-20 h-[26px] w-[75px] sm:w-[100px] md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:hidden lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold' : 'mt-1 h-[30px] w-[125px] rounded-full text-base font-semibold'}`}
                 >
-                  <Link href="#">{joinUs.buttonText}</Link>
+                  <Link href={`/${lang}/join-us`} onClick={handleNavClick}>
+                    {joinUs ? joinUs.buttonText : ''}
+                  </Link>
                 </button>
               )}
             </div>
