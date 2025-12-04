@@ -3,13 +3,6 @@ import { type People } from '../types/people';
 
 const people: People = {
   titleImage: '私たちは世界中から団結し、咳一つ一つから感染症を克服します。',
-  sectionMeetOurFounder: {
-    titleMeetOurFounder: '創設者',
-    titleAmil: 'アミル・カンザダ',
-    textAmil:
-      '福井大学 工学博士課程 在籍。カリフォルニア大学バークレー校で、MBAおよび工学修士（データサイエンス）の共同学位プログラムを取得。',
-    button: 'アミルのストーリーを読む',
-  },
   sectionCategories: {
     title: 'カテゴリ別に専門知識を閲覧する',
     buttons: {
