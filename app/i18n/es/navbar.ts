@@ -18,7 +18,7 @@ export const navbar: NavbarType = {
     ourFounder: 'Nuestro Fundador',
     ourSupporters: 'Nuestros Apoyantes',
     blog: 'Blog',
-    oneYoungWorld: 'Un Mundo Joven',
+    oneYoungWorld: 'One Young World',
   },
   media: {
     section: 'Medios',
