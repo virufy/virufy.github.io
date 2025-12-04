@@ -11,6 +11,11 @@ const amilsStory: AmilsStory = {
       "Amil's Story",
       'Publications',
     ],
+    founderAmil: [
+      'Meet Our Founder',
+      'Amil Khanzada',
+      'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
+    ],
     imgCaption: [
       'Amil with nursing staff supporting Virufy’s clinical studies in Columbia, South America.',
       'Amil with Japanese students and staff in ZenIT programming school.',
