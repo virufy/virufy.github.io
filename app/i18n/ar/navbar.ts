@@ -18,7 +18,7 @@ export const navbar: NavbarType = {
     ourSupporters: 'داعمونا',
     ourFounder: 'مؤسسنا',
     blog: 'المدونة',
-    oneYoungWorld: 'وان يونغ وورلد',
+    oneYoungWorld: 'One Young World',
   },
   media: {
     section: 'وسائل الإعلام',
