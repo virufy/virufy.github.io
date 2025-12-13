@@ -26,7 +26,6 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     { id: sectionAmil.tabsAmil[1], content: sectionAmil.textAmil },
     { id: sectionAmil.tabsAmil[2], content: sectionAmil.textAmil },
     { id: sectionAmil.tabsAmil[3], content: sectionAmil.textAmil },
-    { id: sectionAmil.tabsAmil[5], content: sectionAmil.textAmil },
   ];
   const mobileTabs = [
     {
@@ -34,7 +33,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       border: 'left',
       content: sectionAmil.textAmil,
     },
-    { id: sectionAmil.tabsAmil[5], border: 'right', content: sectionAmil },
+    { id: sectionAmil.tabsAmil[3], border: 'right', content: sectionAmil },
   ];
   return (
     <>
@@ -139,6 +138,10 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </div>
                 <div />
                 {sectionAmil.textAmil[4]}
+              </div>
+            )}
+            {mobileTab === sectionAmil.tabsAmil[3] && (
+              <div className="text-m m-3 space-y-4 p-2">
                 <div className="my-auto block w-full">
                   <ExportedImage
                     className="mx-auto mt-2 w-auto"
@@ -154,20 +157,6 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 {sectionAmil.textAmil[5]}
                 <div />
                 {sectionAmil.textAmil[6]}
-              </div>
-            )}
-            {mobileTab === sectionAmil.tabsAmil[5] && (
-              <div className="text-m m-5 block w-auto rounded-3xl bg-white p-5 text-black">
-                <h1 className="mx-auto my-auto text-center text-2xl font-bold">
-                  {sectionAmil.titlePublications}
-                </h1>
-                <ul className="p-auto m-auto block text-center">
-                  {sectionAmil.listPublications.map((pub, index) => (
-                    <li className="py-2" key={index}>
-                      {pub}
-                    </li>
-                  ))}
-                </ul>
               </div>
             )}
           </div>
@@ -262,20 +251,6 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               <div className="flex h-full items-center pl-10 xl:ml-20 xl:h-[400px] xl:text-2xl xl:leading-relaxed">
                 {sectionAmil.textAmil[5]} {sectionAmil.textAmil[6]}
               </div>
-            </div>
-          )}
-          {desktopTab === sectionAmil.tabsAmil[5] && (
-            <div className="text-m mx-[200px] my-20 block hidden w-auto rounded-3xl bg-white p-5 text-black md:block xl:mx-[600px]">
-              <h1 className="mx-auto my-auto text-center text-3xl font-bold">
-                {sectionAmil.titlePublications}
-              </h1>
-              <ul className="m-5 block text-center text-lg xl:text-xl">
-                {sectionAmil.listPublications.map((pub, index) => (
-                  <li className="my-2 py-2" key={index}>
-                    {pub}
-                  </li>
-                ))}
-              </ul>
             </div>
           )}
         </div>
