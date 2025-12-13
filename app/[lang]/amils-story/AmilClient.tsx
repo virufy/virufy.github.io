@@ -18,7 +18,6 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     amilsStory: { sectionAmil },
   } = usei18n(lang);
   const [desktopTab, setDesktopTab] = useState(sectionAmil.tabsAmil[0]);
-  const [mobileTab, setMobileTab] = useState(sectionAmil.tabsAmil[4]);
   const [activeTab, setActiveTab] = useState(String);
   console.log(activeTab);
   const desktopTabs = [
@@ -26,15 +25,6 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     { id: sectionAmil.tabsAmil[1], content: sectionAmil.textAmil },
     { id: sectionAmil.tabsAmil[2], content: sectionAmil.textAmil },
     { id: sectionAmil.tabsAmil[3], content: sectionAmil.textAmil },
-    { id: sectionAmil.tabsAmil[5], content: sectionAmil.textAmil },
-  ];
-  const mobileTabs = [
-    {
-      id: sectionAmil.tabsAmil[4],
-      border: 'left',
-      content: sectionAmil.textAmil,
-    },
-    { id: sectionAmil.tabsAmil[5], border: 'right', content: sectionAmil },
   ];
   return (
     <>
@@ -75,37 +65,21 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             />
           </div>
           {/* Mobile Content */}
-          <div className="w-full border-y md:hidden">
-            {mobileTabs.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => {
-                  setMobileTab(tab.id);
-                  setActiveTab(tab.id);
-                }}
-                className={`w-[50%] bg-[#255292] px-1 py-2 text-xl ${
-                  activeTab === tab.id
-                    ? tab.border === 'left'
-                      ? 'rounded-tl-none rounded-tr-3xl border-r-[0.5] border-t-[0.5] bg-[#30da7473]'
-                      : 'rounded-tl-3xl rounded-tr-none border-l-[0.5] border-t-[0.5] bg-[#30da7473]'
-                    : ''
-                }`}
-              >
-                {tab.id}
-              </button>
-            ))}
-          </div>
-          {/* Tab Content */}
           <div className="md:hidden">
-            {mobileTab === sectionAmil.tabsAmil[4] && (
-              <div className="text-m m-3 space-y-4 p-2">
+              <div className="flex-1 border-t"></div>
+              <div className="py-2 flex items-center justify-center text-2xl font-medium">
+                {sectionAmil.tabsAmil[4]}
+              </div>
+              <div className="flex-1 border-t py-2"></div>
+              <div>
                 <ExportedImage
-                  className="float-right mb-1 ml-1 h-auto w-auto"
+                  className="mx-auto w-auto"
                   src={AmilInMeeting}
                   alt=""
-                  priority
                   basePath={basePath}
                 />
+              </div>
+              <div className="text-m m-3 space-y-4 p-2">
                 {sectionAmil.textAmil[0]}
                 <div></div>
                 <div>
@@ -155,22 +129,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <div />
                 {sectionAmil.textAmil[6]}
               </div>
-            )}
-            {mobileTab === sectionAmil.tabsAmil[5] && (
-              <div className="text-m m-5 block w-auto rounded-3xl bg-white p-5 text-black">
-                <h1 className="mx-auto my-auto text-center text-2xl font-bold">
-                  {sectionAmil.titlePublications}
-                </h1>
-                <ul className="p-auto m-auto block text-center">
-                  {sectionAmil.listPublications.map((pub, index) => (
-                    <li className="py-2" key={index}>
-                      {pub}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
+            </div>
           {/* Desktop Content */}
           <div className="hidden w-full border-y shadow-[0_-20px_10px_rgba(0,0,0,0.25)] md:flex md:items-center md:justify-between md:border-b-0 md:border-t-0">
             <div className="flex w-full items-center justify-between bg-[#255292] text-xl xl:mx-20 xl:px-20">
@@ -262,20 +221,6 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               <div className="flex h-full items-center pl-10 xl:ml-20 xl:h-[400px] xl:text-2xl xl:leading-relaxed">
                 {sectionAmil.textAmil[5]} {sectionAmil.textAmil[6]}
               </div>
-            </div>
-          )}
-          {desktopTab === sectionAmil.tabsAmil[5] && (
-            <div className="text-m mx-[200px] my-20 block hidden w-auto rounded-3xl bg-white p-5 text-black md:block xl:mx-[600px]">
-              <h1 className="mx-auto my-auto text-center text-3xl font-bold">
-                {sectionAmil.titlePublications}
-              </h1>
-              <ul className="m-5 block text-center text-lg xl:text-xl">
-                {sectionAmil.listPublications.map((pub, index) => (
-                  <li className="my-2 py-2" key={index}>
-                    {pub}
-                  </li>
-                ))}
-              </ul>
             </div>
           )}
         </div>

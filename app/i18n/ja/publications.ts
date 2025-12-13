@@ -28,6 +28,13 @@ const publications: Publications = {
       linkText: '続きを読む',
     },
     {
+      title:
+        '新しいCOVID-19計算機を使用した、COVID-19事前スクリーニングソリューション（AI/ML）の米国の社会経済的影響の測定',
+      date: '2022年1月',
+      url: 'https://arxiv.org/abs/2201.11109',
+      linkText: '続きを読む',
+    },
+    {
       title: 'COVID-19咳AIシステムの展開における課題と機会',
       date: '2021年9月',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
@@ -38,6 +45,20 @@ const publications: Publications = {
         'Virufy: 咳からCOVID-19を検出するAIのためのクラウドソーシングおよび臨床データセットのグローバル適用性',
       date: '2020年11月',
       url: 'https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract',
+      linkText: '続きを読む',
+    },
+    {
+      title:
+        'Fusical: マルチモーダル融合によるビデオ感情分析',
+      date: '2020年10月',
+      url: 'https://dl.acm.org/doi/abs/10.1145/3382507.3417966',
+      linkText: '続きを読む',
+    },
+    {
+      title:
+        'ディープラーニングによる表情認識',
+      date: '2020年4月',
+      url: 'https://arxiv.org/abs/2004.11823',
       linkText: '続きを読む',
     },
   ],

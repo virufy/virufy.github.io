@@ -30,6 +30,13 @@ const publications: Publications = {
     },
     {
       title:
+        'استخدام حاسبة COVID-19 جديدة لقياس التأثير الاجتماعي والاقتصادي الإيجابي لحل فحص COVID-19 (AI/ML) في الولايات المتحدة',
+      date: '2022 يناير',
+      url: 'https://arxiv.org/abs/2201.11109',
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
         'التحديات والفرص في نشر أنظمة الذكاء الاصطناعي للكشف عن COVID-19 من السعال',
       date: 'سبتمبر 2021',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
@@ -40,6 +47,20 @@ const publications: Publications = {
         'Virufy: إمكانية التطبيق العالمي لمجموعات البيانات السريرية والجمعية من أجل اكتشاف الذكاء الاصطناعي لكوفيد-19 من خلال السعال',
       date: 'نوفمبر 2020',
       url: 'https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract',
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
+        'Fusical: الدمج متعدد الوسائط للمشاعر في الفيديو',
+      date: 'أكتوبر 2020',
+      url: 'https://dl.acm.org/doi/abs/10.1145/3382507.3417966',
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
+        ' التعرف على تعبيرات الوجه باستخدام التعلم العميق',
+      date: '2020 أبريل',
+      url: 'https://arxiv.org/abs/2004.11823',
       linkText: 'اقرأ المزيد',
     },
   ],

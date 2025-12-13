@@ -25,14 +25,6 @@ const amilsStory: AmilsStory = {
       'In late 2019, Amil left his job to pursue graduate studies in Artificial Intelligence at Stanford University, taking his first courses with Coursera founder Dr. Andrew Ng and ImageNet creator Dr. Fei-Fei Li. When the pandemic hit, Amil committed himself to pandemic relief efforts and soon founded Virufy.',
       'Virufy is a nonprofit organization developing a smartphone app to prescreen for COVID-19 instantly through AI-powered analysis of voice and cough recordings. As of July 2024, the organization operates in a three continents with more than 250 volunteers and 60 partner organizations.',
     ],
-    titlePublications: 'Amil’s Publications',
-    listPublications: [
-      '2022. Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough. arXiv: 2201.01669',
-      '2021. Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML). arXiv: 2201.11109',
-      '2020. Virufy: Global Applicability of AI Detection for COVID-19 from Cough Recordings. arXiv: 2011.13320',
-      '2020. Fusical: Multimodal Fusion for Video Sentiment. ACM ICMI; DOI: 3382507.3417966',
-      '2020. Facial Expression Recognition with Deep Learning. arXiv: 2004.11823',
-    ],
   },
 };
 
