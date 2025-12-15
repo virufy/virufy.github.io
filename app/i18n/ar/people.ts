@@ -4,13 +4,6 @@ import { type People } from '../types/people';
 const people: People = {
   titleImage:
     'نتحد من جميع أنحاء العالم لهزيمة الأمراض المعدية مع كل سعال في وقت واحد.',
-  sectionMeetOurFounder: {
-    titleMeetOurFounder: 'تعرف على مؤسسنا',
-    titleAmil: 'أميل خانزادا',
-    textAmil:
-      'مرشح دكتوراه في الهندسة، جامعة فوكوي، اليابان. طالب سابق في برنامج الماجستير في إدارة الأعمال وماجستير الهندسة (علوم البيانات) في جامعة كاليفورنيا، بيركلي.',
-    button: `اقرأ قصة أميل`,
-  },
   sectionCategories: {
     title: 'تصفح الخبرات حسب الفئة',
     buttons: {

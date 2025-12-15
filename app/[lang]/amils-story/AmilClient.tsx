@@ -56,14 +56,13 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               style={{width: '80%', maxWidth: '450px', padding: '24px',}}
               >
               <h1 className="text-3xl font-extrabold text-black">
-                Meet Our Founder
+                {sectionAmil.founderAmil[0]}
               </h1>
               <h2 className="mt-3 text-2xl font-bold text-black">
-                Amil Khanzada
+                {sectionAmil.founderAmil[1]}
               </h2>
               <p className="mt-3 text-black/90 font-medium leading-relaxed">
-                Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA &amp;
-                Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.
+                {sectionAmil.founderAmil[2]}
               </p>
             </div>
           </div>
