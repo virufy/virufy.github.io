@@ -30,6 +30,13 @@ const publications: Publications = {
     },
     {
       title:
+        'Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML)',
+      date: 'January 2022',
+      url: 'https://arxiv.org/abs/2201.11109',
+      linkText: 'Read More',
+    },
+    {
+      title:
         'Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems',
       date: 'September 2021',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
@@ -40,6 +47,20 @@ const publications: Publications = {
         'Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from Cough',
       date: 'November 2020',
       url: 'https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract',
+      linkText: 'Read More',
+    },
+    {
+      title:
+        'Fusical: Multimodal Fusion for Video Sentiment',
+      date: 'October 2020',
+      url: 'https://dl.acm.org/doi/abs/10.1145/3382507.3417966',
+      linkText: 'Read More',
+    },
+    {
+      title:
+        'Facial Expression Recognition with Deep Learning',
+      date: 'April 2020',
+      url: 'https://arxiv.org/abs/2004.11823',
       linkText: 'Read More',
     },
   ],

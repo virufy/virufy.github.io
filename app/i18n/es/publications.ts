@@ -31,6 +31,13 @@ const publications: Publications = {
     },
     {
       title:
+        'Uso de una calculadora novedosa de COVID-19 para medir el impacto socioeconómico positivo en EE. UU. de una solución de preevaluación de COVID-19 (IA/AA)',
+      date: 'Enero 2022',
+      url: 'https://arxiv.org/abs/2201.11109',
+      linkText: 'Leer más',
+    },
+    {
+      title:
         'Desafíos y oportunidades en la implementación de sistemas de inteligencia artificial para la tos COVID-19',
       date: 'Septiembre 2021',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
@@ -41,6 +48,20 @@ const publications: Publications = {
         'Virufy: Aplicabilidad global de conjuntos de datos clínicos y de colaboración colectiva para la detección mediante IA de COVID-19 a partir de la tos',
       date: 'Noviembre 2020',
       url: 'https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract',
+      linkText: 'Leer más',
+    },
+    {
+      title:
+        'Fusical: Fusión multimodal para análisis de sentimientos en video',
+      date: 'Octubre 2020',
+      url: 'https://dl.acm.org/doi/abs/10.1145/3382507.3417966',
+      linkText: 'Leer más',
+    },
+    {
+      title:
+        'Reconocimiento de expresiones faciales con aprendizaje profundo',
+      date: 'Abril 2020',
+      url: 'https://arxiv.org/abs/2004.11823',
       linkText: 'Leer más',
     },
   ],
