@@ -22,11 +22,9 @@ interface DonateSection {
 interface DonateContentBlock {
   title: string;
   text: string;
-  iconUrl: string;
 }
 interface DonateOptionsBlock {
   optionTitle: string;
   optionText: string;
   buttonText: string;
-  buttonUrl: string;
 }

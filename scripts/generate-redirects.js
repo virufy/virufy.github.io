@@ -12,7 +12,7 @@ const redirects = [
   { from: 'fukuoka', to: 'en/fukuoka' },
   { from: 'join', to: 'en/join-us' },
   {from: 'halfmydaf', to: 'en/halfmydaf'},
-  // {from: 'donate', to: 'https://www.gofundme.com/f/donate-virufy'},
+   {from: 'donate', to: 'en/donate'},
   {from: 'dubai-jp', to: 'en/dubai-jp'},
   {from: 'news/uae-adghw-apr-2025', to: 'en/news/uae-adghw-apr-2025'},
   {from: 'paper', to: 'en/paper'},

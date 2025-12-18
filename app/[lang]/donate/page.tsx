@@ -1,7 +1,7 @@
 'use client';
 
-import ExportedImage from 'next-image-export-optimizer';
 import { Globe, Microscope, ShieldCheck } from 'lucide-react';
+import ExportedImage from 'next-image-export-optimizer';
 
 import { type Locale } from '@/i18n-config';
 import { usei18n } from '../../i18n';
@@ -69,10 +69,11 @@ const DonatePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     key={index}
                     className="flex items-start gap-3 border-b pb-6 last:border-b-0"
                   >
-                    <Icon className="mt-1 h-5 w-5 shrink-0 text-gray-500" />
-
                     <div className="space-y-1">
-                      <h3 className="font-semibold">{title}</h3>
+                      <h3 className="flex items-center gap-2 text-lg font-semibold">
+                        {title}
+                        <Icon className="mt-1 flex h-5 w-5 shrink-0 text-gray-500" />
+                      </h3>
                       <p>{text}</p>
                     </div>
                   </div>
@@ -94,7 +95,6 @@ const DonatePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       optionTitle: string;
                       optionText: string;
                       buttonText: string;
-                      buttonUrl: string;
                     },
                     index: number
                   ) => (
@@ -108,7 +108,11 @@ const DonatePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                       <p className="mb-6 flex-grow">{option.optionText}</p>
 
                       <a
-                        href={option.buttonUrl}
+                        href={
+                          index === 0
+                            ? 'https://www.gofundme.com/f/donate-virufy'
+                            : 'https://www.paypal.com/us/fundraiser/charity/4348461'
+                        }
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block w-fit rounded bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700"

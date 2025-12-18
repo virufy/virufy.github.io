@@ -4,20 +4,47 @@ const donate: Donate = {
   heroSection: {
     title: [
       {
-        type: 'text',
-        text: 'Together, we can revolutionize global respiratory health. ',
+        text: '私たちと共に、世界の呼吸器医療を前進させましょう。',
       },
       {
-        type: 'text',
-        text: 'Every contribution brings us closer to delivering AI-powered diagnostic tools to patients and communities in need.',
+        text: '皆さまのご支援は、AIを活用した診断ツールを、必要とする患者や地域社会へ届ける大きな力になります。',
       },
     ],
-    text: 'Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence.',
-    url: '/publications',
-    linkText: 'Our Research',
   },
   donateSection: {
-    title: 'Support Our Mission',
+    title: 'あなたのご支援が、未来につながる変化を生み出します。',
+    text: '一つひとつのご寄付は、Virufyの呼吸器技術を必要としている人々や地域社会へ届けるために活用されます。皆さまからのお力が医療技術を発展させ、患者が自身の健康を守れるようになる環境をつくります。',
+    contentBlocks: [
+      {
+        title: '医療へのアクセスを広げる',
+        text: 'AIを活用した早期発見のための診断支援ツールを、医療を受けにくい地域社会へ届けます。',
+      },
+      {
+        title: '研究を前進させる',
+        text: '呼吸器疾患の早期発見と治療につながる、先進的な研究を加速させます。',
+      },
+      {
+        title: '患者の力を引き出す',
+        text: '人々が科学的根拠に基づいて、自分の健康状態を主体的に判断できるよう支援します。',
+      },
+    ],
+    optionsTitle: 'ご支援方法をお選びください',
+    optionsText:
+      '皆さまのご支援は大きな意味を持ちます。下記の寄付方法からお進みください。',
+    DonationsOptionsBlock: [
+      {
+        optionTitle: 'GoFundMeで寄付する',
+        optionText:
+          '現在募集中のキャンペーンを通じて、支援をより早く、より広く届けることができます。',
+        buttonText: 'GoFundMe',
+      },
+      {
+        optionTitle: 'PayPalで寄付する',
+        optionText:
+          'PayPalを通じて、一回限りまたは定期的なご寄付に対応しております。',
+        buttonText: 'PayPal',
+      },
+    ],
   },
 };
 

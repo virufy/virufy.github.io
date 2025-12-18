@@ -18,17 +18,14 @@ const donate: Donate = {
       {
         title: 'Expand Access',
         text: 'Bring AI-powered health screening tools to underserved communities worldwide.',
-        iconUrl: '/icons/innovate.svg',
       },
       {
         title: 'Advance Research',
         text: 'Support cutting-edge studies that improve early detection and treatment of respiratory illness.',
-        iconUrl: '/icons/expand.svg',
       },
       {
         title: 'Empower Patients',
         text: 'Help individuals take control of their health with accessible, science-driven insights.',
-        iconUrl: '/icons/empower.svg',
       },
     ],
     optionsTitle: 'Choose how you’d like to give:',
@@ -40,14 +37,12 @@ const donate: Donate = {
         optionText:
           'Contribute to our active campaign and help us reach more people, faster.',
         buttonText: 'GoFundMe',
-        buttonUrl: 'https://example.com/donate-once',
       },
       {
         optionTitle: 'Donate via PayPal',
         optionText:
           'Make a secure one-time or recurring donation directly through PayPal.',
         buttonText: 'PayPal',
-        buttonUrl: 'https://example.com/donate-monthly',
       },
     ],
   },
