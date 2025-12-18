@@ -10,7 +10,7 @@ import {
 } from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState, useRef, useMemo } from 'react';
 import { usei18n } from '../i18n';
 import LocaleSelect from './components/LocaleSelect';
@@ -43,7 +43,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   /** Hooks */
   const currPathname = usePathname();
   const router = useRouter();
-
+  const searchParams = useSearchParams();
   const isRedirecting = useRef(false);
   const { results, performSearch, clearResults, isReady } = useSearch(lang);
 
