@@ -17,6 +17,7 @@ import { type ShareYourCough } from './shareYourCough';
 import { type Story } from './story';
 import { type Supporters } from './supporters';
 import { type TeamLeadsType } from './teamLeads';
+import { type Donate } from './donate';
 
 export interface I18nData {
   ai: Ai;
@@ -38,4 +39,5 @@ export interface I18nData {
   story: Story;
   supporters: Supporters;
   teamLeads: TeamLeadsType;
+  donate: Donate;
 }
