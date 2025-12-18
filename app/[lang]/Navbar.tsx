@@ -14,7 +14,6 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useEffect, useState, useRef, useMemo } from 'react';
 import { usei18n } from '../i18n';
 import LocaleSelect from './components/LocaleSelect';
-import DonateModal from './components/navbar/DonateModal';
 import { ButtonType } from './themes';
 import useSearch from '@/utils/useSearch';
 import debounce from 'lodash.debounce';
@@ -37,7 +36,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
   /** State variables */
   const [navbar, setNavbar] = useState(false); // Mobile navbar open/close
   const [showSearch, setShowSearch] = useState(false); // Mobile search bar visibility
-  const [showModal, setShowModal] = useState(false); // Donate modal visibility
   const [activeLink, setActiveLink] = useState(''); // Current active navbar link
   const [query, setQuery] = useState(''); // Search query text
   const [hasSearched, setHasSearched] = useState(false);
@@ -249,30 +247,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   /** Helpers */
   const handleNavClick = () => setNavbar(false);
-  const closeModal = () => {
-    const params = new URLSearchParams(window.location.search);
-    params.delete('modal');
-
-    const newUrl =
-      window.location.pathname +
-      (params.toString() ? `?${params.toString()}` : '');
-
-    router.push(newUrl);
-    setShowModal(false);
-  };
-  const openModal = () => {
-    setShowModal(true);
-    router.push('?modal=donate');
-  };
-
-  useEffect(() => {
-    const search = new URLSearchParams(window.location.search);
-    if (search.get('modal') === 'donate') {
-      setShowModal(true);
-    } else {
-      setShowModal(false);
-    }
-  }, [searchParams]);
 
   /** Debounce search */
   const debouncedSearch = useMemo(
@@ -425,13 +399,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
       <nav
         className={`sticky z-[100] w-full rounded-full bg-opacity-80 ${pageSearchColor.bg} h-[50px] lg:bg-transparent`}
       >
-        {/* donate modal */}
-        {showModal ? (
-          <div onClick={() => setShowModal(false)}>
-            <DonateModal close={closeModal} title={donate.optionsTitle} />
-          </div>
-        ) : null}
-
         {/* Navbar container */}
         <div
           className={`lg:max-w-8lg justify-between ${navbar ? 'bg-black' : ''} px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 ${navbar ? 'h-screen' : ''}`}
@@ -470,10 +437,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
               {/* Mobile Donate Button, only appears on mobile homepage */}
               {isHomePage && !navbar && (
                 <button
-                  onClick={openModal}
                   className={`relative z-20 h-[26px] w-[100px] md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:hidden lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold' : 'mt-1 h-[30px] w-[125px] rounded-full text-base font-semibold'}`}
                 >
-                  <Link href="#">{donate.buttonText}</Link>
+                  <Link href={`/${lang}/donate`} onClick={handleNavClick}>
+                    {donate.buttonText}
+                  </Link>
                 </button>
               )}
               {/* Mobile Join Us, only appears on mobile homepage */}
@@ -798,12 +766,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <li
                     className={`text-[#393939] lg:pr-10 ${navbar ? 'flex-column pb-10' : ''}`}
                   >
-                    <button
-                      onClick={openModal}
-                      className={`shadow-[4px_4px_6px_rgba(0,0,0,0.2)] md:h-[42px] md:w-[125px] lg:h-[48px] lg:w-[140px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold md:h-[60px] md:w-[180px] md:text-xl' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
-                    >
-                      <Link href="#">{donate.buttonText}</Link>
-                    </button>
+                    <Link href={`/${lang}/donate`} onClick={handleNavClick}>
+                      <button
+                        onClick={handleNavClick}
+                        className={`shadow-[4px_4px_6px_rgba(0,0,0,0.2)] md:h-[42px] md:w-[125px] lg:h-[48px] lg:w-[140px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold md:h-[60px] md:w-[180px] md:text-xl' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                      >
+                        {donate.buttonText}
+                      </button>
+                    </Link>
                   </li>
                 </div>
               </ul>

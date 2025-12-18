@@ -18,6 +18,7 @@ import shareYourCough from './shareYourCough';
 import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
+import donate from './donate';
 
 const arMetadata: I18nData = {
   ai,
@@ -39,6 +40,7 @@ const arMetadata: I18nData = {
   shareYourCough,
   supporters,
   teamLeads,
+  donate,
 };
 
 export default arMetadata;
