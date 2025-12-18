@@ -45,7 +45,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
-    "eslint": "^9.39.2",
+    "eslint": "^8.57.1",
     "eslint-config-next": "^16.0.10",
     "netlify-cli": "^23.1.4",
     "postcss": "^8",
