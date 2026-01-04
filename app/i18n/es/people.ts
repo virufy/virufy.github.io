@@ -326,9 +326,8 @@ const people: People = {
         name: 'Takeshi Ohmori',
         role: 'Asesor de Ciberseguridad en Japón',
         texts: [
-          'Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck',
-          'Profesional Certificado en Seguridad de Sistemas de Información',
-          'Gerente Certificado en Seguridad de la Información',
+          'CISSP, CCSP, CSSLP, CISM, AAISM',
+          'Director de Estrategia Tecnológica de Seguridad y Resiliencia, Kyndryl Japón',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },

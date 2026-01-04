@@ -310,9 +310,8 @@ const people: People = {
         name: 'تاكيشي أوموري',
         role: 'مستشار الأمن السيبراني في اليابان',
         texts: [
-          'مدير أول سابق، استشارات الأمن - Synopsys/Black Duck',
-          'محترف معتمد في أمن نظم المعلومات',
-          'مدير معتمد في أمن المعلومات',
+          'CISSP, CCSP, CSSLP, CISM, AAISM',
+          'مدير استراتيجية تقنيات الأمن والمرونة، كيندريل اليابان',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },

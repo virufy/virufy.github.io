@@ -310,9 +310,8 @@ const people: People = {
         name: '大森健史',
         role: '日本サイバーセキュリティアドバイザー',
         texts: [
-          '元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ',
-          '公認情報システムセキュリティプロフェッショナル',
-          '公認情報セキュリティマネージャー',
+          'CISSP, CCSP, CSSLP, CISM, AAISM',
+          'キンドリルジャパン セキュリティ＆レジリエンシー 技術戦略統括ディレクター',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
