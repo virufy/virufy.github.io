@@ -6,7 +6,7 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
-      title: 'GITEX Global 2025 - Dubai',
+      title: 'GITEX Global 2025 - Dubai Health',
       date: 'October 2025',
       subText: '',
       url: '/en/news/gitex-global-2025-dubai',
