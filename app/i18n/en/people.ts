@@ -72,8 +72,8 @@ const people: People = {
         name: 'Thomas Mahoney',
         role: 'Business & Public Health Advisor',
         texts: [
-          'Associate, Dept. of Immunology & Infectious Diseases',
-          'Harvard T.H. Chan School of Public Health',
+          'Department Associate, Infectious Diseases Department, Harvard University MBA',
+          'The Wharton School, University of Pennsylvania',
         ],
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
@@ -330,6 +330,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/tomohiro-%E5%85%B1%E5%AE%8F-kimura-%E6%9C%A8%E6%9D%91-7253ab39/',
       },
     },
+
     advisorOrder: [
       'adam',
       'ayomide',
@@ -363,6 +364,7 @@ const people: People = {
       'maurino',
       'amir',
       'ohmori',
+      'tomohiro',
     ],
   },
 };
