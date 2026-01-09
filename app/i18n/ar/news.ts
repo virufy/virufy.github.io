@@ -6,7 +6,7 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
-      title: 'جيتكس العالمي 2025 – دبي',
+      title: 'معرض جيتكس العالمي 2025 - دبي للصحة',
       date: 'أكتوبر 2025',
       subText: '',
       url: '/ar/news/gitex-global-2025-dubai',

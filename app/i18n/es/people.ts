@@ -4,13 +4,6 @@ import { type People } from '../types/people';
 const people: People = {
   titleImage:
     'Nos unimos desde todo el mundo para derrotar al COVID-19 tos a la vez.',
-  sectionMeetOurFounder: {
-    titleMeetOurFounder: 'Conoce a nuestro fundador',
-    titleAmil: 'Amil Khanzada',
-    textAmil:
-      'Candidato a MBA, Haas School of Business Candidato a Maestría en Ingeniería, Departamento de Ingeniería Eléctrica y Ciencias de la Computación',
-    button: 'Lea la historia de Amil',
-  },
   sectionCategories: {
     title: 'Explorar experiencia por categoría',
     buttons: {
@@ -333,9 +326,8 @@ const people: People = {
         name: 'Takeshi Ohmori',
         role: 'Asesor de Ciberseguridad en Japón',
         texts: [
-          'Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck',
-          'Profesional Certificado en Seguridad de Sistemas de Información',
-          'Gerente Certificado en Seguridad de la Información',
+          'CISSP, CCSP, CSSLP, CISM, AAISM',
+          'Director de Estrategia Tecnológica de Seguridad y Resiliencia, Kyndryl Japón',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },

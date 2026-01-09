@@ -11,6 +11,11 @@ const amilsStory: AmilsStory = {
       'La historia de Amil',
       'Publicaciones',
     ],
+    founderAmil: [
+      'Conoce a nuestro fundador',
+      'Amil Khanzada',
+      'Candidato a MBA, Haas School of Business Candidato a Maestría en Ingeniería, Departamento de Ingeniería Eléctrica y Ciencias de la Computación',
+      ],
     imgCaption: [
       'Amil con el personal de enfermería apoyando los estudios clínicos de Virufy en Colombia, Sudamérica.',
       'Amil con estudiantes y personal japoneses en la escuela de programación ZenIT.',
@@ -24,14 +29,6 @@ const amilsStory: AmilsStory = {
       'En 2018, Amil tomó una pausa laboral para mudarse al campo de Japón. Viviendo en el pueblo de Eiheiji, lugar de origen del Zen Soto, Amil meditaba diariamente y aprendía filosofía Zen, mientras retribuía enseñando programación ágil a jóvenes y niños. Pronto, fue nombrado Embajador de la Evolución del pueblo y enviado a la conferencia One Young World en los Países Bajos para representar a Japón, junto a otros jóvenes líderes de impacto social, jefes de Estado y laureados con el Premio Nobel de 195 países.',
       'A finales de 2019, Amil dejó su trabajo para cursar estudios de posgrado en Inteligencia Artificial en la Universidad de Stanford, donde tomó sus primeros cursos con el fundador de Coursera, el Dr. Andrew Ng, y la creadora de ImageNet, la Dra. Fei-Fei Li. Cuando comenzó la pandemia, Amil se dedicó a los esfuerzos de ayuda y pronto fundó Virufy.',
       'Virufy es una organización sin fines de lucro que desarrolla una aplicación móvil para preevaluar instantáneamente el COVID-19 mediante el análisis con inteligencia artificial de grabaciones de voz y tos. En julio de 2024, la organización opera en tres continentes con más de 250 voluntarios y 60 organizaciones asociadas.',
-    ],
-    titlePublications: 'Publicaciones de Amil',
-    listPublications: [
-      '2022. Uso de aprendizaje profundo con grandes conjuntos de datos agregados para la clasificación de COVID-19 a partir de la tos. arXiv: 2201.01669',
-      '2021. Uso de una calculadora novedosa de COVID-19 para medir el impacto socioeconómico positivo en EE. UU. de una solución de preevaluación de COVID-19 (IA/AA). arXiv: 2201.11109',
-      '2020. Virufy: Aplicabilidad global de la detección de COVID-19 mediante IA a partir de grabaciones de tos. arXiv: 2011.13320',
-      '2020. Fusical: Fusión multimodal para análisis de sentimientos en video. ACM ICMI; DOI: 3382507.3417966',
-      '2020. Reconocimiento de expresiones faciales con aprendizaje profundo. arXiv: 2004.11823',
     ],
   },
 };

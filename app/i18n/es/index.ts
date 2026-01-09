@@ -18,6 +18,7 @@ import shareYourCough from './shareYourCough';
 import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
+import donate from './donate';
 
 const esMetadata: I18nData = {
   ai,
@@ -39,6 +40,7 @@ const esMetadata: I18nData = {
   story,
   supporters,
   teamLeads,
+  donate,
 };
 
 export default esMetadata;

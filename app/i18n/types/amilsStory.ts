@@ -4,9 +4,8 @@ export interface AmilsStory {
 
 interface sectionAmil {
   titleAmil: string;
+  founderAmil: string[];
   imgCaption: string[];
   tabsAmil: string[];
   textAmil: string[];
-  titlePublications: string;
-  listPublications: string[];
 }

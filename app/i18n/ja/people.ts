@@ -3,13 +3,6 @@ import { type People } from '../types/people';
 
 const people: People = {
   titleImage: '私たちは世界中から団結し、咳一つ一つから感染症を克服します。',
-  sectionMeetOurFounder: {
-    titleMeetOurFounder: '創設者',
-    titleAmil: 'アミル・カンザダ',
-    textAmil:
-      '福井大学 工学博士課程 在籍。カリフォルニア大学バークレー校で、MBAおよび工学修士（データサイエンス）の共同学位プログラムを取得。',
-    button: 'アミルのストーリーを読む',
-  },
   sectionCategories: {
     title: 'カテゴリ別に専門知識を閲覧する',
     buttons: {
@@ -317,9 +310,8 @@ const people: People = {
         name: '大森健史',
         role: '日本サイバーセキュリティアドバイザー',
         texts: [
-          '元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ',
-          '公認情報システムセキュリティプロフェッショナル',
-          '公認情報セキュリティマネージャー',
+          'CISSP, CCSP, CSSLP, CISM, AAISM',
+          'キンドリルジャパン セキュリティ＆レジリエンシー 技術戦略統括ディレクター',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },

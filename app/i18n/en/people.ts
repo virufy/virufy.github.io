@@ -4,13 +4,6 @@ import { type People } from '../types/people';
 const people: People = {
   titleImage:
     'We unite from across the world to defeat infectious diseases one cough at a time.',
-  sectionMeetOurFounder: {
-    titleMeetOurFounder: 'Meet Our Founder',
-    titleAmil: 'Amil Khanzada',
-    textAmil:
-      'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
-    button: `Read Amil's Story`,
-  },
   sectionCategories: {
     title: 'Browse expertise by category',
     buttons: {
@@ -321,9 +314,8 @@ const people: People = {
         name: 'Takeshi Ohmori',
         role: 'Japan Cybersecurity Advisor',
         texts: [
-          'Former Senior Director, Security Consulting - Synopsys/Black Duck',
-          'Certified Information Systems Security Professional',
-          'Certified Information Security Manager',
+          'CISSP, CCSP, CSSLP, CISM, AAISM',
+          'Director, Security & Resiliency Technology Strategy, Kyndryl Japan',
         ],
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
