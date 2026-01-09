@@ -6,7 +6,7 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
-      title: 'ジテックス・グローバル 2025（ドバイ）',
+      title: 'GITEXグローバル2025 - ドバイヘルス',
       date: '2025年10月',
       subText: '',
       url: '/ja/news/gitex-global-2025-dubai',
