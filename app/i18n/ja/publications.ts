@@ -27,13 +27,7 @@ const publications: Publications = {
       url: 'https://arxiv.org/abs/2201.01669',
       linkText: '続きを読む',
     },
-    {
-      title:
-        '新しいCOVID-19計算機を使用した、COVID-19事前スクリーニングソリューション（AI/ML）の米国の社会経済的影響の測定',
-      date: '2022年1月',
-      url: 'https://arxiv.org/abs/2201.11109',
-      linkText: '続きを読む',
-    },
+   
     {
       title: 'COVID-19咳AIシステムの展開における課題と機会',
       date: '2021年9月',
