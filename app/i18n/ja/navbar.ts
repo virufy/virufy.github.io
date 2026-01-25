@@ -3,7 +3,7 @@ import { type NavbarType } from '../types/navbar';
 export const navbar: NavbarType = {
   home: 'ホーム',
   ourTechnology: {
-    section: '技術',
+    section: '活動内容',
   },
   coughCheckApp: {
     section: '咳チェックアプリ',
@@ -13,7 +13,7 @@ export const navbar: NavbarType = {
     rsv: 'RSV',
   },
   aboutUs: {
-    section: '私たちについて',
+    section: '団体について',
     advisors: 'アドバイザー',
     ourFounder: '当社の創業者',
     ourSupporters: 'サポーター',

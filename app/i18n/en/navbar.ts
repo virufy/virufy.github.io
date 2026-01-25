@@ -3,7 +3,7 @@ import { type NavbarType } from '../types/navbar';
 export const navbar: NavbarType = {
   home: 'Home',
   ourTechnology: {
-    section: 'Technology',
+    section: 'What We Do',
   },
   coughCheckApp: {
     section: 'CoughCheck App',
@@ -13,7 +13,7 @@ export const navbar: NavbarType = {
     rsv: 'RSV',
   },
   aboutUs: {
-    section: 'About Us',
+    section: 'Who We Are',
     advisors: 'Advisors',
     ourFounder: 'Our Founder',
     ourSupporters: 'Our Supporters',
