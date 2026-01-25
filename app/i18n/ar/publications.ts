@@ -28,13 +28,7 @@ const publications: Publications = {
       url: 'https://arxiv.org/abs/2201.01669',
       linkText: 'اقرأ المزيد',
     },
-    {
-      title:
-        'استخدام حاسبة COVID-19 جديدة لقياس التأثير الاجتماعي والاقتصادي الإيجابي لحل فحص COVID-19 (AI/ML) في الولايات المتحدة',
-      date: '2022 يناير',
-      url: 'https://arxiv.org/abs/2201.11109',
-      linkText: 'اقرأ المزيد',
-    },
+   
     {
       title:
         'التحديات والفرص في نشر أنظمة الذكاء الاصطناعي للكشف عن COVID-19 من السعال',
