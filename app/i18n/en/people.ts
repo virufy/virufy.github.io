@@ -329,6 +329,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/tomohiro-%E5%85%B1%E5%AE%8F-kimura-%E6%9C%A8%E6%9D%91-7253ab39/',
       },
+      Okazaki: {
+        img: './../images/advisors/takashi-okazaki.webp',
+        name: 'Okazaki Takashi',
+        role: 'Executive Malaysia-Japan Advisor',
+        texts: [
+          'CEO & Co-Founder - Therapia Sdn. Bhd.',
+          'M.S. Frontier Sciences - University of Tokyo',
+        ],
+        link: '',
+      },
     },
     advisorOrder: [
       'adam',
@@ -363,6 +373,8 @@ const people: People = {
       'maurino',
       'amir',
       'ohmori',
+      'tomohiro',
+      'Okazaki',
     ],
   },
 };

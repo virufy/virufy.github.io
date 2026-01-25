@@ -325,6 +325,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/tomohiro-%E5%85%B1%E5%AE%8F-kimura-%E6%9C%A8%E6%9D%91-7253ab39/',
       },
+      Okazaki: {
+        img: './../images/advisors/takashi-okazaki.webp',
+        name: '岡崎 崇',
+        role: 'マレーシア・ジャパン エグゼクティブ・アドバイザー',
+        texts: [
+          'Therapia Sdn. Bhd. 共同創業者 兼 CEO',
+          '東京大学大学院 新領域創成科学研究科 修士',
+        ],
+        link: '',
+      },
     },
     advisorOrder: [
       'adam',
