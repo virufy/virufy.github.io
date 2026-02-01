@@ -41,7 +41,7 @@ const advisorOrder = [
   'amir',
   'ohmori',
   'tomohiro',
-  'Okazaki',
+  'okazaki',
 ];
 
 export const metadata = {
