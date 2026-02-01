@@ -52,32 +52,25 @@
     "id": "en-media-publications-4",
     "lang": "en",
     "title": "Publications",
-    "content": "Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML)",
-    "url": "https://arxiv.org/abs/2201.11109"
-  },
-  {
-    "id": "en-media-publications-5",
-    "lang": "en",
-    "title": "Publications",
     "content": "Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems",
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
   },
   {
-    "id": "en-media-publications-6",
+    "id": "en-media-publications-5",
     "lang": "en",
     "title": "Publications",
     "content": "Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from Cough",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "en-media-publications-7",
+    "id": "en-media-publications-6",
     "lang": "en",
     "title": "Publications",
     "content": "Fusical: Multimodal Fusion for Video Sentiment",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "en-media-publications-8",
+    "id": "en-media-publications-7",
     "lang": "en",
     "title": "Publications",
     "content": "Facial Expression Recognition with Deep Learning",
@@ -843,7 +836,7 @@
     "id": "en-advisors-32",
     "lang": "en",
     "title": "Takeshi Ohmori",
-    "content": "Japan Cybersecurity Advisor (Former Senior Director, Security Consulting - Synopsys/Black Duck | Certified Information Systems Security Professional | Certified Information Security Manager)",
+    "content": "Japan Cybersecurity Advisor (CISSP, CCSP, CSSLP, CISM, AAISM | Director, Security & Resiliency Technology Strategy, Kyndryl Japan)",
     "url": "/en/advisors"
   },
   {
@@ -854,9 +847,16 @@
     "url": "/en/advisors"
   },
   {
+    "id": "en-advisors-34",
+    "lang": "en",
+    "title": "Okazaki Takashi",
+    "content": "Executive Malaysia-Japan Advisor (CEO & Co-Founder - Therapia Sdn. Bhd. | M.S. Frontier Sciences - University of Tokyo)",
+    "url": "/en/advisors"
+  },
+  {
     "id": "en-news-1",
     "lang": "en",
-    "title": "GITEX Global 2025 - Dubai",
+    "title": "GITEX Global 2025 - Dubai Health",
     "content": "October 2025",
     "url": "/en/news"
   },
