@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c90015fc6f2f8454a8cb22dcd5ca616",
+    "revision": "193a53a967d7f380bbf4cc168100e4c2",
     "url": "/disease-app/index.html"
   },
   {
@@ -84,12 +84,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/disease-app/static/js/22.e820a152.chunk.js"
   },
   {
-    "revision": "b2c01a2ecf074069e8b5",
-    "url": "/disease-app/static/js/23.4382c7cb.chunk.js"
+    "revision": "4bd973c9a22d34314acc",
+    "url": "/disease-app/static/js/23.00534775.chunk.js"
   },
   {
-    "revision": "cd030ebbae51e3b7a9df",
-    "url": "/disease-app/static/js/24.e5c05e25.chunk.js"
+    "revision": "54546a6f80124d00fd24",
+    "url": "/disease-app/static/js/24.b9d1b458.chunk.js"
   },
   {
     "revision": "a1c8009035a14edaa275",
@@ -116,12 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/disease-app/static/js/3.e3503a71.chunk.js"
   },
   {
-    "revision": "5938100cce32ca9626e8",
-    "url": "/disease-app/static/js/30.3feb7aa4.chunk.js"
+    "revision": "9ef060a9514a93304bae",
+    "url": "/disease-app/static/js/30.05e8447d.chunk.js"
   },
   {
     "revision": "6e4801d64cd5677e977179501d49a9ce",
-    "url": "/disease-app/static/js/30.3feb7aa4.chunk.js.LICENSE.txt"
+    "url": "/disease-app/static/js/30.05e8447d.chunk.js.LICENSE.txt"
   },
   {
     "revision": "3c34eaa4c0b5aa86f1e6",
@@ -156,8 +156,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/disease-app/static/js/38.191a0a1d.chunk.js"
   },
   {
-    "revision": "7ca3bf6382f576598ec4",
-    "url": "/disease-app/static/js/39.6e14338c.chunk.js"
+    "revision": "f6490d84d1f6f8dd7937",
+    "url": "/disease-app/static/js/39.9e578c72.chunk.js"
   },
   {
     "revision": "c53a877410d523ce002b",
@@ -168,8 +168,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/disease-app/static/js/4.7269f2ad.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "83ae90b75f14e4060d85",
-    "url": "/disease-app/static/js/40.ddab2f92.chunk.js"
+    "revision": "487b7dab3fc99e41795e",
+    "url": "/disease-app/static/js/40.82b428e7.chunk.js"
   },
   {
     "revision": "6df902f38a18093af3c4",
@@ -220,16 +220,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/disease-app/static/js/52.ba150b49.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d74fa9933362478c5cb7",
-    "url": "/disease-app/static/js/53.c707a7f3.chunk.js"
+    "revision": "53f64f1b0662ce262b31",
+    "url": "/disease-app/static/js/53.1bfa1d35.chunk.js"
   },
   {
     "revision": "9a73b17d3f74e8a595e1554cd96c873a",
-    "url": "/disease-app/static/js/53.c707a7f3.chunk.js.LICENSE.txt"
+    "url": "/disease-app/static/js/53.1bfa1d35.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f04a944f27dc91a54b25",
-    "url": "/disease-app/static/js/54.009a26f3.chunk.js"
+    "revision": "65c5fb66bf8636599f36",
+    "url": "/disease-app/static/js/54.45ae430c.chunk.js"
   },
   {
     "revision": "47cb593ed71d80076a0d",
@@ -248,12 +248,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/disease-app/static/js/9.ebcfa158.chunk.js"
   },
   {
-    "revision": "3d4c234f839025ba10de",
-    "url": "/disease-app/static/js/main.599b972f.chunk.js"
+    "revision": "242ae545ad019ef446dd",
+    "url": "/disease-app/static/js/main.e892c3f2.chunk.js"
   },
   {
-    "revision": "f6e93aeb709c7c5c571d",
-    "url": "/disease-app/static/js/runtime-main.aa5158d8.js"
+    "revision": "2dcae29f9574572095e1",
+    "url": "/disease-app/static/js/runtime-main.b8c672f8.js"
   },
   {
     "revision": "74682ec33acb1a883ae7d81e961610ce",
