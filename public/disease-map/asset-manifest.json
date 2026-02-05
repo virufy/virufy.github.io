@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/disease-map/static/css/main.323d7611.css",
-    "main.js": "/disease-map/static/js/main.22d76589.js",
+    "main.js": "/disease-map/static/js/main.e4acadbd.js",
     "static/js/453.4706647a.chunk.js": "/disease-map/static/js/453.4706647a.chunk.js",
     "static/media/virufyLogo.png": "/disease-map/static/media/virufyLogo.384f765ff157cd378c91.png",
     "static/media/qrcode.png": "/disease-map/static/media/qrcode.c2732cefe4dd734a151b.png",
     "index.html": "/disease-map/index.html",
     "main.323d7611.css.map": "/disease-map/static/css/main.323d7611.css.map",
-    "main.22d76589.js.map": "/disease-map/static/js/main.22d76589.js.map",
+    "main.e4acadbd.js.map": "/disease-map/static/js/main.e4acadbd.js.map",
     "453.4706647a.chunk.js.map": "/disease-map/static/js/453.4706647a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.323d7611.css",
-    "static/js/main.22d76589.js"
+    "static/js/main.e4acadbd.js"
   ]
 }
