@@ -27,6 +27,7 @@ const publications: Publications = {
       url: 'https://arxiv.org/abs/2201.01669',
       linkText: '続きを読む',
     },
+   
     {
       title:
         '新しいCOVID-19計算機を使用した、COVID-19事前スクリーニングソリューション（AI/ML）の米国の社会経済的影響の測定',

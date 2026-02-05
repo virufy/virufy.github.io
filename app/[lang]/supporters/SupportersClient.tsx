@@ -17,13 +17,7 @@ export default function SupportersPage({
   params: { lang: Locale };
 }) {
   const {
-    supporters: {
-      title,
-      buttontext,
-      supportersList,
-      contactusform,
-      oursupporters,
-    },
+    supporters: { title, buttontext, supportersList, contactusform, oursupporters },
   } = usei18n(lang);
 
   const [showModal, setShowModal] = useState(false);

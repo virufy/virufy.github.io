@@ -70,14 +70,14 @@
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "ar-media-publications-7",
+    "id": "ar-media-publications-6",
     "lang": "ar",
     "title": "المنشورات",
     "content": "Fusical: الدمج متعدد الوسائط للمشاعر في الفيديو",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "ar-media-publications-8",
+    "id": "ar-media-publications-7",
     "lang": "ar",
     "title": "المنشورات",
     "content": " التعرف على تعبيرات الوجه باستخدام التعلم العميق",
@@ -836,7 +836,7 @@
     "id": "ar-advisors-32",
     "lang": "ar",
     "title": "تاكيشي أوموري",
-    "content": "مستشار الأمن السيبراني في اليابان (مدير أول سابق، استشارات الأمن - Synopsys/Black Duck | محترف معتمد في أمن نظم المعلومات | مدير معتمد في أمن المعلومات)",
+    "content": "مستشار الأمن السيبراني في اليابان (CISSP, CCSP, CSSLP, CISM, AAISM | مدير استراتيجية تقنيات الأمن والمرونة، كيندريل اليابان)",
     "url": "/ar/advisors"
   },
   {
@@ -847,9 +847,16 @@
     "url": "/ar/advisors"
   },
   {
+    "id": "ar-advisors-34",
+    "lang": "ar",
+    "title": "أوكازاكي تاكاشي",
+    "content": "المستشار التنفيذي الماليزي–الياباني (الرئيس التنفيذي والمؤسس المشارك – شركة ثيرابيا (ذ.م.م) |  ماجستير العلوم في علوم الحدود – جامعة طوكي)",
+    "url": "/ar/advisors"
+  },
+  {
     "id": "ar-news-1",
     "lang": "ar",
-    "title": "جيتكس العالمي 2025 – دبي",
+    "title": "معرض جيتكس العالمي 2025 - دبي للصحة",
     "content": "أكتوبر 2025",
     "url": "/ar/news"
   },

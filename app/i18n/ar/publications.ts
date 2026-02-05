@@ -28,6 +28,7 @@ const publications: Publications = {
       url: 'https://arxiv.org/abs/2201.01669',
       linkText: 'اقرأ المزيد',
     },
+   
     {
       title:
         'استخدام حاسبة COVID-19 جديدة لقياس التأثير الاجتماعي والاقتصادي الإيجابي لحل فحص COVID-19 (AI/ML) في الولايات المتحدة',

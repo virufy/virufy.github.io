@@ -70,14 +70,14 @@
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "ja-media-publications-7",
+    "id": "ja-media-publications-6",
     "lang": "ja",
     "title": "出版物",
     "content": "Fusical: マルチモーダル融合によるビデオ感情分析",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "ja-media-publications-8",
+    "id": "ja-media-publications-7",
     "lang": "ja",
     "title": "出版物",
     "content": "ディープラーニングによる表情認識",
@@ -829,7 +829,7 @@
     "id": "ja-advisors-32",
     "lang": "ja",
     "title": "大森健史",
-    "content": "日本サイバーセキュリティアドバイザー (元 Synopsys/Black Duck セキュリティコンサルティング担当シニアディレクタ | 公認情報システムセキュリティプロフェッショナル | 公認情報セキュリティマネージャー)",
+    "content": "日本サイバーセキュリティアドバイザー (CISSP, CCSP, CSSLP, CISM, AAISM | キンドリルジャパン セキュリティ＆レジリエンシー 技術戦略統括ディレクター)",
     "url": "/ja/advisors"
   },
   {
@@ -840,9 +840,16 @@
     "url": "/ja/advisors"
   },
   {
+    "id": "ja-advisors-34",
+    "lang": "ja",
+    "title": "岡崎 崇",
+    "content": "マレーシア・ジャパン エグゼクティブ・アドバイザー (Therapia Sdn. Bhd. 共同創業者 兼 CEO | 東京大学大学院 新領域創成科学研究科 修士)",
+    "url": "/ja/advisors"
+  },
+  {
     "id": "ja-news-1",
     "lang": "ja",
-    "title": "ジテックス・グローバル 2025（ドバイ）",
+    "title": "GITEXグローバル2025 - ドバイヘルス",
     "content": "2025年10月",
     "url": "/ja/news"
   },

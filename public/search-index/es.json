@@ -70,14 +70,14 @@
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "es-media-publications-7",
+    "id": "es-media-publications-6",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Fusical: Fusión multimodal para análisis de sentimientos en video",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "es-media-publications-8",
+    "id": "es-media-publications-7",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Reconocimiento de expresiones faciales con aprendizaje profundo",
@@ -836,7 +836,7 @@
     "id": "es-advisors-32",
     "lang": "es",
     "title": "Takeshi Ohmori",
-    "content": "Asesor de Ciberseguridad en Japón (Exdirector Senior de Consultoría de Seguridad - Synopsys/Black Duck | Profesional Certificado en Seguridad de Sistemas de Información | Gerente Certificado en Seguridad de la Información)",
+    "content": "Asesor de Ciberseguridad en Japón (CISSP, CCSP, CSSLP, CISM, AAISM | Director de Estrategia Tecnológica de Seguridad y Resiliencia, Kyndryl Japón)",
     "url": "/es/advisors"
   },
   {
@@ -847,9 +847,16 @@
     "url": "/es/advisors"
   },
   {
+    "id": "es-advisors-34",
+    "lang": "es",
+    "title": "Okazaki Takashi",
+    "content": "Asesor Ejecutivo Malasia-Japón (CEO y cofundador - Therapia Sdn. Bhd. | Máster en Ciencias Fronterizas - Universidad de Tokio)",
+    "url": "/es/advisors"
+  },
+  {
     "id": "es-news-1",
     "lang": "es",
-    "title": "GITEX Global 2025 - Dubái",
+    "title": "GITEX Global 2025 - Salud en Dubái",
     "content": "Octubre de 2025",
     "url": "/es/news"
   },

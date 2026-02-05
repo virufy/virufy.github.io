@@ -29,6 +29,7 @@ const publications: Publications = {
       url: 'https://arxiv.org/abs/2201.01669',
       linkText: 'Leer más',
     },
+
     {
       title:
         'Uso de una calculadora novedosa de COVID-19 para medir el impacto socioeconómico positivo en EE. UU. de una solución de preevaluación de COVID-19 (IA/AA)',
