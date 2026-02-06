@@ -395,6 +395,8 @@ const people: People = {
       'maurino',
       'amir',
       'ohmori',
+      'tomohiro',
+      'okazaki',
       'junpei',
     ],
   },
