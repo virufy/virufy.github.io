@@ -97,3 +97,13 @@ export const LinkAtomProps = {
     linkNavbar: "text-[18px] leading-[20px] hover:font-semibold",
     linkBlog: " flex justify-start w-full text-[13px] lg:text-[20px] hover:font-semibold text-[#3074DC] text-start"
 };
+
+//COLORS
+export const ColorProps = {
+    textGradient: "bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] bg-clip-text text-transparent",
+    textGreenDark: "text-[#1b6e64]",
+    textGray: "text-[#2c3540]",
+    bgGradient: "bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9]",
+    bgGradientReverse: "bg-gradient-to-b from-[#0E72C9] to-[#2A9D8F]",
+    bgBlueGlow: "bg-[linear-gradient(to_right,#ddeaf0_0%,#ebf3f6_20%,#ebf3f6_80%,#ddeaf0_100%)]",
+}
