@@ -1,6 +1,7 @@
 export interface Donate {
   heroSection: DonateHeroSection;
   donateSection: DonateSection;
+  donationTransparencyBlock: DonationTransparencyBlock;
 }
 
 interface DonateHeroSection {
@@ -27,4 +28,8 @@ interface DonateOptionsBlock {
   optionTitle: string;
   optionText: string;
   buttonText: string;
+}
+interface DonationTransparencyBlock {
+  title: string;
+  text: string;
 }
