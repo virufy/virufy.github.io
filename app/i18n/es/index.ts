@@ -19,6 +19,7 @@ import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
+import sevenai from './sevenai';
 
 const esMetadata: I18nData = {
   ai,
@@ -41,6 +42,7 @@ const esMetadata: I18nData = {
   supporters,
   teamLeads,
   donate,
+  sevenai,
 };
 
 export default esMetadata;

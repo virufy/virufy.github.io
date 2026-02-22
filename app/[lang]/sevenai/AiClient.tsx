@@ -1,45 +1,16 @@
 'use client';
 import ExportedImage from 'next-image-export-optimizer';
-import { type StaticImageData } from 'next/image';
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { usei18n } from '../../i18n';
 
 import AiCard from './AiCard';
-import { type AiCard as AiCardProps } from '@/app/i18n/types/ai';
 import AiCarousel from './AiCarousel';
 import ActionBanner from '../components/ActionBanner';
 
 import { CrossBackground } from '@/public/images/ai/index';
-import { CarouselImg1, CarouselImg2, CarouselImg3 } from '@/public/images/ai/index';
-import AcousticIcon from '@/public/icons/icon-ai-acoustic.png';
-import FeatureIcon from '@/public/icons/icon-ai-feature.png';
-import ModelIcon from '@/public/icons/icon-ai-model.png';
-import SoundIcon from '@/public/icons/icon-ai-sound.png';
-import ValidationIcon from '@/public/icons/icon-ai-validation.png';
 import AiIcon from '@/public/icons/icon-ai.png';
 import { ColorProps } from '../themes';
-
-
-
-// Types
-
-type TitleText = { type: string; text: string };
-
-type CTA = { demoAppUrl?: string; joinUrl?: string };
-
-type I18nReturn = {
-  ai: {
-    heroSection: {
-      title: TitleText[];
-      text: string;
-      url: string;
-      linkText: string;
-    };
-    aiSection: { title: string; aiCards: AiCardProps[] };
-  };
-  cta?: CTA;
-};
 
 // Page Component
 
@@ -49,42 +20,8 @@ export default function AiPage({
   params: { lang: Locale };
 }) {
   const {
-    ai: { heroSection, aiSection },
-  } = usei18n(lang) as I18nReturn;
-
-  // Temporary variables - to be removed
-  const carouselTitles : string[] = [
-    "Data Collection", 
-    "Signal Processing", 
-    "Machine Learning Analysis"
-  ];
-  const carouselTexts : string[] = [
-    "Simply record a brief cough using our easy-to-use web app. The interface guides you to capture a high-quality, natural cough sample under consistent conditions, ensuring optimal audio for accurate respiratory analysis.",
-    "We use ML algorithms to accurately identify and isolate cough sounds. Our tools clean up background noise and analyze digital biomarkers by converting sound waves into quantifiable characteristics called acoustic biomarker features.",
-    "The extracted acoustic biomarker features are then fed into a pre-trained Machine Learning Model, the model compares the new incoming cough's feature profile against patterns it learned through training."
-  ];
-
-  const cardTitles : string[] = [
-    "Sound Capture",
-    "Feature Extraction",
-    "Validation & Insight",
-    "Acoustic Processing",
-    "Model Training"
-  ];
-  const cardTexts : string[] = [
-    "Users record short, anonymized cough samples through the Virufy app.",
-    "AI identifies subtle patterns and acoustic biomarkers in the data.",
-    "Users results are tested to ensure ongoing improvement and effectiveness.",
-    "Each cough is converted into a visual sound map, or spectrogram.",
-    "Algorithms learn from global datasets to improve accuracy and fairness."
-  ];
-  const cardIcons : StaticImageData[] = [
-    SoundIcon, FeatureIcon, ValidationIcon, AcousticIcon, ModelIcon
-  ];
-
-  const bannerTitle = "Ready to Make a Difference?";
-  const bannerText = "We're on a mission to make health screening as simple as a cough. Reach out to find out how your financial contributions directly accelerate our clinical research and the deployment of our accessible AI technology to communities worldwide.";
-  const bannerButtonText = "Support Us";
+    sevenai: { heroSection, aiSection, banner },
+  } = usei18n(lang);
 
   return (
     <div className="relative">
@@ -111,20 +48,26 @@ export default function AiPage({
                   alt="AI Icon"
                   basePath={basePath}
                 />
-                &nbsp; AI-Powered Health Technology
+                &nbsp; {heroSection.tag}
               </span>
               <h1 className="text-4xl font-semibold leading-tight md:text-5xl pb-2">
-                The <span className={`${ColorProps.textGradient}`}>
-                  Science </span> 
-                Behind Virufy
+                {heroSection.title.map((part, i) => {
+                  if (part.type === "span") {
+                    return (
+                      <span key={i} className={ColorProps.textGradient}>
+                        {part.text}
+                      </span>
+                    );
+                  }
+                  return <span key={i}>{part.text}</span>;
+                })}
               </h1>
 
               <p className={`mt-5 mb-10 text-lg ${ColorProps.textGray}`}>
-                {/* {heroSection.text} */}
-                Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.
+                {heroSection.text}
               </p>
 
-              <AiCarousel titles={carouselTitles} texts={carouselTexts} images={[CarouselImg1, CarouselImg2, CarouselImg3]} style="my-5"/>
+              <AiCarousel slides={heroSection.aiSlides} />
             </div>
           </div>
         </div>
@@ -141,36 +84,35 @@ export default function AiPage({
             className=""
           >
             <h2 className={`text-3xl font-semibold ${ColorProps.textGreenDark}`}>
-              {/* {aiSection.title} */}
-              How Virufy's AI Learns
+              {aiSection.title}
             </h2>
-            <p className={`${ColorProps.textGray} my-10`}>Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence. The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for early detection of potential health issues.</p>
+            <p className={`${ColorProps.textGray} my-10`}>{aiSection.text}</p>
 
             {/* Top 3 cards */}
             <div className="grid grid-cols-6 gap-6 justify-center">
-              {cardTitles.slice(0, 3).map((_, i) => {
-                return <div key={i} className="col-span-2 flex flex-col items-center">
-                  <AiCard key={i} title={cardTitles[i]} text={cardTexts[i]} icon={cardIcons[i]} style="shadow-xl w-full h-full" />
+              {aiSection.aiCards.slice(0, 3).map((card, i) => (
+                <div key={i} className="col-span-2 flex flex-col items-center">
+                  <AiCard {...card} />
                   <div className={`mt-10 w-[16px] h-[12px] ${ColorProps.bgGradientReverse} [clip-path:polygon(50%_0%,0%_100%,100%_100%)]`} />
-                </div>;
-              })}
+                </div>
+              ))}
             </div>
             <div className="my-4 h-[4px] w-full bg-gradient-to-r from-[#0E72C9]/30 to-[#2A9D8F]/30 rounded-full" />
 
             {/* Bottom 2 cards */}
             <div className="grid grid-cols-6 gap-6 justify-center">
               <div/>
-              {cardTitles.slice(3).map((_, i) => {
-                return <div key={i+3} className="col-span-2 flex flex-col items-center">
+              {aiSection.aiCards.slice(3).map((card, i) => (
+                <div key={i} className="col-span-2 flex flex-col items-center">
                   <div className={`text-center mb-10 w-[16px] h-[12px] ${ColorProps.bgGradient} [clip-path:polygon(0%_0%,100%_0%,50%_100%)]`} />
-                  <AiCard key={i+3} title={cardTitles[i+3]} text={cardTexts[i+3]} icon={cardIcons[i+3]} style="shadow-xl h-full" />
-                </div>;
-              })}
+                  <AiCard {...card} />
+                </div>
+              ))}
             </div>
           </div>
         </section>
       </div>
-      <ActionBanner title={bannerTitle} text={bannerText} buttonText={bannerButtonText} lang={lang} page="donate"/>
+      <ActionBanner title={banner.title} text={banner.text} buttonText={banner.buttonText} lang={lang} page={banner.url}/>
     </div>
   );
 }

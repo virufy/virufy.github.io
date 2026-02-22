@@ -24,7 +24,7 @@ const ActionBanner = ({
           <p className={`${ColorProps.textGray}`}>{text}</p>
         </div>
         <button className={`whitespace-nowrap px-6 py-3 rounded-full ml-6 ${ColorProps.bgGradientReverse}`}>
-          <Link href={`/${lang}/${page}`}>
+          <Link href={`/${lang}${page}`}>
             {buttonText}
           </Link>
         </button>

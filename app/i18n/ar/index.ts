@@ -19,6 +19,8 @@ import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
+import sevenai from "./sevenai";
+
 
 const arMetadata: I18nData = {
   ai,
@@ -41,6 +43,7 @@ const arMetadata: I18nData = {
   supporters,
   teamLeads,
   donate,
+  sevenai,
 };
 
 export default arMetadata;
