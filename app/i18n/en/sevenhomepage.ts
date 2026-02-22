@@ -36,6 +36,11 @@ const sevenHomePage: sevenhomepage = {
     title: 'Advancing Global Health, Together.',
     subtitle:
       'Virufy unites experts and volunteers worldwide to make respiratory screening accessible to everyone.',
+    icons: [
+      '../../images/sevenhome/globe.png',
+      '../../images/sevenhome/hand.png',
+      '../../images/sevenhome/gear.png',
+    ],
     cardtitle: [
       'Cross-Border Collaboration',
       'Community Empowerment',

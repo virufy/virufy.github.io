@@ -19,6 +19,7 @@ export interface sevenhomepage {
   };
   section4: {
     title: string;
+    icons: string[];
     subtitle: string;
     cardtitle: string[];
     cardtext: string[];
