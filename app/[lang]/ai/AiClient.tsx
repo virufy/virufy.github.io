@@ -47,12 +47,11 @@ export default function AiPage({
       <section>
         <div className="relative bg-[#4883e3]">
           <ExportedImage
-            className="absolute h-full w-full object-cover opacity-30"
+            className="pointer-events-none absolute h-full w-full object-cover opacity-30"
             src={SplashBackground}
             alt=""
             priority
             basePath={basePath}
-            className="pointer-events-none absolute h-full w-full object-cover opacity-30"
           />
 
           <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-center px-6 pb-16 pt-28 md:pb-28 md:pt-36">
