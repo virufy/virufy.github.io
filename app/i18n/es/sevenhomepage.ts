@@ -1,61 +1,63 @@
 import type { sevenhomepage } from '../types/sevenhomepage';
 const sevenHomePage: sevenhomepage = {
   introSection: {
-    title: 'AI-Powered Respiratory Health Screening',
-    subtitle: 'Your Digital Health Companion',
-    text: "With a simple cough into your phone, Virufy's AI screens for sound patterns linked to respiratory illnesses like COVID-19, RSV, Pneumonia, Asthma, and COPD",
-    missionbutton: 'Our Mission',
-    supportbutton: 'Support Us',
+    title: 'Detección Respiratoria Impulsada por IA',
+    subtitle: 'Tu Compañero Digital de Salud',
+    text: 'Con una simple tos en tu teléfono, la IA de Virufy detecta patrones de sonido asociados con enfermedades respiratorias como COVID-19, VRS, Neumonía, Asma y EPOC',
+    missionbutton: 'Nuestra Misión',
+    supportbutton: 'Apóyanos',
   },
   section2: {
-    title: 'Our Mission to Redefine Early Detection',
+    title: 'Nuestra Misión para Redefinir la Detección Temprana',
     subtitle:
-      'Uniting science, empathy, and innovation to advance early detection for all.',
+      'Uniendo ciencia, empatía e innovación para avanzar en la detección temprana para todos.',
     text: [
-      'We are a nonprofit dedicated to transforming how the world detects and understands respiratory illness, through advanced audio analysis and generative AI.',
-      'Our mission is to make early detection accessible, private, and affordable for all. By delivering AI-driven screening tools that work on any smartphone, or web browser we empower patients, clinicians, and health systems—especially in low-income and underserved regions—to take action sooner and improve health outcomes worldwide.',
-      'Virufy bridges the gap between technology and humanity, turning everyday moments into opportunities for life-saving insights, clinical research, global partnerships, and scientific integrity.',
+      'Somos una organización sin fines de lucro dedicada a transformar cómo el mundo detecta y comprende las enfermedades respiratorias, mediante análisis de audio avanzado e IA generativa.',
+      'Nuestra misión es hacer que la detección temprana sea accesible, privada y asequible para todos. Al ofrecer herramientas de detección impulsadas por IA que funcionan en cualquier smartphone o navegador web, empoderamos a pacientes, clínicos y sistemas de salud, especialmente en regiones de bajos ingresos y desatendidas, para actuar más rápido y mejorar los resultados de salud en todo el mundo.',
+      'Virufy cierra la brecha entre la tecnología y la humanidad, convirtiendo momentos cotidianos en oportunidades para obtener información que salva vidas, investigación clínica, asociaciones globales e integridad científica.',
     ],
   },
   section3: {
-    title: 'Your Health, Our Priority',
+    title: 'Tu Salud, Nuestra Prioridad',
     subtitle:
-      'At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.',
+      'En Virufy, tu bienestar está en el corazón de todo lo que hacemos. Priorizamos la privacidad, garantizando que tus datos permanezcan seguros y confidenciales.',
     cardtitle: [
-      'Instant Analysis',
-      'At-home Anonymity',
-      'User-Friendly Interface',
+      'Análisis Instantáneo',
+      'Anonimato en el Hogar',
+      'Interfaz Fácil de Usar',
     ],
     cardtext: [
-      'Rapid feedback on your cough’s characteristics and abnormality profile based on the sound pattern of your cough.',
-      'Feel secure knowing that your results are only for your eyes.',
-      'User-Friendly Interface Intuitive design for easy navigation and seamless user experience',
+      'Retroalimentación rápida sobre las características de tu tos y el perfil de anormalidad basado en el patrón de sonido de tu tos.',
+      'Siéntete seguro sabiendo que tus resultados son solo para tus ojos.',
+      'Interfaz fácil de usar Diseño intuitivo para una navegación fácil y una experiencia de usuario sin problemas',
     ],
+    disclaimer:
+      '*Virufy no es un sustituto del consejo, diagnóstico o tratamiento médico profesional. Se recomienda a los usuarios consultar con un proveedor de atención médica autorizado para cualquier inquietud o decisión médica.*',
   },
   section4: {
-    title: 'Advancing Global Health, Together.',
+    title: 'Avanzando la Salud Global, Juntos.',
     subtitle:
-      'Virufy unites experts and volunteers worldwide to make respiratory screening accessible to everyone.',
+      'Virufy une expertos y voluntarios en todo el mundo para hacer que la detección respiratoria sea accesible para todos.',
     icons: [
       '../../images/sevenhome/globe.png',
       '../../images/sevenhome/hand.png',
       '../../images/sevenhome/gear.png',
     ],
     cardtitle: [
-      'Cross-Border Collaboration',
-      'Community Empowerment',
-      'Open Innovation',
+      'Colaboración Transfronteriza',
+      'Empoderamiento Comunitario',
+      'Innovación Abierta',
     ],
     cardtext: [
-      'Working alongside universities, hospitals, and nonprofits to advance open-source research.',
-      'Every cough sample helps improve AI accuracy and supports equitable health outcomes.',
-      'Our mission is driven by transparency and global cooperation with a people-first mindset.',
+      'Trabajando junto a universidades, hospitales y organizaciones sin fines de lucro para avanzar en la investigación de código abierto.',
+      'Cada muestra de tos ayuda a mejorar la precisión de la IA y apoya resultados de salud equitativos.',
+      'Nuestra misión está impulsada por la transparencia y la cooperación global con una mentalidad centrada en las personas.',
     ],
   },
   section5: {
-    title: 'Discover the Science Behind Virufy.',
-    text: 'Learn how AI and acoustic analysis come together to detect respiratory patterns and advance global health research.',
-    button: 'Explore Our Technology',
+    title: 'Descubre la Ciencia Detrás de Virufy.',
+    text: 'Aprende cómo la IA y el análisis acústico se unen para detectar patrones respiratorios y avanzar en la investigación de salud global.',
+    button: 'Explorar Nuestra Tecnología',
   },
 };
 export default sevenHomePage;
