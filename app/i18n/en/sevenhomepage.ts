@@ -31,6 +31,8 @@ const sevenHomePage: sevenhomepage = {
       'Feel secure knowing that your results are only for your eyes.',
       'User-Friendly Interface Intuitive design for easy navigation and seamless user experience',
     ],
+    disclaimer:
+      '*Virufy is not a substitute for professional medical advice, diagnosis, or treatment. Users are advised to consult a licensed healthcare provider for any medical concerns or decisions.*',
   },
   section4: {
     title: 'Advancing Global Health, Together.',
