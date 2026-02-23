@@ -1,9 +1,11 @@
+'use client';
 import { type Locale } from '@/i18n-config';
 import { usei18n } from '../../i18n';
 import ExportedImage from 'next-image-export-optimizer';
+import { useState, useRef } from 'react';
 
 const Container: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <div className="mx-auto w-full px-20 md:max-w-7xl">{children}</div>
+  <div className="mx-auto w-full md:max-w-7xl md:px-20">{children}</div>
 );
 
 type CardProps = {
@@ -40,23 +42,26 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     sevenhomepage: { introSection, section2, section3, section4, section5 },
   } = usei18n(lang);
 
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
   return (
     <main className="bg-[#dbeef3] text-gray-800">
       {/* HERO */}
-      <div className="relative w-full items-center overflow-hidden p-20">
+      <div className="relative w-full items-center overflow-hidden px-5 md:px-20">
         <div className="absolute inset-0 flex">
           <ExportedImage
             src="/images/sevenhome/HeroBG.png"
             alt="Your health background"
             fill
-            className="overflow-hidden object-cover object-center"
+            className="object-contain object-cover object-center"
           />
         </div>
         <section className="relative my-24 overflow-hidden py-24">
           <Container>
-            <div className="mx-auto grid items-center gap-12 text-left md:grid-cols-2">
+            <div className="mx-auto items-center gap-12 text-center md:grid md:grid-cols-2 md:text-left">
               <div className="space-y-6">
-                <h1 className="mb-6 w-full bg-gradient-to-b from-blue-500 to-emerald-500 bg-clip-text text-4xl font-bold text-sky-700 text-transparent md:text-5xl">
+                <h1 className="mb-6 w-full bg-gradient-to-b from-blue-500 to-emerald-500 bg-clip-text text-2xl font-bold text-sky-700 text-transparent md:text-5xl">
                   {introSection.title}
                 </h1>
                 <h2 className="mb-6 w-full text-xl font-bold text-gray-700 md:text-3xl">
@@ -65,11 +70,11 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <p className="space-y-6 pb-6 text-lg text-gray-600 md:text-xl lg:max-w-2xl">
                   {introSection.text}
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <button className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 text-lg font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600">
+                <div className="flex items-center justify-center gap-4 md:flex-wrap md:justify-start">
+                  <button className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600 md:text-lg">
                     {introSection.missionbutton}
                   </button>
-                  <button className="rounded-full border border-blue-500 bg-white px-8 py-4 text-lg font-semibold shadow-sm transition hover:bg-gray-100">
+                  <button className="rounded-full border border-blue-500 bg-white px-8 py-4 font-semibold shadow-sm transition hover:bg-gray-100 md:text-lg">
                     {introSection.supportbutton}
                   </button>
                 </div>
@@ -87,21 +92,22 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </section>
       </div>
 
+      {/* SECTION 2 */}
       <section className="relative w-full overflow-hidden bg-gradient-to-br from-white to-[#dbeef3]">
         {/* Background Image */}
-        <div className="absolute inset-0 flex justify-end">
+        <div className="absolute inset-0 flex justify-end overflow-hidden">
           <ExportedImage
             src="/images/sevenhome/OurMissionBG.png"
             alt="Our mission background"
             fill
             priority
-            className="-mt-1 object-contain object-center opacity-90 bg-blend-normal"
+            className="-mt-1 scale-90 overflow-hidden object-cover object-[90%_90%] opacity-90 bg-blend-normal md:translate-x-0 md:scale-100 md:object-contain md:object-center"
           />
         </div>
 
         {/* Text Content */}
         <div className="relative mx-auto flex min-h-[700px] max-w-7xl py-20">
-          <div className="">
+          <div className="flex-1 px-5 text-center md:px-20 md:text-left">
             <h2 className="mb-6 w-full text-4xl font-semibold text-emerald-800 md:text-4xl">
               {section2.title}
             </h2>
@@ -110,11 +116,20 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               {section2.subtitle}
             </h3>
 
-            <div className="space-y-6 text-lg text-gray-600 md:text-xl lg:max-w-2xl">
+            <div
+              className={`space-y-6 text-lg text-gray-600 md:max-h-full md:text-xl lg:max-w-2xl ${open ? 'max-h-full' : 'max-h-40'} overflow-hidden transition-all duration-300`}
+              ref={ref}
+            >
               {section2.text.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
             </div>
+            <button
+              onClick={() => setOpen(!open)}
+              className="mt-3 flex items-center gap-1 text-sm font-semibold text-emerald-700 md:hidden"
+            >
+              {open ? 'See Less ▲' : 'Read More ▼'}
+            </button>
           </div>
         </div>
       </section>
@@ -132,7 +147,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
         <section className="relative z-10 mx-auto w-full max-w-7xl rounded-3xl border border-sky-200 bg-white py-20">
           <Container>
-            <div className="items-center text-left">
+            <div className="items-center md:text-left">
               <h2 className="mb-3 text-3xl font-bold text-emerald-800 md:mb-6 md:text-4xl">
                 {section3.title}
               </h2>
@@ -173,7 +188,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
         <section className="relative z-10 mx-auto w-full max-w-7xl rounded-3xl border border-sky-200 bg-white py-20">
           <Container>
-            <div className="w-full text-left">
+            <div className="w-full md:text-left">
               <h2 className="mb-3 text-3xl font-bold text-emerald-800 md:mb-6 md:text-4xl">
                 {section4.title}
               </h2>

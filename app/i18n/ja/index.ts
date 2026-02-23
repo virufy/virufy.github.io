@@ -20,6 +20,7 @@ import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
 import sevenai from './sevenai';
+import sevenhomepage from './sevenhomepage';
 
 const jaMetadata: I18nData = {
   ai,
@@ -43,6 +44,7 @@ const jaMetadata: I18nData = {
   teamLeads,
   donate,
   sevenai,
+  sevenhomepage,
 };
 
 export default jaMetadata;
