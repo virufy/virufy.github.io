@@ -19,6 +19,7 @@ import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
+import sevenai from './sevenai';
 import sevenhomepage from './sevenhomepage';
 
 const jaMetadata: I18nData = {
@@ -42,6 +43,7 @@ const jaMetadata: I18nData = {
   supporters,
   teamLeads,
   donate,
+  sevenai,
   sevenhomepage,
 };
 

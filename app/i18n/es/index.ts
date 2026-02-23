@@ -19,6 +19,7 @@ import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
+import sevenai from './sevenai';
 import sevenhomepage from './sevenhomepage';
 
 const esMetadata: I18nData = {
@@ -42,6 +43,7 @@ const esMetadata: I18nData = {
   supporters,
   teamLeads,
   donate,
+  sevenai,
   sevenhomepage,
 };
 
