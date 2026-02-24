@@ -16,6 +16,7 @@ export interface sevenhomepage {
     subtitle: string;
     cardtitle: string[];
     cardtext: string[];
+    disclaimer: string;
   };
   section4: {
     title: string;
