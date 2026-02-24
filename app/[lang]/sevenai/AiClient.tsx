@@ -90,24 +90,33 @@ export default function AiPage({
               {aiSection.text}
             </p>
 
-            <div className="md:grid md:grid-cols-6 md:gap-x-6 md:gap-y-3 md:justify-center">
+            <div className="hidden md:grid grid-cols-6 gap-x-6 gap-y-3 justify-center">
               {/* Top 3 cards */}
               {aiSection.aiCards.filter((_, i) => i % 2 === 0).map((card, i) => (
                 <div key={i} className="col-span-2 flex flex-col items-center">
                   <AiCard {...card} />
-                  <div className={`hidden md:block mt-10 w-[16px] h-[12px] ${ColorProps.bgGradientReverse} [clip-path:polygon(50%_0%,0%_100%,100%_100%)]`} />
+                  <div className={`mt-10 w-[16px] h-[12px] ${ColorProps.bgGradientReverse} [clip-path:polygon(50%_0%,0%_100%,100%_100%)]`} />
                 </div>
               ))}
-              <div className="hidden md:block col-span-6 h-[4px] w-full bg-gradient-to-r from-[#0E72C9]/30 to-[#2A9D8F]/30 rounded-full" />
+              <div className="col-span-6 h-[4px] w-full bg-gradient-to-r from-[#0E72C9]/30 to-[#2A9D8F]/30 rounded-full" />
               <div/>
               {/* Bottom 2 cards */}
               {aiSection.aiCards.filter((_, i) => i % 2 === 1).map((card, i) => (
                 <div key={i} className="col-span-2 flex flex-col items-center">
-                  <div className={`hidden md:block text-center mb-10 w-[16px] h-[12px] ${ColorProps.bgGradient} [clip-path:polygon(0%_0%,100%_0%,50%_100%)]`} />
+                  <div className={`text-center mb-10 w-[16px] h-[12px] ${ColorProps.bgGradient} [clip-path:polygon(0%_0%,100%_0%,50%_100%)]`} />
                   <AiCard {...card} />
                 </div>
               ))}
-              
+            </div>
+            
+            {/* Mobile AI Cards */}
+            <div className="block md:hidden">
+              {/* Top 3 cards */}
+              {aiSection.aiCards.map((card, i) => (
+                <div key={i} className="flex flex-col items-center">
+                  <AiCard {...card} />
+                </div>
+              ))}              
             </div>
           </div>
         </section>
