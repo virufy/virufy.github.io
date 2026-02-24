@@ -1,61 +1,54 @@
 import type { sevenhomepage } from '../types/sevenhomepage';
 const sevenHomePage: sevenhomepage = {
   introSection: {
-    title: 'AI-Powered Respiratory Health Screening',
-    subtitle: 'Your Digital Health Companion',
-    text: "With a simple cough into your phone, Virufy's AI screens for sound patterns linked to respiratory illnesses like COVID-19, RSV, Pneumonia, Asthma, and COPD",
-    missionbutton: 'Our Mission',
-    supportbutton: 'Support Us',
+    title: 'فحص صحة الجهاز التنفسي بقوة الذكاء الاصطناعي',
+    subtitle: 'رفيقك الصحي الرقمي',
+    text: 'بمجرد السعال البسيط في هاتفك، يقوم ذكاء Virufy بفحص أنماط صوتية مرتبطة بأمراض الجهاز التنفسي مثل COVID-19 و RSV والالتهاب الرئوي والربو والإنسداد الرئوي المزمن',
+    missionbutton: 'مهمتنا',
+    supportbutton: 'ادعمنا',
   },
   section2: {
-    title: 'Our Mission to Redefine Early Detection',
-    subtitle:
-      'Uniting science, empathy, and innovation to advance early detection for all.',
+    title: 'مهمتنا لإعادة تعريف الكشف المبكر',
+    subtitle: 'توحيد العلم والتعاطف والابتكار لتقدم الكشف المبكر للجميع.',
     text: [
-      'We are a nonprofit dedicated to transforming how the world detects and understands respiratory illness, through advanced audio analysis and generative AI.',
-      'Our mission is to make early detection accessible, private, and affordable for all. By delivering AI-driven screening tools that work on any smartphone, or web browser we empower patients, clinicians, and health systems—especially in low-income and underserved regions—to take action sooner and improve health outcomes worldwide.',
-      'Virufy bridges the gap between technology and humanity, turning everyday moments into opportunities for life-saving insights, clinical research, global partnerships, and scientific integrity.',
+      'نحن منظمة غير ربحية مكرسة لتحويل كيفية كشف العالم وفهمه لأمراض الجهاز التنفسي، من خلال تحليل الصوت المتقدم والذكاء الاصطناعي التوليدي.',
+      'مهمتنا هي جعل الكشف المبكر في متناول الجميع وخاصة وميسور التكلفة. من خلال توفير أدوات فحص تعتمد على الذكاء الاصطناعي تعمل على أي هاتف ذكي أو متصفح ويب، نمكن المرضى والأطباء والأنظمة الصحية، خاصة في المناطق منخفضة الدخل والمحرومة، من اتخاذ إجراء أسرع وتحسين النتائج الصحية في جميع أنحاء العالم.',
+      'يسد Virufy الفجوة بين التكنولوجيا والإنسانية، محولاً اللحظات اليومية إلى فرص لرؤى منقذة للحياة والبحث السريري والشراكات العالمية والنزاهة العلمية.',
     ],
   },
   section3: {
-    title: 'Your Health, Our Priority',
+    title: 'صحتك، أولويتنا',
     subtitle:
-      'At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.',
-    cardtitle: [
-      'Instant Analysis',
-      'At-home Anonymity',
-      'User-Friendly Interface',
-    ],
+      'في Virufy، راحتك هي قلب كل ما نقوم به. نعطي الأولوية للخصوصية، مما يضمن بقاء بيانات أمنة وسرية.',
+    cardtitle: ['تحليل فوري', 'الخصوصية في المنزل', 'واجهة سهلة الاستخدام'],
     cardtext: [
-      'Rapid feedback on your cough’s characteristics and abnormality profile based on the sound pattern of your cough.',
-      'Feel secure knowing that your results are only for your eyes.',
-      'User-Friendly Interface Intuitive design for easy navigation and seamless user experience',
+      'ردود فعل سريعة حول خصائص السعال ملفك الشخصي بناءً على نمط صوت السعال.',
+      'اشعر بالأمان مع العلم أن النتائج مخصصة لعينيك فقط.',
+      'واجهة سهلة الاستخدام مع تصميم بديهي للملاحة السهلة وتجربة المستخدم السلسة',
     ],
+    disclaimer:
+      '*Virufy ليس بديلاً عن المشورة الطبية المهنية أو التشخيص أو العلاج. يُنصح المستخدمون باستشارة مقدم رعاية صحية مرخص بشأن أي مخاوف طبية أو قرارات.*',
   },
   section4: {
-    title: 'Advancing Global Health, Together.',
+    title: 'تقدم الصحة العالمية معاً.',
     subtitle:
-      'Virufy unites experts and volunteers worldwide to make respiratory screening accessible to everyone.',
+      'يوحد Virufy الخبراء والمتطوعين في جميع أنحاء العالم لجعل فحص الجهاز التنفسي في متناول الجميع.',
     icons: [
       '../../images/sevenhome/globe.png',
       '../../images/sevenhome/hand.png',
       '../../images/sevenhome/gear.png',
     ],
-    cardtitle: [
-      'Cross-Border Collaboration',
-      'Community Empowerment',
-      'Open Innovation',
-    ],
+    cardtitle: ['التعاون عبر الحدود', 'تمكين المجتمع', 'الابتكار المفتوح'],
     cardtext: [
-      'Working alongside universities, hospitals, and nonprofits to advance open-source research.',
-      'Every cough sample helps improve AI accuracy and supports equitable health outcomes.',
-      'Our mission is driven by transparency and global cooperation with a people-first mindset.',
+      'العمل جنباً إلى جنب مع الجامعات والمستشفيات والمنظمات غير الربحية لتقدم البحث مفتوح المصدر.',
+      'كل عينة سعال تساعد على تحسين دقة الذكاء الاصطناعي وتدعم نتائج صحية عادلة.',
+      'تحركها مهمتنا الشفافية والتعاون العالمي مع عقلية تركز على الناس.',
     ],
   },
   section5: {
-    title: 'Discover the Science Behind Virufy.',
-    text: 'Learn how AI and acoustic analysis come together to detect respiratory patterns and advance global health research.',
-    button: 'Explore Our Technology',
+    title: 'اكتشف العلم وراء Virufy.',
+    text: 'تعرف على كيفية اجتماع الذكاء الاصطناعي وتحليل الصوت للكشف عن أنماط الجهاز التنفسي وتقدم أبحاث الصحة العالمية.',
+    button: 'استكشف تكنولوجيتنا',
   },
 };
 export default sevenHomePage;
