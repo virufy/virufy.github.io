@@ -20,6 +20,7 @@ import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
 import sevenai from "./sevenai";
+import sevenhomepage from './sevenhomepage';
 
 
 const arMetadata: I18nData = {
@@ -44,6 +45,7 @@ const arMetadata: I18nData = {
   teamLeads,
   donate,
   sevenai,
+  sevenhomepage,
 };
 
 export default arMetadata;
