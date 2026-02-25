@@ -337,7 +337,7 @@ const people: People = {
           'CEO & Co-Founder - Therapia Sdn. Bhd.',
           'M.S. Frontier Sciences - University of Tokyo',
         ],
-        link: '',
+        link: 'https://therapia.my/',
       },
       junpei: {
         img: './../images/advisors/junpei-komiyama.webp',

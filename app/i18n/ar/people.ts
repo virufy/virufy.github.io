@@ -333,7 +333,7 @@ const people: People = {
           'الرئيس التنفيذي والمؤسس المشارك – شركة ثيرابيا (ذ.م.م)',
           ' ماجستير العلوم في علوم الحدود – جامعة طوكي',
         ],
-        link: '',
+        link: 'https://therapia.my/',
       },
       junpei: {
         img: './../images/advisors/junpei-komiyama.webp',
