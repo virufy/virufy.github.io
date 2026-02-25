@@ -5,7 +5,7 @@ import { type AiCard } from '@/app/i18n/types/sevenai';
 
 const AiCard = ({ title, text, icon } : AiCard) => {
   return (
-    <div className={`flex border border-[#bcc7d4] rounded-2xl p-5 shadow-xl w-full h-full`}>
+    <div className={`flex border border-[#bcc7d4] rounded-2xl p-5 shadow-xl w-full h-full my-2 md:my-0`}>
       <ExportedImage
           className="self-start mr-4"
           src={icon}

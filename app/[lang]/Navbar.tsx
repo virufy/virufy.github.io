@@ -456,9 +456,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
             </div>
 
             {/* Mobile Search Bar */}
-            <div className={`-mt-1 px-12 py-2 lg:hidden`}>
+            <div className={`-mt-1 pl-12 py-2 lg:hidden`}>
               <div
-                className={`${navbar ? 'mt-2 w-[90vw] sm:w-[94vw]' : 'w-[86vw] sm:w-[90vw]'} md:w-[250px]`}
+                className={`${navbar ? 'mt-2 ' : ''} md:w-[250px]`}
               >
                 {renderSearchInput('w-full -ml-9 md:ml-1')}
                 {renderSearchDropdown()}
