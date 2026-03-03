@@ -671,22 +671,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                     </div>
                   </li>
 
-                  {/* FAQ */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'FAQ'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/faq`}
-                        onClick={handleNavClick}
-                      >
-                        {faq}
-                      </Link>
-                    </div>
-                  </li>
                   {/* Join Us */}
                   <li>
                     <div>
@@ -716,6 +700,23 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         onClick={handleNavClick}
                       >
                         {donate ? donate.buttonText : ''}
+                      </Link>
+                    </div>
+                  </li>
+
+                  {/* FAQ */}
+                  <li>
+                    <div>
+                      <Link
+                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
+                          activeLink === 'FAQ'
+                            ? 'solid peer border-b-2 py-2'
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
+                        } ${linkGradient}`}
+                        href={`/${lang}/faq`}
+                        onClick={handleNavClick}
+                      >
+                        {faq}
                       </Link>
                     </div>
                   </li>
