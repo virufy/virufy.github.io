@@ -144,6 +144,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const pageNavColorKey = pageToNavColor[currPathname.slice(4)] || 'white';
   const pageNavColor = navColors[pageNavColorKey];
 
+  // Tailwind underline gradient used on desktop nav links
+  const linkGradient =
+    "relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-[#0E72C9] after:to-[#2A9D8F] after:opacity-0 hover:after:opacity-100";
+
   /** Effects */
 
   // Highlight active link based on route
@@ -194,10 +198,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const handleResize = () => {
+        // always close search when resizing; desktop will remain closed until user clicks
         setShowSearch(false);
         if (window.innerWidth >= SCREEN_SIZE) {
           setNavbar(false);
-          setShowSearch(true);
+          // do not automatically open search on wide screen
         }
       };
 
@@ -232,9 +237,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
       ) {
         clearResults();
         setHasSearched(false);
-        if (window.innerWidth < SCREEN_SIZE) {
-          setShowSearch(false);
-        }
+        // always collapse search when clicking outside
+        setShowSearch(false);
       }
     };
 
@@ -243,6 +247,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [clearResults]);
+
+  // focus the input when the search bar opens
+  useEffect(() => {
+    if (showSearch && inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [showSearch]);
 
   /** Helpers */
   const handleNavClick = () => setNavbar(false);
@@ -274,7 +285,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           placeholder={searchPlaceholder}
           value={query}
           disabled={!isReady}
-          autoFocus={window.innerWidth < SCREEN_SIZE}
+          autoFocus={window.innerWidth < SCREEN_SIZE || showSearch}
           onChange={(e) => {
             const value = e.target.value;
             setQuery(value);
@@ -340,7 +351,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     showSearch && (
       <ul
         ref={dropdownRef}
-        className={`border-gray absolute left-1/2 top-[58px] z-50 max-h-96 w-[86vw] -translate-x-1/2 overflow-y-auto rounded-md border lg:w-[70vw] lg:border-0 ${navbar ? `${searchColors['black'].bg}` : `${pageSearchColor.bg}`} p-4 shadow-lg lg:bg-white lg:bg-opacity-85`}
+        className={`border-gray absolute right-0 top-full z-50 mt-2 max-h-96 w-[400px] max-w-[90vw] overflow-y-auto rounded-md border ${navbar ? searchColors['black'].bg : pageSearchColor.bg} p-4 shadow-lg lg:border lg:bg-white lg:bg-opacity-95`}
         onClick={(e) => e.stopPropagation()}
       >
         {results.filter((r) => r.url).length > 0 ? (
@@ -400,7 +411,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       >
         {/* Navbar container */}
         <div
-          className={`lg:max-w-8lg justify-between ${navbar ? 'bg-black' : ''} px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 ${navbar ? 'h-screen' : ''}`}
+          className={`justify-between ${navbar ? 'bg-black' : ''} px-3 lg:mx-auto lg:flex lg:items-center lg:bg-transparent lg:px-2 ${navbar ? 'h-screen' : ''}`}
         >
           <div className="flex items-center justify-between lg:block lg:py-5">
             {/* Mobile Virufy Logo */}
@@ -494,24 +505,24 @@ export default function Navbar({ lang }: { lang: Locale }) {
             </div>
           </div>
           {/* Dropdown (mobile) and Desktop Nav Links */}
-          <div className="">
+          <div className="flex w-full items-center justify-between lg:flex">
             <div
               className={`${
                 navbar
                   ? 'fixed bottom-0 left-0 right-0 top-20 overflow-y-auto bg-black'
-                  : 'relative hidden flex-1 justify-self-start pb-3 lg:mt-0 lg:block lg:pb-0'
+                  : 'relative hidden flex-1 justify-self-start pb-3 lg:mt-0 lg:block lg:flex lg:items-center lg:justify-center lg:pb-0'
               }`}
             >
               {/* desktop navbar links */}
               <ul
-                className={`items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0 xl:space-x-9 ${
+                className={`items-center justify-center space-y-8 lg:flex lg:w-full lg:flex-1 lg:space-x-6 lg:space-y-0 xl:space-x-9 ${
                   navbar
-                    ? 'flex-column w-full pb-5 pl-5 text-left text-[24px] md:text-[36px]'
+                    ? 'flex w-full flex-col items-center justify-center pb-5 text-center text-[24px] md:text-[36px]'
                     : 'hidden'
                 }`}
               >
                 <div
-                  className={`justify-center space-y-8 bg-black lg:items-center lg:rounded-full ${navbar ? 'text-white' : `${pageNavColor.text} ${pageNavColor.bg}`} p-2 lg:flex lg:space-x-6 lg:space-y-0 lg:px-10 xl:space-x-9 ${navbar ? '' : 'hidden'} `}
+                  className={`mx-auto flex w-full flex-col justify-center space-y-8 bg-black text-black lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
                 >
                   {/* Home */}
                   <li>
@@ -521,7 +532,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           activeLink === 'Home'
                             ? 'solid border-b-2 py-2'
                             : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        }`}
+                        } ${linkGradient}`}
                         href={`/${lang}`}
                         onClick={handleNavClick}
                       >
@@ -537,7 +548,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           activeLink === 'Technology'
                             ? 'solid peer border-b-2 py-2'
                             : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        }`}
+                        } ${linkGradient}`}
                         href={`/${lang}/ai`}
                         onClick={handleNavClick}
                       >
@@ -553,53 +564,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       ></div>
                     </div>
                   </li>
-                  {/* coughcheck app link */}
-                  {/* <li className="text-white">
-                  <div>
-                    <Link
-                      className={`${navbar ? 'font-bold' : ''} ${
-                        activeLink === 'CoughCheck App'
-                          ? 'solid peer border-b-2 py-2 text-white'
-                          : 'peer relative py-2 text-white before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg'
-                      } `}
-                      href={`/${lang}/covid19`}
-                    >
-                      {coughCheckApp?.section}
-                    </Link>
-                    <div
-                      className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
-                        navbar
-                          ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
-                          : 'ml-[-35px] hidden'
-                      } hover:flex peer-hover:flex`}
-                    >
-                      <Link
-                        className="px-5 py-2 pt-5 text-[white] hover:font-bold"
-                        href={`/${lang}/covid19`}
-                      >
-                        {coughCheckApp?.covid19}
-                      </Link>
-                      <Link
-                        className="px-5 py-2 text-[white] hover:font-bold"
-                        href={`/${lang}/flu`}
-                      >
-                        {coughCheckApp?.flu}
-                      </Link>
-                      <Link
-                        className="px-5 py-2 text-[white] hover:font-bold"
-                        href={`/${lang}/copd`}
-                      >
-                        {coughCheckApp?.copd}
-                      </Link>
-                      <Link
-                        className="px-5 py-2 text-[white] hover:font-bold"
-                        href={`/${lang}/rsv`}
-                      >
-                        {coughCheckApp?.rsv}
-                      </Link>
-                    </div>
-                  </div>
-                  </li> */}
 
                   {/* About Us */}
                   <li>
@@ -609,7 +573,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           activeLink === 'About Us'
                             ? 'solid peer border-b-2 py-2'
                             : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } whitespace-nowrap`}
+                        } whitespace-nowrap ${linkGradient}`}
                         href={`/${lang}/story`}
                         onClick={handleNavClick}
                       >
@@ -671,7 +635,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           activeLink === 'Media'
                             ? 'solid peer border-b-2 py-2'
                             : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } `}
+                        } ${linkGradient}`}
                         href={`/${lang}/news`}
                         onClick={handleNavClick}
                       >
@@ -715,7 +679,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           activeLink === 'FAQ'
                             ? 'solid peer border-b-2 py-2'
                             : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        }`}
+                        } ${linkGradient}`}
                         href={`/${lang}/faq`}
                         onClick={handleNavClick}
                       >
@@ -723,57 +687,105 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       </Link>
                     </div>
                   </li>
-                  {/* Search bar for Desktop*/}
-                  <li className="hidden items-center justify-center py-2 lg:flex">
-                    <div className="relative w-[175px]">
-                      {renderSearchInput('w-full')}
-                      {renderSearchDropdown()}
-                    </div>
-                  </li>
-
-                  {/* Language Selector */}
-                  <li
-                    className={`${navbar ? 'relative top-[-24px] -ml-3' : ''}`}
-                  >
-                    <LocaleSelect
-                      isNavbar={navbar}
-                      textColor={pageNavColor.color}
-                    />
-                  </li>
-                </div>
-
-                {/* Join Us and Donate Buttons */}
-                <div
-                  className={`lg:flex ${navbar ? 'flex flex-row items-center justify-center gap-x-8 pt-14 text-white md:gap-x-20' : 'text-black'}`}
-                >
                   {/* Join Us */}
-                  <li
-                    className={`text-[#393939] lg:mx-5 ${navbar ? 'pb-10' : ''}`}
-                  >
-                    <Link href={`/${lang}/join-us`} onClick={handleNavClick}>
-                      <button
-                        className={`shadow-[4px_4px_6px_rgba(0,0,0,0.2)] lg:h-[48px] lg:w-[140px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] border border-solid text-base font-semibold md:h-[60px] md:w-[180px] md:text-xl' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
+                  <li>
+                    <div>
+                      <Link
+                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
+                          activeLink === 'Join Us'
+                            ? 'solid peer border-b-2 py-2'
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
+                        } ${linkGradient}`}
+                        href={`/${lang}/join-us`}
+                        onClick={handleNavClick}
                       >
                         {joinUs ? joinUs.buttonText : ''}
-                      </button>
-                    </Link>
+                      </Link>
+                    </div>
                   </li>
-
                   {/* Donate */}
-                  <li
-                    className={`text-[#393939] lg:pr-10 ${navbar ? 'flex-column pb-10' : ''}`}
-                  >
-                    <Link href={`/${lang}/donate`} onClick={handleNavClick}>
-                      <button
+                  <li>
+                    <div>
+                      <Link
+                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
+                          activeLink === 'Donate'
+                            ? 'solid peer border-b-2 py-2'
+                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
+                        } ${linkGradient}`}
+                        href={`/${lang}/donate`}
                         onClick={handleNavClick}
-                        className={`shadow-[4px_4px_6px_rgba(0,0,0,0.2)] md:h-[42px] md:w-[125px] lg:h-[48px] lg:w-[140px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold md:h-[60px] md:w-[180px] md:text-xl' : 'h-[42px] w-[125px] rounded-full text-base font-semibold'}`}
                       >
-                        {donate.buttonText}
-                      </button>
-                    </Link>
+                        {donate ? donate.buttonText : ''}
+                      </Link>
+                    </div>
                   </li>
                 </div>
               </ul>
+            </div>
+            <div className="flex justify-end">
+              {/* Search and Locale */}
+              <div
+                className={`lg:ml-auto lg:flex ${navbar ? 'flex flex-row items-center justify-center gap-x-8 pt-14 text-white md:gap-x-20' : 'pl-10 text-black'}`}
+              >
+                <ul className="mx-2 flex items-center gap-x-4">
+                  {/* Search bar for Desktop*/}
+                  <li className="ml-[100px] hidden items-center justify-center py-2 lg:ml-[120px] lg:flex">
+                    <div
+                      className={`relative flex justify-center ${showSearch ? 'w-[175px]' : 'w-auto'}`}
+                    >
+                      {showSearch ? (
+                        <>
+                          {renderSearchInput('w-full')}
+                          {renderSearchDropdown()}
+                        </>
+                      ) : (
+                        <div
+                          className="cursor-pointer"
+                          onClick={() => {
+                            setShowSearch((prev) => {
+                              const next = !prev;
+                              if (!next) {
+                                clearResults();
+                                setHasSearched(false);
+                              }
+                              return next;
+                            });
+                          }}
+                        >
+                          {/* magnifying glass icon */}
+                          <svg
+                            className={`h-[22px] w-[22px] lg:${pageNavColor.text}`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="10" cy="10" r="6" strokeWidth="2" />
+                            <line
+                              x1="14"
+                              y1="14"
+                              x2="20"
+                              y2="20"
+                              strokeWidth="2"
+                            />
+                          </svg>
+                        </div>
+                      )}
+                    </div>
+                  </li>
+                  <div className="rounded-full bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] p-[1px]">
+                    {/* Language Selector */}
+                    <li
+                      className={`${navbar ? 'relative top-[-24px] -ml-3' : 'rounded-full border border-2 border-sky-800 bg-white bg-opacity-80 pl-4 text-sm font-semibold text-black'} lg:relative lg:top-0 lg:-ml-0`}
+                    >
+                      <LocaleSelect
+                        isNavbar={navbar}
+                        textColor={pageNavColor.color}
+                      />
+                    </li>
+                  </div>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
