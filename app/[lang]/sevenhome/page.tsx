@@ -124,8 +124,9 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               {section2.title}
             </h2>
 
-            <h3 className="mb-8 text-xl font-semibold text-gray-700 md:text-2xl lg:max-w-5xl"></h3>
-            {section2.subtitle}
+            <h3 className="mb-8 text-xl font-semibold text-gray-700 md:text-2xl lg:max-w-5xl">
+              {section2.subtitle}
+            </h3>
             <div className="flex h-64 justify-center py-10 md:mb-6 md:hidden">
               <ExportedImage
                 src="/images/sevenhome/Heart_Image.png"
