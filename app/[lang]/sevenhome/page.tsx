@@ -19,7 +19,11 @@ const Container: React.FC<ContainerProps> = ({
     {children}
   </div>
 );
-
+const titlestyle =
+  'mb-6 w-full text-4xl font-semibold text-[#1B6E64] md:text-4xl';
+const subtitlestyle = 'mb-6 w-full text-xl font-bold text-gray-700 md:text-3xl';
+const textstyle =
+  'space-y-6 pb-6 text-lg text-gray-600 md:text-2xl lg:max-w-2xl';
 interface CardProps {
   title: string;
   text: string;
@@ -30,7 +34,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, text, icon, first, last }) => (
   <div
-    className={`flex w-full flex-row items-center gap-4 rounded rounded-xl border border-4 border-blue-300 bg-white p-4 shadow-sm md:rounded-none md:border-0 md:shadow-none ${first ? 'md:border-t-4 md:border-blue-300' : ''} ${last ? 'md:border-b-4 md:border-blue-300' : 'md:border-b-4 md:border-blue-300'} md:gap-6 md:px-6 md:py-4`}
+    className={`flex w-full flex-row items-center gap-4 rounded rounded-xl border border-2 border-blue-300 bg-white p-4 shadow-sm md:rounded-none md:border-0 md:shadow-none ${first ? 'md:border-t-4 md:border-blue-300' : ''} ${last ? 'md:border-b-4 md:border-blue-300' : 'md:border-b-4 md:border-blue-300'} md:gap-6 md:px-6 md:py-4`}
   >
     {/* Icon */}
     {icon && (
@@ -44,7 +48,7 @@ const Card: React.FC<CardProps> = ({ title, text, icon, first, last }) => (
       <h3 className="mb-2 text-sm font-semibold text-gray-800 md:text-2xl">
         {title}
       </h3>
-      <p className="text-sm text-gray-600 md:text-lg">{text}</p>
+      <p className={textstyle}>{text}</p>
     </div>
   </div>
 );
@@ -58,7 +62,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <main className="bg-[#dbeef3] text-gray-800">
+    <main className="">
       {/* HERO */}
       <div className="relative w-full items-center overflow-hidden px-5 md:px-20">
         <div className="absolute inset-0 flex">
@@ -76,9 +80,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <h1 className="mb-6 w-full bg-gradient-to-b from-blue-500 to-emerald-500 bg-clip-text text-2xl font-bold text-sky-700 text-transparent md:text-5xl">
                   {introSection.title}
                 </h1>
-                <h2 className="mb-6 w-full text-xl font-bold text-gray-700 md:text-3xl">
-                  {introSection.subtitle}
-                </h2>
+                <h2 className={subtitlestyle}>{introSection.subtitle}</h2>
                 <p className="space-y-6 pb-6 text-lg text-gray-600 md:text-xl lg:max-w-2xl">
                   {introSection.text}
                 </p>
@@ -86,7 +88,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   <button className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600 md:text-lg">
                     {introSection.missionbutton}
                   </button>
-                  <button className="rounded-full border border-blue-500 bg-white px-8 py-4 font-semibold shadow-sm transition hover:bg-gray-100 md:text-lg">
+                  <button className="rounded-full border border-blue-500 bg-white px-8 py-4 font-semibold text-blue-500 shadow-sm transition hover:bg-gray-100 md:text-lg">
                     {introSection.supportbutton}
                   </button>
                 </div>
@@ -105,26 +107,27 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* SECTION 2 */}
-      <section className="relative w-full overflow-hidden bg-gradient-to-br from-white to-[#dbeef3]">
+      <section className="border-gray relative w-full overflow-hidden border-2 border-y bg-gradient-to-br from-white to-[#dbeef3]">
         {/* Background Image */}
-        <div className="absolute inset-0 flex justify-end overflow-hidden">
+        <div className="absolute bottom-0 right-0 flex justify-end overflow-hidden">
           <ExportedImage
-            src="/images/sevenhome/OurMissionBG.png"
+            src="/images/sevenhome/Heart_image.png"
             alt="Our mission background"
-            fill
+            height={750}
+            width={1100}
             priority
-            className="-mt-1 hidden scale-90 overflow-hidden object-cover object-[90%_90%] opacity-90 bg-blend-normal md:block md:translate-x-0 md:scale-100 md:object-contain md:object-center"
+            className="-mb-9 hidden md:block md:object-contain"
           />
         </div>
 
         {/* Text Content */}
         <div className="relative mx-auto flex min-h-[700px] max-w-7xl py-20">
           <div className="flex-1 items-center px-5 text-center md:px-20 md:text-left">
-            <h2 className="mb-6 w-full text-4xl font-semibold text-emerald-800 md:text-4xl">
+            <h2 className="mb-6 w-full text-4xl font-semibold text-[#1B6E64] md:text-4xl">
               {section2.title}
             </h2>
 
-            <h3 className="mb-8 text-xl font-semibold text-gray-700 md:text-2xl lg:max-w-5xl">
+            <h3 className="mb-8 text-xl font-semibold text-gray-700 md:text-3xl lg:max-w-5xl">
               {section2.subtitle}
             </h3>
             <div className="flex h-64 justify-center py-10 md:mb-6 md:hidden">
@@ -141,12 +144,14 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               ref={ref}
             >
               {section2.text.map((p, i) => (
-                <p key={i}>{p}</p>
+                <p key={i} className={`${textstyle} lg:max-w-xl`}>
+                  {p}
+                </p>
               ))}
             </div>
             <button
               onClick={() => setOpen(!open)}
-              className="rounded-full border border-blue-500 bg-white px-8 py-4 text-sm font-semibold shadow-sm transition hover:bg-gray-100 md:hidden"
+              className="rounded-full border border-blue-500 bg-white px-8 py-4 text-sm font-semibold text-blue-500 shadow-sm transition hover:bg-gray-100 md:hidden"
             >
               {open ? 'See Less ▲' : 'Read More ▼'}
             </button>
@@ -155,7 +160,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </section>
 
       {/* SECTION 3 */}
-      <div className="relative w-full items-center overflow-hidden p-10 md:p-20">
+      <div className="relative w-full items-center overflow-hidden p-4 md:p-10 md:p-20">
         <div className="absolute inset-0 flex">
           <ExportedImage
             src="/images/sevenhome/YourHealthBG.png"
@@ -167,11 +172,9 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </div>
         <section className="relative z-10 mx-auto w-full max-w-7xl rounded-3xl border border-sky-200 bg-white py-20 text-left">
           <Container>
-            <div className="items-center md:text-left">
-              <h2 className="mb-3 text-3xl font-bold text-emerald-800 md:mb-6 md:text-4xl">
-                {section3.title}
-              </h2>
-              <p className="mb-8 text-center text-xl font-semibold text-gray-600 md:text-left md:text-3xl lg:max-w-5xl">
+            <div className="items-center p-2 md:text-left">
+              <h2 className={titlestyle}>{section3.title}</h2>
+              <p className={`${textstyle} font-normal lg:max-w-4xl`}>
                 {section3.subtitle}
               </p>
             </div>
@@ -215,7 +218,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* SECTION 4 */}
-      <div className="relative w-full items-center overflow-hidden p-10 md:p-20">
+      <div className="relative w-full items-center overflow-hidden p-4 md:p-20">
         <div className="absolute inset-0 flex">
           <ExportedImage
             src="/images/sevenhome/MapBG.png"
@@ -228,10 +231,8 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <section className="relative z-10 mx-auto w-full max-w-7xl py-20 md:rounded-3xl md:border md:border-sky-200 md:bg-white">
           <Container transparent>
             <div className="w-full md:text-left">
-              <h2 className="mb-3 text-3xl font-bold text-emerald-800 md:mb-6 md:text-4xl">
-                {section4.title}
-              </h2>
-              <p className="mb-8 text-xl font-semibold text-gray-600 md:text-3xl lg:max-w-5xl">
+              <h2 className={titlestyle}>{section4.title}</h2>
+              <p className={`${subtitlestyle} font-normal`}>
                 {section4.subtitle}
               </p>
             </div>
