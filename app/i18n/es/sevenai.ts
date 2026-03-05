@@ -8,71 +8,71 @@ import ValidationIcon from '@/public/icons/icon-ai-validation.png';
 
 const sevenai: sevenAi = {
   heroSection: {
-    tag: "AI-Powered Health Technology",
+    tag: "Tecnología sanitaria impulsada por IA",
     title: [
-      { type: 'text', text: 'The ' },
-      { type: 'span', text: 'Science' },
-      { type: 'text', text: ' Behind Virufy' },
+      { type: 'text', text: 'La ' },
+      { type: 'span', text: 'Ciencia ' },
+      { type: 'text', text: 'Detrás de Virufy' },
     ],
-    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.',
+    text: 'Nuestra tecnología de inteligencia artificial detecta patrones sutiles en el sonido de la tos, lo que ayuda a detectar posibles enfermedades respiratorias de manera temprana y no invasiva.',
     aiSlides: [
       {
-        title: "Data Collection",
-        text: "Simply record a brief cough using our easy-to-use web app. The interface guides you to capture a high-quality, natural cough sample under consistent conditions, ensuring optimal audio for accurate respiratory analysis.",
+        title: "Recopilación de datos",
+        text: "Simplemente registre una tos breve usando nuestra aplicación web fácil de usar. La interfaz lo guía para capturar una muestra de tos natural de alta calidad en condiciones constantes, lo que garantiza un audio óptimo para un análisis respiratorio preciso.",
         image: CarouselImg1,
       },
       {
-        title: "Signal Processing",
-        text: "We use ML algorithms to accurately identify and isolate cough sounds. Our tools clean up background noise and analyze digital biomarkers by converting sound waves into quantifiable characteristics called acoustic biomarker features.",
+        title: "Procesamiento de señales",
+        text: "Utilizamos algoritmos de ML para identificar y aislar con precisión los sonidos de la tos. Nuestras herramientas limpian el ruido de fondo y analizan biomarcadores digitales convirtiendo ondas sonoras en características cuantificables llamadas características de biomarcadores acústicos.",
         image: CarouselImg2,
       },
       {
-        title: "Machine Learning Analysis",
-        text: "The extracted acoustic biomarker features are then fed into a pre-trained Machine Learning Model, the model compares the new incoming cough's feature profile against patterns it learned through training.",
+        title: "Análisis de aprendizaje automático",
+        text: "Las características de los biomarcadores acústicos extraídas luego se introducen en un modelo de aprendizaje automático previamente entrenado, el modelo compara el perfil de características de la nueva tos entrante con los patrones que aprendió durante el entrenamiento.",
         image: CarouselImg3,
       },
     ],
   },
   aiSection: {
-    title: "How Virufy's AI Learns",
-    text: "Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence. The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for early detection of potential health issues.",
+    title: "Cómo aprende la IA de Virufy",
+    text: "La Inteligencia Artificial (IA) es capaz de detectar diferencias mínimas en los patrones vocales para detectar la presencia de enfermedades. El algoritmo examina varios elementos de la tos, como la duración, la frecuencia y el tono. Aprovechando una base de datos completa, la IA compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite la detección temprana de posibles problemas de salud.",
     aiCards: [
       {
-        title: "Sound Capture",
-        text: "Users record short, anonymized cough samples through the Virufy app.",
+        title: "Captura de sonido",
+        text: "Los usuarios registran muestras de tos breves y anónimas a través de la aplicación Virufy.",
         icon: SoundIcon,
         style: "shadow-xl w-full h-full",
       },
       {
-        title: "Acoustic Processing",
-        text: "Each cough is converted into a visual sound map, or spectrogram.",
+        title: "Procesamiento acústico",
+        text: "Cada tos se convierte en un mapa de sonido visual o espectrograma.",
         icon: AcousticIcon,
         style: "shadow-xl h-full",
       },
       {
-        title: "Feature Extraction",
-        text: "AI identifies subtle patterns and acoustic biomarkers in the data.",
+        title: "Extracción de características",
+        text: "La IA identifica patrones sutiles y biomarcadores acústicos en los datos.",
         icon: FeatureIcon,
         style: "shadow-xl w-full h-full",
       },
       {
-        title: "Model Training",
-        text: "Algorithms learn from global datasets to improve accuracy and fairness.",
+        title: "Entrenamiento modelo",
+        text: "Los algoritmos aprenden de conjuntos de datos globales para mejorar la precisión y la equidad.",
         icon: ModelIcon,
         style: "shadow-xl h-full",
       },
       {
-        title: "Validation & Insight",
-        text: "Users results are tested to ensure ongoing improvement and effectiveness.",
+        title: "Validación y conocimiento",
+        text: "Los resultados de los usuarios se prueban para garantizar una mejora y eficacia continuas.",
         icon: ValidationIcon,
         style: "shadow-xl w-full h-full",
       },
     ],
   },
   banner: {
-    title: 'Ready to Make a Difference?',
-    text: "We're on a mission to make health screening as simple as a cough. Reach out to find out how your financial contributions directly accelerate our clinical research and the deployment of our accessible AI technology to communities worldwide.",
-    buttonText: 'Support Us',
+    title: '¿Listo para marcar la diferencia?',
+    text: "Tenemos la misión de hacer que los exámenes de salud sean tan simples como toser. Comuníquese para descubrir cómo sus contribuciones financieras aceleran directamente nuestra investigación clínica y el despliegue de nuestra tecnología de IA accesible en comunidades de todo el mundo.",
+    buttonText: 'Apóyanos',
     url: '/donate',
   }
 };
