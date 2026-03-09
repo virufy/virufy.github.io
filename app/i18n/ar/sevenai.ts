@@ -8,71 +8,71 @@ import ValidationIcon from '@/public/icons/icon-ai-validation.png';
 
 const sevenai: sevenAi = {
   heroSection: {
-    tag: "AI-Powered Health Technology",
+    tag: "التكنولوجيا الصحية المدعومة بالذكاء الاصطناعي",
     title: [
-      { type: 'text', text: 'The ' },
-      { type: 'span', text: 'Science' },
-      { type: 'text', text: ' Behind Virufy' },
+      { type: 'text', text: 'ال' },
+      { type: 'span', text: 'علم' },
+      { type: 'text', text: ' وراء Virufy' },
     ],
-    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.',
+    text: 'تستمع تقنية الذكاء الاصطناعي لدينا إلى الأنماط الدقيقة في صوت السعال، مما يساعد على اكتشاف أمراض الجهاز التنفسي المحتملة في وقت مبكر وغير جراحي.',
     aiSlides: [
       {
-        title: "Data Collection",
-        text: "Simply record a brief cough using our easy-to-use web app. The interface guides you to capture a high-quality, natural cough sample under consistent conditions, ensuring optimal audio for accurate respiratory analysis.",
+        title: "جمع البيانات",
+        text: "ما عليك سوى تسجيل سعال قصير باستخدام تطبيق الويب سهل الاستخدام. ترشدك الواجهة إلى التقاط عينة سعال طبيعية عالية الجودة في ظل ظروف متسقة، مما يضمن الصوت الأمثل لإجراء تحليل دقيق للجهاز التنفسي.",
         image: CarouselImg1,
       },
       {
-        title: "Signal Processing",
-        text: "We use ML algorithms to accurately identify and isolate cough sounds. Our tools clean up background noise and analyze digital biomarkers by converting sound waves into quantifiable characteristics called acoustic biomarker features.",
+        title: "معالجة الإشارات",
+        text: "نحن نستخدم خوارزميات التعلم الآلي لتحديد أصوات السعال وعزلها بدقة. تعمل أدواتنا على تنظيف الضوضاء في الخلفية وتحليل المؤشرات الحيوية الرقمية عن طريق تحويل الموجات الصوتية إلى خصائص قابلة للقياس الكمي تسمى ميزات العلامات الحيوية الصوتية.",
         image: CarouselImg2,
       },
       {
-        title: "Machine Learning Analysis",
-        text: "The extracted acoustic biomarker features are then fed into a pre-trained Machine Learning Model, the model compares the new incoming cough's feature profile against patterns it learned through training.",
+        title: "تحليل التعلم الآلي",
+        text: "يتم بعد ذلك إدخال ميزات العلامات الحيوية الصوتية المستخرجة في نموذج التعلم الآلي المُدرب مسبقًا، حيث يقارن النموذج خصائص السعال الوارد الجديدة مع الأنماط التي تعلمها من خلال التدريب.",
         image: CarouselImg3,
       },
     ],
   },
   aiSection: {
-    title: "How Virufy's AI Learns",
-    text: "Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence. The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for early detection of potential health issues.",
+    title: "كيف يتعلم الذكاء الاصطناعي لدى Virufy",
+    text: "الذكاء الاصطناعي (AI) قادر على اكتشاف الاختلافات الدقيقة في الأنماط الصوتية للكشف عن وجود المرض. تقوم الخوارزمية بفحص العناصر المختلفة للسعال، مثل المدة والتكرار ودرجة الصوت. ومن خلال الاستفادة من قاعدة بيانات شاملة، يقارن الذكاء الاصطناعي بدقة أنماط السعال المسجلة مع المؤشرات المعروفة لأمراض الجهاز التنفسي، مما يسمح بالكشف المبكر عن المشكلات الصحية المحتملة.",
     aiCards: [
       {
-        title: "Sound Capture",
-        text: "Users record short, anonymized cough samples through the Virufy app.",
+        title: "التقاط الصوت",
+        text: "يسجل المستخدمون عينات سعال قصيرة ومجهولة المصدر من خلال تطبيق Virufy.",
         icon: SoundIcon,
         style: "shadow-xl w-full h-full",
       },
       {
-        title: "Acoustic Processing",
-        text: "Each cough is converted into a visual sound map, or spectrogram.",
+        title: "المعالجة الصوتية",
+        text: "يتم تحويل كل سعال إلى خريطة صوتية مرئية، أو مخطط طيفي.",
         icon: AcousticIcon,
         style: "shadow-xl h-full",
       },
       {
-        title: "Feature Extraction",
-        text: "AI identifies subtle patterns and acoustic biomarkers in the data.",
+        title: "استخراج الميزة",
+        text: "يحدد الذكاء الاصطناعي الأنماط الدقيقة والمؤشرات الحيوية الصوتية في البيانات.",
         icon: FeatureIcon,
         style: "shadow-xl w-full h-full",
       },
       {
-        title: "Model Training",
-        text: "Algorithms learn from global datasets to improve accuracy and fairness.",
+        title: "التدريب النموذجي",
+        text: "تتعلم الخوارزميات من مجموعات البيانات العالمية لتحسين الدقة والعدالة.",
         icon: ModelIcon,
         style: "shadow-xl h-full",
       },
       {
-        title: "Validation & Insight",
-        text: "Users results are tested to ensure ongoing improvement and effectiveness.",
+        title: "التحقق من الصحة والبصيرة",
+        text: "يتم اختبار نتائج المستخدمين لضمان التحسين المستمر والفعالية.",
         icon: ValidationIcon,
         style: "shadow-xl w-full h-full",
       },
     ],
   },
   banner: {
-    title: 'Ready to Make a Difference?',
-    text: "We're on a mission to make health screening as simple as a cough. Reach out to find out how your financial contributions directly accelerate our clinical research and the deployment of our accessible AI technology to communities worldwide.",
-    buttonText: 'Support Us',
+    title: 'هل أنت مستعد لإحداث فرق؟',
+    text: "نحن في مهمة لجعل الفحص الصحي بسيطًا مثل السعال. تواصل معنا لتعرف كيف تعمل مساهماتك المالية على تسريع أبحاثنا السريرية بشكل مباشر ونشر تكنولوجيا الذكاء الاصطناعي التي يمكن الوصول إليها للمجتمعات في جميع أنحاء العالم.",
+    buttonText: 'ادعمنا',
     url: '/donate',
   }
 };
