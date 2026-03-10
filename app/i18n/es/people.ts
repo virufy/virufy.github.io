@@ -349,7 +349,7 @@ const people: People = {
           'CEO y cofundador - Therapia Sdn. Bhd.',
           'Máster en Ciencias Fronterizas - Universidad de Tokio',
         ],
-        link: '',
+        link: 'https://therapia.my/',
       },
     },
     advisorOrder: [

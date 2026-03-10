@@ -333,7 +333,7 @@ const people: People = {
           'Therapia Sdn. Bhd. 共同創業者 兼 CEO',
           '東京大学大学院 新領域創成科学研究科 修士',
         ],
-        link: '',
+        link: 'https://therapia.my/',
       },
     },
     advisorOrder: [
