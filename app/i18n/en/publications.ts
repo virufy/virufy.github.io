@@ -51,17 +51,22 @@ const publications: Publications = {
       linkText: 'Read More',
     },
     {
-      title:
-        'Fusical: Multimodal Fusion for Video Sentiment',
+      title: 'Fusical: Multimodal Fusion for Video Sentiment',
       date: 'October 2020',
       url: 'https://dl.acm.org/doi/abs/10.1145/3382507.3417966',
       linkText: 'Read More',
     },
     {
-      title:
-        'Facial Expression Recognition with Deep Learning',
+      title: 'Facial Expression Recognition with Deep Learning',
       date: 'April 2020',
       url: 'https://arxiv.org/abs/2004.11823',
+      linkText: 'Read More',
+    },
+    {
+      title:
+        'Improving Clinical Trial Enrollment for Smartphone-Based AI Data Collection: A Methodological Analysis of Nudge-Based Interventions',
+      date: 'December 2025',
+      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
       linkText: 'Read More',
     },
   ],

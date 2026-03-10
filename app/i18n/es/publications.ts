@@ -59,10 +59,16 @@ const publications: Publications = {
       linkText: 'Leer más',
     },
     {
-      title:
-        'Reconocimiento de expresiones faciales con aprendizaje profundo',
+      title: 'Reconocimiento de expresiones faciales con aprendizaje profundo',
       date: 'Abril 2020',
       url: 'https://arxiv.org/abs/2004.11823',
+      linkText: 'Leer más',
+    },
+    {
+      title:
+        'Mejorando la inscripción en ensayos clínicos para la recolección de datos de IA basada en teléfonos inteligentes: Un análisis metodológico de intervenciones basadas en incentivos conductuales (nudges)',
+      date: 'Diciembre 2025',
+      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
       linkText: 'Leer más',
     },
   ],
