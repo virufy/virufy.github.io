@@ -9,6 +9,13 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title:
+        'تحسين التسجيل في التجارب السريرية لجمع البيانات بالذكاء الاصطناعي المعتمد على الهواتف الذكية: تحليل منهجي للتدخلات القائمة على التوجيه السلوكي (Nudge)',
+      date: 'ديسمبر 2025',
+      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
+      linkText: 'اقرأ المزيد',
+    },
+    {
       title: 'محول متعدد النماذج الهرمي للكشف التلقائي عن COVID-19',
       date: 'أكتوبر 2022',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
@@ -60,13 +67,6 @@ const publications: Publications = {
       title: ' التعرف على تعبيرات الوجه باستخدام التعلم العميق',
       date: '2020 أبريل',
       url: 'https://arxiv.org/abs/2004.11823',
-      linkText: 'اقرأ المزيد',
-    },
-    {
-      title:
-        'تحسين التسجيل في التجارب السريرية لجمع البيانات بالذكاء الاصطناعي المعتمد على الهواتف الذكية: تحليل منهجي للتدخلات القائمة على التوجيه السلوكي (Nudge)',
-      date: 'ديسمبر 2025',
-      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
       linkText: 'اقرأ المزيد',
     },
   ],

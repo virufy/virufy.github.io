@@ -9,6 +9,13 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title:
+        'スマートフォンベースのAIデータ収集における臨床試験参加登録の改善：ナッジ（行動経済学的介入）に基づく介入の方法論的分析',
+      date: '2025年12月',
+      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
+      linkText: '続きを読む',
+    },
+    {
       title: 'COVID-19自動検出のための階層型マルチモデルトランスフォーマー',
       date: '2022年10月',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
@@ -58,13 +65,6 @@ const publications: Publications = {
       title: 'ディープラーニングによる表情認識',
       date: '2020年4月',
       url: 'https://arxiv.org/abs/2004.11823',
-      linkText: '続きを読む',
-    },
-    {
-      title:
-        'スマートフォンベースのAIデータ収集における臨床試験参加登録の改善：ナッジ（行動経済学的介入）に基づく介入の方法論的分析',
-      date: '2025年12月',
-      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
       linkText: '続きを読む',
     },
   ],

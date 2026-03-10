@@ -10,6 +10,13 @@ const publications: Publications = {
   publicationsCards: [
     {
       title:
+        'Improving Clinical Trial Enrollment for Smartphone-Based AI Data Collection: A Methodological Analysis of Nudge-Based Interventions',
+      date: 'December 2025',
+      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
+      linkText: 'Read More',
+    },
+    {
+      title:
         'Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19',
       date: 'October 2022',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
@@ -60,13 +67,6 @@ const publications: Publications = {
       title: 'Facial Expression Recognition with Deep Learning',
       date: 'April 2020',
       url: 'https://arxiv.org/abs/2004.11823',
-      linkText: 'Read More',
-    },
-    {
-      title:
-        'Improving Clinical Trial Enrollment for Smartphone-Based AI Data Collection: A Methodological Analysis of Nudge-Based Interventions',
-      date: 'December 2025',
-      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
       linkText: 'Read More',
     },
   ],
