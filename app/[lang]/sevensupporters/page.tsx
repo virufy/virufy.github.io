@@ -26,7 +26,7 @@ const SevenSupporters = ({
             className=""
           />
         </div>
-        <section className="relative my-24 overflow-hidden py-24">
+        <section className="relative my-24 overflow-hidden md:py-24">
           <div className="mx-auto flex flex-col items-center text-center">
             <div className="mb-10 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
               <ExportedImage
@@ -43,24 +43,27 @@ const SevenSupporters = ({
               {sevensupporters.introSection.title.map((p, i) => (
                 <span
                   key={i}
-                  className="inline text-6xl font-semibold last:bg-gradient-to-b last:from-blue-500 last:to-emerald-500 last:bg-clip-text last:text-transparent"
+                  className="inline text-4xl font-semibold last:bg-gradient-to-b last:from-blue-500 last:to-emerald-500 last:bg-clip-text last:text-transparent md:text-6xl"
                 >
                   {p + ' '}
                 </span>
               ))}
             </div>
             <div className="mx-auto">
-              <h2 className="mb-6 w-[1000px] pt-10 text-center text-xl font-bold font-normal text-gray-700 md:text-xl">
+              <h2 className="pt-10 text-center text-lg font-normal text-gray-700 md:mb-6 md:text-xl lg:w-[1000px]">
                 {sevensupporters.introSection.text}
               </h2>
             </div>
           </div>
         </section>
-        <section className="to-[#EEF8FD relative w-full bg-gradient-to-b from-[#FBFEFF] py-12">
+        <section className="to-[#EEF8FD relative w-full bg-gradient-to-b from-[#FBFEFF] pb-12">
           <div className="mx-auto max-w-[1440px] px-4">
-            <ul className="grid grid-cols-3 justify-center gap-4 md:grid-cols-4 md:gap-8">
+            <ul className="grid grid-cols-2 justify-center gap-4 md:grid-cols-4 md:gap-8">
               {sevensupporters.SupporterImg.map(({ img, alt, link }) => (
-                <li key={alt} className="aspect-square h-[200px] w-[252px]">
+                <li
+                  key={alt}
+                  className="aspect-square h-[120px] w-[150px] md:h-[200px] md:w-[252px]"
+                >
                   <Link
                     href={link}
                     target="_blank"
