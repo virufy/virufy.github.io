@@ -1,7 +1,6 @@
 import { type Locale } from '@/i18n-config';
 import { usei18n } from '../../i18n';
 import ExportedImage from 'next-image-export-optimizer';
-import sevensupporters from '@/app/i18n/en/sevensupporters';
 import { basePath } from '@/next.config.mjs';
 import Link from 'next/link';
 const unoptimized = process.env.NODE_ENV !== 'production';
@@ -12,7 +11,7 @@ const SevenSupporters = ({
   params: { lang: Locale };
 }) => {
   const {
-    sevensupporters: { introSection, banner },
+    sevensupporters: { introSection, banner, SupporterImg },
   } = usei18n(lang);
   return (
     <main className="">
@@ -40,7 +39,7 @@ const SevenSupporters = ({
               {introSection.tag}
             </div>
             <div className="text-gray-700">
-              {sevensupporters.introSection.title.map((p, i) => (
+              {introSection.title.map((p, i) => (
                 <span
                   key={i}
                   className="inline text-4xl font-semibold last:bg-gradient-to-b last:from-blue-500 last:to-emerald-500 last:bg-clip-text last:text-transparent md:text-6xl"
@@ -51,7 +50,7 @@ const SevenSupporters = ({
             </div>
             <div className="mx-auto">
               <h2 className="pt-10 text-center text-lg font-normal text-gray-700 md:mb-6 md:text-xl lg:w-[1000px]">
-                {sevensupporters.introSection.text}
+                {introSection.text}
               </h2>
             </div>
           </div>
@@ -59,7 +58,7 @@ const SevenSupporters = ({
         <section className="to-[#EEF8FD relative w-full bg-gradient-to-b from-[#FBFEFF] pb-12">
           <div className="mx-auto max-w-[1440px] px-4">
             <ul className="grid grid-cols-2 justify-center gap-4 md:grid-cols-4 md:gap-8">
-              {sevensupporters.SupporterImg.map(({ img, alt, link }) => (
+              {SupporterImg.map(({ img, alt, link }) => (
                 <li
                   key={alt}
                   className="aspect-square h-[120px] w-[150px] md:h-[200px] md:w-[252px]"
