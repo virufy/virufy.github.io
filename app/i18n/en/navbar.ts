@@ -14,11 +14,17 @@ export const navbar: NavbarType = {
   },
   aboutUs: {
     section: 'Who We Are',
+    sectionsubtext: 'About Virufy',
     advisors: 'Advisors',
-    ourFounder: 'Our Founder',
+    advisorsubtext: 'Leading industry experts',
+    ourFounder: 'Meet Amil',
+    foundersubtext: 'Meet our founder',
     ourSupporters: 'Our Supporters',
+    supportersubtext: 'Partners for impact',
     blog: 'Blog',
+    blogsubtext: '',
     oneYoungWorld: 'One Young World',
+    oymsubtext: 'Youth leader partnership',
   },
   media: {
     section: 'Media',
