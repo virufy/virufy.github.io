@@ -16,8 +16,8 @@ const SevenSupporters = ({
   return (
     <main className="">
       {/* HERO */}
-      <div className="relative w-full items-center overflow-hidden px-5 md:px-20">
-        <div className="absolute inset-0 flex h-[600px] overflow-hidden">
+      <div className="relative w-full items-center overflow-hidden md:px-20 md:px-5">
+        <div className="absolute inset-0 -my-12 flex h-[600px] overflow-hidden md:my-0">
           <ExportedImage
             src="/images/sevensupporters/HeroBG.png"
             alt="Your health background"
@@ -25,7 +25,7 @@ const SevenSupporters = ({
             className=""
           />
         </div>
-        <section className="relative my-24 overflow-hidden md:py-24">
+        <section className="relative my-24 overflow-hidden py-12 md:py-24">
           <div className="mx-auto flex flex-col items-center text-center">
             <div className="mb-10 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
               <ExportedImage
@@ -49,19 +49,19 @@ const SevenSupporters = ({
               ))}
             </div>
             <div className="mx-auto">
-              <h2 className="pt-10 text-center text-lg font-normal text-gray-700 md:mb-6 md:text-xl lg:w-[1000px]">
+              <h2 className="px-6 pt-10 text-center text-lg font-normal text-gray-700 md:mb-6 md:px-0 md:text-xl lg:w-[1000px]">
                 {introSection.text}
               </h2>
             </div>
           </div>
         </section>
-        <section className="to-[#EEF8FD relative w-full bg-gradient-to-b from-[#FBFEFF] pb-12">
+        <section className="relative w-full bg-gradient-to-b from-[#FBFEFF] to-[#EEF8FD] pb-12">
           <div className="mx-auto max-w-[1440px] px-4">
             <ul className="grid grid-cols-2 justify-center gap-4 md:grid-cols-4 md:gap-8">
               {SupporterImg.map(({ img, alt, link }) => (
                 <li
                   key={alt}
-                  className="aspect-square h-[120px] w-[150px] md:h-[200px] md:w-[252px]"
+                  className="aspect-square h-[120px] w-[168px] bg-white md:h-[200px] md:w-[252px]"
                 >
                   <Link
                     href={link}
@@ -77,7 +77,7 @@ const SevenSupporters = ({
                       fill
                       priority
                       unoptimized={unoptimized}
-                      className="h-full w-full rounded-3xl border border-2 object-contain p-2 shadow shadow-lg"
+                      className="h-full w-full rounded-xl border border-2 object-contain p-2 shadow shadow-lg md:rounded-3xl"
                     />
                   </Link>
                 </li>

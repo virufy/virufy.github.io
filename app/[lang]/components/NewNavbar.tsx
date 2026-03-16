@@ -28,8 +28,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
       noResultsPlaceholder,
     }, // re add coughcheck here when needed
   } = usei18n(lang);
-
   /** State variables */
+  const [localeOpen, setLocaleOpen] = useState(false);
   const [navbar, setNavbar] = useState(false); // Mobile navbar open/close
   const [showSearch, setShowSearch] = useState(false); // Mobile search bar visibility
   const [activeLink, setActiveLink] = useState(''); // Current active navbar link
@@ -301,15 +301,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
     );
 
   return (
-    <div
-      className={`absolute w-full bg-transparent ${navbar ? '' : 'p-2'} lg:p-0`}
-    >
+    <div className={`absolute w-full lg:p-0`}>
       <nav
-        className={`sticky z-[100] h-[50px] w-full rounded-full bg-opacity-80 lg:bg-transparent`}
+        className={`sticky z-[100] h-[50px] w-full rounded-full bg-opacity-80`}
       >
         {/* Navbar container */}
         <div
-          className={`justify-between ${navbar ? 'bg-black' : ''} px-3 lg:mx-auto lg:flex lg:items-center lg:bg-transparent lg:px-2 ${navbar ? 'h-screen' : ''}`}
+          className={`justify-between bg-gradient-to-r from-[#D7E2EB]/60 via-[#F2F4F8]/60 to-[#D7E2EB]/60 px-3 lg:mx-auto lg:flex lg:items-center lg:px-2`}
         >
           <div className="flex items-center justify-between lg:block lg:py-5">
             {/* Desktop Virufy Logo */}
@@ -386,26 +384,34 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <li>
                     <div>
                       <NavbarDropdown
-                        label={aboutUs?.section || 'About Us'}
+                        label={aboutUs?.section}
                         links={[
                           {
-                            label: aboutUs?.advisors || 'Advisors',
+                            label: aboutUs?.section,
+                            href: `/${lang}/sevenwho-we-are`,
+                            subtext: aboutUs.sectionsubtext,
+                          },
+                          {
+                            label: aboutUs?.advisors,
                             href: `/${lang}/advisors`,
+                            subtext: aboutUs.advisorsubtext,
                           },
                           {
-                            label: aboutUs?.ourFounder || 'Our Founder',
+                            label: aboutUs?.ourFounder,
                             href: `/${lang}/amils-story`,
+                            subtext: aboutUs.foundersubtext,
                           },
                           {
-                            label: aboutUs?.ourSupporters || 'Our Supporters',
+                            label: aboutUs?.ourSupporters,
                             href: `/${lang}/supporters`,
+                            subtext: aboutUs.supportersubtext,
                           },
                           {
-                            label: aboutUs?.oneYoungWorld || 'One Young World',
+                            label: aboutUs?.oneYoungWorld,
                             href: `/${lang}/one-young-world`,
+                            subtext: aboutUs.oymsubtext,
                           },
                         ]}
-                        navbar={navbar}
                       />
                     </div>
                   </li>
@@ -536,9 +542,12 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <div className="rounded-full bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] p-[1px]">
                     {/* Language Selector */}
                     <li
-                      className={`${navbar ? 'relative top-[-24px] -ml-3' : 'rounded-full border border-2 border-sky-800 bg-white bg-opacity-80 pl-4 text-sm font-semibold text-black'} lg:relative lg:top-0 lg:-ml-0`}
+                      className={`rounded-full border border-2 border-sky-800 bg-white bg-opacity-80 pl-4 text-sm font-semibold text-black ${localeOpen ? 'bg-white bg-opacity-100' : ''}`}
                     >
-                      <LocaleSelect isNavbar={navbar} textColor={'black'} />
+                      <LocaleSelect
+                        lang={lang}
+                        onDropdownChange={(open) => setLocaleOpen(open)}
+                      />
                     </li>
                   </div>
                 </ul>

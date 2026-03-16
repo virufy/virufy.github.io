@@ -735,10 +735,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <li
                     className={`${navbar ? 'relative top-[-24px] -ml-3' : ''}`}
                   >
-                    <LocaleSelect
-                      isNavbar={navbar}
-                      textColor={pageNavColor.color}
-                    />
+                    <LocaleSelect lang={lang} />
                   </li>
                 </div>
 

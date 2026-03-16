@@ -1,0 +1,118 @@
+'use client';
+
+import { i18n, type Locale } from '@/i18n-config';
+import {
+  JapanFlagIcon,
+  USFlagIcon,
+  ArabFlagIcon,
+  SpainFlagIcon,
+} from '@/public/images/navbar/index';
+import ExportedImage from 'next-image-export-optimizer';
+import type { StaticImageData } from 'next/image';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
+import ArrowIcon from '../faq/ArrowIcon';
+
+const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);
+
+const flagIcons: Record<Locale, StaticImageData> = {
+  en: USFlagIcon,
+  ja: JapanFlagIcon,
+  ar: ArabFlagIcon,
+  es: SpainFlagIcon,
+};
+
+const fulllangnames: Record<Locale, string> = {
+  en: 'English',
+  ja: '日本語',
+  ar: 'عربي',
+  es: 'Español',
+};
+
+type LocaleSelectProps = {
+  lang: Locale;
+  onDropdownChange?: (open: boolean) => void;
+};
+
+const LocaleSelect = ({ lang, onDropdownChange }: LocaleSelectProps) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
+  const currPath = usePathname() || '';
+
+  // Use passed-in lang as default
+  let locale: Locale = lang;
+  const localeMatch = currPath.match(localeRegex);
+  if (localeMatch) {
+    locale = localeMatch[1] as Locale;
+  }
+
+  const handleLocaleChange = (newLocale: Locale) => {
+    const newPath = currPath.replace(localeRegex, `/${newLocale}`);
+    router.push(newPath);
+    setDropdownOpen(false);
+  };
+
+  const toggleDropdown = () => {
+    setDropdownOpen((prev) => {
+      const next = !prev;
+      onDropdownChange?.(next); // notify parent
+      return next;
+    });
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setDropdownOpen(false);
+        onDropdownChange?.(false); // notify parent
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [onDropdownChange]);
+
+  return (
+    <div className="relative inline-block" ref={dropdownRef}>
+      <button
+        onClick={toggleDropdown}
+        className={`flex items-center bg-transparent pb-1 pt-2 text-xl font-bold text-black hover:font-bold focus:outline-none lg:w-20 lg:border-none lg:p-3 lg:px-0 lg:font-medium lg:text-black ${
+          dropdownOpen ? 'border-l border-r border-t border-gray-500' : ''
+        }`}
+      >
+        {locale.toUpperCase()}
+        <ArrowIcon isActive={dropdownOpen} />
+      </button>
+
+      {dropdownOpen && (
+        <div
+          className={`absolute right-0 mt-2 rounded-xl border border-gray-500 bg-black text-black shadow-md shadow-gray-500 lg:border-none lg:bg-transparent lg:shadow-lg`}
+        >
+          {i18n.locales.map((localeOption) => (
+            <button
+              key={localeOption}
+              onClick={() => handleLocaleChange(localeOption as Locale)}
+              className={`flex w-full items-center border-gray-500 px-3 py-2 text-sm first:rounded-t-xl last:rounded-b-xl hover:font-bold lg:bg-white`}
+            >
+              <div className="grid grid-cols-[30px_50px_25px] items-center rounded-full px-2 py-1">
+                <ExportedImage
+                  src={flagIcons[localeOption]}
+                  alt={`${localeOption} flag`}
+                  className="h-5 w-5"
+                />
+                <p>{fulllangnames[localeOption]}</p>
+                <p className="text-right">{localeOption.toUpperCase()}</p>
+              </div>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default LocaleSelect;
