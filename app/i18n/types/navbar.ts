@@ -43,7 +43,9 @@ export interface AboutUs {
 export interface Media {
   section: string;
   pressReleases: string;
+  presssubtext?: string;
   ourResearch: string;
+  researchsubtext?: string;
 }
 
 export interface DonateSection {

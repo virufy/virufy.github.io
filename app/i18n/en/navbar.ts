@@ -29,7 +29,9 @@ export const navbar: NavbarType = {
   media: {
     section: 'Media',
     pressReleases: 'News',
+    presssubtext: 'Latest media coverage',
     ourResearch: 'Publications',
+    researchsubtext: 'Peer-reviewed research',
   },
   faq: 'FAQ',
   donate: {
