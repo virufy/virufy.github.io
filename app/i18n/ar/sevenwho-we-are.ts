@@ -2,58 +2,73 @@ import type { sevenwho_we_are } from '../types/sevenwho-we-are';
 
 const sevenwhoweare: sevenwho_we_are = {
   introSection: {
-    title: ['Redefining', 'Early Detection', 'Through AI and Sound'],
-    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.',
-    tag: 'About Virufy',
+    title: ['إعادة تعريف', 'الكشف المبكر', 'من خلال الذكاء الاصطناعي والصوت'],
+    text: 'تعتمد تقنيتنا في الذكاء الاصطناعي على الاستماع إلى الأنماط الدقيقة في صوت السعال — مما يساعد على اكتشاف الأمراض التنفسية المحتملة مبكرًا وبطريقة غير تدخلية.',
+    tag: 'عن Virufy',
   },
   section2: {
-    title: 'From Inception to Global Movement',
+    title: 'من البداية إلى حركة عالمية',
     text: [
-      'Virufy was founded in 2020 during the early days of the COVID-19 pandemic, when limited testing access and overwhelmed healthcare systems left millions without timely answers. A group of Stanford students recognized the growing gap between the need for early detection and the tools available to most people around the world.',
+      'تأسست Virufy في عام 2020 خلال الأيام الأولى من جائحة كوفيد-19، عندما أدى محدودية الوصول إلى الاختبارات وضغط أنظمة الرعاية الصحية إلى ترك ملايين الأشخاص دون إجابات في الوقت المناسب. أدركت مجموعة من طلاب جامعة ستانفورد الفجوة المتزايدة بين الحاجة إلى الكشف المبكر والأدوات المتاحة لمعظم الناس حول العالم.',
 
-      'At the same time, emerging research in artificial intelligence suggested that respiratory sounds, such as coughs and breathing patterns, could reveal signs of disease. Knowing that COVID-19 directly affects the nose, throat, and lungs, the team explored whether machine learning could analyze these signals using something nearly everyone already had, a smartphone.',
+      'في الوقت نفسه، أشارت الأبحاث الناشئة في مجال الذكاء الاصطناعي إلى أن الأصوات التنفسية، مثل السعال وأنماط التنفس، يمكن أن تكشف عن علامات المرض. ومع معرفة أن كوفيد-19 يؤثر بشكل مباشر على الأنف والحلق والرئتين، استكشف الفريق إمكانية استخدام التعلم الآلي لتحليل هذه الإشارات باستخدام شيء يمتلكه الجميع تقريبًا، وهو الهاتف الذكي.',
 
-      'What began as a student research effort quickly grew into global volunteer recruitment and clinical studies, laying the foundation for Virufy’s work today. The project evolved into a nonprofit focused on advancing fast, accessible, and scalable respiratory health screening for communities worldwide.',
+      'ما بدأ كمشروع بحثي طلابي سرعان ما تطور إلى تجنيد متطوعين عالميًا ودراسات سريرية، مما وضع الأساس لعمل Virufy اليوم. وتحوّل المشروع إلى منظمة غير ربحية تركز على تطوير فحوصات صحية تنفسية سريعة وسهلة الوصول وقابلة للتوسع للمجتمعات حول العالم.',
     ],
   },
   section3: {
-    title: 'Our Values',
-    subtitle:
-      'These are the principles that guide our work and define our commitment to the world.',
-    cardtitle: [
-      'Global Equity',
-      'Scientific Rigor',
-      'Privacy First',
-      'Open Collaboration',
-    ],
-    cardtext: [
-      'We believe health screening should be accessible to everyone, regardless of geography or economic status.',
-      'Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.',
-      'User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.',
-      'We partner with universities, NGOs, and governments to advance research and maximize global impact.',
+    title: 'قيمنا',
+    subtitle: 'هذه هي المبادئ التي توجه عملنا وتحدد التزامنا تجاه العالم.',
+    StoryCard: [
+      {
+        title: 'المساواة العالمية',
+        text: 'نؤمن بأن الفحص الصحي يجب أن يكون متاحًا للجميع، بغض النظر عن الموقع الجغرافي أو الوضع الاقتصادي.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'الصرامة العلمية',
+        text: 'كل خوارزمية ومجموعة بيانات وشراكة تستند إلى أبحاث مُحكّمة وتحقق سريري.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'الخصوصية أولاً',
+        text: 'يتم إخفاء هوية بيانات المستخدم وتشفيرها والتعامل معها وفق أعلى معايير الحوكمة الأخلاقية للبيانات.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'التعاون المفتوح',
+        text: 'نُقيم شراكات مع الجامعات والمنظمات غير الحكومية والحكومات لتعزيز البحث وتعظيم التأثير العالمي.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
     ],
   },
   section4: {
-    title: 'Our Impact at a Glance',
+    title: 'أثرنا في لمحة',
     subtitle:
-      "Building the world's largest open cough audio dataset to advance respiratory health research globally.",
+      'نبني أكبر قاعدة بيانات مفتوحة لأصوات السعال لدعم أبحاث الصحة التنفسية عالميًا.',
     cardtitle: ['250K+', '5+', '250+', '10+'],
     cardtext: [
-      'Cough Samples Collected',
-      'Contributing to global research',
-      'Countries Reached',
-      'Building a truly global dataset',
-      'Active Volunteers',
-      'Students and researchers',
-      'Research Partners',
-      'Universities and institutions',
+      'عينات سعال تم جمعها',
+      'دول تم الوصول إليها',
+      'متطوعون نشطون',
+      'شركاء بحثيون',
+    ],
+    cardsubtext: [
+      'المساهمة في الأبحاث العالمية',
+      'بناء قاعدة بيانات عالمية حقيقية',
+      'طلاب وباحثون',
+      'جامعات ومؤسسات',
     ],
   },
   banner: {
-    title: 'Ready to Make a Difference?',
-    buttontext: 'Message Us',
+    title: 'هل أنت مستعد لإحداث فرق؟',
+    buttontext: 'تواصل معنا',
     text: [
-      "Whether you want to volunteer, partner with us, or support our mission, we'd love to hear from you.",
+      'سواء كنت ترغب في التطوع أو الشراكة معنا أو دعم مهمتنا، يسعدنا التواصل معك واستكشاف كيفية العمل معًا لإحداث تأثير حقيقي.',
     ],
     link: '',
   },

@@ -20,17 +20,31 @@ const sevenwhoweare: sevenwho_we_are = {
     title: 'Our Values',
     subtitle:
       'These are the principles that guide our work and define our commitment to the world.',
-    cardtitle: [
-      'Global Equity',
-      'Scientific Rigor',
-      'Privacy First',
-      'Open Collaboration',
-    ],
-    cardtext: [
-      'We believe health screening should be accessible to everyone, regardless of geography or economic status.',
-      'Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.',
-      'User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.',
-      'We partner with universities, NGOs, and governments to advance research and maximize global impact.',
+    StoryCard: [
+      {
+        title: 'Global Equity',
+        text: 'We believe health screening should be accessible to everyone, regardless of geography or economic status.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Scientific Rigor',
+        text: 'Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Privacy First',
+        text: 'User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Open Collaboration',
+        text: 'We partner with universities, NGOs, and governments to advance research and maximize global impact.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
     ],
   },
   section4: {
@@ -40,12 +54,14 @@ const sevenwhoweare: sevenwho_we_are = {
     cardtitle: ['250K+', '5+', '250+', '10+'],
     cardtext: [
       'Cough Samples Collected',
-      'Contributing to global research',
       'Countries Reached',
-      'Building a truly global dataset',
       'Active Volunteers',
-      'Students and researchers',
       'Research Partners',
+    ],
+    cardsubtext: [
+      'Contributing to global research',
+      'Building a truly global dataset',
+      'Student and researchers',
       'Universities and institutions',
     ],
   },
@@ -53,7 +69,7 @@ const sevenwhoweare: sevenwho_we_are = {
     title: 'Ready to Make a Difference?',
     buttontext: 'Message Us',
     text: [
-      "Whether you want to volunteer, partner with us, or support our mission, we'd love to hear from you.",
+      'Whether you want to volunteer, partner with us, or support our mission, we’d love to hear from you and explore how we can work together to make a meaningful impact.',
     ],
     link: '',
   },
