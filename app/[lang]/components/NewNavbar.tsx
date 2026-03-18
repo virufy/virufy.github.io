@@ -30,6 +30,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
   } = usei18n(lang);
   /** State variables */
   const [localeOpen, setLocaleOpen] = useState(false);
+
   const [navbar, setNavbar] = useState(false); // Mobile navbar open/close
   const [showSearch, setShowSearch] = useState(false); // Mobile search bar visibility
   const [activeLink, setActiveLink] = useState(''); // Current active navbar link
@@ -50,13 +51,9 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const SCREEN_SIZE = 1265;
   const DEBOUNCE_DELAY = 400;
 
-  // Tailwind underline gradient used on desktop nav links
-  const linkGradient =
-    "relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-gradient-to-r after:from-[#0E72C9] after:to-[#2A9D8F] after:opacity-0 hover:after:opacity-100";
-
   /** Effects */
+  const normalizePath = (p: string) => p.replace(/\/+$/, ''); // removes trailing slashes
 
-  // Highlight active link based on route
   useEffect(() => {
     const links = [
       { label: 'Home', route: [`/${lang}`] },
@@ -73,6 +70,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {
         label: 'About Us',
         route: [
+          `/${lang}/sevenwho-we-are`,
           `/${lang}/advisors`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
@@ -86,13 +84,17 @@ export default function Navbar({ lang }: { lang: Locale }) {
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
 
+    let matched = '';
     links.forEach((link) => {
-      if (link.route.some((r) => r === currPathname)) {
-        setActiveLink(link.label);
+      if (
+        link.route.some((r) => normalizePath(r) === normalizePath(currPathname))
+      ) {
+        matched = link.label; // now this will match
       }
     });
-  }, [currPathname, lang]);
 
+    setActiveLink(matched);
+  }, [currPathname, lang]);
   // Close mobile navbar on route change
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -301,10 +303,8 @@ export default function Navbar({ lang }: { lang: Locale }) {
     );
 
   return (
-    <div className={`absolute w-full lg:p-0`}>
-      <nav
-        className={`sticky z-[100] h-[50px] w-full rounded-full bg-opacity-80`}
-      >
+    <div className="w-full lg:p-0">
+      <nav className="fixed top-0 z-[100] h-[50px] w-full rounded-full">
         {/* Navbar container */}
         <div
           className={`justify-between bg-gradient-to-r from-[#D7E2EB]/60 via-[#F2F4F8]/60 to-[#D7E2EB]/60 px-3 lg:mx-auto lg:flex lg:items-center lg:px-2`}
@@ -337,154 +337,166 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 }`}
               >
                 <div
-                  className={`mx-auto flex w-full flex-col justify-center space-y-8 bg-black text-black transition-all duration-300 ease-out lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9 ${showSearch ? '-translate-x-6' : 'translate-x-0'} `}
+                  className={`mx-auto flex w-full flex-col justify-center space-y-8 bg-black lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
                 >
-                  {/* Home */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Home'
-                            ? 'solid border-b-2 py-2'
-                            : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100`
-                        } ${linkGradient}`}
-                        href={`/${lang}`}
-                        onClick={handleNavClick}
-                      >
-                        {home}
-                      </Link>
-                    </div>
-                  </li>
-                  {/* Technology */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Technology'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100`
-                        } ${linkGradient}`}
-                        href={`/${lang}/ai`}
-                        onClick={handleNavClick}
-                      >
-                        {ourTechnology?.section}
-                      </Link>
+                  <div
+                    className={`mx-auto flex w-full flex-col justify-center space-y-8 bg-black lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
+                    style={{
+                      transform: showSearch
+                        ? 'translateX(77px)' // shift right when search is open (adjust 90px to your search bar width/spacing)
+                        : 'translateX(0)',
+                    }}
+                  >
+                    {/* Home */}
+                    <li>
+                      <div>
+                        <Link
+                          className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
+                            activeLink === 'Home'
+                              ? 'text-blue-600'
+                              : `relative py-2 text-black hover:text-blue-600`
+                          } `}
+                          href={`/${lang}`}
+                          onClick={handleNavClick}
+                        >
+                          {home}
+                        </Link>
+                      </div>
+                    </li>
+                    {/* Technology */}
+                    <li>
+                      <div>
+                        <Link
+                          className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
+                            activeLink === 'Technology'
+                              ? 'text-blue-600'
+                              : `relative py-2 text-black hover:text-blue-600`
+                          }`}
+                          href={`/${lang}/ai`}
+                          onClick={handleNavClick}
+                        >
+                          {ourTechnology?.section}
+                        </Link>
 
-                      <div
-                        className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
-                          navbar
-                            ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
-                            : 'ml-[-60px] hidden'
-                        } hover:flex peer-hover:flex`}
-                      ></div>
-                    </div>
-                  </li>
+                        <div
+                          className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
+                            navbar
+                              ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
+                              : 'ml-[-60px] hidden'
+                          } hover:flex peer-hover:flex`}
+                        ></div>
+                      </div>
+                    </li>
 
-                  {/* About Us */}
-                  <li>
-                    <div>
-                      <NavbarDropdown
-                        label={aboutUs?.section}
-                        links={[
-                          {
-                            label: aboutUs?.section,
-                            href: `/${lang}/sevenwho-we-are`,
-                            subtext: aboutUs.sectionsubtext,
-                          },
-                          {
-                            label: aboutUs?.advisors,
-                            href: `/${lang}/advisors`,
-                            subtext: aboutUs.advisorsubtext,
-                          },
-                          {
-                            label: aboutUs?.ourFounder,
-                            href: `/${lang}/amils-story`,
-                            subtext: aboutUs.foundersubtext,
-                          },
-                          {
-                            label: aboutUs?.ourSupporters,
-                            href: `/${lang}/supporters`,
-                            subtext: aboutUs.supportersubtext,
-                          },
-                          {
-                            label: aboutUs?.oneYoungWorld,
-                            href: `/${lang}/one-young-world`,
-                            subtext: aboutUs.oymsubtext,
-                          },
-                        ]}
-                      />
-                    </div>
-                  </li>
+                    {/* About Us */}
+                    <li>
+                      <div>
+                        <NavbarDropdown
+                          label={aboutUs?.section}
+                          links={[
+                            {
+                              label: aboutUs?.section,
+                              href: `/${lang}/sevenwho-we-are`,
+                              subtext: aboutUs.sectionsubtext,
+                            },
+                            {
+                              label: aboutUs?.advisors,
+                              href: `/${lang}/advisors`,
+                              subtext: aboutUs.advisorsubtext,
+                            },
+                            {
+                              label: aboutUs?.ourFounder,
+                              href: `/${lang}/amils-story`,
+                              subtext: aboutUs.foundersubtext,
+                            },
+                            {
+                              label: aboutUs?.ourSupporters,
+                              href: `/${lang}/supporters`,
+                              subtext: aboutUs.supportersubtext,
+                            },
+                            {
+                              label: aboutUs?.oneYoungWorld,
+                              href: `/${lang}/one-young-world`,
+                              subtext: aboutUs.oymsubtext,
+                            },
+                          ]}
+                          activePath={currPathname}
+                        />
+                      </div>
+                    </li>
 
-                  {/* Media */}
-                  <li>
-                    <div>
-                      <NavbarDropdown
-                        label={media.section}
-                        links={[
-                          {
-                            label: media.ourResearch,
-                            href: `/${lang}/news`,
-                          },
-                          {
-                            label: media.pressReleases,
-                            href: `/${lang}/publications`,
-                          },
-                        ]}
-                        navbar={navbar}
-                      />
-                    </div>
-                  </li>
+                    {/* Media */}
+                    <li>
+                      <div>
+                        <NavbarDropdown
+                          label={media.section}
+                          links={[
+                            {
+                              label: media.ourResearch,
+                              href: `/${lang}/news`,
+                              subtext: media.presssubtext,
+                            },
+                            {
+                              label: media.pressReleases,
+                              href: `/${lang}/publications`,
+                              subtext: media.researchsubtext,
+                            },
+                          ]}
+                          activePath={currPathname}
+                        />
+                      </div>
+                    </li>
 
-                  {/* Join Us */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Join Us'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/join-us`}
-                        onClick={handleNavClick}
-                      >
-                        {joinUs ? joinUs.buttonText : ''}
-                      </Link>
-                    </div>
-                  </li>
-                  {/* Donate */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Donate'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/donate`}
-                        onClick={handleNavClick}
-                      >
-                        {donate ? donate.buttonText : ''}
-                      </Link>
-                    </div>
-                  </li>
+                    {/* Join Us */}
+                    <li>
+                      <div>
+                        <Link
+                          className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
+                            activeLink === 'Join Us'
+                              ? 'solid peer border-b-2 py-2 text-blue-600'
+                              : `relative py-2 text-black hover:text-blue-600`
+                          }`}
+                          href={`/${lang}/join-us`}
+                          onClick={handleNavClick}
+                        >
+                          {joinUs ? joinUs.buttonText : ''}
+                        </Link>
+                      </div>
+                    </li>
+                    {/* Donate */}
+                    <li>
+                      <div>
+                        <Link
+                          className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
+                            activeLink === 'Donate'
+                              ? 'peer border-b-2 py-2 text-blue-600'
+                              : `relative py-2 text-black hover:text-blue-600`
+                          }`}
+                          href={`/${lang}/donate`}
+                          onClick={handleNavClick}
+                        >
+                          {donate ? donate.buttonText : ''}
+                        </Link>
+                      </div>
+                    </li>
 
-                  {/* FAQ */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'FAQ'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/faq`}
-                        onClick={handleNavClick}
-                      >
-                        {faq}
-                      </Link>
-                    </div>
-                  </li>
+                    {/* FAQ */}
+                    <li>
+                      <div>
+                        <Link
+                          className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
+                            activeLink === 'FAQ'
+                              ? 'solid peer border-b-2 py-2 text-blue-600'
+                              : `relative py-2 text-black hover:text-blue-600`
+                          }`}
+                          href={`/${lang}/faq`}
+                          onClick={handleNavClick}
+                        >
+                          {faq}
+                        </Link>
+                      </div>
+                    </li>
+                  </div>
                 </div>
               </ul>
             </div>
@@ -542,7 +554,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <div className="rounded-full bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] p-[1px]">
                     {/* Language Selector */}
                     <li
-                      className={`rounded-full border border-2 border-sky-800 bg-white bg-opacity-80 pl-4 text-sm font-semibold text-black ${localeOpen ? 'bg-white bg-opacity-100' : ''}`}
+                      className={`rounded-full border border-2 border-sky-800 pl-4 text-sm font-semibold text-black ${localeOpen ? 'bg-white' : 'bg-white bg-opacity-80'}`}
                     >
                       <LocaleSelect
                         lang={lang}

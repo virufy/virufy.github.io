@@ -11,14 +11,14 @@ export interface sevenwho_we_are {
   section3: {
     title: string;
     subtitle: string;
-    cardtitle: string[];
-    cardtext: string[];
+    StoryCard: StoryCard[];
   };
   section4: {
     title: string;
     subtitle: string;
     cardtitle: string[];
     cardtext: string[];
+    cardsubtext: string[];
   };
   banner: {
     title: string;
@@ -26,4 +26,10 @@ export interface sevenwho_we_are {
     text: string[];
     link: string;
   };
+}
+export interface StoryCard {
+  title: string;
+  text: string;
+  icon: string;
+  style: string;
 }
