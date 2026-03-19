@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'なぜ私たちは臨床に基づいた咳AIを開発するのか',
+      date: '2026年2月',
+      url: 'https://virufy.org/en/publications/why-we-build',
+      linkText: '続きを読む',
+    },
+    {
       title:
         'スマートフォンベースのAIデータ収集における臨床試験参加登録の改善：ナッジ（行動経済学的介入）に基づく介入の方法論的分析',
       date: '2025年12月',

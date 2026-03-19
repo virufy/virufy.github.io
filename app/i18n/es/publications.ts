@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'Por qué desarrollamos IA de tos con base clínica',
+      date: 'Febrero de 2026',
+      url: 'https://virufy.org/en/publications/why-we-build',
+      linkText: 'Leer más',
+    },
+    {
       title:
         'Mejorando la inscripción en ensayos clínicos para la recolección de datos de IA basada en teléfonos inteligentes: Un análisis metodológico de intervenciones basadas en incentivos conductuales (nudges)',
       date: 'Diciembre 2025',

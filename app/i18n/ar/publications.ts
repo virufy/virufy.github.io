@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'لماذا نطوّر ذكاءً اصطناعيًا لتحليل السعال قائمًا على أسس سريرية',
+      date: 'فبراير 2026',
+      url: 'https://virufy.org/en/publications/why-we-build',
+      linkText: 'اقرأ المزيد',
+    },
+    {
       title:
         'تحسين التسجيل في التجارب السريرية لجمع البيانات بالذكاء الاصطناعي المعتمد على الهواتف الذكية: تحليل منهجي للتدخلات القائمة على التوجيه السلوكي (Nudge)',
       date: 'ديسمبر 2025',
