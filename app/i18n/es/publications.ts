@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'Por qué desarrollamos IA de tos con base clínica',
+      date: 'Febrero de 2026',
+      url: '/en/publications/why-we-build',
+      linkText: 'Leer más',
+    },
+    {
       title:
         'Transformador Multimodal Jerárquico para Detección Automática de COVID-19',
       date: 'Octubre 2022',

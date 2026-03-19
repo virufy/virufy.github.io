@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'Why We Build Clinically Grounded Cough AI',
+      date: 'February 2026',
+      url: '/en/publications/why-we-build',
+      linkText: 'Read More',
+    },
+    {
       title:
         'Improving Clinical Trial Enrollment for Smartphone-Based AI Data Collection: A Methodological Analysis of Nudge-Based Interventions',
       date: 'December 2025',

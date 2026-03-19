@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'لماذا نطوّر ذكاءً اصطناعيًا لتحليل السعال قائمًا على أسس سريرية',
+      date: 'فبراير 2026',
+      url: '/en/publications/why-we-build',
+      linkText: 'اقرأ المزيد',
+    },
+    {
       title: 'محول متعدد النماذج الهرمي للكشف التلقائي عن COVID-19',
       date: 'أكتوبر 2022',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',

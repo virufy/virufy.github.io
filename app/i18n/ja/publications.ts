@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'なぜ私たちは臨床に基づいた咳AIを開発するのか',
+      date: '2026年2月',
+      url: '/en/publications/why-we-build',
+      linkText: '続きを読む',
+    },
+    {
       title: 'COVID-19自動検出のための階層型マルチモデルトランスフォーマー',
       date: '2022年10月',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
