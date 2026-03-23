@@ -140,18 +140,29 @@ export default function VirufyPage() {
           <h2 className="mb-4 text-2xl font-semibold">References</h2>
           <ol className="list-decimal space-y-2 pl-6 text-white">
             <li>
-              Q. Zhou et al., “Cough recognition based on mel-spectrogram and
-              convolutional neural network,” 2021.
+              Q. Zhou, J. Yan, Y. Zhang, and Y. Wang, “Cough recognition based
+              on mel-spectrogram and convolutional neural network,” Frontiers in
+              Robotics and AI, vol. 8, 2021.
             </li>
             <li>
-              T. Keles et al., “Spectrogram-based deep learning approach,” 2025.
+              T. Keles, A. Erdem, and M. C. Yildiz, “Spectrogram-based deep
+              learning approach for anomaly detection from cough sounds,”
+              International Journal of Information Technology and Computer
+              Science, vol. 3, pp. 1–12, 2025.
             </li>
-            <li>B. Settles, “Active learning literature survey,” 2010.</li>
             <li>
-              A. Kendall and Y. Gal, “Uncertainty in deep learning,” 2017.
+              B. Settles, “Active learning literature survey,” University of
+              Wisconsin–Madison, Computer Sciences Technical Report 1648, 2010.
             </li>
             <li>
-              S. Lapuschkin et al., “Unmasking clever Hans predictors,” 2019.
+              A. Kendall and Y. Gal, “What uncertainties do we need in Bayesian
+              deep learning for computer vision?” in Advances in Neural
+              Information Processing Systems (NeurIPS), 2017.
+            </li>
+            <li>
+              S. Lapuschkin, W. Samek, K.-R. Müller, and G. Montavon, “Unmasking
+              clever Hans predictors and assessing what machines really learn,”
+              Nature Communications, vol. 10, 2019.
             </li>
           </ol>
         </section>
