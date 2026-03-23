@@ -133,6 +133,11 @@ export default function VirufyPage() {
             learning and clinical validation, we build systems that fail loudly,
             improve deliberately, and generalize responsibly.
           </p>
+          <p>
+            In clinical AI, robustness is not achieved by complexity alone. It
+            is earned through careful problem framing, targeted data selection,
+            and continuous verification.
+          </p>
         </section>
 
         {/* References */}
