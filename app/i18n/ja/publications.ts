@@ -9,9 +9,10 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
-      title: 'なぜ私たちは臨床に基づいた咳AIを開発するのか',
-      date: '2026年2月',
-      url: '/en/publications/why-we-build',
+      title:
+        'アクティブラーニングとセグメンテーションによるデータ効率の高い咳分析',
+      date: '2026年3月',
+      url: '/en/publications/data-efficient-cough-ai',
       linkText: '続きを読む',
     },
     {
