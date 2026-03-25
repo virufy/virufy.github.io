@@ -9,9 +9,10 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
-      title: 'Why We Build Clinically Grounded Cough AI',
-      date: 'February 2026',
-      url: 'https://virufy.org/en/publications/why-we-build',
+      title:
+        'Data‑Efficient Cough Analysis Through Active Learning and Segmentation',
+      date: 'March 2026',
+      url: '/en/publications/data-efficient-cough-ai',
       linkText: 'Read More',
     },
     {

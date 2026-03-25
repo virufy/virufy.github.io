@@ -9,9 +9,10 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
-      title: 'لماذا نطوّر ذكاءً اصطناعيًا لتحليل السعال قائمًا على أسس سريرية',
-      date: 'فبراير 2026',
-      url: 'https://virufy.org/en/publications/why-we-build',
+      title:
+        'تحليل السعال بكفاءة في استخدام البيانات من خلال التعلم النشط والتجزئة',
+      date: 'مارس 2026',
+      url: '/en/publications/data-efficient-cough-ai',
       linkText: 'اقرأ المزيد',
     },
     {

@@ -9,9 +9,10 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
-      title: 'Por qué desarrollamos IA de tos con base clínica',
-      date: 'Febrero de 2026',
-      url: 'https://virufy.org/en/publications/why-we-build',
+      title:
+        'Análisis de tos eficiente en datos mediante aprendizaje activo y segmentación',
+      date: 'Marzo de 2026',
+      url: '/en/publications/data-efficient-cough-ai',
       linkText: 'Leer más',
     },
     {
