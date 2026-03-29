@@ -5,9 +5,17 @@ import { basePath } from '@/next.config.mjs';
 import { VirufyLogo } from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useState, useRef, useMemo } from 'react';
 import { usei18n } from '../../i18n';
+import LocaleSelect from './LocaleSelect';
+import useSearch from '@/utils/useSearch';
+import debounce from 'lodash.debounce';
+
+interface AccordionItem {
+  label: string;
+  links: { label: string; href: string }[];
+}
 
 export default function MobileNavbar({ lang }: { lang: Locale }) {
   const {
@@ -20,264 +28,380 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
       donate,
       joinUs,
       searchPlaceholder,
+      noResultsPlaceholder,
     },
   } = usei18n(lang);
 
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
   const [query, setQuery] = useState('');
-  const [accordionOpen, setAccordionOpen] = useState<{
-    [key: string]: boolean;
-  }>({});
-  const pathname = usePathname() || '';
+  const [hasSearched, setHasSearched] = useState(false);
+  const [activeLink, setActiveLink] = useState('');
+  const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
-  const toggleAccordion = (key: string) => {
-    setAccordionOpen((prev) => ({
-      ...prev,
-      [key]: !prev[key],
-    }));
+  const currPathname = usePathname();
+  const router = useRouter();
+  const isRedirecting = useRef(false);
+  const { results, performSearch, clearResults, isReady } = useSearch(lang);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const dropdownRef = useRef<HTMLUListElement | null>(null);
+  const DEBOUNCE_DELAY = 400;
+  /** Effects */
+  const normalizePath = (p: string) => p.replace(/\/+$/, ''); // removes trailing slashes
+  useEffect(() => {
+    const links = [
+      { label: 'Home', route: [`/${lang}`] },
+      { label: 'Technology', route: [`/${lang}/ai`] },
+      {
+        label: 'CoughCheck App',
+        route: [
+          `/${lang}/covid19`,
+          `/${lang}/flu`,
+          `/${lang}/copd`,
+          `/${lang}/rsv`,
+        ],
+      },
+      {
+        label: 'About Us',
+        route: [
+          `/${lang}/sevenwho-we-are`,
+          `/${lang}/advisors`,
+          `/${lang}/supporters`,
+          `/${lang}/one-young-world`,
+          `/${lang}/amils-story`,
+        ],
+      },
+      {
+        label: 'Media',
+        route: [`/${lang}/news`, `/${lang}/publications`],
+      },
+      { label: 'FAQ', route: [`/${lang}/faq`] },
+    ];
+
+    let matched = '';
+    links.forEach((link) => {
+      if (
+        link.route.some((r) => normalizePath(r) === normalizePath(currPathname))
+      ) {
+        matched = link.label; // now this will match
+      }
+    });
+
+    setActiveLink(matched);
+    console.log('Current pathname:', currPathname, 'Matched link:', matched);
+  }, [currPathname, lang]);
+
+  // Prevent body scroll when navbar is open
+  useEffect(() => {
+    document.body.style.overflow = navbarOpen ? 'hidden' : '';
+  }, [navbarOpen]);
+
+  // Close search on outside click
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (isRedirecting.current) return;
+      const target = event.target as HTMLElement;
+      if (
+        (dropdownRef.current && !dropdownRef.current.contains(target)) ||
+        (inputRef.current && !inputRef.current.contains(target))
+      ) {
+        clearResults();
+        setHasSearched(false);
+        setShowSearch(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [clearResults]);
+
+  // Focus input when search is shown
+  useEffect(() => {
+    if (showSearch && inputRef.current) inputRef.current.focus();
+  }, [showSearch]);
+
+  const debouncedSearch = useMemo(
+    () =>
+      debounce((value: string) => {
+        if (isReady) {
+          performSearch(value);
+          setHasSearched(true);
+        }
+      }, DEBOUNCE_DELAY),
+    [isReady, performSearch]
+  );
+
+  const handleNavClick = () => setNavbarOpen(false);
+
+  const toggleAccordion = (label: string) => {
+    setOpenAccordion((prev) => (prev === label ? null : label));
   };
 
-  useEffect(() => {
-    setNavbarOpen(false);
-    setSearchOpen(false);
-  }, [pathname]);
-
-  return (
-    <nav className="fixed top-0 z-50 w-full bg-white shadow-md">
-      <div className="flex items-center justify-between px-4 py-3">
-        {/* Left: Hamburger + Search */}
-        <div className="flex items-center space-x-2">
-          {/* Hamburger */}
-          <button
-            onClick={() => setNavbarOpen((prev) => !prev)}
-            className="flex flex-col justify-center space-y-1 p-2"
-          >
-            <span className="block h-0.5 w-6 bg-black" />
-            <span className="block h-0.5 w-6 bg-black" />
-            <span className="block h-0.5 w-6 bg-black" />
-          </button>
-
-          {/* Search */}
-          <div className="relative">
-            {!searchOpen ? (
-              <button
-                onClick={() => setSearchOpen(true)}
-                className="flex items-center justify-center p-2"
-              >
-                <svg
-                  className="h-5 w-5 text-black"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="10" cy="10" r="6" strokeWidth="2" />
-                  <line x1="14" y1="14" x2="20" y2="20" strokeWidth="2" />
-                </svg>
-              </button>
-            ) : (
-              <div className="relative">
-                <input
-                  type="text"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder={searchPlaceholder}
-                  className="w-64 rounded-full border border-gray-300 py-2 pl-10 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  autoFocus
-                />
-                <svg
-                  className="pointer-events-none absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-black"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <circle cx="10" cy="10" r="6" strokeWidth="2" />
-                  <line x1="14" y1="14" x2="20" y2="20" strokeWidth="2" />
-                </svg>
-                <button
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-black"
-                  onClick={() => {
-                    setQuery('');
-                    setSearchOpen(false);
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <line x1="18" y1="6" x2="6" y2="18" />
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                  </svg>
-                </button>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Right: Logo (hidden when search is open) */}
-        {!searchOpen && (
-          <Link href={`/${lang}`} className="flex-shrink-0">
-            <ExportedImage
-              src={VirufyLogo}
-              alt="Virufy logo"
-              basePath={basePath}
-              className="h-10 w-auto"
-            />
-          </Link>
-        )}
+  const renderSearchInput = () => (
+    <div className="relative ml-2">
+      <input
+        ref={inputRef}
+        type="text"
+        placeholder={searchPlaceholder}
+        value={query}
+        autoFocus
+        onChange={(e) => {
+          const value = e.target.value;
+          setQuery(value);
+          if (value.trim() === '') {
+            clearResults();
+            setHasSearched(false);
+          } else debouncedSearch(value);
+        }}
+        className="w-40 rounded-full border border-black px-10 py-1 text-black placeholder-black focus:outline-none sm:w-52"
+      />
+      {/* Search icon inside input */}
+      <div className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-black">
+        <svg
+          className="h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <circle cx="10" cy="10" r="6" strokeWidth="2" />
+          <line x1="14" y1="14" x2="20" y2="20" strokeWidth="2" />
+        </svg>
       </div>
 
-      {/* Accordion menu */}
-      {navbarOpen && (
-        <div className="px-4 pb-4">
-          <ul className="space-y-2 text-black">
-            <li>
-              <Link
-                href={`/${lang}`}
-                className={`block rounded px-3 py-2 hover:bg-gray-100 ${
-                  pathname === `/${lang}` ? 'font-bold text-blue-600' : ''
-                }`}
-                onClick={() => setNavbarOpen(false)}
-              >
-                {home}
-              </Link>
-            </li>
+      {/* X to close */}
+      <div
+        onClick={() => {
+          setShowSearch(false);
+          setQuery('');
+          clearResults();
+          setHasSearched(false);
+        }}
+        className="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer text-black"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-4 w-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth="2"
+        >
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </div>
+    </div>
+  );
 
-            {/* Technology Accordion */}
-            <li>
-              <button
-                onClick={() => toggleAccordion('technology')}
-                className="flex w-full justify-between rounded px-3 py-2 hover:bg-gray-100"
+  const renderSearchDropdown = () =>
+    hasSearched &&
+    showSearch && (
+      <ul
+        ref={dropdownRef}
+        className="mt-1 max-h-64 overflow-y-auto rounded-md border border-black bg-white p-2 text-black shadow-lg"
+      >
+        {results.filter((r) => r.url).length > 0 ? (
+          results
+            .filter((r) => r.url)
+            .map((r) => (
+              <li
+                key={`${r.id}-${r.url}`}
+                className="cursor-pointer border-b py-2 text-black last:border-b-0"
+                onMouseDown={() => (isRedirecting.current = true)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  try {
+                    router.push(r.url);
+                    setTimeout(() => {
+                      setQuery('');
+                      clearResults();
+                      setHasSearched(false);
+                      isRedirecting.current = false;
+                    }, 300);
+                  } catch {
+                    window.location.href = r.url;
+                  }
+                }}
               >
-                {ourTechnology?.section}
-                <span>{accordionOpen['technology'] ? '-' : '+'}</span>
-              </button>
-              {accordionOpen['technology'] && (
-                <ul className="ml-4 mt-1 space-y-1">
-                  <li>
-                    <Link
-                      href={`/${lang}/ai`}
-                      className="block rounded px-2 py-1 hover:bg-gray-100"
-                      onClick={() => setNavbarOpen(false)}
-                    >
-                      AI
-                    </Link>
-                  </li>
-                </ul>
-              )}
-            </li>
+                <div className="font-semibold">{r.title}</div>
+                <div className="text-sm">{r.content}</div>
+              </li>
+            ))
+        ) : (
+          <li className="py-4 text-center text-black">
+            {noResultsPlaceholder}
+          </li>
+        )}
+      </ul>
+    );
 
-            {/* About Accordion */}
-            <li>
-              <button
-                onClick={() => toggleAccordion('about')}
-                className="flex w-full justify-between rounded px-3 py-2 hover:bg-gray-100"
-              >
-                {aboutUs?.section}
-                <span>{accordionOpen['about'] ? '-' : '+'}</span>
-              </button>
-              {accordionOpen['about'] && (
-                <ul className="ml-4 mt-1 space-y-1">
-                  {[
-                    {
-                      label: aboutUs?.section,
-                      href: `/${lang}/sevenwho-we-are`,
-                    },
-                    { label: aboutUs?.advisors, href: `/${lang}/advisors` },
-                    {
-                      label: aboutUs?.ourFounder,
-                      href: `/${lang}/amils-story`,
-                    },
-                    {
-                      label: aboutUs?.ourSupporters,
-                      href: `/${lang}/supporters`,
-                    },
-                    {
-                      label: aboutUs?.oneYoungWorld,
-                      href: `/${lang}/one-young-world`,
-                    },
-                  ].map((item) => (
-                    <li key={item.href}>
-                      <Link
-                        href={item.href}
-                        className="block rounded px-2 py-1 hover:bg-gray-100"
-                        onClick={() => setNavbarOpen(false)}
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
+  const accordions: AccordionItem[] = [
+    {
+      label: aboutUs?.section || 'About Us',
+      links: [
+        { label: aboutUs?.section || '', href: `/${lang}/sevenwho-we-are` },
+        { label: aboutUs?.advisors || '', href: `/${lang}/advisors` },
+        { label: aboutUs?.ourFounder || '', href: `/${lang}/amils-story` },
+        { label: aboutUs?.ourSupporters || '', href: `/${lang}/supporters` },
+        {
+          label: aboutUs?.oneYoungWorld || '',
+          href: `/${lang}/one-young-world`,
+        },
+      ],
+    },
+    {
+      label: media?.section || 'Media',
+      links: [
+        { label: media?.ourResearch || '', href: `/${lang}/news` },
+        { label: media?.pressReleases || '', href: `/${lang}/publications` },
+      ],
+    },
+  ];
 
-            {/* Media Accordion */}
-            <li>
-              <button
-                onClick={() => toggleAccordion('media')}
-                className="flex w-full justify-between rounded px-3 py-2 hover:bg-gray-100"
-              >
-                {media.section}
-                <span>{accordionOpen['media'] ? '-' : '+'}</span>
-              </button>
-              {accordionOpen['media'] && (
-                <ul className="ml-4 mt-1 space-y-1">
-                  {[
-                    { label: media.ourResearch, href: `/${lang}/news` },
-                    {
-                      label: media.pressReleases,
-                      href: `/${lang}/publications`,
-                    },
-                  ].map((item) => (
-                    <li key={item.href}>
-                      <Link
-                        href={item.href}
-                        className="block rounded px-2 py-1 hover:bg-gray-100"
-                        onClick={() => setNavbarOpen(false)}
-                      >
-                        {item.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
+  return (
+    <nav className="fixed top-0 z-50 w-full rounded-b-3xl bg-white p-3 px-5 text-black shadow-md">
+      <div className="flex items-center justify-between pt-2">
+        {/* Left: Hamburger + Search */}
+        <div className="flex items-center gap-2">
+          {/* Hamburger */}
+          <div
+            onClick={() => setNavbarOpen((prev) => !prev)}
+            className="cursor-pointer text-black"
+          >
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d={
+                  navbarOpen
+                    ? 'M6 18L18 6M6 6l12 12'
+                    : 'M4 6h16M4 12h16M4 18h16'
+                }
+              />
+            </svg>
+          </div>
 
-            <li>
-              <Link
-                href={`/${lang}/join-us`}
-                className="block rounded px-3 py-2 hover:bg-gray-100"
-                onClick={() => setNavbarOpen(false)}
+          {/* Search icon / input */}
+          {showSearch ? (
+            renderSearchInput()
+          ) : (
+            <div
+              onClick={() => setShowSearch(true)}
+              className="cursor-pointer text-black"
+            >
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                {joinUs?.buttonText}
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href={`/${lang}/donate`}
-                className="block rounded px-3 py-2 hover:bg-gray-100"
-                onClick={() => setNavbarOpen(false)}
-              >
-                {donate?.buttonText}
-              </Link>
-            </li>
-
-            <li>
-              <Link
-                href={`/${lang}/faq`}
-                className="block rounded px-3 py-2 hover:bg-gray-100"
-                onClick={() => setNavbarOpen(false)}
-              >
-                {faq}
-              </Link>
-            </li>
-          </ul>
+                <circle cx="10" cy="10" r="6" strokeWidth="2" />
+                <line x1="14" y1="14" x2="20" y2="20" strokeWidth="2" />
+              </svg>
+            </div>
+          )}
         </div>
+
+        {/* Right: Logo */}
+        <Link href={`/${lang}`} className="flex items-center justify-center">
+          <ExportedImage
+            src={VirufyLogo}
+            alt="Virufy logo"
+            basePath={basePath}
+            className="h-10 w-auto"
+          />
+        </Link>
+      </div>
+
+      {showSearch && renderSearchDropdown()}
+
+      {/* Mobile menu */}
+      {navbarOpen && (
+        <ul className="mt-3 flex flex-col gap-3 text-lg text-black">
+          <li>
+            <Link
+              href={`/${lang}`}
+              onClick={handleNavClick}
+              className={`block w-full ${activeLink === 'Home' ? 'font-bold' : ''}`}
+            >
+              {home}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${lang}/ai`}
+              onClick={handleNavClick}
+              className={`block w-full ${activeLink === 'Technology' ? 'font-bold' : ''}`}
+            >
+              {ourTechnology?.section}
+            </Link>
+          </li>
+
+          {accordions.map((section) => (
+            <li key={section.label}>
+              <button
+                onClick={() => toggleAccordion(section.label)}
+                className="flex w-full items-center justify-between text-black"
+              >
+                {section.label}
+                <span>{openAccordion === section.label ? '-' : '+'}</span>
+              </button>
+              {openAccordion === section.label && (
+                <ul className="ml-4 mt-1 flex flex-col gap-2">
+                  {section.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        onClick={handleNavClick}
+                        className="block w-full text-black"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
+
+          <li>
+            <Link
+              href={`/${lang}/join-us`}
+              onClick={handleNavClick}
+              className="block w-full text-black"
+            >
+              {joinUs?.buttonText}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${lang}/donate`}
+              onClick={handleNavClick}
+              className="block w-full text-black"
+            >
+              {donate?.buttonText}
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={`/${lang}/faq`}
+              onClick={handleNavClick}
+              className="block w-full text-black"
+            >
+              {faq}
+            </Link>
+          </li>
+
+          <li>
+            <LocaleSelect lang={lang} onDropdownChange={() => {}} />
+          </li>
+        </ul>
       )}
     </nav>
   );
