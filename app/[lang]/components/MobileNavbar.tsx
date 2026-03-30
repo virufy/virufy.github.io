@@ -38,7 +38,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
   const [hasSearched, setHasSearched] = useState(false);
   const [activeLink, setActiveLink] = useState('');
   const [openAccordion, setOpenAccordion] = useState<string | null>(null);
-
+  const [localeOpen, setLocaleOpen] = useState(false);
   const currPathname = usePathname();
   const router = useRouter();
   const isRedirecting = useRef(false);
@@ -323,7 +323,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
 
       {/* Mobile menu */}
       {navbarOpen && (
-        <ul className="mt-3 flex flex-col gap-3 text-lg text-black">
+        <ul className="mt-3 flex flex-col gap-3 text-lg">
           <li>
             <Link
               href={`/${lang}`}
@@ -343,32 +343,48 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
             </Link>
           </li>
 
-          {accordions.map((section) => (
-            <li key={section.label}>
-              <button
-                onClick={() => toggleAccordion(section.label)}
-                className="flex w-full items-center justify-between text-black"
-              >
-                {section.label}
-                <span>{openAccordion === section.label ? '-' : '+'}</span>
-              </button>
-              {openAccordion === section.label && (
-                <ul className="ml-4 mt-1 flex flex-col gap-2">
-                  {section.links.map((link) => (
-                    <li key={link.href}>
-                      <Link
-                        href={link.href}
-                        onClick={handleNavClick}
-                        className="block w-full text-black"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
+          {accordions.map((section) => {
+            const isSectionActive = section.links.some(
+              (link) => normalizePath(link.href) === normalizePath(currPathname)
+            );
+
+            return (
+              <li key={section.label}>
+                <button
+                  onClick={() => toggleAccordion(section.label)}
+                  className={`flex w-full items-center justify-between ${
+                    isSectionActive
+                      ? 'font-semibold text-blue-600'
+                      : 'text-black'
+                  }`}
+                >
+                  {section.label}
+                  <span>{openAccordion === section.label ? '-' : '+'}</span>
+                </button>
+
+                {openAccordion === section.label && (
+                  <ul className="ml-4 mt-1 flex flex-col gap-2">
+                    {section.links.map((link) => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          onClick={handleNavClick}
+                          className={`block w-full ${
+                            normalizePath(link.href) ===
+                            normalizePath(currPathname)
+                              ? 'border-l-2 border-blue-600 pl-2 font-semibold text-blue-600'
+                              : 'text-black'
+                          }`}
+                        >
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            );
+          })}
 
           <li>
             <Link
@@ -398,9 +414,23 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
             </Link>
           </li>
 
-          <li>
-            <LocaleSelect lang={lang} onDropdownChange={() => {}} />
-          </li>
+          <div
+            className={
+              localeOpen
+                ? 'bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9]'
+                : 'w-[90px] rounded-full border-2 border-sky-800'
+            }
+          >
+            <li
+              className={`w-full text-sm font-semibold text-black ${localeOpen ? 'bg-white' : 'rounded-full bg-white pl-4'}`}
+              //make sure to match locale select styles when open vs closed
+            >
+              <LocaleSelect
+                lang={lang}
+                onDropdownChange={(open) => setLocaleOpen(open)}
+              />
+            </li>
+          </div>
         </ul>
       )}
     </nav>
