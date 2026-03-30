@@ -77,11 +77,13 @@ const LocaleSelect = ({ lang, onDropdownChange }: LocaleSelectProps) => {
   }, [onDropdownChange]);
 
   return (
-    <div className="relative inline-block" ref={dropdownRef}>
+    <div className="w-full md:relative md:inline-block" ref={dropdownRef}>
       <button
         onClick={toggleDropdown}
-        className={`flex items-center bg-transparent pb-1 pt-2 text-xl font-bold text-black hover:font-bold focus:outline-none lg:w-20 lg:border-none lg:p-3 lg:px-0 lg:font-medium lg:text-black ${
-          dropdownOpen ? 'border-l border-r border-t border-gray-500' : ''
+        className={`flex items-center bg-transparent pb-1 pt-2 text-xl text-black focus:outline-none md:font-bold md:hover:font-bold lg:w-20 lg:border-none lg:p-3 lg:px-0 lg:font-medium lg:text-black ${
+          dropdownOpen
+            ? 'rounded-full border-2 border-sky-800 px-4'
+            : 'rounded-full'
         }`}
       >
         {locale.toUpperCase()}
@@ -90,22 +92,24 @@ const LocaleSelect = ({ lang, onDropdownChange }: LocaleSelectProps) => {
 
       {dropdownOpen && (
         <div
-          className={`absolute right-0 mt-2 rounded-xl border border-gray-500 bg-black text-black shadow-md shadow-gray-500 lg:border-none lg:bg-transparent lg:shadow-lg`}
+          className={`right-0 mt-2 flex rounded-xl text-black shadow-gray-500 md:absolute md:block md:border md:border-gray-500 md:shadow-md lg:border-none lg:bg-transparent lg:shadow-lg`}
         >
           {i18n.locales.map((localeOption) => (
             <button
               key={localeOption}
               onClick={() => handleLocaleChange(localeOption as Locale)}
-              className={`flex w-full items-center border-gray-500 px-3 py-2 text-sm first:rounded-t-xl last:rounded-b-xl hover:font-bold lg:bg-white`}
+              className={`flex w-full items-center border-gray-500 py-2 text-sm first:rounded-t-xl last:rounded-b-xl hover:font-bold md:px-3 lg:bg-white`}
             >
-              <div className="grid grid-cols-[30px_50px_25px] items-center rounded-full px-2 py-1">
+              <div className="grid grid-cols-[30px_50px] items-center rounded-full py-1 md:grid-cols-[30px_50px_25px] md:px-2">
                 <ExportedImage
                   src={flagIcons[localeOption]}
                   alt={`${localeOption} flag`}
                   className="h-5 w-5"
                 />
                 <p>{fulllangnames[localeOption]}</p>
-                <p className="text-right">{localeOption.toUpperCase()}</p>
+                <p className="hidden text-right md:block">
+                  {localeOption.toUpperCase()}
+                </p>
               </div>
             </button>
           ))}

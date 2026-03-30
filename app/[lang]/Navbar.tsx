@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import OldNavbar from './components/OldNavbar';
 import NewNavbar from './components/NewNavbar';
+import MobileNavbar from './components/MobileNavbar';
 import { type Locale } from '@/i18n-config';
 import { useEffect, useState } from 'react';
 
@@ -20,9 +21,19 @@ export default function Navbar({ lang }: { lang: Locale }) {
     }
   }, []);
 
-  const useNewNav =
-    (pathname.startsWith(`/${lang}/seven`) || pathname.startsWith('/seven')) &&
-    (windowWidth === null || windowWidth >= 768); // Tailwind md breakpoint = 768px
+  const isSevenPage =
+    pathname.startsWith(`/${lang}/seven`) || pathname.startsWith('/seven');
 
-  return useNewNav ? <NewNavbar lang={lang} /> : <OldNavbar lang={lang} />;
+  if (isSevenPage && windowWidth !== null && windowWidth < 768) {
+    // Small screen, seven page → MobileNavbar
+    return <MobileNavbar lang={lang} />;
+  }
+
+  if (isSevenPage) {
+    // Desktop/tablet seven page → NewNavbar
+    return <NewNavbar lang={lang} />;
+  }
+
+  // All other pages → OldNavbar
+  return <OldNavbar lang={lang} />;
 }
