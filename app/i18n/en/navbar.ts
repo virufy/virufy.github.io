@@ -14,10 +14,10 @@ export const navbar: NavbarType = {
   },
   aboutUs: {
     section: 'Who We Are',
-    advisors: 'Advisors',
+    advisors: 'Our Advisors',
     ourFounder: 'Our Founder',
     ourSupporters: 'Our Supporters',
-    blog: 'Blog',
+    blog: 'Our Blog',
     oneYoungWorld: 'One Young World',
   },
   media: {
