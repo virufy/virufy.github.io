@@ -22,6 +22,7 @@ import donate from './donate';
 import sevenai from './sevenai';
 import sevenhomepage from './sevenhomepage';
 import sevensupporters from './sevensupporters';
+import sevensupportus from './sevensupportus';
 
 const enMetadata: I18nData = {
   ai,
@@ -47,6 +48,7 @@ const enMetadata: I18nData = {
   sevenai,
   sevenhomepage,
   sevensupporters,
+  sevensupportus,
 };
 
 export default enMetadata;

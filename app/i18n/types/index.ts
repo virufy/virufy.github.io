@@ -21,6 +21,7 @@ import { type Donate } from './donate';
 import { type sevenAi } from './sevenai';
 import { type sevenhomepage } from './sevenhomepage';
 import { type sevensupporters } from './sevensupporters';
+import { type SevenSupportUs } from './sevensupportus';
 
 export interface I18nData {
   ai: Ai;
@@ -46,4 +47,5 @@ export interface I18nData {
   sevenai: sevenAi;
   sevenhomepage: sevenhomepage;
   sevensupporters: sevensupporters;
+  sevensupportus: SevenSupportUs;
 }
