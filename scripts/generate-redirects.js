@@ -27,6 +27,7 @@ const redirects = [
   { from: 'apply', to: 'https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform' },
   {from: 'oyw', to: 'en/one-young-world'},
   {from: 'partners', to: 'en/advisors'},
+  {from: 'amil-jp-degree', to: 'https://docs.google.com/document/d/1DtRBgO_oS_hR4CU-xktEE-nPB-LPH_rCW9QeEYjkNeQ/edit?tab=t.0'},
   // add more here
 ];
 
