@@ -3,6 +3,7 @@
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { VirufyLogo } from '@/public/images/navbar/index';
+import ArrowDownIcon from '@/public/icons/icon-arrow-down.png';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -359,7 +360,16 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
                   }`}
                 >
                   {section.label}
-                  <span>{openAccordion === section.label ? '-' : '+'}</span>
+                  <span>
+                    <ExportedImage
+                      src={ArrowDownIcon}
+                      alt="arrow"
+                      basePath={basePath}
+                      className={`h-3 w-3 transition-transform ${
+                        openAccordion === section.label ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </span>
                 </button>
 
                 {openAccordion === section.label && (
