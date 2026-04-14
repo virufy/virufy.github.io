@@ -78,7 +78,6 @@
   },
   {
     "id": "en-media-publications-8",
-    "id": "en-media-publications-7",
     "lang": "en",
     "title": "Publications",
     "content": "Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from Cough",
@@ -86,7 +85,6 @@
   },
   {
     "id": "en-media-publications-9",
-    "id": "en-media-publications-8",
     "lang": "en",
     "title": "Publications",
     "content": "Fusical: Multimodal Fusion for Video Sentiment",
@@ -94,7 +92,6 @@
   },
   {
     "id": "en-media-publications-10",
-    "id": "en-media-publications-9",
     "lang": "en",
     "title": "Publications",
     "content": "Facial Expression Recognition with Deep Learning",
@@ -875,13 +872,6 @@
     "lang": "en",
     "title": "Okazaki Takashi",
     "content": "Executive Malaysia-Japan Advisor (CEO & Co-Founder - Therapia Sdn. Bhd. | M.S. Frontier Sciences - University of Tokyo)",
-    "url": "/en/advisors"
-  },
-  {
-    "id": "en-advisors-35",
-    "lang": "en",
-    "title": "Junpei Komiyama",
-    "content": "Artificial Intelligence Advisor (Assistant Professor of Machine Learning, MBZUAI (Mohamed bin Zayed University of Artificial Intelligence) | Ph.D. in Computer Science, The University of Tokyo)",
     "url": "/en/advisors"
   },
   {

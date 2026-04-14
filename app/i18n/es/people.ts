@@ -351,16 +351,6 @@ const people: People = {
         ],
         link: 'https://therapia.my/',
       },
-      junpei: {
-        img: './../images/advisors/junpei-komiyama.webp',
-        name: 'Junpei Komiyama',
-        role: 'Asesor de Inteligencia Artificial',
-        texts: [
-          'Profesor Asistente de Aprendizaje Automático, MBZUAI (Universidad Mohamed bin Zayed de Inteligencia Artificial)',
-          'Doctorado (Ph.D.) en Ciencias de la Computación, Universidad de Tokio',
-        ],
-        link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
-      },
     },
     advisorOrder: [
       'adam',
@@ -395,9 +385,6 @@ const people: People = {
       'maurino',
       'amir',
       'ohmori',
-      'tomohiro',
-      'okazaki',
-      'junpei',
     ],
   },
 };

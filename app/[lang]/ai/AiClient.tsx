@@ -47,7 +47,7 @@ export default function AiPage({
       <section>
         <div className="relative bg-[#4883e3]">
           <ExportedImage
-            className="pointer-events-none absolute h-full w-full object-cover opacity-30"
+            className="absolute h-full w-full object-cover opacity-30"
             src={SplashBackground}
             alt=""
             priority

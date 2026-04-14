@@ -50,7 +50,6 @@
   },
   {
     "id": "ar-media-publications-4",
-    "id": "ar-media-publications-3",
     "lang": "ar",
     "title": "المنشورات",
     "content": "آلة حساب COVID-19 -- التأثير الإيجابي على الاقتصاد والمجتمع في الولايات المتحدة",
@@ -58,7 +57,6 @@
   },
   {
     "id": "ar-media-publications-5",
-    "id": "ar-media-publications-4",
     "lang": "ar",
     "title": "المنشورات",
     "content": "استخدام التعلم العميق مع مجموعات بيانات كبيرة مجمعة لتصنيف COVID-19 من السعال",
@@ -73,7 +71,6 @@
   },
   {
     "id": "ar-media-publications-7",
-    "id": "ar-media-publications-5",
     "lang": "ar",
     "title": "المنشورات",
     "content": "التحديات والفرص في نشر أنظمة الذكاء الاصطناعي للكشف عن COVID-19 من السعال",
@@ -81,7 +78,6 @@
   },
   {
     "id": "ar-media-publications-8",
-    "id": "ar-media-publications-6",
     "lang": "ar",
     "title": "المنشورات",
     "content": "Virufy: إمكانية التطبيق العالمي لمجموعات البيانات السريرية والجمعية من أجل اكتشاف الذكاء الاصطناعي لكوفيد-19 من خلال السعال",
@@ -89,7 +85,6 @@
   },
   {
     "id": "ar-media-publications-9",
-    "id": "ar-media-publications-7",
     "lang": "ar",
     "title": "المنشورات",
     "content": "Fusical: الدمج متعدد الوسائط للمشاعر في الفيديو",
@@ -97,18 +92,10 @@
   },
   {
     "id": "ar-media-publications-10",
-    "id": "ar-media-publications-8",
     "lang": "ar",
     "title": "المنشورات",
     "content": " التعرف على تعبيرات الوجه باستخدام التعلم العميق",
     "url": "https://arxiv.org/abs/2004.11823"
-  },
-  {
-    "id": "ar-media-publications-9",
-    "lang": "ar",
-    "title": "المنشورات",
-    "content": "تحسين التسجيل في التجارب السريرية لجمع البيانات بالذكاء الاصطناعي المعتمد على الهواتف الذكية: تحليل منهجي للتدخلات القائمة على التوجيه السلوكي (Nudge)",
-    "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
   },
   {
     "id": "ar-faq-1",
@@ -878,13 +865,6 @@
     "lang": "ar",
     "title": "أوكازاكي تاكاشي",
     "content": "المستشار التنفيذي الماليزي–الياباني (الرئيس التنفيذي والمؤسس المشارك – شركة ثيرابيا (ذ.م.م) |  ماجستير العلوم في علوم الحدود – جامعة طوكي)",
-    "url": "/ar/advisors"
-  },
-  {
-    "id": "ar-advisors-35",
-    "lang": "ar",
-    "title": "جونبي كوميياما",
-    "content": "مستشار الذكاء الاصطناعي (أستاذ مساعد في تعلّم الآلة، جامعة محمد بن زايد للذكاء الاصطناعي (MBZUAI) | دكتوراه في علوم الحاسوب، جامعة طوكيو)",
     "url": "/ar/advisors"
   },
   {

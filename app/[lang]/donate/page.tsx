@@ -10,7 +10,7 @@ const icons = [Globe, Microscope, ShieldCheck];
 // Page Component
 const DonatePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    donate: { heroSection, donateSection, donationTransparencyBlock },
+    donate: { heroSection, donateSection },
   } = usei18n(lang);
   const contentWithIcons = donateSection.contentBlocks.map((block, index) => ({
     ...block,
@@ -53,11 +53,11 @@ const DonatePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         {/* Donate Section */}
         <section className="relative mx-auto max-w-6xl px-6 pb-20 pt-10 md:pb-28 md:pt-16">
           <div className="space-y-10">
-            <h2 className="text-3xl font-semibold text-green-700 md:mb-6 md:text-left md:text-4xl">
+            <h2 className="text-center text-3xl font-semibold text-black">
               {donateSection.title}
             </h2>
 
-            <p className="mx-auto leading-loose text-green-900 md:px-0 md:text-left md:text-lg">
+            <p className="mx-auto max-w-3xl text-center text-black">
               {donateSection.text}
             </p>
 
@@ -124,14 +124,6 @@ const DonatePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 )}
               </div>
             </div>
-          </div>
-          <div className="mt-16 border-t pt-10 text-black">
-            <h3 className="mb-4 py-2 text-3xl font-semibold text-green-700 md:text-left">
-              {donationTransparencyBlock.title}{' '}
-            </h3>
-            <p className="mx-auto leading-loose text-green-900 md:text-left md:text-lg">
-              {donationTransparencyBlock.text}
-            </p>
           </div>
         </section>
 

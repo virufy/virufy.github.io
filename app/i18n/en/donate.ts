@@ -46,10 +46,6 @@ const donate: Donate = {
       },
     ],
   },
-  donationTransparencyBlock: {
-    title: 'Transparency you can trust',
-    text: 'Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research, innovation, and patient access.',
-  },
 };
 
 export default donate;

@@ -696,7 +696,7 @@ const footer: Footer = {
     textOne:
       'Virufy es una corporación sin fines de lucro registrada en California y reconocida por el Servicio de Impuestos Internos (IRS) de los Estados Unidos como una organización benéfica pública exenta de impuestos bajo la Sección 501(c)(3) del Código de Rentas Internas.',
     textTwo:
-      '©2026 Virufy | VIRUFY es una marca registrada de The Covid Detection Foundation, una corporación sin fines de lucro en California | Todos los derechos reservados',
+      '©2025 Virufy | VIRUFY es una marca registrada de The Covid Detection Foundation, una corporación sin fines de lucro en California | Todos los derechos reservados',
   },
   IntellectualProperty: {
     title: 'Propiedad intelectual ',
