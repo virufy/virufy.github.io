@@ -18,6 +18,7 @@ import { type Story } from './story';
 import { type Supporters } from './supporters';
 import { type TeamLeadsType } from './teamLeads';
 import { type Donate } from './donate';
+import { type Post } from './BlogPosts';
 import { type sevenAi } from './sevenai';
 import { type sevenhomepage } from './sevenhomepage';
 import { type sevensupporters } from './sevensupporters';
@@ -44,6 +45,7 @@ export interface I18nData {
   supporters: Supporters;
   teamLeads: TeamLeadsType;
   donate: Donate;
+  blogPosts: Record<string, Post>;
   sevenai: sevenAi;
   sevenhomepage: sevenhomepage;
   sevensupporters: sevensupporters;

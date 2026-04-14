@@ -38,10 +38,18 @@
     "id": "es-media-publications-2",
     "lang": "es",
     "title": "Publicaciones",
+    "content": "Mejorando la inscripción en ensayos clínicos para la recolección de datos de IA basada en teléfonos inteligentes: Un análisis metodológico de intervenciones basadas en incentivos conductuales (nudges)",
+    "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
+  },
+  {
+    "id": "es-media-publications-3",
+    "lang": "es",
+    "title": "Publicaciones",
     "content": "Transformador Multimodal Jerárquico para Detección Automática de COVID-19",
     "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
   },
   {
+    "id": "es-media-publications-4",
     "id": "es-media-publications-3",
     "lang": "es",
     "title": "Publicaciones",
@@ -49,6 +57,7 @@
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
+    "id": "es-media-publications-5",
     "id": "es-media-publications-4",
     "lang": "es",
     "title": "Publicaciones",
@@ -56,6 +65,14 @@
     "url": "https://arxiv.org/abs/2201.01669"
   },
   {
+    "id": "es-media-publications-6",
+    "lang": "es",
+    "title": "Publicaciones",
+    "content": "Uso de una calculadora novedosa de COVID-19 para medir el impacto socioeconómico positivo en EE. UU. de una solución de preevaluación de COVID-19 (IA/AA)",
+    "url": "https://arxiv.org/abs/2201.11109"
+  },
+  {
+    "id": "es-media-publications-7",
     "id": "es-media-publications-5",
     "lang": "es",
     "title": "Publicaciones",
@@ -63,6 +80,7 @@
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
   },
   {
+    "id": "es-media-publications-8",
     "id": "es-media-publications-6",
     "lang": "es",
     "title": "Publicaciones",
@@ -70,6 +88,7 @@
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
+    "id": "es-media-publications-9",
     "id": "es-media-publications-7",
     "lang": "es",
     "title": "Publicaciones",
@@ -77,6 +96,7 @@
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
+    "id": "es-media-publications-10",
     "id": "es-media-publications-8",
     "lang": "es",
     "title": "Publicaciones",

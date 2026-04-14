@@ -45,6 +45,13 @@ const publications: Publications = {
 
     {
       title:
+        'Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML)',
+      date: 'January 2022',
+      url: 'https://arxiv.org/abs/2201.11109',
+      linkText: 'Read More',
+    },
+    {
+      title:
         'Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems',
       date: 'September 2021',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
