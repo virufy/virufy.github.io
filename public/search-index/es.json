@@ -50,7 +50,6 @@
   },
   {
     "id": "es-media-publications-4",
-    "id": "es-media-publications-3",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Calculadora de Covid 19: impacto socioeconómico positivo en EE. UU.",
@@ -58,7 +57,6 @@
   },
   {
     "id": "es-media-publications-5",
-    "id": "es-media-publications-4",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Uso del aprendizaje profundo con grandes conjuntos de datos agregados para la clasificación de COVID-19 a partir de la tos",
@@ -73,7 +71,6 @@
   },
   {
     "id": "es-media-publications-7",
-    "id": "es-media-publications-5",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Desafíos y oportunidades en la implementación de sistemas de inteligencia artificial para la tos COVID-19",
@@ -81,7 +78,6 @@
   },
   {
     "id": "es-media-publications-8",
-    "id": "es-media-publications-6",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Virufy: Aplicabilidad global de conjuntos de datos clínicos y de colaboración colectiva para la detección mediante IA de COVID-19 a partir de la tos",
@@ -89,7 +85,6 @@
   },
   {
     "id": "es-media-publications-9",
-    "id": "es-media-publications-7",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Fusical: Fusión multimodal para análisis de sentimientos en video",
@@ -97,14 +92,13 @@
   },
   {
     "id": "es-media-publications-10",
-    "id": "es-media-publications-8",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Reconocimiento de expresiones faciales con aprendizaje profundo",
     "url": "https://arxiv.org/abs/2004.11823"
   },
   {
-    "id": "es-media-publications-9",
+    "id": "es-media-publications-11",
     "lang": "es",
     "title": "Publicaciones",
     "content": "Mejorando la inscripción en ensayos clínicos para la recolección de datos de IA basada en teléfonos inteligentes: Un análisis metodológico de intervenciones basadas en incentivos conductuales (nudges)",
