@@ -50,6 +50,7 @@
   },
   {
     "id": "ja-media-publications-4",
+    "id": "ja-media-publications-3",
     "lang": "ja",
     "title": "出版物",
     "content": "Covid 19計算機 -- 米国の社会経済に与えるポジティブな影響",
@@ -57,6 +58,7 @@
   },
   {
     "id": "ja-media-publications-5",
+    "id": "ja-media-publications-4",
     "lang": "ja",
     "title": "出版物",
     "content": "咳からCOVID-19を分類するための大規模集約データセットを用いたディープラーニング",
@@ -71,6 +73,7 @@
   },
   {
     "id": "ja-media-publications-7",
+    "id": "ja-media-publications-5",
     "lang": "ja",
     "title": "出版物",
     "content": "COVID-19咳AIシステムの展開における課題と機会",
@@ -78,6 +81,7 @@
   },
   {
     "id": "ja-media-publications-8",
+    "id": "ja-media-publications-6",
     "lang": "ja",
     "title": "出版物",
     "content": "Virufy: 咳からCOVID-19を検出するAIのためのクラウドソーシングおよび臨床データセットのグローバル適用性",
@@ -85,6 +89,7 @@
   },
   {
     "id": "ja-media-publications-9",
+    "id": "ja-media-publications-7",
     "lang": "ja",
     "title": "出版物",
     "content": "Fusical: マルチモーダル融合によるビデオ感情分析",
@@ -92,10 +97,18 @@
   },
   {
     "id": "ja-media-publications-10",
+    "id": "ja-media-publications-8",
     "lang": "ja",
     "title": "出版物",
     "content": "ディープラーニングによる表情認識",
     "url": "https://arxiv.org/abs/2004.11823"
+  },
+  {
+    "id": "ja-media-publications-9",
+    "lang": "ja",
+    "title": "出版物",
+    "content": "スマートフォンベースのAIデータ収集における臨床試験参加登録の改善：ナッジ（行動経済学的介入）に基づく介入の方法論的分析",
+    "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
   },
   {
     "id": "ja-faq-1",
@@ -858,6 +871,13 @@
     "lang": "ja",
     "title": "岡崎 崇",
     "content": "マレーシア・ジャパン エグゼクティブ・アドバイザー (Therapia Sdn. Bhd. 共同創業者 兼 CEO | 東京大学大学院 新領域創成科学研究科 修士)",
+    "url": "/ja/advisors"
+  },
+  {
+    "id": "ja-advisors-35",
+    "lang": "ja",
+    "title": "小宮山 純平",
+    "content": "人工知能アドバイザー (MBZUAI（モハメド・ビン・ザイード人工知能大学）機械学習学部　助教 | 東京大学大学院 博士（情報理工学))",
     "url": "/ja/advisors"
   },
   {

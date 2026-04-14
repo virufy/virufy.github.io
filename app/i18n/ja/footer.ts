@@ -695,7 +695,7 @@ const footer: Footer = {
     textOne:
       'Virufyは、米国内国歳入庁（IRS）により、内国歳入法第501条（c）（3）に基づく非課税公益法人として認められたカリフォルニア州の非営利法人です。',
     textTwo:
-      '©2025 Virufy | VIRUFYは、カリフォルニア州の非営利団体The Covid Detection Foundationの商標です。 | 無断転載禁止',
+      '©2026 Virufy | VIRUFYは、カリフォルニア州の非営利団体The Covid Detection Foundationの商標です。 | 無断転載禁止',
   },
   IntellectualProperty: {
     title: '知的財産',

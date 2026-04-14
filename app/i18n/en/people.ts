@@ -339,6 +339,16 @@ const people: People = {
         ],
         link: 'https://therapia.my/',
       },
+      junpei: {
+        img: './../images/advisors/junpei-komiyama.webp',
+        name: 'Junpei Komiyama',
+        role: 'Artificial Intelligence Advisor',
+        texts: [
+          'Assistant Professor of Machine Learning, MBZUAI (Mohamed bin Zayed University of Artificial Intelligence)',
+          'Ph.D. in Computer Science, The University of Tokyo',
+        ],
+        link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
+      },
     },
     advisorOrder: [
       'adam',
@@ -374,7 +384,8 @@ const people: People = {
       'amir',
       'ohmori',
       'tomohiro',
-      'Okazaki',
+      'okazaki',
+      'junpei',
     ],
   },
 };

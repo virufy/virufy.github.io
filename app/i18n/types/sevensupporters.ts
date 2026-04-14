@@ -1,0 +1,20 @@
+import { type StaticImageData } from 'next/image';
+
+export interface sevensupporters {
+  introSection: {
+    tag: string;
+    title: string[];
+    text: string;
+  };
+  banner: {
+    title: string;
+    buttontext: string;
+    text: string[];
+    link: string;
+  };
+  SupporterImg: {
+    img: string | StaticImageData;
+    alt: string;
+    link: string;
+  }[];
+}
