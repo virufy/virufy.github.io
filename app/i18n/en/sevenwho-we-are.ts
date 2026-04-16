@@ -71,7 +71,7 @@ const sevenwhoweare: sevenwho_we_are = {
     text: [
       'Whether you want to volunteer, partner with us, or support our mission, we’d love to hear from you and explore how we can work together to make a meaningful impact.',
     ],
-    link: '',
+    link: 'https://www.linkedin.com/company/virufy/posts/?feedView=all',
   },
 };
 export default sevenwhoweare;

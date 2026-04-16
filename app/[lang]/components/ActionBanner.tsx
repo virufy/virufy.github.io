@@ -1,19 +1,14 @@
-import { type Locale } from '@/i18n-config';
-import Link from 'next/link';
-
 import { ColorProps, TextSizeProps } from '../themes';
 
 const ActionBanner = ({
   title,
   text,
   buttonText,
-  lang,
   page,
 }: {
   title: string;
   text: string;
   buttonText: string;
-  lang: Locale;
   page: string;
 }) => {
   return (
@@ -33,11 +28,14 @@ const ActionBanner = ({
             {text}
           </p>
         </div>
-        <button
-          className={`mt-10 whitespace-nowrap rounded-full px-6 py-3 ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
+        <a
+          href={page}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
         >
-          <Link href={`/${lang}${page}`}>{buttonText}</Link>
-        </button>
+          {buttonText}
+        </a>
       </div>
     </section>
   );
