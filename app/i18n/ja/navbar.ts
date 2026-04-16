@@ -17,13 +17,14 @@ export const navbar: NavbarType = {
     advisors: 'アドバイザー',
     ourFounder: '当社の創業者',
     ourSupporters: 'サポーター',
-    blog: 'ブログ',
+
     oneYoungWorld: 'One Young World',
   },
   media: {
     section: 'メディア',
     pressReleases: 'プレスリリース',
     ourResearch: '出版物',
+    blog: 'ブログ',
   },
   faq: 'よくある質問',
   donate: {

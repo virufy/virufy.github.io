@@ -21,8 +21,7 @@ export const navbar: NavbarType = {
     foundersubtext: 'Meet our founder',
     ourSupporters: 'Our Supporters',
     supportersubtext: 'Partners for impact',
-    blog: 'Our Blog',
-    blogsubtext: '',
+
     oneYoungWorld: 'One Young World',
     oymsubtext: 'Youth leader partnership',
   },
@@ -32,6 +31,8 @@ export const navbar: NavbarType = {
     presssubtext: 'Latest media coverage',
     ourResearch: 'Publications',
     researchsubtext: 'Peer-reviewed research',
+    blog: 'Our Blog',
+    blogsubtext: 'Insights and updates',
   },
   faq: 'FAQ',
   donate: {

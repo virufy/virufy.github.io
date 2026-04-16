@@ -441,6 +441,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
                               href: `/${lang}/publications`,
                               subtext: media.researchsubtext,
                             },
+                            {
+                              label: media.blog,
+                              href: `/${lang}/blog`,
+                              subtext: media.blogsubtext,
+                            },
                           ]}
                           activePath={currPathname}
                         />

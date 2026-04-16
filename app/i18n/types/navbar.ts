@@ -34,8 +34,7 @@ export interface AboutUs {
   foundersubtext?: string;
   ourSupporters: string;
   supportersubtext?: string;
-  blog: string;
-  blogsubtext?: string;
+
   oneYoungWorld: string;
   oymsubtext?: string;
 }
@@ -46,6 +45,8 @@ export interface Media {
   presssubtext?: string;
   ourResearch: string;
   researchsubtext?: string;
+  blog: string;
+  blogsubtext?: string;
 }
 
 export interface DonateSection {
