@@ -189,7 +189,6 @@ const SevenSupporters = ({
           title={banner.title}
           text={banner.text[0]}
           buttonText={banner.buttontext}
-          lang={lang}
           page={banner.link}
         />
       </section>

@@ -121,7 +121,7 @@ export default function AiPage({
           </div>
         </section>
       </div>
-      <ActionBanner title={banner.title} text={banner.text} buttonText={banner.buttonText} lang={lang} page={banner.url}/>
+      <ActionBanner title={banner.title} text={banner.text} buttonText={banner.buttonText} page={banner.url}/>
     </div>
   );
 }
