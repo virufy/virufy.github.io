@@ -17,13 +17,14 @@ export const navbar: NavbarType = {
     advisors: 'Our Advisors',
     ourFounder: 'Our Founder',
     ourSupporters: 'Our Supporters',
-    blog: 'Our Blog',
+
     oneYoungWorld: 'One Young World',
   },
   media: {
     section: 'Media',
     pressReleases: 'News',
     ourResearch: 'Publications',
+    blog: 'Our Blog',
   },
   faq: 'FAQ',
   donate: {

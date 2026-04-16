@@ -30,7 +30,7 @@ export interface AboutUs {
   advisors: string;
   ourFounder: string;
   ourSupporters: string;
-  blog: string;
+
   oneYoungWorld: string;
 }
 
@@ -38,6 +38,7 @@ export interface Media {
   section: string;
   pressReleases: string;
   ourResearch: string;
+  blog: string;
 }
 
 export interface DonateSection {

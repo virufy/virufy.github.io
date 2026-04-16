@@ -167,6 +167,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
           `/${lang}/amils-story`,
+          `/${lang}/blog`,
         ],
       },
       {
@@ -704,6 +705,14 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           onClick={handleNavClick}
                         >
                           {media?.ourResearch}
+                        </Link>
+                        {/* Blog */}
+                        <Link
+                          className="py-1 hover:font-bold lg:py-3"
+                          href={`/${lang}/blog`}
+                          onClick={handleNavClick}
+                        >
+                          {media?.blog}
                         </Link>
                       </div>
                     </div>
