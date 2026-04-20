@@ -337,10 +337,10 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 }`}
               >
                 <div
-                  className={`mx-auto flex w-full flex-col justify-center space-y-8 bg-black lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
+                  className={`mx-auto flex w-full flex-col justify-center space-y-8 lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
                 >
                   <div
-                    className={`mx-auto flex w-full flex-col justify-center space-y-8 bg-black lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
+                    className={`mx-auto flex w-full flex-col justify-center space-y-8 lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
                     style={{
                       transform: showSearch
                         ? 'translateX(77px)' // shift right when search is open (adjust 90px to your search bar width/spacing)
