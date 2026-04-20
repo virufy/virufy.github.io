@@ -24,12 +24,12 @@ export default function Navbar({ lang }: { lang: Locale }) {
   const isSevenPage =
     pathname.startsWith(`/${lang}/seven`) || pathname.startsWith('/seven');
 
-  if (isSevenPage && windowWidth !== null && windowWidth < 1265) {
+  if (isSevenPage && windowWidth !== null && windowWidth < 1024) {
     // Small screen, seven page → MobileNavbar
     return <MobileNavbar lang={lang} />;
   }
 
-  if (isSevenPage && windowWidth !== null && windowWidth >= 1265) {
+  if (isSevenPage && windowWidth !== null && windowWidth >= 1024) {
     // Desktop/tablet seven page → NewNavbar
     return <NewNavbar lang={lang} />;
   }

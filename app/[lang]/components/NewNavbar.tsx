@@ -307,16 +307,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
       <nav className="fixed top-0 z-[100] h-[50px] w-full rounded-full">
         {/* Navbar container */}
         <div
-          className={`justify-between bg-gradient-to-r from-[#D7E2EB]/60 via-[#F2F4F8]/60 to-[#D7E2EB]/60 px-3 lg:mx-auto lg:flex lg:items-center lg:px-2`}
+          className={`mx-auto flex items-center justify-between bg-gradient-to-r from-[#D7E2EB]/60 via-[#F2F4F8]/60 to-[#D7E2EB]/60 px-2 px-3`}
         >
-          <div className="flex items-center justify-between lg:block lg:py-5">
+          <div
+            className={`flex items-center justify-between py-5 ${showSearch ? 'h-[108px]' : ''}`}
+          >
             {/* Desktop Virufy Logo */}
-            <Link
-              href={`/${lang}`}
-              className={`lg-space-x-6 hidden lg:flex lg:p-2`}
-            >
+            <Link href={`/${lang}`} className={`lg-space-x-6 flex p-2`}>
               <ExportedImage
-                className="h-[48px] w-[160px]"
+                className={`h-[48px] w-[160px] ${showSearch ? ' ' : ''}`}
                 src={VirufyLogo}
                 alt="Virufy logo"
                 basePath={basePath}
@@ -326,24 +325,20 @@ export default function Navbar({ lang }: { lang: Locale }) {
           {/* Dropdown (mobile) and Desktop Nav Links */}
           <div className="flex w-full items-center justify-between lg:flex">
             <div
-              className={`relative hidden flex-1 justify-self-start pb-3 transition-all duration-300 ease-out lg:mt-0 lg:block lg:flex lg:items-center lg:justify-center lg:pb-0 ${showSearch ? 'lg:max-w-[calc(100%-200px)]' : 'lg:max-w-full'} `}
+              className={`relative mt-0 flex flex-1 items-center justify-center justify-self-start pb-0 pb-3 transition-all duration-300 ease-out ${showSearch ? 'max-w-[calc(100%-200px)]' : 'max-w-full'} `}
             >
               {/* desktop navbar links */}
               <ul
-                className={`items-center justify-center space-y-8 lg:flex lg:w-full lg:flex-1 lg:space-x-6 lg:space-y-0 xl:space-x-9 ${
-                  navbar
-                    ? 'flex w-full flex-col items-center justify-center pb-5 text-center text-[24px] md:text-[36px]'
-                    : 'hidden'
-                }`}
+                className={`flex w-full flex-1 items-center justify-center space-x-6 space-x-9 space-y-0 space-y-8`}
               >
                 <div
-                  className={`mx-auto flex w-full flex-col justify-center space-y-8 lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
+                  className={`mx-auto flex w-full flex-row justify-center space-y-8 bg-transparent lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full xl:space-x-9`}
                 >
                   <div
-                    className={`mx-auto flex w-full flex-col justify-center space-y-8 lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
+                    className={`mx-auto flex w-full items-center justify-center space-x-6 space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
                     style={{
                       transform: showSearch
-                        ? 'translateX(77px)' // shift right when search is open (adjust 90px to your search bar width/spacing)
+                        ? 'lg:translateX(77px)' // shift right when search is open (adjust 90px to your search bar width/spacing)
                         : 'translateX(0)',
                     }}
                   >
@@ -512,7 +507,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
               >
                 <ul className="mx-2 flex items-center gap-x-4">
                   {/* Search bar for Desktop*/}
-                  <li className="ml-[100px] hidden items-center justify-center py-2 lg:ml-[120px] lg:flex">
+                  <li className="flex items-center justify-center py-2 lg:ml-[100px]">
                     <div
                       className={`relative flex justify-center ${showSearch ? 'w-[175px]' : 'w-auto'}`}
                     >
