@@ -1,48 +1,83 @@
 'use client';
+
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 interface NavbarDropdownProps {
   label: string;
   subtext?: string[];
   links: { label: string; href: string; subtext?: string }[];
-  navbar?: boolean; // mobile mode
-  activePath?: string; // current pathname from parent
+  activePath?: string;
 }
 
 export default function NavbarDropdown({
   label,
   links,
-  navbar = false,
-  activePath = '', // default empty string for safety
+  activePath = '',
 }: NavbarDropdownProps) {
   const [open, setOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
+
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const normalizePath = (path: string) => path.replace(/\/$/, '');
 
-  // Parent is active if any child link matches current path
+  // detect mobile/tablet (<1265px)
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 1265);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // ✅ CLICK AWAY LOGIC (fixed)
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (!open) return;
+
+      const target = e.target as Node;
+
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(target)
+      ) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () =>
+      document.removeEventListener('mousedown', handleClickOutside);
+  }, [open]);
+
   const isParentActive = links.some(
     (link) => normalizePath(link.href) === normalizePath(activePath)
   );
 
-  const childActive = (linkHref: string) =>
-    normalizePath(linkHref) === normalizePath(activePath);
+  const isChildActive = (href: string) =>
+    normalizePath(href) === normalizePath(activePath);
 
   return (
-    <div className="relative inline-block">
+    <div ref={containerRef} className="relative inline-block">
       {/* Parent button */}
       <button
-        onMouseEnter={() => !navbar && setOpen(true)}
-        onMouseLeave={() => !navbar && setOpen(false)}
-        onClick={() => navbar && setOpen((prev) => !prev)}
-        className={`relative z-10 flex cursor-pointer items-center gap-1 py-2 font-semibold ${
-          navbar ? 'text-[18px]' : 'text-[16px] lg:text-[18px]'
-        } ${isParentActive ? 'text-blue-600' : 'text-black hover:text-blue-600'}`}
+        onMouseEnter={() => !isMobileView && setOpen(true)}
+        onMouseLeave={() => !isMobileView && setOpen(false)}
+        onClick={() => setOpen((prev) => !prev)}
+        className={`flex cursor-pointer items-center gap-1 py-2 text-[16px] font-semibold lg:text-[18px] ${
+          isParentActive ? 'text-blue-600' : 'text-black hover:text-blue-600'
+        }`}
       >
         <span>{label}</span>
+
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={`h-3 w-3 transition-transform duration-200 ${open ? 'rotate-180' : 'rotate-0'}`}
+          className={`h-3 w-3 transition-transform duration-200 ${
+            open ? 'rotate-180' : 'rotate-0'
+          }`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -52,8 +87,8 @@ export default function NavbarDropdown({
         </svg>
       </button>
 
-      {/* Hover buffer for desktop */}
-      {!navbar && open && (
+      {/* Hover buffer (desktop only) */}
+      {!isMobileView && open && (
         <div
           className="absolute left-0 top-full -mt-4 h-10 w-full"
           onMouseEnter={() => setOpen(true)}
@@ -61,27 +96,31 @@ export default function NavbarDropdown({
         />
       )}
 
-      {/* Dropdown Menu */}
+      {/* Dropdown */}
       {open && (
         <div
           className="dropdown-container absolute left-1/2 z-20 mt-2 flex -translate-x-1/2 flex-col rounded-xl bg-white p-3 shadow-xl"
           style={{ minWidth: '200px' }}
-          onMouseEnter={() => !navbar && setOpen(true)}
-          onMouseLeave={() => !navbar && setOpen(false)}
+          onMouseEnter={() => !isMobileView && setOpen(true)}
+          onMouseLeave={() => !isMobileView && setOpen(false)}
         >
           <ul className="flex flex-col">
             {links.map((link, idx) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
+                  onClick={() => setOpen(false)} // close on navigation
                   className={`block whitespace-nowrap px-4 pt-2 text-left font-semibold hover:text-sky-800 ${
                     idx === 0 ? 'rounded-t-xl' : ''
                   } ${idx === links.length - 1 ? 'rounded-b-xl' : ''} ${
-                    childActive(link.href) ? 'text-blue-600' : 'text-black'
+                    isChildActive(link.href)
+                      ? 'text-blue-600'
+                      : 'text-black'
                   }`}
                 >
                   {link.label}
                 </Link>
+
                 {link.subtext && (
                   <p className="px-4 text-xs text-gray-500 last:pb-2">
                     {link.subtext}
@@ -93,17 +132,20 @@ export default function NavbarDropdown({
         </div>
       )}
 
-      {/* Dropdown arrow */}
+      {/* Arrow */}
       <style jsx>{`
         .dropdown-container:before {
           content: '';
           position: absolute;
-          top: -14px;
+          top: -8px;
           left: 50%;
           transform: translateX(-50%);
-          border-left: 10px solid transparent;
-          border-right: 10px solid transparent;
-          border-bottom: 16px solid #ffffff;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-bottom: 8px solid white;
+          filter: drop-shadow(0 -1px 1px rgba(0, 0, 0, 0.08));
         }
       `}</style>
     </div>
