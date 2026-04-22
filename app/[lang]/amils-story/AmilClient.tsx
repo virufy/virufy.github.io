@@ -30,29 +30,35 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <>
       <div className="relative mx-auto w-full items-center justify-center overflow-hidden bg-[#255292] md:pt-24">
         <div className="justify-items mx-auto flex h-[100%] w-auto w-full flex-col items-center">
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-5 pt-20">
+          <div className="flex flex-col items-center justify-center gap-5 pt-20 lg:flex-row">
             {/* image */}
-           <div>
-             <img
-              src="/images/advisors/AmilImage.jpg"
-              alt="Amil"
-              className="rounded-2xl object-contain"
-              style={{ width: '95%', maxWidth: '350px', height: 'auto' }}
-             />
-           </div>
-           {/* text box */}
-           <div
-              className="rounded-xl bg-black/10 backdrop-blur-sm shadow-lg text-left"
-              style={{width: '80%', maxWidth: '450px', padding: '24px',}}
-              >
+            <div>
+              <img
+                src="/images/advisors/AmilImage.jpg"
+                alt="Amil"
+                className="rounded-2xl object-contain"
+                style={{ width: '95%', maxWidth: '350px', height: 'auto' }}
+              />
+            </div>
+            {/* text box */}
+            <div
+              className="rounded-xl bg-white text-left shadow-lg backdrop-blur-sm"
+              style={{ width: '80%', maxWidth: '450px', padding: '24px' }}
+            >
               <h1 className="text-3xl font-extrabold text-black">
                 {sectionAmil.founderAmil[0]}
               </h1>
               <h2 className="mt-3 text-2xl font-bold text-black">
                 {sectionAmil.founderAmil[1]}
               </h2>
-              <p className="mt-3 text-black/90 font-medium leading-relaxed">
+              <p className="mt-3 text-lg leading-relaxed text-black/90">
                 {sectionAmil.founderAmil[2]}
+              </p>
+              <p className="mt-3 text-lg leading-relaxed text-black/90">
+                {sectionAmil.founderAmil[3]}
+              </p>
+              <p className="text-medium mt-3 leading-relaxed text-black/90">
+                {sectionAmil.founderAmil[4]}
               </p>
             </div>
           </div>
@@ -65,70 +71,70 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           </div>
           {/* Mobile Content */}
           <div className="md:hidden">
-              <div className="flex-1 border-t"></div>
-              <div className="py-2 flex items-center justify-center text-2xl font-medium">
-                {sectionAmil.tabsAmil[4]}
-              </div>
-              <div className="flex-1 border-t py-2"></div>
+            <div className="flex-1 border-t"></div>
+            <div className="flex items-center justify-center py-2 text-2xl font-medium">
+              {sectionAmil.tabsAmil[4]}
+            </div>
+            <div className="flex-1 border-t py-2"></div>
+            <div>
+              <ExportedImage
+                className="mx-auto w-auto"
+                src={AmilInMeeting}
+                alt=""
+                basePath={basePath}
+              />
+            </div>
+            <div className="text-m m-3 space-y-4 p-2">
+              {sectionAmil.textAmil[0]}
+              <div></div>
               <div>
+                {sectionAmil.textAmil[1]}
+                <br></br>
+                {sectionAmil.textAmil[2]}
+              </div>
+              <div className="my-auto block w-full">
                 <ExportedImage
                   className="mx-auto w-auto"
-                  src={AmilInMeeting}
+                  src={AmilInLab}
                   alt=""
                   basePath={basePath}
                 />
+                <p className="mx-auto w-[343px] text-center text-[11px]">
+                  {sectionAmil.imgCaption[0]}
+                </p>
               </div>
-              <div className="text-m m-3 space-y-4 p-2">
-                {sectionAmil.textAmil[0]}
-                <div></div>
-                <div>
-                  {sectionAmil.textAmil[1]}
-                  <br></br>
-                  {sectionAmil.textAmil[2]}
-                </div>
-                <div className="my-auto block w-full">
-                  <ExportedImage
-                    className="mx-auto w-auto"
-                    src={AmilInLab}
-                    alt=""
-                    basePath={basePath}
-                  />
-                  <p className="mx-auto w-[343px] text-center text-[11px]">
-                    {sectionAmil.imgCaption[0]}
-                  </p>
-                </div>
-                <div className="mt-3"></div>
-                {sectionAmil.textAmil[3]}
-                <div className="my-auto block w-full">
-                  <ExportedImage
-                    className="mx-auto mt-2 w-auto"
-                    src={AmilInJapan}
-                    alt=""
-                    basePath={basePath}
-                  />
-                  <p className="mx-auto w-[343px] text-center text-[11px]">
-                    {sectionAmil.imgCaption[1]}
-                  </p>
-                </div>
-                <div />
-                {sectionAmil.textAmil[4]}
-                <div className="my-auto block w-full">
-                  <ExportedImage
-                    className="mx-auto mt-2 w-auto"
-                    src={AmilAtOneYoungWorld}
-                    alt=""
-                    basePath={basePath}
-                  />
-                  <p className="mx-auto w-[343px] text-center text-[11px]">
-                    {sectionAmil.imgCaption[2]}
-                  </p>
-                </div>
-                <div />
-                {sectionAmil.textAmil[5]}
-                <div />
-                {sectionAmil.textAmil[6]}
+              <div className="mt-3"></div>
+              {sectionAmil.textAmil[3]}
+              <div className="my-auto block w-full">
+                <ExportedImage
+                  className="mx-auto mt-2 w-auto"
+                  src={AmilInJapan}
+                  alt=""
+                  basePath={basePath}
+                />
+                <p className="mx-auto w-[343px] text-center text-[11px]">
+                  {sectionAmil.imgCaption[1]}
+                </p>
               </div>
+              <div />
+              {sectionAmil.textAmil[4]}
+              <div className="my-auto block w-full">
+                <ExportedImage
+                  className="mx-auto mt-2 w-auto"
+                  src={AmilAtOneYoungWorld}
+                  alt=""
+                  basePath={basePath}
+                />
+                <p className="mx-auto w-[343px] text-center text-[11px]">
+                  {sectionAmil.imgCaption[2]}
+                </p>
+              </div>
+              <div />
+              {sectionAmil.textAmil[5]}
+              <div />
+              {sectionAmil.textAmil[6]}
             </div>
+          </div>
           {/* Desktop Content */}
           <div className="hidden w-full border-y shadow-[0_-20px_10px_rgba(0,0,0,0.25)] md:flex md:items-center md:justify-between md:border-b-0 md:border-t-0">
             <div className="flex w-full items-center justify-between bg-[#255292] text-xl xl:mx-20 xl:px-20">
