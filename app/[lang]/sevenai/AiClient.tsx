@@ -12,8 +12,6 @@ import { CrossBackground } from '@/public/images/ai/index';
 import AiIcon from '@/public/icons/icon-ai.png';
 import { ColorProps, TextSizeProps } from '../themes';
 
-// Page Component
-
 export default function AiPage({
   params: { lang },
 }: {
@@ -89,7 +87,8 @@ export default function AiPage({
             <p className={`my-10 text-center md:text-left ${ColorProps.textGray} ${TextSizeProps.p}`}>
               {aiSection.text}
             </p>
-
+            
+            {/* Desktop AI Cards */}
             <div className="hidden md:grid grid-cols-6 gap-x-6 gap-y-3 justify-center">
               {/* Top 3 cards */}
               {aiSection.aiCards.filter((_, i) => i % 2 === 0).map((card, i) => (
@@ -111,7 +110,6 @@ export default function AiPage({
             
             {/* Mobile AI Cards */}
             <div className="block md:hidden">
-              {/* Top 3 cards */}
               {aiSection.aiCards.map((card, i) => (
                 <div key={i} className="flex flex-col items-center">
                   <AiCard {...card} />

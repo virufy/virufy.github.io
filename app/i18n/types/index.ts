@@ -22,6 +22,8 @@ import { type sevenAi } from './sevenai';
 import { type sevenhomepage } from './sevenhomepage';
 import { type sevensupporters } from './sevensupporters';
 import { type sevenwho_we_are } from './sevenwho-we-are';
+import { type sevenAmilsStory } from './sevenamilsStory';
+
 
 export interface I18nData {
   ai: Ai;
@@ -48,4 +50,5 @@ export interface I18nData {
   sevenhomepage: sevenhomepage;
   sevensupporters: sevensupporters;
   sevenwho_we_are: sevenwho_we_are;
+  sevenamilsStory: sevenAmilsStory;
 }
