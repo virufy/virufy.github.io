@@ -8,6 +8,8 @@ import {
   XIconWhite,
   YouTubeIconDarkGradient,
   YouTubeIconWhite,
+  TikTokIconDarkGradient,
+  TikTokIconWhite,
 } from '@/public/images/footer/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
@@ -15,18 +17,6 @@ import Link from 'next/link';
 export default function SocialLinks({ lang }) {
   return (
     <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
-      <Link
-        target="_blank"
-        href="https://www.instagram.com/virufy/"
-        className="lg:hidden"
-      >
-        <ExportedImage
-          src={InstagramIconWhite}
-          alt="Instagram icon"
-          className="h-[40px] w-[30px]"
-          basePath={basePath}
-        />
-      </Link>
       <Link
         target="_blank"
         href="https://www.linkedin.com/company/virufy/"
@@ -39,6 +29,7 @@ export default function SocialLinks({ lang }) {
           basePath={basePath}
         />
       </Link>
+
       <Link
         target="_blank"
         href="https://x.com/virufy_japan"
@@ -55,19 +46,46 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://www.instagram.com/virufy/"
-        className="hidden lg:flex"
+        className="lg:hidden"
       >
         <ExportedImage
-          src={InstagramIconDarkGradient}
+          src={InstagramIconWhite}
           alt="Instagram icon"
           className="h-[40px] w-[30px]"
           basePath={basePath}
         />
       </Link>
+
+      <Link
+        target="_blank"
+        href="https://www.tiktok.com/@virufy"
+        className="lg:hidden"
+      >
+        <ExportedImage
+          src={TikTokIconWhite}
+          alt="TikTok icon"
+          className="h-[40px] w-[30px]"
+          basePath={basePath}
+        />
+      </Link>
+
+      <Link
+        target="_blank"
+        href="https://www.youtube.com/@virufy1993"
+        className={lang === 'en' || lang === 'ar' ? 'flex lg:hidden' : 'hidden'}
+      >
+        <ExportedImage
+          src={YouTubeIconWhite}
+          alt="Youtube icon"
+          className="h-[40px] w-[41px]"
+          basePath={basePath}
+        />
+      </Link>
+
       <Link
         target="_blank"
         href="https://www.linkedin.com/company/virufy/"
-        className="hidden lg:flex"
+        className="hidden lg:flex px-[5px]"
       >
         <ExportedImage
           src={LinkedInIconDarkGradient}
@@ -76,10 +94,11 @@ export default function SocialLinks({ lang }) {
           basePath={basePath}
         />
       </Link>
+
       <Link
         target="_blank"
         href="https://x.com/virufy_japan"
-        className={lang === 'ja' ? 'hidden lg:flex' : 'hidden'}
+        className={lang === 'ja' ? 'hidden lg:flex px-[5px]' : 'hidden'}
       >
         <ExportedImage
           src={XIconDarkGradient}
@@ -87,12 +106,12 @@ export default function SocialLinks({ lang }) {
           className="h-[40px] w-[30px]"
           basePath={basePath}
         />
-        
       </Link>
-            <Link
+
+      <Link
         target="_blank"
         href="https://x.com/VirufyOrg"
-        className={lang != 'ja' ? 'hidden lg:flex' : 'hidden'}
+        className={lang != 'ja' ? 'hidden lg:flex px-[5px]' : 'hidden'}
       >
         <ExportedImage
           src={XIconDarkGradient}
@@ -100,8 +119,34 @@ export default function SocialLinks({ lang }) {
           className="h-[40px] w-[30px]"
           basePath={basePath}
         />
-        
       </Link>
+
+      <Link
+        target="_blank"
+        href="https://www.instagram.com/virufy/"
+        className="hidden lg:flex px-[5px]"
+      >
+        <ExportedImage
+          src={InstagramIconDarkGradient}
+          alt="Instagram icon"
+          className="h-[40px] w-[30px]"
+          basePath={basePath}
+        />
+      </Link>
+
+      <Link
+        target="_blank"
+        href="https://www.tiktok.com/@virufy"
+        className="hidden lg:flex"
+      >
+        <ExportedImage
+          src={TikTokIconDarkGradient}
+          alt="TikTok icon"
+          className="h-[40px] w-[40px]"
+          basePath={basePath}
+        />
+      </Link>
+
       <Link
         target="_blank"
         href="https://www.youtube.com/@virufy1993"
@@ -109,18 +154,6 @@ export default function SocialLinks({ lang }) {
       >
         <ExportedImage
           src={YouTubeIconDarkGradient}
-          alt="Youtube icon"
-          className="h-[40px] w-[41px]"
-          basePath={basePath}
-        />
-      </Link>
-      <Link
-        target="_blank"
-        href="https://www.youtube.com/@virufy1993"
-        className={lang === 'en' || lang === 'ar' ? 'flex lg:hidden' : 'hidden'}
-      >
-        <ExportedImage
-          src={YouTubeIconWhite}
           alt="Youtube icon"
           className="h-[40px] w-[41px]"
           basePath={basePath}
