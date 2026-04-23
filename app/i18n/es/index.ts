@@ -24,6 +24,7 @@ import sevenai from './sevenai';
 import sevenhomepage from './sevenhomepage';
 import sevensupporters from './sevensupporters';
 import sevenwho_we_are from './sevenwho-we-are';
+import sevenamilsStory from './sevenamilsStory';
 
 const esMetadata: I18nData = {
   ai,
@@ -51,6 +52,7 @@ const esMetadata: I18nData = {
   sevenhomepage,
   sevensupporters,
   sevenwho_we_are,
+  sevenamilsStory,
 };
 
 export default esMetadata;
