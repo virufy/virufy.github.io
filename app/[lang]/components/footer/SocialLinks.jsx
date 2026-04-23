@@ -85,7 +85,7 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://www.linkedin.com/company/virufy/"
-        className="hidden lg:flex"
+        className="hidden lg:flex px-[5px]"
       >
         <ExportedImage
           src={LinkedInIconDarkGradient}
@@ -98,7 +98,7 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://x.com/virufy_japan"
-        className={lang === 'ja' ? 'hidden lg:flex' : 'hidden'}
+        className={lang === 'ja' ? 'hidden lg:flex px-[5px]' : 'hidden'}
       >
         <ExportedImage
           src={XIconDarkGradient}
@@ -111,7 +111,7 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://x.com/VirufyOrg"
-        className={lang != 'ja' ? 'hidden lg:flex' : 'hidden'}
+        className={lang != 'ja' ? 'hidden lg:flex px-[5px]' : 'hidden'}
       >
         <ExportedImage
           src={XIconDarkGradient}
@@ -124,7 +124,7 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://www.instagram.com/virufy/"
-        className="hidden lg:flex"
+        className="hidden lg:flex px-[5px]"
       >
         <ExportedImage
           src={InstagramIconDarkGradient}
@@ -142,7 +142,7 @@ export default function SocialLinks({ lang }) {
         <ExportedImage
           src={TikTokIconDarkGradient}
           alt="TikTok icon"
-          className="h-[40px] w-[30px]"
+          className="h-[40px] w-[40px]"
           basePath={basePath}
         />
       </Link>
