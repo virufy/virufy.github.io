@@ -148,7 +148,12 @@ const SevenSupportUs = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
       {/* Banner */}
       <section>
-        <ActionBanner title={banner.title} text={banner.text[0]} />
+        <ActionBanner
+          title={banner.title}
+          text={banner.text[0]}
+          buttonText={''}
+          page=""
+        />
       </section>
 
       <SevenFooter lang={lang} />
