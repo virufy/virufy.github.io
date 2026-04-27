@@ -57,11 +57,11 @@ const SevenSupporters = ({
         </section>
         <section className="relative w-full bg-gradient-to-b from-[#FBFEFF] to-[#EEF8FD] pb-12">
           <div className="mx-auto max-w-[1440px] px-4">
-            <ul className="grid grid-cols-2 justify-center gap-4 md:grid-cols-4 md:gap-8">
+            <ul className="grid grid-cols-2 justify-items-center gap-4 md:grid-cols-4 md:gap-8">
               {SupporterImg.map(({ img, alt, link }) => (
                 <li
                   key={alt}
-                  className="aspect-square h-[120px] w-[168px] bg-white md:h-[200px] md:w-[252px]"
+                  className="aspect-square w-full max-w-[168px] items-center bg-white md:max-w-[252px]"
                 >
                   <Link
                     href={link}

@@ -324,124 +324,127 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
 
       {/* Mobile menu */}
       {navbarOpen && (
-        <ul className="mt-3 flex flex-col gap-3 text-lg">
-          <li>
-            <Link
-              href={`/${lang}`}
-              onClick={handleNavClick}
-              className={`block w-full ${activeLink === 'Home' ? 'font-bold' : ''}`}
-            >
-              {home}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/${lang}/ai`}
-              onClick={handleNavClick}
-              className={`block w-full ${activeLink === 'Technology' ? 'font-bold' : ''}`}
-            >
-              {ourTechnology?.section}
-            </Link>
-          </li>
-
-          {accordions.map((section) => {
-            const isSectionActive = section.links.some(
-              (link) => normalizePath(link.href) === normalizePath(currPathname)
-            );
-
-            return (
-              <li key={section.label}>
-                <button
-                  onClick={() => toggleAccordion(section.label)}
-                  className={`flex w-full items-center justify-between ${
-                    isSectionActive
-                      ? 'font-semibold text-blue-600'
-                      : 'text-black'
-                  }`}
-                >
-                  {section.label}
-                  <span>
-                    <ExportedImage
-                      src={ArrowDownIcon}
-                      alt="arrow"
-                      basePath={basePath}
-                      className={`h-3 w-3 transition-transform ${
-                        openAccordion === section.label ? 'rotate-180' : ''
-                      }`}
-                    />
-                  </span>
-                </button>
-
-                {openAccordion === section.label && (
-                  <ul className="ml-4 mt-1 flex flex-col gap-2">
-                    {section.links.map((link) => (
-                      <li key={link.href}>
-                        <Link
-                          href={link.href}
-                          onClick={handleNavClick}
-                          className={`block w-full ${
-                            normalizePath(link.href) ===
-                            normalizePath(currPathname)
-                              ? 'border-l-2 border-blue-600 pl-2 font-semibold text-blue-600'
-                              : 'text-black'
-                          }`}
-                        >
-                          {link.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </li>
-            );
-          })}
-
-          <li>
-            <Link
-              href={`/${lang}/join-us`}
-              onClick={handleNavClick}
-              className="block w-full text-black"
-            >
-              {joinUs?.buttonText}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/${lang}/donate`}
-              onClick={handleNavClick}
-              className="block w-full text-black"
-            >
-              {donate?.buttonText}
-            </Link>
-          </li>
-          <li>
-            <Link
-              href={`/${lang}/faq`}
-              onClick={handleNavClick}
-              className="block w-full text-black"
-            >
-              {faq}
-            </Link>
-          </li>
-
-          <div
-            className={
-              localeOpen
-                ? 'bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9]'
-                : 'w-[90px] rounded-full border-2 border-sky-800'
-            }
-          >
-            <li
-              className={`w-full text-sm font-semibold text-black ${localeOpen ? 'bg-white' : 'rounded-full bg-white pl-4'}`}
-              //make sure to match locale select styles when open vs closed
-            >
-              <LocaleSelect
-                lang={lang}
-                onDropdownChange={(open) => setLocaleOpen(open)}
-              />
+        <div className="mt-3 max-h-[calc(100vh-80px)] overflow-y-auto">
+          <ul className="mt-3 flex flex-col gap-3 text-lg">
+            <li>
+              <Link
+                href={`/${lang}`}
+                onClick={handleNavClick}
+                className={`block w-full ${activeLink === 'Home' ? 'font-bold' : ''}`}
+              >
+                {home}
+              </Link>
             </li>
-          </div>
-        </ul>
+            <li>
+              <Link
+                href={`/${lang}/ai`}
+                onClick={handleNavClick}
+                className={`block w-full ${activeLink === 'Technology' ? 'font-bold' : ''}`}
+              >
+                {ourTechnology?.section}
+              </Link>
+            </li>
+
+            {accordions.map((section) => {
+              const isSectionActive = section.links.some(
+                (link) =>
+                  normalizePath(link.href) === normalizePath(currPathname)
+              );
+
+              return (
+                <li key={section.label}>
+                  <button
+                    onClick={() => toggleAccordion(section.label)}
+                    className={`flex w-full items-center justify-between ${
+                      isSectionActive
+                        ? 'font-semibold text-blue-600'
+                        : 'text-black'
+                    }`}
+                  >
+                    {section.label}
+                    <span>
+                      <ExportedImage
+                        src={ArrowDownIcon}
+                        alt="arrow"
+                        basePath={basePath}
+                        className={`h-3 w-3 transition-transform ${
+                          openAccordion === section.label ? 'rotate-180' : ''
+                        }`}
+                      />
+                    </span>
+                  </button>
+
+                  {openAccordion === section.label && (
+                    <ul className="ml-4 mt-1 flex flex-col gap-2">
+                      {section.links.map((link) => (
+                        <li key={link.href}>
+                          <Link
+                            href={link.href}
+                            onClick={handleNavClick}
+                            className={`block w-full ${
+                              normalizePath(link.href) ===
+                              normalizePath(currPathname)
+                                ? 'border-l-2 border-blue-600 pl-2 font-semibold text-blue-600'
+                                : 'text-black'
+                            }`}
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              );
+            })}
+
+            <li>
+              <Link
+                href={`/${lang}/join-us`}
+                onClick={handleNavClick}
+                className="block w-full text-black"
+              >
+                {joinUs?.buttonText}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${lang}/donate`}
+                onClick={handleNavClick}
+                className="block w-full text-black"
+              >
+                {donate?.buttonText}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${lang}/faq`}
+                onClick={handleNavClick}
+                className="block w-full text-black"
+              >
+                {faq}
+              </Link>
+            </li>
+
+            <div
+              className={
+                localeOpen
+                  ? 'bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9]'
+                  : 'w-[90px] rounded-full border-2 border-sky-800'
+              }
+            >
+              <li
+                className={`w-full text-sm font-semibold text-black ${localeOpen ? 'bg-white' : 'rounded-full bg-white pl-4'}`}
+                //make sure to match locale select styles when open vs closed
+              >
+                <LocaleSelect
+                  lang={lang}
+                  onDropdownChange={(open) => setLocaleOpen(open)}
+                />
+              </li>
+            </div>
+          </ul>
+        </div>
       )}
     </nav>
   );
