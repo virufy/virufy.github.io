@@ -12,25 +12,16 @@ import Link from 'next/link';
 const unoptimized = process.env.NODE_ENV !== 'production';
 
 export default function SevenSocialLinks({ lang }) {
+  const isJapanese = lang === 'ja';
+  const showYouTube = lang === 'en' || lang === 'ar';
+
   return (
-    <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
-      <Link
-        target="_blank"
-        href="https://www.instagram.com/virufy/"
-        className="lg:hidden"
-      >
-        <ExportedImage
-          src={InstagramIcon}
-          alt="Instagram icon"
-          className="h-[16px] w-[16px]"
-          basePath={basePath}
-          unoptimized={unoptimized}
-        />
-      </Link>
+    <div className="mt-8 flex justify-center gap-3 lg:mt-4">
+      {/* LinkedIn */}
       <Link
         target="_blank"
         href="https://www.linkedin.com/company/virufy/"
-        className="lg:hidden"
+        className="flex"
       >
         <ExportedImage
           src={LinkedInIcon}
@@ -40,10 +31,14 @@ export default function SevenSocialLinks({ lang }) {
           unoptimized={unoptimized}
         />
       </Link>
+
+      {/* X (Twitter) */}
       <Link
         target="_blank"
-        href="https://x.com/virufy_japan"
-        className={lang === 'ja' ? 'lg:hidden' : 'hidden'}
+        href={
+          isJapanese ? 'https://x.com/virufy_japan' : 'https://x.com/VirufyOrg'
+        }
+        className="flex"
       >
         <ExportedImage
           src={XIcon}
@@ -54,10 +49,11 @@ export default function SevenSocialLinks({ lang }) {
         />
       </Link>
 
+      {/* Instagram */}
       <Link
         target="_blank"
         href="https://www.instagram.com/virufy/"
-        className="hidden lg:flex"
+        className="flex"
       >
         <ExportedImage
           src={InstagramIcon}
@@ -67,71 +63,38 @@ export default function SevenSocialLinks({ lang }) {
           unoptimized={unoptimized}
         />
       </Link>
+
+      {/* TikTok */}
       <Link
         target="_blank"
-        href="https://www.linkedin.com/company/virufy/"
-        className="hidden lg:flex"
+        href="https://www.tiktok.com/@virufy"
+        className="flex"
       >
         <ExportedImage
-          src={LinkedInIcon}
-          alt="LinkedIn icon"
+          src={TicTokIcon}
+          alt="TikTok icon"
           className="h-[16px] w-[16px]"
           basePath={basePath}
           unoptimized={unoptimized}
         />
       </Link>
-      <Link
-        target="_blank"
-        href="https://x.com/virufy_japan"
-        className={lang === 'ja' ? 'hidden lg:flex' : 'hidden'}
-      >
-        <ExportedImage
-          src={XIcon}
-          alt="X icon"
-          className="h-[16px] w-[16px]"
-          basePath={basePath}
-          unoptimized={unoptimized}
-        />
-      </Link>
-      <Link
-        target="_blank"
-        href="https://x.com/VirufyOrg"
-        className={lang != 'ja' ? 'hidden lg:flex' : 'hidden'}
-      >
-        <ExportedImage
-          src={XIcon}
-          alt="X icon"
-          className="h-[16px] w-[16px]"
-          basePath={basePath}
-          unoptimized={unoptimized}
-        />
-      </Link>
-      <Link
-        target="_blank"
-        href="https://www.youtube.com/@virufy1993"
-        className={lang === 'en' || lang === 'ar' ? 'hidden lg:flex' : 'hidden'}
-      >
-        <ExportedImage
-          src={YouTubeIcon}
-          alt="Youtube icon"
-          className="h-[16px] w-[16px]"
-          basePath={basePath}
-          unoptimized={unoptimized}
-        />
-      </Link>
-      <Link
-        target="_blank"
-        href="https://www.youtube.com/@virufy1993"
-        className={lang === 'en' || lang === 'ar' ? 'flex lg:hidden' : 'hidden'}
-      >
-        <ExportedImage
-          src={YouTubeIcon}
-          alt="Youtube icon"
-          className="h-[16px] w-[16px]"
-          basePath={basePath}
-          unoptimized={unoptimized}
-        />
-      </Link>
+
+      {/* YouTube – only for English & Arabic */}
+      {showYouTube && (
+        <Link
+          target="_blank"
+          href="https://www.youtube.com/@virufy1993"
+          className="flex"
+        >
+          <ExportedImage
+            src={YouTubeIcon}
+            alt="YouTube icon"
+            className="h-[16px] w-[16px]"
+            basePath={basePath}
+            unoptimized={unoptimized}
+          />
+        </Link>
+      )}
     </div>
   );
 }

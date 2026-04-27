@@ -31,53 +31,57 @@ const SevenSupportUs = ({ params: { lang } }: { params: { lang: Locale } }) => {
       {/* HERO */}
       <div className="relative w-full overflow-hidden">
         {/* Background image */}
-        <div className="absolute inset-0 flex h-[600px] overflow-hidden">
+        <div className="absolute inset-0 flex h-[400px] overflow-hidden sm:h-[500px] md:h-[550px] lg:h-[600px]">
           <ExportedImage
             src={HeroIcon}
             alt="background"
             fill
             priority
+            className="object-cover"
             basePath={basePath}
             unoptimized={unoptimized}
           />
         </div>
 
         {/* Hero content */}
-        <section className="relative pb-24 pt-24 text-center">
-          <div className="mx-auto flex flex-col items-center">
-            <div className="mb-10 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
+        <section className="relative mt-2 px-4 pb-12 pt-12 text-center sm:mt-3 sm:px-6 sm:pb-16 sm:pt-16 md:mt-4 md:pb-20 md:pt-20 lg:pb-24 lg:pt-24">
+          <div className="mx-auto flex max-w-3xl flex-col items-center">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-3 pr-4 text-xs text-[#084b8a] sm:mb-8 sm:py-1 sm:pl-4 sm:pr-5 sm:text-sm md:mb-10">
               <ExportedImage
                 src={SupportOurMissionIcon}
                 alt="globe icon"
                 height={17}
                 width={17}
-                className=""
+                className="h-3.5 w-3.5 sm:h-4 sm:w-4"
                 basePath={basePath}
                 priority
                 unoptimized={unoptimized}
               />
-              &nbsp;
-              {introSection.tag}
+              &nbsp;{introSection.tag}
             </div>
 
-            <h1 className="text-5xl font-semibold text-gray-700">
+            <h1 className="font-semibold text-gray-700">
               {introSection.title.map((t, i) => (
                 <span
                   key={i}
-                  className="block text-6xl font-semibold last:bg-gradient-to-b last:from-blue-500 last:to-emerald-500 last:bg-clip-text last:text-transparent"
+                  className={`block text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${
+                    i === introSection.title.length - 1
+                      ? 'bg-gradient-to-b from-blue-500 to-emerald-500 bg-clip-text text-transparent'
+                      : ''
+                  }`}
                 >
                   {t}
                 </span>
               ))}
             </h1>
 
-            <p className="mt-6 max-w-[800px] text-lg text-gray-600">
+            <p className="mt-4 max-w-[800px] text-sm text-gray-600 sm:mt-5 sm:text-base md:mt-6 md:text-lg">
               {introSection.text}
             </p>
 
             <Link
               href="/"
-              className={`mt-8 inline-block whitespace-nowrap rounded-full px-6 py-3 ${TextSizeProps.p} ${ColorProps.bgGradientReverse} text-white`}
+              className={`mt-6 inline-block whitespace-nowrap rounded-full px-4 py-2 text-sm sm:mt-7 sm:px-5 sm:py-2.5 sm:text-base md:mt-8 md:px-6 md:py-3 ${TextSizeProps.p} ${ColorProps.bgGradientReverse} text-white`}
             >
               {introSection.buttonText}
             </Link>
@@ -144,14 +148,14 @@ const SevenSupportUs = ({ params: { lang } }: { params: { lang: Locale } }) => {
             </div>
           </section>
         </div>
+
+        {/* Banner */}
+        <section>
+          <ActionBanner title={banner.title} text={banner.text[0]} />
+        </section>
+
+        <SevenFooter lang={lang} />
       </div>
-
-      {/* Banner */}
-      <section>
-        <ActionBanner title={banner.title} text={banner.text[0]} />
-      </section>
-
-      <SevenFooter lang={lang} />
     </main>
   );
 };
