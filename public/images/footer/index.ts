@@ -7,3 +7,5 @@ export { default as XIconDarkGradient } from '../../icons/icon-x-gradient.svg';
 export { default as YouTubeIconDarkGradient } from '../../icons/icon-youtube-gradient.svg';
 export { default as YouTubeIconWhite } from '../../icons/icon-youtube-white.svg';
 export { default as CandidSeal } from '../../icons/icon-candid-seal.svg';
+export { default as TikTokIconDarkGradient } from '../../icons/icon-tiktok-gradient.png';
+export { default as TikTokIconWhite } from '../../icons/icon-tiktok-white.png';

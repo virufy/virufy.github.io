@@ -9,6 +9,13 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title:
+        'アクティブラーニングとセグメンテーションによるデータ効率の高い咳分析',
+      date: '2026年3月',
+      url: '/en/publications/data-efficient-cough-ai',
+      linkText: '続きを読む',
+    },
+    {
       title: 'COVID-19自動検出のための階層型マルチモデルトランスフォーマー',
       date: '2022年10月',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
@@ -27,7 +34,7 @@ const publications: Publications = {
       url: 'https://arxiv.org/abs/2201.01669',
       linkText: '続きを読む',
     },
-   
+
     {
       title: 'COVID-19咳AIシステムの展開における課題と機会',
       date: '2021年9月',
@@ -42,17 +49,22 @@ const publications: Publications = {
       linkText: '続きを読む',
     },
     {
-      title:
-        'Fusical: マルチモーダル融合によるビデオ感情分析',
+      title: 'Fusical: マルチモーダル融合によるビデオ感情分析',
       date: '2020年10月',
       url: 'https://dl.acm.org/doi/abs/10.1145/3382507.3417966',
       linkText: '続きを読む',
     },
     {
-      title:
-        'ディープラーニングによる表情認識',
+      title: 'ディープラーニングによる表情認識',
       date: '2020年4月',
       url: 'https://arxiv.org/abs/2004.11823',
+      linkText: '続きを読む',
+    },
+    {
+      title:
+        'スマートフォンベースのAIデータ収集における臨床試験参加登録の改善：ナッジ（行動経済学的介入）に基づく介入の方法論的分析',
+      date: '2025年12月',
+      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
       linkText: '続きを読む',
     },
   ],

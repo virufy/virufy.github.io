@@ -8,71 +8,71 @@ import ValidationIcon from '@/public/icons/icon-ai-validation.png';
 
 const sevenai: sevenAi = {
   heroSection: {
-    tag: "AI-Powered Health Technology",
+    tag: "AIを活用したヘルステクノロジー",
     title: [
-      { type: 'text', text: 'The ' },
-      { type: 'span', text: 'Science' },
-      { type: 'text', text: ' Behind Virufy' },
+      { type: 'text', text: 'Virufyを支える ' },
+      { type: 'span', text: '科学技術' },
+      { type: 'text', text: '' },
     ],
-    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.',
+    text: 'VirufyのAIテクノロジーは、咳の音に潜むわずかなパターンを解析し、身体への負担なく潜在的な呼吸器疾患の早期発見をサポートします。',
     aiSlides: [
       {
-        title: "Data Collection",
-        text: "Simply record a brief cough using our easy-to-use web app. The interface guides you to capture a high-quality, natural cough sample under consistent conditions, ensuring optimal audio for accurate respiratory analysis.",
+        title: "データの収集",
+        text: "ウェブアプリで、短い咳を録音するだけです。画面の案内に沿って録音することで、一定の条件下で自然な咳サンプルを高音質で取得でき、呼吸器の解析に適したデータを取得します。",
         image: CarouselImg1,
       },
       {
-        title: "Signal Processing",
-        text: "We use ML algorithms to accurately identify and isolate cough sounds. Our tools clean up background noise and analyze digital biomarkers by converting sound waves into quantifiable characteristics called acoustic biomarker features.",
+        title: "音声信号の処理",
+        text: "私たちは機械学習（ML）アルゴリズムを用いて、録音データから咳音を識別し、必要な部分を抽出します。背景のノイズを取り除き、音波を数値化した「音響バイオマーカー特徴量」へ変換することで、デジタルバイオマーカーを解析します。",
         image: CarouselImg2,
       },
       {
-        title: "Machine Learning Analysis",
-        text: "The extracted acoustic biomarker features are then fed into a pre-trained Machine Learning Model, the model compares the new incoming cough's feature profile against patterns it learned through training.",
+        title: "機械学習による解析",
+        text: "抽出された音響バイオマーカー特徴量は、事前に学習済みの機械学習モデルに入力されます。モデルは、新しく入力された咳の特徴を、学習済みのパターンと比較します。",
         image: CarouselImg3,
       },
     ],
   },
   aiSection: {
-    title: "How Virufy's AI Learns",
-    text: "Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence. The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for early detection of potential health issues.",
+    title: "VirufyのAIの学習プロセス",
+    text: "人工知能（AI）は、音声パターンに含まれるごくわずかな違いを捉え、呼吸器疾患に関連しうる特徴を評価することができます。アルゴリズムは、持続時間、周波数、ピッチなど、咳のさまざまな要素を詳細に調べます。さらに、包括的なデータベースを活用し、録音された咳のパターンを呼吸器疾患に関連する既知の指標と照合することで、潜在的な健康問題の早期発見につながる情報を提供します。",
     aiCards: [
       {
-        title: "Sound Capture",
-        text: "Users record short, anonymized cough samples through the Virufy app.",
+        title: "音声の取得",
+        text: "ユーザーはVirufyのアプリを通じて、匿名化された短い咳のサンプルを録音します。",
         icon: SoundIcon,
         style: "shadow-xl w-full h-full",
       },
       {
-        title: "Acoustic Processing",
-        text: "Each cough is converted into a visual sound map, or spectrogram.",
+        title: "音響処理",
+        text: "それぞれの咳は、視覚的なサウンドマップ（スペクトログラム）に変換されます。",
         icon: AcousticIcon,
         style: "shadow-xl h-full",
       },
       {
-        title: "Feature Extraction",
-        text: "AI identifies subtle patterns and acoustic biomarkers in the data.",
+        title: "特徴の抽出",
+        text: "AIがデータ内のわずかなパターンや音響バイオマーカーを特定します。",
         icon: FeatureIcon,
         style: "shadow-xl w-full h-full",
       },
       {
-        title: "Model Training",
-        text: "Algorithms learn from global datasets to improve accuracy and fairness.",
+        title: "モデルの学習",
+        text: "アルゴリズムは世界各地のデータセットから学習し、精度と公平性を向上させます。",
         icon: ModelIcon,
         style: "shadow-xl h-full",
       },
       {
-        title: "Validation & Insight",
-        text: "Users results are tested to ensure ongoing improvement and effectiveness.",
+        title: "検証とインサイト",
+        text: "継続的な改善と性能の向上のため、ユーザーの解析結果は検証に活用されます。",
         icon: ValidationIcon,
         style: "shadow-xl w-full h-full",
       },
     ],
   },
   banner: {
-    title: 'Ready to Make a Difference?',
-    text: "We're on a mission to make health screening as simple as a cough. Reach out to find out how your financial contributions directly accelerate our clinical research and the deployment of our accessible AI technology to communities worldwide.",
-    buttonText: 'Support Us',
+    title: '一緒に世界を変えませんか？',
+    text: "私たちは、ヘルススクリーニングを「咳をするだけ」の簡単なものにすることをミッションとしています。皆様からのご支援が、私たちの臨床研究を加速させ、利用しやすいAI技術を世界中のコミュニティへ展開するためにどのように役立てられるのか、ぜひご覧ください。",
+    buttonText: 'ご支援のお願い',
     url: '/donate',
   }
 };

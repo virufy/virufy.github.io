@@ -31,46 +31,67 @@
     "id": "en-media-publications-1",
     "lang": "en",
     "title": "Publications",
+    "content": "Data‑Efficient Cough Analysis Through Active Learning and Segmentation",
+    "url": "/en/publications/data-efficient-cough-ai"
+  },
+  {
+    "id": "en-media-publications-2",
+    "lang": "en",
+    "title": "Publications",
+    "content": "Improving Clinical Trial Enrollment for Smartphone-Based AI Data Collection: A Methodological Analysis of Nudge-Based Interventions",
+    "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
+  },
+  {
+    "id": "en-media-publications-3",
+    "lang": "en",
+    "title": "Publications",
     "content": "Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19",
     "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
   },
   {
-    "id": "en-media-publications-2",
+    "id": "en-media-publications-4",
     "lang": "en",
     "title": "Publications",
     "content": "Covid 19 Calculator -- Positive U.S. Socio-Economic Impact",
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
-    "id": "en-media-publications-3",
+    "id": "en-media-publications-5",
     "lang": "en",
     "title": "Publications",
     "content": "Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough",
     "url": "https://arxiv.org/abs/2201.01669"
   },
   {
-    "id": "en-media-publications-4",
+    "id": "en-media-publications-6",
+    "lang": "en",
+    "title": "Publications",
+    "content": "Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML)",
+    "url": "https://arxiv.org/abs/2201.11109"
+  },
+  {
+    "id": "en-media-publications-7",
     "lang": "en",
     "title": "Publications",
     "content": "Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems",
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
   },
   {
-    "id": "en-media-publications-5",
+    "id": "en-media-publications-8",
     "lang": "en",
     "title": "Publications",
     "content": "Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from Cough",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "en-media-publications-6",
+    "id": "en-media-publications-9",
     "lang": "en",
     "title": "Publications",
     "content": "Fusical: Multimodal Fusion for Video Sentiment",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "en-media-publications-7",
+    "id": "en-media-publications-10",
     "lang": "en",
     "title": "Publications",
     "content": "Facial Expression Recognition with Deep Learning",

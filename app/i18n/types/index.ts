@@ -18,10 +18,14 @@ import { type Story } from './story';
 import { type Supporters } from './supporters';
 import { type TeamLeadsType } from './teamLeads';
 import { type Donate } from './donate';
+import { type Post } from './BlogPosts';
 import { type sevenAi } from './sevenai';
 import { type sevenhomepage } from './sevenhomepage';
 import { type sevensupporters } from './sevensupporters';
 import { type SevenSupportUs } from './sevensupportus';
+import { type sevenwho_we_are } from './sevenwho-we-are';
+import { type sevenAmilsStory } from './sevenamilsStory';
+
 
 export interface I18nData {
   ai: Ai;
@@ -44,8 +48,11 @@ export interface I18nData {
   supporters: Supporters;
   teamLeads: TeamLeadsType;
   donate: Donate;
+  blogPosts: Record<string, Post>;
   sevenai: sevenAi;
   sevenhomepage: sevenhomepage;
   sevensupporters: sevensupporters;
   sevensupportus: SevenSupportUs;
+  sevenwho_we_are: sevenwho_we_are;
+  sevenamilsStory: sevenAmilsStory;
 }

@@ -27,17 +27,26 @@ export interface CoughCheckApp {
 
 export interface AboutUs {
   section: string;
+  sectionsubtext?: string;
   advisors: string;
+  advisorsubtext?: string;
   ourFounder: string;
+  foundersubtext?: string;
   ourSupporters: string;
-  blog: string;
+  supportersubtext?: string;
+
   oneYoungWorld: string;
+  oymsubtext?: string;
 }
 
 export interface Media {
   section: string;
   pressReleases: string;
+  presssubtext?: string;
   ourResearch: string;
+  researchsubtext?: string;
+  blog: string;
+  blogsubtext?: string;
 }
 
 export interface DonateSection {

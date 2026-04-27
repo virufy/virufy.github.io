@@ -703,6 +703,22 @@ export default function Navbar({ lang }: { lang: Locale }) {
                         >
                           {media?.ourResearch}
                         </Link>
+                        {/* Publications */}
+                        <Link
+                          className="py-1 hover:font-bold lg:py-3"
+                          href={`/${lang}/publications`}
+                          onClick={handleNavClick}
+                        >
+                          {media?.ourResearch}
+                        </Link>
+                        {/* Blog */}
+                        <Link
+                          className="py-1 hover:font-bold lg:py-3"
+                          href={`/${lang}/blog`}
+                          onClick={handleNavClick}
+                        >
+                          {media?.blog}
+                        </Link>
                       </div>
                     </div>
                   </li>
@@ -735,10 +751,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   <li
                     className={`${navbar ? 'relative top-[-24px] -ml-3' : ''}`}
                   >
-                    <LocaleSelect
-                      isNavbar={navbar}
-                      textColor={pageNavColor.color}
-                    />
+                    <LocaleSelect lang={lang} />
                   </li>
                 </div>
 
