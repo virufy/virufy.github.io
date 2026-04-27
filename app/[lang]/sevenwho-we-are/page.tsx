@@ -84,7 +84,7 @@ const SevenSupporters = ({
         </section>
       </div>
       <div className="relative w-full overflow-hidden bg-gradient-to-t from-[#FBFEFF] to-[#EEF8FD]">
-        <div className="mx-auto w-full max-w-7xl px-5 md:px-10 lg:px-16 xl:px-20">
+        <div className="mx-auto w-full px-5 md:max-w-7xl md:px-10 lg:max-w-[1500px] lg:px-16 xl:px-20">
           <section className="relative mb-10 w-full pb-5 pt-5">
             <div className="flex flex-col items-start gap-10 py-2 md:flex-row">
               {/* LEFT: Title + Text */}
@@ -95,7 +95,7 @@ const SevenSupporters = ({
 
                 <div className="relative">
                   <div
-                    className={`z-10 space-y-6 text-lg text-gray-600 md:max-h-full lg:max-w-2xl lg:text-xl ${
+                    className={`z-10 space-y-6 text-lg text-gray-600 md:max-h-full md:max-w-2xl lg:max-w-4xl lg:text-xl ${
                       open ? 'max-h-full' : 'max-h-[300px]'
                     } overflow-hidden pb-16 transition-all duration-300`}
                     ref={ref}
@@ -103,7 +103,7 @@ const SevenSupporters = ({
                     {section2.text.map((p, i) => (
                       <p
                         key={i}
-                        className="py-2 text-left font-normal text-gray-700 md:text-lg lg:text-2xl"
+                        className="py-2 text-left font-normal text-gray-700 md:text-lg lg:text-xl"
                       >
                         {p}
                       </p>
@@ -136,7 +136,7 @@ const SevenSupporters = ({
       </div>
 
       <div className="relative w-full overflow-hidden bg-gradient-to-t from-[#FBFEFF] to-[#EEF8FD]">
-        <div className="mx-auto w-full max-w-7xl px-5 md:px-10 lg:px-16 xl:px-20">
+        <div className="mx-auto w-full px-5 md:max-w-7xl lg:max-w-[1500px] lg:px-16 xl:px-20">
           <section className="my-10 md:mt-24">
             <div className="mb-4 text-center text-2xl font-semibold text-[#1B6E64] md:text-left md:text-4xl">
               {section3.title}
