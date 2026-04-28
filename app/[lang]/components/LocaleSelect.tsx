@@ -13,7 +13,7 @@ type NavbarProps = {
 export default function Navbar({ lang, onDropdownChange }: NavbarProps) {
   const pathname = usePathname();
   const useNewNav =
-    pathname.startsWith(`/${lang}/seven`) || pathname.startsWith('/seven');
+    pathname?.startsWith(`/${lang}/seven`) || pathname?.startsWith('/seven');
 
   return useNewNav ? (
     <NewLocale lang={lang} onDropdownChange={onDropdownChange} />

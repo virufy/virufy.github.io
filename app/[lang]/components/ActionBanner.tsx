@@ -8,8 +8,8 @@ const ActionBanner = ({
 }: {
   title: string;
   text: string;
-  buttonText: string;
-  page: string;
+  buttonText?: string;
+  page?: string;
 }) => {
   return (
     <section className={`${ColorProps.bgBlueGlow} border-2 border-y-[#bcc7d4]`}>
@@ -28,14 +28,16 @@ const ActionBanner = ({
             {text}
           </p>
         </div>
-        <a
-          href={page}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
-        >
-          {buttonText}
-        </a>
+        {buttonText && (
+          <a
+            href={page}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
+          >
+            {buttonText}
+          </a>
+        )}
       </div>
     </section>
   );

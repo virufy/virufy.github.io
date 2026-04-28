@@ -25,7 +25,7 @@ import sevenhomepage from './sevenhomepage';
 import sevensupporters from './sevensupporters';
 import sevenwho_we_are from './sevenwho-we-are';
 import sevenamilsStory from './sevenamilsStory';
-
+import sevensupportus from './sevensupportus';
 const jaMetadata: I18nData = {
   ai,
   amilsStory,
@@ -53,6 +53,7 @@ const jaMetadata: I18nData = {
   sevensupporters,
   sevenwho_we_are,
   sevenamilsStory,
+  sevensupportus,
 };
 
 export default jaMetadata;
