@@ -1,5 +1,7 @@
 import Text from '../../Text';
-
+import { basePath } from '@/next.config.mjs';
+import { CandidSeal } from '@/public/images/footer/index';
+import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 export default function SevenNonProfitDisclaimers({ nonProfitSection }) {
   return (

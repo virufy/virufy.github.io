@@ -4,7 +4,7 @@ import {
   LinkedInIcon,
   XIcon,
   YouTubeIcon,
-  //TicTokIcon,
+  TicTokIcon,
 } from '@/public/images/sevenFooter/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
