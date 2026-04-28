@@ -5,7 +5,6 @@ import { basePath } from '@/next.config.mjs';
 import {
   HamburgerMenuIcon,
   WhiteCloseMenuIcon,
-  WhiteHamburgerMenuIcon,
   VirufyLogo,
 } from '@/public/images/navbar/index';
 import ExportedImage from 'next-image-export-optimizer';
@@ -407,77 +406,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
       className={`absolute w-full bg-transparent ${navbar ? '' : 'p-2'} lg:p-0`}
     >
       <nav
-        className={`sticky z-[100] w-full rounded-full bg-opacity-80 ${pageSearchColor.bg} h-[50px] lg:bg-transparent`}
+        className={`sticky z-[100] h-[50px] w-full rounded-full bg-opacity-80 lg:bg-transparent`}
       >
         {/* Navbar container */}
         <div
           className={`justify-between ${navbar ? 'bg-black' : ''} px-3 lg:mx-auto lg:flex lg:items-center lg:bg-transparent lg:px-2 ${navbar ? 'h-screen' : ''}`}
         >
-          <div className="flex items-center justify-between lg:block lg:py-5">
-            {/* Mobile Virufy Logo */}
-            <Link
-              href={`/${lang}`}
-              onClick={handleNavClick}
-              className={`absolute right-3 z-10 mt-3 flex rounded-full bg-opacity-80 px-3 py-2 text-black lg:hidden ${navbar ? 'right-5 mt-5' : ''}`}
-            >
-              {(!isHomePage || navbar) && (
-                <ExportedImage
-                  className="h-[48px] w-[100px]"
-                  src={VirufyLogo}
-                  alt="Virufy logo"
-                  basePath={basePath}
-                />
-              )}
-            </Link>
-
-            {/* Desktop Virufy Logo */}
-            <Link
-              href={`/${lang}`}
-              className={`lg-space-x-6 hidden lg:flex lg:p-2`}
-            >
-              <ExportedImage
-                className="h-[48px] w-[160px]"
-                src={VirufyLogo}
-                alt="Virufy logo"
-                basePath={basePath}
-              />
-            </Link>
-
-            <div className="absolute right-6 space-x-2 sm:space-x-4">
-              {/* Mobile Donate Button, only appears on mobile homepage */}
-              {isHomePage && !navbar && (
-                <button
-                  className={`relative z-20 h-[26px] w-[100px] md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:hidden lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold' : 'mt-1 h-[30px] w-[125px] rounded-full text-base font-semibold'}`}
-                >
-                  <Link href={`/${lang}/donate`} onClick={handleNavClick}>
-                    {donate.buttonText}
-                  </Link>
-                </button>
-              )}
-              {/* Mobile Join Us, only appears on mobile homepage */}
-              {isHomePage && !navbar && (
-                <button
-                  className={`relative z-20 h-[26px] w-[75px] sm:w-[100px] md:h-[42px] md:w-[125px] md:bg-opacity-80 lg:hidden lg:h-[68px] lg:w-[180px] ${ButtonType.primary} ${navbar ? 'h-[42px] w-[125px] text-base font-semibold' : 'mt-1 h-[30px] w-[125px] rounded-full text-base font-semibold'}`}
-                >
-                  <Link href={`/${lang}/join-us`} onClick={handleNavClick}>
-                    {joinUs ? joinUs.buttonText : ''}
-                  </Link>
-                </button>
-              )}
-            </div>
-
-            {/* Mobile Search Bar */}
-            <div className={`-mt-1 py-2 pl-12 lg:hidden`}>
-              <div className={`${navbar ? 'mt-2' : ''} md:w-[250px]`}>
-                {renderSearchInput('w-full -ml-9 md:ml-1')}
-                {renderSearchDropdown()}
-              </div>
-            </div>
-
-            {/* Hamburger Menu Toggle (mobile) */}
-            <div
-              className={`absolute left-3 lg:hidden ${navbar ? 'left-5 top-4' : 'top-2'}`}
-            >
+          <div className="flex justify-between lg:block lg:py-5">
+            {/* Left: Hamburger menu (mobile only) */}
+            <div className="lg:hidden">
               <button
                 className="rounded-lg p-2 text-gray-700 outline-none"
                 onClick={() => setNavbar(!navbar)}
@@ -492,302 +429,473 @@ export default function Navbar({ lang }: { lang: Locale }) {
                 ) : (
                   <ExportedImage
                     className="h-[18px] w-[30px]"
-                    src={
-                      pageSearchColorKey !== 'white'
-                        ? WhiteHamburgerMenuIcon
-                        : HamburgerMenuIcon
-                    }
+                    src={HamburgerMenuIcon}
                     alt="hamburger menu icon"
                     basePath={basePath}
                   />
                 )}
               </button>
             </div>
+
+            {/* Center: Logo (visible on both mobile and desktop) */}
+            <Link
+              href={`/${lang}`}
+              onClick={handleNavClick}
+              className="flex items-center"
+            >
+              <ExportedImage
+                className="h-[48px] w-[100px] lg:w-[160px]"
+                src={VirufyLogo}
+                alt="Virufy logo"
+                basePath={basePath}
+              />
+            </Link>
+
+            {/* Right: Donate/Join buttons, Search, and Language (mobile only) */}
+            <div className="flex items-center gap-2 lg:hidden">
+              {/* Mobile Search (the magnifying glass) */}
+              <div className="relative">
+                {showSearch && (
+                  <div className="absolute right-0 top-full z-50 mt-2 w-[250px]">
+                    {renderSearchInput('w-full')}
+                    {renderSearchDropdown()}
+                  </div>
+                )}
+              </div>
+
+              {/* Donate & Join buttons (only on homepage when navbar closed) */}
+              {isHomePage && !navbar && (
+                <>
+                  <Link
+                    href={`/${lang}/donate`}
+                    onClick={handleNavClick}
+                    className={`inline-block rounded-full px-4 py-2 text-sm font-semibold ${ButtonType.primary}`}
+                  >
+                    {donate.buttonText}
+                  </Link>
+                  <Link
+                    href={`/${lang}/join-us`}
+                    onClick={handleNavClick}
+                    className={`inline-block rounded-full px-4 py-2 text-sm font-semibold ${ButtonType.primary}`}
+                  >
+                    {joinUs?.buttonText || ''}
+                  </Link>
+                </>
+              )}
+            </div>
           </div>
           {/* Dropdown (mobile) and Desktop Nav Links */}
           <div className="flex w-full items-center justify-between lg:flex">
-            <div
-              className={`${
-                navbar
-                  ? 'fixed bottom-0 left-0 right-0 top-20 overflow-y-auto bg-black'
-                  : 'relative hidden flex-1 justify-self-start pb-3 lg:mt-0 lg:block lg:flex lg:items-center lg:justify-center lg:pb-0'
-              }`}
-            >
-              {/* desktop navbar links */}
-              <ul
-                className={`items-center justify-center space-y-8 lg:flex lg:w-full lg:flex-1 lg:space-x-6 lg:space-y-0 xl:space-x-9 ${
-                  navbar
-                    ? 'flex w-full flex-col items-center justify-center pb-5 text-center text-[24px] md:text-[36px]'
-                    : 'hidden'
-                }`}
-              >
-                <div
-                  className={`mx-auto flex w-full flex-col justify-center space-y-8 bg-black text-black lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9`}
-                >
-                  {/* Home */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Home'
-                            ? 'solid border-b-2 py-2'
-                            : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}`}
-                        onClick={handleNavClick}
-                      >
-                        {home}
-                      </Link>
-                    </div>
-                  </li>
-                  {/* Technology */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Technology'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/ai`}
-                        onClick={handleNavClick}
-                      >
-                        {ourTechnology?.section}
-                      </Link>
-
-                      <div
-                        className={`absolute w-[200px] flex-col text-center drop-shadow-lg ${
-                          navbar
-                            ? 'relative left-1/2 z-10 mt-2 flex -translate-x-1/2 transform bg-black'
-                            : 'ml-[-60px] hidden'
-                        } hover:flex peer-hover:flex`}
-                      ></div>
-                    </div>
-                  </li>
-
-                  {/* About Us */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'About Us'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } whitespace-nowrap ${linkGradient}`}
-                        href={`/${lang}/story`}
-                        onClick={handleNavClick}
-                      >
-                        {aboutUs?.section}
-                      </Link>
-
-                      {/* Dropdown for About Us */}
-                      <div
-                        className={`absolute w-[200px] flex-col rounded-xl lg:bg-white/50 lg:drop-shadow-lg ${
-                          navbar
-                            ? 'relative z-10 flex transform text-left text-[18px] font-light sm:bg-white sm:bg-opacity-0 md:text-[21px]'
-                            : 'ml-[-60px] hidden text-center'
-                        } hover:flex peer-hover:flex`}
-                      >
-                        {/* Advisors */}
+            {/* ---------- MOBILE MENU (old style) ---------- */}
+            {navbar && (
+              <div className="fixed bottom-0 left-0 right-0 top-20 overflow-y-auto bg-black">
+                <ul className="flex-column w-full pb-5 pl-5 text-left text-[24px] md:text-[36px]">
+                  {/* Main nav links (Home, Technology, About Us, Media, FAQ) */}
+                  <div className="justify-center space-y-8 bg-black p-2 text-white">
+                    {/* Home */}
+                    <li>
+                      <div>
                         <Link
-                          className="pb-1 pt-3 hover:font-bold lg:pb-3 lg:pt-6"
-                          href={`/${lang}/advisors`}
+                          className={`font-bold ${
+                            activeLink === 'Home'
+                              ? 'solid border-b-2 py-2'
+                              : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                          }`}
+                          href={`/${lang}`}
                           onClick={handleNavClick}
                         >
-                          {aboutUs?.advisors}
-                        </Link>
-
-                        {/* Our Founder */}
-                        <Link
-                          className="py-1 hover:font-bold lg:py-3"
-                          href={`/${lang}/amils-story`}
-                          onClick={handleNavClick}
-                        >
-                          {aboutUs?.ourFounder}
-                        </Link>
-
-                        {/* Our Supporters */}
-                        <Link
-                          className="py-1 hover:font-bold lg:py-3"
-                          href={`/${lang}/supporters`}
-                          onClick={handleNavClick}
-                        >
-                          {aboutUs?.ourSupporters}
-                        </Link>
-
-                        {/* One Young World */}
-                        <Link
-                          className="py-1 hover:font-bold lg:py-3"
-                          href={`/${lang}/one-young-world`}
-                          onClick={handleNavClick}
-                        >
-                          {aboutUs?.oneYoungWorld}
+                          {home}
                         </Link>
                       </div>
-                    </div>
-                  </li>
+                    </li>
 
-                  {/* Media */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Media'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/news`}
-                        onClick={handleNavClick}
-                      >
-                        {media?.section}
-                      </Link>
-
-                      {/* Dropdown for Media */}
-                      <div
-                        className={`absolute w-[200px] flex-col rounded-xl lg:bg-white/50 lg:drop-shadow-lg ${
-                          navbar
-                            ? 'relative z-10 flex transform text-left text-[18px] font-light sm:bg-opacity-0 md:text-[21px]'
-                            : 'ml-[-75px] hidden text-center'
-                        } hover:flex peer-hover:flex`}
-                      >
-                        {/* News */}
+                    {/* Technology */}
+                    <li>
+                      <div>
                         <Link
-                          className="pb-1 pt-3 hover:font-bold lg:pb-3 lg:pt-6"
+                          className={`font-bold ${
+                            activeLink === 'Technology'
+                              ? 'solid peer border-b-2 py-2'
+                              : 'peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                          }`}
+                          href={`/${lang}/ai`}
+                          onClick={handleNavClick}
+                        >
+                          {ourTechnology?.section}
+                        </Link>
+                        <div className="absolute left-1/2 z-10 mt-2 flex w-[200px] -translate-x-1/2 transform flex-col bg-black text-center drop-shadow-lg hover:flex peer-hover:flex"></div>
+                      </div>
+                    </li>
+
+                    {/* About Us with dropdown */}
+                    <li>
+                      <div>
+                        <Link
+                          className={`whitespace-nowrap font-bold ${
+                            activeLink === 'About Us'
+                              ? 'solid peer border-b-2 py-2'
+                              : 'peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                          }`}
+                          href={`/${lang}/story`}
+                          onClick={handleNavClick}
+                        >
+                          {aboutUs?.section}
+                        </Link>
+                        <div className="relative z-10 mt-2 flex w-[200px] flex-col text-left text-[18px] font-light hover:flex peer-hover:flex sm:bg-white sm:bg-opacity-0 md:text-[21px]">
+                          <Link
+                            className="pb-1 pt-3 hover:font-bold lg:pb-3 lg:pt-6"
+                            href={`/${lang}/advisors`}
+                            onClick={handleNavClick}
+                          >
+                            {aboutUs?.advisors}
+                          </Link>
+                          <Link
+                            className="py-1 hover:font-bold lg:py-3"
+                            href={`/${lang}/amils-story`}
+                            onClick={handleNavClick}
+                          >
+                            {aboutUs?.ourFounder}
+                          </Link>
+                          <Link
+                            className="py-1 hover:font-bold lg:py-3"
+                            href={`/${lang}/supporters`}
+                            onClick={handleNavClick}
+                          >
+                            {aboutUs?.ourSupporters}
+                          </Link>
+                          <Link
+                            className="py-1 hover:font-bold lg:py-3"
+                            href={`/${lang}/one-young-world`}
+                            onClick={handleNavClick}
+                          >
+                            {aboutUs?.oneYoungWorld}
+                          </Link>
+                        </div>
+                      </div>
+                    </li>
+
+                    {/* Media with dropdown */}
+                    <li>
+                      <div>
+                        <Link
+                          className={`font-bold ${
+                            activeLink === 'Media'
+                              ? 'solid peer border-b-2 py-2'
+                              : 'peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                          }`}
                           href={`/${lang}/news`}
                           onClick={handleNavClick}
                         >
-                          {media?.pressReleases}
+                          {media?.section}
                         </Link>
+                        <div className="relative z-10 mt-2 flex w-[200px] flex-col text-left text-[18px] font-light hover:flex peer-hover:flex sm:bg-opacity-0 md:text-[21px]">
+                          <Link
+                            className="pb-1 pt-3 hover:font-bold lg:pb-3 lg:pt-6"
+                            href={`/${lang}/news`}
+                            onClick={handleNavClick}
+                          >
+                            {media?.pressReleases}
+                          </Link>
+                          <Link
+                            className="py-1 hover:font-bold lg:py-3"
+                            href={`/${lang}/publications`}
+                            onClick={handleNavClick}
+                          >
+                            {media?.ourResearch}
+                          </Link>
+                        </div>
+                      </div>
+                    </li>
 
-                        {/* Publications */}
+                    {/* FAQ */}
+                    <li>
+                      <div>
                         <Link
-                          className="py-1 hover:font-bold lg:py-3"
-                          href={`/${lang}/publications`}
+                          className={`font-bold ${
+                            activeLink === 'FAQ'
+                              ? 'solid border-b-2 py-2'
+                              : 'relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100'
+                          }`}
+                          href={`/${lang}/faq`}
                           onClick={handleNavClick}
                         >
-                          {media?.ourResearch}
+                          {faq}
                         </Link>
                       </div>
-                    </div>
-                  </li>
+                    </li>
 
-                  {/* Join Us */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Join Us'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/join-us`}
-                        onClick={handleNavClick}
-                      >
-                        {joinUs ? joinUs.buttonText : ''}
-                      </Link>
-                    </div>
-                  </li>
-                  {/* Donate */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'Donate'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/donate`}
-                        onClick={handleNavClick}
-                      >
-                        {donate ? donate.buttonText : ''}
-                      </Link>
-                    </div>
-                  </li>
+                    {/* Search bar (mobile) */}
+                    <li className="flex items-center justify-start py-2">
+                      <div className="relative w-[175px]">
+                        {renderSearchInput('w-full')}
+                        {renderSearchDropdown()}
+                      </div>
+                    </li>
 
-                  {/* FAQ */}
-                  <li>
-                    <div>
-                      <Link
-                        className={`${navbar ? 'font-bold' : 'text-[18px] font-semibold'} ${
-                          activeLink === 'FAQ'
-                            ? 'solid peer border-b-2 py-2'
-                            : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 ${navbar ? '' : 'md:text-sm lg:text-lg'}`
-                        } ${linkGradient}`}
-                        href={`/${lang}/faq`}
-                        onClick={handleNavClick}
-                      >
-                        {faq}
-                      </Link>
-                    </div>
-                  </li>
-                </div>
-              </ul>
-            </div>
-            <div className="flex justify-end">
-              {/* Search and Locale */}
-              <div
-                className={`lg:ml-auto lg:flex ${navbar ? 'flex flex-row items-center justify-center gap-x-8 pt-14 text-white md:gap-x-20' : 'pl-10 text-black'}`}
-              >
-                <ul className="mx-2 flex items-center gap-x-4">
-                  {/* Search bar for Desktop*/}
-                  <li className="ml-[100px] hidden items-center justify-center py-2 lg:ml-[120px] lg:flex">
-                    <div
-                      className={`relative flex justify-center ${showSearch ? 'w-[175px]' : 'w-auto'}`}
-                    >
-                      {showSearch ? (
-                        <>
-                          {renderSearchInput('w-full')}
-                          {renderSearchDropdown()}
-                        </>
-                      ) : (
-                        <div
-                          className="cursor-pointer"
-                          onClick={() => {
-                            setShowSearch((prev) => {
-                              const next = !prev;
-                              if (!next) {
-                                clearResults();
-                                setHasSearched(false);
-                              }
-                              return next;
-                            });
-                          }}
-                        >
-                          {/* magnifying glass icon */}
-                          <svg
-                            className={`h-[22px] w-[22px] lg:${pageNavColor.text}`}
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <circle cx="10" cy="10" r="6" strokeWidth="2" />
-                            <line
-                              x1="14"
-                              y1="14"
-                              x2="20"
-                              y2="20"
-                              strokeWidth="2"
-                            />
-                          </svg>
-                        </div>
-                      )}
-                    </div>
-                  </li>
-                  <div className="rounded-full bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] p-[1px]">
-                    {/* Language Selector */}
-                    <li
-                      className={`${navbar ? 'relative top-[-24px] -ml-3' : 'rounded-full border border-2 border-sky-800 bg-white bg-opacity-80 pl-4 text-sm font-semibold text-black'} lg:relative lg:top-0 lg:-ml-0`}
-                    >
+                    {/* Language selector (mobile) */}
+                    <li className="relative top-[-24px] -ml-3">
                       <LocaleSelect
                         isNavbar={navbar}
                         textColor={pageNavColor.color}
                       />
                     </li>
                   </div>
+
+                  {/* Join Us and Donate buttons (mobile) */}
+                  <div className="flex flex-row items-center justify-center gap-x-8 pt-14 text-white md:gap-x-20">
+                    <li className="pb-10">
+                      <Link href={`/${lang}/join-us`} onClick={handleNavClick}>
+                        <button className="h-[42px] w-[125px] rounded-full border border-solid text-base font-semibold shadow-[4px_4px_6px_rgba(0,0,0,0.2)] md:h-[60px] md:w-[180px] md:text-xl">
+                          {joinUs ? joinUs.buttonText : ''}
+                        </button>
+                      </Link>
+                    </li>
+                    <li className="pb-10">
+                      <Link href={`/${lang}/donate`} onClick={handleNavClick}>
+                        <button className="h-[42px] w-[125px] rounded-full text-base font-semibold shadow-[4px_4px_6px_rgba(0,0,0,0.2)] md:h-[60px] md:w-[180px] md:text-xl">
+                          {donate.buttonText}
+                        </button>
+                      </Link>
+                    </li>
+                  </div>
                 </ul>
               </div>
-            </div>
+            )}
+
+            {/* ---------- DESKTOP MENU (current style) ---------- */}
+            {!navbar && (
+              <>
+                <div className="relative hidden flex-1 justify-self-start pb-3 lg:mt-0 lg:block lg:flex lg:items-center lg:justify-center lg:pb-0">
+                  <ul className="hidden items-center justify-center space-y-8 lg:flex lg:w-full lg:flex-1 lg:space-x-6 lg:space-y-0 xl:space-x-9">
+                    <div className="mx-auto flex w-full flex-col justify-center space-y-8 text-black lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:rounded-full lg:bg-transparent xl:space-x-9">
+                      {/* Home */}
+                      <li>
+                        <div>
+                          <Link
+                            className={`text-[18px] font-semibold ${
+                              activeLink === 'Home'
+                                ? 'solid border-b-2 py-2'
+                                : `relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg`
+                            } ${linkGradient}`}
+                            href={`/${lang}`}
+                            onClick={handleNavClick}
+                          >
+                            {home}
+                          </Link>
+                        </div>
+                      </li>
+
+                      {/* Technology */}
+                      <li>
+                        <div>
+                          <Link
+                            className={`text-[18px] font-semibold ${
+                              activeLink === 'Technology'
+                                ? 'solid peer border-b-2 py-2'
+                                : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg`
+                            } ${linkGradient}`}
+                            href={`/${lang}/ai`}
+                            onClick={handleNavClick}
+                          >
+                            {ourTechnology?.section}
+                          </Link>
+                          <div className="absolute ml-[-60px] hidden w-[200px] flex-col text-center drop-shadow-lg hover:flex peer-hover:flex"></div>
+                        </div>
+                      </li>
+
+                      {/* About Us */}
+                      <li>
+                        <div>
+                          <Link
+                            className={`whitespace-nowrap text-[18px] font-semibold ${
+                              activeLink === 'About Us'
+                                ? 'solid peer border-b-2 py-2'
+                                : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg`
+                            } ${linkGradient}`}
+                            href={`/${lang}/story`}
+                            onClick={handleNavClick}
+                          >
+                            {aboutUs?.section}
+                          </Link>
+                          <div className="absolute ml-[-60px] hidden w-[200px] flex-col rounded-xl text-center hover:flex peer-hover:flex lg:bg-white/50 lg:drop-shadow-lg">
+                            <Link
+                              className="pb-1 pt-3 hover:font-bold lg:pb-3 lg:pt-6"
+                              href={`/${lang}/advisors`}
+                              onClick={handleNavClick}
+                            >
+                              {aboutUs?.advisors}
+                            </Link>
+                            <Link
+                              className="py-1 hover:font-bold lg:py-3"
+                              href={`/${lang}/amils-story`}
+                              onClick={handleNavClick}
+                            >
+                              {aboutUs?.ourFounder}
+                            </Link>
+                            <Link
+                              className="py-1 hover:font-bold lg:py-3"
+                              href={`/${lang}/supporters`}
+                              onClick={handleNavClick}
+                            >
+                              {aboutUs?.ourSupporters}
+                            </Link>
+                            <Link
+                              className="py-1 hover:font-bold lg:py-3"
+                              href={`/${lang}/one-young-world`}
+                              onClick={handleNavClick}
+                            >
+                              {aboutUs?.oneYoungWorld}
+                            </Link>
+                          </div>
+                        </div>
+                      </li>
+
+                      {/* Media */}
+                      <li>
+                        <div>
+                          <Link
+                            className={`text-[18px] font-semibold ${
+                              activeLink === 'Media'
+                                ? 'solid peer border-b-2 py-2'
+                                : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg`
+                            } ${linkGradient}`}
+                            href={`/${lang}/news`}
+                            onClick={handleNavClick}
+                          >
+                            {media?.section}
+                          </Link>
+                          <div className="absolute ml-[-75px] hidden w-[200px] flex-col rounded-xl text-center hover:flex peer-hover:flex lg:bg-white/50 lg:drop-shadow-lg">
+                            <Link
+                              className="pb-1 pt-3 hover:font-bold lg:pb-3 lg:pt-6"
+                              href={`/${lang}/news`}
+                              onClick={handleNavClick}
+                            >
+                              {media?.pressReleases}
+                            </Link>
+                            <Link
+                              className="py-1 hover:font-bold lg:py-3"
+                              href={`/${lang}/publications`}
+                              onClick={handleNavClick}
+                            >
+                              {media?.ourResearch}
+                            </Link>
+                          </div>
+                        </div>
+                      </li>
+
+                      {/* Join Us */}
+                      <li>
+                        <div>
+                          <Link
+                            className={`text-[18px] font-semibold ${
+                              activeLink === 'Join Us'
+                                ? 'solid peer border-b-2 py-2'
+                                : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg`
+                            } ${linkGradient}`}
+                            href={`/${lang}/join-us`}
+                            onClick={handleNavClick}
+                          >
+                            {joinUs ? joinUs.buttonText : ''}
+                          </Link>
+                        </div>
+                      </li>
+
+                      {/* Donate */}
+                      <li>
+                        <div>
+                          <Link
+                            className={`text-[18px] font-semibold ${
+                              activeLink === 'Donate'
+                                ? 'solid peer border-b-2 py-2'
+                                : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg`
+                            } ${linkGradient}`}
+                            href={`/${lang}/donate`}
+                            onClick={handleNavClick}
+                          >
+                            {donate ? donate.buttonText : ''}
+                          </Link>
+                        </div>
+                      </li>
+
+                      {/* FAQ */}
+                      <li>
+                        <div>
+                          <Link
+                            className={`text-[18px] font-semibold ${
+                              activeLink === 'FAQ'
+                                ? 'solid peer border-b-2 py-2'
+                                : `peer relative py-2 before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-full before:origin-right before:scale-x-0 before:bg-white lg:before:bg-${pageNavColor.color} before:transition-transform before:duration-300 hover:before:origin-left hover:before:scale-x-100 md:text-sm lg:text-lg`
+                            } ${linkGradient}`}
+                            href={`/${lang}/faq`}
+                            onClick={handleNavClick}
+                          >
+                            {faq}
+                          </Link>
+                        </div>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+
+                {/* Search + Locale (desktop) */}
+                <div className="flex justify-end">
+                  <div className="pl-10 text-black lg:ml-auto lg:flex">
+                    <ul className="mx-2 flex items-center gap-x-4">
+                      <li className="ml-[100px] hidden items-center justify-center py-2 lg:ml-[120px] lg:flex">
+                        <div
+                          className={`relative flex justify-center ${showSearch ? 'w-[175px]' : 'w-auto'}`}
+                        >
+                          {showSearch ? (
+                            <>
+                              {renderSearchInput('w-full')}
+                              {renderSearchDropdown()}
+                            </>
+                          ) : (
+                            <div
+                              className="cursor-pointer"
+                              onClick={() => {
+                                setShowSearch((prev) => {
+                                  const next = !prev;
+                                  if (!next) {
+                                    clearResults();
+                                    setHasSearched(false);
+                                  }
+                                  return next;
+                                });
+                              }}
+                            >
+                              <svg
+                                className={`h-[22px] w-[22px] lg:${pageNavColor.text}`}
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <circle cx="10" cy="10" r="6" strokeWidth="2" />
+                                <line
+                                  x1="14"
+                                  y1="14"
+                                  x2="20"
+                                  y2="20"
+                                  strokeWidth="2"
+                                />
+                              </svg>
+                            </div>
+                          )}
+                        </div>
+                      </li>
+                      <div className="hidden rounded-full bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] p-[1px] lg:block">
+                        <li className="rounded-full border border-2 border-sky-800 bg-white bg-opacity-80 pl-4 text-sm font-semibold text-black lg:relative lg:top-0 lg:-ml-0">
+                          <LocaleSelect
+                            isNavbar={navbar}
+                            textColor={pageNavColor.color}
+                          />
+                        </li>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </nav>
