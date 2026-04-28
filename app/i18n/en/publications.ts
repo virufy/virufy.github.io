@@ -10,20 +10,6 @@ const publications: Publications = {
   publicationsCards: [
     {
       title:
-        'Data‑Efficient Cough Analysis Through Active Learning and Segmentation',
-      date: 'March 2026',
-      url: '/en/publications/data-efficient-cough-ai',
-      linkText: 'Read More',
-    },
-    {
-      title:
-        'Improving Clinical Trial Enrollment for Smartphone-Based AI Data Collection: A Methodological Analysis of Nudge-Based Interventions',
-      date: 'December 2025',
-      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
-      linkText: 'Read More',
-    },
-    {
-      title:
         'Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19',
       date: 'October 2022',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
@@ -45,13 +31,6 @@ const publications: Publications = {
 
     {
       title:
-        'Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML)',
-      date: 'January 2022',
-      url: 'https://arxiv.org/abs/2201.11109',
-      linkText: 'Read More',
-    },
-    {
-      title:
         'Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems',
       date: 'September 2021',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
@@ -65,13 +44,15 @@ const publications: Publications = {
       linkText: 'Read More',
     },
     {
-      title: 'Fusical: Multimodal Fusion for Video Sentiment',
+      title:
+        'Fusical: Multimodal Fusion for Video Sentiment',
       date: 'October 2020',
       url: 'https://dl.acm.org/doi/abs/10.1145/3382507.3417966',
       linkText: 'Read More',
     },
     {
-      title: 'Facial Expression Recognition with Deep Learning',
+      title:
+        'Facial Expression Recognition with Deep Learning',
       date: 'April 2020',
       url: 'https://arxiv.org/abs/2004.11823',
       linkText: 'Read More',

@@ -14,8 +14,6 @@ const amilsStory: AmilsStory = {
     founderAmil: [
       'Meet Our Founder',
       'Amil Khanzada',
-      'Assistant Professor',
-      'University of Fukui, Japan.',
       'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
     ],
     imgCaption: [

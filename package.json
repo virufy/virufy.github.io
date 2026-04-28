@@ -33,7 +33,6 @@
     "react-dom": "^18",
     "react-ga4": "^2.1.0",
     "react-player": "^2.16.0",
-    "react-vertical-timeline-component": "^4.0.0",
     "sharp": "^0.34.4",
     "ts-morph": "^26.0.0"
   },
@@ -45,7 +44,6 @@
     "@types/papaparse": "^5.3.16",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18",
-    "@types/react-vertical-timeline-component": "^3.3.6",
     "@typescript-eslint/eslint-plugin": "^7.16.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.2.35",

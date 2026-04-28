@@ -1,58 +1,63 @@
 import type { sevenhomepage } from '../types/sevenhomepage';
 const sevenHomePage: sevenhomepage = {
   introSection: {
-    title: 'AIを活用した呼吸器ヘルススクリーニング',
-    subtitle: 'あなたの健康を支えるデジタルパートナー',
-    text: 'スマートフォンに向かって咳をするだけで、VirufyのAIが咳の音を解析し、呼吸器疾患に関連しうる特徴があるかをチェックします（COVID-19、RSV、肺炎、喘息、COPDなど）',
-    missionbutton: '私たちのミッション',
-    supportbutton: 'ご支援のお願い',
+    title: 'AI-Powered Respiratory Health Screening',
+    subtitle: 'Your Digital Health Companion',
+    text: "With a simple cough into your phone, Virufy's AI screens for sound patterns linked to respiratory illnesses like COVID-19, RSV, Pneumonia, Asthma, and COPD",
+    missionbutton: 'Our Mission',
+    supportbutton: 'Support Us',
   },
   section2: {
-    title: '私たちのミッションは、病気の早期発見に変革を起こすこと',
-    subtitle: '科学、共感、イノベーションを結集し、早期発見をより多くの人へ。',
+    title: 'Our Mission to Redefine Early Detection',
+    subtitle:
+      'Uniting science, empathy, and innovation to advance early detection for all.',
     text: [
-      'Virufyは、音声解析や生成AIを活用し、呼吸器疾患を検出する新しい方法を研究する非営利団体（NPO）です。',
-      '私たちは、早期発見を「誰にとっても利用しやすく」「プライバシーに配慮され」「手頃な費用で続けられる」ものにすることを目指しています。AIを活用し、スマートフォンやWebブラウザで利用できるスクリーニングツールを提供することで、患者さん、医療従事者、医療システムが、より早い段階で適切な対応を始められるよう支援します。特に、低所得で医療資源が不足しやすい地域での活用を重視し、世界の健康水準の向上に貢献します。',
-      'Virufyは、テクノロジーと人をつなぐ架け橋として、日常のひとコマを、命を守る気づき、臨床研究、国際的な連携、そして科学的妥当性へと変えていきます。',
+      'We are a nonprofit dedicated to transforming how the world detects and understands respiratory illness, through advanced audio analysis and generative AI.',
+      'Our mission is to make early detection accessible, private, and affordable for all. By delivering AI-driven screening tools that work on any smartphone, or web browser we empower patients, clinicians, and health systems—especially in low-income and underserved regions—to take action sooner and improve health outcomes worldwide.',
+      'Virufy bridges the gap between technology and humanity, turning everyday moments into opportunities for life-saving insights, clinical research, global partnerships, and scientific integrity.',
     ],
   },
   section3: {
-    title: 'あなたの健康を第一に',
+    title: 'Your Health, Our Priority',
     subtitle:
-      'Virufyでは、利用者の皆さまの健康を何よりも大切にしています。安心してご利用いただけるよう、データは適切なセキュリティ対策のもとで管理し、安全性とプライバシーの保護に努めています。',
-    cardtitle: ['迅速な解析', '自宅で完結する匿名性', '使いやすいデザイン'],
+      'At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.',
+    cardtitle: [
+      'Instant Analysis',
+      'At-home Anonymity',
+      'User-Friendly Interface',
+    ],
     cardtext: [
-      '録音された咳の特徴や異常を解析し、結果を速やかにお知らせします。',
-      '結果は原則としてご本人のみが確認でき、安心してご利用いただけます。',
-      '直感的に操作できる設計で、はじめての方でも迷わずスムーズにご利用いただけます。',
+      'Rapid feedback on your cough’s characteristics and abnormality profile based on the sound pattern of your cough.',
+      'Feel secure knowing that your results are only for your eyes.',
+      'User-Friendly Interface Intuitive design for easy navigation and seamless user experience',
     ],
     disclaimer:
-      '※Virufyは医療行為（診断・治療等）に代わるものではありません。体調に不安がある場合や医療上の判断が必要な場合は、医療機関を受診するか、資格を有する医療従事者にご相談ください。',
+      '*Virufy is not a substitute for professional medical advice, diagnosis, or treatment. Users are advised to consult a licensed healthcare provider for any medical concerns or decisions.*',
   },
   section4: {
-    title: '世界の健康を、ともに前進させる',
+    title: 'Advancing Global Health, Together.',
     subtitle:
-      'Virufyは世界中の専門家とボランティアの力を結集し、呼吸器のヘルススクリーニングを誰もが利用できるものにすることを目指しています。',
+      'Virufy unites experts and volunteers worldwide to make respiratory screening accessible to everyone.',
     icons: [
       '../../images/sevenhome/globe.png',
       '../../images/sevenhome/hand.png',
       '../../images/sevenhome/gear.png',
     ],
     cardtitle: [
-      '国境を越えた連携',
-      'コミュニティと協働して',
-      'オープン・イノベーション',
+      'Cross-Border Collaboration',
+      'Community Empowerment',
+      'Open Innovation',
     ],
     cardtext: [
-      '大学・病院・非営利団体などと協働し、オープンソース研究の推進に取り組んでいます。',
-      '録音された咳のデータは、AIの精度向上に活用され、健康格差のない社会の実現を支えます。',
-      '「人」を大切にしていくことを忘れず、透明性と国際協力を推進します。',
+      'Working alongside universities, hospitals, and nonprofits to advance open-source research.',
+      'Every cough sample helps improve AI accuracy and supports equitable health outcomes.',
+      'Our mission is driven by transparency and global cooperation with a people-first mindset.',
     ],
   },
   section5: {
-    title: 'Virufyを支える科学技術の紹介',
-    text: 'AIと音響解析がどのように咳の音を分析し、呼吸器に関する国際的な研究の前進につながるのかをご紹介します。',
-    button: '技術について詳しく見る',
+    title: 'Discover the Science Behind Virufy.',
+    text: 'Learn how AI and acoustic analysis come together to detect respiratory patterns and advance global health research.',
+    button: 'Explore Our Technology',
   },
 };
 export default sevenHomePage;

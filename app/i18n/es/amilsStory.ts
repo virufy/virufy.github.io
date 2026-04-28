@@ -14,10 +14,8 @@ const amilsStory: AmilsStory = {
     founderAmil: [
       'Conoce a nuestro fundador',
       'Amil Khanzada',
-      'Profesor Asistente',
-      'Universidad de Fukui, Japón.',
-      'Candidato a Doctorado en Ingeniería, Universidad de Fukui, Japón. Exalumno del programa conjunto de MBA y Maestría en Ingeniería (Ciencia de Datos), UC Berkeley.',
-    ],
+      'Candidato a MBA, Haas School of Business Candidato a Maestría en Ingeniería, Departamento de Ingeniería Eléctrica y Ciencias de la Computación',
+      ],
     imgCaption: [
       'Amil con el personal de enfermería apoyando los estudios clínicos de Virufy en Colombia, Sudamérica.',
       'Amil con estudiantes y personal japoneses en la escuela de programación ZenIT.',

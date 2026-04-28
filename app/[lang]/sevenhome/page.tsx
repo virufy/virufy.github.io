@@ -14,7 +14,7 @@ const Container: React.FC<ContainerProps> = ({
   transparent = false,
 }) => (
   <div
-    className={`mx-auto w-full px-2 md:max-w-7xl md:px-10 lg:px-20 ${transparent ? 'bg-transparent' : 'bg-white'} `}
+    className={`mx-auto w-full px-2 md:max-w-7xl md:px-20 ${transparent ? 'bg-transparent' : 'bg-white'} `}
   >
     {children}
   </div>
@@ -64,7 +64,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   return (
     <main className="">
       {/* HERO */}
-      <div className="relative w-full items-center overflow-hidden lg:px-20 lg:px-5">
+      <div className="relative w-full items-center overflow-hidden px-5 md:px-20">
         <div className="absolute inset-0 flex">
           <ExportedImage
             src="/images/sevenhome/HeroBG.png"
@@ -93,12 +93,12 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   </button>
                 </div>
               </div>
-              <div className="relative mt-12 flex hidden h-full w-full items-center justify-center md:mt-0 md:block lg:ml-10">
+              <div className="relative ml-10 mt-12 flex hidden h-full w-full items-center justify-center md:mt-0 md:block">
                 <ExportedImage
                   src="/images/sevenhome/PhoneHero.png"
                   alt="Phone showing app"
                   fill
-                  className="object-contain object-center md:scale-[100%] lg:scale-[150%]"
+                  className="object-contain object-center md:scale-[150%]"
                 />
               </div>
             </div>
@@ -108,6 +108,18 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
       {/* SECTION 2 */}
       <section className="border-gray relative w-full overflow-hidden border-2 border-y bg-gradient-to-br from-white to-[#dbeef3]">
+        {/* Background Image */}
+        <div className="absolute bottom-0 right-0 flex justify-end overflow-hidden">
+          <ExportedImage
+            src="/images/sevenhome/Heart_image.png"
+            alt="Our mission background"
+            height={750}
+            width={1100}
+            priority
+            className="-mb-9 hidden md:block md:object-contain"
+          />
+        </div>
+
         {/* Text Content */}
         <div className="relative mx-auto flex min-h-[700px] max-w-7xl py-20">
           <div className="flex-1 items-center px-5 text-center md:px-20 md:text-left">
@@ -115,7 +127,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               {section2.title}
             </h2>
 
-            <h3 className="mb-8 text-xl font-semibold text-gray-700 md:max-w-5xl md:text-3xl">
+            <h3 className="mb-8 text-xl font-semibold text-gray-700 md:text-3xl lg:max-w-5xl">
               {section2.subtitle}
             </h3>
             <div className="flex h-64 justify-center py-10 md:mb-6 md:hidden">
@@ -128,7 +140,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               />
             </div>
             <div
-              className={`z-10 space-y-6 text-lg text-gray-600 md:max-h-full lg:max-w-2xl lg:text-xl ${open ? 'max-h-full' : 'max-h-40'} duration-400 overflow-hidden transition-all`}
+              className={`space-y-6 text-lg text-gray-600 md:max-h-full md:text-xl lg:max-w-2xl ${open ? 'max-h-full' : 'max-h-40'} duration-400 overflow-hidden transition-all`}
               ref={ref}
             >
               {section2.text.map((p, i) => (
@@ -144,26 +156,6 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               {open ? 'See Less ▲' : 'Read More ▼'}
             </button>
           </div>
-        </div>
-        {/* Background Image */}
-
-        <div
-          className={`z-0 -my-9 hidden overflow-hidden md:relative md:mx-auto md:block lg:absolute lg:bottom-0 lg:right-0 lg:mt-12 lg:translate-x-20`}
-          style={{
-            width: 'clamp(0px, 70vw, 1100px)',
-          }}
-        >
-          <ExportedImage
-            src="/images/sevenhome/Heart_image.png"
-            alt="Our mission background"
-            width={1100}
-            height={750}
-            className="object-contain"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-          />
         </div>
       </section>
 
@@ -186,7 +178,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 {section3.subtitle}
               </p>
             </div>
-            <div className="mb-1 flex justify-center lg:hidden">
+            <div className="mb-1 flex justify-center md:hidden">
               <ExportedImage
                 src="/images/sevenhome/HealthPhone.png"
                 alt="Phone showing health app"
@@ -196,7 +188,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               />
             </div>
             <div className="flex">
-              <div className="mt-6 grid gap-6 md:mt-12 lg:w-[60%]">
+              <div className="mt-6 grid gap-6 md:mt-12 md:w-[60%]">
                 {section3.cardtitle.map((t, i) => (
                   <Card
                     key={i}
@@ -211,7 +203,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 </p>
               </div>
 
-              <div className="ml-10 flex hidden items-center justify-center pl-10 md:mt-12 md:w-[30%] lg:block lg:w-[40%]">
+              <div className="ml-10 flex hidden items-center justify-center pl-10 md:mt-12 md:block md:w-[40%]">
                 <ExportedImage
                   src="/images/sevenhome/HealthPhone.png"
                   alt="Phone showing health app"

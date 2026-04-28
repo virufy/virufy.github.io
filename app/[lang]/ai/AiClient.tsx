@@ -54,7 +54,7 @@ export default function AiPage({
             basePath={basePath}
           />
 
-          <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-center px-6 pb-16 pt-28 md:pb-28 md:pt-[250px]">
+          <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-center px-6 pb-16 pt-28 md:pb-28 md:pt-36">
             <div className="text-center text-white md:self-center md:text-left">
               <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
                 {(heroSection.title as TitleText[]).map((t, i) =>

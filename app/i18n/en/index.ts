@@ -19,14 +19,10 @@ import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
-import blogPosts from './blogPosts';
 import sevenai from './sevenai';
 import sevenhomepage from './sevenhomepage';
 import sevensupporters from './sevensupporters';
 import sevensupportus from './sevensupportus';
-import sevenwho_we_are from './sevenwho-we-are';
-import sevenamilsStory from './sevenamilsStory';
-
 
 const enMetadata: I18nData = {
   ai,
@@ -49,13 +45,10 @@ const enMetadata: I18nData = {
   supporters,
   teamLeads,
   donate,
-  blogPosts,
   sevenai,
   sevenhomepage,
   sevensupporters,
   sevensupportus,
-  sevenwho_we_are,
-  sevenamilsStory,
 };
 
 export default enMetadata;

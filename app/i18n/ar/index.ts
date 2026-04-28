@@ -19,12 +19,9 @@ import story from './story';
 import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
-import blogPosts from './blogPosts';
 import sevenai from './sevenai';
 import sevenhomepage from './sevenhomepage';
 import sevensupporters from './sevensupporters';
-import sevenwho_we_are from './sevenwho-we-are';
-import sevenamilsStory from './sevenamilsStory';
 
 const arMetadata: I18nData = {
   ai,
@@ -47,12 +44,9 @@ const arMetadata: I18nData = {
   supporters,
   teamLeads,
   donate,
-  blogPosts,
   sevenai,
   sevenhomepage,
   sevensupporters,
-  sevenwho_we_are,
-  sevenamilsStory,
 };
 
 export default arMetadata;

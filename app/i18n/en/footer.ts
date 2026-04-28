@@ -695,7 +695,7 @@ const footer: Footer = {
     textOne:
       'Virufy is a California nonprofit corporation recognized by the United States Internal Revenue Service (IRS) as a tax-exempt public charity under Section 501(c)(3) of the Internal Revenue Code.',
     textTwo:
-      '©2026 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved',
+      '©2025 Virufy | VIRUFY is a trademark of The Covid Detection Foundation, a California nonprofit corporation | All rights reserved',
   },
   IntellectualProperty: {
     title: 'Intellectual Property',

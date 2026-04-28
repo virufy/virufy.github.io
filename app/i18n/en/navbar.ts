@@ -14,25 +14,16 @@ export const navbar: NavbarType = {
   },
   aboutUs: {
     section: 'Who We Are',
-    sectionsubtext: 'About Virufy',
-    advisors: 'Our Advisors',
-    advisorsubtext: 'Leading industry experts',
-    ourFounder: 'Meet Amil',
-    foundersubtext: 'Meet our founder',
+    advisors: 'Advisors',
+    ourFounder: 'Our Founder',
     ourSupporters: 'Our Supporters',
-    supportersubtext: 'Partners for impact',
-
+    blog: 'Blog',
     oneYoungWorld: 'One Young World',
-    oymsubtext: 'Youth leader partnership',
   },
   media: {
     section: 'Media',
     pressReleases: 'News',
-    presssubtext: 'Latest media coverage',
     ourResearch: 'Publications',
-    researchsubtext: 'Peer-reviewed research',
-    blog: 'Our Blog',
-    blogsubtext: 'Insights and updates',
   },
   faq: 'FAQ',
   donate: {

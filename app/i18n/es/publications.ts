@@ -10,20 +10,6 @@ const publications: Publications = {
   publicationsCards: [
     {
       title:
-        'Análisis de tos eficiente en datos mediante aprendizaje activo y segmentación',
-      date: 'Marzo de 2026',
-      url: '/en/publications/data-efficient-cough-ai',
-      linkText: 'Leer más',
-    },
-    {
-      title:
-        'Mejorando la inscripción en ensayos clínicos para la recolección de datos de IA basada en teléfonos inteligentes: Un análisis metodológico de intervenciones basadas en incentivos conductuales (nudges)',
-      date: 'Diciembre 2025',
-      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
-      linkText: 'Leer más',
-    },
-    {
-      title:
         'Transformador Multimodal Jerárquico para Detección Automática de COVID-19',
       date: 'Octubre 2022',
       url: 'https://dl.acm.org/doi/10.1145/3556384.3556414',
@@ -46,13 +32,6 @@ const publications: Publications = {
 
     {
       title:
-        'Uso de una calculadora novedosa de COVID-19 para medir el impacto socioeconómico positivo en EE. UU. de una solución de preevaluación de COVID-19 (IA/AA)',
-      date: 'Enero 2022',
-      url: 'https://arxiv.org/abs/2201.11109',
-      linkText: 'Leer más',
-    },
-    {
-      title:
         'Desafíos y oportunidades en la implementación de sistemas de inteligencia artificial para la tos COVID-19',
       date: 'Septiembre 2021',
       url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/',
@@ -73,16 +52,10 @@ const publications: Publications = {
       linkText: 'Leer más',
     },
     {
-      title: 'Reconocimiento de expresiones faciales con aprendizaje profundo',
+      title:
+        'Reconocimiento de expresiones faciales con aprendizaje profundo',
       date: 'Abril 2020',
       url: 'https://arxiv.org/abs/2004.11823',
-      linkText: 'Leer más',
-    },
-    {
-      title:
-        'Mejorando la inscripción en ensayos clínicos para la recolección de datos de IA basada en teléfonos inteligentes: Un análisis metodológico de intervenciones basadas en incentivos conductuales (nudges)',
-      date: 'Diciembre 2025',
-      url: 'https://sabeconomics.org/ojs/index.php/jbep/article/view/232',
       linkText: 'Leer más',
     },
   ],
