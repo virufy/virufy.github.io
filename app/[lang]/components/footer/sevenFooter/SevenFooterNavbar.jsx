@@ -9,7 +9,7 @@ export default function SevenFooterNavbar({
   footerPrivacyLinks,
 }) {
   return (
-    <footer className="bg-[#F3F8FF]">
+    <footer className="bg-[#F3F8FF] text-black">
       <div className="mx-auto flex w-full max-w-screen-xl flex-col p-4 py-10">
         <div className="text-black-800 flex w-full flex-wrap items-center justify-center space-x-2 text-xs font-semibold sm:text-base lg:my-6 lg:space-x-6 lg:no-underline">
           {footerPrivacyLinks.map(({ label, showModal, endpoint }, idx) => (
