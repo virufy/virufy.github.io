@@ -92,7 +92,7 @@ const LocaleSelect = ({ lang, onDropdownChange }: LocaleSelectProps) => {
 
       {dropdownOpen && (
         <div
-          className={`right-0 mt-2 flex rounded-xl text-black shadow-gray-500 md:absolute md:block md:border md:border-gray-500 md:shadow-md lg:border-none lg:bg-transparent lg:shadow-lg`}
+          className={`mt-2 flex rounded-xl text-black shadow-gray-500 lg:absolute lg:right-0 lg:block lg:border lg:border-none lg:border-gray-500 lg:bg-transparent lg:shadow-lg lg:shadow-md`}
         >
           {i18n.locales.map((localeOption) => (
             <button
