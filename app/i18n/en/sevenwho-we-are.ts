@@ -3,7 +3,7 @@ import type { sevenwho_we_are } from '../types/sevenwho-we-are';
 const sevenwhoweare: sevenwho_we_are = {
   introSection: {
     title: ['Redefining', 'Early Detection', 'Through AI and Sound'],
-    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.',
+    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping screen for potential respiratory illnesses early and non-invasively.',
     tag: 'About Virufy',
   },
   section2: {
