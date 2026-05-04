@@ -56,13 +56,13 @@ const blogPosts: Record<string, Post> = {
       </ul>
     `,
   },
-'screen-early-live-better': {
-  slug: 'screen-early-live-better',
-  title: 'Screen Early, Live Better',
-  description:
-    'Why catching respiratory disease early matters, and why making screening more accessible is one of the most important problems in global health right now.',
-  date: 'April 2026',
-  content: `
+  'screen-early-live-better': {
+    slug: 'screen-early-live-better',
+    title: 'Screen Early, Live Better',
+    description:
+      'Why catching respiratory disease early matters, and why making screening more accessible is one of the most important problems in global health right now.',
+    date: 'April 2026',
+    content: `
     <p>
       Respiratory disease is one of the leading causes of preventable death worldwide. Yet most people don't think about their lung health until something has already gone wrong. A persistent cough gets dismissed. Shortness of breath gets blamed on aging. By the time symptoms are impossible to ignore, significant damage is often already done.
     </p>
@@ -125,6 +125,7 @@ const blogPosts: Record<string, Post> = {
     </p>
 
     <h2>What You Can Do Now</h2>
+    <p> The most important shift is attitudinal: treat your respiratory health as something worth monitoring, not just something to address when it breaks. A few practical starting points: </p>
     <ul>
       <li>
         <strong>Know your baseline.</strong> Notice how you breathe at rest, after exertion, first thing in the morning. Changes are only meaningful when you have a reference point.
@@ -160,7 +161,7 @@ const blogPosts: Record<string, Post> = {
       </li>
     </ul>
   `,
-},
+  },
 };
 
 export default blogPosts;
