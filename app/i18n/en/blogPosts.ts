@@ -125,6 +125,7 @@ const blogPosts: Record<string, Post> = {
     </p>
 
     <h2>What You Can Do Now</h2>
+    <p> The most important shift is attitudinal: treat your respiratory health as something worth monitoring, not just something to address when it breaks. A few practical starting points: </p>
     <ul>
       <li>
         <strong>Know your baseline.</strong> Notice how you breathe at rest, after exertion, first thing in the morning. Changes are only meaningful when you have a reference point.
