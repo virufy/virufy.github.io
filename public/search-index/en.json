@@ -476,24 +476,45 @@
     "url": "/en/join-us/27"
   },
   {
-    "id": "en-story-how-it-started",
+    "id": "en-story-intro",
     "lang": "en",
-    "title": "How It Started",
-    "content": "When the pandemic hit,  Virufy founder Amil Khanzada  knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, Amil orchestrated a clinical study with 362 patients in an esteemed university hospital. The original Virufy team started with Stanford graduate AI students and expanded to volunteers from universities globally.",
+    "title": "Redefining Early Detection Through AI and Sound",
+    "content": "Our AI technology listens for subtle patterns in the sound of your cough — helping screen for potential respiratory illnesses early and non-invasively.",
     "url": "/en/story"
   },
   {
-    "id": "en-story-our-mission",
+    "id": "en-story-section2",
     "lang": "en",
-    "title": "Our Mission",
-    "content": "Some people may be wondering, \"why are we here?\" and \"why have so many people supported Virufy?\" Virufy's mission and goal is to transform global health. We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds. We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones. Here is a listing of disclosed  advisors  and we have had 1,300+ volunteers to date. Thank you for being part of the mission and let's make it happen.",
+    "title": "From Inception to Global Movement",
+    "content": "Virufy was founded in 2020 during the early days of the COVID-19 pandemic, when limited testing access and overwhelmed healthcare systems left millions without timely answers. A group of Stanford students recognized the growing gap between the need for early detection and the tools available to most people around the world. At the same time, emerging research in artificial intelligence suggested that respiratory sounds, such as coughs and breathing patterns, could reveal signs of disease. Knowing that COVID-19 directly affects the nose, throat, and lungs, the team explored whether machine learning could analyze these signals using something nearly everyone already had, a smartphone. What began as a student research effort quickly grew into global volunteer recruitment and clinical studies, laying the foundation for Virufy’s work today. The project evolved into a nonprofit focused on advancing fast, accessible, and scalable respiratory health screening for communities worldwide.",
     "url": "/en/story"
   },
   {
-    "id": "en-story-privacy-commitment",
+    "id": "en-story-card-1",
     "lang": "en",
-    "title": "Commitment to Privacy",
-    "content": "Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website.",
+    "title": "Global Equity",
+    "content": "We believe health screening should be accessible to everyone, regardless of geography or economic status.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-card-2",
+    "lang": "en",
+    "title": "Scientific Rigor",
+    "content": "Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-card-3",
+    "lang": "en",
+    "title": "Privacy First",
+    "content": "User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-card-4",
+    "lang": "en",
+    "title": "Open Collaboration",
+    "content": "We partner with universities, NGOs, and governments to advance research and maximize global impact.",
     "url": "/en/story"
   },
   {

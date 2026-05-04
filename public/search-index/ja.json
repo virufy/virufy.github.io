@@ -455,24 +455,45 @@
     "url": "/ja/join-us/27"
   },
   {
-    "id": "ja-story-how-it-started",
+    "id": "ja-story-intro",
     "lang": "ja",
-    "title": "どのように始まったか",
-    "content": "パンデミックの際、 Virufyの創設者アミル・カンザダは スマートフォンの普及率の高さに着目し、またコロナウイルスが鼻や喉、肺に影響を及ぼすことを認識していました。 そこで、呼吸音や咳の音を機械学習で分析することでコロナの規則性を検出できる、という仮定を立てました。 ポジティブな影響を与えたいという思いから、名門大学病院で362人の患者を対象にした臨床研究を主導しました。スタンフォード大学のAIを研究する大学院生から始まったVirufyの最初のチームは、世界中の大学から集まったボランティアチームにまで拡大しています。",
+    "title": "Redefining Early Detection Through AI and Sound",
+    "content": "Our AI technology listens for subtle patterns in the sound of your cough — helping screen for potential respiratory illnesses early and non-invasively.",
     "url": "/ja/story"
   },
   {
-    "id": "ja-story-our-mission",
+    "id": "ja-story-section2",
     "lang": "ja",
-    "title": "私たちの使命",
-    "content": "「私たちの存在意義は何か？」「なぜ、これほど多くの人々がVirufyを支援してくださるのか？」そうお考えの方もいらっしゃるかもしれません。 Virufyの使命と目標は、世界の医療に根底からの変革をもたらすことです。 私たちの願いは、新型コロナウイルス、インフルエンザ、RSウイルス、COPD、喘息、肺がんといった呼吸器疾患を、誰もがウェブアプリを使い、わずか数秒で検知できるようにすること。 そして、発展途上国に住む10億人の人々が、自身と大切な人の健康を守る力をその手にすることです。 現在、公開されているアドバイザー一覧は こちら からご覧いただけます。これまでに1,300名を超えるボランティアの方々が、この活動に参加してくださいました。 私たちのミッションにご参加いただき、ありがとうございます。共に、この未来を実現させましょう。",
+    "title": "From Inception to Global Movement",
+    "content": "Virufy was founded in 2020 during the early days of the COVID-19 pandemic, when limited testing access and overwhelmed healthcare systems left millions without timely answers. A group of Stanford students recognized the growing gap between the need for early detection and the tools available to most people around the world. At the same time, emerging research in artificial intelligence suggested that respiratory sounds, such as coughs and breathing patterns, could reveal signs of disease. Knowing that COVID-19 directly affects the nose, throat, and lungs, the team explored whether machine learning could analyze these signals using something nearly everyone already had, a smartphone. What began as a student research effort quickly grew into global volunteer recruitment and clinical studies, laying the foundation for Virufy’s work today. The project evolved into a nonprofit focused on advancing fast, accessible, and scalable respiratory health screening for communities worldwide.",
     "url": "/ja/story"
   },
   {
-    "id": "ja-story-privacy-commitment",
+    "id": "ja-story-card-1",
     "lang": "ja",
-    "title": "プライバシーへの取り組み",
-    "content": "Virufyは、個人情報のプライバシーと保護を真剣に考えています。私たちの法務チームは、ウェブサイトを通じて共有された個人情報を保護するため、詳細なプライバシーポリシーとクッキーポリシーを作成しました。",
+    "title": "Global Equity",
+    "content": "We believe health screening should be accessible to everyone, regardless of geography or economic status.",
+    "url": "/ja/story"
+  },
+  {
+    "id": "ja-story-card-2",
+    "lang": "ja",
+    "title": "Scientific Rigor",
+    "content": "Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.",
+    "url": "/ja/story"
+  },
+  {
+    "id": "ja-story-card-3",
+    "lang": "ja",
+    "title": "Privacy First",
+    "content": "User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.",
+    "url": "/ja/story"
+  },
+  {
+    "id": "ja-story-card-4",
+    "lang": "ja",
+    "title": "Open Collaboration",
+    "content": "We partner with universities, NGOs, and governments to advance research and maximize global impact.",
     "url": "/ja/story"
   },
   {

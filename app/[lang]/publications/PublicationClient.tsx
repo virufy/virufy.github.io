@@ -52,7 +52,7 @@ const PublicationsPage = ({
               <h1 className="text-4xl font-bold text-green-500 sm:text-5xl">
                 {publicationsSection.title}
               </h1>
-              {publicationsSection.texts.map((text, i) => (
+              {publicationsSection.texts.map((text: string, i: number) => (
                 <p key={i} className="text-white">
                   {text}
                 </p>

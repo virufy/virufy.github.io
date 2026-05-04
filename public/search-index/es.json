@@ -476,24 +476,45 @@
     "url": "/es/join-us/27"
   },
   {
-    "id": "es-story-how-it-started",
+    "id": "es-story-intro",
     "lang": "es",
-    "title": "Cómo empezó",
-    "content": "Cuando llegó la pandemia,  el fundador de Virufy, Amil Khanzada , sabía que los teléfonos inteligentes eran omnipresentes y que el COVID afectaba la nariz, la garganta y los pulmones. Planteó la hipótesis de que los sonidos de la respiración y la tos podrían analizarse con aprendizaje automático para detectar patrones de COVID. Con el deseo de generar un impacto positivo, orquestó un estudio clínico con 362 pacientes en un prestigioso hospital universitario. El equipo original de Virufy, que comenzó con estudiantes graduados en IA de Stanford, se amplió a voluntarios de universidades de todo el mundo.",
+    "title": "Redefiniendo la Detección Temprana a Través de la IA y el Sonido",
+    "content": "Nuestra tecnología de inteligencia artificial escucha patrones sutiles en el sonido de la tos, ayudando a detectar posibles enfermedades respiratorias de forma temprana y no invasiva.",
     "url": "/es/story"
   },
   {
-    "id": "es-story-our-mission",
+    "id": "es-story-section2",
     "lang": "es",
-    "title": "Nuestra Misión",
-    "content": "Algunos se preguntarán: \"¿Por qué estamos aquí?\" y \"¿Por qué tanta gente ha apoyado a Virufy?\". La misión y el objetivo de Virufy es transformar la salud mundial. Nuestro objetivo es brindar a todas las personas del mundo acceso a una aplicación web para detectar enfermedades respiratorias como la COVID-19, la gripe, el VSR, la EPOC, el asma y el cáncer de pulmón en segundos. Queremos que mil millones de personas en países en desarrollo tengan la capacidad de proteger su salud y la de sus seres queridos. Aquí encontrará una lista de  asesores  y, hasta la fecha, hemos contado con más de 1300 voluntarios. Gracias por formar parte de esta misión. ¡Hagámoslo realidad!",
+    "title": "De sus Inicios a un Movimiento Global",
+    "content": "Virufy fue fundada en 2020 durante los primeros días de la pandemia de COVID-19, cuando el acceso limitado a pruebas y los sistemas de salud sobrecargados dejaron a millones sin respuestas oportunas. Un grupo de estudiantes de Stanford reconoció la creciente brecha entre la necesidad de detección temprana y las herramientas disponibles para la mayoría de las personas en todo el mundo. Al mismo tiempo, investigaciones emergentes en inteligencia artificial sugerían que los sonidos respiratorios, como la tos y los patrones de respiración, podían revelar signos de enfermedad. Sabiendo que el COVID-19 afecta directamente la nariz, la garganta y los pulmones, el equipo exploró si el aprendizaje automático podía analizar estas señales utilizando algo que casi todos ya tenían: un teléfono inteligente. Lo que comenzó como un esfuerzo de investigación estudiantil creció rápidamente hasta incluir el reclutamiento global de voluntarios y estudios clínicos, sentando las bases del trabajo actual de Virufy. El proyecto evolucionó hasta convertirse en una organización sin fines de lucro enfocada en avanzar en la detección de la salud respiratoria de manera rápida, accesible y escalable para comunidades de todo el mundo.",
     "url": "/es/story"
   },
   {
-    "id": "es-story-privacy-commitment",
+    "id": "es-story-card-1",
     "lang": "es",
-    "title": "Nuestro Compromiso con la Privacidad",
-    "content": "Virufy se toma en serio la privacidad y protección de su información personal. Nuestro equipo legal ha preparado una Política de Privacidad y una Política de Cookies detalladas para proteger la información personal que comparte con nosotros a través del uso de nuestro sitio web.",
+    "title": "Equidad Global",
+    "content": "Creemos que el acceso a la detección de la salud debe estar disponible para todos, sin importar la ubicación geográfica o el nivel económico.",
+    "url": "/es/story"
+  },
+  {
+    "id": "es-story-card-2",
+    "lang": "es",
+    "title": "Rigor Científico",
+    "content": "Cada algoritmo, conjunto de datos y colaboración se basa en investigaciones revisadas por pares y validación clínica.",
+    "url": "/es/story"
+  },
+  {
+    "id": "es-story-card-3",
+    "lang": "es",
+    "title": "Privacidad Primero",
+    "content": "Los datos de los usuarios se anonimizan, se cifran y se gestionan con los más altos estándares de ética en el manejo de datos.",
+    "url": "/es/story"
+  },
+  {
+    "id": "es-story-card-4",
+    "lang": "es",
+    "title": "Colaboración Abierta",
+    "content": "Colaboramos con universidades, ONG y gobiernos para impulsar la investigación y maximizar el impacto global.",
     "url": "/es/story"
   },
   {
