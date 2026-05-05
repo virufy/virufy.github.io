@@ -1,20 +1,20 @@
-import { type Supporters } from '../types/supporters';
+import type { supporters } from '../types/supporters';
 
-const supporters: Supporters = {
-  title: '一緒に世界の健康に革命を起こす – パートナーになりましょう!',
-  buttontext: 'お問い合わせ',
-  contactusform: {
-    title: 'パートナーになる（企業）',
-    content:
-      'ぜひご協力をお願いします。データのご提供後、順次ご連絡差しあげます。',
-    nametitle: 'お名前',
-    emailtitle: 'メールアドレス',
-    texttitle: 'メッセージ',
-    textplaceholder: 'メッセージを入力する',
-    submitButtonText: '送信する',
+const supporters: supporters = {
+  introSection: {
+    tag: 'Global Partnerships',
+    title: ['Our', 'Supporters'],
+    text: 'Virufy collaborates with leading academic institutions, industry innovators, and nonprofit organizations worldwide to advance AI-powered respiratory health screening and make early detection accessible to everyone.',
   },
-  oursupporters: '私たちのサポーター',
-  supportersList: [
+  banner: {
+    title: 'Join Our Mission',
+    buttontext: 'Become a Partner',
+    text: [
+      'Partner with Virufy to advance respiratory health screening technology and make a global impact. Together, we can help detect diseases earlier and save lives worldwide.',
+    ],
+    link: '/join-us',
+  },
+  SupporterImg: [
     {
       img: '../../logos_transparent/h4r.png',
       alt: 'H4R',
@@ -132,5 +132,4 @@ const supporters: Supporters = {
     },
   ],
 };
-
 export default supporters;

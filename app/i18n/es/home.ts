@@ -1,72 +1,63 @@
-import { type HomeType } from '../types/home';
-
-const home: HomeType = {
+import type { homepage } from '../types/home';
+const HomePage: homepage = {
   introSection: {
-    text: 'Bienvenido a Virufy',
-    text2: 'Tu Compañero de Salud Digital',
-    subText: [
-      [
-        {
-          type: 'text',
-          text: 'Presentamos ',
-        },
-        {
-          type: 'span',
-          text: 'Virufy',
-        },
-        {
-          type: 'text',
-          text: ', la aplicación de vanguardia que utiliza algoritmos avanzados de audio e IA generativa para analizar tus patrones de respiración y proporcionar información sobre posibles síntomas de infección.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Nuestro enfoque innovador tiene como objetivo ofrecer una detección previa superior de enfermedades respiratorias para pacientes, médicos y gobiernos, especialmente en países de bajos ingresos.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Aspiramos a ser la organización sin fines de lucro líder en la identificación de enfermedades mediante tecnología, transformando la atención médica global e inspirando a otros a apoyar e invertir en esta misión con nosotros.',
-        },
-      ],
-    ],
-    buttonText: 'Pruebe nuestra demostración',
-    disclaimers: [
-      '*Cualquier dispositivo con un navegador web y micrófono (por ejemplo, iPhone, Android, laptop, iPad).',
-      '*La aplicación aún está en desarrollo, apóyanos contribuyendo con tus sonidos de tos en nuestra aplicación de recolección de datos.',
-    ],
-    mainText2: 'Cómo Funciona',
-    subText2: [
-      {
-        type: 'text',
-        text: 'Con solo una simple tos intencional en el micrófono de tu dispositivo, ',
-      },
-      {
-        type: 'span',
-        text: 'Virufy',
-      },
-      {
-        type: 'text',
-        text: ' aprovecha el poder de la inteligencia artificial para detectar patrones de sonido únicos asociados con enfermedades respiratorias, como COVID-19, neumonía, gripe, RSV, EPOC y asma.',
-      },
-    ],
+    title: 'Detección Respiratoria Impulsada por IA',
+    subtitle: 'Tu Compañero Digital de Salud',
+    text: 'Con una simple tos en tu teléfono, la IA de Virufy detecta patrones de sonido asociados con enfermedades respiratorias como COVID-19, VRS, Neumonía, Asma y EPOC',
+    missionbutton: 'Nuestra Misión',
+    supportbutton: 'Apóyanos',
   },
   section2: {
-    text: 'Tu Salud, Nuestra Prioridad',
-    subtext:
-      'En Virufy, tu bienestar está en el centro de todo lo que hacemos. Priorizamos la privacidad, asegurando que tus datos se mantengan seguros y confidenciales.',
-    title: ['Análisis Instantáneo', 'Anonimato en Casa', 'Interfaz Amigable'],
-    sub: [
-      'Retroalimentación rápida sobre las características de tu tos y el perfil de anomalía basado en el patrón de sonido de tu tos.',
-      'Siéntete seguro sabiendo que tus resultados son solo para ti.',
-      'Diseño intuitivo para facilitar la navegación y una experiencia de usuario fluida.',
+    title: 'Nuestra Misión para Redefinir la Detección Temprana',
+    subtitle:
+      'Uniendo ciencia, empatía e innovación para avanzar en la detección temprana para todos.',
+    text: [
+      'Somos una organización sin fines de lucro dedicada a transformar cómo el mundo detecta y comprende las enfermedades respiratorias, mediante análisis de audio avanzado e IA generativa.',
+      'Nuestra misión es hacer que la detección temprana sea accesible, privada y asequible para todos. Al ofrecer herramientas de detección impulsadas por IA que funcionan en cualquier smartphone o navegador web, empoderamos a pacientes, clínicos y sistemas de salud, especialmente en regiones de bajos ingresos y desatendidas, para actuar más rápido y mejorar los resultados de salud en todo el mundo.',
+      'Virufy cierra la brecha entre la tecnología y la humanidad, convirtiendo momentos cotidianos en oportunidades para obtener información que salva vidas, investigación clínica, asociaciones globales e integridad científica.',
+    ],
+  },
+  section3: {
+    title: 'Tu Salud, Nuestra Prioridad',
+    subtitle:
+      'En Virufy, tu bienestar está en el corazón de todo lo que hacemos. Priorizamos la privacidad, garantizando que tus datos permanezcan seguros y confidenciales.',
+    cardtitle: [
+      'Análisis Instantáneo',
+      'Anonimato en el Hogar',
+      'Interfaz Fácil de Usar',
+    ],
+    cardtext: [
+      'Retroalimentación rápida sobre las características de tu tos y el perfil de anormalidad basado en el patrón de sonido de tu tos.',
+      'Siéntete seguro sabiendo que tus resultados son solo para tus ojos.',
+      'Interfaz fácil de usar Diseño intuitivo para una navegación fácil y una experiencia de usuario sin problemas',
     ],
     disclaimer:
-      '*Virufy no reemplazará a un médico y te recuerda que es tu responsabilidad buscar asesoramiento médico de tu doctor.',
-    buttonText: 'Nuestra Tecnología',
+      '*Virufy no es un sustituto del consejo, diagnóstico o tratamiento médico profesional. Se recomienda a los usuarios consultar con un proveedor de atención médica autorizado para cualquier inquietud o decisión médica.*',
+  },
+  section4: {
+    title: 'Avanzando la Salud Global, Juntos.',
+    subtitle:
+      'Virufy une expertos y voluntarios en todo el mundo para hacer que la detección respiratoria sea accesible para todos.',
+    icons: [
+      '../../images/sevenhome/globe.png',
+      '../../images/sevenhome/hand.png',
+      '../../images/sevenhome/gear.png',
+    ],
+    cardtitle: [
+      'Colaboración Transfronteriza',
+      'Empoderamiento Comunitario',
+      'Innovación Abierta',
+    ],
+    cardtext: [
+      'Trabajando junto a universidades, hospitales y organizaciones sin fines de lucro para avanzar en la investigación de código abierto.',
+      'Cada muestra de tos ayuda a mejorar la precisión de la IA y apoya resultados de salud equitativos.',
+      'Nuestra misión está impulsada por la transparencia y la cooperación global con una mentalidad centrada en las personas.',
+    ],
+  },
+  section5: {
+    title: 'Descubre la Ciencia Detrás de Virufy.',
+    text: 'Aprende cómo la IA y el análisis acústico se unen para detectar patrones respiratorios y avanzar en la investigación de salud global.',
+    button: 'Explorar Nuestra Tecnología',
   },
 };
-
-export default home;
+export default HomePage;

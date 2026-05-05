@@ -1,13 +1,12 @@
 import ExportedImage from 'next-image-export-optimizer';
 import { basePath } from '@/next.config.mjs';
 import { ColorProps } from '../themes';
-import { StaticImageData } from 'next/image';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 type SevenInfoCardProps = {
   title: string;
   text: string;
-  icon?: StaticImageData;
+  icon?: string;
   children?: ReactNode;
 };
 

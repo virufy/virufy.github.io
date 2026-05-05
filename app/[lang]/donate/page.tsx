@@ -1,145 +1,155 @@
-'use client';
-
-import { Globe, Microscope, ShieldCheck } from 'lucide-react';
-import ExportedImage from 'next-image-export-optimizer';
-
 import { type Locale } from '@/i18n-config';
 import { usei18n } from '../../i18n';
-const icons = [Globe, Microscope, ShieldCheck];
+import ExportedImage from 'next-image-export-optimizer';
+import { basePath } from '@/next.config.mjs';
+import Link from 'next/link';
+import ActionBanner from '../components/ActionBanner';
+import { ColorProps, TextSizeProps } from '../themes';
+import SevenInfoCard from '../components/SevenInfoCard';
+import SevenSectionHeader from '../components/SevenSectionHeader';
 
-// Page Component
-const DonatePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
+import {
+  SupportOurMissionIcon,
+  HeroIcon,
+} from '@/public/images/sevenSupportUs';
+
+const unoptimized = process.env.NODE_ENV !== 'production';
+
+const SevenSupportUs = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    donate: { heroSection, donateSection, donationTransparencyBlock },
+    donate: { introSection, impactSection, pillars, donateOptions, banner },
   } = usei18n(lang);
-  const contentWithIcons = donateSection.contentBlocks.map((block, index) => ({
-    ...block,
-    Icon: icons[index],
-  }));
+
   return (
-    <div className="relative">
-      {/* ================= HERO ================= */}
-      <section>
-        <div className="relative h-[400px] w-full overflow-hidden bg-[#010c1b] md:h-[500px]">
-          {/* Hero Image (right aligned, no cropping) */}
-          <div className="absolute inset-0 z-0">
-            <ExportedImage
-              src="/images/donate/Donatebackground.png"
-              alt="Donate background"
-              width={1080}
-              height={720}
-              priority
-              className="h-full w-full object-contain object-right [-webkit-mask-image:linear-gradient(to_left,black_70%,transparent_100%)] [mask-image:linear-gradient(to_left,black_70%,transparent_100%)]"
-            />
-          </div>
-
-          {/* Gradient overlay for text readability */}
-          <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#0b1c2d] via-[#0b1c2d]/80 to-transparent" />
-
-          {/* Hero content */}
-          <div className="relative z-20 mx-auto flex h-full w-full max-w-6xl items-center px-6">
-            <div className="text-left text-white">
-              <h1 className="mb-6 text-3xl font-semibold md:text-4xl">
-                {heroSection.title[0].text}
-              </h1>
-              <p className="text-lg md:text-xl">{heroSection.title[1].text}</p>
-            </div>
-          </div>
+    <main>
+      {/* HERO */}
+      <div className="relative w-full overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0 flex h-[400px] overflow-hidden sm:h-[500px] md:h-[550px] lg:h-[600px]">
+          <ExportedImage
+            src={HeroIcon}
+            alt="background"
+            fill
+            priority
+            className="object-cover"
+            basePath={basePath}
+            unoptimized={unoptimized}
+          />
         </div>
-      </section>
 
-      {/* ================= BODY ================= */}
-      <div className="relative bg-white">
-        {/* Donate Section */}
-        <section className="relative mx-auto max-w-6xl px-6 pb-20 pt-10 md:pb-28 md:pt-16">
-          <div className="space-y-10">
-            <h2 className="text-3xl font-semibold text-green-700 md:mb-6 md:text-left md:text-4xl">
-              {donateSection.title}
-            </h2>
-
-            <p className="mx-auto leading-loose text-green-900 md:px-0 md:text-left md:text-lg">
-              {donateSection.text}
-            </p>
-
-            <div className="bo grid gap-10 md:grid-cols-2 md:items-start">
-              {/* Left column */}
-              <div className="space-y-6 text-black md:text-lg">
-                {contentWithIcons.map(({ title, text, Icon }, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start gap-3 border-b pb-6 last:border-b-0"
-                  >
-                    <div className="space-y-1">
-                      <h3 className="flex items-center gap-2 text-lg font-semibold">
-                        {title}
-                        <Icon className="mt-1 flex h-5 w-5 shrink-0 text-gray-500" />
-                      </h3>
-                      <p>{text}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Right column */}
-              <div className="space-y-8 text-black md:text-lg">
-                <div>
-                  <h3 className="mb-2 text-xl font-semibold">
-                    {donateSection.optionsTitle}
-                  </h3>
-                  <p className="mb-6">{donateSection.optionsText}</p>
-                </div>
-
-                {donateSection.DonationsOptionsBlock.map(
-                  (
-                    option: {
-                      optionTitle: string;
-                      optionText: string;
-                      buttonText: string;
-                    },
-                    index: number
-                  ) => (
-                    <div
-                      key={index}
-                      className="flex flex-col rounded-lg border px-6 py-6 shadow-lg"
-                    >
-                      <h4 className="mb-2 text-lg font-semibold">
-                        {option.optionTitle}
-                      </h4>
-                      <p className="mb-6 flex-grow">{option.optionText}</p>
-
-                      <a
-                        href={
-                          index === 0
-                            ? 'https://www.gofundme.com/f/donate-virufy'
-                            : 'https://www.paypal.com/us/fundraiser/charity/4348461'
-                        }
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block w-fit rounded bg-blue-600 px-5 py-2 text-white transition hover:bg-blue-700"
-                      >
-                        {option.buttonText}
-                      </a>
-                    </div>
-                  )
-                )}
-              </div>
+        {/* Hero content */}
+        <section className="relative mt-2 px-4 pb-12 pt-12 text-center sm:mt-3 sm:px-6 sm:pb-16 sm:pt-16 md:mt-4 md:pb-20 md:pt-20 lg:pb-24 lg:pt-24">
+          <div className="mx-auto flex max-w-3xl flex-col items-center">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-3 pr-4 text-xs text-[#084b8a] sm:mb-8 sm:py-1 sm:pl-4 sm:pr-5 sm:text-sm md:mb-10">
+              <ExportedImage
+                src={SupportOurMissionIcon}
+                alt="globe icon"
+                height={17}
+                width={17}
+                className="h-3.5 w-3.5 sm:h-4 sm:w-4"
+                basePath={basePath}
+                priority
+                unoptimized={unoptimized}
+              />
+              &nbsp;{introSection.tag}
             </div>
-          </div>
-          <div className="mt-16 border-t pt-10 text-black">
-            <h3 className="mb-4 py-2 text-3xl font-semibold text-green-700 md:text-left">
-              {donationTransparencyBlock.title}{' '}
-            </h3>
-            <p className="mx-auto leading-loose text-green-900 md:text-left md:text-lg">
-              {donationTransparencyBlock.text}
+
+            <h1 className="font-semibold text-gray-700">
+              {introSection.title.map((t, i) => (
+                <span
+                  key={i}
+                  className={`block text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl ${
+                    i === introSection.title.length - 1
+                      ? 'bg-gradient-to-b from-blue-500 to-emerald-500 bg-clip-text text-transparent'
+                      : ''
+                  }`}
+                >
+                  {t}
+                </span>
+              ))}
+            </h1>
+
+            <p className="mt-4 max-w-[800px] text-sm text-gray-600 sm:mt-5 sm:text-base md:mt-6 md:text-lg">
+              {introSection.text}
             </p>
+
+            <Link
+              href="/"
+              className={`mt-6 inline-block whitespace-nowrap rounded-full px-4 py-2 text-sm sm:mt-7 sm:px-5 sm:py-2.5 sm:text-base md:mt-8 md:px-6 md:py-3 ${TextSizeProps.p} ${ColorProps.bgGradientReverse} text-white`}
+            >
+              {introSection.buttonText}
+            </Link>
           </div>
         </section>
 
-        {/* Bottom fade */}
-        <div className="h-[98px] bg-gradient-to-b from-transparent to-black" />
+        {/* CONTENT SECTION */}
+        <div className="w-full bg-[#F3F8FF]">
+          <section className="relative mx-auto max-w-6xl px-6 pb-28 pt-10 md:pb-28 md:pt-32">
+            <div className="mx-auto max-w-[1000px]">
+              <SevenSectionHeader
+                title={impactSection.title}
+                subtitle={impactSection.description}
+              />
+
+              <div className="my-16 grid gap-8 md:grid-cols-3">
+                {pillars.map((pillar, idx) => (
+                  <SevenInfoCard
+                    key={idx}
+                    title={pillar.title}
+                    text={pillar.description}
+                    icon={pillar.icon}
+                  />
+                ))}
+              </div>
+
+              <SevenSectionHeader
+                title={donateOptions.title}
+                subtitle={donateOptions.subtitle}
+              />
+
+              <div className="flex flex-col gap-8 md:flex-row md:justify-center">
+                {donateOptions.options.map((option, idx) => (
+                  <SevenInfoCard
+                    key={idx}
+                    title={option.name}
+                    text={option.description}
+                  >
+                    <div className="flex items-center gap-3">
+                      <Link
+                        href={option.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`inline-flex items-center gap-2 rounded-full px-6 py-3 ${TextSizeProps.p} ${ColorProps.bgGradientReverse} text-white`}
+                      >
+                        {option.buttonText}
+                        {option.icon && (
+                          <ExportedImage
+                            src={option.icon}
+                            alt=""
+                            width={20}
+                            height={20}
+                            className="brightness-0 invert"
+                            basePath={basePath}
+                            priority
+                            unoptimized={unoptimized}
+                          />
+                        )}
+                      </Link>
+                    </div>
+                  </SevenInfoCard>
+                ))}
+              </div>
+            </div>
+          </section>
+        </div>
+
+        {/* Banner */}
+        <section>
+          <ActionBanner title={banner.title} text={banner.text[0]} />
+        </section>
       </div>
-    </div>
+    </main>
   );
 };
 
-export default DonatePage;
+export default SevenSupportUs;
