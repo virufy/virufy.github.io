@@ -324,7 +324,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
 
       {/* Mobile menu */}
       {navbarOpen && (
-        <div className="mt-3 max-h-[calc(100vh-80px)] overflow-y-auto">
+        <div className="mt-3 max-h-[calc(100dvh-80px)] overflow-y-auto">
           <ul className="mt-3 flex flex-col gap-3 text-lg">
             <li>
               <Link
