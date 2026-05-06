@@ -12,7 +12,7 @@ const ai: Ai = {
         text: 'Virufy',
       },
     ],
-    text: 'Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence.',
+    text: 'Artificial Intelligence (AI) can identify subtle differences in cough and breathing sounds associated with respiratory conditions.',
     url: '/publications',
     linkText: 'Our Research',
   },
@@ -21,12 +21,12 @@ const ai: Ai = {
     aiCards: [
       {
         title: '01',
-        text: 'Our groundbreaking app employs cutting-edge AI technology to analyze your breathing patterns using deep learning algorithms and audio signal processing techniques.',
+        text: 'Our groundbreaking app employs cutting-edge AI technology to analyze cough and breathing sounds using deep learning algorithms and audio signal processing techniques.',
         style: 'tracking-widest text-[2.5rem] sm:text-6xl',
       },
       {
         title: '02',
-        text: 'The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.',
+        text: 'The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing to Identify signals associated with respiratory conditions.',
         style: 'text-[2.5rem] sm:text-6xl',
       },
     ],

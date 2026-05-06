@@ -16,13 +16,13 @@ const home: HomeType = {
         },
         {
           type: 'text',
-          text: ', the cutting-edge app that utilizes audio and generative AI to analyze your breathing patterns and provide insights into potential infection symptoms.',
+          text: ', the cutting-edge app that utilizes audio and generative AI to analyze your breathing sounds and identify patterns associated with infection symptoms.',
         },
       ],
       [
         {
           type: 'text',
-          text: ' Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
+          text: ' Our innovative approach aims to offer respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
         },
       ],
       [
@@ -41,7 +41,7 @@ const home: HomeType = {
     subText2: [
       {
         type: 'text',
-        text: "With just a simple intentional cough into your device's microphone, ",
+        text: "With just a simple guided cough into your device's microphone, ",
       },
       {
         type: 'span',
@@ -49,7 +49,7 @@ const home: HomeType = {
       },
       {
         type: 'text',
-        text: ' harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, pneumonia, flu, RSV, COPD, and asthma.',
+        text: ' harnesses the power of artificial intelligence that screens for sound patterns associated with respiratory diseases, such as COVID-19, pneumonia, flu, RSV, COPD, and asthma.',
       },
     ],
   },

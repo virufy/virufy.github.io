@@ -5,28 +5,28 @@ const ai: Ai = {
     title: [
       {
         type: 'text',
-        text: 'La Ciencia detrás de ',
+        text: 'La ciencia detrás de ',
       },
       {
         type: 'span',
         text: 'Virufy',
       },
     ],
-    text: 'La Inteligencia Artificial (IA) es capaz de detectar diferencias mínimas en los patrones vocales para detectar la presencia de enfermedades.',
+    text: 'La inteligencia artificial (IA) puede identificar diferencias sutiles en la tos y los sonidos de la respiración asociados con condiciones respiratorias.',
     url: '/publications',
-    linkText: 'Vea nuestra Investigación',
+    linkText: 'Nuestra investigación',
   },
   aiSection: {
-    title: '¿Cómo funciona la Inteligencia Artificial (IA)?',
+    title: '¿Cómo funciona la IA?',
     aiCards: [
       {
         title: '01',
-        text: 'Nuestra revolucionaria aplicación CoughCheck emplea tecnología de inteligencia artificial de vanguardia. Con solo toser en su teléfono, nuestra aplicación captura y analiza distintos patrones de tos utilizando sofisticados algoritmos de aprendizaje automático y redes neuronales.',
-        style: 'tracking-widest',
+        text: 'Nuestra innovadora aplicación utiliza tecnología de inteligencia artificial de vanguardia para analizar sonidos de tos y respiración mediante algoritmos de aprendizaje profundo y técnicas de procesamiento de señales de audio.',
+        style: 'tracking-widest text-[2.5rem] sm:text-6xl',
       },
       {
         title: '02',
-        text: 'El algoritmo examina varios elementos de la tos, como la duración, la frecuencia y la intensidad. Aprovechando una base de datos completa, AI compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite la detección temprana de posibles problemas de salud.',
+        text: 'El algoritmo examina diversos elementos de la tos, como la duración, la frecuencia y el tono. Aprovechando una base de datos integral, la IA compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite identificar señales asociadas con condiciones respiratorias.',
         style: 'text-[2.5rem] sm:text-6xl',
       },
     ],

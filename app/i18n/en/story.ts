@@ -16,7 +16,7 @@ const story: Story = {
         },
         {
           type: 'text',
-          text: ' knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs.',
+          text: ' knew smartphones were omnipresent and that COVID affects the respiratory system.',
         },
       ],
       [
@@ -51,34 +51,29 @@ const story: Story = {
       [
         {
           type: 'text',
-          text: 'We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds.',
+          text: 'We aim to provide people around the world with access to a web-based tool that can help screen for potential respiratory conditions such as COVID-19, flu, RSV, COPD, asthma, and other lung-related conditions within seconds.',
         },
       ],
       [
         {
           type: 'text',
-          text: 'We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones.',
+          text: 'Our goal is to empower individuals, particularly in developing regions, with tools that support greater awareness of their health and help them make informed decisions for themselves and their loved ones.',
         },
       ],
       [
         {
           type: 'text',
-          text: 'Here is a listing of disclosed ',
-        },
-        {
-          type: 'link',
-          url: '/advisors',
-          text: 'advisors',
+          text: 'Please note that this tool is not intended to provide medical diagnoses and should not replace consultation with a qualified healthcare professional.',
         },
         {
           type: 'text',
-          text: ' and we have had 1,300+ volunteers to date.',
+          text: 'We are grateful for the support of our advisors and the contributions of over 1,300 volunteers to date.',
         },
       ],
       [
         {
           type: 'text',
-          text: "Thank you for being part of the mission and let's make it happen.",
+          text: 'Thank you for being part of this mission.',
         },
       ],
     ],
@@ -86,7 +81,7 @@ const story: Story = {
   privacySection: {
     title: 'Commitment to Privacy',
     texts: [
-      'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website.',
+      'Virufy takes your privacy seriously. Our legal team has developed detailed Privacy and Cookie Policies to protect any personal information you share while using our website.',
     ],
   },
 };
