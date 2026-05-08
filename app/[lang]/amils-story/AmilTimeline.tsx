@@ -40,12 +40,15 @@ const AmilTimeline = ({ cards }: { cards: Card[] }) => {
             />
           }
         >
-          <ExportedImage
-            className="h-64 rounded-t-[20px] object-cover object-top"
-            src={card.image}
-            alt={`Milestone image for ${card.title}`}
-            basePath={basePath}
-          />
+          <div className="relative h-64 w-full">
+            <ExportedImage
+              fill
+              className="rounded-t-[20px] object-cover object-top"
+              src={card.image}
+              alt={`Milestone image for ${card.title}`}
+              basePath={basePath}
+            />
+          </div>
           <h3 className="mx-5 mt-5 text-lg font-bold">{card.title}</h3>
           <p className="!m-5 !mx-5 !font-normal">{card.text}</p>
         </VerticalTimelineElement>

@@ -37,6 +37,7 @@ export default function AmilsStoryPage({
         <div className="relative bg-white">
           <ExportedImage
             className="absolute h-full w-full opacity-20"
+            fill
             src={BgHeader}
             alt="world map background image"
             priority
@@ -49,6 +50,7 @@ export default function AmilsStoryPage({
               <div className="mr-10 hidden w-1/3 items-center md:flex">
                 <ExportedImage
                   className="aspect-square w-full max-w-xs rounded-2xl object-cover"
+                  fill
                   src={AmilHeadshot}
                   alt="Amil's Headshot"
                   basePath={basePath}
@@ -126,6 +128,8 @@ export default function AmilsStoryPage({
               >
                 {open ? 'See Less' : 'Read More'}
                 <ExportedImage
+                  height={10}
+                  width={10}
                   src={ArrowDownIcon}
                   alt="arrow"
                   basePath={basePath}
@@ -182,6 +186,7 @@ export default function AmilsStoryPage({
             <div className="h-64 overflow-hidden rounded-2xl md:h-auto">
               <ExportedImage
                 className="h-full w-full object-cover"
+                fill
                 src={oywSection.image}
                 alt="Global Network"
                 basePath={basePath}
