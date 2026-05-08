@@ -11,7 +11,7 @@ const SevenSupporters = ({
   params: { lang: Locale };
 }) => {
   const {
-    sevensupporters: { introSection, banner, SupporterImg },
+    supporters: { introSection, banner, SupporterImg },
   } = usei18n(lang);
   return (
     <main className="">

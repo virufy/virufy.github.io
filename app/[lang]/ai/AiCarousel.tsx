@@ -39,6 +39,7 @@ const AiCarousel = ({ slides }: Props) => {
                 {/* Image */}
                 <div className="relative overflow-hidden rounded-2xl border border-[#bcc7d4]">
                   <ExportedImage
+                    fill
                     className="aspect-[5/2] w-full object-cover object-[50%_20%]"
                     src={slide.image}
                     alt={slide.title}
@@ -131,6 +132,7 @@ const AiCarousel = ({ slides }: Props) => {
                 {/* Image */}
                 <div className="relative flex-1">
                   <ExportedImage
+                    fill
                     className="h-full w-full object-cover"
                     src={slide.image}
                     alt={slide.title}

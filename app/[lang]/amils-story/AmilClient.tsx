@@ -17,7 +17,7 @@ export default function AmilsStoryPage({
   params: { lang: Locale };
 }) {
   const {
-    sevenamilsStory: {
+    amilsStory: {
       heroSection,
       storySection,
       milestoneSection,

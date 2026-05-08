@@ -1,48 +1,53 @@
 import ExportedImage from 'next-image-export-optimizer';
 import { basePath } from '@/next.config.mjs';
 import WhiteCircleIcon from '@/public/icons/icon-amil-circle-white.png';
-import { type Card } from '@/app/i18n/types/sevenamilsStory';
+import { type Card } from '@/app/i18n/types/amilsStory';
 
 // Animated Timeline
 // https://www.npmjs.com/package/react-vertical-timeline-component
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 const AmilTimeline = ({ cards }: { cards: Card[] }) => {
   const timelineIconStyle = {
-    'background': 'linear-gradient(to bottom, #0E72C9, #2A9D8F)',
-    'boxShadow': 'none',
-    'display': "flex",
-    'alignItems': "center",
-    'justifyContent': "center",
+    background: 'linear-gradient(to bottom, #0E72C9, #2A9D8F)',
+    boxShadow: 'none',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   };
 
   return (
     <VerticalTimeline
       lineColor={'linear-gradient(to bottom, #0E72C9, #2A9D8F)'}
     >
-      {cards.map((card : Card, index) => (
+      {cards.map((card: Card, index) => (
         <VerticalTimelineElement
           key={index}
           date={card.date}
-          contentArrowStyle={{'display': 'none'}}
+          contentArrowStyle={{ display: 'none' }}
           iconStyle={timelineIconStyle}
-          icon={<ExportedImage
-            src={WhiteCircleIcon}
-            alt="icon"
-            width={12}
-            height={12}
-            basePath={basePath}
-          />}
+          icon={
+            <ExportedImage
+              src={WhiteCircleIcon}
+              alt="icon"
+              width={12}
+              height={12}
+              basePath={basePath}
+            />
+          }
         >
           <ExportedImage
-            className="h-64 object-cover object-top rounded-t-[20px]"
+            className="h-64 rounded-t-[20px] object-cover object-top"
             src={card.image}
             alt={`Milestone image for ${card.title}`}
             basePath={basePath}
           />
           <h3 className="mx-5 mt-5 text-lg font-bold">{card.title}</h3>
-          <p className="!mx-5 !m-5 !font-normal">{card.text}</p>
+          <p className="!m-5 !mx-5 !font-normal">{card.text}</p>
         </VerticalTimelineElement>
       ))}
       <style>{`

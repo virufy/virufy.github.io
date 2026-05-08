@@ -2,22 +2,43 @@
   {
     "id": "es-ai-hero",
     "lang": "es",
-    "title": "La Ciencia detrás de  Virufy",
-    "content": "La Inteligencia Artificial (IA) es capaz de detectar diferencias mínimas en los patrones vocales para detectar la presencia de enfermedades.",
+    "title": "La  Ciencia  Detrás de Virufy",
+    "content": "Nuestra tecnología de inteligencia artificial detecta patrones sutiles en el sonido de la tos, lo que ayuda a detectar posibles enfermedades respiratorias de manera temprana y no invasiva.",
     "url": "/es/ai"
   },
   {
     "id": "es-ai-01",
     "lang": "es",
-    "title": "¿Cómo funciona la Inteligencia Artificial (IA)? - 01",
-    "content": "Nuestra revolucionaria aplicación CoughCheck emplea tecnología de inteligencia artificial de vanguardia. Con solo toser en su teléfono, nuestra aplicación captura y analiza distintos patrones de tos utilizando sofisticados algoritmos de aprendizaje automático y redes neuronales.",
+    "title": "Cómo aprende la IA de Virufy - Captura de sonido",
+    "content": "Los usuarios registran muestras de tos breves y anónimas a través de la aplicación Virufy.",
     "url": "/es/ai"
   },
   {
     "id": "es-ai-02",
     "lang": "es",
-    "title": "¿Cómo funciona la Inteligencia Artificial (IA)? - 02",
-    "content": "El algoritmo examina varios elementos de la tos, como la duración, la frecuencia y la intensidad. Aprovechando una base de datos completa, AI compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite la detección temprana de posibles problemas de salud.",
+    "title": "Cómo aprende la IA de Virufy - Procesamiento acústico",
+    "content": "Cada tos se convierte en un mapa de sonido visual o espectrograma.",
+    "url": "/es/ai"
+  },
+  {
+    "id": "es-ai-03",
+    "lang": "es",
+    "title": "Cómo aprende la IA de Virufy - Extracción de características",
+    "content": "La IA identifica patrones sutiles y biomarcadores acústicos en los datos.",
+    "url": "/es/ai"
+  },
+  {
+    "id": "es-ai-04",
+    "lang": "es",
+    "title": "Cómo aprende la IA de Virufy - Entrenamiento modelo",
+    "content": "Los algoritmos aprenden de conjuntos de datos globales para mejorar la precisión y la equidad.",
+    "url": "/es/ai"
+  },
+  {
+    "id": "es-ai-05",
+    "lang": "es",
+    "title": "Cómo aprende la IA de Virufy - Validación y conocimiento",
+    "content": "Los resultados de los usuarios se prueban para garantizar una mejora y eficacia continuas.",
     "url": "/es/ai"
   },
   {

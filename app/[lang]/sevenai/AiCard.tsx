@@ -1,19 +1,21 @@
 import ExportedImage from 'next-image-export-optimizer';
 import { basePath } from '@/next.config.mjs';
 import { ColorProps } from '../themes';
-import { type AiCard } from '@/app/i18n/types/sevenai';
+import { type AiCard } from '@/app/i18n/types/ai';
 
-const AiCard = ({ title, text, icon } : AiCard) => {
+const AiCard = ({ title, text, icon }: AiCard) => {
   return (
-    <div className={`flex border border-[#bcc7d4] rounded-2xl p-5 shadow-xl w-full h-full my-2 md:my-0`}>
+    <div
+      className={`my-2 flex h-full w-full rounded-2xl border border-[#bcc7d4] p-5 shadow-xl md:my-0`}
+    >
       <ExportedImage
-          className="self-start mr-4"
-          src={icon}
-          alt={title + " icon"}
-          basePath={basePath}
-        />
+        className="mr-4 self-start"
+        src={icon}
+        alt={title + ' icon'}
+        basePath={basePath}
+      />
       <div>
-        <h2 className="text-xl text-black mb-2 font-medium">{title}</h2>
+        <h2 className="mb-2 text-xl font-medium text-black">{title}</h2>
         <p className={`${ColorProps.textGray}`}>{text}</p>
       </div>
     </div>

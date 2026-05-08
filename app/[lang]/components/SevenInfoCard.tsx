@@ -18,6 +18,8 @@ const SevenInfoCard = ({ title, text, icon, children }: SevenInfoCardProps) => {
         {icon && (
           <ExportedImage
             className="h-10 w-10 flex-shrink-0 self-start"
+            width={10}
+            height={10}
             src={icon}
             alt={title + ' icon'}
             basePath={basePath}

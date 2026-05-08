@@ -20,9 +20,6 @@ import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
 import blogPosts from './blogPosts';
-import sevenai from './sevenai';
-import sevensupporters from './sevensupporters';
-import sevenamilsStory from './sevenamilsStory';
 
 const enMetadata: I18nData = {
   ai,
@@ -46,9 +43,6 @@ const enMetadata: I18nData = {
   teamLeads,
   donate,
   blogPosts,
-  sevenai,
-  sevensupporters,
-  sevenamilsStory,
 };
 
 export default enMetadata;

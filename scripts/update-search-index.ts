@@ -18,7 +18,7 @@ import type { JobDetail } from '@/app/i18n/types/jobDetails';
 import type { TeamLeadCard } from '@/app/i18n/types/teamLeads';
 import type { People } from '@/app/i18n/types/people';
 import type { NewsCard } from '@/app/i18n/types/news';
-import type { Card } from '@/app/i18n/types/sevenamilsStory';
+import type { Card } from '@/app/i18n/types/amilsStory';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -93,34 +93,37 @@ async function loadFile(lang: string, file: string) {
  */
 async function parseAi(lang: string) {
   const content = await loadFile(lang, 'ai');
-  const hero = content.heroSection;
-  const ai = content.aiSection;
+  if (!content) return;
 
-  // heroSection
+  const { heroSection, aiSection } = content;
+  const url = `/${lang}/ai`;
+
+  const heroTitle = heroSection.title
+    .map(({ text }: { text: string }) => text)
+    .join(' ');
+
+  // Hero section
   data.push({
     id: `${lang}-ai-hero`,
-    lang: lang,
-    title: (hero.title as { type: string; text: string }[])
-      .map((item) => item.text)
-      .join(' '),
-    content: hero.text,
-    url: `/${lang}/ai`,
+    lang,
+    title: heroTitle,
+    content: heroSection.text,
+    url,
   });
 
-  // All aiCards
-  if (ai?.aiCards?.length) {
-    ai.aiCards.forEach(
-      (card: { title: string; text: string }, index: number) => {
-        data.push({
-          id: `${lang}-ai-0${index + 1}`,
-          lang: lang,
-          title: `${ai!.title} - ${card.title}`,
-          content: card.text,
-          url: `/${lang}/ai`,
-        });
-      }
-    );
-  }
+  // AI cards
+  const aiCards =
+    aiSection?.aiCards?.map(
+      (card: { title: string; text: string }, index: number) => ({
+        id: `${lang}-ai-${String(index + 1).padStart(2, '0')}`,
+        lang,
+        title: `${aiSection.title} - ${card.title}`,
+        content: card.text,
+        url,
+      })
+    ) ?? [];
+
+  data.push(...aiCards);
 }
 
 async function parsePublications(lang: string) {

@@ -2,22 +2,43 @@
   {
     "id": "en-ai-hero",
     "lang": "en",
-    "title": "The science behind  Virufy",
-    "content": "Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence.",
+    "title": "The  Science  Behind Virufy",
+    "content": "Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.",
     "url": "/en/ai"
   },
   {
     "id": "en-ai-01",
     "lang": "en",
-    "title": "How does AI work? - 01",
-    "content": "Our groundbreaking app employs cutting-edge AI technology to analyze your breathing patterns using deep learning algorithms and audio signal processing techniques.",
+    "title": "How Virufy's AI Learns - Sound Capture",
+    "content": "Users record short, anonymized cough samples through the Virufy app.",
     "url": "/en/ai"
   },
   {
     "id": "en-ai-02",
     "lang": "en",
-    "title": "How does AI work? - 02",
-    "content": "The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.",
+    "title": "How Virufy's AI Learns - Acoustic Processing",
+    "content": "Each cough is converted into a visual sound map, or spectrogram.",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-03",
+    "lang": "en",
+    "title": "How Virufy's AI Learns - Feature Extraction",
+    "content": "AI identifies subtle patterns and acoustic biomarkers in the data.",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-04",
+    "lang": "en",
+    "title": "How Virufy's AI Learns - Model Training",
+    "content": "Algorithms learn from global datasets to improve accuracy and fairness.",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-05",
+    "lang": "en",
+    "title": "How Virufy's AI Learns - Validation & Insight",
+    "content": "Users results are tested to ensure ongoing improvement and effectiveness.",
     "url": "/en/ai"
   },
   {

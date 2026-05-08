@@ -19,10 +19,6 @@ import { type supporters } from './supporters';
 import { type TeamLeadsType } from './teamLeads';
 import { type Donate } from './donate';
 import { type Post } from './BlogPosts';
-import { type sevenAi } from './sevenai';
-import { type sevensupporters } from './sevensupporters';
-
-import { type sevenAmilsStory } from './sevenamilsStory';
 
 export interface I18nData {
   ai: Ai;
@@ -46,7 +42,4 @@ export interface I18nData {
   teamLeads: TeamLeadsType;
   donate: Donate;
   blogPosts: Record<string, Post>;
-  sevenai: sevenAi;
-  sevensupporters: sevensupporters;
-  sevenamilsStory: sevenAmilsStory;
 }

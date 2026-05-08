@@ -1,6 +1,6 @@
-import type { sevensupporters } from '../types/sevensupporters';
+import type { supporters } from '../types/supporters';
 
-const sevensupporters: sevensupporters = {
+const supporters: supporters = {
   introSection: {
     tag: 'Alianzas Globales',
     title: ['Nuestros', 'Patrocinadores'],
@@ -132,4 +132,4 @@ const sevensupporters: sevensupporters = {
     },
   ],
 };
-export default sevensupporters;
+export default supporters;
