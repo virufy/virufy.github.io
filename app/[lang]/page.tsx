@@ -1,243 +1,293 @@
+'use client';
 import { type Locale } from '@/i18n-config';
-import { basePath } from '@/next.config.mjs';
-import {
-  BgHeader,
-  BgHeaderLong,
-  VirufyMobilePhone,
-} from '@/public/images/home';
-import ExportedImage from 'next-image-export-optimizer';
-import Link from 'next/link';
-import { Fragment } from 'react';
 import { usei18n } from '../i18n';
-import Title from './components/Title';
-export const metadata = {
-  title: 'Virufy | AI-Powered Respiratory Health Screening',
-  description:
-    'Virufy leverages advanced audio and AI technology to analyze coughs and breathing patterns, providing insights for early detection of respiratory diseases while prioritizing user privacy.',
-};
+import ExportedImage from 'next-image-export-optimizer';
+import { useState, useRef } from 'react';
 
-const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
+interface ContainerProps {
+  children: React.ReactNode;
+  transparent?: boolean; // optional prop
+}
+
+const Container: React.FC<ContainerProps> = ({
+  children,
+  transparent = false,
+}) => (
+  <div
+    className={`mx-auto w-full px-2 md:max-w-7xl md:px-10 lg:px-20 ${transparent ? 'bg-transparent' : 'bg-white'} `}
+  >
+    {children}
+  </div>
+);
+const titlestyle =
+  'mb-6 w-full text-4xl font-semibold text-[#1B6E64] md:text-4xl';
+const subtitlestyle = 'mb-6 w-full text-xl font-bold text-gray-700 md:text-3xl';
+const textstyle =
+  'space-y-6 pb-6 text-lg text-gray-600 md:text-2xl lg:max-w-2xl';
+interface CardProps {
+  title: string;
+  text: string;
+  icon?: string;
+  first?: boolean;
+  last?: boolean;
+}
+
+const Card: React.FC<CardProps> = ({ title, text, icon, first, last }) => (
+  <div
+    className={`flex w-full flex-row items-center gap-4 rounded rounded-xl border border-2 border-blue-300 bg-white p-4 shadow-sm md:rounded-none md:border-0 md:shadow-none ${first ? 'md:border-t-4 md:border-blue-300' : ''} ${last ? 'md:border-b-4 md:border-blue-300' : 'md:border-b-4 md:border-blue-300'} md:gap-6 md:px-6 md:py-4`}
+  >
+    {/* Icon */}
+    {icon && (
+      <div className="flex flex-shrink-0 items-center justify-center">
+        <ExportedImage src={icon} alt="" width={72} height={72} />
+      </div>
+    )}
+
+    {/* Text */}
+    <div className="flex-1">
+      <h3 className="mb-2 text-sm font-semibold text-gray-800 md:text-2xl">
+        {title}
+      </h3>
+      <p className={textstyle}>{text}</p>
+    </div>
+  </div>
+);
+
+const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    home: { introSection, section2 },
+    home: { introSection, section2, section3, section4, section5 },
   } = usei18n(lang);
 
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
   return (
-    <div className="relative flex flex-col items-center justify-center">
-      <div className="w-full overflow-hidden">
-        <div className="relative flex justify-center overflow-hidden">
-          {/* Desktop Background Image */}
-          <div className="hidden w-screen brightness-100 contrast-100 md:block">
-            <ExportedImage
-              className="w-screen object-cover"
-              src={BgHeader}
-              alt=""
-              priority
-              basePath={basePath}
-            />
-            {/* Blur transition (How It Works -> YHOP) */}
-            <div className="absolute bottom-0 hidden h-[98px] w-full bg-gradient-to-b from-transparent to-[#011633] md:block"></div>
-          </div>
-
-          {/* Mobile Background Image */}
-          <div className="block w-full brightness-100 contrast-100 md:hidden">
-            <ExportedImage
-              className="h-full w-screen object-cover"
-              src={BgHeaderLong}
-              alt=""
-              priority
-              basePath={basePath}
-            />
-          </div>
-          {/* Welcome text */}
-          <div className="absolute inset-0 flex items-start justify-center p-4 text-center text-white sm:text-left md:p-8 lg:p-12">
-            <div className="mx-auto flex max-w-screen-xl flex-col">
-              <div className="mt-0 sm:mt-0 md:mt-32 lg:mt-44">
-                <div className="ml-0 mt-20 flex flex-col text-center sm:mx-0 lg:mx-20 lg:ml-24 xl:mt-24">
-                  <div className="hidden md:block">
-                    {/* Welcome to Virufy */}
-                    <Title
-                      Text={introSection.text}
-                      H=""
-                      TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#ffffff] via-[#ffffff] to-[#1f3b70] text-base leading-9 sm:text-base sm:leading-9 md:text-3xl md:leading-10 lg:text-4xl lg:leading-11 xl:text-5xl xl:leading-[3.5rem]"
-                    />
-                  </div>
-                  <div className="mt-[16.2rem] flex flex-col sm:mt-[19rem] sm:text-center md:mt-0 lg:mt-12">
-                    {/* Your Digital Health Companion */}
-                    <Title
-                      Text={introSection.text2}
-                      H=""
-                      TitleClassProps="font-black md:font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#36d779] via-[#36d779] to-[#15495e] text-base text-lg sm:leading-9 md:text-3xl md:leading-10 lg:text-4xl lg:leading-11 xl:text-5xl xl:leading-[3.5rem]"
-                      style={{
-                        WebkitTextStroke: '0.5px #183360',
-                      }}
-                    />
-                  </div>
-                </div>
-
-                {/* Introducing Virufy section */}
-                <div className="mt-2 flex flex-col items-start space-y-2 md:mt-56 md:space-y-8 lg:mt-80 xl:mt-[40rem]">
-                  <div className="w-full max-w-md md:max-w-3xl xl:max-w-5xl">
-                    {introSection.subText.map((paragraph, index) => (
-                      <p
-                        key={index}
-                        className="mb-3 text-center text-[11px] leading-[1.1rem] sm:text-xs md:mb-6 md:text-lg md:font-bold md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-10"
-                      >
-                        {paragraph.map((item, i) =>
-                          item.type === 'text' ? (
-                            <Fragment key={i}>{item.text}</Fragment>
-                          ) : (
-                            <span key={i} className="text-green-500">
-                              {item.text}
-                            </span>
-                          )
-                        )}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Disclaimers */}
-                <div className="flex flex-col items-start sm:ml-10 md:ml-0 md:mt-0 lg:mt-1">
-                  <div className="w-full max-w-screen-lg">
-                    {introSection.disclaimers.map((disclaimer, i) => (
-                      <p
-                        key={i}
-                        className="xl:text-md text-[0.4rem] leading-[0.6rem] text-gray-400 md:text-sm md:leading-5 lg:ml-32 lg:text-base lg:leading-6 xl:leading-7"
-                      >
-                        {disclaimer}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* How it works section */}
-              <div className="absolute bottom-16 ml-28 mt-4 flex max-w-[50rem] flex-col items-center px-8 sm:bottom-20 sm:ml-32 sm:mt-8 sm:space-y-4 md:bottom-32 md:ml-48 md:space-y-8 lg:ml-72 lg:mr-20 lg:mt-16 xl:bottom-60 xl:mt-60">
-                <p className="text-[1rem] font-bold leading-8 sm:text-[1.2rem] sm:leading-6 md:text-2xl md:font-normal md:leading-8 lg:text-[1.75rem] lg:leading-9 xl:text-[2rem] xl:leading-10">
-                  {introSection.mainText2}
-                </p>
-                <p className="text-center text-[0.7rem] font-normal leading-[1rem] sm:text-[0.8rem] sm:leading-[1.2rem] md:text-lg md:font-bold md:leading-7 lg:text-xl lg:leading-8 xl:text-2xl xl:leading-[3rem]">
-                  {introSection.subText2.map((text, i) =>
-                    text.type === 'text' ? (
-                      <Fragment key={i}>{text.text}</Fragment>
-                    ) : (
-                      <span key={i} className="text-green-500">
-                        {text.text}
-                      </span>
-                    )
-                  )}
-                </p>
-                {/* Share your cough button */}
-                <div className="mt-4 flex w-full justify-center px-0 md:mt-2">
-                  <Link href={`/demo`}>
-                    <button
-                      className="medium primary px-2 py-2 text-xs text-white md:px-16 md:py-4 md:text-base md:text-xl"
-                      style={{
-                        borderRadius: '50px',
-                        background:
-                          'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
-                        border: '2px solid #3fcf94',
-                      }}
-                    >
-                      {introSection.buttonText}
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+    <main className="">
+      {/* HERO */}
+      <div className="relative w-full items-center overflow-hidden lg:px-20 lg:px-5">
+        <div className="absolute inset-0 flex">
+          <ExportedImage
+            src="/images/sevenhome/HeroBG.png"
+            alt="Your health background"
+            fill
+            className="object-contain object-cover object-center"
+          />
         </div>
-        {/* Blur here */}
-      </div>
-      {/* Bottom section of home page */}
-      <div className="flex min-h-[1050px] w-full flex-col items-center justify-center bg-[#011633] pb-8 xl:min-h-[1273px]">
-        <div className="flex w-full items-center justify-center px-4 md:px-20 md:pt-10 xl:px-40">
-          <div className="flex w-full flex-col items-center rounded-3xl bg-[#07193d] pb-8">
-            <div className="mx-auto w-full max-w-screen-xl">
-              {/* Your health title and text */}
-              <div className="mt-6 flex w-full flex-col items-center px-4 text-center lg:mt-16">
-                {/* Your Health, Our Priority */}
-                <Title
-                  Text={section2.text}
-                  H=""
-                  TitleClassProps="text-transparent bg-clip-text bg-gradient-to-b from-[#36d779] via-[#36d779] to-[#15495e] text-xl font-black md:font-black sm:leading-9 md:text-4xl md:leading-10 lg:leading-[2.75rem] xl:text-5xl xl:leading-[3.5rem]"
-                  style={{
-                    WebkitTextStroke: '0.5px #183360',
-                  }}
-                />
-                <p className="mt-4 max-w-7xl px-0.5 text-sm leading-4 text-white md:px-20 md:text-lg md:leading-7 lg:text-xl lg:leading-8 xl:px-0 xl:px-40 xl:text-2xl xl:font-bold xl:leading-10">
-                  {section2.subtext}
+        <section className="relative my-24 overflow-hidden py-24">
+          <Container transparent>
+            <div className="mx-auto items-center gap-12 text-center md:grid md:grid-cols-2 md:text-left">
+              <div className="space-y-6">
+                <h1 className="mb-6 w-full bg-gradient-to-b from-blue-500 to-emerald-500 bg-clip-text text-2xl font-bold text-sky-700 text-transparent md:text-5xl">
+                  {introSection.title}
+                </h1>
+                <h2 className={subtitlestyle}>{introSection.subtitle}</h2>
+                <p className="space-y-6 pb-6 text-lg text-gray-600 md:text-xl lg:max-w-2xl">
+                  {introSection.text}
                 </p>
-              </div>
-
-              {/* Text next to phone img */}
-              <div className="mt-0 flex w-full flex-col justify-between px-8 text-center sm:flex-col md:px-20 xl:my-4 xl:flex-row xl:justify-center xl:px-0 xl:text-start">
-                {/* Text block */}
-                <div className="order-2 flex flex-col items-center px-0 sm:w-full xl:order-1 xl:mt-16 xl:w-auto xl:pl-16">
-                  <div className="mb-0 mt-0 pt-0 md:mb-4 md:pt-8 xl:mt-4 xl:w-[500px] xl:pt-0">
-                    {section2.title.map((item, i) => (
-                      <Fragment key={i}>
-                        <Title
-                          H="h5spaced"
-                          Text={item}
-                          TitleClassProps="text-white font-bold mb-2"
-                        />
-                        <p className="leading-1 mb-8 text-sm font-thin text-white md:text-xl md:leading-normal lg:text-2xl lg:leading-7 xl:text-lg xl:leading-6">
-                          {section2.sub[i]}
-                        </p>
-                      </Fragment>
-                    ))}
-                  </div>
-
-                  {/* Disclaimer */}
-                  <div className="mt-0 flex w-full flex-col items-center xl:mt-4 xl:w-[500px] xl:items-start">
-                    <div className="w-full">
-                      <p className="px-0 text-center text-xs font-thin text-gray-400 md:px-8 lg:text-base xl:px-0 xl:text-left">
-                        {section2.disclaimer}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Phone img */}
-                <div className="order-1 my-8 flex justify-center md:mt-6 xl:order-2 xl:mt-0">
-                  <div className="relative w-auto">
-                    <ExportedImage
-                      className="h-[300px] w-auto object-contain xl:h-[700px]"
-                      src={VirufyMobilePhone}
-                      alt="mobile phone with Virufy's logo"
-                      priority
-                      basePath={basePath}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Our technology button */}
-              <div className="mx-auto mb-8 mt-8 flex w-full max-w-md items-center justify-center px-0 md:max-w-lg xl:mt-0">
-                <Link href={`/${lang}/ai`}>
-                  <button
-                    className="medium primary h-[36px] w-[150px] text-white md:h-[45px] md:w-[185px] xl:h-[65px] xl:w-[250px] xl:text-xl"
-                    style={{
-                      borderRadius: '50px',
-                      background:
-                        'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
-                      border: '2px solid #3fcf94',
-                    }}
-                  >
-                    {section2.buttonText}
+                <div className="flex items-center justify-center gap-4 md:flex-wrap md:justify-start">
+                  <button className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600 md:text-lg">
+                    {introSection.missionbutton}
                   </button>
-                </Link>
+                  <button className="rounded-full border border-blue-500 bg-white px-8 py-4 font-semibold text-blue-500 shadow-sm transition hover:bg-gray-100 md:text-lg">
+                    {introSection.supportbutton}
+                  </button>
+                </div>
+              </div>
+              <div className="relative mt-12 flex hidden h-full w-full items-center justify-center md:mt-0 md:block lg:ml-10">
+                <ExportedImage
+                  src="/images/sevenhome/PhoneHero.png"
+                  alt="Phone showing app"
+                  fill
+                  className="object-contain object-center md:scale-[100%] lg:scale-[150%]"
+                />
               </div>
             </div>
-          </div>
-        </div>
+          </Container>
+        </section>
       </div>
 
-      {/* Blur transition to footer */}
-      <div className="absolute bottom-0 block h-10 w-full bg-gradient-to-b from-transparent to-[#000000]"></div>
-    </div>
+      {/* SECTION 2 */}
+      <section className="border-gray relative w-full overflow-hidden border-2 border-y bg-gradient-to-br from-white to-[#dbeef3]">
+        {/* Text Content */}
+        <div className="relative mx-auto flex min-h-[700px] max-w-7xl py-20">
+          <div className="flex-1 items-center px-5 text-center md:px-20 md:text-left">
+            <h2 className="mb-6 w-full text-4xl font-semibold text-[#1B6E64] md:text-4xl">
+              {section2.title}
+            </h2>
+
+            <h3 className="mb-8 text-xl font-semibold text-gray-700 md:max-w-5xl md:text-3xl">
+              {section2.subtitle}
+            </h3>
+            <div className="flex h-64 justify-center py-10 md:mb-6 md:hidden">
+              <ExportedImage
+                src="/images/sevenhome/Heart_Image.png"
+                alt="Hands holding heart"
+                width={600}
+                height={600}
+                className="scale-150 object-contain object-center md:hidden"
+              />
+            </div>
+            <div
+              className={`z-10 space-y-6 text-lg text-gray-600 md:max-h-full lg:max-w-2xl lg:text-xl ${open ? 'max-h-full' : 'max-h-40'} duration-400 overflow-hidden transition-all`}
+              ref={ref}
+            >
+              {section2.text.map((p: string, i: number) => (
+                <p key={i} className={`${textstyle} lg:max-w-xl`}>
+                  {p}
+                </p>
+              ))}
+            </div>
+            <button
+              onClick={() => setOpen(!open)}
+              className="rounded-full border border-blue-500 bg-white px-8 py-4 text-sm font-semibold text-blue-500 shadow-sm transition hover:bg-gray-100 md:hidden"
+            >
+              {open ? 'See Less ▲' : 'Read More ▼'}
+            </button>
+          </div>
+        </div>
+        {/* Background Image */}
+
+        <div
+          className={`z-0 -my-9 hidden overflow-hidden md:relative md:mx-auto md:block lg:absolute lg:bottom-0 lg:right-0 lg:mt-12 lg:translate-x-20`}
+          style={{
+            width: 'clamp(0px, 70vw, 1100px)',
+          }}
+        >
+          <ExportedImage
+            src="/images/sevenhome/Heart_image.png"
+            alt="Our mission background"
+            width={1100}
+            height={750}
+            className="object-contain"
+            style={{
+              width: '100%',
+              height: 'auto',
+            }}
+          />
+        </div>
+      </section>
+
+      {/* SECTION 3 */}
+      <div className="relative w-full items-center overflow-hidden p-4 md:p-10 md:p-20">
+        <div className="absolute inset-0 flex">
+          <ExportedImage
+            src="/images/sevenhome/YourHealthBG.png"
+            alt="Your health background"
+            fill
+            priority
+            className="object-contain object-cover object-center"
+          />
+        </div>
+        <section className="relative z-10 mx-auto w-full max-w-7xl rounded-3xl border border-sky-200 bg-white py-20 text-left">
+          <Container>
+            <div className="items-center p-2 md:text-left">
+              <h2 className={titlestyle}>{section3.title}</h2>
+              <p className={`${textstyle} font-normal lg:max-w-4xl`}>
+                {section3.subtitle}
+              </p>
+            </div>
+            <div className="mb-1 flex justify-center lg:hidden">
+              <ExportedImage
+                src="/images/sevenhome/HealthPhone.png"
+                alt="Phone showing health app"
+                height={150}
+                width={150}
+                className="object-contain object-center"
+              />
+            </div>
+            <div className="flex">
+              <div className="mt-6 grid gap-6 md:mt-12 lg:w-[60%]">
+                {section3.cardtitle.map((t, i) => (
+                  <Card
+                    key={i}
+                    title={t}
+                    text={section3.cardtext[i]}
+                    first={i === 0}
+                    last={i === section3.cardtitle.length - 1}
+                  />
+                ))}
+                <p className="mt-4 text-sm text-gray-500">
+                  {section3.disclaimer}
+                </p>
+              </div>
+
+              <div className="ml-10 flex hidden items-center justify-center pl-10 md:mt-12 md:w-[30%] lg:block lg:w-[40%]">
+                <ExportedImage
+                  src="/images/sevenhome/HealthPhone.png"
+                  alt="Phone showing health app"
+                  height={520}
+                  width={250}
+                  className=""
+                />
+              </div>
+            </div>
+          </Container>
+        </section>
+      </div>
+
+      {/* SECTION 4 */}
+      <div className="relative w-full items-center overflow-hidden p-4 md:p-20">
+        <div className="absolute inset-0 flex">
+          <ExportedImage
+            src="/images/sevenhome/MapBG.png"
+            alt="Map background"
+            fill
+            priority
+            className="object-contain object-cover object-center"
+          />
+        </div>
+        <section className="relative z-10 mx-auto w-full max-w-7xl py-20 md:rounded-3xl md:border md:border-sky-200 md:bg-white">
+          <Container transparent>
+            <div className="w-full md:text-left">
+              <h2 className={titlestyle}>{section4.title}</h2>
+              <p className={`${subtitlestyle} font-normal`}>
+                {section4.subtitle}
+              </p>
+            </div>
+            <div className="mt-12 grid gap-8">
+              {section4.cardtitle.map((t, i) => (
+                <Card
+                  key={i}
+                  icon={section4.icons[i]}
+                  title={t}
+                  text={section4.cardtext[i]}
+                  first={i === 0}
+                  last={i === section4.cardtitle.length - 1}
+                />
+              ))}
+            </div>
+          </Container>
+        </section>
+      </div>
+
+      {/* CTA */}
+      <div className="w-full border border-y-2 border-sky-200 text-center md:text-left">
+        <section className="border-y-1 relative z-10 mx-auto w-full max-w-7xl border-sky-200 py-24">
+          <Container transparent>
+            {/* Title */}
+            <h2 className="mb-6 font-semibold text-emerald-800 md:text-3xl md:text-4xl">
+              {section5.title}
+            </h2>
+
+            {/* Text + Button on same line */}
+            <div className="flex flex-col md:flex-row md:items-start md:gap-6">
+              {/* Text */}
+              <p className="flex-1 text-gray-600 md:text-lg md:text-xl">
+                {section5.text}
+              </p>
+
+              {/* Button */}
+              <div className="mt-4 md:mt-0">
+                <button className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600 md:text-lg">
+                  {section5.button}
+                </button>
+              </div>
+            </div>
+          </Container>
+        </section>
+      </div>
+    </main>
   );
 };
 
-export default HomePage;
+export default SevenHomepage;

@@ -1,20 +1,20 @@
-import { type Supporters } from '../types/supporters';
+import type { supporters } from '../types/supporters';
 
-const supporters: Supporters = {
-  title: 'معًا لنحدث ثورة في الصحة العالمية – كن شريكًا!',
-  buttontext: 'ادعمنا',
-  contactusform: {
-    title: 'كن شريكاً',
-    content:
-      'مساعدتك مهمة بالنسبة لنا، يرجى ملء بياناتك وسنتواصل معك في أقرب وقت ممكن.',
-    nametitle: 'الاسم',
-    emailtitle: 'البريد الإلكتروني',
-    texttitle: 'الرسالة',
-    textplaceholder: 'أدخل رسالة',
-    submitButtonText: 'تأكيد',
+const supporters: supporters = {
+  introSection: {
+    tag: 'الشراكات العالمية',
+    title: ['الداعمون', 'لنا'],
+    text: 'تتعاون Virufy مع مؤسسات أكاديمية رائدة، ومبتكرين في الصناعة، ومنظمات غير ربحية حول العالم لتعزيز فحص صحة الجهاز التنفسي المدعوم بالذكاء الاصطناعي وجعل الاكتشاف المبكر متاحًا للجميع.',
   },
-  oursupporters: 'أنصارنا',
-  supportersList: [
+  banner: {
+    title: 'انضم إلى مهمتنا',
+    buttontext: 'كن شريكًا',
+    text: [
+      'تعاون مع Virufy لتطوير تقنيات فحص صحة الجهاز التنفسي وإحداث تأثير عالمي. معًا يمكننا المساعدة في اكتشاف الأمراض مبكرًا وإنقاذ الأرواح حول العالم.',
+    ],
+    link: '/join-us',
+  },
+  SupporterImg: [
     {
       img: '../../logos_transparent/h4r.png',
       alt: 'H4R',

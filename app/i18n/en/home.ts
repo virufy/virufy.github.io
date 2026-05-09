@@ -1,72 +1,63 @@
-import { type HomeType } from '../types/home';
-
-const home: HomeType = {
+import type { homepage } from '../types/home';
+const HomePage: homepage = {
   introSection: {
-    text: 'Welcome to Virufy',
-    text2: 'Your Digital Health Companion',
-    subText: [
-      [
-        {
-          type: 'text',
-          text: 'Introducing ',
-        },
-        {
-          type: 'span',
-          text: 'Virufy',
-        },
-        {
-          type: 'text',
-          text: ', the cutting-edge app that utilizes audio and generative AI to analyze your breathing patterns and provide insights into potential infection symptoms.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: ' Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: ' We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.',
-        },
-      ],
-    ],
-    buttonText: 'Try our Demo',
-    disclaimers: [
-      '*Any device with a web browser and microphone (e.g. iPhone, Android, laptop, iPad).',
-      '*The app is still under development, support us by contributing your cough sounds into our data collection app.',
-    ],
-    mainText2: 'How It Works',
-    subText2: [
-      {
-        type: 'text',
-        text: "With just a simple intentional cough into your device's microphone, ",
-      },
-      {
-        type: 'span',
-        text: 'Virufy',
-      },
-      {
-        type: 'text',
-        text: ' harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, pneumonia, flu, RSV, COPD, and asthma.',
-      },
-    ],
+    title: 'AI-Powered Respiratory Health Screening',
+    subtitle: 'Your Digital Health Companion',
+    text: "With a simple cough into your phone, Virufy's AI screens for sound patterns linked to respiratory illnesses like COVID-19, RSV, Pneumonia, Asthma, and COPD",
+    missionbutton: 'Our Mission',
+    supportbutton: 'Support Us',
   },
   section2: {
-    text: 'Your Health, Our Priority',
-    subtext:
+    title: 'Our Mission to Redefine Early Detection',
+    subtitle:
+      'Uniting science, empathy, and innovation to advance early detection for all.',
+    text: [
+      'We are a nonprofit dedicated to transforming how the world detects and understands respiratory illness, through advanced audio analysis and generative AI.',
+      'Our mission is to make early detection accessible, private, and affordable for all. By delivering AI-driven screening tools that work on any smartphone, or web browser we empower patients, clinicians, and health systems—especially in low-income and underserved regions—to take action sooner and improve health outcomes worldwide.',
+      'Virufy bridges the gap between technology and humanity, turning everyday moments into opportunities for life-saving insights, clinical research, global partnerships, and scientific integrity.',
+    ],
+  },
+  section3: {
+    title: 'Your Health, Our Priority',
+    subtitle:
       'At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.',
-    title: ['Instant Analysis', 'At-home Anonymity', 'User-Friendly Interface'],
-    sub: [
-      "Rapid feedback on your cough's characteristics and abnormality profile based on the sound pattern of your cough",
+    cardtitle: [
+      'Instant Analysis',
+      'At-home Anonymity',
+      'User-Friendly Interface',
+    ],
+    cardtext: [
+      'Rapid feedback on your cough’s characteristics and abnormality profile based on the sound pattern of your cough.',
       'Feel secure knowing that your results are only for your eyes.',
-      'Intuitive design for easy navigation and seamless user experience.',
+      'User-Friendly Interface Intuitive design for easy navigation and seamless user experience',
     ],
     disclaimer:
-      '*Virufy is not a substitute for professional medical advice, diagnosis, or treatment. Users are advised to consult a licensed healthcare provider for any medical concerns or decisions.',
-    buttonText: 'Our Technology',
+      '*Virufy is not a substitute for professional medical advice, diagnosis, or treatment. Users are advised to consult a licensed healthcare provider for any medical concerns or decisions.*',
+  },
+  section4: {
+    title: 'Advancing Global Health, Together.',
+    subtitle:
+      'Virufy unites experts and volunteers worldwide to make respiratory screening accessible to everyone.',
+    icons: [
+      '../../images/sevenhome/globe.png',
+      '../../images/sevenhome/hand.png',
+      '../../images/sevenhome/gear.png',
+    ],
+    cardtitle: [
+      'Cross-Border Collaboration',
+      'Community Empowerment',
+      'Open Innovation',
+    ],
+    cardtext: [
+      'Working alongside universities, hospitals, and nonprofits to advance open-source research.',
+      'Every cough sample helps improve AI accuracy and supports equitable health outcomes.',
+      'Our mission is driven by transparency and global cooperation with a people-first mindset.',
+    ],
+  },
+  section5: {
+    title: 'Discover the Science Behind Virufy.',
+    text: 'Learn how AI and acoustic analysis come together to detect respiratory patterns and advance global health research.',
+    button: 'Explore Our Technology',
   },
 };
-
-export default home;
+export default HomePage;

@@ -1,4 +1,7 @@
-import { type Section } from './story';
+export interface Section {
+  title: string;
+  texts: string[];
+}
 
 export interface Publications {
   publicationsSection: Section;

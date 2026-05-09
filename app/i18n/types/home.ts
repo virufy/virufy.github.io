@@ -1,25 +1,33 @@
-import type { TypeText } from './baseInterfaces';
-
-export interface HomeType {
-  introSection: WelcomeSection;
-  section2: Section2;
-}
-
-interface WelcomeSection {
-  text: string;
-  text2: string;
-  subText: TypeText[][];
-  buttonText: string;
-  disclaimers: Array<string>;
-  mainText2: string;
-  subText2: TypeText[];
-}
-
-interface Section2 {
-  text: string;
-  subtext: string;
-  title: Array<string>;
-  sub: Array<string>;
-  disclaimer: string;
-  buttonText: string;
+export interface homepage {
+  introSection: {
+    title: string;
+    subtitle: string;
+    text: string;
+    missionbutton: string;
+    supportbutton: string;
+  };
+  section2: {
+    title: string;
+    subtitle: string;
+    text: string[];
+  };
+  section3: {
+    title: string;
+    subtitle: string;
+    cardtitle: string[];
+    cardtext: string[];
+    disclaimer: string;
+  };
+  section4: {
+    title: string;
+    icons: string[];
+    subtitle: string;
+    cardtitle: string[];
+    cardtext: string[];
+  };
+  section5: {
+    title: string;
+    text: string;
+    button: string;
+  };
 }

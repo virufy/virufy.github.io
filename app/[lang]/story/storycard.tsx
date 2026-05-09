@@ -1,6 +1,6 @@
 import ExportedImage from 'next-image-export-optimizer';
 import { ColorProps } from '../themes';
-import { type StoryCard } from '@/app/i18n/types/sevenwho-we-are';
+import { type StoryCard } from '@/app/i18n/types/story';
 
 const StoryCard = ({ title, text, icon }: StoryCard) => {
   return (

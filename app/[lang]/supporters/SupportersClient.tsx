@@ -1,110 +1,96 @@
-'use client';
 import { type Locale } from '@/i18n-config';
-import { basePath } from '@/next.config.mjs';
-import { BgHeader } from '@/public/images/supporters';
-import ExportedImage from 'next-image-export-optimizer';
-import Link from 'next/link';
 import { usei18n } from '../../i18n';
-import Title from '../components/Title';
-import ModalSupporter from '../components/ModalSupporter';
-import { useState } from 'react';
-
+import ExportedImage from 'next-image-export-optimizer';
+import { basePath } from '@/next.config.mjs';
+import Link from 'next/link';
 const unoptimized = process.env.NODE_ENV !== 'production';
-
-export default function SupportersPage({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) {
+import ActionBanner from '../components/ActionBanner';
+const Supporters = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    supporters: { title, buttontext, supportersList, contactusform, oursupporters },
+    supporters: { introSection, banner, SupporterImg },
   } = usei18n(lang);
-
-  const [showModal, setShowModal] = useState(false);
-  const closeModal = () => setShowModal(false);
-
   return (
-    <div className="bg-white">
-      <div className="relative h-[260px] w-full md:h-[520px]">
-        <ExportedImage
-          src={BgHeader}
-          alt=""
-          priority
-          basePath={basePath}
-          fill
-          unoptimized={unoptimized}
-          className="h-full max-h-[700px] min-h-[400px] w-full object-cover"
-        />
-        <Title
-          Text={title}
-          H="h1Supporters"
-          TitleClassProps="absolute inset-0 flex items-center justify-center text-white text-center italic font-bold"
-        />
-        <button
-          onClick={() => setShowModal(true)}
-          className="medium primary absolute left-1/2 top-[78%] -translate-x-1/2 rounded-full px-2 py-2 text-xs text-white md:top-[80%] md:px-16 md:py-4 md:text-base md:text-xl"
-          style={{
-            borderRadius: '50px',
-            background:
-              'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
-            border: '2px solid #3fcf94',
-          }}
-        >
-          {buttontext}
-        </button>
-        {showModal ? (
-          <div onClick={closeModal}>
-            <ModalSupporter
-              close={closeModal}
-              title={contactusform.title}
-              nametitle={contactusform.nametitle}
-              emailtitle={contactusform.emailtitle}
-              texttitle={contactusform.texttitle}
-              textplaceholder={contactusform.textplaceholder}
-              submitButtonText={contactusform.submitButtonText}
-              content={contactusform.content}
-            />
-          </div>
-        ) : null}
-      </div>
-
-      <div className="relative z-10 flex flex-col items-center justify-center bg-white">
-        <div className="flex w-full max-w-[1440px] flex-col items-center justify-center">
-          <div className="mb-10 mt-10 w-full text-center">
-            <h2 className="text-1xl relative inline-block font-semibold text-blue-700 md:text-4xl">
-              {oursupporters}
-              <div className="absolute bottom-[-8px] left-[-10%] h-[2px] w-[120%] bg-green-500 md:bottom-[-12px] md:h-[3px]" />
-            </h2>
-          </div>
-
-          <ul className="grid w-full max-w-[1440px] grid-cols-3 gap-3 px-4 md:grid-cols-4 md:gap-8 md:px-12">
-            {supportersList.map(({ img, alt, link }) => (
-              <li key={alt} className="aspect-square">
-                <Link
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={alt}
-                  className="relative block h-full w-full"
-                >
-                  <ExportedImage
-                    src={img}
-                    alt={alt}
-                    basePath={basePath}
-                    fill
-                    priority
-                    unoptimized={unoptimized}
-                    className="object-contain p-3 md:p-4"
-                    sizes="(max-width: 640px) 33vw, (min-width: 641px) 25vw"
-                  />
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          <div className="mb-10" />
+    <main className="">
+      {/* HERO */}
+      <div className="relative w-full items-center overflow-hidden md:px-20 md:px-5">
+        <div className="absolute inset-0 -my-12 flex h-[600px] overflow-hidden md:my-0">
+          <ExportedImage
+            src="/images/sevensupporters/HeroBG.png"
+            alt="Your health background"
+            fill
+            className=""
+          />
         </div>
+        <section className="relative my-24 overflow-hidden py-12 md:py-24">
+          <div className="mx-auto flex flex-col items-center text-center">
+            <div className="mb-10 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
+              <ExportedImage
+                src="/icons/globe-supporters.png"
+                alt="globe icon"
+                height={17}
+                width={17}
+                className=""
+              />
+              &nbsp;
+              {introSection.tag}
+            </div>
+            <div className="text-gray-700">
+              {introSection.title.map((p, i) => (
+                <span
+                  key={i}
+                  className="inline text-4xl font-semibold last:bg-gradient-to-b last:from-blue-500 last:to-emerald-500 last:bg-clip-text last:text-transparent md:text-6xl"
+                >
+                  {p + ' '}
+                </span>
+              ))}
+            </div>
+            <div className="mx-auto">
+              <h2 className="px-6 pt-10 text-center text-lg font-normal text-gray-700 md:mb-6 md:px-0 md:text-xl lg:w-[1000px]">
+                {introSection.text}
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section className="relative w-full bg-gradient-to-b from-[#FBFEFF] to-[#EEF8FD] pb-12">
+          <div className="mx-auto max-w-[1440px] px-4">
+            <ul className="grid grid-cols-2 justify-items-center gap-4 md:grid-cols-4 md:gap-8">
+              {SupporterImg.map(({ img, alt, link }) => (
+                <li
+                  key={alt}
+                  className="aspect-square w-full max-w-[168px] items-center bg-white md:max-w-[252px]"
+                >
+                  <Link
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={alt}
+                    className="relative block h-full w-full"
+                  >
+                    <ExportedImage
+                      src={img}
+                      alt={alt}
+                      basePath={basePath}
+                      fill
+                      priority
+                      unoptimized={unoptimized}
+                      className="h-full w-full rounded-xl border border-2 object-contain p-2 shadow shadow-lg md:rounded-3xl"
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
       </div>
-    </div>
+      <section className="relative w-full">
+        <ActionBanner
+          title={banner.title}
+          text={banner.text[0]}
+          buttonText={banner.buttontext}
+          page={banner.link}
+        />
+      </section>
+    </main>
   );
-}
+};
+export default Supporters;

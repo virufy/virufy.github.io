@@ -1,13 +1,12 @@
 import ExportedImage from 'next-image-export-optimizer';
 import { basePath } from '@/next.config.mjs';
 import { ColorProps } from '../themes';
-import { StaticImageData } from 'next/image';
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 
 type SevenInfoCardProps = {
   title: string;
   text: string;
-  icon?: StaticImageData;
+  icon?: string;
   children?: ReactNode;
 };
 
@@ -19,6 +18,8 @@ const SevenInfoCard = ({ title, text, icon, children }: SevenInfoCardProps) => {
         {icon && (
           <ExportedImage
             className="h-10 w-10 flex-shrink-0 self-start"
+            width={10}
+            height={10}
             src={icon}
             alt={title + ' icon'}
             basePath={basePath}

@@ -1,54 +1,66 @@
-import { type Donate } from '../types/donate';
+import type { Donate } from '../types/donate';
 
 const donate: Donate = {
-  heroSection: {
-    title: [
+  introSection: {
+    tag: 'Support Our Mission',
+    title: ['Together, we can revolutionize', 'global respiratory health'],
+    text: 'Every contribution brings us closer to delivering AI-powered diagnostic tools to patients and communities worldwide offering health equity.',
+    buttonText: 'How to Contribute',
+  },
+  impactSection: {
+    title: 'Your gift creates a lasting impact.',
+    description:
+      "Every donation helps Virufy bring accessible digital health technology to underserved communities. By supporting us, you're accelerating innovation and giving patients the tools to protect their health.",
+  },
+
+  pillars: [
+    {
+      title: 'Expand Access',
+      description:
+        'Bring AI-powered health screening tools and advantages to underserved communities worldwide.',
+      icon: '/icons/icon-expand-access.png',
+    },
+    {
+      title: 'Advance Research',
+      description:
+        'Support cutting-edge studies that improve early detection of respiratory illness.',
+      icon: '/icons/icon-advance-research.png',
+    },
+    {
+      title: 'Empower Patients',
+      description:
+        'Help individuals take control of their health with accessible, science-driven insights.',
+      icon: '/icons/icon-empower-patients.png',
+    },
+  ],
+  donateOptions: {
+    title: 'Choose how you’d like to give.',
+    subtitle:
+      'Your support matters. Select a donation option below to get started.',
+    options: [
       {
-        text: 'معًا، يمكننا إحداث ثورة في الصحة التنفسية العالمية. ',
+        name: 'GoFundMe',
+        description:
+          "Contributions are directed through Virufy's GoFundMe campaign.",
+        buttonText: 'Donate via GoFundMe',
+        url: 'https://www.gofundme.com/f/donate-virufy',
+        icon: '/icons/icon-donate.png',
       },
       {
-        text: 'كل مساهمة تقرّبنا من توفير أدوات تشخيصية مدعومة بالذكاء الاصطناعي للمرضى والمجتمعات المحتاجة.',
+        name: 'PayPal',
+        description:
+          "Contributions are processed directly through Virufy's PayPal account.",
+        buttonText: 'Donate via PayPal',
+        url: 'https://www.paypal.com/us/fundraiser/charity/4348461',
+        icon: '/icons/icon-donate.png',
       },
     ],
   },
-  donateSection: {
-    title: 'تبرعك يترك أثرًا دائمًا.',
-    text: 'يساعد كل تبرع Virufy على إتاحة تقنيات الصحة التنفسية للأشخاص والمجتمعات الأكثر حاجة. بدعمك لنا، تُسرّع الابتكار وتمنح المرضى الأدوات لحماية صحتهم.',
-    contentBlocks: [
-      {
-        title: 'توسيع الوصول',
-        text: 'توفير أدوات فحص صحية مدعومة بالذكاء الاصطناعي للمجتمعات المحرومة حول العالم.',
-      },
-      {
-        title: 'تعزيز البحوث',
-        text: 'دعم الدراسات المتقدمة التي تُحسّن من الاكتشاف المبكر وعلاج الأمراض التنفسية.',
-      },
-      {
-        title: 'تمكين المرضى',
-        text: 'مساعدة الأفراد على السيطرة على صحتهم من خلال رؤى علمية ميسّرة.',
-      },
+  banner: {
+    title: 'Transparency you can trust.',
+    text: [
+      'Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research, innovation, and patient access.',
     ],
-    optionsTitle: 'اختر طريقة التبرع:',
-    optionsText:
-      'دعمك مهم بغض النظر عن الطريقة. اختر أحد خيارات التبرع أدناه للبدء',
-    DonationsOptionsBlock: [
-      {
-        optionTitle: 'التبرع عبر GoFundMe',
-        optionText:
-          'ساهم في حملتنا الحالية وساعدنا في الوصول إلى المزيد من الأشخاص بسرعة أكبر.',
-        buttonText: 'GoFundMe',
-      },
-      {
-        optionTitle: 'التبرع عبر PayPal',
-        optionText: 'قم بتقديم تبرع آمن لمرة واحدة أو متكرر مباشرة عبر PayPal.',
-        buttonText: 'PayPal',
-      },
-    ],
-  },
-  donationTransparencyBlock: {
-    title: 'Transparency you can trust',
-    text: 'Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research,innovation, and patient access.',
   },
 };
-
 export default donate;

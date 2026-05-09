@@ -1,35 +1,44 @@
 export interface Donate {
-  heroSection: DonateHeroSection;
-  donateSection: DonateSection;
-  donationTransparencyBlock: DonationTransparencyBlock;
+  introSection: IntroSection;
+  impactSection: ImpactSection;
+  pillars: Pillar[];
+  donateOptions: DonateOptions;
+  banner: Banner;
 }
 
-interface DonateHeroSection {
-  title: TitleText[];
-}
-
-interface TitleText {
+interface IntroSection {
+  tag: string;
+  title: string[];
   text: string;
-}
-
-interface DonateSection {
-  title: string;
-  text: string;
-  contentBlocks: DonateContentBlock[];
-  optionsTitle: string;
-  optionsText: string;
-  DonationsOptionsBlock: DonateOptionsBlock[];
-}
-interface DonateContentBlock {
-  title: string;
-  text: string;
-}
-interface DonateOptionsBlock {
-  optionTitle: string;
-  optionText: string;
   buttonText: string;
 }
-interface DonationTransparencyBlock {
+
+interface ImpactSection {
   title: string;
-  text: string;
+  description: string;
+}
+
+interface Pillar {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+interface DonateOptions {
+  title: string;
+  subtitle: string;
+  options: DonateOption[];
+}
+
+interface DonateOption {
+  name: string;
+  description: string;
+  buttonText: string;
+  url: string;
+  icon: string;
+}
+
+interface Banner {
+  title: string;
+  text: string[];
 }

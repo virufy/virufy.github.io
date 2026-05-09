@@ -1,94 +1,77 @@
-import { type Story } from '../types/story';
+import type { Story } from '../types/story';
 
 const story: Story = {
-  storySection: {
-    title: 'How It Started',
-    texts: [
-      [
-        {
-          type: 'text',
-          text: 'When the pandemic hit, ',
-        },
-        {
-          type: 'link',
-          url: '/amils-story',
-          text: 'Virufy founder Amil Khanzada',
-        },
-        {
-          type: 'text',
-          text: ' knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Wanting to make a positive impact, Amil orchestrated a clinical study with 362 patients in an esteemed university hospital. The original Virufy team started with Stanford graduate AI students and expanded to volunteers from universities globally.',
-        },
-      ],
+  introSection: {
+    title: ['Redefining', 'Early Detection', 'Through AI and Sound'],
+    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping screen for potential respiratory illnesses early and non-invasively.',
+    tag: 'About Virufy',
+  },
+  section2: {
+    title: 'From Inception to Global Movement',
+    text: [
+      'Virufy was founded in 2020 during the early days of the COVID-19 pandemic, when limited testing access and overwhelmed healthcare systems left millions without timely answers. A group of Stanford students recognized the growing gap between the need for early detection and the tools available to most people around the world.',
+
+      'At the same time, emerging research in artificial intelligence suggested that respiratory sounds, such as coughs and breathing patterns, could reveal signs of disease. Knowing that COVID-19 directly affects the nose, throat, and lungs, the team explored whether machine learning could analyze these signals using something nearly everyone already had, a smartphone.',
+
+      'What began as a student research effort quickly grew into global volunteer recruitment and clinical studies, laying the foundation for Virufy’s work today. The project evolved into a nonprofit focused on advancing fast, accessible, and scalable respiratory health screening for communities worldwide.',
     ],
   },
-  MissionSection: {
-    title: 'Our Mission',
-    texts: [
-      [
-        {
-          type: 'text',
-          text: 'Some people may be wondering, "why are we here?" and "why have so many people supported Virufy?"',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: "Virufy's mission and goal is to transform global health.",
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Here is a listing of disclosed ',
-        },
-        {
-          type: 'link',
-          url: '/advisors',
-          text: 'advisors',
-        },
-        {
-          type: 'text',
-          text: ' and we have had 1,300+ volunteers to date.',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: "Thank you for being part of the mission and let's make it happen.",
-        },
-      ],
+  section3: {
+    title: 'Our Values',
+    subtitle:
+      'These are the principles that guide our work and define our commitment to the world.',
+    StoryCard: [
+      {
+        title: 'Global Equity',
+        text: 'We believe health screening should be accessible to everyone, regardless of geography or economic status.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Scientific Rigor',
+        text: 'Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Privacy First',
+        text: 'User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Open Collaboration',
+        text: 'We partner with universities, NGOs, and governments to advance research and maximize global impact.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
     ],
   },
-  privacySection: {
-    title: 'Commitment to Privacy',
-    texts: [
-      'Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website.',
+  section4: {
+    title: 'Our Impact at a Glance',
+    subtitle:
+      "Building the world's largest open cough audio dataset to advance respiratory health research globally.",
+    cardtitle: ['250K+', '5+', '250+', '10+'],
+    cardtext: [
+      'Cough Samples Collected',
+      'Countries Reached',
+      'Active Volunteers',
+      'Research Partners',
     ],
+    cardsubtext: [
+      'Contributing to global research',
+      'Building a truly global dataset',
+      'Student and researchers',
+      'Universities and institutions',
+    ],
+  },
+  banner: {
+    title: 'Ready to Make a Difference?',
+    buttontext: 'Message Us',
+    text: [
+      'Whether you want to volunteer, partner with us, or support our mission, we’d love to hear from you and explore how we can work together to make a meaningful impact.',
+    ],
+    link: 'https://www.linkedin.com/company/virufy/posts/?feedView=all',
   },
 };
-
 export default story;

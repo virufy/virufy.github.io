@@ -1,21 +1,20 @@
-import { type Supporters } from '../types/supporters';
+import type { supporters } from '../types/supporters';
 
-const supporters: Supporters = {
-  title: 'Partidarios',
-  buttontext: 'Apóyanos',
-
-  contactusform: {
-    title: 'Conviértete en Socio',
-    content:
-      'Tu ayuda es importante para nosotros. Por favor, completa tus datos y nos pondremos en contacto contigo lo antes posible.',
-    nametitle: 'Nombre',
-    emailtitle: 'Correo electrónico',
-    texttitle: 'Mensaje',
-    textplaceholder: 'Escribe tu mensaje',
-    submitButtonText: 'Enviar',
+const supporters: supporters = {
+  introSection: {
+    tag: 'Alianzas Globales',
+    title: ['Nuestros', 'Patrocinadores'],
+    text: 'Virufy colabora con instituciones académicas líderes, innovadores de la industria y organizaciones sin fines de lucro en todo el mundo para avanzar en el cribado de salud respiratoria impulsado por inteligencia artificial y hacer que la detección temprana sea accesible para todos.',
   },
-  oursupporters: 'Nuestros seguidores',
-  supportersList: [
+  banner: {
+    title: 'Únete a Nuestra Misión',
+    buttontext: 'Conviértete en Socio',
+    text: [
+      'Asóciate con Virufy para avanzar en la tecnología de detección de salud respiratoria y generar un impacto global. Juntos podemos ayudar a detectar enfermedades antes y salvar vidas en todo el mundo.',
+    ],
+    link: '/join-us',
+  },
+  SupporterImg: [
     {
       img: '../../logos_transparent/h4r.png',
       alt: 'H4R',
@@ -133,5 +132,4 @@ const supporters: Supporters = {
     },
   ],
 };
-
 export default supporters;

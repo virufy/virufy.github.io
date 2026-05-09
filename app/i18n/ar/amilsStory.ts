@@ -1,37 +1,82 @@
 import { type AmilsStory } from '../types/amilsStory';
 
 const amilsStory: AmilsStory = {
-  sectionAmil: {
-    titleAmil: 'قصة أميل',
-    tabsAmil: [
-      'مرحلة الطفولة',
-      'النمو المهني',
-      'التأثير العالمي',
-      'تأسيس فيروفي',
-      'قصة أمل',
-      'منشورات',
+  heroSection: {
+    tag: 'Meet Amil',
+    title: [
+      { type: 'text', text: 'Meet Our ' },
+      { type: 'span', text: 'Founder' },
     ],
-    founderAmil: [
-      'تعرف على مؤسسنا',
-      'أميل خانزادا',
-      'أستاذ مساعد',
-      'جامعة فوكوي، اليابان.',
-      'مرشح لنيل درجة الدكتوراه في الهندسة، جامعة فوكوي، اليابان. خريج برنامج مشترك للماجستير في إدارة الأعمال وماجستير الهندسة (علوم البيانات)، جامعة كاليفورنيا، بيركلي.',
+    text: 'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
+  },
+  storySection: {
+    title: "Amil's Story",
+    texts: [
+      'Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact.',
+      'Since its founding, Virufy has grown into an international nonprofit operating across three continents, supported by more than 250 volunteers and 60 partner organizations. Guided by its mission to democratize access to health screening, Virufy continues to advance AI-driven disease detection to help communities respond faster, earlier, and more equitably to global health threats.',
     ],
-    imgCaption: [
-      'أميل مع طاقم التمريض الداعم لدراسات فيروفي السريرية في كولومبيا بأمريكا الجنوبية.',
-      'أميل مع الطلاب والموظفين اليابانيين في مدرسة البرمجة ZenIT.',
-      'لقاء أميل مع رئيس الوزراء السابق والرئيس الحالي لحلف الناتو مارك روتّه.',
+  },
+  milestoneSection: {
+    title: 'Key Milestones',
+    text: 'A journey from pandemic response to global impact in respiratory health technology.',
+    milestoneCards: [
+      {
+        title: '2020: The Stanford Genesis',
+        text: 'While a student at Stanford, Amil established Virufy as a registered nonprofit in direct response to the global pandemic. He mobilized a world-class volunteer network to begin collecting cough recordings, launching the first clinical research studies in South Asia to train AI for COVID-19 detection.',
+        image: '/images/amilsStory/amil-2020-stanford-genesis.webp',
+        date: '2020',
+      },
+      {
+        title: '2021: Global Outreach & Data Expansion',
+        text: 'Our partner Sherlock Communications led a massive marketing push across Latin America, generating over 300 press releases to drive large-scale data collection and public awareness. Amil began representing Virufy at major global summits, establishing the organization as an international leader in the emerging field of acoustic health.',
+        image: '/images/amilsStory/amil-2021-global-outreach.webp',
+        date: '2021',
+      },
+      {
+        title: '2022: Federal Recognition & Development',
+        text: 'Virufy secured a prestigious research contract with the U.S. Department of Health and Human Services (BARDA). This milestone significantly accelerated the organization’s development capabilities and provided federal-level validation for the mission to provide accessible respiratory screening tools. Our clinical studies in Colombia proceeded in parallel.',
+        image: '/images/amilsStory/amil-2022-federal-recognition.webp',
+        date: '2022',
+      },
+      {
+        title: '2023: Strategic Innovation & NSF I-Corps',
+        text: 'Following the conclusion of the public health emergency, Amil led Virufy through the National Science Foundation (NSF) I-Corps program. He traveled extensively across the U.S. to conduct hundreds of interviews, defining a robust operational model for acoustic AI to detect respiratory threats beyond COVID-19.',
+        image: '/images/amilsStory/amil-2023-strategic-innovation.webp',
+        date: '2023',
+      },
+      {
+        title: '2024: The Japan Hub & Elderly Care',
+        text: 'Amil established a significant operational presence in Japan with support from JETRO. He spearheaded a major research shift toward detecting pneumonia in elderly care facilities, establishing a local HQ in Fukuoka to serve the specific needs of the Japanese healthcare market.',
+        image: '/images/amilsStory/amil-2024-japan-hub.webp',
+        date: '2024',
+      },
+      {
+        title: '2025: Global Scale & Multi-Disease Detection',
+        text: 'Amil launched operations in Dubai, securing a critical partnership with a health ministry arm to validate and deploy COVID/Flu detection technology. This initiative focused on achieving large-scale population health surveillance and strengthening public health infrastructure.',
+        image: '/images/amilsStory/amil-2025-middle-east.webp',
+        date: '2025',
+      },
+      {
+        title: '2026: Academic Leadership & Global Mission',
+        text: 'Amil joined the University of Fukui as a Specially Appointed Assistant Professor of Social Informatics. In this role, he continues to lead Virufy’s global mission in parallel with his academic research on GovAI, regional revitalization, and the practical deployment of global health technologies.',
+        image: '/images/amilsStory/amil-2026-academic-leadership.webp',
+        date: '2026',
+      },
     ],
-    textAmil: [
-      'وُلد أميل ونشأ في وادي السيليكون ضمن عائلة مهاجرة، حيث تلقى التعليم في المنزل وبدأ الدراسة في الكلية المجتمعية وهو في الرابعة عشرة من عمره. تأثر أميل بتفاني والده في الخدمة الاجتماعية، وقضى طفولته في أنشطة تطوعية مثل إطعام المشردين في مطابخ الطعام. بعد ذلك بفترة وجيزة، توفي والد أميل في حادث سيارة مأساوي بسبب سائق مخمور. وعلى الرغم من الصراع العاطفي مع فقدان بطله، حصل أميل على أول وظيفة له كمستشار برمجيات يعمل على تطوير تقنية التعرف على الصور للتصحيح التلقائي للاختبارات في مدارس K-12.',
-      'بعد حصوله على درجة البكالوريوس في علوم الكمبيوتر من جامعة كاليفورنيا في بيركلي، انضم أميل إلى شركة هيوليت باكارد (HP) في وادي السيليكون للعمل بدوام كامل كمهندس برمجيات يطور برامج توحيد سجلات الأمان لنظام إدارة معلومات وأمن الأمان (SIEM) الخاص بـ ArcSight.',
-      'بحثًا عن منزل جديد، انتقل أميل إلى المقر الرئيسي لشركة HP في طوكيو لتولي دور مستشار للأمن السيبراني، حيث سافر عبر هونغ كونغ وطوكيو وأستراليا لنشر حلول SIEM في مواقع العملاء في صناعة البنوك.',
-      'بعد ذلك، عاد أميل إلى وادي السيليكون للانضمام إلى شركة Pivotal Software كمهندس برمجيات يعمل بشكل رئيسي على قاعدة بيانات Greenplum OLAP المفتوحة المصدر المستندة إلى Postgres. في بيئة البرمجة المتطرفة (XP) الخاصة بـ Pivotal، مارس أميل عدة ممارسات لتطوير البرمجيات، بما في ذلك البرمجة الزوجية اليومية، وتطوير البرمجيات المدفوع بالاختبارات (TDD)، والاجتماعات الرجعية الأسبوعية، مع التناوب عبر عدة فرق، بما في ذلك DevOps وخلفية قاعدة البيانات وأدوات إدارة عبء العمل.',
-      'في عام 2018، أخذ أميل إجازة من العمل للانتقال إلى الريف الياباني. عاش في بلدة إيهيجي، مسقط رأس زن سوتو، حيث كان يتأمل يوميًا ويتعلم فلسفة زن، بينما يساهم في تعليم البرمجة المرنة للشباب والأطفال. وسرعان ما تم تعيين أميل سفير التطور للمدينة وتم إرساله إلى مؤتمر One Young World في هولندا لتمثيل اليابان بين قادة الشباب المؤثرين اجتماعيًا ورؤساء الدول وحائزين على جائزة نوبل من 195 دولة.',
-      'في أواخر عام 2019، ترك أميل وظيفته لمتابعة الدراسات العليا في الذكاء الاصطناعي بجامعة ستانفورد، حيث أخذ أولى دوراته مع مؤسس Coursera الدكتور أندرو نغ ومبتكرة ImageNet الدكتورة فاي فاي لي. عندما ضربت الجائحة، كرس أميل نفسه لجهود الإغاثة من الجائحة وسرعان ما أسس Virufy.',
-      'Virufy هي منظمة غير ربحية تطور تطبيقًا للهواتف الذكية لفحص COVID-19 على الفور من خلال تحليل مدعوم بالذكاء الاصطناعي لتسجيلات الصوت والسعال. اعتبارًا من يوليو 2024، تعمل المنظمة في ثلاث قارات مع أكثر من 250 متطوعًا و60 منظمة شريكة.',
+  },
+  oywSection: {
+    title: [
+      { type: 'text', text: 'Supported by a Global Network – ' },
+      { type: 'span', text: 'One Young World' },
     ],
+    text: 'Through One Young World, Amil has been able to scale his vision beyond borders, connecting with a global community of young leaders committed to solving real-world health challenges. As an ambassador, he collaborates with researchers, clinicians, and technologists from around the world, leveraging this international network to accelerate Virufy’s mission of accessible, AI-driven respiratory health screening.',
+    image: '/images/amilsStory/one-young-world-cover.webp',
+  },
+  banner: {
+    title: 'Built in Partnership With a Global Network',
+    text: 'Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide.',
+    buttonText: 'View Our Supporters',
+    url: '/supporters',
   },
 };
 

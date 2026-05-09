@@ -1,55 +1,66 @@
-import { type Donate } from '../types/donate';
+import type { Donate } from '../types/donate';
 
 const donate: Donate = {
-  heroSection: {
-    title: [
+  introSection: {
+    tag: 'Support Our Mission',
+    title: ['Together, we can revolutionize', 'global respiratory health'],
+    text: 'Every contribution brings us closer to delivering AI-powered diagnostic tools to patients and communities worldwide offering health equity.',
+    buttonText: 'How to Contribute',
+  },
+  impactSection: {
+    title: 'Your gift creates a lasting impact.',
+    description:
+      "Every donation helps Virufy bring accessible digital health technology to underserved communities. By supporting us, you're accelerating innovation and giving patients the tools to protect their health.",
+  },
+
+  pillars: [
+    {
+      title: 'Expand Access',
+      description:
+        'Bring AI-powered health screening tools and advantages to underserved communities worldwide.',
+      icon: '/icons/icon-expand-access.png',
+    },
+    {
+      title: 'Advance Research',
+      description:
+        'Support cutting-edge studies that improve early detection of respiratory illness.',
+      icon: '/icons/icon-advance-research.png',
+    },
+    {
+      title: 'Empower Patients',
+      description:
+        'Help individuals take control of their health with accessible, science-driven insights.',
+      icon: '/icons/icon-empower-patients.png',
+    },
+  ],
+  donateOptions: {
+    title: 'Choose how you’d like to give.',
+    subtitle:
+      'Your support matters. Select a donation option below to get started.',
+    options: [
       {
-        text: 'Juntos, podemos revolucionar la salud respiratoria a nivel mundial. ',
+        name: 'GoFundMe',
+        description:
+          "Contributions are directed through Virufy's GoFundMe campaign.",
+        buttonText: 'Donate via GoFundMe',
+        url: 'https://www.gofundme.com/f/donate-virufy',
+        icon: '/icons/icon-donate.png',
       },
       {
-        text: 'Cada contribución nos acerca a la posibilidad de ofrecer herramientas de diagnóstico basadas en inteligencia artificial a pacientes y comunidades que las necesitan.',
+        name: 'PayPal',
+        description:
+          "Contributions are processed directly through Virufy's PayPal account.",
+        buttonText: 'Donate via PayPal',
+        url: 'https://www.paypal.com/us/fundraiser/charity/4348461',
+        icon: '/icons/icon-donate.png',
       },
     ],
   },
-  donateSection: {
-    title: 'Tu donación genera un impacto duradero.',
-    text: 'Cada donación ayuda a Virufy a llevar tecnología accesible para la salud respiratoria a las personas y comunidades que más la necesitan. Al apoyarnos, estás impulsando la innovación y brindando a los pacientes las herramientas para proteger su salud.',
-    contentBlocks: [
-      {
-        title: 'Ampliar el acceso',
-        text: 'Llevar herramientas de detección de salud impulsadas por IA a comunidades desatendidas en todo el mundo.',
-      },
-      {
-        title: 'Investigación Avanzada',
-        text: 'Apoyamos estudios de vanguardia que mejoran la detección temprana y el tratamiento de las enfermedades respiratorias.',
-      },
-      {
-        title: 'Empoderar a los pacientes',
-        text: 'Ayude a las personas a tomar el control de su salud con información accesible y basada en evidencia científica.',
-      },
+  banner: {
+    title: 'Transparency you can trust.',
+    text: [
+      'Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research, innovation, and patient access.',
     ],
-    optionsTitle: 'Elige cómo deseas donar:',
-    optionsText:
-      'Tu apoyo es importante. Selecciona una opción de donación a continuación para comenzar.',
-    DonationsOptionsBlock: [
-      {
-        optionTitle: 'Dona a través de GoFundMe',
-        optionText:
-          'Contribuye a nuestra campaña actual y ayúdanos a llegar a más personas, más rápido.',
-        buttonText: 'GoFundMe',
-      },
-      {
-        optionTitle: 'Dona a través de PayPal',
-        optionText:
-          'Realiza una donación segura, única o recurrente, directamente a través de PayPal.',
-        buttonText: 'PayPal',
-      },
-    ],
-  },
-  donationTransparencyBlock: {
-    title: 'Transparency you can trust',
-    text: 'Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research,innovation, and patient access.',
   },
 };
-
 export default donate;

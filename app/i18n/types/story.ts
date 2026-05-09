@@ -1,25 +1,35 @@
 export interface Story {
-  storySection: StorySection;
-  MissionSection: StorySection;
-  privacySection: PrivacySection;
+  introSection: {
+    tag: string;
+    title: string[];
+    text: string;
+  };
+  section2: {
+    title: string;
+    text: string[];
+  };
+  section3: {
+    title: string;
+    subtitle: string;
+    StoryCard: StoryCard[];
+  };
+  section4: {
+    title: string;
+    subtitle: string;
+    cardtitle: string[];
+    cardtext: string[];
+    cardsubtext: string[];
+  };
+  banner: {
+    title: string;
+    buttontext: string;
+    text: string[];
+    link: string;
+  };
 }
-
-interface StorySection {
+export interface StoryCard {
   title: string;
-  texts: StorySectionText[][];
-}
-
-export interface StorySectionText {
-  type: string;
   text: string;
-  url?: string;
-  style?: Record<string, string>;
-  className?: string;
+  icon: string;
+  style: string;
 }
-
-export interface Section {
-  title: string;
-  texts: string[];
-}
-
-type PrivacySection = Section;

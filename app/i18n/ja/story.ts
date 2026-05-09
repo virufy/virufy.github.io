@@ -1,95 +1,77 @@
-import {} from '@/public/images/story';
-import { type Story } from '../types/story';
+import type { Story } from '../types/story';
 
 const story: Story = {
-  storySection: {
-    title: 'どのように始まったか',
-    texts: [
-      [
-        {
-          type: 'text',
-          text: 'パンデミックの際、',
-        },
-        {
-          type: 'link',
-          url: '/amils-story',
-          text: 'Virufyの創設者アミル・カンザダは',
-        },
-        {
-          type: 'text',
-          text: 'スマートフォンの普及率の高さに着目し、またコロナウイルスが鼻や喉、肺に影響を及ぼすことを認識していました。',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'そこで、呼吸音や咳の音を機械学習で分析することでコロナの規則性を検出できる、という仮定を立てました。',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'ポジティブな影響を与えたいという思いから、名門大学病院で362人の患者を対象にした臨床研究を主導しました。スタンフォード大学のAIを研究する大学院生から始まったVirufyの最初のチームは、世界中の大学から集まったボランティアチームにまで拡大しています。',
-        },
-      ],
+  introSection: {
+    title: ['Redefining', 'Early Detection', 'Through AI and Sound'],
+    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping screen for potential respiratory illnesses early and non-invasively.',
+    tag: 'About Virufy',
+  },
+  section2: {
+    title: 'From Inception to Global Movement',
+    text: [
+      'Virufy was founded in 2020 during the early days of the COVID-19 pandemic, when limited testing access and overwhelmed healthcare systems left millions without timely answers. A group of Stanford students recognized the growing gap between the need for early detection and the tools available to most people around the world.',
+
+      'At the same time, emerging research in artificial intelligence suggested that respiratory sounds, such as coughs and breathing patterns, could reveal signs of disease. Knowing that COVID-19 directly affects the nose, throat, and lungs, the team explored whether machine learning could analyze these signals using something nearly everyone already had, a smartphone.',
+
+      'What began as a student research effort quickly grew into global volunteer recruitment and clinical studies, laying the foundation for Virufy’s work today. The project evolved into a nonprofit focused on advancing fast, accessible, and scalable respiratory health screening for communities worldwide.',
     ],
   },
-  MissionSection: {
-    title: '私たちの使命',
-    texts: [
-      [
-        {
-          type: 'text',
-          text: '「私たちの存在意義は何か？」「なぜ、これほど多くの人々がVirufyを支援してくださるのか？」そうお考えの方もいらっしゃるかもしれません。',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'Virufyの使命と目標は、世界の医療に根底からの変革をもたらすことです。',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: '私たちの願いは、新型コロナウイルス、インフルエンザ、RSウイルス、COPD、喘息、肺がんといった呼吸器疾患を、誰もがウェブアプリを使い、わずか数秒で検知できるようにすること。',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: 'そして、発展途上国に住む10億人の人々が、自身と大切な人の健康を守る力をその手にすることです。',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: '現在、公開されているアドバイザー一覧は',
-        },
-        {
-          type: 'link',
-          url: '/advisors',
-          text: 'こちら',
-        },
-        {
-          type: 'text',
-          text: 'からご覧いただけます。これまでに1,300名を超えるボランティアの方々が、この活動に参加してくださいました。',
-        },
-      ],
-      [
-        {
-          type: 'text',
-          text: '私たちのミッションにご参加いただき、ありがとうございます。共に、この未来を実現させましょう。',
-        },
-      ],
+  section3: {
+    title: 'Our Values',
+    subtitle:
+      'These are the principles that guide our work and define our commitment to the world.',
+    StoryCard: [
+      {
+        title: 'Global Equity',
+        text: 'We believe health screening should be accessible to everyone, regardless of geography or economic status.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Scientific Rigor',
+        text: 'Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Privacy First',
+        text: 'User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
+      {
+        title: 'Open Collaboration',
+        text: 'We partner with universities, NGOs, and governments to advance research and maximize global impact.',
+        icon: './icons/Icon-story-globe.png',
+        style: '',
+      },
     ],
   },
-  privacySection: {
-    title: 'プライバシーへの取り組み',
-    texts: [
-      'Virufyは、個人情報のプライバシーと保護を真剣に考えています。私たちの法務チームは、ウェブサイトを通じて共有された個人情報を保護するため、詳細なプライバシーポリシーとクッキーポリシーを作成しました。',
+  section4: {
+    title: 'Our Impact at a Glance',
+    subtitle:
+      "Building the world's largest open cough audio dataset to advance respiratory health research globally.",
+    cardtitle: ['250K+', '5+', '250+', '10+'],
+    cardtext: [
+      'Cough Samples Collected',
+      'Countries Reached',
+      'Active Volunteers',
+      'Research Partners',
     ],
+    cardsubtext: [
+      'Contributing to global research',
+      'Building a truly global dataset',
+      'Student and researchers',
+      'Universities and institutions',
+    ],
+  },
+  banner: {
+    title: 'Ready to Make a Difference?',
+    buttontext: 'Message Us',
+    text: [
+      'Whether you want to volunteer, partner with us, or support our mission, we’d love to hear from you and explore how we can work together to make a meaningful impact.',
+    ],
+    link: 'https://www.linkedin.com/company/virufy/posts/?feedView=all',
   },
 };
-
 export default story;

@@ -70,7 +70,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
       {
         label: 'About Us',
         route: [
-          `/${lang}/sevenwho-we-are`,
+          `/${lang}/story`,
           `/${lang}/advisors`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
@@ -391,7 +391,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           links={[
                             {
                               label: aboutUs?.section,
-                              href: `/${lang}/sevenwho-we-are`,
+                              href: `/${lang}/story`,
                               subtext: aboutUs.sectionsubtext,
                             },
                             {

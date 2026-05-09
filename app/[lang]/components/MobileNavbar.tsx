@@ -65,7 +65,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
       {
         label: 'About Us',
         route: [
-          `/${lang}/sevenwho-we-are`,
+          `/${lang}/story`,
           `/${lang}/advisors`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
@@ -240,7 +240,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
     {
       label: aboutUs?.section || 'About Us',
       links: [
-        { label: aboutUs?.section || '', href: `/${lang}/sevenwho-we-are` },
+        { label: aboutUs?.section || '', href: `/${lang}/story` },
         { label: aboutUs?.advisors || '', href: `/${lang}/advisors` },
         { label: aboutUs?.ourFounder || '', href: `/${lang}/amils-story` },
         { label: aboutUs?.ourSupporters || '', href: `/${lang}/supporters` },

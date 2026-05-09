@@ -2,22 +2,43 @@
   {
     "id": "en-ai-hero",
     "lang": "en",
-    "title": "The science behind  Virufy",
-    "content": "Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence.",
+    "title": "The  Science  Behind Virufy",
+    "content": "Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.",
     "url": "/en/ai"
   },
   {
     "id": "en-ai-01",
     "lang": "en",
-    "title": "How does AI work? - 01",
-    "content": "Our groundbreaking app employs cutting-edge AI technology to analyze your breathing patterns using deep learning algorithms and audio signal processing techniques.",
+    "title": "How Virufy's AI Learns - Sound Capture",
+    "content": "Users record short, anonymized cough samples through the Virufy app.",
     "url": "/en/ai"
   },
   {
     "id": "en-ai-02",
     "lang": "en",
-    "title": "How does AI work? - 02",
-    "content": "The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.",
+    "title": "How Virufy's AI Learns - Acoustic Processing",
+    "content": "Each cough is converted into a visual sound map, or spectrogram.",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-03",
+    "lang": "en",
+    "title": "How Virufy's AI Learns - Feature Extraction",
+    "content": "AI identifies subtle patterns and acoustic biomarkers in the data.",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-04",
+    "lang": "en",
+    "title": "How Virufy's AI Learns - Model Training",
+    "content": "Algorithms learn from global datasets to improve accuracy and fairness.",
+    "url": "/en/ai"
+  },
+  {
+    "id": "en-ai-05",
+    "lang": "en",
+    "title": "How Virufy's AI Learns - Validation & Insight",
+    "content": "Users results are tested to ensure ongoing improvement and effectiveness.",
     "url": "/en/ai"
   },
   {
@@ -247,29 +268,29 @@
   {
     "id": "en-home-intro",
     "lang": "en",
-    "title": "Welcome to Virufy",
-    "content": "Introducing  Virufy , the cutting-edge app that utilizes audio and generative AI to analyze your breathing patterns and provide insights into potential infection symptoms.  Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.  We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.",
+    "title": "AI-Powered Respiratory Health Screening",
+    "content": "Your Digital Health Companion With a simple cough into your phone, Virufy's AI screens for sound patterns linked to respiratory illnesses like COVID-19, RSV, Pneumonia, Asthma, and COPD",
     "url": "/en"
   },
   {
-    "id": "en-home-how-it-works",
+    "id": "en-home-mission",
     "lang": "en",
-    "title": "How It Works",
-    "content": "With just a simple intentional cough into your device's microphone,  Virufy  harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, pneumonia, flu, RSV, COPD, and asthma.",
+    "title": "Our Mission to Redefine Early Detection",
+    "content": "Uniting science, empathy, and innovation to advance early detection for all. We are a nonprofit dedicated to transforming how the world detects and understands respiratory illness, through advanced audio analysis and generative AI. Our mission is to make early detection accessible, private, and affordable for all. By delivering AI-driven screening tools that work on any smartphone, or web browser we empower patients, clinicians, and health systems—especially in low-income and underserved regions—to take action sooner and improve health outcomes worldwide. Virufy bridges the gap between technology and humanity, turning everyday moments into opportunities for life-saving insights, clinical research, global partnerships, and scientific integrity.",
     "url": "/en"
   },
   {
     "id": "en-home-health-priority",
     "lang": "en",
     "title": "Your Health, Our Priority",
-    "content": "At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential.",
+    "content": "At Virufy, your well-being is at the heart of everything we do. We prioritize privacy, ensuring that your data remains secure and confidential. Instant Analysis Rapid feedback on your cough’s characteristics and abnormality profile based on the sound pattern of your cough. At-home Anonymity Feel secure knowing that your results are only for your eyes. User-Friendly Interface User-Friendly Interface Intuitive design for easy navigation and seamless user experience *Virufy is not a substitute for professional medical advice, diagnosis, or treatment. Users are advised to consult a licensed healthcare provider for any medical concerns or decisions.*",
     "url": "/en"
   },
   {
     "id": "en-home-health-feature-1",
     "lang": "en",
     "title": "Instant Analysis",
-    "content": "Rapid feedback on your cough's characteristics and abnormality profile based on the sound pattern of your cough",
+    "content": "Rapid feedback on your cough’s characteristics and abnormality profile based on the sound pattern of your cough.",
     "url": "/en"
   },
   {
@@ -283,7 +304,42 @@
     "id": "en-home-health-feature-3",
     "lang": "en",
     "title": "User-Friendly Interface",
-    "content": "Intuitive design for easy navigation and seamless user experience.",
+    "content": "User-Friendly Interface Intuitive design for easy navigation and seamless user experience",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-global",
+    "lang": "en",
+    "title": "Advancing Global Health, Together.",
+    "content": "Virufy unites experts and volunteers worldwide to make respiratory screening accessible to everyone. Cross-Border Collaboration Working alongside universities, hospitals, and nonprofits to advance open-source research. Community Empowerment Every cough sample helps improve AI accuracy and supports equitable health outcomes. Open Innovation Our mission is driven by transparency and global cooperation with a people-first mindset.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-global-feature-1",
+    "lang": "en",
+    "title": "Cross-Border Collaboration",
+    "content": "Working alongside universities, hospitals, and nonprofits to advance open-source research.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-global-feature-2",
+    "lang": "en",
+    "title": "Community Empowerment",
+    "content": "Every cough sample helps improve AI accuracy and supports equitable health outcomes.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-global-feature-3",
+    "lang": "en",
+    "title": "Open Innovation",
+    "content": "Our mission is driven by transparency and global cooperation with a people-first mindset.",
+    "url": "/en"
+  },
+  {
+    "id": "en-home-technology",
+    "lang": "en",
+    "title": "Discover the Science Behind Virufy.",
+    "content": "Learn how AI and acoustic analysis come together to detect respiratory patterns and advance global health research. Explore Our Technology",
     "url": "/en"
   },
   {
@@ -476,24 +532,87 @@
     "url": "/en/join-us/27"
   },
   {
-    "id": "en-story-how-it-started",
+    "id": "en-story-intro",
     "lang": "en",
-    "title": "How It Started",
-    "content": "When the pandemic hit,  Virufy founder Amil Khanzada  knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, Amil orchestrated a clinical study with 362 patients in an esteemed university hospital. The original Virufy team started with Stanford graduate AI students and expanded to volunteers from universities globally.",
+    "title": "Redefining Early Detection Through AI and Sound",
+    "content": "Our AI technology listens for subtle patterns in the sound of your cough — helping screen for potential respiratory illnesses early and non-invasively.",
     "url": "/en/story"
   },
   {
-    "id": "en-story-our-mission",
+    "id": "en-story-section2",
     "lang": "en",
-    "title": "Our Mission",
-    "content": "Some people may be wondering, \"why are we here?\" and \"why have so many people supported Virufy?\" Virufy's mission and goal is to transform global health. We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds. We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones. Here is a listing of disclosed  advisors  and we have had 1,300+ volunteers to date. Thank you for being part of the mission and let's make it happen.",
+    "title": "From Inception to Global Movement",
+    "content": "Virufy was founded in 2020 during the early days of the COVID-19 pandemic, when limited testing access and overwhelmed healthcare systems left millions without timely answers. A group of Stanford students recognized the growing gap between the need for early detection and the tools available to most people around the world. At the same time, emerging research in artificial intelligence suggested that respiratory sounds, such as coughs and breathing patterns, could reveal signs of disease. Knowing that COVID-19 directly affects the nose, throat, and lungs, the team explored whether machine learning could analyze these signals using something nearly everyone already had, a smartphone. What began as a student research effort quickly grew into global volunteer recruitment and clinical studies, laying the foundation for Virufy’s work today. The project evolved into a nonprofit focused on advancing fast, accessible, and scalable respiratory health screening for communities worldwide.",
     "url": "/en/story"
   },
   {
-    "id": "en-story-privacy-commitment",
+    "id": "en-story-section3",
     "lang": "en",
-    "title": "Commitment to Privacy",
-    "content": "Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website.",
+    "title": "Our Values",
+    "content": "These are the principles that guide our work and define our commitment to the world.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-card-1",
+    "lang": "en",
+    "title": "Global Equity",
+    "content": "We believe health screening should be accessible to everyone, regardless of geography or economic status.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-card-2",
+    "lang": "en",
+    "title": "Scientific Rigor",
+    "content": "Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-card-3",
+    "lang": "en",
+    "title": "Privacy First",
+    "content": "User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-card-4",
+    "lang": "en",
+    "title": "Open Collaboration",
+    "content": "We partner with universities, NGOs, and governments to advance research and maximize global impact.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-section4",
+    "lang": "en",
+    "title": "Our Impact at a Glance",
+    "content": "Building the world's largest open cough audio dataset to advance respiratory health research globally.",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-section4-card-1",
+    "lang": "en",
+    "title": "250K+",
+    "content": "Cough Samples Collected Contributing to global research",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-section4-card-2",
+    "lang": "en",
+    "title": "5+",
+    "content": "Countries Reached Building a truly global dataset",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-section4-card-3",
+    "lang": "en",
+    "title": "250+",
+    "content": "Active Volunteers Student and researchers",
+    "url": "/en/story"
+  },
+  {
+    "id": "en-story-section4-card-4",
+    "lang": "en",
+    "title": "10+",
+    "content": "Research Partners Universities and institutions",
     "url": "/en/story"
   },
   {
@@ -630,11 +749,186 @@
     "url": "/en/one-young-world"
   },
   {
-    "id": "en-supporters",
+    "id": "en-supporters-intro",
     "lang": "en",
     "title": "Our Supporters",
-    "content": "Revolutionizing Global Health Together – Become a partner! (H4R | AWS | Microsoft | Response Innovation Lab | One Young World | Drive | University Fukui | Idime | Pillsbury | Xoor | Sherlock Communications | Nuvu | SPI | Devlights | Fenwick | Olarte Moure | Locked Jar | Takemoto Lab | Life Science Washington | Candido Costa & Cancio | Arkangel Ai | Nexus Tax Services | CJ Partners)",
+    "content": "Global Partnerships Virufy collaborates with leading academic institutions, industry innovators, and nonprofit organizations worldwide to advance AI-powered respiratory health screening and make early detection accessible to everyone.",
     "url": "/en/supporters"
+  },
+  {
+    "id": "en-supporters-list",
+    "lang": "en",
+    "title": "Supporters",
+    "content": "H4R | AWS | Microsoft | Response Innovation Lab | One Young World | Drive | University Fukui | Idime | Pillsbury | Xoor | Sherlock Communications | Nuvu | SPI | Devlights | Fenwick | Olarte Moure | Locked Jar | Takemoto Lab | Life Science Washington | Candido Costa & Cancio | Arkangel Ai | Nexus Tax Services | CJ Partners",
+    "url": "/en/supporters"
+  },
+  {
+    "id": "en-supporter-1",
+    "lang": "en",
+    "title": "H4R",
+    "content": "H4R",
+    "url": "https://h4r.stanford.edu/"
+  },
+  {
+    "id": "en-supporter-2",
+    "lang": "en",
+    "title": "AWS",
+    "content": "AWS",
+    "url": "https://aws.amazon.com/"
+  },
+  {
+    "id": "en-supporter-3",
+    "lang": "en",
+    "title": "Microsoft",
+    "content": "Microsoft",
+    "url": "https://www.microsoft.com/"
+  },
+  {
+    "id": "en-supporter-4",
+    "lang": "en",
+    "title": "Response Innovation Lab",
+    "content": "Response Innovation Lab",
+    "url": "https://www.responseinnovationlab.com/"
+  },
+  {
+    "id": "en-supporter-5",
+    "lang": "en",
+    "title": "One Young World",
+    "content": "One Young World",
+    "url": "https://www.oneyoungworld.com/counsellors"
+  },
+  {
+    "id": "en-supporter-6",
+    "lang": "en",
+    "title": "Drive",
+    "content": "Drive",
+    "url": "https://drive.hhs.gov/"
+  },
+  {
+    "id": "en-supporter-7",
+    "lang": "en",
+    "title": "University Fukui",
+    "content": "University Fukui",
+    "url": "https://www.u-fukui.ac.jp/eng"
+  },
+  {
+    "id": "en-supporter-8",
+    "lang": "en",
+    "title": "Idime",
+    "content": "Idime",
+    "url": "https://idime.com.co/"
+  },
+  {
+    "id": "en-supporter-9",
+    "lang": "en",
+    "title": "Pillsbury",
+    "content": "Pillsbury",
+    "url": "https://www.pillsburylaw.com/en/"
+  },
+  {
+    "id": "en-supporter-10",
+    "lang": "en",
+    "title": "Xoor",
+    "content": "Xoor",
+    "url": "https://xoor.io/en/"
+  },
+  {
+    "id": "en-supporter-11",
+    "lang": "en",
+    "title": "Sherlock Communications",
+    "content": "Sherlock Communications",
+    "url": "https://www.sherlockcomms.com/"
+  },
+  {
+    "id": "en-supporter-12",
+    "lang": "en",
+    "title": "Nuvu",
+    "content": "Nuvu",
+    "url": "https://www.nuvu.cc/"
+  },
+  {
+    "id": "en-supporter-13",
+    "lang": "en",
+    "title": "SPI",
+    "content": "SPI",
+    "url": "https://spiamericas.com/en/home/"
+  },
+  {
+    "id": "en-supporter-14",
+    "lang": "en",
+    "title": "Devlights",
+    "content": "Devlights",
+    "url": "https://www.devlights.com/"
+  },
+  {
+    "id": "en-supporter-15",
+    "lang": "en",
+    "title": "Fenwick",
+    "content": "Fenwick",
+    "url": "https://www.fenwick.com/"
+  },
+  {
+    "id": "en-supporter-16",
+    "lang": "en",
+    "title": "Olarte Moure",
+    "content": "Olarte Moure",
+    "url": "https://www.olartemoure.com/"
+  },
+  {
+    "id": "en-supporter-17",
+    "lang": "en",
+    "title": "Locked Jar",
+    "content": "Locked Jar",
+    "url": "https://www.lockedjar.com/"
+  },
+  {
+    "id": "en-supporter-18",
+    "lang": "en",
+    "title": "Takemoto Lab",
+    "content": "Takemoto Lab",
+    "url": "http://www.hisac.u-fukui.ac.jp/imlabo/home.html"
+  },
+  {
+    "id": "en-supporter-19",
+    "lang": "en",
+    "title": "Life Science Washington",
+    "content": "Life Science Washington",
+    "url": "https://www.lswinstitute.org/"
+  },
+  {
+    "id": "en-supporter-20",
+    "lang": "en",
+    "title": "Candido Costa & Cancio",
+    "content": "Candido Costa & Cancio",
+    "url": "https://cccadv.com.br/site/en/home/"
+  },
+  {
+    "id": "en-supporter-21",
+    "lang": "en",
+    "title": "Arkangel Ai",
+    "content": "Arkangel Ai",
+    "url": "https://www.arkangel.ai/"
+  },
+  {
+    "id": "en-supporter-22",
+    "lang": "en",
+    "title": "Nexus Tax Services",
+    "content": "Nexus Tax Services",
+    "url": "https://nexustaxaccountants.com/"
+  },
+  {
+    "id": "en-supporter-23",
+    "lang": "en",
+    "title": "CJ Partners",
+    "content": "CJ Partners",
+    "url": "https://www.cj-partners.com/"
+  },
+  {
+    "id": "en-supporters-banner",
+    "lang": "en",
+    "title": "Join Our Mission",
+    "content": "Partner with Virufy to advance respiratory health screening technology and make a global impact. Together, we can help detect diseases earlier and save lives worldwide. Become a Partner",
+    "url": "/join-us"
   },
   {
     "id": "en-advisors-1",
@@ -980,32 +1274,88 @@
     "url": "/en/news"
   },
   {
-    "id": "en-amilsStory-1",
+    "id": "en-amilsStory-hero",
     "lang": "en",
-    "title": "Early Life",
-    "content": "Born and raised in the Silicon Valley in an immigrant family, Amil attended homeschooling and began studying at community college while 14 years old. Amil father's dedication to social service shaped him, with a childhood filled with volunteer activities such as feeding the homeless at soup kitchens. Soon after, Amil's father passed away in a fatal car crash with a drunk driver. Although struggling emotionally with the loss of his hero, Amil took his first job as a software consultant developing image recognition technology for automated grading of tests in K-12 schools. After receiving his B.A. in Computer Science from University of California, Berkeley, Amil joined Hewlett-Packard (HP) in Silicon Valley to work full-time as a software engineer developing security log standardization software for ArcSight, a Security Information and Event Management System (SIEM).",
+    "title": "Meet Our  Founder",
+    "content": "Meet Amil Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.",
     "url": "/en/amils-story"
   },
   {
-    "id": "en-amilsStory-2",
+    "id": "en-amilsStory-story",
     "lang": "en",
-    "title": "Professional Growth",
-    "content": "Seeking a new home, Amil transferred to HP’s Tokyo headquarters to take on a role as cybersecurity consultant, in which he traveled across Hong Kong, Tokyo, and Australia to deploy SIEM solutions at customer sites in the banking industry. Thereafter, Amil returned to Silicon Valley to join Pivotal Software as a software engineer working primarily on the Postgres-based open source Greenplum OLAP database. In Pivotal’s extreme programming (XP) environment, Amil practiced several software development practices, including daily pair programming, test-driven development (TDD), and weekly retroactive meetings, while rotating across several teams, including DevOps, database backend, and workload management tooling.",
+    "title": "Amil's Story",
+    "content": "Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact. Since its founding, Virufy has grown into an international nonprofit operating across three continents, supported by more than 250 volunteers and 60 partner organizations. Guided by its mission to democratize access to health screening, Virufy continues to advance AI-driven disease detection to help communities respond faster, earlier, and more equitably to global health threats.",
     "url": "/en/amils-story"
   },
   {
-    "id": "en-amilsStory-3",
+    "id": "en-amilsStory-milestones-overview",
     "lang": "en",
-    "title": "Global Impact",
-    "content": "In 2018, Amil took leave from work to move to the countryside of Japan. Living in Eiheiji town, the birthplace of Soto Zen, Amil meditated daily and learned Zen philosophy, while giving back teaching agile programming to young adults and children. Soon, Amil was appointed Evolution Ambassador of the town and sent to the One Young World conference in the Netherlands to represent Japan, amongst other young social impact leaders, country heads, and Nobel Laureates from 195 countries.",
+    "title": "Key Milestones",
+    "content": "A journey from pandemic response to global impact in respiratory health technology.",
     "url": "/en/amils-story"
   },
   {
-    "id": "en-amilsStory-4",
+    "id": "en-amilsStory-milestone-1",
     "lang": "en",
-    "title": "Founding Virufy",
-    "content": "In late 2019, Amil left his job to pursue graduate studies in Artificial Intelligence at Stanford University, taking his first courses with Coursera founder Dr. Andrew Ng and ImageNet creator Dr. Fei-Fei Li. When the pandemic hit, Amil committed himself to pandemic relief efforts and soon founded Virufy. Virufy is a nonprofit organization developing a smartphone app to prescreen for COVID-19 instantly through AI-powered analysis of voice and cough recordings. As of July 2024, the organization operates in a three continents with more than 250 volunteers and 60 partner organizations.",
+    "title": "2020: The Stanford Genesis",
+    "content": "2020 While a student at Stanford, Amil established Virufy as a registered nonprofit in direct response to the global pandemic. He mobilized a world-class volunteer network to begin collecting cough recordings, launching the first clinical research studies in South Asia to train AI for COVID-19 detection.",
     "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-milestone-2",
+    "lang": "en",
+    "title": "2021: Global Outreach & Data Expansion",
+    "content": "2021 Our partner Sherlock Communications led a massive marketing push across Latin America, generating over 300 press releases to drive large-scale data collection and public awareness. Amil began representing Virufy at major global summits, establishing the organization as an international leader in the emerging field of acoustic health.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-milestone-3",
+    "lang": "en",
+    "title": "2022: Federal Recognition & Development",
+    "content": "2022 Virufy secured a prestigious research contract with the U.S. Department of Health and Human Services (BARDA). This milestone significantly accelerated the organization’s development capabilities and provided federal-level validation for the mission to provide accessible respiratory screening tools. Our clinical studies in Colombia proceeded in parallel.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-milestone-4",
+    "lang": "en",
+    "title": "2023: Strategic Innovation & NSF I-Corps",
+    "content": "2023 Following the conclusion of the public health emergency, Amil led Virufy through the National Science Foundation (NSF) I-Corps program. He traveled extensively across the U.S. to conduct hundreds of interviews, defining a robust operational model for acoustic AI to detect respiratory threats beyond COVID-19.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-milestone-5",
+    "lang": "en",
+    "title": "2024: The Japan Hub & Elderly Care",
+    "content": "2024 Amil established a significant operational presence in Japan with support from JETRO. He spearheaded a major research shift toward detecting pneumonia in elderly care facilities, establishing a local HQ in Fukuoka to serve the specific needs of the Japanese healthcare market.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-milestone-6",
+    "lang": "en",
+    "title": "2025: Global Scale & Multi-Disease Detection",
+    "content": "2025 Amil launched operations in Dubai, securing a critical partnership with a health ministry arm to validate and deploy COVID/Flu detection technology. This initiative focused on achieving large-scale population health surveillance and strengthening public health infrastructure.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-milestone-7",
+    "lang": "en",
+    "title": "2026: Academic Leadership & Global Mission",
+    "content": "2026 Amil joined the University of Fukui as a Specially Appointed Assistant Professor of Social Informatics. In this role, he continues to lead Virufy’s global mission in parallel with his academic research on GovAI, regional revitalization, and the practical deployment of global health technologies.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-oyw",
+    "lang": "en",
+    "title": "Supported by a Global Network –  One Young World",
+    "content": "Through One Young World, Amil has been able to scale his vision beyond borders, connecting with a global community of young leaders committed to solving real-world health challenges. As an ambassador, he collaborates with researchers, clinicians, and technologists from around the world, leveraging this international network to accelerate Virufy’s mission of accessible, AI-driven respiratory health screening.",
+    "url": "/en/amils-story"
+  },
+  {
+    "id": "en-amilsStory-banner",
+    "lang": "en",
+    "title": "Built in Partnership With a Global Network",
+    "content": "Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide. View Our Supporters",
+    "url": "/supporters"
   },
   {
     "id": "en-oyw-intro",
@@ -1027,5 +1377,75 @@
     "title": "Covid-19 Cough Data Collection Study",
     "content": "An Independent Nonprofit Research Organization",
     "url": "/en/study/welcome"
+  },
+  {
+    "id": "en-donate-intro",
+    "lang": "en",
+    "title": "Together, we can revolutionize global respiratory health",
+    "content": "Support Our Mission Every contribution brings us closer to delivering AI-powered diagnostic tools to patients and communities worldwide offering health equity.",
+    "url": "/en/donate"
+  },
+  {
+    "id": "en-donate-impact",
+    "lang": "en",
+    "title": "Your gift creates a lasting impact.",
+    "content": "Every donation helps Virufy bring accessible digital health technology to underserved communities. By supporting us, you're accelerating innovation and giving patients the tools to protect their health.",
+    "url": "/en/donate"
+  },
+  {
+    "id": "en-donate-pillars",
+    "lang": "en",
+    "title": "Impact Pillars",
+    "content": "Expand Access Bring AI-powered health screening tools and advantages to underserved communities worldwide. Advance Research Support cutting-edge studies that improve early detection of respiratory illness. Empower Patients Help individuals take control of their health with accessible, science-driven insights.",
+    "url": "/en/donate"
+  },
+  {
+    "id": "en-donate-pillar-1",
+    "lang": "en",
+    "title": "Expand Access",
+    "content": "Bring AI-powered health screening tools and advantages to underserved communities worldwide.",
+    "url": "/en/donate"
+  },
+  {
+    "id": "en-donate-pillar-2",
+    "lang": "en",
+    "title": "Advance Research",
+    "content": "Support cutting-edge studies that improve early detection of respiratory illness.",
+    "url": "/en/donate"
+  },
+  {
+    "id": "en-donate-pillar-3",
+    "lang": "en",
+    "title": "Empower Patients",
+    "content": "Help individuals take control of their health with accessible, science-driven insights.",
+    "url": "/en/donate"
+  },
+  {
+    "id": "en-donate-options",
+    "lang": "en",
+    "title": "Choose how you’d like to give.",
+    "content": "Your support matters. Select a donation option below to get started. GoFundMe Contributions are directed through Virufy's GoFundMe campaign. PayPal Contributions are processed directly through Virufy's PayPal account.",
+    "url": "/en/donate"
+  },
+  {
+    "id": "en-donate-option-1",
+    "lang": "en",
+    "title": "GoFundMe",
+    "content": "Contributions are directed through Virufy's GoFundMe campaign. Donate via GoFundMe",
+    "url": "https://www.gofundme.com/f/donate-virufy"
+  },
+  {
+    "id": "en-donate-option-2",
+    "lang": "en",
+    "title": "PayPal",
+    "content": "Contributions are processed directly through Virufy's PayPal account. Donate via PayPal",
+    "url": "https://www.paypal.com/us/fundraiser/charity/4348461"
+  },
+  {
+    "id": "en-donate-banner",
+    "lang": "en",
+    "title": "Transparency you can trust.",
+    "content": "Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research, innovation, and patient access.",
+    "url": "/en/donate"
   }
 ]

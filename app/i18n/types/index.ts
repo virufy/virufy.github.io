@@ -4,7 +4,7 @@ import { type AmilsStory } from './amilsStory';
 import { type FAQ } from './faq';
 import { type Footer } from './footer';
 import { type Fukuoka } from './fukuoka';
-import { type HomeType } from './home';
+import { type homepage } from './home';
 import { type JobDetails } from './jobDetails';
 import { type JobListing } from './jobListing';
 import { type NavbarType } from './navbar';
@@ -15,16 +15,10 @@ import { type PressReleases } from './news';
 import { type Publications } from './publications';
 import { type ShareYourCough } from './shareYourCough';
 import { type Story } from './story';
-import { type Supporters } from './supporters';
+import { type supporters } from './supporters';
 import { type TeamLeadsType } from './teamLeads';
 import { type Donate } from './donate';
 import { type Post } from './BlogPosts';
-import { type sevenAi } from './sevenai';
-import { type sevenhomepage } from './sevenhomepage';
-import { type sevensupporters } from './sevensupporters';
-import { type sevenwho_we_are } from './sevenwho-we-are';
-import { type sevenAmilsStory } from './sevenamilsStory';
-import { type SevenSupportUs } from './sevensupportus';
 
 export interface I18nData {
   ai: Ai;
@@ -33,7 +27,7 @@ export interface I18nData {
   faq: FAQ;
   footer: Footer;
   fukuoka: Fukuoka;
-  home: HomeType;
+  home: homepage;
   jobDetails: JobDetails;
   jobListing: JobListing;
   navbar: NavbarType;
@@ -44,14 +38,8 @@ export interface I18nData {
   pressReleases: PressReleases;
   shareYourCough: ShareYourCough;
   story: Story;
-  supporters: Supporters;
+  supporters: supporters;
   teamLeads: TeamLeadsType;
   donate: Donate;
   blogPosts: Record<string, Post>;
-  sevenai: sevenAi;
-  sevenhomepage: sevenhomepage;
-  sevensupporters: sevensupporters;
-  sevenwho_we_are: sevenwho_we_are;
-  sevenamilsStory: sevenAmilsStory;
-  sevensupportus: SevenSupportUs;
 }
