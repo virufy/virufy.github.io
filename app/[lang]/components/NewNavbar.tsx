@@ -428,12 +428,12 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           links={[
                             {
                               label: media.ourResearch,
-                              href: `/${lang}/news`,
+                              href: `/${lang}/publications`,
                               subtext: media.presssubtext,
                             },
                             {
                               label: media.pressReleases,
-                              href: `/${lang}/publications`,
+                              href: `/${lang}/news`,
                               subtext: media.researchsubtext,
                             },
                             {

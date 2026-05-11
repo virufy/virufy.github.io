@@ -253,8 +253,8 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
     {
       label: media?.section || 'Media',
       links: [
-        { label: media?.ourResearch || '', href: `/${lang}/news` },
-        { label: media?.pressReleases || '', href: `/${lang}/publications` },
+        { label: media?.ourResearch || '', href: `/${lang}/publications` },
+        { label: media?.pressReleases || '', href: `/${lang}/news` },
       ],
     },
   ];
