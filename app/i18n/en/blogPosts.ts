@@ -142,24 +142,38 @@ const blogPosts: Record<string, Post> = {
       Screening early doesn't guarantee a clean result. But it gives you information while it's still useful, while there's still time to act, to adjust, to get ahead of something that would otherwise get ahead of you.
     </p>
 
-    <h2>References</h2>
-    <ul>
-      <li>
-        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9655248/" target="_blank" rel="noopener noreferrer">
-          National Center for Biotechnology Information — "Severe Air Pollution Exposure and Long-Term Health Outcomes" (2022)
-        </a>
-      </li>
-      <li>
-        <a href="https://www.asthmaandlung.org.uk/living-with/air-pollution/your-lungs" target="_blank" rel="noopener noreferrer">
-          Asthma + Lung UK — "Air pollution effects on your lungs"
-        </a>
-      </li>
-      <li>
-        <a href="https://www.who.int/news-room/questions-and-answers/item/who-global-air-quality-guidelines" target="_blank" rel="noopener noreferrer">
-          World Health Organization — "Global Air Quality Guidelines" (2021)
-        </a>
-      </li>
-    </ul>
+<h2>References</h2>
+<ul>
+  <li>
+    <a
+      href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9655248/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      National Center for Biotechnology Information — "Severe Air Pollution Exposure and Long-Term Health Outcomes" (2022)
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.asthmaandlung.org.uk/living-with/air-pollution/your-lungs"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Asthma + Lung UK — "Air pollution effects on your lungs"
+    </a>
+  </li>
+
+  <li>
+    <a
+      href="https://www.who.int/news-room/questions-and-answers/item/who-global-air-quality-guidelines"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      World Health Organization — "Global Air Quality Guidelines" (2021)
+    </a>
+  </li>
+</ul>
   `,
   },
 };
