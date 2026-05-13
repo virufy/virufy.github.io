@@ -468,15 +468,6 @@ const faq: FAQ = {
                 },
                 {
                   type: 'text',
-                  text: '. Para consultas relacionadas con los datos, puedes escribirnos a ',
-                },
-                {
-                  type: 'link',
-                  text: 'open-data@virufy.org',
-                  href: 'mailto:open-data@virufy.org',
-                },
-                {
-                  type: 'text',
                   text: '. Para todas las demás consultas, puedes contactarnos a través de ',
                 },
                 {
