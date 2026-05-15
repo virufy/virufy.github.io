@@ -1,11 +1,16 @@
 export { default as InstagramIconDarkGradient } from '../../icons/icon-instagram-gradient.png';
 export { default as InstagramIconWhite } from '../../icons/icon-instagram-white.svg';
+export { default as InstagramIconColor } from '../../icons/icon-instagram-color.png';
 export { default as LinkedInIconDarkGradient } from '../../icons/icon-linkedin-gradient.png';
 export { default as LinkedInIconWhite } from '../../icons/icon-linkedin-white.svg';
+export { default as LinkedInIconColor } from '../../icons/icon-linkedin-color.png';
 export { default as XIconWhite } from '../../icons/icon-x-white.svg';
 export { default as XIconDarkGradient } from '../../icons/icon-x-gradient.svg';
+export { default as XIconColor } from '../../icons/icon-x-color.png';
 export { default as YouTubeIconDarkGradient } from '../../icons/icon-youtube-gradient.svg';
 export { default as YouTubeIconWhite } from '../../icons/icon-youtube-white.svg';
+export { default as YouTubeIconColor } from '../../icons/icon-youtube-color.png';
 export { default as CandidSeal } from '../../icons/icon-candid-seal.svg';
 export { default as TikTokIconDarkGradient } from '../../icons/icon-tiktok-gradient.png';
 export { default as TikTokIconWhite } from '../../icons/icon-tiktok-white.png';
+export { default as TikTokIconColor } from '../../icons/icon-tiktok-color.png';
