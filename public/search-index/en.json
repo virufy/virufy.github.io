@@ -3,21 +3,21 @@
     "id": "en-ai-hero",
     "lang": "en",
     "title": "The science behind  Virufy",
-    "content": "Artificial Intelligence (AI) is capable of detecting minute differences in vocal patterns to detect disease presence.",
+    "content": "Artificial Intelligence (AI) can identify subtle differences in cough and breathing sounds associated with respiratory conditions.",
     "url": "/en/ai"
   },
   {
     "id": "en-ai-01",
     "lang": "en",
     "title": "How does AI work? - 01",
-    "content": "Our groundbreaking app employs cutting-edge AI technology to analyze your breathing patterns using deep learning algorithms and audio signal processing techniques.",
+    "content": "Our groundbreaking app employs cutting-edge AI technology to analyze cough and breathing sounds using deep learning algorithms and audio signal processing techniques.",
     "url": "/en/ai"
   },
   {
     "id": "en-ai-02",
     "lang": "en",
     "title": "How does AI work? - 02",
-    "content": "The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing for the early detection of potential health issues.",
+    "content": "The algorithm scrutinizes various elements of the cough, such as duration, frequency, and pitch. Leveraging a comprehensive database, the AI meticulously compares recorded cough patterns against known indicators of respiratory diseases, allowing to Identify signals associated with respiratory conditions.",
     "url": "/en/ai"
   },
   {
@@ -248,14 +248,14 @@
     "id": "en-home-intro",
     "lang": "en",
     "title": "Welcome to Virufy",
-    "content": "Introducing  Virufy , the cutting-edge app that utilizes audio and generative AI to analyze your breathing patterns and provide insights into potential infection symptoms.  Our innovative approach aims to offer superior respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.  We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.",
+    "content": "Introducing  Virufy , the cutting-edge app that utilizes audio and generative AI to analyze your breathing sounds and identify patterns associated with infection symptoms.  Our innovative approach aims to offer respiratory disease pre-screening for patients, clinicians and governments, especially in low-income countries.  We aspire to be the leading nonprofit organization for technology-enabled disease identification, transforming global healthcare and inspiring others to support and invest in this mission with us.",
     "url": "/en"
   },
   {
     "id": "en-home-how-it-works",
     "lang": "en",
     "title": "How It Works",
-    "content": "With just a simple intentional cough into your device's microphone,  Virufy  harnesses the power of artificial intelligence to detect unique sound patterns associated with respiratory diseases, such as COVID-19, pneumonia, flu, RSV, COPD, and asthma.",
+    "content": "With just a simple guided cough into your device's microphone,  Virufy  harnesses the power of artificial intelligence that screens for sound patterns associated with respiratory diseases, such as COVID-19, pneumonia, flu, RSV, COPD, and asthma.",
     "url": "/en"
   },
   {
@@ -479,21 +479,21 @@
     "id": "en-story-how-it-started",
     "lang": "en",
     "title": "How It Started",
-    "content": "When the pandemic hit,  Virufy founder Amil Khanzada  knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, Amil orchestrated a clinical study with 362 patients in an esteemed university hospital. The original Virufy team started with Stanford graduate AI students and expanded to volunteers from universities globally.",
+    "content": "When the pandemic hit,  Virufy founder Amil Khanzada  knew smartphones were omnipresent and that COVID affects the respiratory system. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, Amil orchestrated a clinical study with 362 patients in an esteemed university hospital. The original Virufy team started with Stanford graduate AI students and expanded to volunteers from universities globally.",
     "url": "/en/story"
   },
   {
     "id": "en-story-our-mission",
     "lang": "en",
     "title": "Our Mission",
-    "content": "Some people may be wondering, \"why are we here?\" and \"why have so many people supported Virufy?\" Virufy's mission and goal is to transform global health. We aim to give everyone in the world access to a web app to detect respiratory diseases like COVID, flu, RSV, COPD, asthma, lung cancer, in seconds. We would like a billion people in developing nations to be empowered to protect the health of themselves and loved ones. Here is a listing of disclosed  advisors  and we have had 1,300+ volunteers to date. Thank you for being part of the mission and let's make it happen.",
+    "content": "Some people may be wondering, \"why are we here?\" and \"why have so many people supported Virufy?\" Virufy's mission and goal is to transform global health. We aim to provide people around the world with access to a web-based tool that can help screen for potential respiratory conditions such as COVID-19, flu, RSV, COPD, asthma, and other lung-related conditions within seconds. Our goal is to empower individuals, particularly in developing regions, with tools that support greater awareness of their health and help them make informed decisions for themselves and their loved ones. Please note that this tool is not intended to provide medical diagnoses and should not replace consultation with a qualified healthcare professional. We are grateful for the support of our advisors and the contributions of over 1,300 volunteers to date. Thank you for being part of this mission.",
     "url": "/en/story"
   },
   {
     "id": "en-story-privacy-commitment",
     "lang": "en",
     "title": "Commitment to Privacy",
-    "content": "Virufy takes the privacy and protection of your personal information seriously. Our legal team has prepared a detailed Privacy Policy and Cookie Policy to protect the personal information you share with us through use of our website.",
+    "content": "Virufy takes your privacy seriously. Our legal team has developed detailed Privacy and Cookie Policies to protect any personal information you share while using our website.",
     "url": "/en/story"
   },
   {

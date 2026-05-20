@@ -341,7 +341,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
     showSearch && (
       <ul
         ref={dropdownRef}
-        className={`border-gray absolute left-1/2 top-[58px] z-50 max-h-96 w-[86vw] -translate-x-1/2 overflow-y-auto rounded-md border lg:w-[70vw] lg:border-0 ${navbar ? `${searchColors['black'].bg}` : `${pageSearchColor.bg}`} p-4 shadow-lg lg:bg-white lg:bg-opacity-85`}
+        className={`border-gray absolute left-0 right-0 top-[58px] z-50 max-h-96 w-full overflow-y-auto rounded-md border lg:w-[70vw] lg:border-0 ${navbar ? `${searchColors['black'].bg}` : `${pageSearchColor.bg}`} p-4 shadow-lg lg:bg-white lg:bg-opacity-85`}
         onClick={(e) => e.stopPropagation()}
       >
         {results.filter((r) => r.url).length > 0 ? (
@@ -397,11 +397,15 @@ export default function Navbar({ lang }: { lang: Locale }) {
       className={`absolute w-full bg-transparent ${navbar ? '' : 'p-2'} lg:p-0`}
     >
       <nav
-        className={`sticky z-[100] w-full rounded-full bg-opacity-80 ${pageSearchColor.bg} h-[50px] lg:bg-transparent`}
+        className={`sticky z-[100] w-full rounded-full bg-opacity-80 ${pageSearchColor.bg} lg:bg-transparent ${
+          navbar ? 'min-h-screen rounded-none' : 'max-h-[98px]'
+        } overflow-visible`}
       >
         {/* Navbar container */}
         <div
-          className={`lg:max-w-8lg justify-between ${navbar ? 'bg-black' : ''} px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2 ${navbar ? 'h-screen' : ''}`}
+          className={`lg:max-w-8lg justify-between ${
+            navbar ? 'bg-black' : ''
+          } px-3 lg:mx-4 lg:flex lg:items-center lg:bg-transparent lg:px-2`}
         >
           <div className="flex items-center justify-between lg:block lg:py-5">
             {/* Mobile Virufy Logo */}
@@ -736,7 +740,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   </li>
                   {/* Search bar for Desktop*/}
                   <li className="hidden items-center justify-center py-2 lg:flex">
-                    <div className="relative w-[175px]">
+                    <div className="relative w-full max-w-[700px]">
                       {renderSearchInput('w-full')}
                       {renderSearchDropdown()}
                     </div>

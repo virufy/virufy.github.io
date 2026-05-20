@@ -2,22 +2,22 @@
   {
     "id": "es-ai-hero",
     "lang": "es",
-    "title": "La Ciencia detrás de  Virufy",
-    "content": "La Inteligencia Artificial (IA) es capaz de detectar diferencias mínimas en los patrones vocales para detectar la presencia de enfermedades.",
+    "title": "La ciencia detrás de  Virufy",
+    "content": "La inteligencia artificial (IA) puede identificar diferencias sutiles en la tos y los sonidos de la respiración asociados con condiciones respiratorias.",
     "url": "/es/ai"
   },
   {
     "id": "es-ai-01",
     "lang": "es",
-    "title": "¿Cómo funciona la Inteligencia Artificial (IA)? - 01",
-    "content": "Nuestra revolucionaria aplicación CoughCheck emplea tecnología de inteligencia artificial de vanguardia. Con solo toser en su teléfono, nuestra aplicación captura y analiza distintos patrones de tos utilizando sofisticados algoritmos de aprendizaje automático y redes neuronales.",
+    "title": "¿Cómo funciona la IA? - 01",
+    "content": "Nuestra innovadora aplicación utiliza tecnología de inteligencia artificial de vanguardia para analizar sonidos de tos y respiración mediante algoritmos de aprendizaje profundo y técnicas de procesamiento de señales de audio.",
     "url": "/es/ai"
   },
   {
     "id": "es-ai-02",
     "lang": "es",
-    "title": "¿Cómo funciona la Inteligencia Artificial (IA)? - 02",
-    "content": "El algoritmo examina varios elementos de la tos, como la duración, la frecuencia y la intensidad. Aprovechando una base de datos completa, AI compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite la detección temprana de posibles problemas de salud.",
+    "title": "¿Cómo funciona la IA? - 02",
+    "content": "El algoritmo examina diversos elementos de la tos, como la duración, la frecuencia y el tono. Aprovechando una base de datos integral, la IA compara meticulosamente los patrones de tos registrados con indicadores conocidos de enfermedades respiratorias, lo que permite identificar señales asociadas con condiciones respiratorias.",
     "url": "/es/ai"
   },
   {
@@ -241,42 +241,42 @@
     "id": "es-home-intro",
     "lang": "es",
     "title": "Bienvenido a Virufy",
-    "content": "Presentamos  Virufy , la aplicación de vanguardia que utiliza algoritmos avanzados de audio e IA generativa para analizar tus patrones de respiración y proporcionar información sobre posibles síntomas de infección. Nuestro enfoque innovador tiene como objetivo ofrecer una detección previa superior de enfermedades respiratorias para pacientes, médicos y gobiernos, especialmente en países de bajos ingresos. Aspiramos a ser la organización sin fines de lucro líder en la identificación de enfermedades mediante tecnología, transformando la atención médica global e inspirando a otros a apoyar e invertir en esta misión con nosotros.",
+    "content": "Presentamos  Virufy , la aplicación de vanguardia que utiliza audio e inteligencia artificial generativa para analizar los sonidos de tu respiración e identificar patrones asociados con síntomas de infecciones.  Nuestro enfoque innovador tiene como objetivo ofrecer una preevaluación de enfermedades respiratorias para pacientes, médicos y gobiernos, especialmente en países de bajos ingresos.  Aspiramos a ser la principal organización sin fines de lucro en identificación de enfermedades mediante tecnología, transformando la atención médica global e inspirando a otros a apoyar e invertir en esta misión con nosotros.",
     "url": "/es"
   },
   {
     "id": "es-home-how-it-works",
     "lang": "es",
-    "title": "Cómo Funciona",
-    "content": "Con solo una simple tos intencional en el micrófono de tu dispositivo,  Virufy  aprovecha el poder de la inteligencia artificial para detectar patrones de sonido únicos asociados con enfermedades respiratorias, como COVID-19, neumonía, gripe, RSV, EPOC y asma.",
+    "title": "Cómo funciona",
+    "content": "Con solo una tos guiada en el micrófono de tu dispositivo,  Virufy  aprovecha el poder de la inteligencia artificial para analizar patrones de sonido asociados con enfermedades respiratorias como COVID-19, neumonía, gripe, VSR, EPOC y asma.",
     "url": "/es"
   },
   {
     "id": "es-home-health-priority",
     "lang": "es",
-    "title": "Tu Salud, Nuestra Prioridad",
-    "content": "En Virufy, tu bienestar está en el centro de todo lo que hacemos. Priorizamos la privacidad, asegurando que tus datos se mantengan seguros y confidenciales.",
+    "title": "Tu salud, nuestra prioridad",
+    "content": "En Virufy, tu bienestar está en el centro de todo lo que hacemos. Priorizamos la privacidad, asegurando que tus datos permanezcan seguros y confidenciales.",
     "url": "/es"
   },
   {
     "id": "es-home-health-feature-1",
     "lang": "es",
-    "title": "Análisis Instantáneo",
-    "content": "Retroalimentación rápida sobre las características de tu tos y el perfil de anomalía basado en el patrón de sonido de tu tos.",
+    "title": "Análisis instantáneo",
+    "content": "Retroalimentación rápida sobre las características de tu tos y el perfil de anormalidad basado en el patrón de sonido de tu tos",
     "url": "/es"
   },
   {
     "id": "es-home-health-feature-2",
     "lang": "es",
-    "title": "Anonimato en Casa",
-    "content": "Siéntete seguro sabiendo que tus resultados son solo para ti.",
+    "title": "Anonimato en casa",
+    "content": "Siéntete seguro sabiendo que tus resultados son solo para tus ojos.",
     "url": "/es"
   },
   {
     "id": "es-home-health-feature-3",
     "lang": "es",
-    "title": "Interfaz Amigable",
-    "content": "Diseño intuitivo para facilitar la navegación y una experiencia de usuario fluida.",
+    "title": "Interfaz fácil de usar",
+    "content": "Diseño intuitivo para una navegación fácil y una experiencia de usuario fluida.",
     "url": "/es"
   },
   {
@@ -472,21 +472,21 @@
     "id": "es-story-how-it-started",
     "lang": "es",
     "title": "Cómo empezó",
-    "content": "Cuando llegó la pandemia,  el fundador de Virufy, Amil Khanzada , sabía que los teléfonos inteligentes eran omnipresentes y que el COVID afectaba la nariz, la garganta y los pulmones. Planteó la hipótesis de que los sonidos de la respiración y la tos podrían analizarse con aprendizaje automático para detectar patrones de COVID. Con el deseo de generar un impacto positivo, orquestó un estudio clínico con 362 pacientes en un prestigioso hospital universitario. El equipo original de Virufy, que comenzó con estudiantes graduados en IA de Stanford, se amplió a voluntarios de universidades de todo el mundo.",
+    "content": "Cuando comenzó la pandemia,  el fundador de Virufy, Amil Khanzada  sabía que los teléfonos inteligentes eran omnipresentes y que la COVID afecta el sistema respiratorio. Él planteó la hipótesis de que los sonidos de la respiración y la tos podían analizarse con aprendizaje automático para detectar patrones de COVID. Con el objetivo de generar un impacto positivo, Amil organizó un estudio clínico con 362 pacientes en un prestigioso hospital universitario. El equipo original de Virufy comenzó con estudiantes de posgrado en IA de Stanford y se expandió a voluntarios de universidades de todo el mundo.",
     "url": "/es/story"
   },
   {
     "id": "es-story-our-mission",
     "lang": "es",
-    "title": "Nuestra Misión",
-    "content": "Algunos se preguntarán: \"¿Por qué estamos aquí?\" y \"¿Por qué tanta gente ha apoyado a Virufy?\". La misión y el objetivo de Virufy es transformar la salud mundial. Nuestro objetivo es brindar a todas las personas del mundo acceso a una aplicación web para detectar enfermedades respiratorias como la COVID-19, la gripe, el VSR, la EPOC, el asma y el cáncer de pulmón en segundos. Queremos que mil millones de personas en países en desarrollo tengan la capacidad de proteger su salud y la de sus seres queridos. Aquí encontrará una lista de  asesores  y, hasta la fecha, hemos contado con más de 1300 voluntarios. Gracias por formar parte de esta misión. ¡Hagámoslo realidad!",
+    "title": "Nuestra misión",
+    "content": "Algunas personas pueden preguntarse: \"¿por qué estamos aquí?\" y \"¿por qué tantas personas han apoyado a Virufy?\" La misión y el objetivo de Virufy es transformar la salud global. Nuestro objetivo es brindar a las personas de todo el mundo acceso a una herramienta web que pueda ayudar a detectar posibles condiciones respiratorias como COVID-19, gripe, VSR, EPOC, asma y otras enfermedades pulmonares en cuestión de segundos. Nuestro objetivo es empoderar a las personas, especialmente en regiones en desarrollo, con herramientas que les permitan tener mayor conciencia de su salud y tomar decisiones informadas para sí mismos y sus seres queridos. Tenga en cuenta que esta herramienta no está diseñada para proporcionar diagnósticos médicos y no debe reemplazar la consulta con un profesional de la salud calificado. Estamos agradecidos por el apoyo de nuestros asesores y las contribuciones de más de 1,300 voluntarios hasta la fecha. Gracias por ser parte de esta misión.",
     "url": "/es/story"
   },
   {
     "id": "es-story-privacy-commitment",
     "lang": "es",
-    "title": "Nuestro Compromiso con la Privacidad",
-    "content": "Virufy se toma en serio la privacidad y protección de su información personal. Nuestro equipo legal ha preparado una Política de Privacidad y una Política de Cookies detalladas para proteger la información personal que comparte con nosotros a través del uso de nuestro sitio web.",
+    "title": "Compromiso con la privacidad",
+    "content": "Virufy se toma muy en serio su privacidad. Nuestro equipo legal ha desarrollado políticas detalladas de privacidad y cookies para proteger cualquier información personal que comparta al usar nuestro sitio web.",
     "url": "/es/story"
   },
   {
