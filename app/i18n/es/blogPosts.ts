@@ -142,39 +142,95 @@ const blogPosts: Record<string, Post> = {
       Screening early doesn't guarantee a clean result. But it gives you information while it's still useful, while there's still time to act, to adjust, to get ahead of something that would otherwise get ahead of you.
     </p>
 
-<h2>References</h2>
-<ul>
-  <li>
-    <a
-      href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9655248/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      National Center for Biotechnology Information — "Severe Air Pollution Exposure and Long-Term Health Outcomes" (2022)
-    </a>
-  </li>
-
-  <li>
-    <a
-      href="https://www.asthmaandlung.org.uk/living-with/air-pollution/your-lungs"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Asthma + Lung UK — "Air pollution effects on your lungs"
-    </a>
-  </li>
-
-  <li>
-    <a
-      href="https://www.who.int/news-room/questions-and-answers/item/who-global-air-quality-guidelines"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      World Health Organization — "Global Air Quality Guidelines" (2021)
-    </a>
-  </li>
-</ul>
+    <h2>References</h2>
+    <ul>
+      <li>
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9655248/" target="_blank" rel="noopener noreferrer">
+          National Center for Biotechnology Information — "Severe Air Pollution Exposure and Long-Term Health Outcomes" (2022)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.asthmaandlung.org.uk/living-with/air-pollution/your-lungs" target="_blank" rel="noopener noreferrer">
+          Asthma + Lung UK — "Air pollution effects on your lungs"
+        </a>
+      </li>
+      <li>
+        <a href="https://www.who.int/news-room/questions-and-answers/item/who-global-air-quality-guidelines" target="_blank" rel="noopener noreferrer">
+          World Health Organization — "Global Air Quality Guidelines" (2021)
+        </a>
+      </li>
+    </ul>
   `,
+  },
+  'world-no-tobacco-day': {
+    slug: 'world-no-tobacco-day',
+    title: 'World No Tobacco Day',
+    description:
+      'A global health awareness initiative highlighting the dangers of tobacco use and the importance of lung health and prevention.',
+    date: 'May 2026',
+    content: `
+      <p>
+        Every year on May 31st, the global community recognizes World Health Organization’s World No Tobacco Day — a global initiative created to raise awareness about the harmful effects of tobacco use and advocate for policies that protect public health. Established in 1987, this day serves as a reminder that tobacco remains one of the leading preventable causes of death worldwide, contributing to millions of deaths each year through cancer, chronic respiratory disease, cardiovascular disease, and other serious health conditions.
+      </p>
+
+      <h2>Why World No Tobacco Day Matters</h2>
+      <p>
+        Tobacco use impacts people of all ages, backgrounds, and communities. Cigarette smoking, vaping, and smokeless tobacco products expose users to harmful chemicals that damage the lungs, heart, and immune system. Secondhand smoke also poses serious health risks, especially for children, older adults, and individuals with pre-existing respiratory conditions.
+      </p>
+      <p>
+        According to global health organizations, tobacco use is strongly linked to diseases such as chronic obstructive pulmonary disease (COPD), lung cancer, emphysema, and chronic bronchitis. Over time, tobacco smoke damages lung tissue, reduces lung function, and increases inflammation in the respiratory system, making it harder for the body to breathe and fight infection.
+      </p>
+
+      <h2>The Growing Concern Around Youth Tobacco Use</h2>
+      <p>
+        One of today’s greatest public health concerns is the tobacco industry’s continued targeting of younger generations. Flavored tobacco and vaping products — including fruit, candy, mint, and dessert-inspired flavors — are often designed to appear more appealing to teens and young adults. Bright packaging, influencer marketing, and social media campaigns have contributed to increased experimentation among youth populations worldwide.
+      </p>
+
+      <h2>The Impact of Tobacco on Lung Health</h2>
+      <p>
+        The lungs are among the organs most affected by tobacco use. Harmful chemicals inhaled through smoking or vaping can scar lung tissue, narrow airways, and reduce oxygen exchange. Over time, this damage may lead to chronic coughing, shortness of breath, wheezing, and severe respiratory disease.
+      </p>
+      <p>
+        Early detection and prevention are essential. Many lung diseases develop gradually, and symptoms are often ignored until significant damage has already occurred. Increasing access to respiratory screening and digital health innovation may help identify at-risk individuals sooner and support better long-term outcomes.
+      </p>
+
+      <h2>Resources to Help Quit Tobacco</h2>
+      <p>
+        Quitting tobacco can significantly improve overall health and reduce the risk of serious disease. While quitting is challenging, support and resources are available:
+      </p>
+      <ul>
+        <li>National quitlines 1-800-QUIT-NOW</li>
+        <li>          <a href="https://www.cancer.org/cancer/risk-prevention/tobacco/guide-quitting-smoking/nicotine-replacement-therapy.html" target="_blank" rel="noopener noreferrer">Nicotine replacement therapies</a></li>
+        <li>
+            <a href="https://nicotine-anonymous.org/" target="_blank" rel="noopener noreferrer">Nicotine Anonymous</a>
+                </li>
+        <li>
+          <a href="https://smokefree.gov/tools-tips/quitstart" target="_blank" rel="noopener noreferrer">
+            https://smokefree.gov/tools-tips/quitstart
+          </a>
+        </li>
+        <li><a href="https://chwtraining.org/blog-10-free-apps-tobacco-cessation/" target="_blank" rel="noopener noreferrer">10 Free Apps for Tobacco Cessation</a></li>
+      </ul>
+
+      <h2>Virufy’s Commitment to Respiratory Health Innovation</h2>
+      <p>
+        At Virufy, we believe technology can play a powerful role in improving respiratory health access and early detection. Virufy is developing AI-powered tools designed to analyze cough and respiratory acoustic sounds to help screen for  potential lung disease risks in a fast, scalable, and accessible way.
+      </p>
+      <p>
+        By leveraging artificial intelligence and digital health innovation, Virufy aims to support earlier identification of respiratory conditions and improve access to preventative care — particularly in underserved communities where access to traditional screening tools may be limited.
+      </p>
+
+      <p>
+        This World No Tobacco Day, we encourage individuals, families, healthcare leaders, and communities to prioritize lung health, support tobacco prevention efforts, and advocate for healthier futures for the next generation.
+      </p>
+
+      <h2>References</h2>
+      <ul>
+        <li><a href="https://www.who.int/campaigns/world-no-tobacco-day" target="_blank" rel="noopener noreferrer">World Health Organization – World No Tobacco Day</a></li>
+        <li><a href="https://www.cdc.gov/tobacco/e-cigarettes/about.html" target="_blank" rel="noopener noreferrer">Centers for Disease Control and Prevention – Health Effects of Smoking</a></li>
+        <li><a href="https://www.lung.org/quit-smoking/smoking-facts/health-effects" target="_blank" rel="noopener noreferrer">American Lung Association – Tobacco and Lung Health</a></li>
+      </ul>
+    `,
   },
 };
 
