@@ -17,10 +17,16 @@ const activeDates: DateRange[] = [
     end: '2026-05-31',
   },
 ];
+const MODAL_COOKIE = 'wntd_modal_closed';
 
 export default function DateBasedModal({ lang }: { lang: Locale }) {
   const [open, setOpen] = useState(false);
+  function closeModal() {
+    // expires in 30 days
+    document.cookie = `${MODAL_COOKIE}=true; path=/; max-age=${60 * 60 * 24 * 30}`;
 
+    setOpen(false);
+  }
   const shouldShowModal = useMemo(() => {
     const today = new Date();
 
@@ -32,16 +38,21 @@ export default function DateBasedModal({ lang }: { lang: Locale }) {
       return today >= start && today <= end;
     });
   }, []);
-
   useEffect(() => {
-    if (shouldShowModal) setOpen(true);
+    const hasClosedModal = document.cookie
+      .split('; ')
+      .find((row) => row.startsWith(`${MODAL_COOKIE}=`));
+
+    if (shouldShowModal && !hasClosedModal) {
+      setOpen(true);
+    }
   }, [shouldShowModal]);
 
   if (!open) return null;
 
   return (
     <div
-      onClick={() => setOpen(false)}
+      onClick={() => closeModal()}
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-2 backdrop-blur-sm sm:p-4"
     >
       {/* MODAL */}
@@ -51,7 +62,7 @@ export default function DateBasedModal({ lang }: { lang: Locale }) {
       >
         {/* Close Button */}
         <button
-          onClick={() => setOpen(false)}
+          onClick={() => closeModal()}
           className="absolute right-5 top-5 z-20 hidden h-10 w-10 items-center justify-center rounded-full bg-white/5 text-white/60 transition hover:bg-white/10 hover:text-white sm:flex"
           aria-label="Close modal"
         >
@@ -155,7 +166,7 @@ export default function DateBasedModal({ lang }: { lang: Locale }) {
                 </Link>
                 <button
                   className="flex w-full items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white sm:hidden"
-                  onClick={() => setOpen(false)}
+                  onClick={() => closeModal()}
                 >
                   Close
                 </button>
