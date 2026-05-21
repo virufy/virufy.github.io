@@ -47,7 +47,7 @@ export default function DateBasedModal({ lang }: { lang: Locale }) {
       {/* MODAL */}
       <div
         onClick={(e) => e.stopPropagation()}
-        className="relative flex max-h-[95vh] w-full max-w-4xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#071428] pt-6 shadow-[0_0_40px_rgba(0,0,0,0.7)] sm:rounded-[32px] md:pt-0"
+        className="relative flex max-h-[95vh] w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#071428] pt-6 shadow-[0_0_40px_rgba(0,0,0,0.7)] sm:rounded-[32px] md:pt-0"
       >
         {/* Close Button */}
         <button
