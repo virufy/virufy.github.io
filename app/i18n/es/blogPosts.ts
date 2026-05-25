@@ -214,8 +214,17 @@ const blogPosts: Record<string, Post> = {
 
       <h2>Virufy’s Commitment to Respiratory Health Innovation</h2>
       <p>
-        At Virufy, we believe technology can play a powerful role in improving respiratory health access and early detection. Virufy is developing AI-powered tools designed to analyze cough and respiratory acoustic sounds to help screen for  potential lung disease risks in a fast, scalable, and accessible way.
-      </p>
+  At
+  <a
+    href="https://virufy.org"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-600 underline hover:text-blue-800"
+  >
+    Virufy
+  </a>
+  , we believe technology can play a powerful role in improving respiratory health access and early detection. Virufy is developing AI-powered tools designed to analyze cough and respiratory acoustic sounds to help screen for potential lung disease risks in a fast, scalable, and accessible way.
+</p>
       <p>
         By leveraging artificial intelligence and digital health innovation, Virufy aims to support earlier identification of respiratory conditions and improve access to preventative care — particularly in underserved communities where access to traditional screening tools may be limited.
       </p>
