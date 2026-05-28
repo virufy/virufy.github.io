@@ -53,7 +53,7 @@ export default function DateBasedModal({ lang }: { lang: Locale }) {
   return (
     <div
       onClick={() => closeModal()}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-2 backdrop-blur-sm sm:p-4"
+      className="fixed inset-0 z-50 flex items-center justify-center p-2 backdrop-blur-sm sm:p-4"
     >
       {/* MODAL */}
       <div
