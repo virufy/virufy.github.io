@@ -1,77 +1,77 @@
 import type { Story } from '../types/story';
 
-const story: Story = {
+const sevenwhoweare: Story = {
   introSection: {
-    title: ['Redefining', 'Early Detection', 'Through AI and Sound'],
-    text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping screen for potential respiratory illnesses early and non-invasively.',
-    tag: 'About Virufy',
+    title: ['AIと音で、', '早期発見', 'のあり方を変える '],
+    text: '私たちの技術は、AIを用いて咳の音に隠れたパターンを解析し、身体に負担をかけることなく、呼吸器疾患の兆候を早い段階で見つけることを支援します。',
+    tag: 'Virufyについて',
   },
   section2: {
-    title: 'From Inception to Global Movement',
+    title: '小さな一歩から、世界へ広がる取り組みに ',
     text: [
-      'Virufy was founded in 2020 during the early days of the COVID-19 pandemic, when limited testing access and overwhelmed healthcare systems left millions without timely answers. A group of Stanford students recognized the growing gap between the need for early detection and the tools available to most people around the world.',
+      'Virufyは2020年、新型コロナウイルス感染症の世界的流行が始まった初期に設立されました。当時は医療体制がひっ迫し、検査へのアクセスも限られていたため、多くの人々が感染の有無をすぐに確認できない状況にありました。こうした中、スタンフォード大学の学生たちは、早期発見のニーズが高まる一方で、それを実現する手段が多くの人々に十分届いていないという課題に着目しました。',
 
-      'At the same time, emerging research in artificial intelligence suggested that respiratory sounds, such as coughs and breathing patterns, could reveal signs of disease. Knowing that COVID-19 directly affects the nose, throat, and lungs, the team explored whether machine learning could analyze these signals using something nearly everyone already had, a smartphone.',
+      '同じ頃、AIの研究が進む中で、咳や呼吸の音には病気の兆候が表れる可能性があることが分かってきました。新型コロナウイルス感染症は鼻・喉・肺に影響を及ぼすため、Virufyのチームは、スマートフォンで録音した咳や呼吸の音を機械学習で分析し、感染の可能性を調べられるのではないかと考えました。',
 
-      'What began as a student research effort quickly grew into global volunteer recruitment and clinical studies, laying the foundation for Virufy’s work today. The project evolved into a nonprofit focused on advancing fast, accessible, and scalable respiratory health screening for communities worldwide.',
+      '学生による研究として始まった取り組みは、やがて世界中からのボランティア参加や臨床研究へと急速に広がり、現在のVirufyの活動の基盤となりました。その後、Virufyは、世界中の人々が迅速かつ手軽に呼吸器の健康状態を確認できる仕組みの実現を目指す非営利団体へと発展しました。',
     ],
   },
   section3: {
-    title: 'Our Values',
+    title: '私たちの価値観',
     subtitle:
-      'These are the principles that guide our work and define our commitment to the world.',
+      'これらは、私たちの活動指針であり、私たちの姿勢を表す大切な原則です。',
     StoryCard: [
       {
-        title: 'Global Equity',
-        text: 'We believe health screening should be accessible to everyone, regardless of geography or economic status.',
+        title: '公平なアクセス',
+        text: '住んでいる場所や経済状況にかかわらず、世界中の誰もがヘルススクリーニングを受けられるべきだと私たちは考えています。',
         icon: './icons/Icon-story-globe.png',
         style: '',
       },
       {
-        title: 'Scientific Rigor',
-        text: 'Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.',
+        title: '科学的な信頼性',
+        text: 'すべてのアルゴリズム、データ、パートナーシップは、信頼性の高い研究と、医療現場での検証に基づいています。',
         icon: './icons/Icon-story-globe.png',
         style: '',
       },
       {
-        title: 'Privacy First',
-        text: 'User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.',
+        title: 'プライバシーを最優先',
+        text: 'ユーザーのデータは匿名化・暗号化され、安全性と倫理性を重視して保護されています。',
         icon: './icons/Icon-story-globe.png',
         style: '',
       },
       {
-        title: 'Open Collaboration',
-        text: 'We partner with universities, NGOs, and governments to advance research and maximize global impact.',
+        title: '幅広い連携',
+        text: '私たちは大学、NGO、政府機関と連携することで、研究をより前進させ、世界により大きなインパクトを生み出すことを目指しています。',
         icon: './icons/Icon-story-globe.png',
         style: '',
       },
     ],
   },
   section4: {
-    title: 'Our Impact at a Glance',
+    title: '数字で見る私たちの取り組み',
     subtitle:
-      "Building the world's largest open cough audio dataset to advance respiratory health research globally.",
-    cardtitle: ['250K+', '5+', '250+', '10+'],
+      '呼吸器に関する研究を世界規模で進めるため、世界最大級の咳音声データ集を構築し、公開しています。',
+    cardtitle: ['25万以上', '5か国以上', '250人以上', '10以上'],
     cardtext: [
-      'Cough Samples Collected',
-      'Countries Reached',
-      'Active Volunteers',
-      'Research Partners',
+      '収集した咳の音声サンプル',
+      '活動が広がっている国 ',
+      '活動中のボランティア',
+      '研究パートナー',
     ],
     cardsubtext: [
-      'Contributing to global research',
-      'Building a truly global dataset',
-      'Student and researchers',
-      'Universities and institutions',
+      '世界的な研究に貢献',
+      'グローバルなデータセットの構築',
+      '学生や研究者が参加',
+      '大学や研究機関',
     ],
   },
   banner: {
-    title: 'Ready to Make a Difference?',
-    buttontext: 'Message Us',
+    title: '一緒に変化を生み出しませんか？',
+    buttontext: 'お問い合わせ',
     text: [
-      'Whether you want to volunteer, partner with us, or support our mission, we’d love to hear from you and explore how we can work together to make a meaningful impact.',
+      'ボランティアとして参加したい方、パートナーとして連携したい方、または私たちのミッションを支援したい方は、ぜひご連絡ください。私たちと一緒に、世界により良い変化を生み出しませんか。',
     ],
-    link: 'https://www.linkedin.com/company/virufy/posts/?feedView=all',
+    link: '',
   },
 };
-export default story;
+export default sevenwhoweare;
