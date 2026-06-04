@@ -6,6 +6,13 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'Advancing Pediatric Care with AI: Virufy x Emirates Health Services (EHS) at WHX Dubai 2026!',
+      date: 'April 2026',
+      subText: '',
+      url: '/en/news/whx-dubai-2026',
+      linkText: 'Read More',
+    },
+    {
       title: 'GITEX Global 2025 - Dubai Health',
       date: 'October 2025',
       subText: '',
