@@ -50,7 +50,6 @@ export default function AmilsStoryPage({
               <div className="mr-10 hidden w-1/3 items-center md:flex">
                 <ExportedImage
                   className="aspect-square w-full max-w-xs rounded-2xl object-cover"
-                  fill
                   src={AmilHeadshot}
                   alt="Amil's Headshot"
                   basePath={basePath}

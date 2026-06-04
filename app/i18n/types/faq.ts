@@ -6,7 +6,8 @@ export interface FAQ {
   questionsSection: FAQQuestions;
 }
 
-interface FAQHeader extends ImageText {
+interface FAQHeader {
+  tag: string;
   title: TypeText[];
   texts: TypeText[];
   input: FAQInput;
@@ -21,7 +22,7 @@ interface FAQTopics {
   cards: FAQTopicCard[];
 }
 
-export interface FAQTopicCard extends ImageText {
+export interface FAQTopicCard {
   title: string;
 }
 

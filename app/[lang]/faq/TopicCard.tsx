@@ -1,6 +1,4 @@
 import { type FAQTopicCard } from '@/app/i18n/types/faq';
-import { basePath } from '@/next.config.mjs';
-import ExportedImage from 'next-image-export-optimizer';
 
 interface Props extends FAQTopicCard {
   defaultTopic: string;
@@ -9,18 +7,11 @@ interface Props extends FAQTopicCard {
 }
 
 const TopicCard = ({
-  img,
-  altText,
   title,
   defaultTopic,
   selectedTopic,
   setSelectedTopic,
 }: Props) => {
-  const bgStyle =
-    title === selectedTopic
-      ? 'bg-[#0d3068] md:bg-white border-4 border-green-400'
-      : 'bg-gradient-to-b from-[#194492] via-[#2251a3] to-[#194492] md:bg-none md:bg-white border-4 border-transparent hover:border-green-400 hover:border-4';
-
   const handleTopicClick = (): void => {
     // deselect selected topic by resetting to default topic
     if (selectedTopic === title) {
@@ -33,18 +24,10 @@ const TopicCard = ({
   return (
     <div
       onClick={handleTopicClick}
-      className={`flex cursor-pointer flex-col justify-between space-y-2 rounded-xl px-6 py-4 text-center shadow-lg sm:px-9 ${bgStyle}`}
+      className={`flex min-w-[90px] cursor-pointer flex-col justify-between space-y-2 rounded-full py-5 text-center shadow-lg ${
+        selectedTopic === title ? 'bg-blue-600' : 'bg-white'
+      }`}
     >
-      <ExportedImage
-        className="mx-auto h-[32px] w-auto filter md:invert"
-        src={img}
-        alt={altText}
-        basePath={basePath}
-        width={32}
-        height={32}
-        priority
-        unoptimized={true}
-      />
       <h3 className={'text-white md:text-black'}>{title}</h3>
     </div>
   );

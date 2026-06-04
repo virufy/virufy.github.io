@@ -2,20 +2,15 @@ import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: '../../images/faq/nextImageExportOptimizer/bg-ai-hand-opt-1080.webp',
-    altText: '',
+    tag: 'Got Questions?',
     title: [
       {
         type: 'text',
-        text: 'How can we ',
+        text: 'Frequently Asked ',
       },
       {
         type: 'span',
-        text: 'help ',
-      },
-      {
-        type: 'text',
-        text: 'you?',
+        text: 'Questions ',
       },
     ],
     input: {
@@ -26,64 +21,41 @@ const faq: FAQ = {
     texts: [
       {
         type: 'text',
-        text: 'Or ',
-      },
-      {
-        type: 'span',
-        text: 'choose ',
-      },
-      {
-        type: 'text',
-        text: 'an option below to help find what you are looking for.',
+        text: "Find answers to common questions about Virufy's AI-powered respiratory health screening technology.",
       },
     ],
   },
   topicsSection: {
     title: 'FAQ Topics',
     cards: [
-      // Removed in 6.2 Redesign
-      // {
-      //   title: 'Common Questions',
-      //   img: './../images/faq/icon-question-mark.png',
-      //   altText: '',
-      // },
       {
-        title: 'Virufy App',
-        img: '../../icons/icon-phone-in-hand-white.png',
-        altText: '',
+        title: 'All',
       },
       {
-        title: 'About Virufy',
-        img: '../../icons/icon-globe-white.png',
-        altText: '',
+        title: 'Technology',
+      },
+      {
+        title: 'About',
       },
       {
         title: 'About AI',
-        img: '../../icons/icon-recycle-white.png',
-        altText: '',
       },
       {
         title: 'Finances',
-        img: '../../icons/icon-monitor-white.png',
-        altText: '',
       },
       {
         title: 'Privacy',
-        img: '../../icons/icon-privacy-white.png',
-        altText: '',
       },
       {
         title: 'Other',
-        img: '../../icons/icon-question-mark-white.png',
-        altText: '',
       },
     ],
   },
   questionsSection: {
-    topicTitle: 'Common Questions',
+    topicTitle: 'All',
     noResultsTitle: 'No Results Found',
     questionsByTopic: {
-      'Virufy App': [
+      Technology: [
         {
           question:
             'When and how will the app give upper respiratory infection prediction results?',
@@ -142,7 +114,7 @@ const faq: FAQ = {
           ],
         },
       ],
-      'About Virufy': [
+      About: [
         {
           question: 'How was the initiative created?',
           answer: [
@@ -279,30 +251,6 @@ const faq: FAQ = {
         },
       ],
       Finances: [
-        // {
-        //   question:
-        //     'Do I need to make any financial contribution to donate my cough?',
-        //   answer: [
-        //     {
-        //       type: 'paragraph',
-        //       content: [
-        //         {
-        //           type: 'text',
-        //           text: 'Virufy is currently only collecting coughs from certain countries, which can be found in our app: ',
-        //         },
-        //         {
-        //           type: 'link',
-        //           text: 'https://virufy.org/study',
-        //           href: 'https://virufy.org/study',
-        //         },
-        //         {
-        //           type: 'text',
-        //           text: '.',
-        //         },
-        //       ],
-        //     },
-        //   ],
-        // },
         {
           question: 'How many donors have you had in total?',
           answer: [
@@ -348,44 +296,6 @@ const faq: FAQ = {
         },
       ],
       Privacy: [
-        // {
-        //   question: 'How will Virufy securely store my data?',
-        //   answer: [
-        //     {
-        //       type: 'paragraph',
-        //       content: [
-        //         {
-        //           type: 'text',
-        //           text: 'We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at ',
-        //         },
-        //         {
-        //           type: 'link',
-        //           text: 'https://aws.amazon.com/en/privacy',
-        //           href: 'https://aws.amazon.com/en/privacy',
-        //         },
-        //         {
-        //           type: 'text',
-        //           text: '. If you would like to learn more, please refer to the Virufy privacy policy.',
-        //         },
-        //       ],
-        //     },
-        //   ],
-        // },
-        // {
-        //   question:
-        //     'Is my privacy ever at risk of being exposed when I donate my cough to Virufy?',
-        //   answer: [
-        //     {
-        //       type: 'paragraph',
-        //       content: [
-        //         {
-        //           type: 'text',
-        //           text: 'Our strong legal and information security teams have developed a DPIA to address potential risks and threats for your privacy. We will only store your personal data in an anonymized form (where you cannot be identified in any way) and in a secure database with restricted access. If you would like to learn more please refer to the Virufy Privacy Policy.',
-        //         },
-        //       ],
-        //     },
-        //   ],
-        // },
         {
           question: 'Does Virufy have a privacy policy and cookie policy?',
           answer: [

@@ -6,11 +6,19 @@ import AccordionItemParagraph from './AccordionItemParagraph';
 
 interface AccordionItemProps extends QA {
   lang: Locale;
+  topic: string;
   className?: string;
   isFaq?: boolean;
 }
 
-const AccordionItem = ({ question, answer, lang, className='', isFaq=false }: AccordionItemProps) => {
+const AccordionItem = ({
+  question,
+  answer,
+  topic,
+  lang,
+  className = '',
+  isFaq = false,
+}: AccordionItemProps) => {
   const [isActive, setIsActive] = useState(false);
   const borderTransitionStyle = isActive
     ? 'border-t border-gray-400'
@@ -22,14 +30,21 @@ const AccordionItem = ({ question, answer, lang, className='', isFaq=false }: Ac
   const heightStyle = isActive ? 'max-h-[2600px]' : 'max-h-0';
 
   return (
-    <div className={`border-b border-gray-400 text-white last:border-b-0 ${className}`}>
+    <div
+      className={`border-b border-gray-400 text-white last:border-b-0 ${className}`}
+    >
       {/* Question Container */}
       <div
-        className="flex cursor-pointer items-center justify-between px-5 py-4"
+        className="w- flex cursor-pointer items-center justify-between px-5 py-4"
         onClick={() => setIsActive(!isActive)}
       >
-        <h3 className="pr-6 font-semibold">{question}</h3>
-        <ArrowIcon isActive={isActive} isFaq={isFaq}/>
+        <div>
+          {' '}
+          <h3 className="pr-6 font-semibold">{question}</h3>
+          <p className="mt-1 text-sm text-stone-400">{topic}</p>
+        </div>
+
+        <ArrowIcon isActive={isActive} isFaq={isFaq} />
       </div>
 
       {/* Answer Container */}
@@ -38,7 +53,9 @@ const AccordionItem = ({ question, answer, lang, className='', isFaq=false }: Ac
         <div
           className={`overflow-hidden transition-all duration-500 ${heightStyle}`}
         >
-          <div className={`px-5 py-4 font-normal leading-relaxed text-stone-300 ${className}`}>
+          <div
+            className={`px-5 py-4 font-normal leading-relaxed text-stone-300 ${className}`}
+          >
             <div className="space-y-4">
               {answer.map(({ type, content }, i) => {
                 if (type === 'paragraph') {
