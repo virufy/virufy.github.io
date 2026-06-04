@@ -461,15 +461,6 @@ const faq: FAQ = {
                 },
                 {
                   type: 'text',
-                  text: 'にメールでお問い合わせください。データ関連の質問は、 ',
-                },
-                {
-                  type: 'link',
-                  text: 'open-data@virufy.org',
-                  href: 'mailto:open-data@virufy.org',
-                },
-                {
-                  type: 'text',
                   text: 'までご連絡ください。その他の問い合わせについては、 ',
                 },
                 {

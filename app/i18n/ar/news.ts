@@ -6,6 +6,38 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title:
+        'الارتقاء برعاية الأطفال باستخدام الذكاء الاصطناعي: Virufy وEmirates Health Services (EHS) في WHX دبي 2026!',
+      date: 'أبريل 2026',
+      subText: '',
+      url: '/ar/news/whx-dubai-2026',
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
+        'ثلاثة مشاريع جامعية من سويسرا والولايات المتحدة ومصر تنتقل إلى مراحل تجريبية نشطة ومراحل تجارية في دبي',
+      date: 'مايو 2026',
+      subText: '',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
+        'كلية الصحة العامة بجامعة إندونيسيا تستكشف تعاونًا استراتيجيًا مع Virufy لتطوير تقنية الذكاء الاصطناعي في مجال صحة الجهاز التنفسي',
+      date: 'ديسمبر 2025',
+      subText: '',
+      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
+        'رسالة من مؤسسنا أميل خانزادة: من وادي السيليكون إلى قاعة الدراسة: محاضرتي الأولى في جامعة فوكوي',
+      date: 'يونيو 2026',
+      subText: '',
+      url: '/ar/news/amil-june-2026',
+      linkText: 'اقرأ المزيد',
+    },
+    {
       title: 'معرض جيتكس العالمي 2025 - دبي للصحة',
       date: 'أكتوبر 2025',
       subText: '',

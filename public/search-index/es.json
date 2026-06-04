@@ -234,7 +234,7 @@
     "id": "es-faq-3",
     "lang": "es",
     "title": "¿Qué pasa si tengo más preguntas?",
-    "content": "Puedes encontrar más detalles en nuestra Política de Privacidad, Política de Cookies y el formulario de consentimiento, los cuales están integrados en la aplicación de recopilación de datos. Para preguntas relacionadas con el estudio de recopilación de datos, por favor envíanos un correo a  study@virufy.org . Para consultas relacionadas con los datos, puedes escribirnos a  open-data@virufy.org . Para todas las demás consultas, puedes contactarnos a través de  info@virufy.org .",
+    "content": "Puedes encontrar más detalles en nuestra Política de Privacidad, Política de Cookies y el formulario de consentimiento, los cuales están integrados en la aplicación de recopilación de datos. Para preguntas relacionadas con el estudio de recopilación de datos, por favor envíanos un correo a  study@virufy.org . Para todas las demás consultas, puedes contactarnos a través de  info@virufy.org .",
     "url": "/es/ai"
   },
   {
@@ -870,96 +870,124 @@
   {
     "id": "es-news-1",
     "lang": "es",
+    "title": "Avanzando la atención pediátrica con IA: ¡Virufy y Emirates Health Services (EHS) en WHX Dubái 2026!",
+    "content": "Abril de 2026",
+    "url": "/es/news"
+  },
+  {
+    "id": "es-news-2",
+    "lang": "es",
+    "title": "Tres iniciativas universitarias de Suiza, Estados Unidos y Egipto avanzan a fases activas de pilotos y comercialización en Dubái",
+    "content": "Mayo de 2026",
+    "url": "/es/news"
+  },
+  {
+    "id": "es-news-3",
+    "lang": "es",
+    "title": "La FPH de la UI explora una colaboración estratégica con Virufy para desarrollar tecnología de IA en salud respiratoria",
+    "content": "Diciembre de 2025",
+    "url": "/es/news"
+  },
+  {
+    "id": "es-news-4",
+    "lang": "es",
     "title": "GITEX Global 2025 - Salud en Dubái",
     "content": "Octubre de 2025",
     "url": "/es/news"
   },
   {
-    "id": "es-news-2",
+    "id": "es-news-5",
+    "lang": "es",
+    "title": "Un mensaje de nuestro fundador, Amil Khanzada: De Silicon Valley al aula: Mi primera conferencia en la Universidad de Fukui",
+    "content": "Junio de 2026",
+    "url": "/es/news"
+  },
+  {
+    "id": "es-news-6",
     "lang": "es",
     "title": "Virufy demuestra el éxito de la detección respiratoria con IA en Abu Dabi",
     "content": "junio de 2025",
     "url": "/es/news"
   },
   {
-    "id": "es-news-3",
+    "id": "es-news-7",
     "lang": "es",
     "title": "Virufy presentará tecnología innovadora de detección de COVID-19 en Prototypes for Humanity 2024 en Dubái",
     "content": "Noviembre 2024",
     "url": "/es/news"
   },
   {
-    "id": "es-news-4",
+    "id": "es-news-8",
     "lang": "es",
     "title": "Virufy lanza su app beta en Colombia, brindando detección de COVID-19 en casa a 4,500 usuarios",
     "content": "Febrero 2023",
     "url": "/es/news"
   },
   {
-    "id": "es-news-5",
+    "id": "es-news-9",
     "lang": "es",
     "title": "BARDA apoya el desarrollo de aplicaciones digitales basadas en IA/ML para la detección de enfermedades infecciosas visuales y auditivas",
     "content": "Contramedidas Médicas, Estados Unidos",
     "url": "/es/news"
   },
   {
-    "id": "es-news-6",
+    "id": "es-news-10",
     "lang": "es",
     "title": "Esta app busca diagnosticar Covid-19 con sólo toser frente al teléfono",
     "content": "Forbes, México",
     "url": "/es/news"
   },
   {
-    "id": "es-news-7",
+    "id": "es-news-11",
     "lang": "es",
     "title": "COVID-19: Aplicativo Virufy puede diagnosticar el virus mediante el análisis de la tos",
     "content": "MSN",
     "url": "/es/news"
   },
   {
-    "id": "es-news-8",
+    "id": "es-news-12",
     "lang": "es",
     "title": "VIRUFY: plataforma que permite detectar si estamos contagiados con COVID-19",
     "content": "Expreso, Lima, Perú",
     "url": "/es/news"
   },
   {
-    "id": "es-news-9",
+    "id": "es-news-13",
     "lang": "es",
     "title": "Embajador de One Young World Japón combate el COVID-19 utilizando IA",
     "content": "One Young World, Tokio, Japón",
     "url": "/es/news"
   },
   {
-    "id": "es-news-10",
+    "id": "es-news-14",
     "lang": "es",
     "title": "Embajadores de América del Norte en la primera línea de la respuesta al COVID-19",
     "content": "One Young World",
     "url": "/es/news"
   },
   {
-    "id": "es-news-11",
+    "id": "es-news-15",
     "lang": "es",
     "title": "Embajadores del Mes de Julio",
     "content": "One Young World",
     "url": "/es/news"
   },
   {
-    "id": "es-news-12",
+    "id": "es-news-16",
     "lang": "es",
     "title": "Miles asisten a los eventos digitales globales de OYW en julio: Un resumen de lo que te perdiste",
     "content": "One Young World",
     "url": "/es/news"
   },
   {
-    "id": "es-news-13",
+    "id": "es-news-17",
     "lang": "es",
     "title": "Caucus de One Young World Tokio 2020",
     "content": "One Young World",
     "url": "/es/news"
   },
   {
-    "id": "es-news-14",
+    "id": "es-news-18",
     "lang": "es",
     "title": "Presentación de Virufy en One Young World Tokio 2020 Caucus",
     "content": "One Young World, Tokio, Japón",

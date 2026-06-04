@@ -471,16 +471,7 @@ const faq: FAQ = {
                 },
                 {
                   type: 'text',
-                  text: '. For data related queries, we can be contacted at ',
-                },
-                {
-                  type: 'link',
-                  text: 'open-data@virufy.org',
-                  href: 'mailto:open-data@virufy.org',
-                },
-                {
-                  type: 'text',
-                  text: '. For all other inquiries, you may reach us at ',
+                  text: '. For any inquiries, you may reach us at ',
                 },
                 {
                   type: 'link',
