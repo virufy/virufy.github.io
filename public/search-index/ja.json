@@ -513,85 +513,85 @@
   {
     "id": "ja-story-intro",
     "lang": "ja",
-    "title": "Redefining Early Detection Through AI and Sound",
-    "content": "Our AI technology listens for subtle patterns in the sound of your cough — helping screen for potential respiratory illnesses early and non-invasively.",
+    "title": "AIと音で、 早期発見 のあり方を変える ",
+    "content": "私たちの技術は、AIを用いて咳の音に隠れたパターンを解析し、身体に負担をかけることなく、呼吸器疾患の兆候を早い段階で見つけることを支援します。",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-section2",
     "lang": "ja",
-    "title": "From Inception to Global Movement",
-    "content": "Virufy was founded in 2020 during the early days of the COVID-19 pandemic, when limited testing access and overwhelmed healthcare systems left millions without timely answers. A group of Stanford students recognized the growing gap between the need for early detection and the tools available to most people around the world. At the same time, emerging research in artificial intelligence suggested that respiratory sounds, such as coughs and breathing patterns, could reveal signs of disease. Knowing that COVID-19 directly affects the nose, throat, and lungs, the team explored whether machine learning could analyze these signals using something nearly everyone already had, a smartphone. What began as a student research effort quickly grew into global volunteer recruitment and clinical studies, laying the foundation for Virufy’s work today. The project evolved into a nonprofit focused on advancing fast, accessible, and scalable respiratory health screening for communities worldwide.",
+    "title": "小さな一歩から、世界へ広がる取り組みに ",
+    "content": "Virufyは2020年、新型コロナウイルス感染症の世界的流行が始まった初期に設立されました。当時は医療体制がひっ迫し、検査へのアクセスも限られていたため、多くの人々が感染の有無をすぐに確認できない状況にありました。こうした中、スタンフォード大学の学生たちは、早期発見のニーズが高まる一方で、それを実現する手段が多くの人々に十分届いていないという課題に着目しました。 同じ頃、AIの研究が進む中で、咳や呼吸の音には病気の兆候が表れる可能性があることが分かってきました。新型コロナウイルス感染症は鼻・喉・肺に影響を及ぼすため、Virufyのチームは、スマートフォンで録音した咳や呼吸の音を機械学習で分析し、感染の可能性を調べられるのではないかと考えました。 学生による研究として始まった取り組みは、やがて世界中からのボランティア参加や臨床研究へと急速に広がり、現在のVirufyの活動の基盤となりました。その後、Virufyは、世界中の人々が迅速かつ手軽に呼吸器の健康状態を確認できる仕組みの実現を目指す非営利団体へと発展しました。",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-section3",
     "lang": "ja",
-    "title": "Our Values",
-    "content": "These are the principles that guide our work and define our commitment to the world.",
+    "title": "私たちの価値観",
+    "content": "これらは、私たちの活動指針であり、私たちの姿勢を表す大切な原則です。",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-card-1",
     "lang": "ja",
-    "title": "Global Equity",
-    "content": "We believe health screening should be accessible to everyone, regardless of geography or economic status.",
+    "title": "公平なアクセス",
+    "content": "住んでいる場所や経済状況にかかわらず、世界中の誰もがヘルススクリーニングを受けられるべきだと私たちは考えています。",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-card-2",
     "lang": "ja",
-    "title": "Scientific Rigor",
-    "content": "Every algorithm, dataset, and partnership is grounded in peer-reviewed research and clinical validation.",
+    "title": "科学的な信頼性",
+    "content": "すべてのアルゴリズム、データ、パートナーシップは、信頼性の高い研究と、医療現場での検証に基づいています。",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-card-3",
     "lang": "ja",
-    "title": "Privacy First",
-    "content": "User data is anonymized, encrypted, and handled with the highest standards of ethical data stewardship.",
+    "title": "プライバシーを最優先",
+    "content": "ユーザーのデータは匿名化・暗号化され、安全性と倫理性を重視して保護されています。",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-card-4",
     "lang": "ja",
-    "title": "Open Collaboration",
-    "content": "We partner with universities, NGOs, and governments to advance research and maximize global impact.",
+    "title": "幅広い連携",
+    "content": "私たちは大学、NGO、政府機関と連携することで、研究をより前進させ、世界により大きなインパクトを生み出すことを目指しています。",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-section4",
     "lang": "ja",
-    "title": "Our Impact at a Glance",
-    "content": "Building the world's largest open cough audio dataset to advance respiratory health research globally.",
+    "title": "数字で見る私たちの取り組み",
+    "content": "呼吸器に関する研究を世界規模で進めるため、世界最大級の咳音声データ集を構築し、公開しています。",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-section4-card-1",
     "lang": "ja",
-    "title": "250K+",
-    "content": "Cough Samples Collected Contributing to global research",
+    "title": "25万以上",
+    "content": "収集した咳の音声サンプル 世界的な研究に貢献",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-section4-card-2",
     "lang": "ja",
-    "title": "5+",
-    "content": "Countries Reached Building a truly global dataset",
+    "title": "5か国以上",
+    "content": "活動が広がっている国  グローバルなデータセットの構築",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-section4-card-3",
     "lang": "ja",
-    "title": "250+",
-    "content": "Active Volunteers Student and researchers",
+    "title": "250人以上",
+    "content": "活動中のボランティア 学生や研究者が参加",
     "url": "/ja/story"
   },
   {
     "id": "ja-story-section4-card-4",
     "lang": "ja",
-    "title": "10+",
-    "content": "Research Partners Universities and institutions",
+    "title": "10以上",
+    "content": "研究パートナー 大学や研究機関",
     "url": "/ja/story"
   },
   {
@@ -1157,96 +1157,124 @@
   {
     "id": "ja-news-1",
     "lang": "ja",
+    "title": "AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！",
+    "content": "2026年4月",
+    "url": "/ja/news"
+  },
+  {
+    "id": "ja-news-2",
+    "lang": "ja",
+    "title": "スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行",
+    "content": "2026年5月",
+    "url": "/ja/news"
+  },
+  {
+    "id": "ja-news-3",
+    "lang": "ja",
+    "title": "インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討",
+    "content": "2025年12月",
+    "url": "/ja/news"
+  },
+  {
+    "id": "ja-news-4",
+    "lang": "ja",
+    "title": "創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義",
+    "content": "2026年6月",
+    "url": "/ja/news"
+  },
+  {
+    "id": "ja-news-5",
+    "lang": "ja",
     "title": "GITEXグローバル2025 - ドバイヘルス",
     "content": "2025年10月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-2",
+    "id": "ja-news-6",
     "lang": "ja",
     "title": "Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示",
     "content": "2025年6月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-3",
+    "id": "ja-news-7",
     "lang": "ja",
     "title": "Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露",
     "content": "2024年11月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-4",
+    "id": "ja-news-8",
     "lang": "ja",
     "title": "Virufyベータ版アプリがコロンビアでリリース、4,500人のユーザーに自宅でCOVID-19検出を提供",
     "content": "2023年2月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-5",
+    "id": "ja-news-9",
     "lang": "ja",
     "title": "BARDA、視覚および聴覚症状に基づく感染症検出のための新しいAI/MLデジタルアプリの開発を支援",
     "content": "医療対策、アメリカ合衆国",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-6",
+    "id": "ja-news-10",
     "lang": "ja",
     "title": "このアプリは電話の前で咳をするだけでCOVID-19を診断することを目指しています",
     "content": "Forbes, メキシコ",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-7",
+    "id": "ja-news-11",
     "lang": "ja",
     "title": "COVID-19: Virufyアプリは咳の分析を通じてウイルスを診断可能",
     "content": "MSN",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-8",
+    "id": "ja-news-12",
     "lang": "ja",
     "title": "VIRUFY: COVID-19に感染しているかどうかを検出するプラットフォーム",
     "content": "Expreso, リマ, ペルー",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-9",
+    "id": "ja-news-13",
     "lang": "ja",
     "title": "One Young World日本アンバサダーがAIを活用してCOVID-19に挑む",
     "content": "One Young World, 東京, 日本",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-10",
+    "id": "ja-news-14",
     "lang": "ja",
     "title": "COVID-19対応の最前線に立つ北米アンバサダーたち",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-11",
+    "id": "ja-news-15",
     "lang": "ja",
     "title": "7月のアンバサダー・オブ・ザ・マンス",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-12",
+    "id": "ja-news-16",
     "lang": "ja",
     "title": "7月に開催されたOYWのグローバルデジタルイベントに数千人が参加：見逃した内容を振り返る",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-13",
+    "id": "ja-news-17",
     "lang": "ja",
     "title": "One Young World東京2020カーカス",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-14",
+    "id": "ja-news-18",
     "lang": "ja",
     "title": "One Young World東京2020カーカスでのVirufyプレゼンテーション",
     "content": "One Young World, 東京, 日本",
