@@ -25,7 +25,7 @@ const TopicCard = ({
   return (
     <div
       onClick={handleTopicClick}
-      className={`flex min-w-[90px] cursor-pointer flex-col justify-between space-y-2 rounded-full py-5 text-center shadow-lg ${
+      className={`flex min-w-[110px] cursor-pointer flex-col justify-between space-y-2 rounded-full border border-gray-300 py-5 text-center shadow-lg ${
         selectedTopic === title
           ? `${ColorProps.bgGradientReverse} `
           : 'bg-white'

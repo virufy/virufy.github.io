@@ -120,7 +120,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               {/* Sizing & Spacing Container */}
               <div className="px-8 text-center font-medium text-white">
                 {/* Header */}
-                <h1 className="mb-3 text-2xl font-medium text-black md:mb-8 md:text-5xl md:font-normal">
+                <h1 className="mb-3 text-2xl font-medium text-black md:mb-8 md:text-6xl md:font-normal">
                   {headerSection.title.map((content, i) =>
                     content.type === 'span' ? (
                       <span key={i} className="text-emerald-500">
@@ -131,33 +131,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     )
                   )}
                 </h1>
-
-                {/* Input Container
-                <div className="relative mb-2 flex items-center md:mb-8">
-                  <input
-                    className="w-full rounded-full py-4 pl-5 pr-12 text-xs text-neutral-500 sm:pl-8 sm:pr-14 sm:text-sm md:w-[680px] md:text-base"
-                    type="search"
-                    placeholder={headerSection.input.placeholder}
-                    onChange={handleSearchInputChange}
-                    maxLength={64}
-                    aria-label="Search"
-                  />
-                  <span
-                    className={`absolute right-0 pr-4 sm:pr-6 ${lang === 'ja' ? 'md:pr-14 lg:pr-16' : ''}`}
-                  >
-                    <ExportedImage
-                      src={headerSection.input.img}
-                      alt={headerSection.input.altText}
-                      basePath={basePath}
-                      width={24}
-                      height={24}
-                      priority
-                    />
-                  </span>
-                </div> */}
-
-                {/* Text Beneath Search Input */}
-                <p className="pl-5 text-left text-xs text-black sm:text-sm md:text-center md:text-base">
+                <p className="pl-5 text-left text-xs text-black sm:text-sm md:text-center md:text-xl">
                   {headerSection.texts.map((text, i) =>
                     text.type === 'span' ? (
                       <span className="font-bold" key={i}>
@@ -180,8 +154,8 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             {/* Title and Topic Cards Container */}
             <div className="flex flex-col items-center justify-center space-y-6 pt-10 text-center md:space-y-10 md:pt-16">
               {/* Topic Cards Container */}
-              <div className="grid grid-cols-2 items-center justify-center gap-10">
-                <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-7 lg:gap-10">
+              <div className="grid items-center justify-center gap-10 md:grid-cols-2">
+                <div className="grid grid-cols-3 gap-4 md:grid-cols-3 lg:grid-cols-6 lg:gap-10">
                   {topicCards.map((card) => (
                     <TopicCard
                       key={card.title}
@@ -192,27 +166,44 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     />
                   ))}
                 </div>
-                <div className="relative w-full">
+                <div className="mt-2 flex hidden w-full items-center rounded-full border border-gray-300 bg-white px-4 shadow-sm transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-200 md:mt-0 md:flex">
+                  <ExportedImage
+                    src={headerSection.input.img}
+                    alt={headerSection.input.altText}
+                    basePath={basePath}
+                    width={18}
+                    height={18}
+                    priority
+                  />
+
                   <input
-                    className="ml-2 mt-2 w-full rounded-full border border-gray-300 bg-white py-3 pl-5 pr-12 text-sm text-gray-800 shadow-sm transition placeholder:text-gray-400 focus:border-emerald-500 focus:outline-none focus:ring-2 focus:ring-emerald-200"
+                    className="w-full bg-transparent py-3 pl-3 text-sm text-gray-800 placeholder:text-gray-400 focus:outline-none"
                     type="search"
                     placeholder={headerSection.input.placeholder}
                     onChange={handleSearchInputChange}
                     maxLength={64}
                     aria-label="Search"
                   />
-
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2">
-                    <ExportedImage
-                      src={headerSection.input.img}
-                      alt={headerSection.input.altText}
-                      basePath={basePath}
-                      width={18}
-                      height={18}
-                      priority
-                    />
-                  </span>
                 </div>
+              </div>
+              <div className="mt-2 flex w-full items-center rounded-full border border-gray-300 bg-white px-4 shadow-sm transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-200 md:mt-0 md:flex md:hidden">
+                <ExportedImage
+                  src={headerSection.input.img}
+                  alt={headerSection.input.altText}
+                  basePath={basePath}
+                  width={18}
+                  height={18}
+                  priority
+                />
+
+                <input
+                  className="w-full bg-transparent py-3 pl-3 text-sm text-gray-800 placeholder:text-gray-400 focus:outline-none"
+                  type="search"
+                  placeholder={headerSection.input.placeholder}
+                  onChange={handleSearchInputChange}
+                  maxLength={64}
+                  aria-label="Search"
+                />
               </div>
             </div>
             <div className="flex flex-col gap-y-4 py-10 md:gap-y-10 md:py-40 md:pt-16">
@@ -223,8 +214,9 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                     {...content}
                     lang={lang}
                     key={content.question}
-                    className="!text-white md:!text-black"
-                    isFaq={true}
+                    //overrides text black in AccordionItem when isFaq is true
+                    className="!text-black"
+                    isFaq={false}
                   />
                 ))}
               </div>
