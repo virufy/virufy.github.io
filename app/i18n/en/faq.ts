@@ -2,20 +2,15 @@ import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: '../../images/faq/nextImageExportOptimizer/bg-ai-hand-opt-1080.webp',
-    altText: '',
+    tag: 'Got Questions?',
     title: [
       {
         type: 'text',
-        text: 'How can we ',
+        text: 'Frequently Asked ',
       },
       {
         type: 'span',
-        text: 'help ',
-      },
-      {
-        type: 'text',
-        text: 'you?',
+        text: 'Questions ',
       },
     ],
     input: {
@@ -26,64 +21,38 @@ const faq: FAQ = {
     texts: [
       {
         type: 'text',
-        text: 'Or ',
-      },
-      {
-        type: 'span',
-        text: 'choose ',
-      },
-      {
-        type: 'text',
-        text: 'an option below to help find what you are looking for.',
+        text: "Find answers to common questions about Virufy's AI-powered respiratory health screening technology.",
       },
     ],
   },
   topicsSection: {
     title: 'FAQ Topics',
     cards: [
-      // Removed in 6.2 Redesign
-      // {
-      //   title: 'Common Questions',
-      //   img: './../images/faq/icon-question-mark.png',
-      //   altText: '',
-      // },
       {
-        title: 'Virufy App',
-        img: '../../icons/icon-phone-in-hand-white.png',
-        altText: '',
+        title: 'All',
       },
       {
-        title: 'About Virufy',
-        img: '../../icons/icon-globe-white.png',
-        altText: '',
+        title: 'About',
       },
       {
-        title: 'About AI',
-        img: '../../icons/icon-recycle-white.png',
-        altText: '',
-      },
-      {
-        title: 'Finances',
-        img: '../../icons/icon-monitor-white.png',
-        altText: '',
+        title: 'Technology',
       },
       {
         title: 'Privacy',
-        img: '../../icons/icon-privacy-white.png',
-        altText: '',
       },
       {
-        title: 'Other',
-        img: '../../icons/icon-question-mark-white.png',
-        altText: '',
+        title: 'Support',
+      },
+      {
+        title: 'Research',
       },
     ],
   },
   questionsSection: {
-    topicTitle: 'Common Questions',
+    topicTitle: 'All',
     noResultsTitle: 'No Results Found',
     questionsByTopic: {
-      'Virufy App': [
+      Technology: [
         {
           question:
             'When and how will the app give upper respiratory infection prediction results?',
@@ -113,111 +82,6 @@ const faq: FAQ = {
             },
           ],
         },
-        {
-          question: 'Will the application be available for free and worldwide?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'As a 501(c)(3) non-profit organization, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds. However, our intention is to make the app free for the benefit of low-income countries.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question: 'Do you plan to extend this app in a for-profit startup?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'Virufy is a non-profit organization. We may partner with companies if needed to accelerate deployment of the app for the benefit of people.',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-      'About Virufy': [
-        {
-          question: 'How was the initiative created?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world. As a One Young World Japan ambassador who has travelled to over 25 countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question:
-            'How is Virufy different from other initiatives working on similar ventures?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'Because Virufy is a 501(c)(3) non-profit organization, we are able to recruit highly talented professionals as volunteers. Our team is global, spanning five continents, and our organization thus has global empathy built in. We are not concerned with making profit, so are able to work in developing countries. Our dense university alumni and professional networks grant us access to top echelon contacts in every country of the world. Mentorship is built into our organization, as dozens of young professionals in our team are empowered by sage advice from senior industry experts leads to rapid, creative activity focused in the right direction.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question:
-            'What phase of the investigation are you at? Is there a deadline to participate?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'We have put considerable effort to form partnerships, build our mobile app, register our California non-profit entity, and build our policies for compliance with data privacy laws across dozens of countries. Our data collection app is at the breakthrough stage, as have addressed the majority of healthcare data privacy and technical concerns to allow for launch. We have already gotten data privacy, information security, and UI/UX in place for our data collection mobile app, along with a scalable backend AWS infrastructure. We had large volumes of data collection exceeding 250,000 patients and with the help of AI are building the solution. There is no deadline, and we always welcome partners who can provide grant funding, volunteer services, and clinical data collection.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question: 'What is unique about Virufy from other organizations?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'As a young organization with a diverse and global team including alumni from more than 25 universities, we are guided by top-level industry professionals. Our multidisciplinary team has expertise in law, machine learning, medicine, information security, and mobile app development. Our One Young World network allows us to connect with trusted partners in every country. We welcome all, and being a 501(c)(3) non-profit allows for volunteers to join. As a volunteer run non-profit, we are independent and have less red tape.',
-                },
-              ],
-            },
-          ],
-        },
-        {
-          question:
-            'How much investment was made to make the Virufy initiative possible?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'More than 1,000 volunteers have put thousands of hours into making the project possible. Several companies have supported us with free software, including email, storage, and messaging platforms, along with cloud compute. Certain softwares such as video conferencing and project management tools have not been free, so unfortunately have to be paid from founder Amil’s limited savings. We believe that if we are successful, our cloud compute costs will increase, but we will be able to attract ample grant funding and private donations, along with government support to keep our system running.',
-                },
-              ],
-            },
-          ],
-        },
-      ],
-      'About AI': [
         {
           question:
             'Why are upper respiratory infection coughs distinguishable?',
@@ -278,31 +142,94 @@ const faq: FAQ = {
           ],
         },
       ],
-      Finances: [
-        // {
-        //   question:
-        //     'Do I need to make any financial contribution to donate my cough?',
-        //   answer: [
-        //     {
-        //       type: 'paragraph',
-        //       content: [
-        //         {
-        //           type: 'text',
-        //           text: 'Virufy is currently only collecting coughs from certain countries, which can be found in our app: ',
-        //         },
-        //         {
-        //           type: 'link',
-        //           text: 'https://virufy.org/study',
-        //           href: 'https://virufy.org/study',
-        //         },
-        //         {
-        //           type: 'text',
-        //           text: '.',
-        //         },
-        //       ],
-        //     },
-        //   ],
-        // },
+      About: [
+        {
+          question: 'Do you plan to extend this app in a for-profit startup?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Virufy is a non-profit organization. We may partner with companies if needed to accelerate deployment of the app for the benefit of people.',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: 'Will the application be available for free and worldwide?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'As a 501(c)(3) non-profit organization, we may need to charge a nominal fee to support our operations in case we are not able to raise enough funds. However, our intention is to make the app free for the benefit of low-income countries.',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question: 'How was the initiative created?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'When the pandemic hit, Virufy’s founder, Amil, knew smartphones were omnipresent and that COVID impacted the nose, throat, and lungs. He hypothesized that breathing and cough sounds could be analyzed with machine learning to detect COVID patterns. Wanting to make a positive impact, he orchestrated a clinical study with 362 patients in an esteemed university hospital. The original team of Virufy, beginning with Stanford graduate AI students, expanded to volunteers from universities around the world. As a One Young World Japan ambassador who has travelled to over 25 countries, Amil understands the global perspective and how a smartphone-based solution can be used by people all over the world.',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'How is Virufy different from other initiatives working on similar ventures?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'Because Virufy is a 501(c)(3) non-profit organization, we are able to recruit highly talented professionals as volunteers. Our team is global, spanning five continents, and our organization thus has global empathy built in. We are not concerned with making profit, so are able to work in developing countries. Our dense university alumni and professional networks grant us access to top echelon contacts in every country of the world. Mentorship is built into our organization, as dozens of young professionals in our team are empowered by sage advice from senior industry experts leads to rapid, creative activity focused in the right direction.',
+                },
+              ],
+            },
+          ],
+        },
+
+        {
+          question: 'What is unique about Virufy from other organizations?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'As a young organization with a diverse and global team including alumni from more than 25 universities, we are guided by top-level industry professionals. Our multidisciplinary team has expertise in law, machine learning, medicine, information security, and mobile app development. Our One Young World network allows us to connect with trusted partners in every country. We welcome all, and being a 501(c)(3) non-profit allows for volunteers to join. As a volunteer run non-profit, we are independent and have less red tape.',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          question:
+            'How much investment was made to make the Virufy initiative possible?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'More than 1,000 volunteers have put thousands of hours into making the project possible. Several companies have supported us with free software, including email, storage, and messaging platforms, along with cloud compute. Certain softwares such as video conferencing and project management tools have not been free, so unfortunately have to be paid from founder Amil’s limited savings. We believe that if we are successful, our cloud compute costs will increase, but we will be able to attract ample grant funding and private donations, along with government support to keep our system running.',
+                },
+              ],
+            },
+          ],
+        },
         {
           question: 'How many donors have you had in total?',
           answer: [
@@ -346,46 +273,23 @@ const faq: FAQ = {
             },
           ],
         },
+        {
+          question:
+            'How does distribution work, and how will Virufy become more widespread?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'The app will be offered for the benefit of people in low-income countries and will likely market itself and spread quickly.',
+                },
+              ],
+            },
+          ],
+        },
       ],
       Privacy: [
-        // {
-        //   question: 'How will Virufy securely store my data?',
-        //   answer: [
-        //     {
-        //       type: 'paragraph',
-        //       content: [
-        //         {
-        //           type: 'text',
-        //           text: 'We use Amazon Web Services (AWS) for research study data collection. AWS stores the data in a secure application with restricted access and controls. Your data will be stored with AWS until it is downloaded by us. We will store the data in a database with restricted access. If you would like more information about how AWS store your data, please visit their respective privacy policies at ',
-        //         },
-        //         {
-        //           type: 'link',
-        //           text: 'https://aws.amazon.com/en/privacy',
-        //           href: 'https://aws.amazon.com/en/privacy',
-        //         },
-        //         {
-        //           type: 'text',
-        //           text: '. If you would like to learn more, please refer to the Virufy privacy policy.',
-        //         },
-        //       ],
-        //     },
-        //   ],
-        // },
-        // {
-        //   question:
-        //     'Is my privacy ever at risk of being exposed when I donate my cough to Virufy?',
-        //   answer: [
-        //     {
-        //       type: 'paragraph',
-        //       content: [
-        //         {
-        //           type: 'text',
-        //           text: 'Our strong legal and information security teams have developed a DPIA to address potential risks and threats for your privacy. We will only store your personal data in an anonymized form (where you cannot be identified in any way) and in a secure database with restricted access. If you would like to learn more please refer to the Virufy Privacy Policy.',
-        //         },
-        //       ],
-        //     },
-        //   ],
-        // },
         {
           question: 'Does Virufy have a privacy policy and cookie policy?',
           answer: [
@@ -415,7 +319,7 @@ const faq: FAQ = {
           ],
         },
       ],
-      Other: [
+      Support: [
         {
           question: 'How can I support Virufy more?',
           answer: [
@@ -439,21 +343,7 @@ const faq: FAQ = {
             },
           ],
         },
-        {
-          question:
-            'How does distribution work, and how will Virufy become more widespread?',
-          answer: [
-            {
-              type: 'paragraph',
-              content: [
-                {
-                  type: 'text',
-                  text: 'The app will be offered for the benefit of people in low-income countries and will likely market itself and spread quickly.',
-                },
-              ],
-            },
-          ],
-        },
+
         {
           question: 'What if I have more questions?',
           answer: [
@@ -487,7 +377,30 @@ const faq: FAQ = {
           ],
         },
       ],
+      Research: [
+        {
+          question:
+            'What phase of the investigation are you at? Is there a deadline to participate?',
+          answer: [
+            {
+              type: 'paragraph',
+              content: [
+                {
+                  type: 'text',
+                  text: 'We have put considerable effort to form partnerships, build our mobile app, register our California non-profit entity, and build our policies for compliance with data privacy laws across dozens of countries. Our data collection app is at the breakthrough stage, as have addressed the majority of healthcare data privacy and technical concerns to allow for launch. We have already gotten data privacy, information security, and UI/UX in place for our data collection mobile app, along with a scalable backend AWS infrastructure. We had large volumes of data collection exceeding 250,000 patients and with the help of AI are building the solution. There is no deadline, and we always welcome partners who can provide grant funding, volunteer services, and clinical data collection.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
+  },
+  banner: {
+    title: 'Still have questions?',
+    text: "Can't find the answer you're looking for? Our dedicated support team is here to help! Reach out to us with your question, and we'll be happy to assist you.",
+    buttonText: 'Contact Us',
+    link: '/contact',
   },
 };
 

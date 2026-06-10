@@ -2,8 +2,7 @@ import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: '/images/faq/nextImageExportOptimizer/bg-ai-hand-opt-1080.webp',
-    altText: '',
+    tag: 'Preguntas Frecuentes',
     title: [
       {
         type: 'text',
@@ -43,33 +42,21 @@ const faq: FAQ = {
     cards: [
       {
         title: 'Aplicación Virufy',
-        img: '../../icons/icon-phone-in-hand-white.png',
-        altText: '',
       },
       {
         title: 'Acerca de Virufy',
-        img: '../../icons/icon-globe-white.png',
-        altText: '',
       },
       {
         title: 'Acerca de la IA',
-        img: '../../icons/icon-recycle-white.png',
-        altText: '',
       },
       {
         title: 'Finanzas',
-        img: '../../icons/icon-monitor-white.png',
-        altText: '',
       },
       {
         title: 'Privacidad',
-        img: '../../icons/icon-privacy-white.png',
-        altText: '',
       },
       {
         title: 'Otros',
-        img: '../../icons/icon-question-mark-white.png',
-        altText: '',
       },
     ],
   },
@@ -485,6 +472,12 @@ const faq: FAQ = {
         },
       ],
     },
+  },
+  banner: {
+    title: 'Still have questions?',
+    text: "Can't find the answer you're looking for? Our dedicated support team is here to help! Reach out to us with your question, and we'll be happy to assist you.",
+    buttonText: 'Contact Us',
+    link: '/contact',
   },
 };
 

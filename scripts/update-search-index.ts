@@ -11,7 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import type { QA } from '../app/i18n/types/faq';
+import type { FAQ, QA } from '@/app/i18n/types/faq';
 
 import type { StoryCard } from '../app/i18n/types/story';
 import type { JobDetail } from '@/app/i18n/types/jobDetails';
@@ -155,23 +155,32 @@ async function parsePublications(lang: string) {
 }
 
 async function parseFaq(lang: string) {
-  const content = await loadFile(lang, 'faq');
+  const content = (await loadFile(lang, 'faq')) as FAQ;
 
-  // All FAQs
-  if (content.questionsSection?.questionsByTopic) {
-    const faqData = content.questionsSection.questionsByTopic;
+  if (!content?.questionsSection?.questionsByTopic) {
+    return;
+  }
 
-    for (const qas of Object.values(faqData)) {
-      (qas as QA[]).forEach((qa, index) => {
-        data.push({
-          id: `${lang}-faq-${index + 1}`,
-          lang: lang,
-          title: qa.question,
-          content: qa.answer[0].content.map((c) => c.text).join(' '),
-          url: `/${lang}/ai`,
-        });
+  const baseUrl = `/${lang}/faq`;
+  let faqIndex = 1;
+
+  for (const qas of Object.values(
+    content.questionsSection.questionsByTopic
+  )) {
+    (qas as QA[]).forEach((qa) => {
+      const answerText = qa.answer
+        .flatMap((answer) => answer.content)
+        .map((item) => item.text)
+        .join(' ');
+
+      data.push({
+        id: `${lang}-faq-${faqIndex++}`,
+        lang,
+        title: qa.question,
+        content: answerText,
+        url: baseUrl,
       });
-    }
+    });
   }
 }
 
