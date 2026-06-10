@@ -448,15 +448,6 @@ const faq: FAQ = {
                 },
                 {
                   type: 'text',
-                  text: '. للاستفسارات المتعلقة بالبيانات، يمكنكم التواصل معنا عبر ',
-                },
-                {
-                  type: 'link',
-                  text: 'open-data@virufy.org',
-                  href: 'mailto:open-data@virufy.org',
-                },
-                {
-                  type: 'text',
                   text: '. لأي استفسارات أخرى، يمكنكم الوصول إلينا عبر ',
                 },
                 {

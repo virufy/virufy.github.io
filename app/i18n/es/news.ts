@@ -6,10 +6,42 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title:
+        'Avanzando la atención pediátrica con IA: ¡Virufy y Emirates Health Services (EHS) en WHX Dubái 2026!',
+      date: 'Abril de 2026',
+      subText: '',
+      url: '/es/news/whx-dubai-2026',
+      linkText: 'Leer más',
+    },
+    {
+      title:
+        'Tres iniciativas universitarias de Suiza, Estados Unidos y Egipto avanzan a fases activas de pilotos y comercialización en Dubái',
+      date: 'Mayo de 2026',
+      subText: '',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      linkText: 'Leer más',
+    },
+    {
+      title:
+        'La FPH de la UI explora una colaboración estratégica con Virufy para desarrollar tecnología de IA en salud respiratoria',
+      date: 'Diciembre de 2025',
+      subText: '',
+      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
+      linkText: 'Leer más',
+    },
+    {
       title: 'GITEX Global 2025 - Salud en Dubái',
       date: 'Octubre de 2025',
       subText: '',
       url: '/es/news/gitex-global-2025-dubai',
+      linkText: 'Leer más',
+    },
+    {
+      title:
+        'Un mensaje de nuestro fundador, Amil Khanzada: De Silicon Valley al aula: Mi primera conferencia en la Universidad de Fukui',
+      date: 'Junio de 2026',
+      subText: '',
+      url: '/es/news/amil-june-2026',
       linkText: 'Leer más',
     },
     {

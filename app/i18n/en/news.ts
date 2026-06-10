@@ -6,6 +6,38 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title:
+        'Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai',
+      date: 'May 2026',
+      subText: '',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      linkText: 'Read More',
+    },
+    {
+      title:
+        'FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health',
+      date: 'December 2025',
+      subText: '',
+      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
+      linkText: 'Read More',
+    },
+    {
+      title:
+        'A Message from our Founder, Amil Khanzada From Silicon Valley to the Classroom: My First Lecture at the University of Fukui',
+      date: 'June 2026',
+      subText: '',
+      url: '/en/news/amil-june-2026',
+      linkText: 'Read More',
+    },
+    {
+      title:
+        'Advancing Pediatric Care with AI: Virufy x Emirates Health Services (EHS) at WHX Dubai 2026!',
+      date: 'April 2026',
+      subText: '',
+      url: '/en/news/whx-dubai-2026',
+      linkText: 'Read More',
+    },
+    {
       title: 'GITEX Global 2025 - Dubai Health',
       date: 'October 2025',
       subText: '',

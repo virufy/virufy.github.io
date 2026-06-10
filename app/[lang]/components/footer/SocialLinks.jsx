@@ -1,44 +1,39 @@
 import { basePath } from '@/next.config.mjs';
 import {
-  InstagramIconDarkGradient,
-  InstagramIconWhite,
-  LinkedInIconDarkGradient,
-  LinkedInIconWhite,
-  XIconDarkGradient,
-  XIconWhite,
-  YouTubeIconDarkGradient,
-  YouTubeIconWhite,
-  TikTokIconDarkGradient,
-  TikTokIconWhite,
+  InstagramIconColor,
+  LinkedInIconColor,
+  XIconColor,
+  YouTubeIconColor,
+  TikTokIconColor,
 } from '@/public/images/footer/index';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 
 export default function SocialLinks({ lang }) {
   return (
-    <div className="mt-8 flex justify-center gap-10 lg:mt-4 lg:gap-7">
+    <div className="mt-6 flex items-center justify-center gap-3 lg:mt-5 lg:gap-2">
       <Link
         target="_blank"
         href="https://www.linkedin.com/company/virufy/"
         className="lg:hidden"
       >
         <ExportedImage
-          src={LinkedInIconWhite}
+          src={LinkedInIconColor}
           alt="LinkedIn icon"
-          className="h-[40px] w-[30px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
 
       <Link
         target="_blank"
-        href="https://x.com/virufy_japan"
-        className={lang === 'ja' ? 'lg:hidden' : 'hidden'}
+        href={lang === 'ja' ? 'https://x.com/virufy_japan' : 'https://x.com/VirufyOrg'}
+        className="lg:hidden"
       >
         <ExportedImage
-          src={XIconWhite}
+          src={XIconColor}
           alt="X icon"
-          className="h-[40px] w-[30px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -49,9 +44,9 @@ export default function SocialLinks({ lang }) {
         className="lg:hidden"
       >
         <ExportedImage
-          src={InstagramIconWhite}
+          src={InstagramIconColor}
           alt="Instagram icon"
-          className="h-[40px] w-[30px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -62,9 +57,9 @@ export default function SocialLinks({ lang }) {
         className="lg:hidden"
       >
         <ExportedImage
-          src={TikTokIconWhite}
+          src={TikTokIconColor}
           alt="TikTok icon"
-          className="h-[40px] w-[30px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -75,9 +70,9 @@ export default function SocialLinks({ lang }) {
         className={lang === 'en' || lang === 'ar' ? 'flex lg:hidden' : 'hidden'}
       >
         <ExportedImage
-          src={YouTubeIconWhite}
+          src={YouTubeIconColor}
           alt="Youtube icon"
-          className="h-[40px] w-[41px]"
+          className="relative top-[3px] h-[19px] w-[19px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -85,12 +80,12 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://www.linkedin.com/company/virufy/"
-        className="hidden lg:flex px-[5px]"
+        className="hidden lg:flex"
       >
         <ExportedImage
-          src={LinkedInIconDarkGradient}
+          src={LinkedInIconColor}
           alt="LinkedIn icon"
-          className="h-[40px] w-[30px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -98,12 +93,12 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://x.com/virufy_japan"
-        className={lang === 'ja' ? 'hidden lg:flex px-[5px]' : 'hidden'}
+        className={lang === 'ja' ? 'hidden lg:flex' : 'hidden'}
       >
         <ExportedImage
-          src={XIconDarkGradient}
+          src={XIconColor}
           alt="X icon"
-          className="h-[40px] w-[30px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -111,12 +106,12 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://x.com/VirufyOrg"
-        className={lang != 'ja' ? 'hidden lg:flex px-[5px]' : 'hidden'}
+        className={lang != 'ja' ? 'hidden lg:flex' : 'hidden'}
       >
         <ExportedImage
-          src={XIconDarkGradient}
+          src={XIconColor}
           alt="X icon"
-          className="h-[40px] w-[30px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -124,12 +119,12 @@ export default function SocialLinks({ lang }) {
       <Link
         target="_blank"
         href="https://www.instagram.com/virufy/"
-        className="hidden lg:flex px-[5px]"
+        className="hidden lg:flex"
       >
         <ExportedImage
-          src={InstagramIconDarkGradient}
+          src={InstagramIconColor}
           alt="Instagram icon"
-          className="h-[40px] w-[30px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -140,9 +135,9 @@ export default function SocialLinks({ lang }) {
         className="hidden lg:flex"
       >
         <ExportedImage
-          src={TikTokIconDarkGradient}
+          src={TikTokIconColor}
           alt="TikTok icon"
-          className="h-[40px] w-[40px]"
+          className="h-[15px] w-[15px] object-contain"
           basePath={basePath}
         />
       </Link>
@@ -153,9 +148,9 @@ export default function SocialLinks({ lang }) {
         className={lang === 'en' || lang === 'ar' ? 'hidden lg:flex' : 'hidden'}
       >
         <ExportedImage
-          src={YouTubeIconDarkGradient}
+          src={YouTubeIconColor}
           alt="Youtube icon"
-          className="h-[40px] w-[41px]"
+          className="relative top-[3px] h-[19px] w-[19px] object-contain"
           basePath={basePath}
         />
       </Link>

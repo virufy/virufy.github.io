@@ -6,6 +6,38 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title:
+        'AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！',
+      date: '2026年4月',
+      subText: '',
+      url: '/ja/news/whx-dubai-2026',
+      linkText: '続きを読む',
+    },
+    {
+      title:
+        'スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行',
+      date: '2026年5月',
+      subText: '',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      linkText: '続きを読む',
+    },
+    {
+      title:
+        'インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討',
+      date: '2025年12月',
+      subText: '',
+      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
+      linkText: '続きを読む',
+    },
+    {
+      title:
+        '創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義',
+      date: '2026年6月',
+      subText: '',
+      url: '/ja/news/amil-june-2026',
+      linkText: '続きを読む',
+    },
+    {
       title: 'GITEXグローバル2025 - ドバイヘルス',
       date: '2025年10月',
       subText: '',
