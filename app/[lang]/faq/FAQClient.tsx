@@ -10,6 +10,7 @@ import { usei18n } from '../../i18n';
 import AccordionItem from '../components/AccordionItem';
 import TopicCard from './TopicCard';
 import Head from 'next/head';
+import ActionBanner from '../components/ActionBanner';
 
 const DEBOUNCE_TIME_MS = 300;
 
@@ -19,6 +20,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       headerSection,
       topicsSection,
       questionsSection: { topicTitle, questionsByTopic },
+      banner,
     },
   } = usei18n(lang);
 
@@ -103,6 +105,18 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             />
             {/* Text and Input Container */}
             <div className="relative flex h-[400px] flex-col items-center justify-center px-5 text-center md:h-[500px] lg:h-[600px]">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-3 pr-4 text-xs text-[#084b8a] sm:mb-8 sm:py-1 sm:pl-4 sm:pr-5 sm:text-sm md:mb-10">
+                <ExportedImage
+                  src={'/icons/questionmark-faq.png'}
+                  alt="FAQ icon"
+                  height={17}
+                  width={17}
+                  className="h-3.5 w-3.5 sm:h-4 sm:w-4"
+                  basePath={basePath}
+                  priority
+                />
+                {headerSection.tag}
+              </div>
               {/* Sizing & Spacing Container */}
               <div className="px-8 text-center font-medium text-white">
                 {/* Header */}
@@ -216,8 +230,13 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               </div>
             </div>
           </section>
+          <ActionBanner
+            title={banner.title}
+            text={banner.text}
+            buttonText={banner.buttonText}
+            page={banner.link}
+          />
         </div>
-        <div className="absolute bottom-0 block h-10 w-full bg-gradient-to-b from-transparent to-[#000000]"></div>
       </div>
     </>
   );

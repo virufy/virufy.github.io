@@ -4,6 +4,13 @@ export interface FAQ {
   headerSection: FAQHeader;
   topicsSection: FAQTopics;
   questionsSection: FAQQuestions;
+  banner: FAQBanner;
+}
+interface FAQBanner {
+  title: string;
+  text: string;
+  buttonText: string;
+  link: string;
 }
 
 interface FAQHeader {

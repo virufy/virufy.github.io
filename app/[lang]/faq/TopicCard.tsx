@@ -1,4 +1,5 @@
 import { type FAQTopicCard } from '@/app/i18n/types/faq';
+import { ColorProps } from '../themes';
 
 interface Props extends FAQTopicCard {
   defaultTopic: string;
@@ -25,10 +26,14 @@ const TopicCard = ({
     <div
       onClick={handleTopicClick}
       className={`flex min-w-[90px] cursor-pointer flex-col justify-between space-y-2 rounded-full py-5 text-center shadow-lg ${
-        selectedTopic === title ? 'bg-blue-600' : 'bg-white'
+        selectedTopic === title
+          ? `${ColorProps.bgGradientReverse} `
+          : 'bg-white'
       }`}
     >
-      <h3 className={'text-white md:text-black'}>{title}</h3>
+      <h3 className={selectedTopic === title ? 'text-white' : 'text-black'}>
+        {title}
+      </h3>
     </div>
   );
 };

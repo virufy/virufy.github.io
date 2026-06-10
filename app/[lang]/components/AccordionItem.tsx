@@ -6,7 +6,7 @@ import AccordionItemParagraph from './AccordionItemParagraph';
 
 interface AccordionItemProps extends QA {
   lang: Locale;
-  topic: string;
+  topic?: string;
   className?: string;
   isFaq?: boolean;
 }
@@ -41,7 +41,7 @@ const AccordionItem = ({
         <div>
           {' '}
           <h3 className="pr-6 font-semibold">{question}</h3>
-          <p className="mt-1 text-sm text-stone-400">{topic}</p>
+          {topic && <p className="mt-1 text-sm text-stone-400">{topic}</p>}
         </div>
 
         <ArrowIcon isActive={isActive} isFaq={isFaq} />

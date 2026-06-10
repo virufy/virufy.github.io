@@ -2,8 +2,7 @@ import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    img: '../../images/faq/nextImageExportOptimizer/bg-ai-hand-opt-1080.webp',
-    altText: '',
+    tag: 'الأسئلة الشائعة',
     title: [
       {
         type: 'text',
@@ -43,33 +42,21 @@ const faq: FAQ = {
     cards: [
       {
         title: 'تطبيق Virufy',
-        img: '../../icons/icon-phone-in-hand-white.png',
-        altText: '',
       },
       {
         title: 'حول Virufy',
-        img: '../../icons/icon-globe-white.png',
-        altText: '',
       },
       {
         title: 'حول الذكاء الاصطناعي',
-        img: '../../icons/icon-recycle-white.png',
-        altText: '',
       },
       {
         title: 'الشؤون المالية',
-        img: '../../icons/icon-monitor-white.png',
-        altText: '',
       },
       {
         title: 'الخصوصية',
-        img: '../../icons/icon-privacy-white.png',
-        altText: '',
       },
       {
         title: 'أخرى',
-        img: '../../icons/icon-question-mark-white.png',
-        altText: '',
       },
     ],
   },

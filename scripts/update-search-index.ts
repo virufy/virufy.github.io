@@ -11,7 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import type { QA } from '../app/i18n/types/faq';
+// import type { QA } from '../app/i18n/types/faq';
 
 import type { StoryCard } from '../app/i18n/types/story';
 import type { JobDetail } from '@/app/i18n/types/jobDetails';
@@ -43,7 +43,7 @@ let data: {
     // Parse ts translation files
     await parseAi(lang);
     await parsePublications(lang);
-    await parseFaq(lang);
+    // await parseFaq(lang);
     await parseHome(lang);
     await parseJobDetails(lang);
     await parseStory(lang);
@@ -154,26 +154,26 @@ async function parsePublications(lang: string) {
   }
 }
 
-async function parseFaq(lang: string) {
-  const content = await loadFile(lang, 'faq');
+// async function parseFaq(lang: string) {
+//   const content = await loadFile(lang, 'faq');
 
-  // All FAQs
-  if (content.questionsSection?.questionsByTopic) {
-    const faqData = content.questionsSection.questionsByTopic;
+//   // All FAQs
+//   if (content.questionsSection?.questionsByTopic) {
+//     const faqData = content.questionsSection.questionsByTopic;
 
-    for (const qas of Object.values(faqData)) {
-      (qas as QA[]).forEach((qa, index) => {
-        data.push({
-          id: `${lang}-faq-${index + 1}`,
-          lang: lang,
-          title: qa.question,
-          content: qa.answer[0].content.map((c) => c.text).join(' '),
-          url: `/${lang}/ai`,
-        });
-      });
-    }
-  }
-}
+//     for (const qas of Object.values(faqData)) {
+//       (qas as QA[]).forEach((qa, index) => {
+//         data.push({
+//           id: `${lang}-faq-${index + 1}`,
+//           lang: lang,
+//           title: qa.question,
+//           content: qa.answer[0].content.map((c) => c.text).join(' '),
+//           url: `/${lang}/ai`,
+//         });
+//       });
+//     }
+//   }
+// }
 
 async function parseHome(lang: string) {
   const content = await loadFile(lang, 'home');
