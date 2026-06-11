@@ -17,6 +17,7 @@ const amilsStory: AmilsStory = {
       'Assistant Professor',
       'University of Fukui, Japan.',
       'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
+      'Specially Appointed Assistant Professor, Department of Engineering, University of Fukui, Japan',
     ],
     imgCaption: [
       'Amil with nursing staff supporting Virufy’s clinical studies in Columbia, South America.',
