@@ -2,63 +2,63 @@ import { type AmilsStory } from '../types/amilsStory';
 
 const amilsStory: AmilsStory = {
   heroSection: {
-    tag: 'Meet Amil',
+    tag: 'تعرف على أميل',
     title: [
-      { type: 'text', text: 'Meet Our ' },
-      { type: 'span', text: 'Founder' },
+      { type: 'text', text: 'تعرف على ' },
+      { type: 'span', text: 'مؤسسنا' },
     ],
-    text: 'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
+    text: 'مرشح لدرجة دكتوراه في الهندسة، جامعة فوكوي، اليابان. طالب سابق في برنامج مشترك للحصول على شهادة ماجستير إدارة الأعمال وماجستير الهندسة (علوم البيانات)، جامعة كاليفورنيا، بيركلي. أستاذ مساعد معين خصيصاً بقسم الهندسة في جامعة فوكوي، اليابان.',
   },
   storySection: {
-    title: "Amil's Story",
+    title: 'قصة أميل',
     texts: [
-      'Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact.',
-      'Since its founding, Virufy has grown into an international nonprofit operating across three continents, supported by more than 250 volunteers and 60 partner organizations. Guided by its mission to democratize access to health screening, Virufy continues to advance AI-driven disease detection to help communities respond faster, earlier, and more equitably to global health threats.',
+      'أسس أميل خانزادا شركة فيروفاي خلال جائحة كوفيد-19 بهدف واحد: جعل الفحوصات المبكرة للأمراض متاحة لأي شخص وفي أي مكان باستخدام الهاتف الذكي فقط. وبفضل خبرته الطويلة في الخدمة الاجتماعية ومساره المهني في هندسة البرمجيات والذكاء الاصطناعي، رآى فرصة لتطبيق أحدث التقنيات على أحد أكثر التحديات الصحية العامة إلحاحاً في العالم. أثناء دراسته للدراسات العليا في الذكاء الاصطناعي بجامعة ستانفورد تحت إشراف رواد مثل الدكتور أندرو نج والدكتورة في-في لي، أدرك أن التطورات في تعلم الآلة ومعالجة إشارات الصوت والحوسبة المتنقلة يمكن أن تترجم بسرعة إلى تأثير صحي واقعي.',
+      'منذ تأسيسها، نمت فيروفاي لتصبح منظمة غير ربحية دولية تعمل عبر ثلاث قارات، مدعومة بأكثر من 250 متطوعاً و60 شريكاً. وبدعم من مهمتها الرامية إلى تعميم الوصول إلى الفحوصات الصحية، تواصل فيروفاي تطوير تقنيات الكشف عن الأمراض المدعومة بالذكاء الاصطناعي لمساعدة المجتمعات على الاستجابة بشكل أسرع وأبكر وأكثر عدلاً للتهديدات الصحية العالمية.',
     ],
   },
   milestoneSection: {
-    title: 'Key Milestones',
-    text: 'A journey from pandemic response to global impact in respiratory health technology.',
+    title: 'أبرز الإنجازات',
+    text: 'رحلة من الاستجابة للجائحة إلى التأثير العالمي في تقنية الصحة التنفسية.',
     milestoneCards: [
       {
-        title: '2020: The Stanford Genesis',
-        text: 'While a student at Stanford, Amil established Virufy as a registered nonprofit in direct response to the global pandemic. He mobilized a world-class volunteer network to begin collecting cough recordings, launching the first clinical research studies in South Asia to train AI for COVID-19 detection.',
+        title: '2020: بداية ستانفورد',
+        text: 'أثناء دراسته في ستانفورد، أسس أميل فيروفاي كمنظمة غير ربحية مسجلة استجابة مباشرة للجائحة العالمية. حشد شبكة متطوعين عالمية لبدء جمع تسجيلات السعال، وأطلق أولى الدراسات البحثية الإكلينيكية في جنوب آسيا لتدريب الذكاء الاصطناعي على اكتشاف كوفيد-19.',
         image: '/images/amilsStory/amil-2020-stanford-genesis.webp',
         date: '2020',
       },
       {
-        title: '2021: Global Outreach & Data Expansion',
-        text: 'Our partner Sherlock Communications led a massive marketing push across Latin America, generating over 300 press releases to drive large-scale data collection and public awareness. Amil began representing Virufy at major global summits, establishing the organization as an international leader in the emerging field of acoustic health.',
+        title: '2021: الانتشار العالمي وتوسيع البيانات',
+        text: 'قاد شريكنا شيرلوك كومينيكيشنز حملة تسويقية واسعة في أمريكا اللاتينية، مولدة أكثر من 300 بيان صحفي لدفع جمع البيانات على نطاق واسع وزيادة الوعي العام. بدأ أميل بتمثيل فيروفاي في قمم عالمية كبرى، مما عزّز مكانة المنظمة كقائد دولي في مجال الصحة الصوتية الناشئ.',
         image: '/images/amilsStory/amil-2021-global-outreach.webp',
         date: '2021',
       },
       {
-        title: '2022: Federal Recognition & Development',
-        text: 'Virufy secured a prestigious research contract with the U.S. Department of Health and Human Services (BARDA). This milestone significantly accelerated the organization’s development capabilities and provided federal-level validation for the mission to provide accessible respiratory screening tools. Our clinical studies in Colombia proceeded in parallel.',
+        title: '2022: الاعتراف الفيدرالي والتطوير',
+        text: 'حصلت فيروفاي على عقد بحثي مرموق مع وزارة الصحة والخدمات الإنسانية الأمريكية (باردا). سرّع هذا الإنجاز قدرات المنظمة التنموية وقدّم مصادقة على مستوى فيدرالي لمهمتها في توفير أدوات فحص تنفسي ميسرة. تزامنت معها دراساتنا الإكلينيكية في كولومبيا.',
         image: '/images/amilsStory/amil-2022-federal-recognition.webp',
         date: '2022',
       },
       {
-        title: '2023: Strategic Innovation & NSF I-Corps',
-        text: 'Following the conclusion of the public health emergency, Amil led Virufy through the National Science Foundation (NSF) I-Corps program. He traveled extensively across the U.S. to conduct hundreds of interviews, defining a robust operational model for acoustic AI to detect respiratory threats beyond COVID-19.',
+        title: '2023: الابتكار الاستراتيجي وبرنامج NSF I-Corps',
+        text: 'بعد انتهاء حالة الطوارئ الصحية العامة، قاد أميل فيروفاي عبر برنامج I-Corps التابع للمؤسسة الوطنية للعلوم. سافر بشكل مكثف عبر الولايات المتحدة لإجراء مئات المقابلات، محدداً نموذجاً تشغيلياً قوياً للذكاء الاصطناعي الصوتي لاكتشاف التهديدات التنفسية بعيداً عن كوفيد-19.',
         image: '/images/amilsStory/amil-2023-strategic-innovation.webp',
         date: '2023',
       },
       {
-        title: '2024: The Japan Hub & Elderly Care',
-        text: 'Amil established a significant operational presence in Japan with support from JETRO. He spearheaded a major research shift toward detecting pneumonia in elderly care facilities, establishing a local HQ in Fukuoka to serve the specific needs of the Japanese healthcare market.',
+        title: '2024: مركز اليابان ورعاية كبار السن',
+        text: 'أسس أميل حضوراً عملياً هاماً في اليابان بدعم من جترو. وقاد تحوّلاً بحثياً كبيراً نحو الكشف عن الالتهاب الرئوي في دور رعاية المسنين، وأنشأ مقراً محلياً في فوكوكا لخدمة احتياجات السوق الصحية اليابانية الخاصة.',
         image: '/images/amilsStory/amil-2024-japan-hub.webp',
         date: '2024',
       },
       {
-        title: '2025: Global Scale & Multi-Disease Detection',
-        text: 'Amil launched operations in Dubai, securing a critical partnership with a health ministry arm to validate and deploy COVID/Flu detection technology. This initiative focused on achieving large-scale population health surveillance and strengthening public health infrastructure.',
+        title: '2025: النطاق العالمي والكشف عن عدة أمراض',
+        text: 'أطلق أميل عمليات في دبي، محقّقاً شراكة حاسمة مع جهة تابعة لوزارة الصحة للتحقق من نشر تقنية اكتشاف كوفيد/الإنفلونزا. ركزت هذه المبادرة على تحقيق مراقبة صحية سكانية واسعة وتعزيز البنية التحتية للصحة العامة.',
         image: '/images/amilsStory/amil-2025-middle-east.webp',
         date: '2025',
       },
       {
-        title: '2026: Academic Leadership & Global Mission',
-        text: 'Amil joined the University of Fukui as a Specially Appointed Assistant Professor of Social Informatics. In this role, he continues to lead Virufy’s global mission in parallel with his academic research on GovAI, regional revitalization, and the practical deployment of global health technologies.',
+        title: '2026: القيادة الأكاديمية والمهمة العالمية',
+        text: 'انضم أميل إلى جامعة فوكوي كأستاذ مساعد معين خصيصاً في المعلوماتية الاجتماعية. في هذا الدور، يواصل قيادة مهمة فيروفاي العالمية بالتوازي مع أبحاثه الأكاديمية في GovAI وتنشيط المناطق وتطبيق التقنيات الصحية العالمية عملياً.',
         image: '/images/amilsStory/amil-2026-academic-leadership.webp',
         date: '2026',
       },
@@ -66,16 +66,16 @@ const amilsStory: AmilsStory = {
   },
   oywSection: {
     title: [
-      { type: 'text', text: 'Supported by a Global Network – ' },
+      { type: 'text', text: 'بدعم من شبكة عالمية – ' },
       { type: 'span', text: 'One Young World' },
     ],
-    text: 'Through One Young World, Amil has been able to scale his vision beyond borders, connecting with a global community of young leaders committed to solving real-world health challenges. As an ambassador, he collaborates with researchers, clinicians, and technologists from around the world, leveraging this international network to accelerate Virufy’s mission of accessible, AI-driven respiratory health screening.',
+    text: 'من خلال One Young World، تمكن أميل من توسيع رؤيته عبر الحدود، متصلاً بمجتمع عالمي من القادة الشباب الملتزمين بحل تحديات الصحة الواقعية. كسفير، يتعاون مع باحثين وأطباء وتقنيين من مختلف أنحاء العالم، مستفيداً من هذه الشبكة الدولية لتسريع مهمة فيروفاي في توفير فحص تنفسي ميسّر ومدعوم بالذكاء الاصطناعي.',
     image: '/images/amilsStory/one-young-world-cover.webp',
   },
   banner: {
-    title: 'Built in Partnership With a Global Network',
-    text: 'Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide.',
-    buttonText: 'View Our Supporters',
+    title: 'مبنياً بالشراكة مع شبكة عالمية',
+    text: 'بالعمل مع شركاء أكاديميين وصناعيين وغير ربحيين، يقوم أميل وفريق فيروفاي بتوسيع الوصول إلى الفحص التنفسي المدعوم بالذكاء الاصطناعي في جميع أنحاء العالم.',
+    buttonText: 'عرض داعمينا',
     url: '/supporters',
   },
 };

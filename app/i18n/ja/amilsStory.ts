@@ -7,7 +7,7 @@ const amilsStory: AmilsStory = {
       { type: 'text', text: 'Meet Our ' },
       { type: 'span', text: 'Founder' },
     ],
-    text: 'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.',
+    text: 'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley. Specially Appointed Assistant Professor, Department of Engineering, University of Fukui, Japan',
   },
   storySection: {
     title: "Amil's Story",
