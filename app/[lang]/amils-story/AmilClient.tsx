@@ -51,12 +51,7 @@ const AmilsStoryPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               <h2 className="mt-3 text-2xl font-bold text-black">
                 {sectionAmil.founderAmil[1]}
               </h2>
-              <p className="mt-3 text-lg leading-relaxed text-black/90">
-                {sectionAmil.founderAmil[2]}
-              </p>
-              <p className="mt-3 text-lg leading-relaxed text-black/90">
-                {sectionAmil.founderAmil[3]}
-              </p>
+
               <p className="text-medium mt-3 leading-relaxed text-black/90">
                 {sectionAmil.founderAmil[4]}
               </p>
