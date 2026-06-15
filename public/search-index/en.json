@@ -255,15 +255,15 @@
     "id": "en-faq-20",
     "lang": "en",
     "title": "What if I have more questions?",
-    "content": "More details can be found in our full Privacy Policy, Cookie Policy, and consent form which is embedded in the data collection app. For questions related to the data collection study, please email us at  study@virufy.org . For data related queries, we can be contacted at  open-data@virufy.org . For all other inquiries, you may reach us at  info@virufy.org .",
+    "content": "More details can be found in our full Privacy Policy, Cookie Policy, and consent form which is embedded in the data collection app. For questions related to the data collection study, please email us at  study@virufy.org . For all other inquiries, you may reach us at  info@virufy.org .",
     "url": "/en/faq"
   },
   {
     "id": "en-faq-21",
     "lang": "en",
-    "title": "What if I have more questions?",
-    "content": "More details can be found in our full Privacy Policy, Cookie Policy, and consent form which is embedded in the data collection app. For questions related to the data collection study, please email us at  study@virufy.org . For all other inquiries, you may reach us at  info@virufy.org .",
-    "url": "/en/ai"
+    "title": "What phase of the investigation are you at? Is there a deadline to participate?",
+    "content": "We have put considerable effort to form partnerships, build our mobile app, register our California non-profit entity, and build our policies for compliance with data privacy laws across dozens of countries. Our data collection app is at the breakthrough stage, as have addressed the majority of healthcare data privacy and technical concerns to allow for launch. We have already gotten data privacy, information security, and UI/UX in place for our data collection mobile app, along with a scalable backend AWS infrastructure. We had large volumes of data collection exceeding 250,000 patients and with the help of AI are building the solution. There is no deadline, and we always welcome partners who can provide grant funding, volunteer services, and clinical data collection.",
+    "url": "/en/faq"
   },
   {
     "id": "en-home-intro",
@@ -1305,7 +1305,7 @@
     "id": "en-amilsStory-hero",
     "lang": "en",
     "title": "Meet Our  Founder",
-    "content": "Meet Amil Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley.",
+    "content": "Meet Amil Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley. Specially Appointed Assistant Professor, Department of Engineering, University of Fukui, Japan",
     "url": "/en/amils-story"
   },
   {
