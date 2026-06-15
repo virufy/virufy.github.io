@@ -241,6 +241,85 @@ const blogPosts: Record<string, Post> = {
       </ul>
     `,
   },
+  'the-next-step-in-respiratory-public-health': {
+    slug: 'the-next-step-in-respiratory-public-health',
+    title: 'The Next Step in Respiratory Public Health',
+    description:
+      'How community-centered screening initiatives are expanding what early detection looks like, and where AI fits into that work.',
+    date: 'June 15th, 2026',
+    content: `
+    <p>
+      In communities across the United Kingdom, adults aged 55 to 74 with a history of smoking are now being invited to free lung health checks through the NHS Lung Cancer Screening Programme. In the United States, the Preventive Services Task Force has expanded its lung cancer screening eligibility to reach millions more people than previous guidelines covered. Across Asia, national tuberculosis control programs have incorporated respiratory assessment as a routine part of community health visits.
+    </p>
+
+    <p>
+      These are not small developments. They represent years of clinical research, public health investment, and policy work, and the communities they reach benefit from them in measurable ways. Early-stage detection rates through the NHS programme have reached levels far above the national average for cancers diagnosed outside of screening. The case for bringing respiratory screening closer to communities has been made, and governments are acting on it.
+    </p>
+
+    <p>
+      The next question is how to extend that momentum further.
+    </p>
+
+    <h2>What Cough Analysis Adds to This Picture</h2>
+    <p>
+      Research published across institutions including MIT, Cambridge, and in peer-reviewed journals including the Journal of Medical Internet Research has demonstrated that AI models trained on cough and breathing recordings can identify patterns associated with respiratory conditions including COPD, asthma, and respiratory infections. The acoustic characteristics of a cough change measurably when airways are inflamed, narrowed, or compromised. Those changes are detectable in the audio signal itself, even when symptoms feel mild to the person producing them.
+    </p>
+
+    <p>
+      The significance of this for community health is practical. A spirometry machine requires a clinical setting, trained technicians, and consistent maintenance. A chest CT requires radiology infrastructure. A cough recorded on a smartphone requires none of these things. The device is already present in the communities that national screening programs are working hardest to reach.
+    </p>
+
+    <p>
+      A validated acoustic screening tool would not replace spirometry or clinical assessment. It would function as a first layer: extending the reach of existing programs into populations that fixed infrastructure cannot serve on its own, and flagging individuals who warrant follow-up before their condition reaches a stage where the options narrow.
+    </p>
+
+    <h2>Where Virufy Is in This Work</h2>
+    <p>
+      Virufy is a nonprofit developing AI-powered respiratory screening technology grounded in this science. The organization is currently in the data collection phase, building one of the largest crowdsourced respiratory datasets in the world by gathering cough and breathing recordings from contributors across diverse geographies, ages, and health profiles. Over 250,000 patients have been enrolled across clinical studies in five countries.
+    </p>
+
+    <p>
+      The goal is a free screening tool that can sit alongside the community health infrastructure that national programs have already built, extending their reach without requiring new clinical equipment or specialist staffing. Clinical and regulatory approvals are required before any tool can be deployed, and that process is underway in parallel with the science.
+    </p>
+
+    <h2>Why the Data Has to Come from Communities</h2>
+    <p>
+      For acoustic screening to work reliably across the populations national programs are trying to serve, the models powering it need to be trained on data that reflects those populations. Accent, age, environmental exposure, and the specific respiratory disease profiles common in different regions all affect how a model performs. A model trained without adequate representation from the communities it will eventually serve will not perform well for them.
+    </p>
+
+    <p>
+      This is why participation in data collection is itself a form of public health contribution. Research using datasets including Cambridge and Virufy has shown that AI models trained on narrow data perform significantly worse when tested across different populations and conditions, reinforcing that broad, diverse contribution is not optional. It is the foundation the science has to be built on.
+    </p>
+
+    <p>
+      Contributing a recording means helping to ensure that the tools being developed will work for people who share your background, your environment, and your health context. That connection between individual participation and community-level outcomes is what makes this phase of the work matter.
+    </p>
+
+    <h2>References</h2>
+    <ul>
+      <li>
+        <a href="https://www.nhs.uk/conditions/lung-health-checks/" target="_blank" rel="noopener noreferrer">
+          NHS - Lung Health Checks
+        </a>
+      </li>
+      <li>
+        <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening" target="_blank" rel="noopener noreferrer">
+          United States Preventive Services Task Force - Lung Cancer Screening Recommendation
+        </a>
+      </li>
+      <li>
+        <a href="https://www.jmir.org/2024/1/e51640" target="_blank" rel="noopener noreferrer">
+          Journal of Medical Internet Research - Limitations of Cough Sound-Based COVID-19 Diagnosis AI Models (2024)
+        </a>
+      </li>
+      <li>
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8545201/" target="_blank" rel="noopener noreferrer">
+          National Center for Biotechnology Information - Cough Sound Detection and Diagnosis Using Artificial Intelligence
+        </a>
+      </li>
+    </ul>
+  `,
+  },
   'the-future-of-digital-solutions': {
     slug: 'the-future-of-digital-solutions',
     title: 'The Future of Digital Solutions',
