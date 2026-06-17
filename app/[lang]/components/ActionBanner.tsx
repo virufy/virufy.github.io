@@ -14,7 +14,7 @@ const ActionBanner = ({
   return (
     <section className={`${ColorProps.bgBlueGlow} border-2 border-y-[#bcc7d4]`}>
       <div
-        className={`relative mx-auto flex max-w-6xl flex-col items-center px-6 py-16 md:flex-row md:py-20 md:py-24`}
+        className={`relative mx-auto flex max-w-6xl flex-col items-center px-6 py-16 md:flex-row md:py-20`}
       >
         <div>
           <h2
@@ -33,7 +33,7 @@ const ActionBanner = ({
             href={page}
             target="_blank"
             rel="noopener noreferrer"
-            className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
+            className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white md:ml-8 md:mt-0 ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
           >
             {buttonText}
           </a>

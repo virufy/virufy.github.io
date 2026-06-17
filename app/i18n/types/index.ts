@@ -1,24 +1,25 @@
-import { type Ai } from './ai';
-import { type CookieModal } from './cookiemodal';
-import { type AmilsStory } from './amilsStory';
-import { type FAQ } from './faq';
-import { type Footer } from './footer';
-import { type Fukuoka } from './fukuoka';
-import { type homepage } from './home';
-import { type JobDetails } from './jobDetails';
-import { type JobListing } from './jobListing';
-import { type NavbarType } from './navbar';
-import { type OneYoungWorld } from './oneYoungWorld';
-import { type PaperContent } from './paper';
-import { type People } from './people';
-import { type PressReleases } from './news';
-import { type Publications } from './publications';
-import { type ShareYourCough } from './shareYourCough';
-import { type Story } from './story';
-import { type supporters } from './supporters';
-import { type TeamLeadsType } from './teamLeads';
-import { type Donate } from './donate';
-import { type Post } from './BlogPosts';
+import type { Ai } from './ai';
+import type { CookieModal } from './cookiemodal';
+import type { AmilsStory } from './amilsStory';
+import type { FAQ } from './faq';
+import type { Footer } from './footer';
+import type { Fukuoka } from './fukuoka';
+import type { homepage } from './home';
+import type { JobDetails } from './jobDetails';
+import type { JobListing } from './jobListing';
+import type { NavbarType } from './navbar';
+import type { OneYoungWorld } from './oneYoungWorld';
+import type { PaperContent } from './paper';
+import type { People } from './people';
+import type { PressReleases } from './news';
+import type { Publications } from './publications';
+import type { ShareYourCough } from './shareYourCough';
+import type { Story } from './story';
+import type { supporters } from './supporters';
+import type { TeamLeadsType } from './teamLeads';
+import type { Donate } from './donate';
+import type { Post } from './BlogPosts';
+import { SevenNewsPage } from './sevenNews';
 
 export interface I18nData {
   ai: Ai;
@@ -42,4 +43,5 @@ export interface I18nData {
   teamLeads: TeamLeadsType;
   donate: Donate;
   blogPosts: Record<string, Post>;
+  sevenNews: SevenNewsPage;
 }
