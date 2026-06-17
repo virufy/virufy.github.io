@@ -2,16 +2,16 @@
 
 import { useState, useMemo } from 'react';
 import { type Locale } from '@/i18n-config';
-import { SevenNewsPage } from '@/app/i18n/types/sevenNews';
 import ExportedImage from 'next-image-export-optimizer';
 import { basePath } from '@/next.config.mjs';
 import NewsCard from './NewsCard';
 import ActionBanner from '../components/ActionBanner';
 import Link from 'next/link';
+import { SevenPublicationsPage } from '@/app/i18n/types/sevenPublications';
 
 type Props = {
   params: { lang: Locale };
-  content: SevenNewsPage;
+  content: SevenPublicationsPage;
 };
 
 const unoptimized = process.env.NODE_ENV !== 'production';
@@ -56,9 +56,9 @@ const getSortableDate = (dateStr: string): string => {
   return '2000-01-01';
 };
 
-const SevenNewsClient = ({ content, params }: Props) => {
+const SevenPublicationsClient = ({ content, params }: Props) => {
   const newsCards = useMemo(
-    () => content.newsCards.filter((card) => card.contentType === 'news'),
+    () => content.newsCards.filter((card) => card.contentType === 'publications'),
     [content.newsCards]
   );
 
@@ -132,9 +132,9 @@ const SevenNewsClient = ({ content, params }: Props) => {
 
           {/* Title */}
           <h1 className="font-montserrat text-4xl font-normal tracking-[0.26px] text-black sm:text-5xl md:text-[52px] md:leading-[75px]">
-            Virufy in the{' '}
+            Virufy {' '}
             <span className="bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent">
-              News
+              Publications
             </span>
           </h1>
           <p className="font-inter mx-auto mt-4 max-w-2xl text-base font-normal leading-[32.5px] tracking-[-0.45px] text-gray-600 sm:text-xl">
@@ -145,7 +145,7 @@ const SevenNewsClient = ({ content, params }: Props) => {
           <div className="mt-8 flex flex-wrap justify-center gap-2">
             <div className="inline-flex rounded-full border border-gray-300 bg-white p-2 shadow-[0_8px_20px_-4px_rgba(0,0,0,0.15)] ring-gray-200">
               {content.pillSelector.options.map((option) => {
-                const isActive = option.id === 'news';
+                const isActive = option.id === 'publications';
                 const baseClasses =
                   'font-inter rounded-full px-6 py-3 text-base font-medium leading-[24px] tracking-[-0.31px] transition';
 
@@ -161,12 +161,12 @@ const SevenNewsClient = ({ content, params }: Props) => {
                 }
                 // Map option.id to the correct URL
                 let href = '';
-                if (option.id === 'publications') {
-                  href = `/${params.lang}/sevenpublications/`;
+                if (option.id === 'news') {
+                  href = `/${params.lang}/sevennews/`;
                 } else if (option.id === 'blogs') {
                   href = `/${params.lang}/blog/`;
                 } else {
-                  href = `/${params.lang}/sevennews/${option.id}`;
+                  href = `/${params.lang}/sevenpublications/${option.id}`; // fallback
                 }
 
                 return (
@@ -272,4 +272,4 @@ const SevenNewsClient = ({ content, params }: Props) => {
   );
 };
 
-export default SevenNewsClient;
+export default SevenPublicationsClient;
