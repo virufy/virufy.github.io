@@ -24,7 +24,7 @@ const pressReleases: PressReleases = {
     {
       title:
         'كلية الصحة العامة بجامعة إندونيسيا تستكشف تعاونًا استراتيجيًا مع Virufy لتطوير تقنية الذكاء الاصطناعي في مجال صحة الجهاز التنفسي',
-      date: 'ديسمبر 2025',
+      date: 'يونيو 2026',
       subText: '',
       url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
       linkText: 'اقرأ المزيد',

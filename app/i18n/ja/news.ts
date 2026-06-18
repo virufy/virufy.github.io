@@ -24,7 +24,7 @@ const pressReleases: PressReleases = {
     {
       title:
         'インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討',
-      date: '2025年12月',
+      date: '2026年6月',
       subText: '',
       url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
       linkText: '続きを読む',

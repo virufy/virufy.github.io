@@ -24,7 +24,7 @@ const pressReleases: PressReleases = {
     {
       title:
         'La FPH de la UI explora una colaboración estratégica con Virufy para desarrollar tecnología de IA en salud respiratoria',
-      date: 'Diciembre de 2025',
+      date: 'junio de 2026',
       subText: '',
       url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
       linkText: 'Leer más',

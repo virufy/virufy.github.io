@@ -16,7 +16,7 @@ const pressReleases: PressReleases = {
     {
       title:
         'FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health',
-      date: 'December 2025',
+      date: 'June 2026',
       subText: '',
       url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
       linkText: 'Read More',
