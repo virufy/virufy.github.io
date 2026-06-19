@@ -335,6 +335,16 @@ const people: People = {
         ],
         link: 'https://therapia.my/',
       },
+      junpei: {
+        img: './../images/advisors/junpei-komiyama.webp',
+        name: '小宮山 純平',
+        role: '人工知能アドバイザー',
+        texts: [
+          'MBZUAI（モハメド・ビン・ザイード人工知能大学）機械学習学部　助教',
+          '東京大学大学院 博士（情報理工学)',
+        ],
+        link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
+      },
       peter: {
         img: './../images/advisors/peter-heart.jpg',
         name: 'Peter Heart',
@@ -380,6 +390,9 @@ const people: People = {
       'maurino',
       'amir',
       'ohmori',
+      'tomohiro',
+      'okazaki',
+      'junpei',
     ],
   },
 };

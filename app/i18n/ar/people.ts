@@ -335,6 +335,16 @@ const people: People = {
         ],
         link: 'https://therapia.my/',
       },
+      junpei: {
+        img: './../images/advisors/junpei-komiyama.webp',
+        name: 'جونبي كوميياما',
+        role: 'مستشار الذكاء الاصطناعي',
+        texts: [
+          'أستاذ مساعد في تعلّم الآلة، جامعة محمد بن زايد للذكاء الاصطناعي (MBZUAI)',
+          'دكتوراه في علوم الحاسوب، جامعة طوكيو',
+        ],
+        link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
+      },
       peter: {
         img: './../images/advisors/peter-heart.jpg',
         name: 'Peter Heart',
@@ -378,6 +388,10 @@ const people: People = {
       'zafar',
       'maurino',
       'amir',
+      'ohmori',
+      'tomohiro',
+      'okazaki',
+      'junpei',
     ],
   },
 };

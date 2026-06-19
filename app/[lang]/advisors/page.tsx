@@ -42,6 +42,7 @@ const advisorOrder = [
   'ohmori',
   'tomohiro',
   'okazaki',
+  'junpei',
   'peter',
 ];
 

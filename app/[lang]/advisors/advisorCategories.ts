@@ -6,6 +6,7 @@ const advisorCategories: Record<string, string> = {
   rok: 'ai',
   may: 'ai',
   kohei: 'ai',
+  junpei: 'ai',
 
   // Public Health / Epidemiology
   jesse: 'health',
