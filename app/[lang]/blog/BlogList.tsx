@@ -19,7 +19,7 @@ export default function BlogList({
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {posts.map((post) => (
+        {[...posts].reverse().map((post) => (
           <BlogCard key={post.slug} post={post} lang={lang} />
         ))}
       </div>
