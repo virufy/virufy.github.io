@@ -345,6 +345,16 @@ const people: People = {
         ],
         link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
       },
+      peter: {
+        img: './../images/advisors/peter-heart.jpg',
+        name: 'Peter Heart',
+        role: '技術戦略アドバイザー',
+        texts: [
+          'リコー・イノベーションズ 創設者 兼 名誉会長',
+          'スタンフォード大学 電気工学博士',
+        ],
+        link: 'http://www.peterhart.net/',
+      },
     },
     advisorOrder: [
       'adam',
