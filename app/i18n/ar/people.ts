@@ -335,6 +335,16 @@ const people: People = {
         ],
         link: 'https://therapia.my/',
       },
+      peter: {
+        img: './../images/advisors/peter-heart.jpg',
+        name: 'Peter Heart',
+        role: 'مستشار في استراتيجية التكنولوجيا',
+        texts: [
+          'مؤسس ورئيس مجلس الإدارة الفخري في شركة ريكو إنوفيشنز (Ricoh Innovations, Inc.)',
+          'حاصل على درجة الدكتوراه في الهندسة الكهربائية من Stanford University.',
+        ],
+        link: 'http://www.peterhart.net/',
+      },
     },
     advisorOrder: [
       'adam',

@@ -15,6 +15,7 @@ const advisorCategories: Record<string, string> = {
   // Technology
   zafar: 'technology',
   khwaja: 'technology',
+  peter: 'technology',
 
   // Clinical
   kara: 'clinical',

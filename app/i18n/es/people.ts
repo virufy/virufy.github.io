@@ -351,6 +351,16 @@ const people: People = {
         ],
         link: 'https://therapia.my/',
       },
+      peter: {
+        img: './../images/advisors/peter-heart.jpg',
+        name: 'Peter Heart',
+        role: 'Asesor en Estrategia Tecnológica',
+        texts: [
+          'Fundador y Presidente Emérito en Ricoh Innovations, Inc.',
+          'Ph.D. en Ingeniería Eléctrica, Universidad de Stanford',
+        ],
+        link: 'http://www.peterhart.net/',
+      },
     },
     advisorOrder: [
       'adam',
