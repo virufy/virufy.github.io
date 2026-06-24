@@ -346,8 +346,8 @@ const people: People = {
         link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
       },
       peter: {
-        img: './../images/advisors/peter-heart.jpg',
-        name: 'Peter Heart',
+        img: './../images/advisors/peter-hart.jpg',
+        name: 'Peter Hart',
         role: 'مستشار في استراتيجية التكنولوجيا',
         texts: [
           'مؤسس ورئيس مجلس الإدارة الفخري في شركة ريكو إنوفيشنز (Ricoh Innovations, Inc.)',
