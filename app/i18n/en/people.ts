@@ -350,8 +350,8 @@ const people: People = {
         link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
       },
       peter: {
-        img: './../images/advisors/peter-heart.jpg',
-        name: 'Peter Heart',
+        img: './../images/advisors/peter-hart.jpg',
+        name: 'Peter Hart',
         role: 'Advisor on Technology Strategy',
         texts: [
           'Founder and Chairman Emeritus at Ricoh Innovations, Inc.',
