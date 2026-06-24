@@ -265,7 +265,7 @@ const SevenPublicationsClient = ({ content, params }: Props) => {
           title={content.section5.title}
           text={content.section5.text}
           buttonText={content.section5.button}
-          page="/careers"
+          page="/en/join-us/"
         />
       </section>
     </main>

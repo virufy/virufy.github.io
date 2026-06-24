@@ -31,8 +31,6 @@ const ActionBanner = ({
         {buttonText && (
           <a
             href={page}
-            target="_blank"
-            rel="noopener noreferrer"
             className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white md:ml-8 md:mt-0 ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
           >
             {buttonText}
