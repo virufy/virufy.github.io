@@ -347,7 +347,7 @@ const people: People = {
       },
       peter: {
         img: './../images/advisors/peter-hart.jpg',
-        name: 'Peter Hart',
+        name: 'ピーター・ハート',
         role: '技術戦略アドバイザー',
         texts: [
           'リコー・イノベーションズ 創設者 兼 名誉会長',
