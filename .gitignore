@@ -14,6 +14,7 @@
 # next.js
 /.next/
 /out/
+/public/search-index/
 
 # production
 /build
@@ -48,7 +49,7 @@ next-env.d.ts
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-"virufy.github.io/" 
-"virufy.github.io/" 
+"virufy.github.io/"
+"virufy.github.io/"
 virufy.github.io/
 virufy.github.io/
