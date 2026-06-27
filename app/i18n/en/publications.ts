@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'Virufy White Paper 2026',
+      date: 'June 2026',
+      url: '/en/publications/virufy-white-paper-2026',
+      linkText: 'Read More',
+    },
+    {
       title:
         'Data‑Efficient Cough Analysis Through Active Learning and Segmentation',
       date: 'March 2026',
