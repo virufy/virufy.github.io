@@ -42,80 +42,80 @@
     "url": "/en/ai"
   },
   {
-    "id": "en-media-publications",
+    "id": "en-publications",
     "lang": "en",
-    "title": "Publications",
-    "content": "Below you can find several of our papers that showcase the development and science behind the power of Virufy.",
+    "title": "Virufy Publications",
+    "content": "Explore our peer-reviewed research, academic publications, and scientific studies advancing the field of AI-powered respiratory disease detection through innovative cough analysis technology.",
     "url": "/en/publications"
   },
   {
-    "id": "en-media-publications-1",
+    "id": "en-publications-1",
     "lang": "en",
-    "title": "Publications",
-    "content": "Data‑Efficient Cough Analysis Through Active Learning and Segmentation",
-    "url": "/en/publications/data-efficient-cough-ai"
+    "title": "Virufy White Paper 2026",
+    "content": "June 2026",
+    "url": "/en/publications/virufy-white-paper-2026"
   },
   {
-    "id": "en-media-publications-2",
+    "id": "en-publications-2",
     "lang": "en",
-    "title": "Publications",
-    "content": "Improving Clinical Trial Enrollment for Smartphone-Based AI Data Collection: A Methodological Analysis of Nudge-Based Interventions",
+    "title": "Data‑Efficient Cough Analysis Through Active Learning and Segmentation",
+    "content": "March 8, 2026",
+    "url": "https://virufy.org/en/publications/data-efficient-cough-ai/"
+  },
+  {
+    "id": "en-publications-3",
+    "lang": "en",
+    "title": "Improving Clinical Trial Enrollment for Smartphone",
+    "content": "December 21, 2025",
     "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
   },
   {
-    "id": "en-media-publications-3",
+    "id": "en-publications-4",
     "lang": "en",
-    "title": "Publications",
-    "content": "Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19",
+    "title": "Hierarchical Multi-modal Transformer for Automatic Detection of COVID-19",
+    "content": "October 29, 2022",
     "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
   },
   {
-    "id": "en-media-publications-4",
+    "id": "en-publications-5",
     "lang": "en",
-    "title": "Publications",
-    "content": "Covid 19 Calculator -- Positive U.S. Socio-Economic Impact",
+    "title": "Covid 19 Calculator -- Positive U.S. Socio-Economic Impact",
+    "content": "January 21, 2022",
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
-    "id": "en-media-publications-5",
+    "id": "en-publications-6",
     "lang": "en",
-    "title": "Publications",
-    "content": "Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough",
+    "title": "Using Deep Learning with Large Aggregated Datasets for COVID-19 Classification from Cough",
+    "content": "January 5, 2022",
     "url": "https://arxiv.org/abs/2201.01669"
   },
   {
-    "id": "en-media-publications-6",
+    "id": "en-publications-7",
     "lang": "en",
-    "title": "Publications",
-    "content": "Using a Novel COVID-19 Calculator to Measure Positive U.S. Socio-Economic Impact of a COVID-19 Pre-Screening Solution (AI/ML)",
-    "url": "https://arxiv.org/abs/2201.11109"
+    "title": "Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems",
+    "content": "September 7, 2021",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8421112/"
   },
   {
-    "id": "en-media-publications-7",
+    "id": "en-publications-8",
     "lang": "en",
-    "title": "Publications",
-    "content": "Challenges and Opportunities in the Deploying of COVID-19 Cough AI Systems",
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
-  },
-  {
-    "id": "en-media-publications-8",
-    "lang": "en",
-    "title": "Publications",
-    "content": "Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from Cough",
+    "title": "Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from",
+    "content": "November 26, 2020",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "en-media-publications-9",
+    "id": "en-publications-9",
     "lang": "en",
-    "title": "Publications",
-    "content": "Fusical: Multimodal Fusion for Video Sentiment",
+    "title": "Fusical: Multimodal Fusion for Video Sentiment",
+    "content": "October 22, 2020",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "en-media-publications-10",
+    "id": "en-publications-10",
     "lang": "en",
-    "title": "Publications",
-    "content": "Facial Expression Recognition with Deep Learning",
+    "title": "Facial Expression Recognition with Deep Learning",
+    "content": "April 8, 2020",
     "url": "https://arxiv.org/abs/2004.11823"
   },
   {
@@ -1173,6 +1173,13 @@
     "lang": "en",
     "title": "Junpei Komiyama",
     "content": "Artificial Intelligence Advisor (Assistant Professor of Machine Learning, MBZUAI (Mohamed bin Zayed University of Artificial Intelligence) | Ph.D. in Computer Science, The University of Tokyo)",
+    "url": "/en/advisors"
+  },
+  {
+    "id": "en-advisors-36",
+    "lang": "en",
+    "title": "Peter Hart",
+    "content": "Advisor on Technology Strategy (Founder and Chairman Emeritus at Ricoh Innovations, Inc. | Ph.D. in Electrical Engineering, Stanford University)",
     "url": "/en/advisors"
   },
   {

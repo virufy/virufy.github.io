@@ -42,88 +42,74 @@
     "url": "/ar/ai"
   },
   {
-    "id": "ar-media-publications",
+    "id": "ar-publications",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "يمكنك العثور أدناه على العديد من أوراقنا التي تعرض التطور والعلم وراء قوة Virufy",
+    "title": "منشورات Virufy",
+    "content": "استكشف أبحاثنا المحكمة، المنشورات الأكاديمية، والدراسات العلمية التي تدفع مجال الكشف عن أمراض الجهاز التنفسي باستخدام الذكاء الاصطناعي من خلال تقنية تحليل السعال المبتكرة.",
     "url": "/ar/publications"
   },
   {
-    "id": "ar-media-publications-1",
+    "id": "ar-publications-1",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "تحليل السعال بكفاءة في استخدام البيانات من خلال التعلم النشط والتجزئة",
-    "url": "/en/publications/data-efficient-cough-ai"
+    "title": "تحليل السعال بكفاءة في استخدام البيانات من خلال التعلم النشط والتجزئة",
+    "content": "مارس 2026",
+    "url": "https://virufy.org/en/publications/data-efficient-cough-ai/"
   },
   {
-    "id": "ar-media-publications-2",
+    "id": "ar-publications-2",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "تحسين التسجيل في التجارب السريرية لجمع البيانات بالذكاء الاصطناعي المعتمد على الهواتف الذكية: تحليل منهجي للتدخلات القائمة على التوجيه السلوكي (Nudge)",
+    "title": "تحسين التسجيل في التجارب السريرية لجمع البيانات بالذكاء الاصطناعي المعتمد على الهواتف الذكية: تحليل منهجي للتدخلات القائمة على التوجيه السلوكي (Nudge)",
+    "content": "ديسمبر 2025",
     "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
   },
   {
-    "id": "ar-media-publications-3",
+    "id": "ar-publications-3",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "محول متعدد النماذج الهرمي للكشف التلقائي عن COVID-19",
+    "title": "محول متعدد النماذج الهرمي للكشف التلقائي عن COVID-19",
+    "content": "أكتوبر 2022",
     "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
   },
   {
-    "id": "ar-media-publications-4",
+    "id": "ar-publications-4",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "آلة حساب COVID-19 -- التأثير الإيجابي على الاقتصاد والمجتمع في الولايات المتحدة",
+    "title": "آلة حساب COVID-19 -- التأثير الإيجابي على الاقتصاد والمجتمع في الولايات المتحدة",
+    "content": "يناير 2022",
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
-    "id": "ar-media-publications-5",
+    "id": "ar-publications-5",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "استخدام التعلم العميق مع مجموعات بيانات كبيرة مجمعة لتصنيف COVID-19 من السعال",
+    "title": "استخدام التعلم العميق مع مجموعات بيانات كبيرة مجمعة لتصنيف COVID-19 من السعال",
+    "content": "يناير 2022",
     "url": "https://arxiv.org/abs/2201.01669"
   },
   {
-    "id": "ar-media-publications-6",
+    "id": "ar-publications-6",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "استخدام حاسبة COVID-19 جديدة لقياس التأثير الاجتماعي والاقتصادي الإيجابي لحل فحص COVID-19 (AI/ML) في الولايات المتحدة",
-    "url": "https://arxiv.org/abs/2201.11109"
+    "title": "التحديات والفرص في نشر أنظمة الذكاء الاصطناعي للكشف عن COVID-19 من السعال",
+    "content": "سبتمبر 2021",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8421112/"
   },
   {
-    "id": "ar-media-publications-7",
+    "id": "ar-publications-7",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "التحديات والفرص في نشر أنظمة الذكاء الاصطناعي للكشف عن COVID-19 من السعال",
-    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
-  },
-  {
-    "id": "ar-media-publications-8",
-    "lang": "ar",
-    "title": "المنشورات",
-    "content": "Virufy: إمكانية التطبيق العالمي لمجموعات البيانات السريرية والجمعية من أجل اكتشاف الذكاء الاصطناعي لكوفيد-19 من خلال السعال",
+    "title": "Virufy: إمكانية التطبيق العالمي لمجموعات البيانات السريرية والجمعية من أجل اكتشاف الذكاء الاصطناعي لكوفيد-19 من خلال السعال",
+    "content": "نوفمبر 2020",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "ar-media-publications-9",
+    "id": "ar-publications-8",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": "Fusical: الدمج متعدد الوسائط للمشاعر في الفيديو",
+    "title": "Fusical: الدمج متعدد الوسائط للمشاعر في الفيديو",
+    "content": "أكتوبر 2020",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "ar-media-publications-10",
+    "id": "ar-publications-9",
     "lang": "ar",
-    "title": "المنشورات",
-    "content": " التعرف على تعبيرات الوجه باستخدام التعلم العميق",
+    "title": "التعرف على تعبيرات الوجه باستخدام التعلم العميق",
+    "content": "2020 أبريل",
     "url": "https://arxiv.org/abs/2004.11823"
-  },
-  {
-    "id": "ar-media-publications-11",
-    "lang": "ar",
-    "title": "المنشورات",
-    "content": "تحسين التسجيل في التجارب السريرية لجمع البيانات بالذكاء الاصطناعي المعتمد على الهواتف الذكية: تحليل منهجي للتدخلات القائمة على التوجيه السلوكي (Nudge)",
-    "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
   },
   {
     "id": "ar-faq-1",
@@ -1178,7 +1164,7 @@
   {
     "id": "ar-advisors-36",
     "lang": "ar",
-    "title": "Peter Heart",
+    "title": "Peter Hart",
     "content": "مستشار في استراتيجية التكنولوجيا (مؤسس ورئيس مجلس الإدارة الفخري في شركة ريكو إنوفيشنز (Ricoh Innovations, Inc.) | حاصل على درجة الدكتوراه في الهندسة الكهربائية من Stanford University.)",
     "url": "/ar/advisors"
   },

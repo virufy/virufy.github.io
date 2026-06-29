@@ -12,7 +12,7 @@ import type { OneYoungWorld } from './oneYoungWorld';
 import type { PaperContent } from './paper';
 import type { People } from './people';
 import type { PressReleases } from './news';
-import type { Publications } from './publications';
+import type { PublicationsPage } from './publications';
 import type { ShareYourCough } from './shareYourCough';
 import type { Story } from './story';
 import type { supporters } from './supporters';
@@ -20,7 +20,6 @@ import type { TeamLeadsType } from './teamLeads';
 import type { Donate } from './donate';
 import type { Post } from './BlogPosts';
 import type { SevenNewsPage } from './sevenNews';
-import type { SevenPublicationsPage } from './sevenPublications';
 
 export interface I18nData {
   ai: Ai;
@@ -36,7 +35,7 @@ export interface I18nData {
   oneYoungWorld: OneYoungWorld;
   paper: PaperContent;
   people: People;
-  publications: Publications;
+  publications: PublicationsPage;
   pressReleases: PressReleases;
   shareYourCough: ShareYourCough;
   story: Story;
@@ -45,5 +44,4 @@ export interface I18nData {
   donate: Donate;
   blogPosts: Record<string, Post>;
   sevenNews: SevenNewsPage;
-  sevenPublications: SevenPublicationsPage;
 }

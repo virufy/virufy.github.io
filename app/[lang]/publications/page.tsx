@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import PublicationClient from './PublicationClient';
 import { type Locale } from '@/i18n-config';
+import SevenPublicationsClient from './SevenPublicationsClient';
+import sevenPublicationsContent from '@/app/i18n/en/publications';
 
 export const metadata: Metadata = {
   title: 'Virufy Publications | Global Experts Supporting AI in Healthcare',
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function Page({ params }: { params: { lang: Locale } }) {
-  return <PublicationClient params={params} />;
+  return (
+    <SevenPublicationsClient
+      params={params}
+      content={sevenPublicationsContent}
+    />
+  );
 }

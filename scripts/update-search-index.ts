@@ -128,26 +128,26 @@ async function parseAi(lang: string) {
 
 async function parsePublications(lang: string) {
   const content = await loadFile(lang, 'publications');
-  const pubSection = content.publicationsSection;
-  const pubCards = content.publicationsCards;
 
-  // publicationsSection
+  const { hero, newsCards } = content;
+
+  // Hero section
   data.push({
-    id: `${lang}-media-publications`,
-    lang: lang,
-    title: pubSection.title,
-    content: pubSection.texts[0],
+    id: `${lang}-publications`,
+    lang,
+    title: hero.title,
+    content: hero.subtitle,
     url: `/${lang}/publications`,
   });
 
-  // All publicationsCards
-  if (pubCards?.length) {
-    pubCards.forEach((card: { title: string; url: string }, index: number) => {
+  // All publication/news/blog cards
+  if (newsCards?.length) {
+    newsCards.forEach((card: { title: string; date: string; subText: string; url: string }, index: number) => {
       data.push({
-        id: `${lang}-media-publications-${index + 1}`,
-        lang: lang,
-        title: pubSection.title,
-        content: card.title,
+        id: `${lang}-publications-${index + 1}`,
+        lang,
+        title: card.title,
+        content: `${card.date} ${card.subText}`.trim(),
         url: card.url,
       });
     });
@@ -164,9 +164,7 @@ async function parseFaq(lang: string) {
   const baseUrl = `/${lang}/faq`;
   let faqIndex = 1;
 
-  for (const qas of Object.values(
-    content.questionsSection.questionsByTopic
-  )) {
+  for (const qas of Object.values(content.questionsSection.questionsByTopic)) {
     (qas as QA[]).forEach((qa) => {
       const answerText = qa.answer
         .flatMap((answer) => answer.content)

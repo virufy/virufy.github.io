@@ -347,7 +347,7 @@ const people: People = {
       },
       peter: {
         img: './../images/advisors/peter-hart.jpg',
-        name: 'Peter Hart',
+        name: 'بيتر هارت',
         role: 'مستشار في استراتيجية التكنولوجيا',
         texts: [
           'مؤسس ورئيس مجلس الإدارة الفخري في شركة ريكو إنوفيشنز (Ricoh Innovations, Inc.)',

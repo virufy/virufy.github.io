@@ -21,8 +21,6 @@ import teamLeads from './teamLeads';
 import donate from './donate';
 import blogPosts from './blogPosts';
 import sevenNews from './sevenNews';
-import sevenPublications from './sevenPublications';
-
 
 const arMetadata: I18nData = {
   ai,
@@ -47,7 +45,6 @@ const arMetadata: I18nData = {
   donate,
   blogPosts,
   sevenNews,
-  sevenPublications,
 };
 
 export default arMetadata;

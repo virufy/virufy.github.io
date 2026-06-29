@@ -7,11 +7,11 @@ import { basePath } from '@/next.config.mjs';
 import NewsCard from './NewsCard';
 import ActionBanner from '../components/ActionBanner';
 import Link from 'next/link';
-import { SevenPublicationsPage } from '@/app/i18n/types/sevenPublications';
+import type { PublicationsPage } from '@/app/i18n/types/publications';
 
 type Props = {
   params: { lang: Locale };
-  content: SevenPublicationsPage;
+  content: PublicationsPage;
 };
 
 const unoptimized = process.env.NODE_ENV !== 'production';
@@ -58,7 +58,8 @@ const getSortableDate = (dateStr: string): string => {
 
 const SevenPublicationsClient = ({ content, params }: Props) => {
   const newsCards = useMemo(
-    () => content.newsCards.filter((card) => card.contentType === 'publications'),
+    () =>
+      content.newsCards.filter((card) => card.contentType === 'publications'),
     [content.newsCards]
   );
 
@@ -132,7 +133,7 @@ const SevenPublicationsClient = ({ content, params }: Props) => {
 
           {/* Title */}
           <h1 className="font-montserrat text-4xl font-normal tracking-[0.26px] text-black sm:text-5xl md:text-[52px] md:leading-[75px]">
-            Virufy {' '}
+            Virufy{' '}
             <span className="bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent">
               Publications
             </span>
