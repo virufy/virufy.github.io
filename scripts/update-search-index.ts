@@ -17,8 +17,8 @@ import type { StoryCard } from '../app/i18n/types/story';
 import type { JobDetail } from '@/app/i18n/types/jobDetails';
 import type { TeamLeadCard } from '@/app/i18n/types/teamLeads';
 import type { People } from '@/app/i18n/types/people';
-import type { NewsCard } from '@/app/i18n/types/news';
 import type { Card } from '@/app/i18n/types/amilsStory';
+import type { SevenNewsPage } from '@/app/i18n/types/news';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -142,15 +142,20 @@ async function parsePublications(lang: string) {
 
   // All publication/news/blog cards
   if (newsCards?.length) {
-    newsCards.forEach((card: { title: string; date: string; subText: string; url: string }, index: number) => {
-      data.push({
-        id: `${lang}-publications-${index + 1}`,
-        lang,
-        title: card.title,
-        content: `${card.date} ${card.subText}`.trim(),
-        url: card.url,
-      });
-    });
+    newsCards.forEach(
+      (
+        card: { title: string; date: string; subText: string; url: string },
+        index: number
+      ) => {
+        data.push({
+          id: `${lang}-publications-${index + 1}`,
+          lang,
+          title: card.title,
+          content: `${card.date} ${card.subText}`.trim(),
+          url: card.url,
+        });
+      }
+    );
   }
 }
 
@@ -438,15 +443,25 @@ async function parsePeople(lang: string) {
 async function parseNews(lang: string) {
   const content = await loadFile(lang, 'news');
 
-  content.pressReleaseCards.forEach((card: NewsCard, index: number) => {
-    data.push({
-      id: `${lang}-news-${index + 1}`,
-      lang: lang,
-      title: card.title,
-      content: card.subText || card.date,
-      url: `/${lang}/news`,
-    });
+  data.push({
+    id: `${lang}-sevennews-hero`,
+    lang,
+    title: content.hero.title,
+    content: content.hero.subtitle,
+    url: `/${lang}/news`,
   });
+
+  content.newsCards.forEach(
+    (card: SevenNewsPage['newsCards'][number], index: number) => {
+      data.push({
+        id: `${lang}-news-${index + 1}`,
+        lang,
+        title: card.title,
+        content: card.subText || card.date,
+        url: card.url || `/${lang}/news`,
+      });
+    }
+  );
 }
 
 async function parseAmilsStory(lang: string) {

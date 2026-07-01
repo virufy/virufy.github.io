@@ -38,6 +38,14 @@ const PublicationsContent: PublicationsPage = {
 
   newsCards: [
     {
+      title: 'Libro blanco de Virufy 2026',
+      date: 'Junio de 2026',
+      subText: '',
+      url: '/en/publications/virufy-white-paper-2026',
+      contentType: 'publications',
+      year: 2026,
+    },
+    {
       title:
         'Análisis de tos eficiente en datos mediante aprendizaje activo y segmentación',
       date: 'Marzo de 2026',

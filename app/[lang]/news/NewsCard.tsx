@@ -1,39 +1,62 @@
-import type { NewsCard as NewsCardProps } from '@/app/i18n/types/news';
-import Link from 'next/link';
+'use client';
 
-const NewsCard = ({
-  title,
-  date,
-  subText,
-  url,
-  linkText = 'Read more',
-}: NewsCardProps) => {
+import Link from 'next/link';
+import ExportedImage from 'next-image-export-optimizer';
+import { basePath } from '@/next.config.mjs';
+import { StaticImageData } from 'next/image';
+
+type NewsCardProps = {
+  image?: string | StaticImageData;
+  date: string;
+  title: string;
+  subtitle?: string;
+  url: string;
+};
+
+const unoptimized = process.env.NODE_ENV !== 'production';
+
+const NewsCard = ({ image, date, title, subtitle, url }: NewsCardProps) => {
   return (
-    <>
-      <h3 className="max-w-lg text-xl font-bold text-black lg:h-28 xl:h-20">
-        {title}
-      </h3>
-      <div className="py-4 text-black">{subText}</div>
-      <div className="items-center space-y-6 font-bold text-black md:flex md:flex-row md:justify-between md:space-y-0">
-        <ul className="list-inside list-disc pb-6">
-          <li>{date}</li>
-        </ul>
-        <Link
-          className="rounded-3xl bg-[#3578DE] px-4 py-2 text-white sm:px-8"
-          target="_blank"
-          rel="noopener noreferrer"
-          href={url}
-          aria-label={linkText}
-          style={{
-            background:
-              'linear-gradient(0deg, #19479c 0%, #2750a8 50%, #19479c 100%)',
-            border: '2px solid #3fcf94',
-          }}
+    <article className="group flex flex-col overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-gray-300">
+      {/* Image */}
+      {image && (
+        <div className="relative w-full overflow-hidden" style={{ aspectRatio: '376 / 216' }}>
+          <ExportedImage
+            src={image}
+            alt={title}
+            fill
+            className="object-cover transition duration-500 group-hover:scale-105"
+            basePath={basePath}
+            unoptimized={unoptimized}
+          />
+        </div>
+      )}
+
+      {/* Content */}
+      <div className="flex flex-col p-4">
+        {/* Date with gradient */}
+        <time
+          className="font-inter font-medium text-sm leading-[20px] tracking-[-0.15px] bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent"
+          dateTime={date}
         >
-          {linkText}
-        </Link>
+          {date}
+        </time>
+
+        {/* Title */}
+        <h3 className="mt-2 font-montserrat font-semibold text-black text-xl leading-[25px] tracking-[0px]">
+          <Link href={url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+            {title}
+          </Link>
+        </h3>
+
+        {/* Subtitle */}
+        {subtitle && (
+          <p className="mt-2 font-montserrat font-normal text-gray-600 text-base leading-[26px] tracking-[0px]">
+            {subtitle}
+          </p>
+        )}
       </div>
-    </>
+    </article>
   );
 };
 

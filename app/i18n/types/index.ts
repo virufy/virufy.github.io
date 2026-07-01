@@ -11,7 +11,6 @@ import type { NavbarType } from './navbar';
 import type { OneYoungWorld } from './oneYoungWorld';
 import type { PaperContent } from './paper';
 import type { People } from './people';
-import type { PressReleases } from './news';
 import type { PublicationsPage } from './publications';
 import type { ShareYourCough } from './shareYourCough';
 import type { Story } from './story';
@@ -19,7 +18,7 @@ import type { supporters } from './supporters';
 import type { TeamLeadsType } from './teamLeads';
 import type { Donate } from './donate';
 import type { Post } from './BlogPosts';
-import type { SevenNewsPage } from './sevenNews';
+import type { SevenNewsPage } from './news';
 
 export interface I18nData {
   ai: Ai;
@@ -36,7 +35,6 @@ export interface I18nData {
   paper: PaperContent;
   people: People;
   publications: PublicationsPage;
-  pressReleases: PressReleases;
   shareYourCough: ShareYourCough;
   story: Story;
   supporters: supporters;

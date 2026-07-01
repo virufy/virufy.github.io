@@ -12,7 +12,6 @@ import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
 import paper from '../en/paper';
 import people from './people';
-import pressReleases from './news';
 import publications from './publications';
 import shareYourCough from './shareYourCough';
 import story from './story';
@@ -20,7 +19,7 @@ import supporters from './supporters';
 import teamLeads from './teamLeads';
 import donate from './donate';
 import blogPosts from './blogPosts';
-import sevenNews from './sevenNews';
+import sevenNews from './news';
 
 const arMetadata: I18nData = {
   ai,
@@ -38,7 +37,6 @@ const arMetadata: I18nData = {
   people,
   story,
   publications,
-  pressReleases,
   shareYourCough,
   supporters,
   teamLeads,

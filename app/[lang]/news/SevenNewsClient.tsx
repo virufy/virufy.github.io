@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { type Locale } from '@/i18n-config';
-import { SevenNewsPage } from '@/app/i18n/types/sevenNews';
+import type { SevenNewsPage } from '@/app/i18n/types/news';
 import ExportedImage from 'next-image-export-optimizer';
 import { basePath } from '@/next.config.mjs';
 import NewsCard from './NewsCard';

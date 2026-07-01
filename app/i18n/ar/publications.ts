@@ -37,6 +37,14 @@ const PublicationsContent: PublicationsPage = {
 
   newsCards: [
     {
+      title: 'كتاب Virufy الأبيض 2026',
+      date: 'يونيو 2026',
+      subText: '',
+      url: '/en/publications/virufy-white-paper-2026',
+      contentType: 'publications',
+      year: 2026,
+    },
+    {
       title:
         'تحليل السعال بكفاءة في استخدام البيانات من خلال التعلم النشط والتجزئة',
       date: 'مارس 2026',

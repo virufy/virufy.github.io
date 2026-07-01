@@ -37,6 +37,14 @@ const PublicationsContent: PublicationsPage = {
 
   newsCards: [
     {
+      title: 'Virufy White Paper 2026',
+      date: 'June 2026',
+      subText: '',
+      url: '/en/publications/virufy-white-paper-2026',
+      contentType: 'publications',
+      year: 2026,
+    },
+    {
       title:
         'アクティブラーニングとセグメンテーションによるデータ効率の高い咳分析',
       date: '2026年3月',

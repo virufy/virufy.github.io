@@ -1,17 +1,49 @@
-import { type PressReleases } from '../types/news';
+import type { SevenNewsPage } from '../types/news';
 
-const pressReleases: PressReleases = {
-  pressReleaseSection: {
-    title: 'ニュース',
+const sevenNewsContent: SevenNewsPage = {
+  hero: {
+    title: 'Virufy in the News',
+    subtitle:
+      'Stay updated with the latest news, press releases, and media coverage about Virufy’s mission to democratize healthcare through AI-powered respiratory health screening.',
+    bgImage: '/icons/icon-news-bg.png',
+    tag: 'Media Coverage',
+    tagIcon: '/icons/icon-media.png',
   },
-  pressReleaseCards: [
+  pillSelector: {
+    options: [
+      { id: 'news', label: 'News' },
+      { id: 'publications', label: 'Publications' },
+      { id: 'blogs', label: 'Blogs' },
+    ],
+    defaultOption: 'news',
+  },
+
+  filters: {
+    filterByYearLabel: 'Filter by Year:',
+    allYearsOption: 'All Years',
+    sortByLabel: 'Sort by:',
+    newestFirst: 'Newest to Oldest',
+    oldestFirst: 'Oldest to Newest',
+  },
+
+  section5: {
+    title: 'Inspired by the work? Help shape what comes next.',
+    text: 'Join researchers, designers, engineers, and advocates working together to advance global respiratory health.',
+    button: 'Join Our Team',
+  },
+
+  emptyMessage: 'No news articles found for the selected filters.',
+
+  newsCards: [
     {
       title:
         'AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！',
       date: '2026年4月',
       subText: '',
-      url: '/ja/news/whx-dubai-2026',
-      linkText: '続きを読む',
+      url: '/en/sevennews/whx-dubai-2026',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2026,
     },
     {
       title:
@@ -19,7 +51,9 @@ const pressReleases: PressReleases = {
       date: '2026年5月',
       subText: '',
       url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2026,
     },
     {
       title:
@@ -27,45 +61,57 @@ const pressReleases: PressReleases = {
       date: '2026年6月',
       subText: '',
       url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2026,
     },
     {
       title:
         '創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義',
       date: '2026年6月',
       subText: '',
-      url: '/ja/news/amil-june-2026',
-      linkText: '続きを読む',
+      url: '/en/sevennews/amil-june-2026',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2026,
     },
     {
       title: 'GITEXグローバル2025 - ドバイヘルス',
       date: '2025年10月',
       subText: '',
-      url: '/ja/news/gitex-global-2025-dubai',
-      linkText: '続きを読む',
+      url: '/en/sevennews/gitex-global-2025-dubai',
+      contentType: 'news',
+      image: '/images/sevenNews/news/oct_2025.png',
+      year: 2025,
     },
     {
       title: 'Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示',
       date: '2025年6月',
       subText: '',
-      url: '/ja/news/uae-adghw-apr-2025',
-      linkText: '続きを読む',
+      url: '/en/sevennews/uae-adghw-apr-2025',
+      contentType: 'news',
+      image: '/images/sevenNews/news/june_2025.png',
+      year: 2025,
     },
     {
       title:
         'Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露',
       date: '2024年11月',
       subText: '',
-      url: '/ja/news/press-release-dubai',
-      linkText: '続きを読む',
+      url: '/en/sevennews/press-release-dubai',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2024,
     },
     {
       title:
         'Virufyベータ版アプリがコロンビアでリリース、4,500人のユーザーに自宅でCOVID-19検出を提供',
       date: '2023年2月',
       subText: '',
-      url: '/ja/news/beta-app-release-2023',
-      linkText: '続きを読む',
+      url: '/en/sevennews/beta-app-release-2023',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2023,
     },
     {
       title:
@@ -73,7 +119,9 @@ const pressReleases: PressReleases = {
       date: '2022年11月',
       subText: '医療対策、アメリカ合衆国',
       url: 'https://medicalcountermeasures.gov/newsroom/2022/ai_ml/',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2022,
     },
     {
       title:
@@ -81,42 +129,54 @@ const pressReleases: PressReleases = {
       date: '2021年2月',
       subText: 'Forbes, メキシコ',
       url: 'https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2021,
     },
     {
       title: 'COVID-19: Virufyアプリは咳の分析を通じてウイルスを診断可能',
       date: '2021年1月',
       subText: 'MSN',
       url: 'https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2021,
     },
     {
       title: 'VIRUFY: COVID-19に感染しているかどうかを検出するプラットフォーム',
       date: '2020年10月',
       subText: 'Expreso, リマ, ペルー',
       url: 'https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: 'One Young World日本アンバサダーがAIを活用してCOVID-19に挑む',
       date: '2020年5月',
       subText: 'One Young World, 東京, 日本',
       url: 'https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: 'COVID-19対応の最前線に立つ北米アンバサダーたち',
       date: '2020年',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: '7月のアンバサダー・オブ・ザ・マンス',
       date: '2020年7月',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title:
@@ -124,23 +184,29 @@ const pressReleases: PressReleases = {
       date: '2020年7月',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: 'One Young World東京2020カーカス',
       date: '2020年',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/event/one-young-world-tokyo-caucus-2020',
-      linkText: '続きを読む',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: 'One Young World東京2020カーカスでのVirufyプレゼンテーション',
       date: '2020年',
       subText: 'One Young World, 東京, 日本',
       url: 'https://youtu.be/UZU3rPTEPfU',
-      linkText: '今すぐ見る',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
   ],
 };
 
-export default pressReleases;
+export default sevenNewsContent;

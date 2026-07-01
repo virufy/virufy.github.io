@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
-import NewsClient from './NewsClient';
+import SevenNewsClient from './SevenNewsClient';
 import { type Locale } from '@/i18n-config';
+import sevenNewsContent from '@/app/i18n/en/news';
 
 export const metadata: Metadata = {
   title: 'Virufy | News and Press Releases',
@@ -9,5 +10,5 @@ export const metadata: Metadata = {
 };
 
 export default function Page({ params }: { params: { lang: Locale } }) {
-  return <NewsClient params={params} />;
+  return <SevenNewsClient params={params} content={sevenNewsContent} />;
 }

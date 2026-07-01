@@ -1,71 +1,80 @@
-import { type PressReleases } from '../types/news';
+import type { SevenNewsPage } from '../types/news';
 
-const pressReleases: PressReleases = {
-  pressReleaseSection: {
-    title: 'News',
+const sevenNewsContent: SevenNewsPage = {
+  hero: {
+    title: 'Virufy in the News',
+    subtitle:
+      'Stay updated with the latest news, press releases, and media coverage about Virufy’s mission to democratize healthcare through AI-powered respiratory health screening.',
+    bgImage: '/icons/icon-news-bg.png',
+    tag: 'Media Coverage',
+    tagIcon: '/icons/icon-media.png',
   },
-  pressReleaseCards: [
-    {
-      title:
-        'Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai',
-      date: 'May 2026',
-      subText: '',
-      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
-      linkText: 'Read More',
-    },
-    {
-      title:
-        'FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health',
-      date: 'June 2026',
-      subText: '',
-      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
-      linkText: 'Read More',
-    },
-    {
-      title:
-        'A Message from our Founder, Amil Khanzada From Silicon Valley to the Classroom: My First Lecture at the University of Fukui',
-      date: 'June 2026',
-      subText: '',
-      url: '/en/news/amil-june-2026',
-      linkText: 'Read More',
-    },
-    {
-      title:
-        'Advancing Pediatric Care with AI: Virufy x Emirates Health Services (EHS) at WHX Dubai 2026!',
-      date: 'April 2026',
-      subText: '',
-      url: '/en/news/whx-dubai-2026',
-      linkText: 'Read More',
-    },
+  pillSelector: {
+    options: [
+      { id: 'news', label: 'News' },
+      { id: 'publications', label: 'Publications' },
+      { id: 'blogs', label: 'Blogs' },
+    ],
+    defaultOption: 'news',
+  },
+
+  filters: {
+    filterByYearLabel: 'Filter by Year:',
+    allYearsOption: 'All Years',
+    sortByLabel: 'Sort by:',
+    newestFirst: 'Newest to Oldest',
+    oldestFirst: 'Oldest to Newest',
+  },
+
+  section5: {
+    title: 'Inspired by the work? Help shape what comes next.',
+    text: 'Join researchers, designers, engineers, and advocates working together to advance global respiratory health.',
+    button: 'Join Our Team',
+  },
+
+  emptyMessage: 'No news articles found for the selected filters.',
+
+  newsCards: [
     {
       title: 'GITEX Global 2025 - Dubai Health',
       date: 'October 2025',
-      subText: '',
-      url: '/en/news/gitex-global-2025-dubai',
-      linkText: 'Read More',
+      subText:
+        'How a strategic Dubai Health partnership is advancing AI cough analysis for scalable, clinically validated respiratory screening.',
+      url: '/en/sevennews/gitex-global-2025-dubai',
+      contentType: 'news',
+      image: '/images/sevenNews/news/oct_2025.png',
+      year: 2025,
     },
     {
-      title: 'Virufy Showcases AI Respiratory screening Success at Abu Dhabi',
+      title: 'Virufy’s Respiratory screening Success at Abu Dhabi',
       date: 'June 2025',
-      subText: '',
-      url: '/en/news/uae-adghw-apr-2025',
-      linkText: 'Read More',
+      subText:
+        'How Virufy’s AI screening platform gained global traction among policymakers and innovators across 95 countries.',
+      url: '/en/sevennews/uae-adghw-apr-2025',
+      contentType: 'news',
+      image: '/images/sevenNews/news/june_2025.png',
+      year: 2025,
     },
+
     {
       title:
         'Virufy to Showcase Innovative COVID-19 Screening Technology at Prototypes for Humanity 2024 in Dubai',
       date: 'November 2024',
       subText: '',
-      url: '/en/news/press-release-dubai',
-      linkText: 'Read More',
+      url: '/en/sevennews/press-release-dubai',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2024,
     },
     {
       title:
         'Virufy Beta App Launched in Colombia, Providing At-Home COVID-19 Detection to 4,500 Users',
       date: 'February 2023',
       subText: '',
-      url: '/en/news/beta-app-release-2023',
-      linkText: 'Read More',
+      url: '/en/sevennews/beta-app-release-2023',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2023,
     },
     {
       title:
@@ -73,7 +82,9 @@ const pressReleases: PressReleases = {
       date: 'November 2022',
       subText: 'Medical Countermeasures, United States',
       url: 'https://medicalcountermeasures.gov/newsroom/2022/ai_ml/',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2022,
     },
     {
       title:
@@ -81,7 +92,9 @@ const pressReleases: PressReleases = {
       date: 'February 2021',
       subText: 'Forbes, Mexico',
       url: 'https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2021,
     },
     {
       title:
@@ -89,7 +102,9 @@ const pressReleases: PressReleases = {
       date: 'January 2021',
       subText: 'MSN',
       url: 'https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2021,
     },
     {
       title:
@@ -97,14 +112,18 @@ const pressReleases: PressReleases = {
       date: 'October 2020',
       subText: 'Expreso, Lima, Peru',
       url: 'https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: 'One Young World Japan Ambassador Targets COVID-19 Using A.I.',
       date: 'May 2020',
       subText: 'One Young World, Tokyo, Japan',
       url: 'https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title:
@@ -112,14 +131,18 @@ const pressReleases: PressReleases = {
       date: '2020',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: 'Ambassadors of the Month July',
       date: 'July 2020',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title:
@@ -127,23 +150,29 @@ const pressReleases: PressReleases = {
       date: 'July 2020',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: 'One Young World Tokyo 2020 Caucus',
       date: '2020',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/event/one-young-world-tokyo-caucus-2020',
-      linkText: 'Read More',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
     {
       title: 'Virufy Presentation to One Young World Tokyo 2020 Cacus',
       date: '2020',
       subText: 'One Young World, Tokyo, Japan',
       url: 'https://youtu.be/UZU3rPTEPfU',
-      linkText: 'Watch Now',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
     },
   ],
 };
 
-export default pressReleases;
+export default sevenNewsContent;
