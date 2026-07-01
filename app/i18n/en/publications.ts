@@ -41,6 +41,7 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: '/en/publications/virufy-white-paper-2026',
       contentType: 'publications',
+      image: '/images/sevenNews/Placeholder-Card.png',
       year: 2026,
     },
     {
