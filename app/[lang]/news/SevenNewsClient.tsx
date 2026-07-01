@@ -162,11 +162,11 @@ const SevenNewsClient = ({ content, params }: Props) => {
                 // Map option.id to the correct URL
                 let href = '';
                 if (option.id === 'publications') {
-                  href = `/${params.lang}/sevenpublications/`;
+                  href = `/${params.lang}/publications/`;
                 } else if (option.id === 'blogs') {
                   href = `/${params.lang}/blog/`;
                 } else {
-                  href = `/${params.lang}/sevennews/${option.id}`;
+                  href = `/${params.lang}/news/${option.id}`;
                 }
 
                 return (

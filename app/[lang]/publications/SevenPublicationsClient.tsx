@@ -163,11 +163,11 @@ const SevenPublicationsClient = ({ content, params }: Props) => {
                 // Map option.id to the correct URL
                 let href = '';
                 if (option.id === 'news') {
-                  href = `/${params.lang}/sevennews/`;
+                  href = `/${params.lang}/news/`;
                 } else if (option.id === 'blogs') {
                   href = `/${params.lang}/blog/`;
                 } else {
-                  href = `/${params.lang}/sevenpublications/${option.id}`; // fallback
+                  href = `/${params.lang}/publications/${option.id}`; // fallback
                 }
 
                 return (
