@@ -37,11 +37,48 @@ const sevenNewsContent: SevenNewsPage = {
 
   newsCards: [
     {
+      title:
+        'Tres empresas universitarias de Suiza, EE. UU. y Egipto avanzan a pilotos activos y fases comerciales en Dubái',
+      date: 'Mayo de 2026',
+      subText: '',
+      contentType: 'news',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      year: 2026,
+    },
+    {
+      title:
+        'FPH UI explora colaboración estratégica con Virufy para desarrollar tecnología de IA en salud respiratoria',
+      date: 'Junio de 2026',
+      subText: '',
+      contentType: 'news',
+      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
+      year: 2026,
+    },
+    {
+      title:
+        'Un mensaje de nuestro fundador, Amil Khanzada: de Silicon Valley al aula — mi primera conferencia en la Universidad de Fukui',
+      date: 'Junio de 2026',
+      contentType: 'news',
+      image: '/images/news/Amil-Classroom-1.jpg',
+      subText: '',
+      url: '/en/news/amil-june-2026',
+      year: 2026,
+    },
+    {
+      title:
+        'Avanzando la atención pediátrica con IA: Virufy x Emirates Health Services (EHS) en WHX Dubái 2026',
+      date: 'Abril de 2026',
+      subText: '',
+      contentType: 'news',
+      url: '/en/news/whx-dubai-2026',
+      year: 2026,
+    },
+    {
       title: 'GITEX Global 2025 - Salud en Dubái',
       date: 'Octubre de 2025',
       subText:
         'Cómo una asociación estratégica con Dubai Health está impulsando el análisis de tos con IA para un cribado respiratorio escalable y clínicamente validado.',
-      url: '/es/sevennews/gitex-global-2025-dubai',
+      url: '/es/news/gitex-global-2025-dubai',
       contentType: 'news',
       image: '/images/sevenNews/news/oct_2025.png',
       year: 2025,
@@ -51,7 +88,7 @@ const sevenNewsContent: SevenNewsPage = {
       date: 'Junio de 2025',
       subText:
         'Cómo la plataforma de cribado con IA de Virufy ganó impulso internacional entre responsables de políticas e innovadores en 95 países.',
-      url: '/es/sevennews/uae-adghw-apr-2025',
+      url: '/es/news/uae-adghw-apr-2025',
       contentType: 'news',
       image: '/images/sevenNews/news/june_2025.png',
       year: 2025,
@@ -62,7 +99,7 @@ const sevenNewsContent: SevenNewsPage = {
         'Virufy presentará tecnología innovadora de detección de COVID-19 en Prototypes for Humanity 2024 en Dubái',
       date: 'Noviembre de 2024',
       subText: '',
-      url: '/es/sevennews/press-release-dubai',
+      url: '/es/news/press-release-dubai',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       year: 2024,
@@ -72,7 +109,7 @@ const sevenNewsContent: SevenNewsPage = {
         'Virufy lanza su app beta en Colombia, brindando detección de COVID-19 en casa a 4.500 usuarios',
       date: 'Febrero de 2023',
       subText: '',
-      url: '/es/sevennews/beta-app-release-2023',
+      url: '/es/news/beta-app-release-2023',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       year: 2023,

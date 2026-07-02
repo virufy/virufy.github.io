@@ -36,11 +36,51 @@ const sevenNewsContent: SevenNewsPage = {
 
   newsCards: [
     {
+      title:
+        'Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai',
+      date: 'May 2026',
+      subText: '',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      year: 2026,
+    },
+    {
+      title:
+        'FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health',
+      date: 'June 2026',
+      subText: '',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      contentType: 'news',
+      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
+      year: 2026,
+    },
+    {
+      title:
+        'A Message from our Founder, Amil Khanzada From Silicon Valley to the Classroom: My First Lecture at the University of Fukui',
+      date: 'June 2026',
+      contentType: 'news',
+      image: '/images/news/Amil-Classroom-1.jpg',
+      subText: '',
+      url: '/en/news/amil-june-2026',
+      year: 2026,
+    },
+    {
+      title:
+        'Advancing Pediatric Care with AI: Virufy x Emirates Health Services (EHS) at WHX Dubai 2026!',
+      date: 'April 2026',
+      subText: '',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      contentType: 'news',
+      url: '/en/news/whx-dubai-2026',
+      year: 2026,
+    },
+    {
       title: 'GITEX Global 2025 - Dubai Health',
       date: 'October 2025',
       subText:
         'How a strategic Dubai Health partnership is advancing AI cough analysis for scalable, clinically validated respiratory screening.',
-      url: '/en/sevennews/gitex-global-2025-dubai',
+      url: '/en/news/gitex-global-2025-dubai',
       contentType: 'news',
       image: '/images/sevenNews/news/oct_2025.png',
       year: 2025,
@@ -50,7 +90,7 @@ const sevenNewsContent: SevenNewsPage = {
       date: 'June 2025',
       subText:
         'How Virufy’s AI screening platform gained global traction among policymakers and innovators across 95 countries.',
-      url: '/en/sevennews/uae-adghw-apr-2025',
+      url: '/en/news/uae-adghw-apr-2025',
       contentType: 'news',
       image: '/images/sevenNews/news/june_2025.png',
       year: 2025,
@@ -61,7 +101,7 @@ const sevenNewsContent: SevenNewsPage = {
         'Virufy to Showcase Innovative COVID-19 Screening Technology at Prototypes for Humanity 2024 in Dubai',
       date: 'November 2024',
       subText: '',
-      url: '/en/sevennews/press-release-dubai',
+      url: '/en/news/press-release-dubai',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       year: 2024,
@@ -71,7 +111,7 @@ const sevenNewsContent: SevenNewsPage = {
         'Virufy Beta App Launched in Colombia, Providing At-Home COVID-19 Detection to 4,500 Users',
       date: 'February 2023',
       subText: '',
-      url: '/en/sevennews/beta-app-release-2023',
+      url: '/en/news/beta-app-release-2023',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       year: 2023,

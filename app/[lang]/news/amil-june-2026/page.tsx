@@ -1,4 +1,16 @@
-const AmilJune2026 = () => {
+'use client';
+
+import Image from 'next-image-export-optimizer';
+import { type Locale } from '@/i18n-config';
+import { usei18n } from '../../../i18n';
+
+export default function AmilJune2026({
+  params: { lang },
+}: {
+  params: { lang: Locale };
+}) {
+  const {} = usei18n(lang);
+
   return (
     <div className="relative flex justify-center bg-gradient-to-b from-black to-[#4064AD] pt-24 text-white">
       <div className="flex max-w-7xl flex-col space-y-6 px-8 py-20 sm:px-12 lg:px-40">
@@ -91,10 +103,50 @@ const AmilJune2026 = () => {
               respiratory disease detection. virufy.org/join
             </li>
           </ul>
+          <p>
+            #ManagementEngineering #MOT #SEM #SocialInformatics #GenAI
+            #MedicalAI #Virufy #Japan #DataDriven #University #Fukui
+          </p>
+        </div>
+        <div className="space-y-1 overflow-hidden rounded-xl">
+          <div className="space-y-1 overflow-hidden rounded-xl">
+            {/* Hero image */}
+            <div className="relative h-64 w-full sm:h-80 lg:h-[420px]">
+              <Image
+                src="/images/news/Amil-Classroom-1.jpg"
+                alt="Amil Khanzada in the classroom"
+                fill
+                priority
+                sizes="(max-width: 640px) 100vw, 800px"
+                className="object-cover"
+              />
+            </div>
+
+            {/* Bottom row */}
+            <div className="grid grid-cols-2 gap-1">
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/news/Amil-Classroom-2.jpg"
+                  alt="Amil Khanzada teaching students"
+                  fill
+                  sizes="(max-width: 640px) 50vw, 400px"
+                  className="object-cover"
+                />
+              </div>
+
+              <div className="relative aspect-[4/3]">
+                <Image
+                  src="/images/news/Amil-Classroom-3.jpg"
+                  alt="Students working on laptops"
+                  fill
+                  sizes="(max-width: 640px) 50vw, 400px"
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default AmilJune2026;
+}

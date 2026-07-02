@@ -37,6 +37,36 @@ const sevenNewsContent: SevenNewsPage = {
   newsCards: [
     {
       title:
+        'Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai',
+      date: 'May 2026',
+      subText: '',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      year: 2026,
+    },
+    {
+      title:
+        'FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health',
+      date: 'June 2026',
+      subText: '',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      contentType: 'news',
+      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
+      year: 2026,
+    },
+    {
+      title:
+        'A Message from our Founder, Amil Khanzada From Silicon Valley to the Classroom: My First Lecture at the University of Fukui',
+      date: 'June 2026',
+      contentType: 'news',
+      image: '/images/news/Amil-Classroom-1.jpg',
+      subText: '',
+      url: '/en/news/amil-june-2026',
+      year: 2026,
+    },
+    {
+      title:
         'AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！',
       date: '2026年4月',
       subText: '',
