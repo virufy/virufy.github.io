@@ -17,41 +17,51 @@ const unoptimized = process.env.NODE_ENV !== 'production';
 
 const NewsCard = ({ image, date, title, subtitle, url }: NewsCardProps) => {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-xl shadow-lg border border-gray-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-gray-300">
+    <article className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-gray-300 hover:shadow-2xl">
       {/* Image */}
       {image && (
-        <div className="relative w-full overflow-hidden" style={{ aspectRatio: '376 / 216' }}>
-          <ExportedImage
-            src={image}
-            alt={title}
-            fill
-            className="object-cover transition duration-500 group-hover:scale-105"
-            basePath={basePath}
-            unoptimized={unoptimized}
-          />
-        </div>
+        <Link href={url} target="_blank" rel="noopener noreferrer">
+          <div
+            className="relative w-full overflow-hidden"
+            style={{ aspectRatio: '376 / 216' }}
+          >
+            <ExportedImage
+              src={image}
+              alt={title}
+              fill
+              className="object-cover transition duration-500 group-hover:scale-105"
+              basePath={basePath}
+              unoptimized={unoptimized}
+            />
+          </div>
+        </Link>
       )}
 
       {/* Content */}
       <div className="flex flex-col p-4">
         {/* Date with gradient */}
         <time
-          className="font-inter font-medium text-sm leading-[20px] tracking-[-0.15px] bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent"
+          className="font-inter bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-sm font-medium leading-[20px] tracking-[-0.15px] text-transparent"
           dateTime={date}
         >
           {date}
         </time>
 
         {/* Title */}
-        <h3 className="mt-2 font-montserrat font-semibold text-black text-xl leading-[25px] tracking-[0px]">
-          <Link href={url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+        <h3 className="font-montserrat mt-2 text-xl font-semibold leading-[25px] tracking-[0px] text-black">
+          <Link
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
             {title}
           </Link>
         </h3>
 
         {/* Subtitle */}
         {subtitle && (
-          <p className="mt-2 font-montserrat font-normal text-gray-600 text-base leading-[26px] tracking-[0px]">
+          <p className="font-montserrat mt-2 text-base font-normal leading-[26px] tracking-[0px] text-gray-600">
             {subtitle}
           </p>
         )}
