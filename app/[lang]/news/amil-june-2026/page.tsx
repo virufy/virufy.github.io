@@ -12,7 +12,7 @@ export default function AmilJune2026({
   const {} = usei18n(lang);
 
   return (
-    <div className="relative flex justify-center bg-gradient-to-b from-black to-[#4064AD] pt-24 text-white">
+    <div className="relative flex justify-center bg-white pt-24 text-[#111827]">
       <div className="flex max-w-7xl flex-col space-y-6 px-8 py-20 sm:px-12 lg:px-40">
         <div>
           <h2>

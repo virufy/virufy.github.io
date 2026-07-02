@@ -86,7 +86,14 @@ const WHXDubai2026 = () => {
           <div>
             <p>🤝 Join our mission. Support our cause.</p>
           </div>
-
+          <div>
+            <p>
+              #WorldHealthExpo #WHXDubai #EmiratesHealthServices #EHS
+              #HealthcareInnovation #PediatricHealth #DigitalHealth
+              #GlobalHealth #AIMedTech #Innovation #Donate #FundUs
+              #SocialProgress #WomenInHealth #Virufy #AIForGood
+            </p>
+          </div>
           <div className="flex justify-center">
             <ExportedImage
               className=""
