@@ -355,6 +355,13 @@ const people: People = {
         ],
         link: 'http://www.peterhart.net/',
       },
+      yasuko: {
+        img: './../images/advisors/Yasuko-Tokifuji.jpg',
+        name: '時藤 泰子',
+        role: '経営戦略アドバイザー',
+        texts: ['クアンティック経営大学院 経営学修士'],
+        link: 'https://www.linkedin.com/in/yasuko-tokifuji/',
+      },
     },
     advisorOrder: [
       'adam',
