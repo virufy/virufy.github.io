@@ -38,7 +38,8 @@ const PublicationsContent: PublicationsPage = {
 
   newsCards: [
     {
-      title: 'Libro blanco de Virufy 2026',
+      title:
+        'Diagnóstico acústico impulsado por IA para la salud respiratoria global',
       date: 'Junio de 2026',
       subText: '',
       url: '/en/publications/virufy-white-paper-2026',

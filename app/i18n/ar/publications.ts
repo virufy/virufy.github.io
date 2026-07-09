@@ -37,7 +37,8 @@ const PublicationsContent: PublicationsPage = {
 
   newsCards: [
     {
-      title: 'كتاب Virufy الأبيض 2026',
+      title:
+        'التشخيص الصوتي المدعوم بالذكاء الاصطناعي من أجل صحة الجهاز التنفسي العالمية',
       date: 'يونيو 2026',
       subText: '',
       url: '/en/publications/virufy-white-paper-2026',

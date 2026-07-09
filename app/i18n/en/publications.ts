@@ -36,7 +36,7 @@ const PublicationsContent: PublicationsPage = {
 
   newsCards: [
     {
-      title: 'Virufy White Paper 2026',
+      title: 'AI-Powered Acoustic Diagnostics for Global Respiratory Health',
       date: 'June 2026',
       subText: '',
       url: '/en/publications/virufy-white-paper-2026',

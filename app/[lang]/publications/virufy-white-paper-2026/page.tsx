@@ -7,24 +7,24 @@ export default function DataEfficientCoughAI() {
 
   return (
     <>
-      <div className="relative flex justify-center bg-gradient-to-b from-black to-[#4064AD] pt-24 text-white">
-        <div className="flex max-w-7xl flex-col space-y-6 px-8 py-20 leading-normal sm:px-12 lg:px-40">
+      <div className="relative flex justify-center bg-white pt-24 text-[#111827]">
+        <div className="mx-auto flex w-full max-w-4xl flex-col space-y-16 px-8 py-20 text-justify leading-relaxed">
           <section>
-            <h2>Foreword</h2>
+            <h2 className="mb-6 font-bold">Foreword</h2>
 
-            <p>
+            <p className="mb-6 leading-8">
               Every year, millions of people die from respiratory diseases that
               could have been caught earlier. Not because the science
               doesn&apos;t exist, but because the tools to act on it don&apos;t
               reach them in time.
             </p>
 
-            <p>
+            <p className="mb-6 leading-8">
               This is one of global health&apos;s most solvable problems. And
               yet it remains unsolved.
             </p>
 
-            <p>
+            <p className="mb-6 leading-8">
               We believe that a smartphone, a device already in the hands of
               billions of people worldwide, can become one of the most powerful
               diagnostic tools in history. Not someday. Now. By listening to a
@@ -33,7 +33,7 @@ export default function DataEfficientCoughAI() {
               and without the delays that cost lives.
             </p>
 
-            <p>
+            <p className="mb-6 leading-8">
               This white paper presents the scientific foundation, technical
               architecture, and ethical framework behind that vision. It
               reflects the work of a global team of researchers, clinicians,
@@ -42,36 +42,36 @@ export default function DataEfficientCoughAI() {
               privilege, it is a right.
             </p>
 
-            <p>
+            <p className="mb-6 leading-8">
               We are at an inflection point in global health. The tools to close
               the diagnostic gap exist. The question is whether we will deploy
               them with the urgency the moment demands.
             </p>
 
-            <p>Virufy is committed to that urgency.</p>
+            <p className="mb-6 leading-8">
+              Virufy is committed to that urgency.
+            </p>
 
-            <p>
-              <strong>Amil Khanzada</strong>
-              <br />
-              Chief Executive Officer, Virufy
+            <p className="mb-6 leading-8">
+              <i>Amil Khanzada, Chief Executive Officer, Virufy</i>
             </p>
           </section>
 
           <section>
-            <h1>Virufy White Paper</h1>
-            <h2>
+            <h1 className="">Virufy White Paper</h1>
+            <h2 className="">
               AI-Powered Acoustic Diagnostics for Global Respiratory Health
             </h2>
 
-            <p>
+            <p className="leading-8">
               <strong>Virufy Research Team, 2026</strong>
             </p>
           </section>
 
           <section>
-            <h2>Executive Summary</h2>
+            <h2 className="mb-2 font-bold">Executive Summary</h2>
 
-            <p>
+            <p className="mb-6 leading-8">
               Respiratory diseases cause more than 4 million deaths each year
               worldwide. The COVID-19 pandemic more specifically exposed
               critical weaknesses in global diagnostic systems. Virufy is a
@@ -86,108 +86,11 @@ export default function DataEfficientCoughAI() {
               University.
             </p>
           </section>
-
-          <section>
-            <h2>The Global Respiratory Diagnostic Gap</h2>
-
-            <p>
-              Respiratory diseases cause more than 4 million annual deaths
-              worldwide, underscoring the urgent need for accessible diagnostic
-              systems (
-              <a
-                href="https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370%2823%2900113-X/fulltext"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-2 hover:no-underline"
-              >
-                GBD 2019 Chronic Respiratory Diseases Collaborators, 2023
-              </a>
-              ) The COVID-19 pandemic revealed significant structural weaknesses
-              in global testing capacity, including limited laboratory
-              infrastructure, fragile supply chains, and workforce shortages (
-              <a
-                href="https://cen.acs.org/analytical-chemistry/diagnostics/Developing-countries-face-diagnostic-challenges/98/i27"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-2 hover:no-underline"
-              >
-                Chemical &amp; Engineering News, 2020
-              </a>
-              ,{' '}
-              <a
-                href="https://journals.asm.org/doi/10.1128/jcm.03189-20"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-2 hover:no-underline"
-              >
-                Cornish et al., 2023
-              </a>
-              ). Traditional respiratory diagnostics rely heavily on centralized
-              laboratories, trained personnel, specialized reagents, and
-              consistent supply chains. In many low-income countries, laboratory
-              density remains critically low. This over the pandemic contributed
-              to prolonged diagnostic delays and reduced outbreak responsiveness
-              (
-              <a
-                href="https://link.springer.com/article/10.1186/s12992-022-00796-7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-2 hover:no-underline"
-              >
-                Duma et al., 2022
-              </a>
-              ). Evidence from outbreak evaluations demonstrates that delays in
-              diagnostic deployment directly increase transmission, morbidity,
-              and mortality (
-              <a
-                href="https://gh.bmj.com/content/8/7/e012506"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-2 hover:no-underline"
-              >
-                Escadafal et al., 2023
-              </a>
-              ,{' '}
-              <a
-                href="https://link.springer.com/article/10.1186/s41256-023-00330-1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-2 hover:no-underline"
-              >
-                Zhou et al., 2023
-              </a>
-              ). Access disparities were also present in high-income countries,
-              where vulnerable populations, including immigrants and elderly
-              communities, experienced reduced access to healthcare and testing
-              services during the pandemic (
-              <a
-                href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2024.1422343/full"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-2 hover:no-underline"
-              >
-                Spencer et al., 2024
-              </a>
-              ). Together, these findings highlight the need for scalable,
-              infrastructure-independent diagnostic prescreening solutions
-              capable of real-time deployment across diverse healthcare settings
-              (
-              <a
-                href="https://journals.publishing.umich.edu/mjm/article/id/1682/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary underline underline-offset-2 hover:no-underline"
-              >
-                Prasad et al., 2023
-              </a>
-              ).
-            </p>
-          </section>
           <section className="pt-2">
             <button
               type="button"
               onClick={() => setIsExpanded((prev) => !prev)}
-              className="rounded-full border border-white/40 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10"
+              className="rounded-full border border-black/40 px-4 py-2 text-sm font-medium text-black transition hover:bg-black/10"
             >
               {isExpanded ? 'Show less' : 'Read more'}
             </button>
@@ -196,9 +99,111 @@ export default function DataEfficientCoughAI() {
           {isExpanded && (
             <>
               <section>
-                <h2>Virufy’s AI-Powered Acoustic Screening Platform</h2>
+                <h2 className="mb-2 font-bold">
+                  The Global Respiratory Diagnostic Gap
+                </h2>
 
-                <p>
+                <p className="mb-6 leading-8">
+                  Respiratory diseases cause more than 4 million annual deaths
+                  worldwide, underscoring the urgent need for accessible
+                  diagnostic systems (
+                  <a
+                    href="https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370%2823%2900113-X/fulltext"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:no-underline"
+                  >
+                    GBD 2019 Chronic Respiratory Diseases Collaborators, 2023
+                  </a>
+                  ) The COVID-19 pandemic revealed significant structural
+                  weaknesses in global testing capacity, including limited
+                  laboratory infrastructure, fragile supply chains, and
+                  workforce shortages (
+                  <a
+                    href="https://cen.acs.org/analytical-chemistry/diagnostics/Developing-countries-face-diagnostic-challenges/98/i27"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:no-underline"
+                  >
+                    Chemical &amp; Engineering News, 2020
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://journals.asm.org/doi/10.1128/jcm.03189-20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:no-underline"
+                  >
+                    Cornish et al., 2023
+                  </a>
+                  ). Traditional respiratory diagnostics rely heavily on
+                  centralized laboratories, trained personnel, specialized
+                  reagents, and consistent supply chains. In many low-income
+                  countries, laboratory density remains critically low. This
+                  over the pandemic contributed to prolonged diagnostic delays
+                  and reduced outbreak responsiveness (
+                  <a
+                    href="https://link.springer.com/article/10.1186/s12992-022-00796-7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:no-underline"
+                  >
+                    Duma et al., 2022
+                  </a>
+                  ). Evidence from outbreak evaluations demonstrates that delays
+                  in diagnostic deployment directly increase transmission,
+                  morbidity, and mortality (
+                  <a
+                    href="https://gh.bmj.com/content/8/7/e012506"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:no-underline"
+                  >
+                    Escadafal et al., 2023
+                  </a>
+                  ,{' '}
+                  <a
+                    href="https://link.springer.com/article/10.1186/s41256-023-00330-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:no-underline"
+                  >
+                    Zhou et al., 2023
+                  </a>
+                  ). Access disparities were also present in high-income
+                  countries, where vulnerable populations, including immigrants
+                  and elderly communities, experienced reduced access to
+                  healthcare and testing services during the pandemic (
+                  <a
+                    href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2024.1422343/full"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:no-underline"
+                  >
+                    Spencer et al., 2024
+                  </a>
+                  ). Together, these findings highlight the need for scalable,
+                  infrastructure-independent diagnostic prescreening solutions
+                  capable of real-time deployment across diverse healthcare
+                  settings (
+                  <a
+                    href="https://journals.publishing.umich.edu/mjm/article/id/1682/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary underline underline-offset-2 hover:no-underline"
+                  >
+                    Prasad et al., 2023
+                  </a>
+                  ).
+                </p>
+              </section>
+
+              <section>
+                <h2 className="mb-2 font-bold">
+                  Virufy’s AI-Powered Acoustic Screening Platform
+                </h2>
+
+                <p className="mb-6 leading-8">
                   Virufy streamlines traditional laboratory-dependent screening
                   with AI-driven acoustic analysis by identifying respiratory
                   biomarkers embedded in cough sounds.
@@ -208,7 +213,7 @@ export default function DataEfficientCoughAI() {
                   alt="Virufy AI Platform"
                   className="mx-auto my-4 rounded-lg shadow-md"
                 />
-                <p>
+                <p className="italic leading-8">
                   Virufy’s AI-powered acoustic screening process provides rapid,
                   non-invasive, population-scale respiratory screening that is
                   globally accessible. Users begin by recording a brief cough
@@ -223,7 +228,7 @@ export default function DataEfficientCoughAI() {
               </section>
 
               <section>
-                <h2>
+                <h2 className="mb-6 font-bold">
                   Comparison of Traditional Diagnostic Testing and Virufy AI
                   Screening
                 </h2>
@@ -280,7 +285,7 @@ export default function DataEfficientCoughAI() {
                   </table>
                 </div>
 
-                <p>
+                <p className="italic leading-8">
                   This table summarizes key differences between conventional
                   diagnostic methods and Virufy’s AI-powered screening solution,
                   highlighting improvements in turnaround time, cost efficiency,
@@ -289,9 +294,9 @@ export default function DataEfficientCoughAI() {
               </section>
 
               <section>
-                <h2>Scientific Foundation</h2>
+                <h2 className="mb-6 font-bold">Scientific Foundation</h2>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy’s AI-powered diagnostic platform is grounded in a
                   robust scientific and intellectual property framework. Its
                   innovations are protected under U.S. Patent No. 12,444,502,
@@ -302,9 +307,9 @@ export default function DataEfficientCoughAI() {
                   respiratory health monitoring.
                 </p>
 
-                <h3>Clinical Evidence</h3>
+                <h3 className="font-semibold">Clinical Evidence</h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   In initial clinical studies, Virufy’s COVID-19 prescreening
                   model achieved 85% sensitivity and specificity. Data were
                   collected from more than 20 countries, encompassing a wide
@@ -314,9 +319,11 @@ export default function DataEfficientCoughAI() {
                   contexts.
                 </p>
 
-                <h3>Multi-Disease Capability (Future Vision)</h3>
+                <h3 className="font-semibold">
+                  Multi-Disease Capability (Future Vision)
+                </h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy’s AI framework is designed to be extensible to
                   additional respiratory conditions in the future. Potential
                   areas of expansion include influenza, respiratory syncytial
@@ -329,9 +336,9 @@ export default function DataEfficientCoughAI() {
                 </p>
               </section>
               <section>
-                <h2>Technology Architecture</h2>
+                <h2 className="mb-6 font-bold">Technology Architecture</h2>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy’s platform is built on a layered, scalable technology
                   architecture that enables accurate, rapid, and secure
                   respiratory screening from a simple smartphone recording. The
@@ -340,9 +347,9 @@ export default function DataEfficientCoughAI() {
                   adaptability.
                 </p>
 
-                <h3>Acoustic Capture Layer</h3>
+                <h3 className="font-semibold">Acoustic Capture Layer</h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   The platform begins with a multi-format audio intake, allowing
                   users to submit cough recordings through smartphones (Android,
                   iOS) or web browsers. Advanced noise filtering algorithms
@@ -352,9 +359,9 @@ export default function DataEfficientCoughAI() {
                   meeting international data security standards.
                 </p>
 
-                <h3>Feature Extraction Layer</h3>
+                <h3 className="font-semibold">Feature Extraction Layer</h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Captured cough audio is first segmented into discrete events
                   and then transformed into time–frequency representations using
                   short-time Fourier analysis, with optional alternative
@@ -366,9 +373,9 @@ export default function DataEfficientCoughAI() {
                   respiratory sound biomarkers suitable for downstream modeling.
                 </p>
 
-                <h3>AI Inference Layer</h3>
+                <h3 className="font-semibold">AI Inference Layer</h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Clinically relevant acoustic features are analyzed using
                   convolutional neural networks (CNNs) and ensemble modeling
                   approaches optimized for respiratory sound classification. The
@@ -378,9 +385,9 @@ export default function DataEfficientCoughAI() {
                   datasets while maintaining high diagnostic performance.
                 </p>
 
-                <h3>Integration &amp; Scalability</h3>
+                <h3 className="font-semibold">Integration &amp; Scalability</h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy is designed for seamless integration with healthcare
                   ecosystems. Cloud-based deployment ensures scalability and
                   global accessibility, while API interfaces allow integration
@@ -395,7 +402,7 @@ export default function DataEfficientCoughAI() {
                   className="mx-auto my-4 rounded-lg shadow-md"
                 />
 
-                <p>
+                <p className="mb-6 leading-8">
                   <strong>Virufy Technology Architecture:</strong> A scalable,
                   AI-powered acoustic platform enabling secure, rapid, and
                   non-invasive respiratory screening through layered processing,
@@ -404,9 +411,11 @@ export default function DataEfficientCoughAI() {
                 </p>
               </section>
               <section>
-                <h2>Ethics, Privacy &amp; Responsible AI</h2>
+                <h2 className="mb-6 font-bold">
+                  Ethics, Privacy &amp; Responsible AI
+                </h2>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy is committed to deploying AI responsibly, ethically,
                   and securely, ensuring technology improves health outcomes
                   while protecting privacy, fairness, and trust in all countries
@@ -432,9 +441,9 @@ export default function DataEfficientCoughAI() {
               </section>
 
               <section>
-                <h2>Future Directions</h2>
+                <h2 className="mb-6 font-bold">Future Directions</h2>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy’s ultimate goal is to create a world in which
                   individuals can proactively monitor and manage their health in
                   real time using accessible, non-invasive technology. By
@@ -447,9 +456,11 @@ export default function DataEfficientCoughAI() {
                   development are designed to include the following focus areas:
                 </p>
 
-                <h3>a. Publication of validated performance data</h3>
+                <h3 className="font-bold">
+                  a. Publication of validated performance data
+                </h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy will prioritize the transparent publication of
                   validated performance metrics, including sensitivity,
                   specificity, and overall accuracy, using diverse and
@@ -460,9 +471,11 @@ export default function DataEfficientCoughAI() {
                   authorities.
                 </p>
 
-                <h3>b. Regulatory approval and clinical integration</h3>
+                <h3 className="font-bold">
+                  b. Regulatory approval and clinical integration
+                </h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Securing regulatory approvals in relevant jurisdictions is a
                   critical step toward formal clinical adoption. Virufy will
                   engage with regulatory bodies to ensure compliance with
@@ -471,11 +484,11 @@ export default function DataEfficientCoughAI() {
                   surveillance systems.
                 </p>
 
-                <h3>
+                <h3 className="font-bold">
                   c. Geographic expansion through institutional partnerships
                 </h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy&apos;s nonprofit structure supports trusted engagement
                   with ministries of health, research universities, global NGOs,
                   community health organizations, and elderly care providers.
@@ -488,11 +501,11 @@ export default function DataEfficientCoughAI() {
                   commercial diagnostic solutions have limited reach.
                 </p>
 
-                <h3>
+                <h3 className="font-bold">
                   d. Continuous integration of user and stakeholder feedback
                 </h3>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy will systematically incorporate feedback from users,
                   clinicians, and public health stakeholders into ongoing
                   development. This iterative approach will improve usability,
@@ -502,14 +515,14 @@ export default function DataEfficientCoughAI() {
                 </p>
               </section>
               <section>
-                <h2>Call to Action</h2>
+                <h2 className="mb-6 font-bold">Call to Action</h2>
 
-                <p>
+                <p className="mb-6 leading-8">
                   Virufy invites key stakeholders to engage and collaborate in
                   advancing global respiratory health:
                 </p>
 
-                <ul>
+                <ul className="list-disc space-y-4 pl-2">
                   <li>
                     <strong>Governments &amp; Ministries of Health:</strong>{' '}
                     Integrate Virufy’s AI platform into national outbreak
@@ -534,7 +547,7 @@ export default function DataEfficientCoughAI() {
               </section>
 
               <section>
-                <h2 className="mb-4 text-xl font-semibold">References</h2>
+                <h2 className="mb-4 text-xl font-bold">References</h2>
 
                 <ol className="list-decimal space-y-4 pl-6">
                   <li className="leading-relaxed">
