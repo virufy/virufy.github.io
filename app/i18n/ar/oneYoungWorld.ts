@@ -8,7 +8,7 @@ const oneYoungWorld: OneYoungWorld = {
   },
   navbarTexts: {
     oyw: 'One Young World',
-    teamLeads: 'فريق السفراء  v',
+    teamLeads: 'سفراء',
   },
   oyw: {
     bgImage: './../images/oneYoungWorld/bg-body.webp',

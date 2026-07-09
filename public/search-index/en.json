@@ -884,8 +884,15 @@
   {
     "id": "en-advisors-36",
     "lang": "en",
-    "title": "Peter Heart",
+    "title": "Peter Hart",
     "content": "Advisor on Technology Strategy (Founder and Chairman Emeritus at Ricoh Innovations, Inc. | Ph.D. in Electrical Engineering, Stanford University)",
+    "url": "/en/advisors"
+  },
+  {
+    "id": "en-advisors-37",
+    "lang": "en",
+    "title": "Yasuko Tokifuji",
+    "content": "Executive Strategy Advisor (Executive MBA, Quantic School of Business and Technology)",
     "url": "/en/advisors"
   },
   {

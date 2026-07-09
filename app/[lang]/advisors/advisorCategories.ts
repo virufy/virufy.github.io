@@ -42,7 +42,7 @@ const advisorCategories: Record<string, string> = {
   tsutomu: 'business',
   tomohiro: 'business',
   okazaki: 'business',
-
+  yasuko: 'business',
   // Legal
   rafi: 'legal',
 

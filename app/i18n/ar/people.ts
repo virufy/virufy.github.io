@@ -355,6 +355,15 @@ const people: People = {
         ],
         link: 'http://www.peterhart.net/',
       },
+      yasuko: {
+        img: './../images/advisors/Yasuko-Tokifuji.jpg',
+        name: 'Yasuko Tokifuji',
+        role: 'مستشار استراتيجي تنفيذي',
+        texts: [
+          'ماجستير في إدارة الأعمال التنفيذي من كلية كوانتيك للأعمال والتكنولوجيا ',
+        ],
+        link: 'https://www.linkedin.com/in/yasuko-tokifuji/',
+      },
     },
     advisorOrder: [
       'adam',

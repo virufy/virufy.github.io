@@ -359,6 +359,13 @@ const people: People = {
         ],
         link: 'http://www.peterhart.net/',
       },
+      yasuko: {
+        img: './../images/advisors/Yasuko-Tokifuji.jpg',
+        name: 'Yasuko Tokifuji',
+        role: 'Executive Strategy Advisor',
+        texts: ['Executive MBA, Quantic School of Business and Technology'],
+        link: 'https://www.linkedin.com/in/yasuko-tokifuji/',
+      },
     },
     advisorOrder: [
       'adam',

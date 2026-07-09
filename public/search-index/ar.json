@@ -877,8 +877,15 @@
   {
     "id": "ar-advisors-36",
     "lang": "ar",
-    "title": "Peter Heart",
+    "title": "بيتر هارت",
     "content": "مستشار في استراتيجية التكنولوجيا (مؤسس ورئيس مجلس الإدارة الفخري في شركة ريكو إنوفيشنز (Ricoh Innovations, Inc.) | حاصل على درجة الدكتوراه في الهندسة الكهربائية من Stanford University.)",
+    "url": "/ar/advisors"
+  },
+  {
+    "id": "ar-advisors-37",
+    "lang": "ar",
+    "title": "Yasuko Tokifuji",
+    "content": "مستشار استراتيجي تنفيذي (ماجستير في إدارة الأعمال التنفيذي من كلية كوانتيك للأعمال والتكنولوجيا )",
     "url": "/ar/advisors"
   },
   {
