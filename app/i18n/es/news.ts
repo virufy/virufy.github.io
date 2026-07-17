@@ -37,6 +37,16 @@ const sevenNewsContent: SevenNewsPage = {
 
   newsCards: [
     {
+      title: 'Artículo publicado en Wiley Online Library',
+      date: 'Julio de 2026',
+      subText:
+        'El doble giro: un estudio de caso de métodos mixtos sobre el proceso de descubrimiento de clientes del NSF I-Corps en una empresa universitaria de IA para la salud',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
+      year: 2026,
+    },
+    {
       title:
         'Tres empresas universitarias de Suiza, EE. UU. y Egipto avanzan a pilotos activos y fases comerciales en Dubái',
       date: 'Mayo de 2026',

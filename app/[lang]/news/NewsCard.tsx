@@ -14,28 +14,29 @@ type NewsCardProps = {
 };
 
 const unoptimized = process.env.NODE_ENV !== 'production';
+const placeholderImage = '/images/sevenNews/Placeholder-Card.png';
 
 const NewsCard = ({ image, date, title, subtitle, url }: NewsCardProps) => {
+  const cardImage = image || placeholderImage;
+
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-gray-300 hover:shadow-2xl">
       {/* Image */}
-      {image && (
-        <Link href={url} target="_blank" rel="noopener noreferrer">
-          <div
-            className="relative w-full overflow-hidden"
-            style={{ aspectRatio: '376 / 216' }}
-          >
-            <ExportedImage
-              src={image}
-              alt={title}
-              fill
-              className="object-cover transition duration-500 group-hover:scale-105"
-              basePath={basePath}
-              unoptimized={unoptimized}
-            />
-          </div>
-        </Link>
-      )}
+      <Link href={url} target="_blank" rel="noopener noreferrer">
+        <div
+          className="relative w-full overflow-hidden"
+          style={{ aspectRatio: '376 / 216' }}
+        >
+          <ExportedImage
+            src={cardImage}
+            alt={title}
+            fill
+            className="object-cover transition duration-500 group-hover:scale-105"
+            basePath={basePath}
+            unoptimized={unoptimized}
+          />
+        </div>
+      </Link>
 
       {/* Content */}
       <div className="flex flex-col p-4">

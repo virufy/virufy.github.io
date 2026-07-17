@@ -51,7 +51,7 @@
   {
     "id": "ja-publications-1",
     "lang": "ja",
-    "title": "Virufy White Paper 2026",
+    "title": "世界の呼吸器健康のためのAI音響診断",
     "content": "June 2026",
     "url": "/en/publications/virufy-white-paper-2026"
   },
@@ -1178,152 +1178,159 @@
   {
     "id": "ja-sevennews-hero",
     "lang": "ja",
-    "title": "Virufy in the News",
-    "content": "Stay updated with the latest news, press releases, and media coverage about Virufy’s mission to democratize healthcare through AI-powered respiratory health screening.",
+    "title": "Virufyに関連するニュース",
+    "content": "Virufyは、AIを活用した呼吸器ヘルススクリーニングを通じて、ヘルスケアをより身近にすることを目指しています。最新ニュースやプレスリリース、メディア掲載情報を通じて、私たちの取り組みをお届けします。",
     "url": "/ja/news"
   },
   {
     "id": "ja-news-1",
     "lang": "ja",
-    "title": "Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai",
-    "content": "May 2026",
-    "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
+    "title": "Wiley Online Libraryに論文を掲載",
+    "content": "ダブル・ピボット：大学発ヘルスケアAIベンチャーにおけるNSF I-Corps顧客発見プロセスの混合研究法によるケーススタディ",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107"
   },
   {
     "id": "ja-news-2",
     "lang": "ja",
-    "title": "FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health",
-    "content": "June 2026",
-    "url": "https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/"
+    "title": "スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行",
+    "content": "2026年5月",
+    "url": "prototypesforhumanity.com/press-releases/press/Universityventures"
   },
   {
     "id": "ja-news-3",
     "lang": "ja",
-    "title": "A Message from our Founder, Amil Khanzada From Silicon Valley to the Classroom: My First Lecture at the University of Fukui",
-    "content": "June 2026",
-    "url": "/en/news/amil-june-2026"
+    "title": "インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討",
+    "content": "2026年6月",
+    "url": "fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health"
   },
   {
     "id": "ja-news-4",
-    "lang": "ja",
-    "title": "AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！",
-    "content": "2026年4月",
-    "url": "/en/sevennews/whx-dubai-2026"
-  },
-  {
-    "id": "ja-news-5",
-    "lang": "ja",
-    "title": "スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行",
-    "content": "2026年5月",
-    "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
-  },
-  {
-    "id": "ja-news-6",
-    "lang": "ja",
-    "title": "インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討",
-    "content": "2026年6月",
-    "url": "https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/"
-  },
-  {
-    "id": "ja-news-7",
     "lang": "ja",
     "title": "創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義",
     "content": "2026年6月",
     "url": "/en/sevennews/amil-june-2026"
   },
   {
+    "id": "ja-news-5",
+    "lang": "ja",
+    "title": "AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！",
+    "content": "2026年4月",
+    "url": "/en/sevennews/whx-dubai-2026"
+  },
+  {
+    "id": "ja-news-6",
+    "lang": "ja",
+    "title": "スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行",
+    "content": "2026年5月",
+    "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
+  },
+  {
+    "id": "ja-news-7",
+    "lang": "ja",
+    "title": "インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討",
+    "content": "2026年6月",
+    "url": "https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/"
+  },
+  {
     "id": "ja-news-8",
+    "lang": "ja",
+    "title": "創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義",
+    "content": "2026年6月",
+    "url": "/en/sevennews/amil-june-2026"
+  },
+  {
+    "id": "ja-news-9",
     "lang": "ja",
     "title": "GITEXグローバル2025 - ドバイヘルス",
     "content": "2025年10月",
     "url": "/en/sevennews/gitex-global-2025-dubai"
   },
   {
-    "id": "ja-news-9",
+    "id": "ja-news-10",
     "lang": "ja",
     "title": "Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示",
     "content": "2025年6月",
     "url": "/en/sevennews/uae-adghw-apr-2025"
   },
   {
-    "id": "ja-news-10",
+    "id": "ja-news-11",
     "lang": "ja",
     "title": "Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露",
     "content": "2024年11月",
     "url": "/en/sevennews/press-release-dubai"
   },
   {
-    "id": "ja-news-11",
+    "id": "ja-news-12",
     "lang": "ja",
     "title": "Virufyベータ版アプリがコロンビアでリリース、4,500人のユーザーに自宅でCOVID-19検出を提供",
     "content": "2023年2月",
     "url": "/en/sevennews/beta-app-release-2023"
   },
   {
-    "id": "ja-news-12",
+    "id": "ja-news-13",
     "lang": "ja",
     "title": "BARDA、視覚および聴覚症状に基づく感染症検出のための新しいAI/MLデジタルアプリの開発を支援",
     "content": "医療対策、アメリカ合衆国",
     "url": "https://medicalcountermeasures.gov/newsroom/2022/ai_ml/"
   },
   {
-    "id": "ja-news-13",
+    "id": "ja-news-14",
     "lang": "ja",
     "title": "このアプリは電話の前で咳をするだけでCOVID-19を診断することを目指しています",
     "content": "Forbes, メキシコ",
     "url": "https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/"
   },
   {
-    "id": "ja-news-14",
+    "id": "ja-news-15",
     "lang": "ja",
     "title": "COVID-19: Virufyアプリは咳の分析を通じてウイルスを診断可能",
     "content": "MSN",
     "url": "https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332"
   },
   {
-    "id": "ja-news-15",
+    "id": "ja-news-16",
     "lang": "ja",
     "title": "VIRUFY: COVID-19に感染しているかどうかを検出するプラットフォーム",
     "content": "Expreso, リマ, ペルー",
     "url": "https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/"
   },
   {
-    "id": "ja-news-16",
+    "id": "ja-news-17",
     "lang": "ja",
     "title": "One Young World日本アンバサダーがAIを活用してCOVID-19に挑む",
     "content": "One Young World, 東京, 日本",
     "url": "https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
   },
   {
-    "id": "ja-news-17",
+    "id": "ja-news-18",
     "lang": "ja",
     "title": "COVID-19対応の最前線に立つ北米アンバサダーたち",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response"
   },
   {
-    "id": "ja-news-18",
+    "id": "ja-news-19",
     "lang": "ja",
     "title": "7月のアンバサダー・オブ・ザ・マンス",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month"
   },
   {
-    "id": "ja-news-19",
+    "id": "ja-news-20",
     "lang": "ja",
     "title": "7月に開催されたOYWのグローバルデジタルイベントに数千人が参加：見逃した内容を振り返る",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed"
   },
   {
-    "id": "ja-news-20",
+    "id": "ja-news-21",
     "lang": "ja",
     "title": "One Young World東京2020カーカス",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/event/one-young-world-tokyo-caucus-2020"
   },
   {
-    "id": "ja-news-21",
+    "id": "ja-news-22",
     "lang": "ja",
     "title": "One Young World東京2020カーカスでのVirufyプレゼンテーション",
     "content": "One Young World, 東京, 日本",

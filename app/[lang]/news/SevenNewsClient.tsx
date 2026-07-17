@@ -132,9 +132,8 @@ const SevenNewsClient = ({ content, params }: Props) => {
 
           {/* Title */}
           <h1 className="font-montserrat text-4xl font-normal tracking-[0.26px] text-black sm:text-5xl md:text-[52px] md:leading-[75px]">
-            Virufy in the{' '}
             <span className="bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent">
-              News
+              {content.hero.title}
             </span>
           </h1>
           <p className="font-inter mx-auto mt-4 max-w-2xl text-base font-normal leading-[32.5px] tracking-[-0.45px] text-gray-600 sm:text-xl">

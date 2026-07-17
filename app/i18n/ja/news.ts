@@ -2,67 +2,77 @@ import type { SevenNewsPage } from '../types/news';
 
 const sevenNewsContent: SevenNewsPage = {
   hero: {
-    title: 'Virufy in the News',
+    title: 'Virufyに関連するニュース',
     subtitle:
-      'Stay updated with the latest news, press releases, and media coverage about Virufy’s mission to democratize healthcare through AI-powered respiratory health screening.',
+      'Virufyは、AIを活用した呼吸器ヘルススクリーニングを通じて、ヘルスケアをより身近にすることを目指しています。最新ニュースやプレスリリース、メディア掲載情報を通じて、私たちの取り組みをお届けします。',
     bgImage: '/icons/icon-news-bg.png',
     tag: 'Media Coverage',
     tagIcon: '/icons/icon-media.png',
   },
   pillSelector: {
     options: [
-      { id: 'news', label: 'News' },
-      { id: 'publications', label: 'Publications' },
-      { id: 'blogs', label: 'Blogs' },
+      { id: 'news', label: 'ニュース' },
+      { id: 'publications', label: '論文・出版物' },
+      { id: 'blogs', label: 'ブログ' },
     ],
     defaultOption: 'news',
   },
 
   filters: {
-    filterByYearLabel: 'Filter by Year:',
-    allYearsOption: 'All Years',
-    sortByLabel: 'Sort by:',
-    newestFirst: 'Newest to Oldest',
-    oldestFirst: 'Oldest to Newest',
+    filterByYearLabel: '年で絞り込む:',
+    allYearsOption: 'すべての年',
+    sortByLabel: '並び替え：',
+    newestFirst: '新しい順',
+    oldestFirst: '古い順',
   },
 
   section5: {
-    title: 'Inspired by the work? Help shape what comes next.',
-    text: 'Join researchers, designers, engineers, and advocates working together to advance global respiratory health.',
-    button: 'Join Our Team',
+    title: 'この取り組みに共感したら、私たちと一緒に次の一歩をつくりませんか。',
+    text: '研究者、デザイナー、エンジニア、支援者など、さまざまなメンバーが協力しながら、世界の呼吸器ヘルスの向上に取り組んでいます。',
+    button: 'チームに参加する',
   },
 
-  emptyMessage: 'No news articles found for the selected filters.',
+  emptyMessage: '該当するニュース記事はありません。',
 
   newsCards: [
     {
-      title:
-        'Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai',
-      date: 'May 2026',
-      subText: '',
+      title: 'Wiley Online Libraryに論文を掲載',
+      date: '2026年7月',
+      subText:
+        'ダブル・ピボット：大学発ヘルスケアAIベンチャーにおけるNSF I-Corps顧客発見プロセスの混合研究法によるケーススタディ',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
-      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
       year: 2026,
     },
     {
       title:
-        'FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health',
-      date: 'June 2026',
+        'スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行',
+      date: '2026年5月',
       subText: '',
-      image: '/images/sevenNews/Placeholder-Card.png',
+      url: 'prototypesforhumanity.com/press-releases/press/Universityventures',
       contentType: 'news',
-      url: 'https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/',
+      image: '/images/sevenNews/Placeholder-Card.png',
       year: 2026,
     },
     {
       title:
-        'A Message from our Founder, Amil Khanzada From Silicon Valley to the Classroom: My First Lecture at the University of Fukui',
-      date: 'June 2026',
-      contentType: 'news',
-      image: '/images/news/Amil-Classroom-1.jpg',
+        'インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討',
+      date: '2026年6月',
       subText: '',
-      url: '/en/news/amil-june-2026',
+      url: 'fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2026,
+    },
+    {
+      title:
+        '創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義',
+      date: '2026年6月',
+      subText: '',
+      url: '/en/sevennews/amil-june-2026',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
       year: 2026,
     },
     {
