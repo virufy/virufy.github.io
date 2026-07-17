@@ -6,6 +6,13 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'Artículo publicado en Wiley Online Library',
+      date: 'Julio de 2026',
+      subText: '',
+      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
+      year: 2026,
+    },
+    {
       title:
         'Avanzando la atención pediátrica con IA: ¡Virufy y Emirates Health Services (EHS) en WHX Dubái 2026!',
       date: 'Abril de 2026',

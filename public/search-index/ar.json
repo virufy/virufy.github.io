@@ -891,124 +891,131 @@
   {
     "id": "ar-news-1",
     "lang": "ar",
+    "title": "مقال منشور في مكتبة وايلي الإلكترونية",
+    "content": "يوليو 2026",
+    "url": "/ar/news"
+  },
+  {
+    "id": "ar-news-2",
+    "lang": "ar",
     "title": "الارتقاء برعاية الأطفال باستخدام الذكاء الاصطناعي: Virufy وEmirates Health Services (EHS) في WHX دبي 2026!",
     "content": "أبريل 2026",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-2",
+    "id": "ar-news-3",
     "lang": "ar",
     "title": "ثلاثة مشاريع جامعية من سويسرا والولايات المتحدة ومصر تنتقل إلى مراحل تجريبية نشطة ومراحل تجارية في دبي",
     "content": "مايو 2026",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-3",
+    "id": "ar-news-4",
     "lang": "ar",
     "title": "كلية الصحة العامة بجامعة إندونيسيا تستكشف تعاونًا استراتيجيًا مع Virufy لتطوير تقنية الذكاء الاصطناعي في مجال صحة الجهاز التنفسي",
     "content": "يونيو 2026",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-4",
+    "id": "ar-news-5",
     "lang": "ar",
     "title": "رسالة من مؤسسنا أميل خانزادة: من وادي السيليكون إلى قاعة الدراسة: محاضرتي الأولى في جامعة فوكوي",
     "content": "يونيو 2026",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-5",
+    "id": "ar-news-6",
     "lang": "ar",
     "title": "معرض جيتكس العالمي 2025 - دبي للصحة",
     "content": "أكتوبر 2025",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-6",
+    "id": "ar-news-7",
     "lang": "ar",
     "title": "فيروفي تستعرض نجاحها في فحص الجهاز التنفسي باستخدام الذكاء الاصطناعي في أبوظبي",
     "content": "يونيو 2025",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-7",
+    "id": "ar-news-8",
     "lang": "ar",
     "title": "Virufy تعرض تقنية مبتكرة لفحص COVID-19 في معرض Prototypes for Humanity 2024 في دبي",
     "content": "نوفمبر 2024",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-8",
+    "id": "ar-news-9",
     "lang": "ar",
     "title": "تطبيق Virufy Beta يُطلق في كولومبيا، موفرًا الكشف عن COVID-19 في المنزل لـ 4,500 مستخدم",
     "content": "فبراير 2023",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-9",
+    "id": "ar-news-10",
     "lang": "ar",
     "title": "BARDA تدعم تطوير تطبيقات رقمية جديدة تعتمد على الذكاء الاصطناعي/التعلم الآلي للكشف عن الأمراض المعدية عبر الأعراض البصرية والسمعية",
     "content": "الإجراءات الطبية، الولايات المتحدة",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-10",
+    "id": "ar-news-11",
     "lang": "ar",
     "title": "هذا التطبيق يسعى لتشخيص COVID-19 بمجرد السعال أمام الهاتف",
     "content": "Forbes، المكسيك",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-11",
+    "id": "ar-news-12",
     "lang": "ar",
     "title": "COVID-19: تطبيق Virufy يمكنه تشخيص الفيروس من خلال تحليل السعال",
     "content": "MSN",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-12",
+    "id": "ar-news-13",
     "lang": "ar",
     "title": "VIRUFY: منصة تتيح الكشف عما إذا كنا مصابين بـ COVID-19",
     "content": "Expreso، ليما، بيرو",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-13",
+    "id": "ar-news-14",
     "lang": "ar",
     "title": "سفير One Young World في اليابان يستهدف COVID-19 باستخدام الذكاء الاصطناعي",
     "content": "One Young World، طوكيو، اليابان",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-14",
+    "id": "ar-news-15",
     "lang": "ar",
     "title": "سفراء أمريكا الشمالية في الخطوط الأمامية لمواجهة COVID-19",
     "content": "One Young World",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-15",
+    "id": "ar-news-16",
     "lang": "ar",
     "title": "سفراء الشهر يوليو",
     "content": "One Young World",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-16",
+    "id": "ar-news-17",
     "lang": "ar",
     "title": "آلاف يحضرون فعاليات OYW الرقمية العالمية في يوليو: ملخص لما فاتك",
     "content": "One Young World",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-17",
+    "id": "ar-news-18",
     "lang": "ar",
     "title": "منتدى One Young World طوكيو 2020",
     "content": "One Young World",
     "url": "/ar/news"
   },
   {
-    "id": "ar-news-18",
+    "id": "ar-news-19",
     "lang": "ar",
     "title": "عرض Virufy في منتدى One Young World طوكيو 2020",
     "content": "One Young World، طوكيو، اليابان",

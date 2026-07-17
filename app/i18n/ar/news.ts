@@ -6,6 +6,13 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'مقال منشور في مكتبة وايلي الإلكترونية',
+      date: 'يوليو 2026',
+      subText: '',
+      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
+      year: 2026,
+    },
+    {
       title:
         'الارتقاء برعاية الأطفال باستخدام الذكاء الاصطناعي: Virufy وEmirates Health Services (EHS) في WHX دبي 2026!',
       date: 'أبريل 2026',

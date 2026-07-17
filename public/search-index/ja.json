@@ -884,124 +884,131 @@
   {
     "id": "ja-news-1",
     "lang": "ja",
+    "title": "Wiley Online Libraryに論文を掲載",
+    "content": "2026年7月",
+    "url": "/ja/news"
+  },
+  {
+    "id": "ja-news-2",
+    "lang": "ja",
     "title": "AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！",
     "content": "2026年4月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-2",
+    "id": "ja-news-3",
     "lang": "ja",
     "title": "スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行",
     "content": "2026年5月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-3",
+    "id": "ja-news-4",
     "lang": "ja",
     "title": "インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討",
     "content": "2026年6月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-4",
+    "id": "ja-news-5",
     "lang": "ja",
     "title": "創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義",
     "content": "2026年6月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-5",
+    "id": "ja-news-6",
     "lang": "ja",
     "title": "GITEXグローバル2025 - ドバイヘルス",
     "content": "2025年10月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-6",
+    "id": "ja-news-7",
     "lang": "ja",
     "title": "Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示",
     "content": "2025年6月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-7",
+    "id": "ja-news-8",
     "lang": "ja",
     "title": "Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露",
     "content": "2024年11月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-8",
+    "id": "ja-news-9",
     "lang": "ja",
     "title": "Virufyベータ版アプリがコロンビアでリリース、4,500人のユーザーに自宅でCOVID-19検出を提供",
     "content": "2023年2月",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-9",
+    "id": "ja-news-10",
     "lang": "ja",
     "title": "BARDA、視覚および聴覚症状に基づく感染症検出のための新しいAI/MLデジタルアプリの開発を支援",
     "content": "医療対策、アメリカ合衆国",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-10",
+    "id": "ja-news-11",
     "lang": "ja",
     "title": "このアプリは電話の前で咳をするだけでCOVID-19を診断することを目指しています",
     "content": "Forbes, メキシコ",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-11",
+    "id": "ja-news-12",
     "lang": "ja",
     "title": "COVID-19: Virufyアプリは咳の分析を通じてウイルスを診断可能",
     "content": "MSN",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-12",
+    "id": "ja-news-13",
     "lang": "ja",
     "title": "VIRUFY: COVID-19に感染しているかどうかを検出するプラットフォーム",
     "content": "Expreso, リマ, ペルー",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-13",
+    "id": "ja-news-14",
     "lang": "ja",
     "title": "One Young World日本アンバサダーがAIを活用してCOVID-19に挑む",
     "content": "One Young World, 東京, 日本",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-14",
+    "id": "ja-news-15",
     "lang": "ja",
     "title": "COVID-19対応の最前線に立つ北米アンバサダーたち",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-15",
+    "id": "ja-news-16",
     "lang": "ja",
     "title": "7月のアンバサダー・オブ・ザ・マンス",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-16",
+    "id": "ja-news-17",
     "lang": "ja",
     "title": "7月に開催されたOYWのグローバルデジタルイベントに数千人が参加：見逃した内容を振り返る",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-17",
+    "id": "ja-news-18",
     "lang": "ja",
     "title": "One Young World東京2020カーカス",
     "content": "One Young World",
     "url": "/ja/news"
   },
   {
-    "id": "ja-news-18",
+    "id": "ja-news-19",
     "lang": "ja",
     "title": "One Young World東京2020カーカスでのVirufyプレゼンテーション",
     "content": "One Young World, 東京, 日本",

@@ -6,6 +6,13 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
+      title: 'Article published on Wiley Online Library',
+      date: 'July 2026',
+      subText: '',
+      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
+      year: 2026,
+    },
+    {
       title:
         'Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai',
       date: 'May 2026',
