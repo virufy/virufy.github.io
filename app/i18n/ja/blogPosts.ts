@@ -412,6 +412,115 @@ const blogPosts: Record<string, Post> = {
     </ul>
   `,
   },
+  'bringing-respiratory-screening-to-the-communities-that-need-it-most': {
+    slug: 'bringing-respiratory-screening-to-the-communities-that-need-it-most',
+    title:
+      'Bringing Respiratory Screening to the Communities That Need It Most',
+    description:
+      'How AI-powered cough analysis could change what early detection looks like for low-income communities worldwide.',
+    date: 'July 2026',
+    content: `
+    <p>
+      Respiratory disease does not distribute itself evenly. The communities carrying the highest burden of conditions like COPD, tuberculosis, and chronic respiratory infection are also, consistently, the ones with the least access to the tools that catch those conditions early. That overlap is not coincidental. It is the predictable result of a health system built around infrastructure that low-income communities have rarely had reliable access to.
+    </p>
+
+    <h2>The Access Problem in Respiratory Health</h2>
+
+    <p>
+      Diagnosing respiratory disease in a clinical setting requires equipment, trained personnel, and a functioning referral pathway. Spirometry machines need calibration and maintenance. Chest imaging requires radiology infrastructure. Specialist consultations require specialists. In low-income communities, whether in rural sub-Saharan Africa, underserved urban neighborhoods in the United States, or remote regions across South and Southeast Asia, one or more of these requirements is frequently absent.
+    </p>
+
+    <p>
+      The consequence is not that respiratory disease is rarer in these communities. It goes undetected longer, progresses further before anyone intervenes, and is treated at the stage when outcomes are worst and costs are highest. A condition that is manageable when caught early becomes debilitating when caught late. That difference in timing is largely a difference in access.
+    </p>
+
+    <h2>What Changes When the Tool Is a Phone</h2>
+
+    <p>
+      Research from institutions including MIT and Cambridge has demonstrated that AI models trained on cough and breathing recordings can detect patterns associated with respiratory conditions with meaningful accuracy. The acoustic characteristics of a cough change measurably when airways are inflamed or obstructed, and those changes are present in the audio signal even when symptoms feel mild.
+    </p>
+
+    <p>
+      The device required to capture that audio is a smartphone. Smartphone penetration in low-income countries has grown substantially over the past decade and continues to rise. This matters because it means the distribution network for a cough-based screening tool already exists in the communities that need it most, without requiring new clinical equipment, trained technicians, or a referral system to activate it.
+    </p>
+
+    <p>
+      A community health worker conducting home visits does not need a spirometry machine if a validated screening tool on their phone can flag which patients warrant follow-up. A person in a rural area without nearby clinical access does not need to travel to a hospital for an initial assessment if that assessment can happen where they are. These are not marginal improvements. They represent a fundamentally different model of what early detection can look like for communities that have been outside the reach of conventional screening.
+    </p>
+
+    <h2>How Virufy Is Working Toward This</h2>
+
+    <p>
+      Virufy is a nonprofit developing AI-powered respiratory screening technology with the explicit goal of making it free and accessible to everyone, including the communities that commercial health technology rarely prioritizes. The organization is currently in the data collection phase, gathering cough and breathing recordings from contributors across diverse geographies, ages, and health profiles. Over 250,000 patients have been enrolled across clinical studies in five countries.
+    </p>
+
+    <p>
+      Clinical and regulatory approvals are required before any screening tool can be deployed, and that process is underway. The foundation being built now, a globally representative dataset that reflects the full diversity of the people the tool will eventually serve, is what determines whether the technology works equitably when it arrives.
+    </p>
+
+    <p>
+      A model trained without adequate data from low-income populations will not perform reliably for them. This is why participation in the data collection effort from contributors in these communities is not a secondary concern. It is central to whether the tool delivers on its promise.
+    </p>
+
+    <h2>What This Means for People Right Now</h2>
+
+    <p>
+      The tool is not yet available. But the work being done today is directly connected to whether low-income communities benefit from it when it is. Contributing a cough recording to Virufy's dataset is a concrete way to be part of that process, ensuring that the science being built reflects the communities that have the most to gain from it.
+    </p>
+
+    <p>
+      Respiratory disease has long been a condition where your outcome depends heavily on where you were born and how much money you have. The goal of this work is to make early detection something that is true regardless of either.
+    </p>
+
+    <h2>References</h2>
+
+    <ul>
+      <li>
+        World Health Organization —
+        <a
+          href="https://www.who.int/health-topics/chronic-respiratory-diseases"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          "Chronic Respiratory Diseases"
+        </a>
+      </li>
+
+      <li>
+        MIT Media Lab —
+        <a
+          href="https://www.media.mit.edu/publications/detecting-covid-19-from-cough-sounds/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          "Detecting COVID-19 via Cough Sounds Using Artificial Intelligence" (2020)
+        </a>
+      </li>
+
+      <li>
+        National Center for Biotechnology Information —
+        <a
+          href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8545201/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          "Cough Sound Detection and Diagnosis Using AI"
+        </a>
+      </li>
+
+      <li>
+        The Lancet —
+        <a
+          href="https://www.thelancet.com/journals/lancet/home"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          "Health Equity and Access in Low Income Settings"
+        </a>
+      </li>
+    </ul>
+  `,
+  },
 };
 
 export default blogPosts;
