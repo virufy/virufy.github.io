@@ -121,7 +121,7 @@ const AdvisorsGrid = ({ lang, advisorOrder }: AdvisorsGridProps) => {
             }
 
             const { img, name, role, texts, link } = advisor;
-            const advisorsInLastRow = totalAdvisors % 4; // for md screens and up
+            const advisorsInLastRow = filteredAdvisors.length % 4 || 4; // number of advisors in the last row (1-4)
             const advisorPositionInGrid = totalAdvisors - advisorsInLastRow;
             const isExpanded = expandedAdvisorIds.includes(id);
 
