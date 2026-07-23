@@ -95,13 +95,12 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         <section>
           <div className="relative">
             <ExportedImage
-              className=""
-              src={'/images/faq/BG_Faq_Top.png'}
-              alt="FAQ hero background"
-              fill
-              unoptimized={true}
-              priority
+              src="/images/faq/BG_Faq_Top.png"
+              alt=""
               basePath={basePath}
+              fill
+              className="object-cover"
+              priority
             />
             {/* Text and Input Container */}
             <div className="relative flex h-[400px] flex-col items-center justify-center px-5 text-center md:h-[500px] lg:h-[600px]">
