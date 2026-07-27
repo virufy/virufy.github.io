@@ -64,7 +64,7 @@ const AdvisorsPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
       <div className="relative flex flex-col items-center justify-center overflow-hidden pb-4 pt-20 md:pb-16 md:pt-40">
         <ExportedImage
-          src="/images/advisors/Advisor-Background-Hero.png"
+          src="/images/advisors/Advisor-Background-Hero.webp"
           alt=""
           basePath={basePath}
           fill

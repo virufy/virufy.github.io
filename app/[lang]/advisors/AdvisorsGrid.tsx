@@ -121,27 +121,50 @@ const AdvisorsGrid = ({ lang, advisorOrder }: AdvisorsGridProps) => {
             }
 
             const { img, name, role, texts, link } = advisor;
-            const advisorsInLastRow = filteredAdvisors.length % 4 || 4; // number of advisors in the last row (1-4)
-            const advisorPositionInGrid = totalAdvisors - advisorsInLastRow;
+            const mobilePerRow = 2;
+            const mdPerRow = 3;
+            const lgPerRow = 4;
+
+            const mobileLastRow = totalAdvisors % mobilePerRow || mobilePerRow;
+            const mdLastRow = totalAdvisors % mdPerRow || mdPerRow;
+            const lgLastRow = totalAdvisors % lgPerRow || lgPerRow;
+
+            const mobileRowStart = totalAdvisors - mobileLastRow;
+            const mdRowStart = totalAdvisors - mdLastRow;
+            const lgRowStart = totalAdvisors - lgLastRow;
+
+            const isMobileRowStart = index === mobileRowStart;
+            const isMdRowStart = index === mdRowStart;
+            const isLgRowStart = index === lgRowStart;
+
             const isExpanded = expandedAdvisorIds.includes(id);
 
             return (
               <div
                 key={id}
-                className={`col-span-2 overflow-hidden bg-transparent text-center ${totalAdvisors % 2 != 0 && index + 1 == totalAdvisors ? 'col-start-2' : ''} ${
-                  advisorsInLastRow == 1 && index == advisorPositionInGrid
-                    ? 'md:col-start-4'
-                    : `${
-                        advisorsInLastRow == 2 && index == advisorPositionInGrid
-                          ? 'md:col-start-3'
-                          : `${
-                              advisorsInLastRow == 3 &&
-                              index == advisorPositionInGrid
-                                ? 'md:col-start-2'
-                                : 'md:col-start-auto'
-                            }`
-                      }`
-                } `} // ^ logic for centering the last row of advisors using grid positioning
+                className={`col-span-2 text-center ${
+                  isMobileRowStart && mobileLastRow === 1
+                    ? 'col-start-2'
+                    : 'col-start-auto'
+                } ${
+                  isMdRowStart
+                    ? mdLastRow === 1
+                      ? 'md:col-start-3'
+                      : mdLastRow === 2
+                        ? 'md:col-start-2'
+                        : 'md:col-start-auto'
+                    : 'md:col-start-auto'
+                } ${
+                  isLgRowStart
+                    ? lgLastRow === 1
+                      ? 'lg:col-start-4'
+                      : lgLastRow === 2
+                        ? 'lg:col-start-3'
+                        : lgLastRow === 3
+                          ? 'lg:col-start-2'
+                          : 'lg:col-start-auto'
+                    : 'lg:col-start-auto'
+                } `}
               >
                 {/* Advisor Headshot */}
                 <div
