@@ -10,6 +10,13 @@ const publications: Publications = {
   publicationsCards: [
     {
       title:
+        'التشخيص الصوتي المدعوم بالذكاء الاصطناعي من أجل صحة الجهاز التنفسي العالمية',
+      date: 'يونيو 2026',
+      url: '/en/publications/virufy-white-paper-2026',
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
         'تحليل السعال بكفاءة في استخدام البيانات من خلال التعلم النشط والتجزئة',
       date: 'مارس 2026',
       url: '/en/publications/data-efficient-cough-ai',

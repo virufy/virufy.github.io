@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: '世界の呼吸器健康のためのAI音響診断',
+      date: 'June 2026',
+      url: '/en/publications/virufy-white-paper-2026',
+      linkText: '続きを読む',
+    },
+    {
       title:
         'アクティブラーニングとセグメンテーションによるデータ効率の高い咳分析',
       date: '2026年3月',

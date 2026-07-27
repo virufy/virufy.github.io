@@ -12,6 +12,13 @@ const publications: Publications = {
       title:
         'Análisis de tos eficiente en datos mediante aprendizaje activo y segmentación',
       date: 'Marzo de 2026',
+      url: 'https://virufy.org/en/publications/data-efficient-cough-ai/',
+      linkText: 'Leer más',
+    },
+    {
+      title:
+        'Análisis de tos eficiente en datos mediante aprendizaje activo y segmentación',
+      date: 'Marzo de 2026',
       url: '/en/publications/data-efficient-cough-ai',
       linkText: 'Leer más',
     },

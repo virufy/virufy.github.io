@@ -9,6 +9,12 @@ const publications: Publications = {
   },
   publicationsCards: [
     {
+      title: 'AI-Powered Acoustic Diagnostics for Global Respiratory Health',
+      date: 'June 2026',
+      url: '/en/publications/virufy-white-paper-2026',
+      linkText: 'Read More',
+    },
+    {
       title:
         'Data‑Efficient Cough Analysis Through Active Learning and Segmentation',
       date: 'March 2026',
