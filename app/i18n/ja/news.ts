@@ -39,7 +39,7 @@ const sevenNewsContent: SevenNewsPage = {
       title: 'Wiley Online Libraryに論文を掲載',
       date: '2026年7月',
       subText:
-        'ダブル・ピボット：大学発ヘルスケアAIベンチャーにおけるNSF I-Corps顧客発見プロセスの混合研究法によるケーススタディ',
+        'スタートアップの教訓を科学へ：NSF I-Corpsでの経験が査読付き論文として発表されました。「顧客発見（カスタマー・ディスカバリー）」は単なる検証にとどまらず、ベンチャー企業全体を変革し得るものです。',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
