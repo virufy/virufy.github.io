@@ -40,7 +40,7 @@ const sevenNewsContent: SevenNewsPage = {
       title: 'Artículo publicado en Wiley Online Library',
       date: 'Julio de 2026',
       subText:
-        'El doble giro: un estudio de caso de métodos mixtos sobre el proceso de descubrimiento de clientes del NSF I-Corps en una empresa universitaria de IA para la salud',
+        'Convertir las lecciones de las startups en ciencia: nuestra experiencia en NSF I-Corps ya es una publicación revisada por pares. El descubrimiento de clientes no es solo validación: puede transformar todo un proyecto empresarial.',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',

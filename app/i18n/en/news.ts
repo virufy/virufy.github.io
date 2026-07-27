@@ -39,7 +39,7 @@ const sevenNewsContent: SevenNewsPage = {
       title: 'Article published on Wiley Online Library',
       date: 'July 2026',
       subText:
-        'The Double Pivot: A Mixed-Methods Case Study of the NSF I-Corps Customer Discovery Process in a University-Spun Health AI Venture',
+        'Turning Startup Lessons into Science: Our NSF I-Corps Experience Is Now a Peer-Reviewed Publication. Customer Discovery Isn’t Just Validation—It Can Transform an Entire Venture.',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
