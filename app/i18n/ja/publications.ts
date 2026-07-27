@@ -12,28 +12,28 @@ const PublicationsContent: PublicationsPage = {
   },
   pillSelector: {
     options: [
-      { id: 'news', label: 'News' },
-      { id: 'publications', label: 'Publications' },
-      { id: 'blogs', label: 'Blogs' },
+      { id: 'news', label: 'ニュース' },
+      { id: 'publications', label: '論文・出版物' },
+      { id: 'blogs', label: 'ブログ' },
     ],
-    defaultOption: 'publications',
+    defaultOption: 'news',
   },
 
   filters: {
-    filterByYearLabel: 'Filter by Year:',
-    allYearsOption: 'All Years',
-    sortByLabel: 'Sort by:',
-    newestFirst: 'Newest to Oldest',
-    oldestFirst: 'Oldest to Newest',
+    filterByYearLabel: '年で絞り込む:',
+    allYearsOption: 'すべての年',
+    sortByLabel: '並び替え：',
+    newestFirst: '新しい順',
+    oldestFirst: '古い順',
   },
 
   section5: {
-    title: 'Inspired by the work? Help shape what comes next.',
-    text: 'Join researchers, designers, engineers, and advocates working together to advance global respiratory health.',
-    button: 'Join Our Team',
+    title: 'この取り組みに共感したら、私たちと一緒に次の一歩をつくりませんか。',
+    text: '研究者、デザイナー、エンジニア、支援者など、さまざまなメンバーが協力しながら、世界の呼吸器ヘルスの向上に取り組んでいます。',
+    button: 'チームに参加する',
   },
 
-  emptyMessage: 'No news articles found for the selected filters.',
+  emptyMessage: '選択されたフィルターに一致するニュース記事が見つかりません。',
 
   newsCards: [
     {
