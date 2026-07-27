@@ -31,67 +31,74 @@
     "id": "ja-media-publications-1",
     "lang": "ja",
     "title": "出版物",
+    "content": "世界の呼吸器健康のためのAI音響診断",
+    "url": "/en/publications/virufy-white-paper-2026"
+  },
+  {
+    "id": "ja-media-publications-2",
+    "lang": "ja",
+    "title": "出版物",
     "content": "アクティブラーニングとセグメンテーションによるデータ効率の高い咳分析",
     "url": "/en/publications/data-efficient-cough-ai"
   },
   {
-    "id": "ja-media-publications-2",
+    "id": "ja-media-publications-3",
     "lang": "ja",
     "title": "出版物",
     "content": "スマートフォンベースのAIデータ収集における臨床試験参加登録の改善：ナッジ（行動経済学的介入）に基づく介入の方法論的分析",
     "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
   },
   {
-    "id": "ja-media-publications-3",
+    "id": "ja-media-publications-4",
     "lang": "ja",
     "title": "出版物",
     "content": "COVID-19自動検出のための階層型マルチモデルトランスフォーマー",
     "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
   },
   {
-    "id": "ja-media-publications-4",
+    "id": "ja-media-publications-5",
     "lang": "ja",
     "title": "出版物",
     "content": "Covid 19計算機 -- 米国の社会経済に与えるポジティブな影響",
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
-    "id": "ja-media-publications-5",
+    "id": "ja-media-publications-6",
     "lang": "ja",
     "title": "出版物",
     "content": "咳からCOVID-19を分類するための大規模集約データセットを用いたディープラーニング",
     "url": "https://arxiv.org/abs/2201.01669"
   },
   {
-    "id": "ja-media-publications-6",
+    "id": "ja-media-publications-7",
     "lang": "ja",
     "title": "出版物",
     "content": "新しいCOVID-19計算機を使用した、COVID-19事前スクリーニングソリューション（AI/ML）の米国の社会経済的影響の測定",
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
-    "id": "ja-media-publications-7",
+    "id": "ja-media-publications-8",
     "lang": "ja",
     "title": "出版物",
     "content": "COVID-19咳AIシステムの展開における課題と機会",
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
   },
   {
-    "id": "ja-media-publications-8",
+    "id": "ja-media-publications-9",
     "lang": "ja",
     "title": "出版物",
     "content": "Virufy: 咳からCOVID-19を検出するAIのためのクラウドソーシングおよび臨床データセットのグローバル適用性",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "ja-media-publications-9",
+    "id": "ja-media-publications-10",
     "lang": "ja",
     "title": "出版物",
     "content": "Fusical: マルチモーダル融合によるビデオ感情分析",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "ja-media-publications-10",
+    "id": "ja-media-publications-11",
     "lang": "ja",
     "title": "出版物",
     "content": "ディープラーニングによる表情認識",

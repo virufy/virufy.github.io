@@ -31,67 +31,74 @@
     "id": "ar-media-publications-1",
     "lang": "ar",
     "title": "المنشورات",
+    "content": "التشخيص الصوتي المدعوم بالذكاء الاصطناعي من أجل صحة الجهاز التنفسي العالمية",
+    "url": "/en/publications/virufy-white-paper-2026"
+  },
+  {
+    "id": "ar-media-publications-2",
+    "lang": "ar",
+    "title": "المنشورات",
     "content": "تحليل السعال بكفاءة في استخدام البيانات من خلال التعلم النشط والتجزئة",
     "url": "/en/publications/data-efficient-cough-ai"
   },
   {
-    "id": "ar-media-publications-2",
+    "id": "ar-media-publications-3",
     "lang": "ar",
     "title": "المنشورات",
     "content": "تحسين التسجيل في التجارب السريرية لجمع البيانات بالذكاء الاصطناعي المعتمد على الهواتف الذكية: تحليل منهجي للتدخلات القائمة على التوجيه السلوكي (Nudge)",
     "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
   },
   {
-    "id": "ar-media-publications-3",
+    "id": "ar-media-publications-4",
     "lang": "ar",
     "title": "المنشورات",
     "content": "محول متعدد النماذج الهرمي للكشف التلقائي عن COVID-19",
     "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
   },
   {
-    "id": "ar-media-publications-4",
+    "id": "ar-media-publications-5",
     "lang": "ar",
     "title": "المنشورات",
     "content": "آلة حساب COVID-19 -- التأثير الإيجابي على الاقتصاد والمجتمع في الولايات المتحدة",
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
-    "id": "ar-media-publications-5",
+    "id": "ar-media-publications-6",
     "lang": "ar",
     "title": "المنشورات",
     "content": "استخدام التعلم العميق مع مجموعات بيانات كبيرة مجمعة لتصنيف COVID-19 من السعال",
     "url": "https://arxiv.org/abs/2201.01669"
   },
   {
-    "id": "ar-media-publications-6",
+    "id": "ar-media-publications-7",
     "lang": "ar",
     "title": "المنشورات",
     "content": "استخدام حاسبة COVID-19 جديدة لقياس التأثير الاجتماعي والاقتصادي الإيجابي لحل فحص COVID-19 (AI/ML) في الولايات المتحدة",
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
-    "id": "ar-media-publications-7",
+    "id": "ar-media-publications-8",
     "lang": "ar",
     "title": "المنشورات",
     "content": "التحديات والفرص في نشر أنظمة الذكاء الاصطناعي للكشف عن COVID-19 من السعال",
     "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8421112/"
   },
   {
-    "id": "ar-media-publications-8",
+    "id": "ar-media-publications-9",
     "lang": "ar",
     "title": "المنشورات",
     "content": "Virufy: إمكانية التطبيق العالمي لمجموعات البيانات السريرية والجمعية من أجل اكتشاف الذكاء الاصطناعي لكوفيد-19 من خلال السعال",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "ar-media-publications-9",
+    "id": "ar-media-publications-10",
     "lang": "ar",
     "title": "المنشورات",
     "content": "Fusical: الدمج متعدد الوسائط للمشاعر في الفيديو",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "ar-media-publications-10",
+    "id": "ar-media-publications-11",
     "lang": "ar",
     "title": "المنشورات",
     "content": " التعرف على تعبيرات الوجه باستخدام التعلم العميق",
