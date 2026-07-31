@@ -1,5 +1,5 @@
 import { type Locale } from '@/i18n-config';
-import blogPosts from '@/app/i18n/types/BlogPosts';
+import blogPosts from '@/app/i18n/en/blogPosts';
 import { i18n } from '@/i18n-config';
 import paperBackground from '@/public/images/blog/paper.png';
 import ExportedImage from 'next-image-export-optimizer';

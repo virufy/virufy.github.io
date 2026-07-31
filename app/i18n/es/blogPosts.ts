@@ -1,6 +1,41 @@
-import { type Post } from '@/app/i18n/types/BlogPosts';
+import type { I18nData } from '../types';
 
-const blogPosts: Record<string, Post> = {
+export const blogPageContent = {
+  hero: {
+    title: 'Our Blog',
+    subtitle:
+      'Stories, research insights, and updates on advancing AI-powered respiratory health.',
+    bgImage: '/icons/icon-news-bg.png',
+    tag: 'Insights & Updates',
+    tagIcon: '/icons/Blog-icon.png',
+  },
+  pillSelector: {
+    options: [
+      { id: 'news', label: 'News' },
+      { id: 'publications', label: 'Publications' },
+      { id: 'blogs', label: 'Blogs' },
+    ],
+    defaultOption: 'news',
+  },
+
+  filters: {
+    filterByYearLabel: 'Filter by Year:',
+    allYearsOption: 'All Years',
+    sortByLabel: 'Sort by:',
+    newestFirst: 'Newest to Oldest',
+    oldestFirst: 'Oldest to Newest',
+  },
+
+  section5: {
+    title: 'Inspired by the work? Help shape what comes next.',
+    text: 'Join researchers, designers, engineers, and advocates working together to advance global respiratory health.',
+    button: 'Join Our Team',
+  },
+
+  emptyMessage: 'No news articles found for the selected filters.',
+} satisfies I18nData['blogPosts']['blogPageContent'];
+
+export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
   'silent-smog-hidden-impact': {
     slug: 'silent-smog-hidden-impact',
     title: 'Silent Smog: The Hidden Impact on Your Lungs',
@@ -522,5 +557,4 @@ const blogPosts: Record<string, Post> = {
   `,
   },
 };
-
 export default blogPosts;

@@ -1,6 +1,41 @@
-import { type Post } from '@/app/i18n/types/BlogPosts';
+import type { I18nData } from '../types';
 
-const blogPosts: Record<string, Post> = {
+export const blogPageContent = {
+  hero: {
+    title: 'Our Blog',
+    subtitle:
+      'Stories, research insights, and updates on advancing AI-powered respiratory health.',
+    bgImage: '/icons/icon-news-bg.png',
+    tag: 'Insights & Updates',
+    tagIcon: '/icons/Blog-icon.png',
+  },
+  pillSelector: {
+    options: [
+      { id: 'news', label: 'ニュース' },
+      { id: 'publications', label: '論文・出版物' },
+      { id: 'blogs', label: 'ブログ' },
+    ],
+    defaultOption: 'news',
+  },
+
+  filters: {
+    filterByYearLabel: '年で絞り込む:',
+    allYearsOption: 'すべての年',
+    sortByLabel: '並び替え：',
+    newestFirst: '新しい順',
+    oldestFirst: '古い順',
+  },
+
+  section5: {
+    title: 'この取り組みに共感したら、私たちと一緒に次の一歩をつくりませんか。',
+    text: '研究者、デザイナー、エンジニア、支援者など、さまざまなメンバーが協力しながら、世界の呼吸器ヘルスの向上に取り組んでいます。',
+    button: 'チームに参加する',
+  },
+
+  emptyMessage: '該当するニュース記事はありません。',
+} satisfies I18nData['blogPosts']['blogPageContent'];
+
+export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
   'silent-smog-hidden-impact': {
     slug: 'silent-smog-hidden-impact',
     title: 'Silent Smog: The Hidden Impact on Your Lungs',
@@ -522,5 +557,4 @@ const blogPosts: Record<string, Post> = {
   `,
   },
 };
-
 export default blogPosts;
