@@ -24,6 +24,7 @@ export const blogPageContent = {
     sortByLabel: '並び替え：',
     newestFirst: '新しい順',
     oldestFirst: '古い順',
+    searchPlaceholder: 'ブログのタイトルと字幕を検索',
   },
 
   section5: {

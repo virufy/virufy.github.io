@@ -21,6 +21,7 @@ export interface BlogPostsPageContent {
     sortByLabel: string;
     newestFirst: string;
     oldestFirst: string;
+    searchPlaceholder: string;
   };
   section5: {
     title: string;

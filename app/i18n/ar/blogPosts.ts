@@ -19,11 +19,12 @@ export const blogPageContent = {
   },
 
   filters: {
-    filterByYearLabel: 'Filter by Year:',
-    allYearsOption: 'All Years',
-    sortByLabel: 'Sort by:',
-    newestFirst: 'Newest to Oldest',
-    oldestFirst: 'Oldest to Newest',
+    filterByYearLabel: 'تصفية حسب السنة:',
+    allYearsOption: 'كل السنوات',
+    sortByLabel: 'ترتيب حسب:',
+    newestFirst: 'الأحدث أولاً',
+    oldestFirst: 'الأقدم أولاً',
+    searchPlaceholder: 'ابحث عن عناوين ومحتوى المقالات',
   },
 
   section5: {

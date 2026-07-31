@@ -24,6 +24,7 @@ export const blogPageContent = {
     sortByLabel: 'Sort by:',
     newestFirst: 'Newest to Oldest',
     oldestFirst: 'Oldest to Newest',
+    searchPlaceholder: 'Search blog titles and subtitles',
   },
 
   section5: {

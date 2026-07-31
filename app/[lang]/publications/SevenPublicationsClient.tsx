@@ -57,6 +57,11 @@ const getSortableDate = (dateStr: string): string => {
 };
 
 const SevenPublicationsClient = ({ content, params }: Props) => {
+  const heroTitleWords = useMemo(() => {
+    const words = content.hero.title.trim().split(/\s+/);
+    return words.filter(Boolean);
+  }, [content.hero.title]);
+
   const newsCards = useMemo(
     () =>
       content.newsCards.filter((card) => card.contentType === 'publications'),
@@ -133,9 +138,14 @@ const SevenPublicationsClient = ({ content, params }: Props) => {
 
           {/* Title */}
           <h1 className="font-montserrat text-4xl font-normal tracking-[0.26px] text-black sm:text-5xl md:text-[52px] md:leading-[75px]">
-            Virufy{' '}
+            {heroTitleWords.length > 1 && (
+              <span className="text-black">
+                {heroTitleWords.slice(0, -1).join(' ')}
+              </span>
+            )}
+            {heroTitleWords.length > 1 && ' '}
             <span className="bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent">
-              Publications
+              {heroTitleWords[heroTitleWords.length - 1] ?? ''}
             </span>
           </h1>
           <p className="font-inter mx-auto mt-4 max-w-2xl text-base font-normal leading-[32.5px] tracking-[-0.45px] text-gray-600 sm:text-xl">

@@ -19,11 +19,12 @@ export const blogPageContent = {
   },
 
   filters: {
-    filterByYearLabel: 'Filter by Year:',
-    allYearsOption: 'All Years',
-    sortByLabel: 'Sort by:',
-    newestFirst: 'Newest to Oldest',
-    oldestFirst: 'Oldest to Newest',
+    filterByYearLabel: 'Filtrar por año:',
+    allYearsOption: 'Todos los años',
+    sortByLabel: 'Ordenar por:',
+    newestFirst: 'Más recientes primero',
+    oldestFirst: 'Más antiguos primero',
+    searchPlaceholder: 'Buscar títulos y subtítulos del blog',
   },
 
   section5: {

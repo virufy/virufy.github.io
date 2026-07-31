@@ -21,6 +21,11 @@ export default function BlogPage({
 
   const postList = useMemo(() => Object.values(posts), [posts]);
 
+  const heroTitleWords = useMemo(() => {
+    const words = content.hero.title.trim().split(/\s+/);
+    return words.filter(Boolean);
+  }, [content.hero.title]);
+
   const extractYear = (dateStr?: string): number => {
     if (!dateStr) return 0;
     const match = dateStr.match(/\b(19|20)\d{2}\b/);
@@ -77,9 +82,20 @@ export default function BlogPage({
 
   const [selectedYear, setSelectedYear] = useState<number | 'all'>('all');
   const [sortBy, setSortBy] = useState<'newest' | 'oldest'>('newest');
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const normalizedSearchQuery = searchQuery.trim().toLowerCase();
 
   const filteredAndSortedPosts = useMemo(() => {
     let result: Post[] = [...postList];
+
+    if (normalizedSearchQuery) {
+      result = result.filter((post) => {
+        const searchableText =
+          `${post.title} ${post.description}`.toLowerCase();
+        return searchableText.includes(normalizedSearchQuery);
+      });
+    }
 
     if (selectedYear !== 'all') {
       result = result.filter((post) => extractYear(post.date) === selectedYear);
@@ -94,7 +110,7 @@ export default function BlogPage({
     });
 
     return result;
-  }, [postList, selectedYear, sortBy]);
+  }, [postList, selectedYear, sortBy, normalizedSearchQuery]);
 
   return (
     <main>
@@ -127,8 +143,14 @@ export default function BlogPage({
           </div>
 
           <h1 className="font-montserrat text-4xl font-normal tracking-[0.26px] text-black sm:text-5xl md:text-[52px] md:leading-[75px]">
+            {heroTitleWords.length > 1 && (
+              <span className="text-black">
+                {heroTitleWords.slice(0, -1).join(' ')}
+              </span>
+            )}
+            {heroTitleWords.length > 1 && ' '}
             <span className="bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent">
-              {content.hero.title}
+              {heroTitleWords[heroTitleWords.length - 1] ?? ''}
             </span>
           </h1>
           <p className="font-inter mx-auto mt-4 max-w-2xl text-base font-normal leading-[32.5px] tracking-[-0.45px] text-gray-600 sm:text-xl">
@@ -159,7 +181,7 @@ export default function BlogPage({
                 } else if (option.id === 'blogs') {
                   href = `/${lang}/blog/`;
                 } else {
-                  href = `/${lang}/news/${option.id}`;
+                  href = `/${lang}/news`;
                 }
 
                 return (
@@ -179,53 +201,77 @@ export default function BlogPage({
 
       <section className="w-full bg-gray-50 px-4 py-16 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] sm:px-8 sm:py-20 md:px-16 md:py-24 lg:px-[120px] lg:py-[100px]">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-start sm:gap-8">
-            <div className="flex items-center gap-2">
-              <span className="font-inter text-base font-medium leading-[24px] tracking-[-0.31px] text-gray-700">
-                {content.filters.filterByYearLabel}
-              </span>
-              <select
-                value={selectedYear}
-                onChange={(e) =>
-                  setSelectedYear(
-                    e.target.value === 'all' ? 'all' : Number(e.target.value)
-                  )
-                }
-                className="font-inter appearance-none rounded-2xl border border-gray-300 bg-white bg-no-repeat px-4 py-1.5 pr-10 text-base font-normal leading-[24px] tracking-[-0.31px] text-gray-800 shadow-lg focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-300"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%231F2937' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
-                  backgroundPosition: 'right 0.75rem center',
-                  backgroundSize: '1.5rem 1.5rem',
-                }}
-              >
-                <option value="all">{content.filters.allYearsOption}</option>
-                {years.map((year) => (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                ))}
-              </select>
-            </div>
+          <div className="mb-12 flex flex-col gap-4">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-start sm:gap-8">
+              <div className="flex items-center gap-2">
+                <span className="font-inter text-base font-medium leading-[24px] tracking-[-0.31px] text-gray-700">
+                  {content.filters.filterByYearLabel}
+                </span>
+                <select
+                  value={selectedYear}
+                  onChange={(e) =>
+                    setSelectedYear(
+                      e.target.value === 'all' ? 'all' : Number(e.target.value)
+                    )
+                  }
+                  className="font-inter appearance-none rounded-2xl border border-gray-300 bg-white bg-no-repeat px-4 py-1.5 pr-10 text-base font-normal leading-[24px] tracking-[-0.31px] text-gray-800 shadow-lg focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-300"
+                  style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%231F2937' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
+                    backgroundPosition: 'right 0.75rem center',
+                    backgroundSize: '1.5rem 1.5rem',
+                  }}
+                >
+                  <option value="all">{content.filters.allYearsOption}</option>
+                  {years.map((year) => (
+                    <option key={year} value={year}>
+                      {year}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-            <div className="flex items-center gap-2">
-              <span className="font-inter text-base font-medium leading-[24px] tracking-[-0.31px] text-gray-700">
-                {content.filters.sortByLabel}
-              </span>
-              <select
-                value={sortBy}
-                onChange={(e) =>
-                  setSortBy(e.target.value as 'newest' | 'oldest')
-                }
-                className="font-inter appearance-none rounded-2xl border border-gray-300 bg-white bg-no-repeat px-4 py-1.5 pr-10 text-base font-normal leading-[24px] tracking-[-0.31px] text-gray-800 shadow-lg focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-300"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%231F2937' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
-                  backgroundPosition: 'right 0.75rem center',
-                  backgroundSize: '1.5rem 1.5rem',
-                }}
-              >
-                <option value="newest">{content.filters.newestFirst}</option>
-                <option value="oldest">{content.filters.oldestFirst}</option>
-              </select>
+              <div className="flex items-center gap-2">
+                <span className="font-inter text-base font-medium leading-[24px] tracking-[-0.31px] text-gray-700">
+                  {content.filters.sortByLabel}
+                </span>
+                <select
+                  value={sortBy}
+                  onChange={(e) =>
+                    setSortBy(e.target.value as 'newest' | 'oldest')
+                  }
+                  className="font-inter appearance-none rounded-2xl border border-gray-300 bg-white bg-no-repeat px-4 py-1.5 pr-10 text-base font-normal leading-[24px] tracking-[-0.31px] text-gray-800 shadow-lg focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-300"
+                  style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%231F2937' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
+                    backgroundPosition: 'right 0.75rem center',
+                    backgroundSize: '1.5rem 1.5rem',
+                  }}
+                >
+                  <option value="newest">{content.filters.newestFirst}</option>
+                  <option value="oldest">{content.filters.oldestFirst}</option>
+                </select>
+              </div>
+
+              <div className="ml-auto flex min-w-[280px] flex-1 items-center gap-2 rounded-2xl border border-gray-300 bg-white px-4 py-2 shadow-lg sm:max-w-[360px]">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5 text-gray-500"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="m20 20-3.5-3.5" strokeLinecap="round" />
+                </svg>
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder={content.filters.searchPlaceholder}
+                  aria-label={content.filters.searchPlaceholder}
+                  className="font-inter w-full border-none bg-transparent text-base font-normal leading-[24px] tracking-[-0.31px] text-gray-800 outline-none placeholder:text-gray-400"
+                />
+              </div>
             </div>
           </div>
 
