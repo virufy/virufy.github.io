@@ -1,9 +1,17 @@
 export interface JobListing {
   jobList: Job[];
-  titleImage: string;
+  title: {
+    before: string;
+    highlight: string;
+    after: string;
+  };
+  tag: string;
+  subtitle: string;
+  titlebuttonText: string;
   modal: JobModal;
   applyButtonText: string;
   jobDetailSectionTitles: JobDetailSectionTitles;
+  Banner: Banner;
 }
 
 export interface Job {
@@ -19,6 +27,7 @@ export interface JobModal {
 
 interface JobPosition {
   title: string;
+  remote: string;
   id: number;
 }
 
@@ -29,4 +38,10 @@ interface JobDetailSectionTitles {
   hours: string;
   questions: string;
   applyButtonText: string;
+}
+interface Banner {
+  title: string;
+  text: string;
+  buttonText: string;
+  url: string;
 }
