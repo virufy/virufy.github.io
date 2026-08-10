@@ -5,7 +5,7 @@ const amilsStory: AmilsStory = {
     tag: 'Meet Amil',
     title: [
       { type: 'text', text: 'Meet Our ' },
-      { type: 'span', text: 'Founder' },
+      { type: 'span', text: 'Founder & CEO' },
     ],
     text: 'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley. Specially Appointed Assistant Professor, Department of Engineering, University of Fukui, Japan',
   },

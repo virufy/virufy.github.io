@@ -5,7 +5,7 @@ const amilsStory: AmilsStory = {
     tag: 'Conoce a Amil',
     title: [
       { type: 'text', text: 'Conoce a nuestro ' },
-      { type: 'span', text: 'Fundador' },
+      { type: 'span', text: 'Fundador y CEO' },
     ],
     text: 'Candidato a Doctorado en Ingeniería, Universidad de Fukui, Japón. Exalumno de MBA y Maestría en Ingeniería (Ciencia de Datos) con doble titulación en UC Berkeley. Profesor asistente especialmente designado, Departamento de Ingeniería, Universidad de Fukui, Japón',
   },
