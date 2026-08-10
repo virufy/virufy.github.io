@@ -187,12 +187,12 @@ const JobList = ({
                     Style={'small'}
                   />
                 </div>
-                <div className="inline-flex w-fit px-3 py-1">
+                <div className="flex w-fit items-center py-1">
                   <img
-                    src="/icons/icon-ai.png"
-                    width={16}
-                    height={16}
-                    className=""
+                    src="/icons/HomeIcon.png"
+                    width={15}
+                    height={14}
+                    className="mr-1 h-[14px] w-[15px] shrink-0 items-center object-contain"
                     alt=""
                   />
                   <p className="px-0 text-xs text-[#16223A] sm:text-sm md:text-base">
