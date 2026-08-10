@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/dubai-map/static/css/main.323d7611.css",
-    "main.js": "/dubai-map/static/js/main.18237988.js",
-    "static/js/453.a97026df.chunk.js": "/dubai-map/static/js/453.a97026df.chunk.js",
+    "main.css": "/dubai-map/static/css/main.710ad2a9.css",
+    "main.js": "/dubai-map/static/js/main.657d8ca9.js",
+    "static/js/453.4706647a.chunk.js": "/dubai-map/static/js/453.4706647a.chunk.js",
     "static/media/virufyLogo.png": "/dubai-map/static/media/virufyLogo.384f765ff157cd378c91.png",
+    "static/media/qrcode.png": "/dubai-map/static/media/qrcode.c2732cefe4dd734a151b.png",
     "index.html": "/dubai-map/index.html",
-    "main.323d7611.css.map": "/dubai-map/static/css/main.323d7611.css.map",
-    "main.18237988.js.map": "/dubai-map/static/js/main.18237988.js.map",
-    "453.a97026df.chunk.js.map": "/dubai-map/static/js/453.a97026df.chunk.js.map"
+    "main.710ad2a9.css.map": "/dubai-map/static/css/main.710ad2a9.css.map",
+    "main.657d8ca9.js.map": "/dubai-map/static/js/main.657d8ca9.js.map",
+    "453.4706647a.chunk.js.map": "/dubai-map/static/js/453.4706647a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.323d7611.css",
-    "static/js/main.18237988.js"
+    "static/css/main.710ad2a9.css",
+    "static/js/main.657d8ca9.js"
   ]
 }

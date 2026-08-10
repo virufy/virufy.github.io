@@ -4,6 +4,8 @@ import path from 'path';
 //Note: to get these to work you need to do npm run build, then npm run preview
 
 const redirects = [
+  { from: 'disease-app', to: 'dubai-app' },
+  { from: 'disease-map', to: 'dubai-map' },
   { from: 'null', to: 'en' }, //just in case the language check doesnt work correctly
   { from: 'team', to: 'en/advisors' },
   { from: 'team/', to: 'en/advisors/' },
