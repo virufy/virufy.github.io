@@ -113,7 +113,7 @@ export default function BlogPage({
   console.log('BLOG BG:', JSON.stringify(content.hero.bgImage));
   return (
     <main>
-      <section className="relative w-full shadow-xl">
+      <section className="relative w-full md:shadow-xl">
         <div className="absolute left-0 top-0 h-full w-full overflow-hidden">
           <ExportedImage
             src={content.hero.bgImage}

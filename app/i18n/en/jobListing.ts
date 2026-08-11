@@ -15,6 +15,10 @@ const jobListing: JobListing = {
     yes: 'Yes',
     no: 'No',
   },
+  placeholder: 'Search for a role...',
+  positiontitle: 'Open Positions',
+  positionsubtitle:
+    'If a role resonates with you, we would love to hear from you. We welcome contributors from all backgrounds and value diverse experiences.',
   applyButtonText: 'Apply',
   Banner: {
     title: "Don't See a Perfect Fit?",

@@ -9,15 +9,18 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Text from '../components/Text';
+import { Home, Search } from 'lucide-react';
 
 const JobList = ({
   lang,
   jobList,
   modal,
+  placeholder,
 }: {
   lang: Locale;
   jobList: Job[];
   modal: JobModal;
+  placeholder: string;
 }) => {
   const router = useRouter();
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -138,7 +141,7 @@ const JobList = ({
                   key={category}
                   type="button"
                   onClick={() => setSelectedCategory(category)}
-                  className={`rounded-full px-4 py-2 text-xs font-semibold transition md:text-sm ${
+                  className={`rounded-full px-4 py-2 text-xs font-semibold transition md:text-base lg:text-lg ${
                     isActive
                       ? 'bg-[#16223A] text-white'
                       : 'border border-[#16223A]/30 bg-transparent text-[#16223A] hover:bg-[#16223A]/10'
@@ -151,13 +154,16 @@ const JobList = ({
           </div>
 
           <div className="w-full md:w-[35%] lg:w-[40%]">
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(event) => setSearchTerm(event.target.value)}
-              placeholder="Search jobs"
-              className="w-full rounded-full border border-[#16223A]/20 bg-white px-4 py-2 text-sm text-[#16223A] placeholder:text-[#16223A]/60 focus:border-[#16223A] focus:outline-none"
-            />
+            <div className="flex items-center gap-2 rounded-full border border-[#16223A]/20 bg-white px-4 py-2 text-[#16223A] focus-within:border-[#16223A]">
+              <Search className="h-5 w-5 text-black" aria-hidden="true" />
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(event) => setSearchTerm(event.target.value)}
+                placeholder={placeholder}
+                className="w-full bg-transparent text-base text-[#16223A] placeholder:text-[#16223A]/60 focus:outline-none md:text-lg"
+              />
+            </div>
           </div>
         </div>
 
@@ -188,14 +194,7 @@ const JobList = ({
                   />
                 </div>
                 <div className="flex w-fit items-center py-0.5 md:py-1">
-                  <ExportedImage
-                    src="/icons/HomeIcon.png"
-                    width={15}
-                    height={14}
-                    className="mr-1 h-[14px] w-[15px] shrink-0 items-center object-contain"
-                    alt="Location icon"
-                    basePath={basePath}
-                  />
+                  <Home className="mr-1 h-4 w-4 text-[#16223A]" />
                   <p className="px-0 text-[12px] text-[#16223A] sm:text-sm md:text-base">
                     {remote}
                   </p>

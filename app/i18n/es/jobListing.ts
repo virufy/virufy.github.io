@@ -15,6 +15,10 @@ const jobListing: JobListing = {
     yes: 'Sí',
     no: 'No',
   },
+  placeholder: 'Buscar un puesto...',
+  positiontitle: 'Posiciones abiertas',
+  positionsubtitle:
+    'Si un puesto te interesa, nos encantaría saber de ti. Damos la bienvenida a colaboradores de todos los orígenes y valoramos experiencias diversas.',
   applyButtonText: 'Postularse',
   Banner: {
     title: '¿No ves un ajuste perfecto?',

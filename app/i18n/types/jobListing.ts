@@ -7,15 +7,19 @@ export interface JobListing {
   };
   tag: string;
   subtitle: string;
+  positiontitle: string;
+  positionsubtitle: string;
   titlebuttonText: string;
   modal: JobModal;
   applyButtonText: string;
   jobDetailSectionTitles: JobDetailSectionTitles;
   Banner: Banner;
+  placeholder: string;
 }
 
 export interface Job {
   category: string;
+
   positions: JobPosition[];
 }
 
