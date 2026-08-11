@@ -172,22 +172,22 @@ const JobList = ({
             <Link
               key={id}
               href={`/${lang}/join-us/${id}`}
-              className="flex h-[172px] flex-col rounded-2xl border border-[#16223A]/10 bg-white p-5 shadow-[0_10px_30px_rgba(20,32,55,0.08)] transition duration-200 hover:-translate-y-0.5 hover:border-[#16223A]/30 hover:bg-[#F7FBFF] md:p-6"
+              className="flex h-[138px] flex-col rounded-2xl border border-[#16223A]/10 bg-white p-4 shadow-[0_10px_30px_rgba(20,32,55,0.08)] transition duration-200 hover:-translate-y-0.5 hover:border-[#16223A]/30 hover:bg-[#F7FBFF] md:h-[172px] md:p-6"
             >
-              <div className="mb-3 inline-flex w-fit rounded-full border border-[#bcc7d4] bg-[#d9eaf8] px-3 py-1 text-[10px] font-semibold uppercase tracking-wide text-[#084b8a] md:text-xs">
+              <div className="mb-2 inline-flex w-fit rounded-full border border-[#bcc7d4] bg-[#d9eaf8] px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-[#084b8a] md:mb-3 md:px-3 md:py-1 md:text-xs">
                 {category}
               </div>
-              <div className="flex h-full flex-col gap-4">
+              <div className="flex h-full flex-col gap-2 md:gap-4">
                 <div className="flex h-full items-center">
                   <Text
                     TextClassProps={
-                      'text-[#16223A] text-xs sm:text-sm md:text-base px-0'
+                      'text-[#16223A] text-[13px] leading-5 sm:text-sm md:text-base px-0'
                     }
                     Text={title}
                     Style={'small'}
                   />
                 </div>
-                <div className="flex w-fit items-center py-1">
+                <div className="flex w-fit items-center py-0.5 md:py-1">
                   <img
                     src="/icons/HomeIcon.png"
                     width={15}
@@ -195,7 +195,7 @@ const JobList = ({
                     className="mr-1 h-[14px] w-[15px] shrink-0 items-center object-contain"
                     alt=""
                   />
-                  <p className="px-0 text-xs text-[#16223A] sm:text-sm md:text-base">
+                  <p className="px-0 text-[12px] text-[#16223A] sm:text-sm md:text-base">
                     {remote}
                   </p>
                 </div>

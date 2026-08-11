@@ -85,12 +85,10 @@ const JobDetailPage = ({
 
   return (
     <div
+      className="min-h-screen px-4 py-6 md:px-8 md:py-8"
       style={{
-        background:
-          'linear-gradient(180deg, #000000 0%, #162B4C 23.5%, #3468B2 90%)',
-        color: 'white',
-        minHeight: '100vh',
-        padding: '20px',
+        background: 'linear-gradient(180deg, #FBFEFF 0%, #EEF8FD 100%)',
+        color: '#16223A',
       }}
     >
       {!jobDetails.hasOwnProperty(id) ? (
@@ -102,8 +100,8 @@ const JobDetailPage = ({
           />
         </div>
       ) : (
-        <div className="mx-auto flex max-w-[1440px] justify-center pt-24">
-          <div className="flex max-w-[1100px] flex-col items-center lg:ml-[10rem]">
+        <div className="mx-auto flex max-w-[1440px] justify-center pt-10 md:pt-16">
+          <div className="flex w-full max-w-[1100px] flex-col items-center lg:ml-[10rem]">
             <div className="mt-10 flex w-full flex-1 items-center px-2 lg:mt-20">
               <div className="flex w-full flex-col gap-5 px-10 text-start lg:items-start">
                 <Title
@@ -242,10 +240,10 @@ const JobDetailPage = ({
             )}
             <div className="mb-16 flex w-full px-12">
               <Link
-                className="px-10 py-4 text-black sm:px-14"
+                className="rounded-full px-10 py-4 text-white transition hover:bg-[#0f1b2e] sm:px-14"
                 style={{
-                  borderRadius: '50px',
-                  background: 'white',
+                  background: '#16223A',
+                  border: '1px solid rgba(22,34,58,0.2)',
                 }}
                 target="_blank"
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdmlecMmXr3FqO1HajJFBmfpji8Blyjfs9U5jK3WT6BrSmDAA/viewform"
