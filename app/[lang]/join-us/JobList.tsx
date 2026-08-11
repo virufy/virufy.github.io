@@ -188,12 +188,13 @@ const JobList = ({
                   />
                 </div>
                 <div className="flex w-fit items-center py-0.5 md:py-1">
-                  <img
+                  <ExportedImage
                     src="/icons/HomeIcon.png"
                     width={15}
                     height={14}
                     className="mr-1 h-[14px] w-[15px] shrink-0 items-center object-contain"
-                    alt=""
+                    alt="Location icon"
+                    basePath={basePath}
                   />
                   <p className="px-0 text-[12px] text-[#16223A] sm:text-sm md:text-base">
                     {remote}

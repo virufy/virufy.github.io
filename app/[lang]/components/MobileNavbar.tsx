@@ -74,7 +74,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
       },
       {
         label: 'Media',
-        route: [`/${lang}/news`, `/${lang}/publications`],
+        route: [`/${lang}/news`, `/${lang}/publications`, `/${lang}/blog`],
       },
       { label: 'FAQ', route: [`/${lang}/faq`] },
     ];
@@ -255,6 +255,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
       links: [
         { label: media?.ourResearch || '', href: `/${lang}/publications` },
         { label: media?.pressReleases || '', href: `/${lang}/news` },
+        { label: media?.blog || '', href: `/${lang}/blog` },
       ],
     },
   ];

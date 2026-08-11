@@ -3,7 +3,6 @@
 import { useMemo, useState } from 'react';
 import { type Locale } from '@/i18n-config';
 import ExportedImage from 'next-image-export-optimizer';
-import { basePath } from '@/next.config.mjs';
 import BlogCard from './BlogCard';
 import ActionBanner from '../components/ActionBanner';
 import Link from 'next/link';
@@ -111,7 +110,7 @@ export default function BlogPage({
 
     return result;
   }, [postList, selectedYear, sortBy, normalizedSearchQuery]);
-
+  console.log('BLOG BG:', JSON.stringify(content.hero.bgImage));
   return (
     <main>
       <section className="relative w-full shadow-xl">
@@ -122,7 +121,6 @@ export default function BlogPage({
             fill
             priority
             className="object-cover"
-            basePath={basePath}
             unoptimized={true}
           />
         </div>
@@ -136,7 +134,6 @@ export default function BlogPage({
                 height={17}
                 width={17}
                 className="h-3.5 w-3.5 sm:h-4 sm:w-4"
-                basePath={basePath}
               />
             )}
             {content.hero.tag}

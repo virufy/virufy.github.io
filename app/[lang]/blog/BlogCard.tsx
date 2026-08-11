@@ -3,7 +3,6 @@ import { type Post } from '@/app/i18n/types/BlogPosts';
 import { type Locale } from '@/i18n-config';
 
 import ExportedImage from 'next-image-export-optimizer';
-import { basePath } from '@/next.config.mjs';
 const placeholderImage = '/images/sevenNews/Placeholder-Card.png';
 export default function BlogCard({ post, lang }: { post: Post; lang: Locale }) {
   const cardImage = placeholderImage;
@@ -19,7 +18,6 @@ export default function BlogCard({ post, lang }: { post: Post; lang: Locale }) {
             alt={post.title}
             fill
             className="object-cover transition duration-500 group-hover:scale-105"
-            basePath={basePath}
             unoptimized={true}
           />
         </div>
