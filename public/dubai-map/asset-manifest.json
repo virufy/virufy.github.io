@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/dubai-map/static/css/main.844d5ad5.css",
-    "main.js": "/dubai-map/static/js/main.61e457bd.js",
+    "main.js": "/dubai-map/static/js/main.035cd2bc.js",
     "static/js/453.4706647a.chunk.js": "/dubai-map/static/js/453.4706647a.chunk.js",
     "static/media/virufyLogo.png": "/dubai-map/static/media/virufyLogo.384f765ff157cd378c91.png",
     "static/media/qrcode.png": "/dubai-map/static/media/qrcode.c2732cefe4dd734a151b.png",
     "index.html": "/dubai-map/index.html",
     "main.844d5ad5.css.map": "/dubai-map/static/css/main.844d5ad5.css.map",
-    "main.61e457bd.js.map": "/dubai-map/static/js/main.61e457bd.js.map",
+    "main.035cd2bc.js.map": "/dubai-map/static/js/main.035cd2bc.js.map",
     "453.4706647a.chunk.js.map": "/dubai-map/static/js/453.4706647a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.844d5ad5.css",
-    "static/js/main.61e457bd.js"
+    "static/js/main.035cd2bc.js"
   ]
 }
