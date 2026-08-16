@@ -188,7 +188,7 @@ const JobList = ({
               href={`/${lang}/join-us/${id}`}
               className="flex h-[138px] flex-col rounded-2xl border border-[#16223A]/10 bg-white p-4 shadow-[0_10px_30px_rgba(20,32,55,0.08)] transition duration-200 hover:-translate-y-0.5 hover:border-[#16223A]/30 hover:bg-[#F7FBFF] md:h-[172px] md:p-6"
             >
-              <div className="mb-2 inline-flex w-fit rounded-full border border-[#bcc7d4] bg-[#d9eaf8] px-2 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-[#084b8a] md:mb-3 md:px-3 md:py-1 md:text-xs">
+              <div className="mb-2 inline-flex w-fit rounded-full border border-[#bcc7d4] bg-[#d9eaf8] px-2 py-0.5 text-[9px] font-semibold tracking-wide text-[#084b8a] md:mb-3 md:px-3 md:py-1 md:text-xs">
                 {category}
               </div>
               <div className="flex h-full flex-col gap-2 md:gap-4">
