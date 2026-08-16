@@ -1,8 +1,9 @@
 import type { QA } from '@/app/i18n/types/faq';
 import { type Locale } from '@/i18n-config';
 import { useState } from 'react';
-import ArrowIcon from '../faq/ArrowIcon';
+
 import AccordionItemParagraph from './AccordionItemParagraph';
+import { ChevronDown } from 'lucide-react';
 
 interface AccordionItemProps extends QA {
   lang: Locale;
@@ -17,7 +18,6 @@ const AccordionItem = ({
   topic,
   lang,
   className = '',
-  isFaq = false,
 }: AccordionItemProps) => {
   const [isActive, setIsActive] = useState(false);
   const borderTransitionStyle = isActive
@@ -31,20 +31,25 @@ const AccordionItem = ({
 
   return (
     <div
-      className={`border-b border-gray-400 text-white last:border-b-0 ${className}`}
+      className={`border-b border-gray-400 bg-transparent text-white last:border-b-0 ${className}`}
     >
       {/* Question Container */}
       <div
-        className="w- flex cursor-pointer items-center justify-between px-5 py-4"
+        className="relative w-full cursor-pointer py-4"
         onClick={() => setIsActive(!isActive)}
       >
-        <div>
-          {' '}
-          <h3 className="pr-6 font-semibold">{question}</h3>
-          {topic && <p className="mt-1 text-sm text-stone-400">{topic}</p>}
+        <div className="pr-8">
+          <h3 className="font-semibold text-[#2C3540]">{question}</h3>
+          {topic && <p className="mt-1 text-sm text-[#084B8A]">{topic}</p>}
         </div>
 
-        <ArrowIcon isActive={isActive} isFaq={isFaq} />
+        <div className="absolute right-0 top-4">
+          <ChevronDown
+            className={`h-5 w-5 text-[#2C3540] transition-transform duration-300 ${
+              isActive ? 'rotate-180' : ''
+            }`}
+          />
+        </div>
       </div>
 
       {/* Answer Container */}
@@ -54,7 +59,7 @@ const AccordionItem = ({
           className={`overflow-hidden transition-all duration-500 ${heightStyle}`}
         >
           <div
-            className={`px-5 py-4 font-normal leading-relaxed text-stone-300 ${className}`}
+            className={`px-5 py-4 font-normal leading-relaxed text-[#2C3540] ${className}`}
           >
             <div className="space-y-4">
               {answer.map(({ type, content }, i) => {

@@ -55,7 +55,7 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             Text={
               <>
                 {title.before}
-                <span className="bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-b from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent">
                   {title.highlight}
                 </span>{' '}
                 {title.after}

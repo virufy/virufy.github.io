@@ -11,7 +11,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import type { StaticImageData } from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
-import ArrowIcon from '../faq/ArrowIcon';
+import { ChevronDown } from 'lucide-react';
 
 const localeRegex = new RegExp(`^/(${i18n.locales.join('|')})`);
 
@@ -87,7 +87,12 @@ const LocaleSelect = ({ lang, onDropdownChange }: LocaleSelectProps) => {
         }`}
       >
         {locale.toUpperCase()}
-        <ArrowIcon isActive={dropdownOpen} />
+        <ChevronDown
+          className={`ml-2 h-5 w-5 transition-transform ${
+            dropdownOpen ? 'rotate-180' : ''
+          }`}
+          aria-hidden="true"
+        />
       </button>
 
       {dropdownOpen && (

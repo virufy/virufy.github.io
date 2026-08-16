@@ -15,21 +15,34 @@ const DoNotSellMyDataPage = ({
   } = usei18n(lang);
 
   return (
-    <div className="relative mt-[-6rem] flex flex-col items-center bg-gradient-to-b from-[#25497d] via-[#3468b2] to-[#3468b2] px-5 py-20">
-      {/* Title */}
-      <div className="py-20">
-        <Title
-          H="h5Modals"
-          Text={personalInfo.title}
-          TitleClassProps="mt-[30px] mx-auto mb-[30px] text-white"
-        />
-      </div>
+    <div className="relative">
+      {/* Gradient Background */}
+      <div className="bg-gradient-to-b from-[#FBFEFF] to-[#EEF8FD] pb-24">
+        {/* Title Section */}
+        <section className="relative mx-auto max-w-[1440px] px-5">
+          <div className="flex flex-col items-center justify-center pt-20 text-center md:pt-32">
+            <Title
+              H="h5Modals"
+              Text={personalInfo.title}
+              TitleClassProps="mx-auto text-[#16223A]"
+            />
+          </div>
 
-      {/* Accordion Content */}
-      <div className="w-full max-w-md rounded-lg border-b bg-black bg-opacity-[28%] text-xs last:border-b-0 md:max-w-2xl md:text-base lg:max-w-4xl xl:max-w-5xl">
-        {personalInfo.body.map((detail, index) => (
-          <AccordionItem key={index} {...detail} lang={lang} />
-        ))}
+          {/* Accordion Content */}
+          <div className="mx-auto mt-12 flex w-full max-w-md flex-col gap-y-4 md:mt-16 md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+            <div className="w-full rounded-lg border-b border-gray-400 text-sm last:border-b-0 md:text-base">
+              {personalInfo.body.map((detail, index) => (
+                <AccordionItem
+                  key={index}
+                  {...detail}
+                  lang={lang}
+                  className="!text-black"
+                  isFaq={false}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

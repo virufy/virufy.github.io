@@ -12,8 +12,8 @@ const IntellectualPropertyPage = ({
   } = usei18n(lang);
   return (
     <>
-      <div className="relative flex justify-center overflow-hidden bg-gradient-to-b from-black to-[#4064AD] py-24 text-white">
-        <div className="flex max-w-7xl flex-col space-y-6 px-8 py-20 sm:px-12 lg:px-40">
+      <div className="relative flex justify-center overflow-hidden bg-gradient-to-b from-[#FBFEFF] to-[#EEF8FD] pt-24 text-[#16223A]">
+        <div className="flex w-full max-w-[1440px] flex-col space-y-6 px-5 py-20">
           <h1 className="text-center font-bold">
             {IntellectualProperty.title}
           </h1>

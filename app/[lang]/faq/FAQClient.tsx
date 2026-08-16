@@ -5,7 +5,7 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import debounce from 'lodash.debounce';
 import ExportedImage from 'next-image-export-optimizer';
-import { Fragment, useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { usei18n } from '../../i18n';
 import AccordionItem from '../components/AccordionItem';
 import TopicCard from './TopicCard';
@@ -103,7 +103,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
               priority
             />
             {/* Text and Input Container */}
-            <div className="relative flex h-[400px] flex-col items-center justify-center px-5 text-center md:h-[500px] lg:h-[600px]">
+            <div className="relative flex h-[400px] flex-col items-center justify-center px-5 text-center md:h-[500px] lg:h-[500px]">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-3 pr-4 text-xs text-[#084b8a] sm:mb-8 sm:py-1 sm:pl-4 sm:pr-5 sm:text-sm md:mb-10">
                 <ExportedImage
                   src={'/icons/questionmark-faq.png'}
@@ -122,24 +122,25 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 <h1 className="mb-3 text-2xl font-medium text-black md:mb-8 md:text-6xl md:font-normal">
                   {headerSection.title.map((content, i) =>
                     content.type === 'span' ? (
-                      <span key={i} className="text-emerald-500">
+                      <span
+                        key={i}
+                        className="bg-gradient-to-b from-[#0E72C9] to-[#2A9D8F] bg-clip-text text-transparent"
+                      >
                         {content.text}
                       </span>
                     ) : (
-                      <Fragment key={i}>{content.text}</Fragment>
+                      <span key={i} className="text-black">
+                        {content.text}
+                      </span>
                     )
                   )}
                 </h1>
                 <p className="pl-5 text-left text-xs text-black sm:text-sm md:text-center md:text-xl">
-                  {headerSection.texts.map((text, i) =>
-                    text.type === 'span' ? (
-                      <span className="font-bold" key={i}>
-                        {text.text}
-                      </span>
-                    ) : (
-                      <Fragment key={i}>{text.text}</Fragment>
-                    )
-                  )}
+                  {headerSection.texts.map((content, i) => (
+                    <span key={i} className="font-normal text-gray-700">
+                      {content.text}
+                    </span>
+                  ))}
                 </p>
               </div>
             </div>
@@ -147,14 +148,14 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </section>
 
         {/* Gradient Overlay Container */}
-        <div className="-mb-24 bg-white pb-6 text-white md:pb-0">
+        <div className="bg-gradient-to-b from-[#FBFEFF] to-[#EEF8FD] pb-6 text-white md:pb-0">
           {/* Topics Section */}
           <section className="relative mx-auto max-w-[1440px] px-5">
             {/* Title and Topic Cards Container */}
             <div className="flex flex-col items-center justify-center space-y-6 pt-10 text-center md:space-y-10 md:pt-16">
               {/* Topic Cards Container */}
               <div className="grid items-center justify-center gap-10 md:grid-cols-2">
-                <div className="grid grid-cols-3 gap-4 md:grid-cols-3 lg:grid-cols-6 lg:gap-10">
+                <div className="flex w-full flex-wrap justify-start gap-4 pl-4 lg:grid lg:grid-cols-6 lg:gap-4 lg:pl-0">
                   {topicCards.map((card) => (
                     <TopicCard
                       key={card.title}
@@ -185,7 +186,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   />
                 </div>
               </div>
-              <div className="mt-2 flex w-full items-center rounded-full border border-gray-300 bg-white px-4 shadow-sm transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-200 md:mt-0 md:flex md:hidden">
+              <div className="mt-2 flex w-full items-center rounded-full border border-gray-300 px-4 shadow-sm transition focus-within:border-emerald-500 focus-within:ring-2 focus-within:ring-emerald-200 md:mt-0 md:flex md:hidden">
                 <ExportedImage
                   src={headerSection.input.img}
                   alt={headerSection.input.altText}
@@ -205,9 +206,8 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-y-4 py-10 md:gap-y-10 md:py-40 md:pt-16">
-              {/* Questions Container */}
-              <div className="w-full rounded-lg border-b bg-white text-sm last:border-b-0 md:bg-white md:text-base">
+            <div className="flex flex-col gap-y-4 py-10 md:gap-y-10 md:pb-40 md:pt-16">
+              <div className="w-full rounded-lg border-b text-sm last:border-b-0 md:text-base">
                 {filteredQuestions.map((content) => (
                   <AccordionItem
                     {...content}

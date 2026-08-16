@@ -18,7 +18,7 @@ const AccordionItemParagraph = ({
     : '';
 
   return (
-    <p className={paragraphStyle}>
+    <p className={`${paragraphStyle} text-[#2C3540]`}>
       {content.map(({ type, text, href }, i) => {
         switch (type) {
           case 'relative-link':

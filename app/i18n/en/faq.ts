@@ -14,7 +14,7 @@ const faq: FAQ = {
       },
     ],
     input: {
-      placeholder: 'Start typing your search...',
+      placeholder: 'Search for a question...',
       img: '../../icons/icon-search.png',
       altText: 'search icon',
     },
