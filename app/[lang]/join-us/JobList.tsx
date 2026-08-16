@@ -141,13 +141,21 @@ const JobList = ({
                   key={category}
                   type="button"
                   onClick={() => setSelectedCategory(category)}
-                  className={`rounded-full px-4 py-2 text-xs font-semibold transition md:text-base lg:text-lg ${
+                  className={`rounded-full p-[1px] text-xs font-semibold transition md:text-base lg:text-lg ${
                     isActive
-                      ? 'bg-[#16223A] text-white'
-                      : 'border border-[#16223A]/30 bg-transparent text-[#16223A] hover:bg-[#16223A]/10'
+                      ? 'bg-gradient-to-r from-[#0E72C9] to-[#2A9D8F]'
+                      : 'border border-[#16223A]/30 bg-transparent'
                   }`}
                 >
-                  {category}
+                  <span
+                    className={`block rounded-full px-4 py-2 ${
+                      isActive
+                        ? 'bg-gradient-to-b from-[#0E72C9] to-[#2A9D8F] text-white'
+                        : 'text-[#16223A] hover:bg-[#16223A]/10'
+                    }`}
+                  >
+                    {category}
+                  </span>
                 </button>
               );
             })}
