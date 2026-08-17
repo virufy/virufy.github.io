@@ -12,7 +12,7 @@ const amilsStory: AmilsStory = {
       '出版物',
     ],
     founderAmil: [
-      '創設者',
+      '私たちの創業者・CEO',
       'アミル カンザダ',
       '助教',
       '福井大学',
