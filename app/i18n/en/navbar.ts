@@ -15,7 +15,7 @@ export const navbar: NavbarType = {
   aboutUs: {
     section: 'Who We Are',
     advisors: 'Our Advisors',
-    ourFounder: 'Our Founder',
+    ourFounder: 'Our Founder & CEO',
     ourSupporters: 'Our Supporters',
 
     oneYoungWorld: 'One Young World',

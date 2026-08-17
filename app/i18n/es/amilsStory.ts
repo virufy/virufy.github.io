@@ -12,7 +12,7 @@ const amilsStory: AmilsStory = {
       'Publicaciones',
     ],
     founderAmil: [
-      'Conoce a nuestro fundador',
+      'Conoce a nuestro fundador y CEO',
       'Amil Khanzada',
       'Profesor Asistente',
       'Universidad de Fukui, Japón.',
