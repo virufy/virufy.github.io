@@ -18,7 +18,7 @@ export const navbar: NavbarType = {
     advisors: 'Our Advisors',
     advisorsubtext: 'Leading industry experts',
     ourFounder: 'Meet Amil',
-    foundersubtext: 'Meet our founder',
+    foundersubtext: 'Meet our founder & CEO',
     ourSupporters: 'Our Supporters',
     supportersubtext: 'Partners for impact',
 
