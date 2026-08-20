@@ -5,8 +5,6 @@ import { usei18n } from '../../i18n';
 import Text from '../components/Text';
 import Title from '../components/Title';
 import JobList from './JobList';
-import Link from 'next/link';
-import { ColorProps, TextSizeProps } from '../themes';
 
 import ActionBanner from '../components/ActionBanner';
 const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
@@ -15,7 +13,7 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       title,
       subtitle,
       tag,
-      titlebuttonText,
+
       jobList,
       modal,
       Banner,
@@ -30,14 +28,14 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <div className="">
       <div className="relative flex flex-col items-center justify-center overflow-hidden pb-4 pt-20 text-black md:pb-10 md:pt-20">
         <ExportedImage
-          src="/images/advisors/Advisor-Background-Hero.webp"
+          src="/images/jobListing/Join-us-hero.png"
           alt=""
           basePath={basePath}
           fill
           className="object-cover"
           priority
         />
-        <div className="relative z-10 mx-10 flex flex-col items-center justify-center py-10 md:py-20">
+        <div className="relative z-10 mx-10 flex flex-col items-center justify-center py-10 md:py-20 lg:pb-[150px]">
           <span className="mb-8 inline-block rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
             <ExportedImage
               className="inline"
@@ -70,12 +68,6 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             Style="subtitleJoinUs"
             TextClassProps="text-gray-700 text-center max-w-5xl"
           />
-          <Link
-            href="/"
-            className={`mt-6 inline-block whitespace-nowrap rounded-full px-4 py-2 text-sm sm:mt-7 sm:px-5 sm:py-2.5 sm:text-base md:mt-8 md:px-6 md:py-3 ${TextSizeProps.p} ${ColorProps.bgGradientReverse} text-white`}
-          >
-            {titlebuttonText}
-          </Link>
         </div>
       </div>
       <div className="relative z-10 mx-5 flex py-5 md:mx-10 md:py-10 md:pt-20 lg:mx-20">
