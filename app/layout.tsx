@@ -1,9 +1,15 @@
 import { i18n, type Locale } from '@/i18n-config';
 import type { Metadata } from 'next';
-import { Nunito_Sans } from 'next/font/google';
+import { Montserrat, Nunito_Sans } from 'next/font/google';
 import './globals.css';
 
 const nunitoSans = Nunito_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-nunito-sans',
+});
+
+const montserrat = Montserrat({
   subsets: ['latin'],
   display: 'swap',
 });
@@ -27,7 +33,7 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang={lang}>
-      <body className={nunitoSans.className}>
+      <body className={`${montserrat.className} ${nunitoSans.variable}`}>
         <main>{children}</main>
       </body>
     </html>

@@ -10,7 +10,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
    * Let CSS handle mobile vs desktop instead of JS window tracking.
    */
   return (
-    <>
+    <div className="navbar-font">
       <div className="block lg:hidden">
         <MobileNavbar lang={lang} />
       </div>
@@ -18,6 +18,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
       <div className="hidden lg:block">
         <NewNavbar lang={lang} />
       </div>
-    </>
+    </div>
   );
 }

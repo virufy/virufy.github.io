@@ -20,6 +20,10 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+.navbar-font {
+  font-family: var(--font-nunito-sans), sans-serif;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
