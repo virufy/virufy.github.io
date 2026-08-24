@@ -12,7 +12,7 @@ type OywProps = {
 
 const OneYoungWorld = ({
   oywSection: {
-    virufyAndOyw: { subTitle, texts /*videoUrl, videoTitle*/ },
+    virufyAndOyw: { texts /*videoUrl, videoTitle*/ },
     whyOyw: { title: whyOywTitle, cards },
     volunteerStories: { title: volunteerTitle, text, testimonials },
   },
@@ -22,10 +22,10 @@ const OneYoungWorld = ({
       <div className="mx-auto max-w-5xl">
         {/* One Young World Section */}
         <section>
-          <div className="flex flex-col items-center justify-center px-8 py-12 text-white opacity-95 md:py-0 md:pt-20">
+          <div className="flex flex-col items-center justify-center px-8 py-12 text-[#1B6E64] md:py-0 md:pt-20">
             <div>
               <h2 className="mb-8 text-center text-2xl font-bold md:text-left md:text-3xl md:font-medium">
-                {subTitle}
+                {whyOywTitle}
               </h2>
 
               <div className="mb-12 space-y-8">
@@ -52,18 +52,16 @@ const OneYoungWorld = ({
         </section>
 
         {/* Why OYW Section */}
-        <section className="mb-16 md:opacity-95">
-          <div className="mx-8 flex flex-col text-white">
-            <h2 className="my-14 text-center text-2xl font-bold md:my-10 md:text-3xl md:font-bold">
-              {whyOywTitle}
-            </h2>
+        <section className="mb-16">
+          <div className="mx-8 flex flex-col text-[#1B6E64]">
+            <h2 className="text-center text-2xl font-bold md:text-3xl md:font-bold"></h2>
 
             {/* Cards Container */}
-            <div className="space-y-0 rounded-2xl bg-white pl-4 pr-4 font-medium md:grid md:grid-cols-2 md:space-x-0 md:py-0">
+            <div className="space-y-0 rounded-2xl border border-[#D9E5EF] bg-white pl-4 pr-4 font-medium shadow-xl md:grid md:grid-cols-2 md:space-x-0 md:py-0">
               {cards.map((card) => (
                 <div
                   key={card.title}
-                  className="flex justify-center space-x-2 bg-[#f5f5f5] p-5 text-[#3579de]"
+                  className="flex justify-center space-x-2 p-5 text-[#1B6E64]"
                 >
                   <ExportedImage
                     className="my-auto mr-4 h-[80px] w-[80px] lg:h-[100px] lg:w-[100px]"
@@ -87,8 +85,8 @@ const OneYoungWorld = ({
         </section>
 
         {/* Volunteer Section */}
-        <section className="pb-14 md:opacity-95">
-          <div className="mx-8 flex flex-col items-center space-y-10 text-white">
+        <section className="pb-14">
+          <div className="mx-8 flex flex-col items-center space-y-10 text-[#1B6E64]">
             <div className="md:pb-12">
               <h2 className="my-12 text-center text-2xl font-bold md:mb-6 md:mt-16 md:text-3xl md:font-bold">
                 {volunteerTitle}

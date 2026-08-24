@@ -40,17 +40,13 @@ export default function NavbarDropdown({
 
       const target = e.target as Node;
 
-      if (
-        containerRef.current &&
-        !containerRef.current.contains(target)
-      ) {
+      if (containerRef.current && !containerRef.current.contains(target)) {
         setOpen(false);
       }
     };
 
     document.addEventListener('mousedown', handleClickOutside);
-    return () =>
-      document.removeEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [open]);
 
   const isParentActive = links.some(
@@ -113,9 +109,7 @@ export default function NavbarDropdown({
                   className={`block whitespace-nowrap px-4 pt-2 text-left font-semibold hover:text-sky-800 ${
                     idx === 0 ? 'rounded-t-xl' : ''
                   } ${idx === links.length - 1 ? 'rounded-b-xl' : ''} ${
-                    isChildActive(link.href)
-                      ? 'text-blue-600'
-                      : 'text-black'
+                    isChildActive(link.href) ? 'text-blue-600' : 'text-black'
                   }`}
                 >
                   {link.label}

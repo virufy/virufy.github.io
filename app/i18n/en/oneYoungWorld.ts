@@ -2,9 +2,9 @@ import { type OneYoungWorld } from '../types/oneYoungWorld';
 
 const oneYoungWorld: OneYoungWorld = {
   header: {
-    text: 'Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do.',
-    image: './../images/oneYoungWorld/bg-header.webp',
-    altText: '',
+    text: 'Virufy & One Young World',
+    subtitle:
+      'Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do.',
   },
   navbarTexts: {
     oyw: 'One Young World',

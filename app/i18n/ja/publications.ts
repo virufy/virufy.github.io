@@ -3,9 +3,9 @@ import type { PublicationsPage } from '../types/publications';
 
 const PublicationsContent: PublicationsPage = {
   hero: {
-    title: 'Virufy Publications',
+    title: 'Virufyの論文・研究成果 ',
     subtitle:
-      'Explore our peer-reviewed research, academic publications, and scientific studies advancing the field of AI-powered respiratory disease detection through innovative cough analysis technology.',
+      'AIを活用し、咳の音声から呼吸器疾患を検出する技術に関する査読済み研究、学術論文、科学的研究',
     bgImage: '/icons/icon-news-bg.png',
     tag: 'Research',
     tagIcon: '/icons/icon-research.png',

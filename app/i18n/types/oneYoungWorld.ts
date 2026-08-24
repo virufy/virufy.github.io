@@ -9,8 +9,7 @@ export interface OneYoungWorld {
 // Header and Navbar Section
 interface HeaderSection {
   text: string;
-  image: StaticImageData | string;
-  altText: string;
+  subtitle: string;
 }
 
 export interface OywNavbarTexts {

@@ -2,9 +2,9 @@ import type { I18nData } from '../types';
 
 export const blogPageContent = {
   hero: {
-    title: 'Our Blog',
+    title: 'ブログ',
     subtitle:
-      'Stories, research insights, and updates on advancing AI-powered respiratory health.',
+      'AIを用いた呼吸器の健康向上への挑戦、そのストーリー、研究インサイト、最新情報',
     bgImage: '/icons/icon-news-bg.png',
     tag: 'Insights & Updates',
     tagIcon: '/icons/Blog-icon.png',

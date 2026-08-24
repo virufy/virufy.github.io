@@ -110,7 +110,6 @@ export default function BlogPage({
 
     return result;
   }, [postList, selectedYear, sortBy, normalizedSearchQuery]);
-  console.log('BLOG BG:', JSON.stringify(content.hero.bgImage));
   return (
     <main>
       <section className="relative w-full md:shadow-xl">

@@ -1,49 +1,52 @@
 ﻿'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { initSearch, search } from './search';
 import type { SearchEntry } from './search';
 
 export default function useSearch(lang: string) {
-    const [results, setResults] = useState<SearchEntry[]>([]);
-    const [isReady, setIsReady] = useState(false);
+  const [results, setResults] = useState<SearchEntry[]>([]);
+  const [isReady, setIsReady] = useState(false);
 
-    useEffect(() => {
+  useEffect(() => {
+    setIsReady(false);
+    initSearch(lang)
+      .then(() => {
+        console.log(`[useSearch] Index ready for ${lang}`);
+        setIsReady(true);
+      })
+      .catch((err) => {
+        console.error(`[useSearch] initSearch failed for ${lang}:`, err);
         setIsReady(false);
-        initSearch(lang)
-            .then(() => {
-                console.log(`[useSearch] Index ready for ${lang}`);
-                setIsReady(true);
-            })
-            .catch((err) => {
-                console.error(`[useSearch] initSearch failed for ${lang}:`, err);
-                setIsReady(false);
-            });
-    }, [lang]);
+      });
+  }, [lang]);
 
-    const performSearch = async (query: string) => {
-        if (!isReady) {
-            console.warn('[useSearch] Tried to search before index was ready.');
-            return;
-        }
+  const performSearch = useCallback(
+    async (query: string) => {
+      if (!isReady) {
+        console.warn('[useSearch] Tried to search before index was ready.');
+        return;
+      }
 
-        if (query.length <= 1) {
-            setResults([]);
-            return;
-        }
-
-        try {
-            const res = await search(query);
-            setResults(res);
-        } catch (err) {
-            console.error('[useSearch] search failed:', err);
-            setResults([]);
-        }
-    };
-
-    const clearResults = () => {
+      if (query.length <= 1) {
         setResults([]);
-    };
+        return;
+      }
 
-    return { results, performSearch, clearResults, isReady };
+      try {
+        const res = await search(query);
+        setResults(res);
+      } catch (err) {
+        console.error('[useSearch] search failed:', err);
+        setResults([]);
+      }
+    },
+    [isReady]
+  );
+
+  const clearResults = useCallback(() => {
+    setResults([]);
+  }, []);
+
+  return { results, performSearch, clearResults, isReady };
 }

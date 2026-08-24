@@ -19,10 +19,8 @@ const TestimonialCard = ({
       style={{ transform: `translateX(${-100 * imageIndex}%)` }}
       className="h-full w-full shrink-0 grow-0 transition duration-500 ease-in-out md:w-11/12"
     >
-
-      <div className="flex h-[420px] w-[320px] flex-col items-center justify-between rounded-2xl bg-white px-8 py-6 text-center font-medium text-black shadow-lg">
+      <div className="flex h-[420px] w-[320px] flex-col items-center justify-between rounded-2xl bg-white px-8 py-6 text-center font-medium text-[#1B6E64] shadow-lg">
         <blockquote className="text-sm leading-relaxed md:text-base md:leading-relaxed">
-
           {testimonial}
         </blockquote>
 
