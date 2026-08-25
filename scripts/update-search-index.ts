@@ -15,10 +15,10 @@ import type { FAQ, QA } from '@/app/i18n/types/faq';
 
 import type { StoryCard } from '../app/i18n/types/story';
 import type { JobDetail } from '@/app/i18n/types/jobDetails';
-import type { TeamLeadCard } from '@/app/i18n/types/teamLeads';
 import type { People } from '@/app/i18n/types/people';
 import type { Card } from '@/app/i18n/types/amilsStory';
 import type { SevenNewsPage } from '@/app/i18n/types/news';
+import type { OneYoungWorld } from '@/app/i18n/types/oneYoungWorld';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -47,7 +47,6 @@ let data: {
     await parseHome(lang);
     await parseJobDetails(lang);
     await parseStory(lang);
-    await parseTeamLeads(lang);
     await parseSupporters(lang);
     await parsePeople(lang);
     await parseNews(lang);
@@ -88,7 +87,7 @@ async function loadFile(lang: string, file: string) {
 /**
  * Below are all the functions for parsing every langauge's .ts files:
  *
- * ai, faq, home, publications, story, jobDetails, teamLeads,
+ * ai, faq, home, publications, story, jobDetails,
  * supporters, people, news, amilsStory, oneYoungWorld, shareYourCough
  */
 async function parseAi(lang: string) {
@@ -357,21 +356,6 @@ async function parseJobDetails(lang: string) {
   });
 }
 
-async function parseTeamLeads(lang: string) {
-  const content = await loadFile(lang, 'teamLeads');
-  const cards = content.cards;
-
-  cards.forEach((card: TeamLeadCard, index: number) => {
-    data.push({
-      id: `${lang}-teamleads-${index + 1}`,
-      lang: lang,
-      title: card.name,
-      content: card.texts.filter((text) => text.trim() !== '').join(' | '),
-      url: `/${lang}/one-young-world`,
-    });
-  });
-}
-
 async function parseSupporters(lang: string) {
   const content = await loadFile(lang, 'supporters');
 
@@ -533,14 +517,16 @@ async function parseAmilsStory(lang: string) {
 }
 
 async function parseOneYoungWorld(lang: string) {
-  const content = await loadFile(lang, 'oneYoungWorld');
+  const content: OneYoungWorld = await loadFile(lang, 'oneYoungWorld');
+
   const oywIntro = content.oyw.virufyAndOyw;
   const oywWhy = content.oyw.whyOyw;
+  const oywStories = content.oyw.volunteerStories;
 
   // OYW intro
   data.push({
     id: `${lang}-oyw-intro`,
-    lang: lang,
+    lang,
     title: oywIntro.title,
     content: oywIntro.texts.join(' '),
     url: `/${lang}/one-young-world`,
@@ -549,9 +535,23 @@ async function parseOneYoungWorld(lang: string) {
   // OYW why
   data.push({
     id: `${lang}-oyw-why`,
-    lang: lang,
+    lang,
     title: oywWhy.title,
     content: oywWhy.cards.map((card: { text: string }) => card.text).join(' '),
+    url: `/${lang}/one-young-world`,
+  });
+
+  // OYW volunteer stories
+  data.push({
+    id: `${lang}-oyw-volunteer-stories`,
+    lang,
+    title: oywStories.title,
+    content: [
+      oywStories.text,
+      ...oywStories.testimonials.map(
+        (testimonial: { testimonial: string }) => testimonial.testimonial
+      ),
+    ].join(' '),
     url: `/${lang}/one-young-world`,
   });
 }

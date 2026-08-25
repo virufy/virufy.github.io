@@ -262,7 +262,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
   ];
 
   return (
-    <nav className="fixed top-0 z-50 w-full rounded-b-3xl bg-white/95 p-3 px-5 text-black shadow-md">
+    <nav className="fixed top-0 z-50 w-full rounded-b-3xl bg-white p-3 px-5 text-black shadow-md">
       <div className="flex items-center justify-between pt-2">
         {/* Left: Hamburger + Search */}
         <div className="flex items-center gap-2">

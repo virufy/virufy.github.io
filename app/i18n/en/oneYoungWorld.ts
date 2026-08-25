@@ -81,8 +81,14 @@ const oneYoungWorld: OneYoungWorld = {
           testimonial: `“I think that Virufy will develop a very accurate solution and this will be useful for the entire world in every industry. So I encourage everyone to take some minutes and contribute with us.”`,
         },
       ],
+      readMoreText: 'Swipe to read more →',
       buttonText: 'Join our Team',
     },
+  },
+  BannerSection: {
+    title: 'Built in Partnership With a Global Network',
+    text: 'Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide.',
+    buttonText: 'View Our Supporters',
   },
 };
 

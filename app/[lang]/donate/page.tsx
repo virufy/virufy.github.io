@@ -72,13 +72,6 @@ const SevenSupportUs = ({ params: { lang } }: { params: { lang: Locale } }) => {
             <p className="mt-4 max-w-[800px] text-sm text-gray-600 sm:mt-5 sm:text-base md:mt-6 md:text-lg">
               {introSection.text}
             </p>
-
-            <Link
-              href="/"
-              className={`mt-6 inline-block whitespace-nowrap rounded-full px-4 py-2 text-sm sm:mt-7 sm:px-5 sm:py-2.5 sm:text-base md:mt-8 md:px-6 md:py-3 ${TextSizeProps.p} ${ColorProps.bgGradientReverse} text-white`}
-            >
-              {introSection.buttonText}
-            </Link>
           </div>
         </section>
 

@@ -44,8 +44,8 @@
   {
     "id": "ja-publications",
     "lang": "ja",
-    "title": "Virufy Publications",
-    "content": "Explore our peer-reviewed research, academic publications, and scientific studies advancing the field of AI-powered respiratory disease detection through innovative cough analysis technology.",
+    "title": "Virufyの論文・研究成果 ",
+    "content": "AIを活用し、咳の音声から呼吸器疾患を検出する技術に関する査読済み研究、学術論文、科学的研究",
     "url": "/ja/publications"
   },
   {
@@ -600,139 +600,6 @@
     "title": "10以上",
     "content": "研究パートナー 大学や研究機関",
     "url": "/ja/story"
-  },
-  {
-    "id": "ja-teamleads-1",
-    "lang": "ja",
-    "title": "アミル・カンザダ",
-    "content": "OYW大使、日本 | Virufy創設者＆リーダー",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-2",
-    "lang": "ja",
-    "title": "マダヴ・ダット",
-    "content": "OYW大使、インド | Virufyアドバイザー",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-3",
-    "lang": "ja",
-    "title": "シュレヤ・スリラム、MD",
-    "content": "2021 Virufyデリゲート、インド | Virufy臨床研究",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-4",
-    "lang": "ja",
-    "title": "マルコス・デザ",
-    "content": "OYW大使、アルゼンチン | Virufyデジタルコミュニケーション",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-5",
-    "lang": "ja",
-    "title": "ユリ・チャオ",
-    "content": "2021 OYW bpデリゲート | Virufyオペレーション",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-6",
-    "lang": "ja",
-    "title": "アヨミデ・オウォイェミ、MD",
-    "content": "2021 OYWノバルティスデリゲート、ナイジェリア | Virufy機械学習クリニカル統計",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-7",
-    "lang": "ja",
-    "title": "ラウラ・ベラスケス",
-    "content": "OYWジョンソン＆ジョンソンデリゲート、コロンビア | Arkangel AI共同創設者＆社長 | Virufyパートナー",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-8",
-    "lang": "ja",
-    "title": "ネイサン・トーマス",
-    "content": "OYWコーディネーティングアンバサダー、米国",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-9",
-    "lang": "ja",
-    "title": "ジェイソン・パレハ・ハウレギ",
-    "content": "OYWコーディネーティングアンバサダーLATAM、ペルー",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-10",
-    "lang": "ja",
-    "title": "キャサリン・タリア・オルティス・レオン",
-    "content": "OYW大使、ペルー",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-11",
-    "lang": "ja",
-    "title": "ゴンサロ・ロイフェ",
-    "content": "OYW大使、アルゼンチン",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-12",
-    "lang": "ja",
-    "title": "アネリッセ・トーレス・ダザ",
-    "content": "OYW大使、ボリビア",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-13",
-    "lang": "ja",
-    "title": "ベロニカ・グスマン・キルケオ",
-    "content": "OYW大使、チリ",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-14",
-    "lang": "ja",
-    "title": "セバスチャン・ペドラザ",
-    "content": "OYW大使、コロンビア",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-15",
-    "lang": "ja",
-    "title": "アラナ・ドイル",
-    "content": "OYW大使、米国",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-16",
-    "lang": "ja",
-    "title": "カピル・ナライン、MD",
-    "content": "OYW大使、南アフリカ",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-17",
-    "lang": "ja",
-    "title": "カビヤ・マダヴェン",
-    "content": "OYW大使",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-18",
-    "lang": "ja",
-    "title": "レオナルド・ブルズ",
-    "content": "OYW大使、アイルランド",
-    "url": "/ja/one-young-world"
-  },
-  {
-    "id": "ja-teamleads-19",
-    "lang": "ja",
-    "title": "ケンマル・スエドミ",
-    "content": "OYW大使、日本",
-    "url": "/ja/one-young-world"
   },
   {
     "id": "ja-supporters-intro",
@@ -1432,6 +1299,13 @@
     "lang": "ja",
     "title": "なぜOne Young Worldなのか？",
     "content": "私たちの組織構造は、各地域で活動を調整する若者の大使と共にOne Young Worldにマッチしています。 私たちの成長するチームは、世界中の若い専門家によって率いられており、グローバルな業界リーダーからの緊密なアドバイスを受けています。 私たちの目標は、設立当初から、世界中のすべての国のすべての人々に公平な解決策を提供することです。 私たちのチームは、50以上の大学と25カ国からの代表者で構成されており、多くのOne Young World大使からサポートを受けています。",
+    "url": "/ja/one-young-world"
+  },
+  {
+    "id": "ja-oyw-volunteer-stories",
+    "lang": "ja",
+    "title": "ボランティアの声",
+    "content": "複数の大使がVirufyでボランティア活動を行い、感想を寄せています。私たちはOne Young Worldコミュニティのメンバーを強く信頼しており、寄与を希望するすべての大使を心から歓迎します。 「Virufyは若者と技術の力を結集して世界を変えます。このソリューションが世界中に届き、特に低所得国の医師を支援するものになることを望んでいます。」 「Virufyは、ユーザーの背景や社会的地位に関係なく、世界的な影響を与えるでしょう。これこそが現状を変えるということです。」 「Virufyは非常に正確なソリューションを開発し、これはすべての業界で役立つものになるでしょう。皆さんも少しの時間を割いて、私たちと一緒に貢献してほしいです。」",
     "url": "/ja/one-young-world"
   },
   {

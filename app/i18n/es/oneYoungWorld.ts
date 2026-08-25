@@ -2,9 +2,11 @@ import { type OneYoungWorld } from '../types/oneYoungWorld';
 
 const oneYoungWorld: OneYoungWorld = {
   header: {
-    text: 'Empresas y organizaciones nos respaldan desde su amplio conocimiento y nos brindan seguridad y certeza en lo que hacemos.',
+    text: 'Virufy & One Young World',
     image: '../../images/oneYoungWorld/bg-header.webp',
     altText: '',
+    subtitle:
+      'Empresas y organizaciones nos respaldan con su amplio conocimiento y nos brindan seguridad y certeza en lo que hacemos.',
   },
   navbarTexts: {
     oyw: 'One Young World',
@@ -82,7 +84,13 @@ const oneYoungWorld: OneYoungWorld = {
         },
       ],
       buttonText: 'Únete a nuestro equipo',
+      readMoreText: 'Desliza para leer más →',
     },
+  },
+  BannerSection: {
+    title: 'Únete a nuestro equipo',
+    text: 'Estamos buscando voluntarios apasionados para unirse a nuestro equipo y ayudarnos a hacer del mundo un lugar más saludable y equitativo.',
+    buttonText: 'Únete a nuestro equipo',
   },
 };
 

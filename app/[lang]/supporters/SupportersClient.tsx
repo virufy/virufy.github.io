@@ -87,7 +87,7 @@ const Supporters = ({ params: { lang } }: { params: { lang: Locale } }) => {
           title={banner.title}
           text={banner.text[0]}
           buttonText={banner.buttontext}
-          page={banner.link}
+          page={`/${lang}`}
         />
       </section>
     </main>

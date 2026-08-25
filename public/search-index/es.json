@@ -609,139 +609,6 @@
     "url": "/es/story"
   },
   {
-    "id": "es-teamleads-1",
-    "lang": "es",
-    "title": "Amil Khanzada",
-    "content": "Embajador OYW, Japón | Fundador y Líder de Virufy",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-2",
-    "lang": "es",
-    "title": "Madhav Datt",
-    "content": "Embajador OYW, India | Asesor de Virufy",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-3",
-    "lang": "es",
-    "title": "Shreya Sreeram, MD",
-    "content": "Delegada de Virufy 2021, India | Investigación Clínica de Virufy",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-4",
-    "lang": "es",
-    "title": "Marcos Deza",
-    "content": "Embajador OYW, Argentina | Comunicación Digital de Virufy",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-5",
-    "lang": "es",
-    "title": "Yulie Qiao",
-    "content": "Delegada de OYW 2021 | Operaciones de Virufy",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-6",
-    "lang": "es",
-    "title": "Ayomide Owoyemi, MD",
-    "content": "Delegado de OYW Novartis 2021, Nigeria | Estadísticas Clínicas de Aprendizaje Automático de Virufy",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-7",
-    "lang": "es",
-    "title": "Laura Velasquez",
-    "content": "Delegada de OYW Johnson & Johnson, Colombia | Cofundadora y Presidenta de Arkangel AI | Socio de Virufy",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-8",
-    "lang": "es",
-    "title": "Nathan Thomas",
-    "content": "Embajador Coordinador de OYW, EE.UU.",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-9",
-    "lang": "es",
-    "title": "Jason Pareja Jauregui",
-    "content": "Embajador Coordinador OYW LATAM, Perú",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-10",
-    "lang": "es",
-    "title": "Katherine Thalia Ortiz Leon",
-    "content": "Embajadora OYW, Perú",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-11",
-    "lang": "es",
-    "title": "Gonzalo Roiffe",
-    "content": "Embajador OYW, Argentina",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-12",
-    "lang": "es",
-    "title": "Annelisse Torrez Daza",
-    "content": "Embajadora OYW, Bolivia",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-13",
-    "lang": "es",
-    "title": "Veronica Guzman Quilqueo",
-    "content": "Embajadora OYW, Chile",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-14",
-    "lang": "es",
-    "title": "Sebastian Pedraza",
-    "content": "Embajador OYW, Colombia",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-15",
-    "lang": "es",
-    "title": "Allana Doyle",
-    "content": "Embajadora OYW, EE.UU.",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-16",
-    "lang": "es",
-    "title": "Kapil Narain, MD",
-    "content": "Embajador OYW, Sudáfrica",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-17",
-    "lang": "es",
-    "title": "Kavya Madhaven",
-    "content": "Embajadora OYW",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-18",
-    "lang": "es",
-    "title": "Leonard Burhz",
-    "content": "Embajador OYW, Irlanda",
-    "url": "/es/one-young-world"
-  },
-  {
-    "id": "es-teamleads-19",
-    "lang": "es",
-    "title": "Kenmaru Suedomi",
-    "content": "Embajador OYW, Japón",
-    "url": "/es/one-young-world"
-  },
-  {
     "id": "es-supporters-intro",
     "lang": "es",
     "title": "Nuestros Patrocinadores",
@@ -1418,6 +1285,13 @@
     "lang": "es",
     "title": "¿Por qué One Young World?",
     "content": "Nuestra estructura organizativa coincide con One Young World, con jóvenes embajadores liderando las operaciones en cada país, con embajadores coordinadores regionales. Nuestro equipo en crecimiento está dirigido por jóvenes de más de una docena de países y asesorado por líderes globales. Recopilamos datos y proporcionamos soluciones equitativas para personas en países en desarrollo de todo el mundo. Nuestro equipo tiene representación de más de 25 universidades y 15 países, e incluye a más de 10 embajadores de One Young World.",
+    "url": "/es/one-young-world"
+  },
+  {
+    "id": "es-oyw-volunteer-stories",
+    "lang": "es",
+    "title": "Historias de Voluntarios",
+    "content": "Nuestro equipo está dirigido por estudiantes dedicados al bien social de instituciones de renombre como Stanford, Princeton y One Young World. Tenemos una fuerte confianza en los miembros de la comunidad de One Young World y damos la bienvenida a cualquier embajador interesado en unirse. “Virufy une el poder de la juventud y la tecnología para transformar el mundo. Esperamos que esta solución llegue a todo el mundo y se convierta en un apoyo para los médicos, especialmente en países de bajos ingresos.” “Virufy tendrá un impacto global, sin importar el origen o el estatus social de los usuarios. Así es como se siente cambiar el statu quo.” “Creo que Virufy desarrollará una solución muy precisa y esto será útil para todo el mundo en cada industria. Así que animo a todos a tomar unos minutos y contribuir con nosotros.”",
     "url": "/es/one-young-world"
   },
   {

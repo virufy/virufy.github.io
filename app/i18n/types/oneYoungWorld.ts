@@ -4,12 +4,20 @@ export interface OneYoungWorld {
   header: HeaderSection;
   navbarTexts: OywNavbarTexts;
   oyw: OywSection;
+  BannerSection: BannerSection;
 }
 
 // Header and Navbar Section
 interface HeaderSection {
   text: string;
   subtitle: string;
+  image?: StaticImageData | string;
+  altText?: string;
+}
+export interface BannerSection {
+  title: string;
+  text: string;
+  buttonText: string;
 }
 
 export interface OywNavbarTexts {
@@ -53,6 +61,7 @@ interface VolunteerStoriesSection {
   text: string;
   testimonials: Testimonial[];
   buttonText: string;
+  readMoreText: string;
 }
 
 export interface Testimonial {

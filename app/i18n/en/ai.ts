@@ -71,7 +71,7 @@ const Ai: Ai = {
     title: 'Ready to Make a Difference?',
     text: "We're on a mission to make health screening as simple as a cough. Reach out to find out how your financial contributions directly accelerate our clinical research and the deployment of our accessible AI technology to communities worldwide.",
     buttonText: 'Support Us',
-    url: '/donate',
+    url: '/en/donate',
   },
 };
 

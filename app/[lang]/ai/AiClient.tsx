@@ -142,7 +142,7 @@ export default function AiPage({
         title={banner.title}
         text={banner.text}
         buttonText={banner.buttonText}
-        page={banner.url}
+        page={`/${lang}/donate`}
       />
     </div>
   );

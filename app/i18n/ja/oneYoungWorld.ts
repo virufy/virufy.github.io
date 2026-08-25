@@ -2,9 +2,11 @@ import { type OneYoungWorld } from '../types/oneYoungWorld';
 
 const oneYoungWorld: OneYoungWorld = {
   header: {
-    text: '企業や組織は、その豊富な知識を活かして私たちを支え、私たちの活動に安心感と確実性を提供してくれています。',
+    text: 'Virufy & One Young World',
     image: './../images/oneYoungWorld/bg-header.webp',
     altText: '',
+    subtitle:
+      'Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do.',
   },
   navbarTexts: {
     oyw: 'One Young World',
@@ -82,7 +84,13 @@ const oneYoungWorld: OneYoungWorld = {
         },
       ],
       buttonText: '参加する',
+      readMoreText: 'Read More →',
     },
+  },
+  BannerSection: {
+    title: 'Built in Partnership With a Global Network',
+    text: 'Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide.',
+    buttonText: 'View Our Supporters',
   },
 };
 

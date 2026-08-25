@@ -609,139 +609,6 @@
     "url": "/ar/story"
   },
   {
-    "id": "ar-teamleads-1",
-    "lang": "ar",
-    "title": "أميل خانزادا",
-    "content": "سفير OYW، اليابان | مؤسس فيروفي والقائد",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-2",
-    "lang": "ar",
-    "title": "مادهاف دات",
-    "content": "سفير OYW، الهند | مستشار فيروفي",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-3",
-    "lang": "ar",
-    "title": "شريا سريرام، MD",
-    "content": "مندوبة فيروفي لعام 2021، الهند | البحث السريري في فيروفي",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-4",
-    "lang": "ar",
-    "title": "ماركوس ديزا",
-    "content": "سفير OYW، الأرجنتين | الاتصالات الرقمية في فيروفي",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-5",
-    "lang": "ar",
-    "title": "يولي قاو",
-    "content": "مندوبة OYW لعام 2021 | عمليات فيروفي",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-6",
-    "lang": "ar",
-    "title": "أويميد أووييمي، MD",
-    "content": "مندوب OYW نوفارتيس لعام 2021، نيجيريا | الإحصائيات السريرية للتعلم الآلي في فيروفي",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-7",
-    "lang": "ar",
-    "title": "لاورا فيلاسكيز",
-    "content": "مندوبة OYW من جونسون وجونسون، كولومبيا | الشريك المؤسس والرئيس في Arkangel AI | شريك في فيروفي",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-8",
-    "lang": "ar",
-    "title": "ناثان توماس",
-    "content": "سفير منسق OYW، الولايات المتحدة الأمريكية",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-9",
-    "lang": "ar",
-    "title": "جيسون باريجا هاوريجي",
-    "content": "سفير منسق OYW في أمريكا اللاتينية، بيرو",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-10",
-    "lang": "ar",
-    "title": "كاثرين ثاليا أورتيز ليون",
-    "content": "سفير OYW، بيرو",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-11",
-    "lang": "ar",
-    "title": "غونزالو روييفي",
-    "content": "سفير OYW، الأرجنتين",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-12",
-    "lang": "ar",
-    "title": "أنليز توريس دازا",
-    "content": "سفير OYW، بوليفيا",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-13",
-    "lang": "ar",
-    "title": "فيرونيكا غوزمان كيلكيو",
-    "content": "سفير OYW، تشيلي",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-14",
-    "lang": "ar",
-    "title": "سيباستيان بيدرازا",
-    "content": "سفير OYW، كولومبيا",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-15",
-    "lang": "ar",
-    "title": "أالانا دويل",
-    "content": "سفير OYW، الولايات المتحدة",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-16",
-    "lang": "ar",
-    "title": "كابيل نارين، MD",
-    "content": "سفير OYW، جنوب أفريقيا",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-17",
-    "lang": "ar",
-    "title": "كافيا مادهافين",
-    "content": "سفير OYW",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-18",
-    "lang": "ar",
-    "title": "ليونارد بورز",
-    "content": "سفير OYW، أيرلندا",
-    "url": "/ar/one-young-world"
-  },
-  {
-    "id": "ar-teamleads-19",
-    "lang": "ar",
-    "title": "كينمارو سودومي",
-    "content": "سفير OYW، اليابان",
-    "url": "/ar/one-young-world"
-  },
-  {
     "id": "ar-supporters-intro",
     "lang": "ar",
     "title": "الداعمون لنا",
@@ -1418,6 +1285,13 @@
     "lang": "ar",
     "title": "لماذا وان يونغ وورلد؟",
     "content": "يتطابق هيكلنا التنظيمي مع One Young World مع سفراء الشباب الذين يقومون بتنسيق العمليات في كل منطقة. فريقنا المتنامي يقوده محترفون شباب من أكثر من عشرة دول مع إشراف قريب من قادة الصناعة العالميين. هدفنا من اليوم الأول كان تقديم حلول عادلة لجميع الناس في جميع البلدان حول العالم. يضم فريقنا ممثلين من أكثر من 50 جامعة و25 دولة، وقد تلقى الدعم من العشرات من سفراء One Young World.",
+    "url": "/ar/one-young-world"
+  },
+  {
+    "id": "ar-oyw-volunteer-stories",
+    "lang": "ar",
+    "title": "شهادات المتطوعين",
+    "content": "تطوع العديد من السفراء في Virufy وقدموا شهاداتهم. لدينا ثقة قوية في أعضاء مجتمع One Young World ونرحب ترحيبًا حارًا بأي سفراء مهتمين بالمساهمة. “يوحد Virufy قوة الشباب والتكنولوجيا لتحويل العالم. ونأمل أن يصل هذا الحل إلى العالم أجمع، وأن يصبح سندا للأطباء، خاصة في الدول ذات الدخل المنخفض.” “سيؤثر فيروس Virufy على مستوى العالم، بغض النظر عن خلفية المستخدمين أو حالتهم الاجتماعية. هذا هو ما يبدو عليه تغيير الوضع الراهن.” “أعتقد أن Virufy سوف يطور حلاً دقيقًا للغاية وسيكون مفيدًا للعالم أجمع في كل صناعة. لذلك أشجع الجميع على تخصيص بعض الدقائق والمساهمة معنا.”",
     "url": "/ar/one-young-world"
   },
   {

@@ -199,7 +199,7 @@ export default function AmilsStoryPage({
         title={banner.title}
         text={banner.text}
         buttonText={banner.buttonText}
-        page={banner.url}
+        page={`/${lang}/supporters`}
       />
     </div>
   );

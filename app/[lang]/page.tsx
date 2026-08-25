@@ -2,6 +2,7 @@
 import { type Locale } from '@/i18n-config';
 import { usei18n } from '../i18n';
 import ExportedImage from 'next-image-export-optimizer';
+import Link from 'next/link';
 import { useState, useRef } from 'react';
 import SmokeModal from './components/SmokeModal';
 
@@ -87,12 +88,18 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
                   {introSection.text}
                 </p>
                 <div className="flex items-center justify-center gap-4 md:flex-wrap md:justify-start">
-                  <button className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600 md:text-lg">
+                  <Link
+                    href={`/${lang}/story`}
+                    className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600 md:text-lg"
+                  >
                     {introSection.missionbutton}
-                  </button>
-                  <button className="rounded-full border border-blue-500 bg-white px-8 py-4 font-semibold text-blue-500 shadow-sm transition hover:bg-gray-100 md:text-lg">
+                  </Link>
+                  <Link
+                    href={`/${lang}/donate`}
+                    className="rounded-full border border-blue-500 bg-white px-8 py-4 font-semibold text-blue-500 shadow-sm transition hover:bg-gray-100 md:text-lg"
+                  >
                     {introSection.supportbutton}
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="relative mt-12 flex hidden h-full w-full items-center justify-center md:mt-0 md:block lg:ml-10">
@@ -280,9 +287,12 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
               {/* Button */}
               <div className="mt-4 md:mt-0">
-                <button className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600 md:text-lg">
+                <Link
+                  href={`/${lang}/ai`}
+                  className="rounded-full bg-gradient-to-b from-blue-500 to-emerald-500 px-8 py-4 font-semibold text-white shadow transition hover:from-blue-600 hover:to-emerald-600 md:text-lg"
+                >
                   {section5.button}
-                </button>
+                </Link>
               </div>
             </div>
           </Container>

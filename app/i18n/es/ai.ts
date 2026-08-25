@@ -71,7 +71,7 @@ const Ai: Ai = {
     title: '¿Listo para marcar la diferencia?',
     text: 'Tenemos la misión de hacer que los exámenes de salud sean tan simples como toser. Comuníquese para descubrir cómo sus contribuciones financieras aceleran directamente nuestra investigación clínica y el despliegue de nuestra tecnología de IA accesible en comunidades de todo el mundo.',
     buttonText: 'Apóyanos',
-    url: '/donate',
+    url: '/es/donate',
   },
 };
 
