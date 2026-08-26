@@ -75,7 +75,7 @@ const amilsStory: AmilsStory = {
   banner: {
     title: 'Built in Partnership With a Global Network',
     text: 'Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide.',
-    buttonText: 'View Our Supporters',
+    buttonText: 'Our Supporters',
     url: '/supporters',
   },
 };

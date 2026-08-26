@@ -225,7 +225,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             title={banner.title}
             text={banner.text}
             buttonText={banner.buttonText}
-            page={banner.link}
+            page="mailto:frederick.cosper@virufy.org"
           />
         </div>
       </div>

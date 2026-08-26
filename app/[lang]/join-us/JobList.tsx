@@ -46,13 +46,11 @@ const JobList = ({
     if (!seenModal) {
       setShowModal(true);
     } else {
-      scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
   }, []);
   const closeModalAndSetLocalStorage = (): void => {
     setShowModal(false);
     localStorage.setItem('seenModal', 'true');
-    scrollRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
   const closeModalAndGoToPreviousPage = (): void => {
     setShowModal(false);
