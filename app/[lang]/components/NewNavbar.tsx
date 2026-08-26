@@ -205,7 +205,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
   /** Search input */
   const renderSearchInput = () => (
-    <div className="search-input-container relative w-[160px] min-[1310px]:w-[180px] min-[1380px]:w-[220px]">
+    <div className="search-input-container relative w-[160px] rounded-full bg-gradient-to-r from-blue-500 to-emerald-500 p-[1px] min-[1310px]:w-[180px] min-[1380px]:w-[220px]">
       <input
         ref={inputRef}
         type="text"
@@ -214,7 +214,6 @@ export default function Navbar({ lang }: { lang: Locale }) {
         disabled={!isReady}
         onChange={(event) => {
           const value = event.target.value;
-
           setQuery(value);
 
           if (value.trim() === '') {
@@ -224,7 +223,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             debouncedSearch(value);
           }
         }}
-        className="h-[40px] w-full rounded-full border border-[#4fa8d8] bg-white px-4 pr-10 text-[14px] text-[#26364b] outline-none transition placeholder:text-[#9aa6b2] focus:border-[#0879d1]"
+        className="h-[40px] w-full rounded-full bg-white px-4 pr-10 text-[14px] text-[#26364b] outline-none transition placeholder:text-[#9aa6b2]"
       />
 
       {query && (
@@ -235,7 +234,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
             clearResults();
             setHasSearched(false);
           }}
-          className="absolute right-3 top-1/2 flex -translate-y-1/2 items-center justify-center text-[#64748b] transition-colors hover:text-[#0879d1]"
+          className="absolute right-3 top-1/2 flex -translate-y-1/2 items-center justify-center text-[#64748b] transition-colors hover:text-blue-500"
           aria-label="Clear search"
         >
           <svg
@@ -518,20 +517,21 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   {renderSearchInput()}
 
                   {/* Search button */}
-                  <button
-                    type="button"
-                    onClick={() => {
-                      if (query.trim()) {
-                        performSearch(query);
-                        setHasSearched(true);
-                      }
-                    }}
-                    className="ml-1 flex h-[40px] w-[40px] items-center justify-center rounded-full border border-[#0879d1] bg-white text-[#26364b] transition-all duration-200 hover:bg-[#0879d1] hover:text-white"
-                    aria-label="Search"
-                  >
-                    <SearchIcon />
-                  </button>
-
+                  <div className="ml-1 rounded-full bg-gradient-to-r from-emerald-500 to-blue-500 p-[1px]">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (query.trim()) {
+                          performSearch(query);
+                          setHasSearched(true);
+                        }
+                      }}
+                      className="flex h-[38px] w-[38px] items-center justify-center rounded-full bg-white text-[#26364b] transition-colors duration-200 hover:bg-gray-50"
+                      aria-label="Search"
+                    >
+                      <SearchIcon />
+                    </button>
+                  </div>
                   {renderSearchDropdown()}
                 </>
               ) : (
