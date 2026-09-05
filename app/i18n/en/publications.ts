@@ -36,6 +36,24 @@ const PublicationsContent: PublicationsPage = {
 
   newsCards: [
     {
+      title:
+        'Organizational and Leadership Support and Its Relationship to Volunteer Motivation in a Remote-First Nonprofit Startup',
+      date: 'July 2026',
+      subText: '',
+      url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
+      linkText: 'Read More',
+      contentType: 'publications',
+    },
+    {
+      title:
+        "Turning Startup Lessons into Science: Our NSF I-Corps Experience Is Now a Peer-Reviewed Publication. Customer Discovery Isn't Just Validation—It Can Transform an Entire Venture",
+      date: 'July 2026',
+      subText: '',
+      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
+      linkText: 'Read More',
+      contentType: 'publications',
+    },
+    {
       title: 'AI-Powered Acoustic Diagnostics for Global Respiratory Health',
       date: 'June 2026',
       subText: '',

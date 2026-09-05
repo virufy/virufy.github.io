@@ -51,68 +51,82 @@
   {
     "id": "es-publications-1",
     "lang": "es",
+    "title": "Soporte organizativo y de liderazgo y su relación con la motivación de los voluntarios en una startup sin fines de lucro con enfoque remoto",
+    "content": "Julio 2026",
+    "url": "https://link.springer.com/article/10.1186/s43093-026-00914-6"
+  },
+  {
+    "id": "es-publications-2",
+    "lang": "es",
+    "title": "Transformando las Lecciones de Startup en Ciencia: Nuestra Experiencia en NSF I-Corps Es Ahora una Publicación Revisada por Pares. El Descubrimiento de Clientes No Es Solo Validación—Puede Transformar un Negocio Entero",
+    "content": "Julio de 2026",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107"
+  },
+  {
+    "id": "es-publications-3",
+    "lang": "es",
     "title": "Diagnóstico acústico impulsado por IA para la salud respiratoria global",
     "content": "Junio de 2026",
     "url": "/en/publications/virufy-white-paper-2026"
   },
   {
-    "id": "es-publications-2",
+    "id": "es-publications-4",
     "lang": "es",
     "title": "Análisis de tos eficiente en datos mediante aprendizaje activo y segmentación",
     "content": "Marzo de 2026",
     "url": "https://virufy.org/en/publications/data-efficient-cough-ai/"
   },
   {
-    "id": "es-publications-3",
+    "id": "es-publications-5",
     "lang": "es",
     "title": "Mejorando la inscripción en ensayos clínicos para la recolección de datos de IA basada en teléfonos inteligentes: Un análisis metodológico de intervenciones basadas en incentivos conductuales (nudges)",
     "content": "Diciembre 2025",
     "url": "https://sabeconomics.org/ojs/index.php/jbep/article/view/232"
   },
   {
-    "id": "es-publications-4",
+    "id": "es-publications-6",
     "lang": "es",
     "title": "Transformador Multimodal Jerárquico para Detección Automática de COVID-19",
     "content": "Octubre 2022",
     "url": "https://dl.acm.org/doi/10.1145/3556384.3556414"
   },
   {
-    "id": "es-publications-5",
+    "id": "es-publications-7",
     "lang": "es",
     "title": "Calculadora de Covid 19: impacto socioeconómico positivo en EE. UU.",
     "content": "Enero 2022",
     "url": "https://arxiv.org/abs/2201.11109"
   },
   {
-    "id": "es-publications-6",
+    "id": "es-publications-8",
     "lang": "es",
     "title": "Uso del aprendizaje profundo con grandes conjuntos de datos agregados para la clasificación de COVID-19 a partir de la tos",
     "content": "Enero 2022",
     "url": "https://arxiv.org/abs/2201.01669"
   },
   {
-    "id": "es-publications-7",
+    "id": "es-publications-9",
     "lang": "es",
     "title": "Desafíos y oportunidades en la implementación de sistemas de inteligencia artificial para la tos COVID-19",
     "content": "Septiembre 2021",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8421112/"
   },
   {
-    "id": "es-publications-8",
+    "id": "es-publications-10",
     "lang": "es",
     "title": "Virufy: Aplicabilidad global de conjuntos de datos clínicos y de colaboración colectiva para la detección mediante IA de COVID-19 a partir de la tos",
     "content": "Noviembre 2020",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
   },
   {
-    "id": "es-publications-9",
+    "id": "es-publications-11",
     "lang": "es",
     "title": "Fusical: Fusión multimodal para análisis de sentimientos en video",
     "content": "Octubre 2020",
     "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
   },
   {
-    "id": "es-publications-10",
+    "id": "es-publications-12",
     "lang": "es",
     "title": "Reconocimiento de expresiones faciales con aprendizaje profundo",
     "content": "Abril 2020",
@@ -1059,131 +1073,124 @@
   {
     "id": "es-news-1",
     "lang": "es",
-    "title": "Artículo publicado en Wiley Online Library",
-    "content": "Convertir las lecciones de las startups en ciencia: nuestra experiencia en NSF I-Corps ya es una publicación revisada por pares. El descubrimiento de clientes no es solo validación: puede transformar todo un proyecto empresarial.",
-    "url": "https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107"
-  },
-  {
-    "id": "es-news-2",
-    "lang": "es",
     "title": "Tres empresas universitarias de Suiza, EE. UU. y Egipto avanzan a pilotos activos y fases comerciales en Dubái",
     "content": "Mayo de 2026",
     "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
   },
   {
-    "id": "es-news-3",
+    "id": "es-news-2",
     "lang": "es",
     "title": "FPH UI explora colaboración estratégica con Virufy para desarrollar tecnología de IA en salud respiratoria",
     "content": "Junio de 2026",
     "url": "https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/"
   },
   {
-    "id": "es-news-4",
+    "id": "es-news-3",
     "lang": "es",
     "title": "Un mensaje de nuestro fundador, Amil Khanzada: de Silicon Valley al aula — mi primera conferencia en la Universidad de Fukui",
     "content": "Junio de 2026",
     "url": "/en/news/amil-june-2026"
   },
   {
-    "id": "es-news-5",
+    "id": "es-news-4",
     "lang": "es",
     "title": "Avanzando la atención pediátrica con IA: Virufy x Emirates Health Services (EHS) en WHX Dubái 2026",
     "content": "Abril de 2026",
     "url": "/en/news/whx-dubai-2026"
   },
   {
-    "id": "es-news-6",
+    "id": "es-news-5",
     "lang": "es",
     "title": "GITEX Global 2025 - Salud en Dubái",
     "content": "Cómo una asociación estratégica con Dubai Health está impulsando el análisis de tos con IA para un cribado respiratorio escalable y clínicamente validado.",
     "url": "/es/news/gitex-global-2025-dubai"
   },
   {
-    "id": "es-news-7",
+    "id": "es-news-6",
     "lang": "es",
     "title": "El éxito del cribado respiratorio de Virufy en Abu Dabi",
     "content": "Cómo la plataforma de cribado con IA de Virufy ganó impulso internacional entre responsables de políticas e innovadores en 95 países.",
     "url": "/es/news/uae-adghw-apr-2025"
   },
   {
-    "id": "es-news-8",
+    "id": "es-news-7",
     "lang": "es",
     "title": "Virufy presentará tecnología innovadora de detección de COVID-19 en Prototypes for Humanity 2024 en Dubái",
     "content": "Noviembre de 2024",
     "url": "/es/news/press-release-dubai"
   },
   {
-    "id": "es-news-9",
+    "id": "es-news-8",
     "lang": "es",
     "title": "Virufy lanza su app beta en Colombia, brindando detección de COVID-19 en casa a 4.500 usuarios",
     "content": "Febrero de 2023",
     "url": "/es/news/beta-app-release-2023"
   },
   {
-    "id": "es-news-10",
+    "id": "es-news-9",
     "lang": "es",
     "title": "BARDA apoya el desarrollo de nuevas aplicaciones digitales basadas en IA/ML para la detección visual y auditiva de enfermedades infecciosas sintomáticas",
     "content": "Contramedidas médicas, Estados Unidos",
     "url": "https://medicalcountermeasures.gov/newsroom/2022/ai_ml/"
   },
   {
-    "id": "es-news-11",
+    "id": "es-news-10",
     "lang": "es",
     "title": "Esta app busca diagnosticar Covid-19 con solo toser frente al teléfono",
     "content": "Forbes, México",
     "url": "https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/"
   },
   {
-    "id": "es-news-12",
+    "id": "es-news-11",
     "lang": "es",
     "title": "COVID-19: La app de Virufy puede diagnosticar el virus mediante el análisis de la tos",
     "content": "MSN",
     "url": "https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332"
   },
   {
-    "id": "es-news-13",
+    "id": "es-news-12",
     "lang": "es",
     "title": "VIRUFY: plataforma que permite detectar si estamos contagiados con COVID-19",
     "content": "Expreso, Lima, Perú",
     "url": "https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/"
   },
   {
-    "id": "es-news-14",
+    "id": "es-news-13",
     "lang": "es",
     "title": "Embajador de One Young World Japón combate el COVID-19 con IA",
     "content": "One Young World, Tokio, Japón",
     "url": "https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
   },
   {
-    "id": "es-news-15",
+    "id": "es-news-14",
     "lang": "es",
     "title": "Embajadores de Norteamérica en la primera línea de la respuesta al COVID-19",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response"
   },
   {
-    "id": "es-news-16",
+    "id": "es-news-15",
     "lang": "es",
     "title": "Embajadores del mes de julio",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month"
   },
   {
-    "id": "es-news-17",
+    "id": "es-news-16",
     "lang": "es",
     "title": "Miles de personas asisten a los eventos digitales globales de OYW en julio: un resumen de lo que te perdiste",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed"
   },
   {
-    "id": "es-news-18",
+    "id": "es-news-17",
     "lang": "es",
     "title": "Caucus de One Young World Tokio 2020",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/event/one-young-world-tokyo-caucus-2020"
   },
   {
-    "id": "es-news-19",
+    "id": "es-news-18",
     "lang": "es",
     "title": "Presentación de Virufy en One Young World Tokio 2020 Caucus",
     "content": "One Young World, Tokio, Japón",

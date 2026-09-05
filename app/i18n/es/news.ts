@@ -37,16 +37,6 @@ const sevenNewsContent: SevenNewsPage = {
 
   newsCards: [
     {
-      title: 'Artículo publicado en Wiley Online Library',
-      date: 'Julio de 2026',
-      subText:
-        'Convertir las lecciones de las startups en ciencia: nuestra experiencia en NSF I-Corps ya es una publicación revisada por pares. El descubrimiento de clientes no es solo validación: puede transformar todo un proyecto empresarial.',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
-      year: 2026,
-    },
-    {
       title:
         'Tres empresas universitarias de Suiza, EE. UU. y Egipto avanzan a pilotos activos y fases comerciales en Dubái',
       date: 'Mayo de 2026',
