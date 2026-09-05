@@ -80,6 +80,20 @@ const publications: Publications = {
       url: 'https://arxiv.org/abs/2004.11823',
       linkText: '続きを読む',
     },
+    {
+      title:
+        '組織的・リーダーシップの支援と、リモートファーストの非営利団体におけるボランティアのモチベーションとの関係',
+      date: '2026年7月',
+      url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
+      linkText: '続きを読む',
+    },
+    {
+      title:
+        'スタートアップの知見を科学へ：NSF I-Corpsでの経験が査読付き論文として発表されました。「顧客発見（Customer Discovery）」は単なる検証にとどまりません。それはベンチャー企業全体を変革し得るものです。',
+      date: '2026年7月',
+      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
+      linkText: '続きを読む',
+    },
   ],
   collaborateSection: {
     title: '私たちの研究に協力しませんか？',

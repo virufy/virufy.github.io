@@ -6,13 +6,6 @@ const pressReleases: PressReleases = {
   },
   pressReleaseCards: [
     {
-      title: 'Wiley Online Libraryに論文を掲載',
-      date: '2026年7月',
-      subText: '',
-      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
-      year: 2026,
-    },
-    {
       title:
         'AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！',
       date: '2026年4月',
