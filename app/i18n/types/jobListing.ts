@@ -47,5 +47,8 @@ interface Banner {
   title: string;
   text: string;
   buttonText: string;
+  contactTitle: string;
+  emailText: string;
+  closeText: string;
   url: string;
 }

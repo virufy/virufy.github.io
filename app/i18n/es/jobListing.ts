@@ -24,6 +24,9 @@ const jobListing: JobListing = {
     title: '¿No ves un ajuste perfecto?',
     text: 'Siempre estamos buscando personas apasionadas que compartan nuestra misión. Envíanos tu currículum y cuéntanos cómo te gustaría contribuir a avanzar la salud respiratoria global.',
     buttonText: 'Ponte en contacto',
+    contactTitle: 'Contáctanos',
+    emailText: 'Envíanos un correo a',
+    closeText: 'Cerrar',
     url: '/donate',
   },
   jobDetailSectionTitles: {
