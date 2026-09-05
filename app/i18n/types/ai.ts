@@ -8,6 +8,7 @@ interface AiHeroSection {
   tag: string;
   title: TitleText[];
   text: string;
+  demoApp: string;
   aiSlides: AiSlide[];
 }
 

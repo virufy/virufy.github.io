@@ -9,6 +9,7 @@ const Ai: Ai = {
       { type: 'text', text: ' Behind Virufy' },
     ],
     text: 'Our AI technology listens for subtle patterns in the sound of your cough — helping detect potential respiratory illnesses early and non-invasively.',
+    demoApp: 'Try our Demo',
 
     aiSlides: [
       {
