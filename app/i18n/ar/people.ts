@@ -357,7 +357,7 @@ const people: People = {
       },
       yasuko: {
         img: './../images/advisors/Yasuko-Tokifuji.jpg',
-        name: 'Yasuko Tokifuji',
+        name: 'ياسوكو توكيفوجي',
         role: 'مستشار استراتيجي تنفيذي',
         texts: [
           'ماجستير في إدارة الأعمال التنفيذي من كلية كوانتيك للأعمال والتكنولوجيا ',
