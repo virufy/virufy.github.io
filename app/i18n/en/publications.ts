@@ -38,7 +38,7 @@ const PublicationsContent: PublicationsPage = {
     {
       title:
         'Organizational and Leadership Support and Its Relationship to Volunteer Motivation in a Remote-First Nonprofit Startup',
-      date: 'July 2026',
+      date: 'September 2026',
       subText: '',
       url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
       linkText: 'Read More',

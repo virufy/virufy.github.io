@@ -136,7 +136,7 @@ const PublicationsContent: PublicationsPage = {
     {
       title:
         'الدعم التنظيمي والقيادي وعلاقته بدافعية المتطوعين في مؤسسة ناشئة غير ربحية تعتمد نهج العمل عن بُعد كأولوية',
-      date: '2026 يوليو',
+      date: '2026 سبتمبر',
       subText: '',
       url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
       contentType: 'publications',

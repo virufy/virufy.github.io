@@ -39,7 +39,7 @@ const PublicationsContent: PublicationsPage = {
     {
       title:
         '組織的・リーダーシップの支援と、リモートファーストの非営利団体におけるボランティアのモチベーションとの関係',
-      date: '2026年7月',
+      date: '2026年9月',
       subText: '',
       url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
       linkText: '続きを読む',

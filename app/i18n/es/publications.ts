@@ -40,7 +40,7 @@ const PublicationsContent: PublicationsPage = {
     {
       title:
         'Soporte organizativo y de liderazgo y su relación con la motivación de los voluntarios en una startup sin fines de lucro con enfoque remoto',
-      date: 'Julio 2026',
+      date: 'Septiembre 2026',
       subText: '',
       url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
       contentType: 'news',
