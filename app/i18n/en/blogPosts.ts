@@ -557,7 +557,6 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
     </ul>
   `,
   },
-<<<<<<< HEAD
   'building-ai-for-healthcare-what-makes-medtech-different': {
     slug: 'building-ai-for-healthcare-what-makes-medtech-different',
     title: 'Building AI for Healthcare: What Makes MedTech Different?',
@@ -659,8 +658,7 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
         </li>
       </ul>
     `,
-=======
-
+  },
   'the-science-of-sound-and-health': {
     slug: 'the-science-of-sound-and-health',
     title: 'The Science of Sound and Health',
@@ -749,7 +747,7 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
       </li>
     </ul>
   `,
->>>>>>> origin/Testing
   },
 };
 export default blogPosts;
+
