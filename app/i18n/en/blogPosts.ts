@@ -557,7 +557,108 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
     </ul>
   `,
   },
+  'building-ai-for-healthcare-what-makes-medtech-different': {
+    slug: 'building-ai-for-healthcare-what-makes-medtech-different',
+    title: 'Building AI for Healthcare: What Makes MedTech Different?',
+    description:
+      'Why developing AI for healthcare is not like developing AI for anything else, and why that distinction matters for everyone and how it will eventually serve.',
+    date: 'August 2026',
+    content: `
+      <p>
+        When an AI system gets something wrong in most industries, the consequences are recoverable. A bad recommendation is ignored. A miscalculated route gets corrected. In healthcare, the consequences can be irreversible. That difference in stakes shapes everything about how medical AI is built, validated, and deployed.
+      </p>
 
+      <h2>The Data Problem Is Not the Same Problem</h2>
+
+      <p>
+        Healthcare data is deeply personal, legally protected, and extraordinarily difficult to collect at scale across diverse populations. For respiratory AI specifically, cough and breathing sounds vary across age groups, languages, environmental exposures, and geographic regions. A model trained on recordings from one population will not perform reliably for another. This is not a minor calibration issue. It is a fundamental question of whether the tool works for the people who need it most.
+      </p>
+
+      <p>
+        Virufy is addressing this directly, enrolling over 250,000 patients across clinical studies in five countries to ensure the dataset reflects the full range of people the tool will eventually serve.
+      </p>
+
+      <h2>Regulation Exists for a Reason</h2>
+
+      <p>
+        Consumer technology moves fast. Healthcare AI moves deliberately. A tool used to inform clinical decisions needs to demonstrate safety and efficacy before it reaches patients, not after. In the United States, AI-based medical devices are regulated by the FDA. The European Union applies the Medical Device Regulation with additional guidance specifically addressing AI systems.
+      </p>
+
+      <p>
+        For Virufy, clinical and regulatory approvals are required before any screening tool can be deployed. This is the process by which a promising research signal becomes something a clinician or patient can trust.
+      </p>
+
+      <h2>The Validation Standard Is Higher</h2>
+
+      <p>
+        In most AI applications, strong test dataset performance means a model is ready to ship. In healthcare it is the beginning of the validation process, not the end. A medical AI tool must demonstrate consistent performance across populations, settings, and hardware that were not part of the original training data, and must be robust to the conditions of real-world use including noisy environments and variable recording quality.
+      </p>
+
+      <h2>The Human Stakes Change the Design Philosophy</h2>
+
+      <p>
+        Most consumer AI is designed to be maximally engaging. Healthcare AI is designed to be maximally trustworthy. A respiratory screening tool that generates false negatives causes direct harm in proportion to how widely it is deployed. One that generates too many false positives creates alert fatigue and erodes trust. Getting that balance right requires clinical expertise alongside engineering expertise, and ongoing monitoring after deployment.
+      </p>
+
+      <p>
+        This is why credible healthcare AI moves more slowly than headlines suggest it should. The pace is a reflection of what the work actually requires.
+      </p>
+
+      <h2>What This Means for People Who Contribute</h2>
+
+      <p>
+        Every cough recording contributed to Virufy's dataset is a piece of the foundation on which a clinically validated, globally representative screening tool gets built. In healthcare AI, who participates in building the science directly determines who benefits from it when it arrives.
+      </p>
+
+      <h2>References</h2>
+
+      <ul>
+        <li>
+          U.S. Food and Drug Administration —
+          <a
+            href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Artificial Intelligence and Machine Learning in Software as a Medical Device"
+          </a>
+        </li>
+
+        <li>
+          European Commission —
+          <a
+            href="https://ec.europa.eu/health/medical-devices-sector/new-regulations_en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Medical Device Regulation (MDR) and AI"
+          </a>
+        </li>
+
+        <li>
+          Journal of Medical Internet Research —
+          <a
+            href="https://www.jmir.org/2024/1/e51640"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Limitations of Cough Sound-Based COVID-19 Diagnosis AI Models" (2024)
+          </a>
+        </li>
+
+        <li>
+          National Center for Biotechnology Information —
+          <a
+            href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8545201/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            "Cough Sound Detection and Diagnosis Using Artificial Intelligence"
+          </a>
+        </li>
+      </ul>
+    `,
+  },
   'the-science-of-sound-and-health': {
     slug: 'the-science-of-sound-and-health',
     title: 'The Science of Sound and Health',
@@ -649,3 +750,4 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
   },
 };
 export default blogPosts;
+
