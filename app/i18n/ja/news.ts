@@ -36,16 +36,6 @@ const sevenNewsContent: SevenNewsPage = {
 
   newsCards: [
     {
-      title: 'Wiley Online Libraryに論文を掲載',
-      date: '2026年7月',
-      subText:
-        'スタートアップの教訓を科学へ：NSF I-Corpsでの経験が査読付き論文として発表されました。「顧客発見（カスタマー・ディスカバリー）」は単なる検証にとどまらず、ベンチャー企業全体を変革し得るものです。',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
-      year: 2026,
-    },
-    {
       title:
         'スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行',
       date: '2026年5月',

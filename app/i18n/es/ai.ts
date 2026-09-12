@@ -9,6 +9,7 @@ const Ai: Ai = {
       { type: 'text', text: 'Detrás de Virufy' },
     ],
     text: 'Nuestra tecnología de inteligencia artificial detecta patrones sutiles en el sonido de la tos, lo que ayuda a detectar posibles enfermedades respiratorias de manera temprana y no invasiva.',
+    demoApp: 'Prueba nuestra Demo',
 
     aiSlides: [
       {

@@ -1,12 +1,19 @@
+'use client';
+
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
+import { useState } from 'react';
 import { usei18n } from '../../i18n';
 import Text from '../components/Text';
 import Title from '../components/Title';
 import JobList from './JobList';
 
 import ActionBanner from '../components/ActionBanner';
+import { ColorProps, TextSizeProps } from '../themes';
+
+const CONTACT_EMAIL = 'frederick.cosper@virufy.org';
+
 const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
     jobListing: {
@@ -22,6 +29,7 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       placeholder,
     },
   } = usei18n(lang);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   return (
     // background img with title text in center
@@ -100,7 +108,45 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         text={Banner.text}
         buttonText={Banner.buttonText}
         page={Banner.url}
+        onButtonClick={() => setIsContactModalOpen(true)}
       />
+      {isContactModalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="contact-modal-title"
+          onClick={() => setIsContactModalOpen(false)}
+        >
+          <div
+            className="w-full max-w-md rounded-lg bg-white p-6 text-center shadow-xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <h2
+              id="contact-modal-title"
+              className={`mb-3 ${TextSizeProps.h2} ${ColorProps.textGreenDark}`}
+            >
+              {Banner.contactTitle}
+            </h2>
+            <p className={`mb-6 ${TextSizeProps.p} ${ColorProps.textGray}`}>
+              {Banner.emailText}{' '}
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="text-[#0E72C9] underline"
+              >
+                {CONTACT_EMAIL}
+              </a>
+            </p>
+            <button
+              type="button"
+              onClick={() => setIsContactModalOpen(false)}
+              className={`rounded-full px-6 py-3 text-white ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
+            >
+              {Banner.closeText}
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

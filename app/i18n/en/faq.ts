@@ -400,6 +400,9 @@ const faq: FAQ = {
     title: 'Still have questions?',
     text: "Can't find the answer you're looking for? Our dedicated support team is here to help! Reach out to us with your question, and we'll be happy to assist you.",
     buttonText: 'Contact Us',
+    contactTitle: 'Contact us',
+    emailText: 'Email us at',
+    closeText: 'Close',
     link: '/contact',
   },
 };

@@ -10,6 +10,9 @@ interface FAQBanner {
   title: string;
   text: string;
   buttonText: string;
+  contactTitle: string;
+  emailText: string;
+  closeText: string;
   link: string;
 }
 

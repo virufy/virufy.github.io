@@ -557,5 +557,95 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
     </ul>
   `,
   },
+
+  'the-science-of-sound-and-health': {
+    slug: 'the-science-of-sound-and-health',
+    title: 'The Science of Sound and Health',
+    description:
+      'What cough acoustics reveal about respiratory function, and how AI is learning to read those signals at scale.',
+    date: 'July 2026',
+    content: `
+    <p>
+      Cough acoustics represent a clinically underutilized diagnostic signal. The acoustic output of a cough is shaped by the physical state of the airways, vocal cords, bronchial walls, and lung tissue. Inflammation, airway narrowing, mucus load, and alveolar damage each alter cough biomechanics in ways that produce measurable differences in the resulting sound. These differences manifest across frequency distribution, the ratio of voiced to unvoiced components, and the temporal envelope of the expulsive phase. Taken together, they constitute a disease-specific acoustic profile that AI systems are increasingly capable of classifying.
+    </p>
+
+    <h2>Signal Extraction and Model Architecture</h2>
+
+    <p>
+      Most published approaches convert raw audio into mel-frequency cepstral coefficients or log-mel spectrograms before classification. Convolutional neural networks have shown strong baseline performance on these representations. Transformer-based architectures are showing comparable or superior results on larger datasets, particularly where temporal dependencies in the cough signal are diagnostically relevant.
+    </p>
+
+    <p>
+      Studies from MIT, Cambridge, and published in the Journal of Medical Internet Research have demonstrated that models trained on sufficiently large datasets can distinguish cough patterns associated with COVID-19, COPD, asthma, and pertussis from healthy baselines with clinically meaningful sensitivity and specificity under controlled conditions. Reported performance figures vary considerably across studies, largely as a function of dataset composition and recording conditions.
+    </p>
+
+    <h2>The Generalizability Problem</h2>
+
+    <p>
+      Performance degradation across populations is the central unresolved challenge in this field. Models trained on homogeneous datasets show significant accuracy drops when tested across different age groups, disease severities, recording environments, device types, and linguistic backgrounds. This is well-documented and directly limits the clinical applicability of models trained on the datasets currently available in the literature.
+    </p>
+
+    <p>
+      Addressing this requires training data that reflects the acoustic and epidemiological diversity of the populations the tool will serve: variation in age, sex, comorbidity profile, environmental exposure, regional disease prevalence, and language. No existing publicly available cough dataset achieves this at the scale needed for robust generalization.
+    </p>
+
+    <h2>Where Virufy Is in This Work</h2>
+
+    <p>
+      Virufy is a nonprofit currently building a globally representative respiratory sound dataset to address exactly this gap. Over 250,000 patients have been enrolled across clinical studies in five countries. The focus is on geographic and demographic diversity as the prerequisite for a generalizable model. Clinical and regulatory validation is required before deployment and is underway in parallel with data collection.
+    </p>
+
+    <h2>Near-Term Research Directions</h2>
+
+    <p>
+      Multimodal approaches combining cough acoustics with breathing sounds, voice characteristics, and structured symptom data are showing improved classification accuracy over single-modality models. Federated learning is gaining traction as a method for training across distributed datasets while managing privacy constraints and the logistical barriers of international data collection.
+    </p>
+
+    <p>
+      The evidence that cough acoustics contain diagnostically useful information is now substantial. The open problem is building the validation infrastructure and representative datasets needed to make that signal clinically trustworthy at scale.
+    </p>
+
+    <h2>References</h2>
+
+    <ul>
+      <li>
+        <a
+          href="https://www.jmir.org/2024/1/e51640"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Journal of Medical Internet Research - "Limitations of Cough Sound-Based COVID-19 Diagnosis AI Models" (2024)
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8545201/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          National Center for Biotechnology Information - "Cough Sound Detection and Diagnosis Using Artificial Intelligence"
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.media.mit.edu/publications/detecting-covid-19-from-cough-sounds/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          MIT Media Lab - "Detecting COVID-19 via Cough Sounds Using Artificial Intelligence" (2020)
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.covid-19-sounds.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          University of Cambridge - COVID-19 Sounds App Study
+        </a>
+      </li>
+    </ul>
+  `,
+  },
 };
 export default blogPosts;

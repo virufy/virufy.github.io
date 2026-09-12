@@ -36,16 +36,6 @@ const sevenNewsContent: SevenNewsPage = {
 
   newsCards: [
     {
-      title: 'مقال منشور في مكتبة وايلي الإلكترونية',
-      date: 'يوليو 2026',
-      subText:
-        'تحويل دروس الشركات الناشئة إلى علم: تجربتنا في برنامج NSF I-Corps تصبح الآن بحثاً منشوراً ومُحكَّماً. إن عملية "استكشاف العملاء" لا تقتصر على مجرد التحقق من صحة الفرضيات، بل يمكنها إحداث تحول جذري في المشروع بأكمله.',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
-      year: 2026,
-    },
-    {
       title:
         'الارتقاء برعاية الأطفال باستخدام الذكاء الاصطناعي: Virufy وEmirates Health Services (EHS) في WHX دبي 2026!',
       date: 'أبريل 2026',

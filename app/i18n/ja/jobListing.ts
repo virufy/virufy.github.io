@@ -24,6 +24,9 @@ const jobListing: JobListing = {
     title: "Don't See a Perfect Fit?",
     text: "We're always looking for passionate individuals who share our mission. Send us your resume and tell us how you'd like to contribute to advancing global respiratory health.",
     buttonText: 'Get In Touch',
+    contactTitle: 'お問い合わせ',
+    emailText: 'メールでお問い合わせください',
+    closeText: '閉じる',
     url: '/donate',
   },
   jobDetailSectionTitles: {

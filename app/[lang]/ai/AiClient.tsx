@@ -36,7 +36,7 @@ export default function AiPage({
           />
 
           {/* Content */}
-          <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-center border-b border-[#bcc7d4] px-6 pb-12 pt-28 md:border-0 md:pb-28 md:pt-36">
+          <div className="relative mx-auto flex max-w-6xl flex-col items-center justify-center border-b border-[#bcc7d4] px-6 pb-12 pt-28 md:border-0 md:pb-0 md:pt-36">
             {/* Heading, description, and carousel*/}
             <div className="text-center text-black md:self-center md:text-left">
               <span className="mb-10 inline-block rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
@@ -68,6 +68,14 @@ export default function AiPage({
               </p>
             </div>
             <AiCarousel slides={heroSection.aiSlides} />
+          </div>
+          <div className="relative flex justify-center pb-10 pt-10 md:pt-0">
+            <a
+              href="/demo"
+              className={`inline-block rounded-full px-6 py-3 text-white ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
+            >
+              {heroSection.demoApp}
+            </a>
           </div>
         </div>
       </section>

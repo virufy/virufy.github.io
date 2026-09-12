@@ -9,6 +9,7 @@ const Ai: Ai = {
       { type: 'text', text: '' },
     ],
     text: 'VirufyのAIテクノロジーは、咳の音に潜むわずかなパターンを解析し、身体への負担なく潜在的な呼吸器疾患の早期発見をサポートします。',
+    demoApp: 'デモを試す',
     aiSlides: [
       {
         title: 'データの収集',

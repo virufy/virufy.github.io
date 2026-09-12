@@ -5,11 +5,13 @@ const ActionBanner = ({
   text,
   buttonText,
   page,
+  onButtonClick,
 }: {
   title: string;
   text: string;
   buttonText?: string;
   page?: string;
+  onButtonClick?: () => void;
 }) => {
   return (
     <section className={`${ColorProps.bgBlueGlow} border-2 border-y-[#bcc7d4]`}>
@@ -28,14 +30,23 @@ const ActionBanner = ({
             {text}
           </p>
         </div>
-        {buttonText && (
-          <a
-            href={page}
-            className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white md:ml-8 md:mt-0 ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
-          >
-            {buttonText}
-          </a>
-        )}
+        {buttonText &&
+          (onButtonClick ? (
+            <button
+              type="button"
+              onClick={onButtonClick}
+              className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white md:ml-8 md:mt-0 ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
+            >
+              {buttonText}
+            </button>
+          ) : (
+            <a
+              href={page}
+              className={`mt-10 inline-block whitespace-nowrap rounded-full px-6 py-3 text-white md:ml-8 md:mt-0 ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
+            >
+              {buttonText}
+            </a>
+          ))}
       </div>
     </section>
   );

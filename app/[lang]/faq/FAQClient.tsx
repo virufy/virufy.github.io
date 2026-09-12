@@ -11,6 +11,7 @@ import AccordionItem from '../components/AccordionItem';
 import TopicCard from './TopicCard';
 import Head from 'next/head';
 import ActionBanner from '../components/ActionBanner';
+import { ColorProps, TextSizeProps } from '../themes';
 
 const DEBOUNCE_TIME_MS = 300;
 
@@ -44,6 +45,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     useState<QAWithTopic[]>(allQuestions);
   const [selectedTopic, setSelectedTopic] = useState(topicTitle);
   const [searchInput, setSearchInput] = useState('');
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   // filter questions by search input
   useEffect(() => {
@@ -226,7 +228,45 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             text={banner.text}
             buttonText={banner.buttonText}
             page="mailto:frederick.cosper@virufy.org"
+            onButtonClick={() => setIsContactModalOpen(true)}
           />
+          {isContactModalOpen && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="contact-modal-title"
+              onClick={() => setIsContactModalOpen(false)}
+            >
+              <div
+                className="w-full max-w-md rounded-lg bg-white p-6 text-center shadow-xl"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <h2
+                  id="contact-modal-title"
+                  className={`mb-3 ${TextSizeProps.h2} ${ColorProps.textGreenDark}`}
+                >
+                  {banner.contactTitle}
+                </h2>
+                <p className={`mb-6 ${TextSizeProps.p} ${ColorProps.textGray}`}>
+                  {banner.emailText}{' '}
+                  <a
+                    href="mailto:frederick.cosper@virufy.org"
+                    className="text-[#0E72C9] underline"
+                  >
+                    frederick.cosper@virufy.org
+                  </a>
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setIsContactModalOpen(false)}
+                  className={`rounded-full px-6 py-3 text-white ${TextSizeProps.p} ${ColorProps.bgGradientReverse}`}
+                >
+                  {banner.closeText}
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </>
