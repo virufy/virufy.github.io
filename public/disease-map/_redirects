@@ -1,0 +1,5 @@
+# Legacy links → new canonical Disease Map route (Netlify / static-host style)
+/dubai-map/*   /disease-map/:splat   301
+/dubai/*       /disease-map/:splat   301
+/dubai-map     /disease-map          301
+/dubai         /disease-map          301
