@@ -611,5 +611,191 @@ const blogPosts: Record<string, Post> = {
     </ul>
   `,
   },
+    'world-lung-day': {
+    slug: 'world-lung-day',
+    title: 'World Lung Day: Making Every Breath Count',
+    description:
+      'September 25 is World Lung Day—a global reminder that healthy lungs are fundamental to a healthy life.',
+    date: 'September 2026',
+    content: `
+      <p>
+        <strong>September 25 is World Lung Day—a global reminder that healthy lungs are fundamental to a healthy life.</strong>
+      </p>
+
+      <p>
+        Every breath we take is something we rarely think about—until breathing becomes difficult.
+      </p>
+
+      <p>
+        Our lungs work continuously, delivering oxygen to the body and removing carbon dioxide with every breath. Lung health affects far more than our ability to breathe; it influences our ability to stay active, work, study, care for others, and maintain our overall quality of life. [1]
+      </p>
+
+      <p>
+        Yet respiratory health is often overlooked until symptoms become disruptive or a condition has already progressed.
+      </p>
+
+      <h2>Lung Health Is Everyone's Health</h2>
+
+      <p>
+        Respiratory diseases affect people across every age group and community. Asthma, chronic obstructive pulmonary disease (COPD), pneumonia, tuberculosis, lung cancer, and respiratory infections can have a significant impact on individuals, families, and healthcare systems.
+      </p>
+
+      <p>
+        According to the World Health Organization, chronic respiratory diseases such as asthma and COPD affect more than half a billion people worldwide and are a leading cause of disability and premature death. Key risk factors include tobacco smoke, air pollution, occupational exposures, and respiratory infections. [3]
+      </p>
+
+      <p>
+        But lung health isn't only about treating disease. It is also about <strong>prevention, awareness, screening, early identification, and access to appropriate care.</strong>
+      </p>
+
+      <p>
+        For many people, respiratory problems can begin with symptoms that are easy to dismiss—a persistent cough, changes in breathing, fatigue, or shortness of breath. Limited access to healthcare can make it even more difficult for people to identify potential problems early.
+      </p>
+
+      <p>
+        That creates an important opportunity for technology to help expand access to respiratory health tools.
+      </p>
+
+      <h2>The Opportunity for AI in Respiratory Health</h2>
+
+      <p>
+        Healthcare is increasingly exploring how digital technologies and artificial intelligence can make health information and screening more accessible.
+      </p>
+
+      <p>
+        Virufy is developing AI-powered respiratory health technology that analyzes cough and breathing sounds to identify patterns associated with respiratory conditions. Our approach uses deep learning and audio signal processing to analyze characteristics of respiratory sounds. [4]
+      </p>
+
+      <p>
+        The vision is straightforward: <strong>what if a simple respiratory sound could become another source of information that helps people take action about their health?</strong>
+      </p>
+
+      <p>
+        Virufy's technology is being developed with accessibility in mind. Because the approach can use devices with a microphone, such as smartphones and computers, it has the potential to support screening approaches in settings where traditional healthcare infrastructure may be limited. [5]
+      </p>
+
+      <p>
+        This is particularly important for underserved communities, where access to specialized equipment, trained healthcare professionals, and diagnostic infrastructure can be challenging.
+      </p>
+
+      <p>
+        Virufy is currently continuing development and data collection, with clinical validation and appropriate regulatory and public-health approvals remaining important steps before broader deployment. [5]
+      </p>
+
+      <h2>From Awareness to Action</h2>
+
+      <p>
+        World Lung Day is an opportunity to turn awareness into action.
+      </p>
+
+      <p>Protecting lung health can begin with everyday choices:</p>
+
+      <ul>
+        <li>Avoid tobacco smoke and secondhand smoke.</li>
+        <li>Reduce exposure to air pollution when possible.</li>
+        <li>Pay attention to persistent or changing respiratory symptoms.</li>
+        <li>Stay current with recommended vaccinations and preventive care.</li>
+        <li>Maintain an active lifestyle appropriate for your health.</li>
+        <li>Understand your personal and environmental respiratory risk factors.</li>
+        <li>Talk with a healthcare professional when breathing concerns arise.</li>
+      </ul>
+
+      <p>
+        The World Health Organization emphasizes that prevention, early diagnosis, and appropriate management are essential components of improving lung health. [1]
+      </p>
+
+      <p>
+        And technology can be part of that broader effort.
+      </p>
+
+      <h2>Building a Future Where Lung Health Is More Accessible</h2>
+
+      <p>
+        Technology alone cannot solve the world's respiratory health challenges. Progress requires collaboration among researchers, clinicians, healthcare organizations, policymakers, technology companies, and communities.
+      </p>
+
+      <p>
+        But innovation can help expand what is possible.
+      </p>
+
+      <p>
+        At Virufy, we are passionate about the intersection of <strong>artificial intelligence, respiratory health, and health equity</strong>. Our mission is to explore how AI-powered respiratory screening can contribute to a future where health technology is more accessible—particularly for communities that may have limited access to traditional screening resources. [5]
+      </p>
+
+      <p>
+        World Lung Day gives us an opportunity to pause and think about something we often take for granted:
+      </p>
+
+      <h2>References</h2>
+
+      <ul>
+        <li>
+          <strong>[1] World Health Organization (WHO).</strong>
+          <a
+            href="https://www.who.int/health-topics/lung-health"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lung Health
+          </a>
+        </li>
+
+        <li>
+          <strong>[2] Forum of International Respiratory Societies (FIRS).</strong>
+          <a
+            href="https://firsnet.org/campaigns/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            World Lung Day 2026
+          </a>
+        </li>
+
+        <li>
+          <strong>[3] World Health Organization (WHO).</strong>
+          <a
+            href="https://www.who.int/health-topics/chronic-respiratory-diseases"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chronic Respiratory Diseases
+          </a>
+        </li>
+
+        <li>
+          <strong>[4] Virufy.</strong>
+          <a
+            href="https://virufy.org/en/ai/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Science Behind AI Disease Detection
+          </a>
+        </li>
+
+        <li>
+          <strong>[5] Virufy.</strong>
+          <a
+            href="https://virufy.org/en/story/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            About Virufy / Our Mission
+          </a>
+        </li>
+
+        <li>
+          <strong>[6] Virufy.</strong>
+          <a
+            href="https://virufy.org/en/publications/data-efficient-cough-ai/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Data-Efficient Cough Analysis Through Active Learning and Segmentation
+          </a>
+        </li>
+      </ul>
+    `,
+  },
 };
 export default blogPosts;
