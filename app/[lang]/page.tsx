@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import { usei18n } from '../i18n';
 import Title from './components/Title';
-import SmokeModal from './components/SmokeModal';
+import WorldLungDayModal from './components/WorldLungDayModal';
 export const metadata = {
   title: 'Virufy | AI-Powered Respiratory Health Screening',
   description:
@@ -24,7 +24,7 @@ const HomePage = ({ params: { lang } }: { params: { lang: Locale } }) => {
 
   return (
     <div className="relative flex flex-col items-center justify-center">
-      <SmokeModal lang={lang} />
+      <WorldLungDayModal lang={lang} />
       <div className="w-full overflow-hidden">
         <div className="relative flex justify-center overflow-hidden">
           {/* Desktop Background Image */}
