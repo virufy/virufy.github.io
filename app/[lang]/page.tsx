@@ -4,7 +4,7 @@ import { usei18n } from '../i18n';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { useState, useRef } from 'react';
-import SmokeModal from './components/SmokeModal';
+import WorldLungDayModal from './components/WorldLungDayModal';
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -67,7 +67,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <main className="">
       {/* HERO */}
       <div className="relative w-full items-center overflow-hidden lg:px-20 lg:px-5">
-        <SmokeModal lang={lang} />
+        <WorldLungDayModal lang={lang} />
         <div className="absolute inset-0 flex">
           <ExportedImage
             src="/images/sevenhome/HeroBG.png"
