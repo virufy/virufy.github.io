@@ -2,7 +2,10 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { ArrowUpRight } from 'lucide-react';
-
+/*
+put these inside of object in the i18n folder, a few of the other pages make good examples. You would make your object in the types folder,
+and reference it in the index of each of the language folders. Then you can import and use it in your page components. That way you can have translations for each language
+*/
 const leadershipTeam = [
   {
     name: 'Alex Marquess',
@@ -26,13 +29,13 @@ const leadershipTeam = [
     position: 'center',
     linkedin: 'https://www.linkedin.com/in/frederickcosper/',
   },
- {
-  name: 'Gabriela Sonsino',
-  role: 'Global Marketing and Communications',
-  image: '/images/leadership/Gabriela Sonsino.png',
-  position: 'center 35%',
-  linkedin: 'https://www.linkedin.com/in/gabriela-sonsino/',
-},
+  {
+    name: 'Gabriela Sonsino',
+    role: 'Global Marketing and Communications',
+    image: '/images/leadership/Gabriela Sonsino.png',
+    position: 'center 35%',
+    linkedin: 'https://www.linkedin.com/in/gabriela-sonsino/',
+  },
   {
     name: 'Laurence Giglio',
     role: 'QA',
@@ -76,46 +79,47 @@ export const metadata = {
     "Meet Virufy's leadership team and the department heads helping advance our mission.",
 };
 
-const LeadershipPage = ({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) => {
+const LeadershipPage = ({}: { params: { lang: Locale } }) => {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero */}
-<section className="relative flex min-h-[607px] items-center overflow-hidden">
-<ExportedImage
- src="/images/leadership/LeadershipHero.png"
-  alt=""
-  basePath={basePath}
-  fill
-  priority
-  className="object-cover"
-/>
+      <section className="relative flex min-h-[607px] items-center overflow-hidden">
+        <ExportedImage
+          src="/images/leadership/LeadershipHero.png"
+          alt=""
+          basePath={basePath}
+          fill
+          priority
+          className="object-cover"
+        />
 
         <div className="absolute inset-0 bg-white/5" />
 
-<div className="relative z-10 mx-auto w-full max-w-7xl px-10 text-left md:px-20">
-<h1 className="mb-5 text-4xl font-normal text-black md:text-5xl">
-  Leadership Team
-</h1>
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-10 text-left md:px-20">
+          <h1 className="mb-5 text-4xl font-normal text-black md:text-5xl">
+            Leadership Team
+          </h1>
 
-<p className="max-w-5xl text-lg leading-relaxed text-gray-700 md:text-xl">
-  The experienced leaders behind our business, research, technology, and global operations.
-</p>
+          <p className="max-w-5xl text-lg leading-relaxed text-gray-700 md:text-xl">
+            The experienced leaders behind our business, research, technology,
+            and global operations.
+          </p>
         </div>
       </section>
 
       {/* Leadership Team */}
       <section className="w-full bg-[#eef7f9] px-6 py-12 md:px-10 md:py-16">
-<div className="mx-auto grid w-full max-w-[1500px] grid-cols-2 gap-x-12 gap-y-10 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-24">       {leadershipTeam.map((member) => (
+        <div className="mx-auto grid w-full max-w-[1500px] grid-cols-2 gap-x-12 gap-y-10 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-24">
+          {' '}
+          {leadershipTeam.map((member) => (
             <article
               key={member.name}
               className="flex flex-col items-center text-center"
             >
               {/* Profile image */}
-<div className="relative mb-4 w-full max-w-[300px] aspect-[6/7] overflow-hidden rounded-full border border-slate-300/70 bg-white">    {member.image && (
+              <div className="relative mb-4 aspect-[6/7] w-full max-w-[300px] overflow-hidden rounded-full border border-slate-300/70 bg-white">
+                {' '}
+                {member.image && (
                   <ExportedImage
                     src={member.image}
                     alt={`${member.name} headshot`}
