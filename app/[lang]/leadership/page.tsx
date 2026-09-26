@@ -1,4 +1,4 @@
-import { type Locale } from '@/i18n-config';
+
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { ArrowUpRight } from 'lucide-react';
@@ -76,11 +76,7 @@ export const metadata = {
     "Meet Virufy's leadership team and the department heads helping advance our mission.",
 };
 
-const LeadershipPage = ({
-  params: { lang },
-}: {
-  params: { lang: Locale };
-}) => {
+const LeadershipPage = () => {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero */}
