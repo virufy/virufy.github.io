@@ -81,6 +81,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         route: [
           `/${lang}/story`,
           `/${lang}/advisors`,
+          `/${lang}/leadership`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
           `/${lang}/amils-story`,
@@ -407,6 +408,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       subtext: aboutUs.advisorsubtext,
                     },
                     {
+                      label: aboutUs?.leadership ?? 'Leadership Team',
+                      href: `/${lang}/leadership`,
+                      subtext: aboutUs.leadershipsubtext,
+                    },
+                    {
                       label: aboutUs?.ourFounder,
                       href: `/${lang}/amils-story`,
                       subtext: aboutUs.foundersubtext,
@@ -666,7 +672,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   >
                     {aboutUs?.advisors}
                   </Link>
-
+                  <Link
+                    href={`/${lang}/leadership`}
+                    onClick={handleNavClick}
+                    className="text-[#26364b]"
+                  >
+                    {aboutUs?.leadership ?? 'Leadership Team'}
+                  </Link>
                   <Link
                     href={`/${lang}/amils-story`}
                     onClick={handleNavClick}

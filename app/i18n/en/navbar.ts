@@ -17,6 +17,8 @@ export const navbar: NavbarType = {
     sectionsubtext: 'About Virufy',
     advisors: 'Our Advisors',
     advisorsubtext: 'Leading industry experts',
+    leadership: 'Leadership Team',
+    leadershipsubtext: 'Meet our leadership team',
     ourFounder: 'Meet Amil',
     foundersubtext: 'Meet our founder & CEO',
     ourSupporters: 'Our Supporters',

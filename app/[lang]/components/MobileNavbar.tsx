@@ -67,6 +67,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
         route: [
           `/${lang}/story`,
           `/${lang}/advisors`,
+          `/${lang}/leadership`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
           `/${lang}/amils-story`,
@@ -243,6 +244,7 @@ export default function MobileNavbar({ lang }: { lang: Locale }) {
       links: [
         { label: aboutUs?.section || '', href: `/${lang}/story` },
         { label: aboutUs?.advisors || '', href: `/${lang}/advisors` },
+        { label: aboutUs?.leadership || 'Leadership Team', href: `/${lang}/leadership` },
         { label: aboutUs?.ourFounder || '', href: `/${lang}/amils-story` },
         { label: aboutUs?.ourSupporters || '', href: `/${lang}/supporters` },
         {
