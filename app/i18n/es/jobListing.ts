@@ -9,6 +9,9 @@ const jobListing: JobListing = {
     no: 'No',
   },
   applyButtonText: 'Postularse',
+  openingsNoticeLabel: 'Ten en cuenta:',
+  openingsNotice:
+    'No todos los puestos a continuación se están contratando activamente en este momento. No dudes en presentar tu solicitud a cualquiera que te interese y nuestro equipo hará un seguimiento si hay alguna coincidencia.',
   jobDetailSectionTitles: {
     responsibilities: 'Responsabilidades',
     desiredSkills: 'Habilidades Deseadas',

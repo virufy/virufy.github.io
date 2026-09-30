@@ -8,6 +8,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { Info } from 'lucide-react';
 import Text from '../components/Text';
 
 
@@ -16,11 +17,15 @@ const JobList = ({
   jobList,
   modal,
   applyButtonText,
+  openingsNoticeLabel,
+  openingsNotice,
 }: {
   lang: Locale;
   jobList: Job[];
   modal: JobModal;
   applyButtonText: string;
+  openingsNoticeLabel: string;
+  openingsNotice: string;
 }) => {
   const router = useRouter();
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -106,6 +111,21 @@ const JobList = ({
       </div>
       {/* _________job listings____________ */}
       <div className="mx-auto mb-12 w-11/12" ref={scrollRef}>
+        <div
+          role="note"
+          className="mx-auto mt-8 flex w-[90%] items-start gap-3 rounded-md border border-s-4 border-[#9CC5F0] border-s-[#C62828] bg-[#E6F1FC] px-5 py-4 text-[#0B3A6B]"
+        >
+          <Info
+            className="mt-0.5 h-5 w-5 shrink-0 text-[#C62828]"
+            aria-hidden="true"
+          />
+          <p className="text-xs leading-relaxed sm:text-sm md:text-base">
+            <strong className="font-bold text-[#C62828]">
+              {openingsNoticeLabel}
+            </strong>{' '}
+            {openingsNotice}
+          </p>
+        </div>
         {!jobList ? <p>No data</p> : null}
 
         {jobList.map(({ category, positions }) => (

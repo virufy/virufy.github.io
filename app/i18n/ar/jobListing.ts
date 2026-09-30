@@ -8,6 +8,9 @@ const jobListing: JobListing = {
     no: 'لا',
   },
   applyButtonText: 'التقديم',
+  openingsNoticeLabel: 'يرجى الملاحظة:',
+  openingsNotice:
+    'لا يتم توظيف جميع الأدوار المذكورة أدناه بشكل نشط في الوقت الحالي. لا تتردد في التقدم إلى أي شيء يثير اهتمامك، وسيقوم فريقنا بالمتابعة إذا كان هناك تطابق.',
   jobDetailSectionTitles: {
     responsibilities: 'المسؤوليات',
     desiredSkills: 'المهارات المطلوبة',
