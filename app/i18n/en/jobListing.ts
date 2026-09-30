@@ -9,6 +9,9 @@ const jobListing: JobListing = {
     no: 'No',
   },
   applyButtonText: 'Apply',
+  openingsNoticeLabel: 'Please note:',
+  openingsNotice:
+    "Not all of the roles below are actively being recruited right now. Feel free to apply to any that interest you, and our team will follow up if there's a match.",
   jobDetailSectionTitles: {
     responsibilities: 'Responsibilities',
     desiredSkills: 'Desired Skills',

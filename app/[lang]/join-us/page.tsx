@@ -8,7 +8,7 @@ import JobList from './JobList';
 
 const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    jobListing: { titleImage, jobList, modal, applyButtonText },
+    jobListing: { titleImage, jobList, modal, applyButtonText, openingsNoticeLabel, openingsNotice },
   } = usei18n(lang);
 
   return (
@@ -39,6 +39,8 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             jobList={jobList}
             modal={modal}
             applyButtonText={applyButtonText}
+            openingsNoticeLabel={openingsNoticeLabel}
+            openingsNotice={openingsNotice}
           />
         </div>
       </div>

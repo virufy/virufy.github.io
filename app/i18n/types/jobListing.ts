@@ -3,6 +3,8 @@ export interface JobListing {
   titleImage: string;
   modal: JobModal;
   applyButtonText: string;
+  openingsNoticeLabel: string;
+  openingsNotice: string;
   jobDetailSectionTitles: JobDetailSectionTitles;
 }
 

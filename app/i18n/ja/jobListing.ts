@@ -9,6 +9,9 @@ const jobListing: JobListing = {
     no: 'いいえ',
   },
   applyButtonText: '応募する',
+  openingsNoticeLabel: 'ご留意ください：',
+  openingsNotice:
+    '掲載しているポジションは、すべてが現在募集中とは限りません。興味をお持ちのポジションがございましたら、まずはご応募ください。ご経験・スキルに合う機会がある場合、担当チームよりご連絡いたします。',
   jobDetailSectionTitles: {
     responsibilities: '職務内容',
     desiredSkills: '望ましいスキル',
