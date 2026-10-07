@@ -57,7 +57,7 @@ const Card: React.FC<CardProps> = ({ title, text, icon, first, last }) => (
 
 const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    home: { introSection, section2, section3, section4, section5 },
+    home: { introSection, section2, section3, impactSection, section4, section5 },
   } = usei18n(lang);
 
   const [open, setOpen] = useState(false);
@@ -232,6 +232,36 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             </div>
           </Container>
         </section>
+      </div>
+
+      {/* IMPACT SECTION (duplicated from the Who We Are / Story page) */}
+      <div className="relative w-full overflow-hidden bg-gradient-to-t from-[#FBFEFF] to-[#EEF8FD]">
+        <div className="mx-auto w-full max-w-7xl px-5 md:px-10 lg:px-16 xl:px-20">
+          <section className="my-10 mt-24">
+            <div className="mb-4 text-center text-2xl font-semibold text-[#1B6E64] md:text-left md:text-4xl">
+              {impactSection.title}
+            </div>
+            <div className="py-2 text-left text-center text-lg font-normal text-gray-700 md:my-5 md:text-left md:text-2xl">
+              {impactSection.subtitle}
+            </div>
+            <div className="my-5 grid grid-cols-2 gap-2 md:my-20 md:grid-cols-4 md:gap-6">
+              {impactSection.cardtitle.map((title, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col rounded-2xl border border-[#bcc7d4] p-2 text-center shadow-sm shadow-xl md:my-0 md:max-w-[276px] md:items-start md:p-6 md:text-left"
+                >
+                  <h1 className="bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] bg-clip-text text-center text-[42px] font-semibold text-transparent md:text-left md:text-[48px]">
+                    {title}
+                  </h1>
+                  <p className="text-black">{impactSection.cardtext[i]}</p>
+                  <span className="my-3 text-gray-700">
+                    {impactSection.cardsubtext[i]}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
       </div>
 
       {/* SECTION 4 */}

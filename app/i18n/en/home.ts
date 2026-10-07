@@ -34,6 +34,24 @@ const HomePage: homepage = {
     disclaimer:
       '*Virufy is not a substitute for professional medical advice, diagnosis, or treatment. Users are advised to consult a licensed healthcare provider for any medical concerns or decisions.*',
   },
+  impactSection: {
+    title: 'Our Impact at a Glance',
+    subtitle:
+      "Building the world's largest open cough audio dataset to advance respiratory health research globally.",
+    cardtitle: ['250K+', '5+', '250+', '10+'],
+    cardtext: [
+      'Cough Samples Collected',
+      'Countries Reached',
+      'Active Volunteers',
+      'Research Partners',
+    ],
+    cardsubtext: [
+      'Contributing to global research',
+      'Building a truly global dataset',
+      'Student and researchers',
+      'Universities and institutions',
+    ],
+  },
   section4: {
     title: 'Advancing Global Health, Together.',
     subtitle:
