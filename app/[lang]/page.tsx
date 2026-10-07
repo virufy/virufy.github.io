@@ -247,7 +247,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             <div className="my-5 grid grid-cols-2 gap-2 md:my-20 md:grid-cols-4 md:gap-6">
               {impactSection.cardtitle.map((title, i) => (
                 <div
-                  key={i}
+                  key={title}
                   className="flex flex-col rounded-2xl border border-[#bcc7d4] p-2 text-center shadow-sm shadow-xl md:my-0 md:max-w-[276px] md:items-start md:p-6 md:text-left"
                 >
                   <h1 className="bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] bg-clip-text text-center text-[42px] font-semibold text-transparent md:text-left md:text-[48px]">
