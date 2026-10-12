@@ -32,7 +32,7 @@ export default async function RootLayout({
   params: { lang: Locale };
 }>) {
   return (
-    <html lang={lang}>
+    <html lang={lang ?? i18n.defaultLocale}>
       <body className={`${montserrat.className} ${nunitoSans.variable}`}>
         <main>{children}</main>
       </body>
