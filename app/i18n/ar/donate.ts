@@ -2,64 +2,64 @@ import type { Donate } from '../types/donate';
 
 const donate: Donate = {
   introSection: {
-    tag: 'Support Our Mission',
-    title: ['Together, we can revolutionize', 'global respiratory health'],
-    text: 'Every contribution brings us closer to delivering AI-powered diagnostic tools to patients and communities worldwide offering health equity.',
-    buttonText: 'How to Contribute',
+    tag: 'دعم مهمتنا',
+    title: ['معًا، يمكننا إحداث ثورة', 'صحة الجهاز التنفسي العالمية'],
+    text: 'كل مساهمة تقربنا من تقديم أدوات التشخيص المدعومة بالذكاء الاصطناعي للمرضى والمجتمعات في جميع أنحاء العالم التي تقدم العدالة الصحية.',
+    buttonText: 'كيفية المساهمة',
   },
   impactSection: {
-    title: 'Your gift creates a lasting impact.',
+    title: 'هديتك تخلق تأثيرًا دائمًا.',
     description:
-      "Every donation helps Virufy bring accessible digital health technology to underserved communities. By supporting us, you're accelerating innovation and giving patients the tools to protect their health.",
+      'يساعد كل تبرع شركة Virufy على توفير تكنولوجيا الصحة الرقمية التي يمكن الوصول إليها للمجتمعات المحرومة. من خلال دعمنا، فإنك تعمل على تسريع الابتكار وتزويد المرضى بالأدوات اللازمة لحماية صحتهم.',
   },
 
   pillars: [
     {
-      title: 'Expand Access',
+      title: 'قم بتوسيع الوصول',
       description:
-        'Bring AI-powered health screening tools and advantages to underserved communities worldwide.',
+        'توفير أدوات ومزايا الفحص الصحي المدعومة بالذكاء الاصطناعي للمجتمعات المحرومة في جميع أنحاء العالم.',
       icon: '/icons/icon-expand-access.png',
     },
     {
-      title: 'Advance Research',
+      title: 'البحوث المتقدمة',
       description:
-        'Support cutting-edge studies that improve early detection of respiratory illness.',
+        'دعم الدراسات المتطورة التي تعمل على تحسين الكشف المبكر عن أمراض الجهاز التنفسي.',
       icon: '/icons/icon-advance-research.png',
     },
     {
-      title: 'Empower Patients',
+      title: 'تمكين المرضى',
       description:
-        'Help individuals take control of their health with accessible, science-driven insights.',
+        'ساعد الأفراد على التحكم في صحتهم من خلال رؤى علمية يمكن الوصول إليها.',
       icon: '/icons/icon-empower-patients.png',
     },
   ],
   donateOptions: {
-    title: 'Choose how you’d like to give.',
+    title: 'اختر الطريقة التي ترغب في تقديمها.',
     subtitle:
-      'Your support matters. Select a donation option below to get started.',
+      'دعمكم مهم. حدد خيار التبرع أدناه للبدء.',
     options: [
       {
         name: 'GoFundMe',
         description:
-          "Contributions are directed through Virufy's GoFundMe campaign.",
-        buttonText: 'Donate via GoFundMe',
+          'يتم توجيه المساهمات من خلال حملة GoFundMe التابعة لـ Virufy.',
+        buttonText: 'التبرع عبر GoFundMe',
         url: 'https://www.gofundme.com/f/donate-virufy',
         icon: '/icons/icon-donate.png',
       },
       {
         name: 'PayPal',
         description:
-          "Contributions are processed directly through Virufy's PayPal account.",
-        buttonText: 'Donate via PayPal',
+          'تتم معالجة المساهمات مباشرة من خلال حساب PayPal الخاص بـ Virufy.',
+        buttonText: 'التبرع عبر PayPal',
         url: 'https://www.paypal.com/us/fundraiser/charity/4348461',
         icon: '/icons/icon-donate.png',
       },
     ],
   },
   banner: {
-    title: 'Transparency you can trust.',
+    title: 'الشفافية التي يمكنك الوثوق بها.',
     text: [
-      'Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research, innovation, and patient access.',
+      'Virufy هي منظمة غير ربحية بموجب المادة 501(c)(3). تبرعاتك معفاة من الضرائب حيثما ينطبق ذلك. نحن ملتزمون بالشفافية والمساءلة، مما يضمن أن هديتك تدعم بشكل مباشر البحث والابتكار ووصول المرضى.',
     ],
   },
 };
