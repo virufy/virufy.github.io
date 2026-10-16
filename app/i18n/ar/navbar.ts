@@ -15,6 +15,7 @@ export const navbar: NavbarType = {
   aboutUs: {
     section: 'من نحن',
     advisors: 'المستشارين',
+    leadership: 'فريق القيادة',
     ourSupporters: 'داعمونا',
     ourFounder: 'مؤسسنا',
 

@@ -8,6 +8,7 @@ import fukuoka from '../ja/fukuoka';
 import home from './home';
 import jobDetails from './jobDetails';
 import jobListing from './jobListing';
+import leadership from './leadership';
 import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
 import paper from '../en/paper';
@@ -31,6 +32,7 @@ const arMetadata: I18nData = {
   home,
   jobDetails,
   jobListing,
+  leadership,
   navbar,
   oneYoungWorld,
   paper,

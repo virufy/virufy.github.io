@@ -7,6 +7,7 @@ import type { Fukuoka } from './fukuoka';
 import type { homepage } from './home';
 import type { JobDetails } from './jobDetails';
 import type { JobListing } from './jobListing';
+import type { Leadership } from './leadership';
 import type { NavbarType } from './navbar';
 import type { OneYoungWorld } from './oneYoungWorld';
 import type { PaperContent } from './paper';
@@ -30,6 +31,7 @@ export interface I18nData {
   home: homepage;
   jobDetails: JobDetails;
   jobListing: JobListing;
+  leadership: Leadership;
   navbar: NavbarType;
   oneYoungWorld: OneYoungWorld;
   paper: PaperContent;

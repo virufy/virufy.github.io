@@ -2,10 +2,8 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { ArrowUpRight } from 'lucide-react';
-/*
-put these inside of object in the i18n folder, a few of the other pages make good examples. You would make your object in the types folder,
-and reference it in the index of each of the language folders. Then you can import and use it in your page components. That way you can have translations for each language
-*/
+import { usei18n } from '../../i18n';
+
 const leadershipTeam = [
   {
     name: 'Alex Marquess',
@@ -79,7 +77,11 @@ export const metadata = {
     "Meet Virufy's leadership team and the department heads helping advance our mission.",
 };
 
-const LeadershipPage = ({}: { params: { lang: Locale } }) => {
+const LeadershipPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
+  const {
+    leadership: { hero },
+  } = usei18n(lang);
+
   return (
     <main className="min-h-screen bg-white">
       {/* Hero */}
@@ -97,12 +99,11 @@ const LeadershipPage = ({}: { params: { lang: Locale } }) => {
 
         <div className="relative z-10 mx-auto w-full max-w-7xl px-10 text-left md:px-20">
           <h1 className="mb-5 text-4xl font-normal text-black md:text-5xl">
-            Leadership Team
+            {hero.title}
           </h1>
 
           <p className="max-w-5xl text-lg leading-relaxed text-gray-700 md:text-xl">
-            The experienced leaders behind our business, research, technology,
-            and global operations.
+            {hero.subtitle}
           </p>
         </div>
       </section>

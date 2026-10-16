@@ -8,6 +8,7 @@ import fukuoka from './fukuoka';
 import home from './home';
 import jobDetails from './jobDetails';
 import jobListing from './jobListing';
+import leadership from './leadership';
 import navbar from './navbar';
 import oneYoungWorld from './oneYoungWorld';
 import paper from '../en/paper';
@@ -30,6 +31,7 @@ const jaMetadata: I18nData = {
   fukuoka,
   jobDetails,
   jobListing,
+  leadership,
   home,
   navbar,
   oneYoungWorld,
