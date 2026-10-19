@@ -7,7 +7,7 @@ const PublicationsContent: PublicationsPage = {
     subtitle:
       'AIを活用し、咳の音声から呼吸器疾患を検出する技術に関する査読済み研究、学術論文、科学的研究',
     bgImage: '/icons/icon-news-bg.png',
-    tag: 'Research',
+    tag: '研究',
     tagIcon: '/icons/icon-research.png',
   },
   pillSelector: {
@@ -56,7 +56,7 @@ const PublicationsContent: PublicationsPage = {
     },
     {
       title: '世界の呼吸器健康のためのAI音響診断',
-      date: 'June 2026',
+      date: '2026年6月',
       subText: '',
       url: '/en/publications/virufy-white-paper-2026',
       contentType: 'publications',

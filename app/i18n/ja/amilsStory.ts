@@ -2,63 +2,63 @@ import { type AmilsStory } from '../types/amilsStory';
 
 const amilsStory: AmilsStory = {
   heroSection: {
-    tag: 'Meet Amil',
+    tag: 'アミルのご紹介',
     title: [
-      { type: 'text', text: 'Meet Our ' },
-      { type: 'span', text: 'Founder & CEO' },
+      { type: 'text', text: '私たちの' },
+      { type: 'span', text: '創業者・CEO について' },
     ],
-    text: 'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley. Specially Appointed Assistant Professor, Department of Engineering, University of Fukui, Japan',
+    text: '福井大学大学院 工学研究科 博士後期課程在籍。元カリフォルニア大学バークレー校 MBA および工学修士（データサイエンス）ジョイントディグリープログラム学生。福井大学 工学部 特任助教。',
   },
   storySection: {
-    title: "Amil's Story",
+    title: 'アミルについて',
     texts: [
-      'Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact.',
-      'Since its founding, Virufy has grown into an international nonprofit operating across three continents, supported by more than 250 volunteers and 60 partner organizations. Guided by its mission to democratize access to health screening, Virufy continues to advance AI-driven disease detection to help communities respond faster, earlier, and more equitably to global health threats.',
+      'アミル・カンザダ（Amil Khanzada）は、新型コロナウィルス（COVID-19）のパンデミックの最中、「スマートフォン一つで、世界中の誰もが、どこにいても早期の疾患スクリーニングを受けられるようにする」というミッションを掲げ、Virufyを創設しました。幼い頃から社会貢献活動に親しみ、ソフトウェア工学と人工知能（AI）の分野でキャリアを築いてきたアミルは、最先端のテクノロジーを活用することで、世界が直面する喫緊の公衆衛生課題の解決に貢献できると考えました。スタンフォード大学大学院では、アンドリュー・ン（Andrew Ng）博士やフェイフェイ・リ（Fei-Fei Li）博士といったAI分野の先駆者たちのもとで学び、機械学習、音声信号処理、モバイルコンピューティングの進歩が、人々の健康を守るための実社会の健康課題の解決に迅速に活かせる可能性を見出しました。',
+      'Virufyは設立以来、3大陸にわたって活動する国際的な非営利団体へと成長し、250名を超えるボランティアと60のパートナー団体に支えられています。「誰もが等しく健康スクリーニングを受けられる社会の実現」というミッションのもと、AIを活用した疾患の早期発見技術の開発を推進し、世界各地の地域社会が健康上の脅威を早期に把握し、迅速かつ公平に対応できるよう取り組み続けています。',
     ],
   },
   milestoneSection: {
-    title: 'Key Milestones',
-    text: 'A journey from pandemic response to global impact in respiratory health technology.',
+    title: '主なマイルストーン',
+    text: 'パンデミックへの対応から、呼吸器ケア技術の世界的展開へ',
     milestoneCards: [
       {
-        title: '2020: The Stanford Genesis',
-        text: 'While a student at Stanford, Amil established Virufy as a registered nonprofit in direct response to the global pandemic. He mobilized a world-class volunteer network to begin collecting cough recordings, launching the first clinical research studies in South Asia to train AI for COVID-19 detection.',
+        title: '2020年：スタンフォードでの始動',
+        text: 'スタンフォード大学在学中、アミルは世界的なパンデミックを受け、非営利団体Virufyを正式に設立しました。世界各地から優秀なボランティアを集め、咳音データの収集を開始。さらに、COVID-19を検出するAIの開発に向けて、南アジアで初期の臨床研究を開始しました。',
         image: '/images/amilsStory/amil-2020-stanford-genesis.webp',
         date: '2020',
       },
       {
-        title: '2021: Global Outreach & Data Expansion',
-        text: 'Our partner Sherlock Communications led a massive marketing push across Latin America, generating over 300 press releases to drive large-scale data collection and public awareness. Amil began representing Virufy at major global summits, establishing the organization as an international leader in the emerging field of acoustic health.',
+        title: '2021年：グローバル展開とデータの拡大',
+        text: 'パートナー企業であるSherlock Communicationsは、ラテンアメリカ全域で大規模な広報活動を展開し、300件を超えるプレスリリースを通じて、データ収集の拡大と認知度の向上に貢献しました。また、アミルは世界の主要な国際サミットにVirufyの代表として参加し、音声を活用した健康・医療技術の新たな分野において、Virufyの国際的なリーダーとしての地位を確立していきました。',
         image: '/images/amilsStory/amil-2021-global-outreach.webp',
         date: '2021',
       },
       {
-        title: '2022: Federal Recognition & Development',
-        text: 'Virufy secured a prestigious research contract with the U.S. Department of Health and Human Services (BARDA). This milestone significantly accelerated the organization’s development capabilities and provided federal-level validation for the mission to provide accessible respiratory screening tools. Our clinical studies in Colombia proceeded in parallel.',
+        title: '2022年：米国政府からの評価と開発',
+        text: 'Virufyは、米国保健福祉省傘下の生物医学先端研究開発局（BARDA）との重要な研究契約を獲得しました。この契約を機に開発力が大幅に強化され、誰もが利用できる呼吸器疾患スクリーニング技術の実現を目指すVirufyの取り組みが、米国政府からも評価されました。並行して、コロンビアでの臨床研究も進められました。',
         image: '/images/amilsStory/amil-2022-federal-recognition.webp',
         date: '2022',
       },
       {
-        title: '2023: Strategic Innovation & NSF I-Corps',
-        text: 'Following the conclusion of the public health emergency, Amil led Virufy through the National Science Foundation (NSF) I-Corps program. He traveled extensively across the U.S. to conduct hundreds of interviews, defining a robust operational model for acoustic AI to detect respiratory threats beyond COVID-19.',
+        title: '2023年：戦略的イノベーションとNSF I-Corps',
+        text: '公衆衛生上の緊急事態が終結した後、アミルはVirufyを率いて、米国国立科学財団（NSF）のI-Corpsプログラムに参加しました。全米各地を訪れて数百件に及ぶインタビューを実施し、COVID-19にとどまらず、幅広い呼吸器疾患の検出に音声AIを活用するための実践的な運用モデルを確立しました。',
         image: '/images/amilsStory/amil-2023-strategic-innovation.webp',
         date: '2023',
       },
       {
-        title: '2024: The Japan Hub & Elderly Care',
-        text: 'Amil established a significant operational presence in Japan with support from JETRO. He spearheaded a major research shift toward detecting pneumonia in elderly care facilities, establishing a local HQ in Fukuoka to serve the specific needs of the Japanese healthcare market.',
+        title: '2024年：日本拠点の設立と高齢者ケアへの応用',
+        text: 'アミルは、JETRO（日本貿易振興機構）の支援を受け、日本での本格的な活動基盤を構築しました。高齢者介護施設における肺炎の検出に向けて研究の重点を移すとともに、福岡に日本の活動拠点を設立し、日本の医療現場特有のニーズに応える取り組みを進めました。',
         image: '/images/amilsStory/amil-2024-japan-hub.webp',
         date: '2024',
       },
       {
-        title: '2025: Global Scale & Multi-Disease Detection',
-        text: 'Amil launched operations in Dubai, securing a critical partnership with a health ministry arm to validate and deploy COVID/Flu detection technology. This initiative focused on achieving large-scale population health surveillance and strengthening public health infrastructure.',
+        title: '2025年：グローバル展開と複数疾患の検知',
+        text: 'アミルはドバイでの活動を開始し、保健省の関連機関との重要なパートナーシップを構築しました。この連携を通じて、COVID-19やインフルエンザの検出技術の検証と導入を進め、大規模な公衆衛生モニタリング体制の構築と公衆衛生基盤の強化に取り組みました。',
         image: '/images/amilsStory/amil-2025-middle-east.webp',
         date: '2025',
       },
       {
-        title: '2026: Academic Leadership & Global Mission',
-        text: 'Amil joined the University of Fukui as a Specially Appointed Assistant Professor of Social Informatics. In this role, he continues to lead Virufy’s global mission in parallel with his academic research on GovAI, regional revitalization, and the practical deployment of global health technologies.',
+        title: '2026年：学術的リーダーシップとグローバルミッション',
+        text: 'アミルは福井大学の社会情報学分野における特命助教に就任しました。現在は、行政におけるAI活用（GovAI）、地域活性化、グローバルヘルステクノロジーの社会実装に関する研究に取り組む一方、Virufyの国際的な活動を引き続き牽引しています。',
         image: '/images/amilsStory/amil-2026-academic-leadership.webp',
         date: '2026',
       },
@@ -66,16 +66,16 @@ const amilsStory: AmilsStory = {
   },
   oywSection: {
     title: [
-      { type: 'text', text: 'Supported by a Global Network – ' },
+      { type: 'text', text: 'グローバルネットワークによる支援' },
       { type: 'span', text: 'One Young World' },
     ],
-    text: 'Through One Young World, Amil has been able to scale his vision beyond borders, connecting with a global community of young leaders committed to solving real-world health challenges. As an ambassador, he collaborates with researchers, clinicians, and technologists from around the world, leveraging this international network to accelerate Virufy’s mission of accessible, AI-driven respiratory health screening.',
+    text: 'アミルは「One Young World」を通じて、世界の健康課題の解決に取り組む若いリーダーたちとのつながりを深め、国境を越えて自身のビジョンを広げてきました。アンバサダーとして、世界各地の研究者、医療従事者、技術者と連携し、国際的なネットワークを活かしながら、誰もが利用できるAIを活用した呼吸器疾患スクリーニングの実現に向けて、Virufyの取り組みを加速させています。',
     image: '/images/amilsStory/one-young-world-cover.webp',
   },
   banner: {
-    title: 'Built in Partnership With a Global Network',
-    text: 'Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide.',
-    buttonText: 'View Our Supporters',
+    title: 'グローバルパートナーとの協働',
+    text: 'アミルとVirufyのチームは、大学、企業、非営利団体などのパートナーと連携し、AIを活用した呼吸器疾患スクリーニングを世界中の誰もが利用できるよう、取り組みを進めています。',
+    buttonText: '支援者を見る',
     url: '/supporters',
   },
 };
