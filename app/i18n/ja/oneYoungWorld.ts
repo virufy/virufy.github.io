@@ -6,7 +6,7 @@ const oneYoungWorld: OneYoungWorld = {
     image: './../images/oneYoungWorld/bg-header.webp',
     altText: '',
     subtitle:
-      'Companies and organizations support us from their extensive knowledge and provide us with security and certainty in what we do.',
+      '私たちは、企業や団体の皆さまから専門的な知見とご支援をいただき、活動の確かな基盤を築いています。',
   },
   navbarTexts: {
     oyw: 'One Young World',
@@ -84,13 +84,13 @@ const oneYoungWorld: OneYoungWorld = {
         },
       ],
       buttonText: '参加する',
-      readMoreText: 'Read More →',
+      readMoreText: '続きを読む →',
     },
   },
   BannerSection: {
-    title: 'Built in Partnership With a Global Network',
-    text: 'Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide.',
-    buttonText: 'View Our Supporters',
+    title: 'グローバルネットワークとの協働・連携',
+    text: '学術機関、産業界、非営利団体のパートナーと共に、アミルと Virufy は AI を活用した呼吸器疾患スクリーニングへのアクセス拡大に取り組んでいます。',
+    buttonText: '支援者を見る',
   },
 };
 
