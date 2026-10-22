@@ -2,9 +2,9 @@ import { type Leadership } from '../types/leadership';
 
 const leadership: Leadership = {
   hero: {
-    title: 'Leadership Team',
+    title: 'リーダーシップチーム',
     subtitle:
-      'The experienced leaders behind our business, research, technology, and global operations.',
+      'Virufy の事業、研究、技術、そして国際的な活動を推進する経験豊富なリーダーたちです。',
   },
 };
 
