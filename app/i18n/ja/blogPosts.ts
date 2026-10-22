@@ -1,4 +1,5 @@
 import { type Post } from '@/app/i18n/types/BlogPosts';
+import { competitiveMedicalTechnologyBlogPost } from '../en/blogPosts';
 
 const blogPosts: Record<string, Post> = {
   'silent-smog-hidden-impact': {
@@ -611,5 +612,7 @@ const blogPosts: Record<string, Post> = {
     </ul>
   `,
   },
+  [competitiveMedicalTechnologyBlogPost.slug]:
+    competitiveMedicalTechnologyBlogPost,
 };
 export default blogPosts;
