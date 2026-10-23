@@ -4,15 +4,15 @@ const amilsStory: AmilsStory = {
   heroSection: {
     tag: 'Meet Amil',
     title: [
-      { type: 'text', text: 'Meet Our ' },
-      { type: 'span', text: 'Founder & CEO' },
+      { type: 'text', text: 'Founder & CEO: ' },
+      { type: 'span', text: 'Dr. Amil Khanzada' },
     ],
     text: 'Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley. Specially Appointed Assistant Professor, Department of Engineering, University of Fukui, Japan',
   },
   storySection: {
     title: "Amil's Story",
     texts: [
-      'Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact.',
+      'Dr. Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact.',
       'Since its founding, Virufy has grown into an international nonprofit operating across three continents, supported by more than 250 volunteers and 60 partner organizations. Guided by its mission to democratize access to health screening, Virufy continues to advance AI-driven disease detection to help communities respond faster, earlier, and more equitably to global health threats.',
     ],
   },
