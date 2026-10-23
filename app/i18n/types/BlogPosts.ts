@@ -36,6 +36,7 @@ export interface Post {
   title: string;
   description: string;
   content: string;
+  image?: string;
   date?: string;
   author?: string;
 }
