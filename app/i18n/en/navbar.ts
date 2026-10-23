@@ -19,7 +19,7 @@ export const navbar: NavbarType = {
     advisorsubtext: 'Leading industry experts',
     leadership: 'Leadership Team',
     leadershipsubtext: 'Meet our leadership team',
-    ourFounder: 'Meet Amil',
+    ourFounder: 'Meet Dr. Khanzada',
     foundersubtext: 'Meet our founder & CEO',
     ourSupporters: 'Our Supporters',
     supportersubtext: 'Partners for impact',
