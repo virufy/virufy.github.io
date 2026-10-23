@@ -15,6 +15,7 @@ export const navbar: NavbarType = {
   aboutUs: {
     section: '団体について',
     advisors: 'アドバイザー',
+    leadership: 'リーダーシップチーム',
     ourFounder: '私たちの創業者・CEO',
     ourSupporters: 'サポーター',
 
