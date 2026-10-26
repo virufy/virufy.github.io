@@ -31,5 +31,5 @@ type Advisor = {
   name: string;
   role: string;
   texts: string[];
-  link: string;
+  link?: string;
 };
