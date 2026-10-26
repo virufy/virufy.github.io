@@ -46,6 +46,7 @@ const advisorOrder = [
   'junpei',
   'peter',
   'yasuko',
+  'richardMontauk',
 ];
 
 export const metadata = {

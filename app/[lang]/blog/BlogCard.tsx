@@ -4,8 +4,29 @@ import { type Locale } from '@/i18n-config';
 
 import ExportedImage from 'next-image-export-optimizer';
 const placeholderImage = '/images/sevenNews/Placeholder-Card.png';
+const blogImagesBySlug: Record<string, string> = {
+  'how-to-stay-competitive-in-the-booming-era-of-medical-technology':
+    '/images/blog/How to Stay Competitive in the Booming Era of Medical Technology.png',
+  'world-lung-day':
+    '/images/blog/World Lung Day Making Every Breath Count.png',
+  'building-ai-for-healthcare-what-makes-medtech-different':
+    '/images/blog/Building AI for Healthcare What Makes MedTech Different.png',
+  'bringing-respiratory-screening-to-the-communities-that-need-it-most':
+    '/images/blog/Bringing Respiratory Screening to the Communities That Need It Most..png',
+  'the-science-of-sound-and-health':
+    '/images/blog/The Science of Sound and Health.png',
+  'the-next-step-in-respiratory-public-health':
+    '/images/blog/The Next Step in Respiratory Public Health.png',
+  'the-future-of-digital-solutions':
+    '/images/blog/The Future of Digital Solutions.png',
+  'world-no-tobacco-day': '/images/blog/World No Tobacco Day.png',
+  'silent-smog-hidden-impact':
+    '/images/blog/Silent Smog The Hidden Impact on Your Lungs.png',
+  'screen-early-live-better': '/images/blog/Screen Early, Live Better.png',
+};
+
 export default function BlogCard({ post, lang }: { post: Post; lang: Locale }) {
-  const cardImage = placeholderImage;
+  const cardImage = post.image ?? blogImagesBySlug[post.slug] ?? placeholderImage;
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:border-gray-300 hover:shadow-2xl">
       <Link href={`/${lang}/blog/${post.slug}`}>

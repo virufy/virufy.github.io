@@ -28,15 +28,15 @@ const AdvisorsGrid = ({ lang, advisorOrder }: AdvisorsGridProps) => {
   const totalAdvisors = filteredAdvisors.length;
   const buttonEntries = Object.entries(sectionCategories.buttons);
 
-  const firstRow = buttonEntries.slice(0, 5);
-  const secondRow = buttonEntries.slice(5);
+  const firstRow = buttonEntries.slice(0, 6);
+  const secondRow = buttonEntries.slice(6);
   return (
     <>
       {/* Advisor Categories */}
       <div className="pb-10">
         <div className="border-y-2 border-gray-300 bg-[#e8f4fc] pb-10 pt-10">
           {/* Category Title + Buttons */}
-          <div className="xl:lg-72 sm:mx-16 md:mx-24 lg:mx-48">
+          <div className="mx-auto w-full max-w-[1250px] px-4">
             {/* Browse expertise by category
           <div className="flex justify-center pb-5 text-lg md:block md:text-2xl">
             {sectionCategories.title}
