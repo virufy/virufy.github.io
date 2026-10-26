@@ -32,6 +32,7 @@ const advisorCategories: Record<string, string> = {
   madhav: 'marketing',
   ronan: 'marketing',
   richard: 'marketing',
+  richardMontauk: 'admissions',
   tamer: 'marketing',
   amir: 'marketing',
 
