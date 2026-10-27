@@ -45,6 +45,8 @@ const redirects = [
     from: 'amil-jp-degree',
     to: 'https://docs.google.com/document/d/1DtRBgO_oS_hR4CU-xktEE-nPB-LPH_rCW9QeEYjkNeQ/edit?tab=t.0',
   },
+  { from: 'disease-map', to: 'dubai-map' },
+  { from: 'disease-app', to: 'dubai-app' },
   // add more here
 ];
 
