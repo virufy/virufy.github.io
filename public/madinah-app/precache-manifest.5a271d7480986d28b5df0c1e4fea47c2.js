@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5701a007cb854e87f5a33d8d03dd53cb",
+    "revision": "597c7f01a499c3f6a41fe63a6f8a7ccf",
     "url": "/madinah-app/index.html"
   },
   {
@@ -116,12 +116,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/madinah-app/static/js/3.05622f16.chunk.js"
   },
   {
-    "revision": "c04d00b69bffc3dd763c",
-    "url": "/madinah-app/static/js/30.2db9033c.chunk.js"
+    "revision": "d25cc2c5ccb554c2c74a",
+    "url": "/madinah-app/static/js/30.d7aa9f50.chunk.js"
   },
   {
     "revision": "6e4801d64cd5677e977179501d49a9ce",
-    "url": "/madinah-app/static/js/30.2db9033c.chunk.js.LICENSE.txt"
+    "url": "/madinah-app/static/js/30.d7aa9f50.chunk.js.LICENSE.txt"
   },
   {
     "revision": "46e0d1cc2e4d1d1cb49e",
@@ -220,16 +220,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/madinah-app/static/js/52.ba150b49.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ea17cab018c6b3c77e6",
-    "url": "/madinah-app/static/js/53.51cd0e45.chunk.js"
+    "revision": "be15a6e7c11e72cf3c02",
+    "url": "/madinah-app/static/js/53.341c6b08.chunk.js"
   },
   {
     "revision": "9a73b17d3f74e8a595e1554cd96c873a",
-    "url": "/madinah-app/static/js/53.51cd0e45.chunk.js.LICENSE.txt"
+    "url": "/madinah-app/static/js/53.341c6b08.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a7eea8cb2f52e8b1dcf2",
-    "url": "/madinah-app/static/js/54.1151f2c7.chunk.js"
+    "revision": "b1ed17c6e53a5c0870d6",
+    "url": "/madinah-app/static/js/54.4b28f317.chunk.js"
   },
   {
     "revision": "405bad065f0c1f283259",
@@ -248,12 +248,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/madinah-app/static/js/9.ebcfa158.chunk.js"
   },
   {
-    "revision": "19a2f3f7e1c3e512d728",
-    "url": "/madinah-app/static/js/main.997ee303.chunk.js"
+    "revision": "1c3f180775584ad1207b",
+    "url": "/madinah-app/static/js/main.046678ea.chunk.js"
   },
   {
-    "revision": "4287f73fed695bb2a5dd",
-    "url": "/madinah-app/static/js/runtime-main.cb66b6d2.js"
+    "revision": "84b7561a69e28ea8becf",
+    "url": "/madinah-app/static/js/runtime-main.f09272d1.js"
   },
   {
     "revision": "74682ec33acb1a883ae7d81e961610ce",
