@@ -2,7 +2,7 @@ import { type FAQ } from '../types/faq';
 
 const faq: FAQ = {
   headerSection: {
-    tag: 'h2',
+    tag: 'ご質問はありますか？',
     title: [
       {
         type: 'text',
@@ -467,9 +467,9 @@ const faq: FAQ = {
     },
   },
   banner: {
-    title: 'Still have questions?',
-    text: "Can't find the answer you're looking for? Our dedicated support team is here to help! Reach out to us with your question, and we'll be happy to assist you.",
-    buttonText: 'Contact Us',
+    title: 'まだご不明な点はございますか？',
+    text: 'お探しの答えが見つからない場合でも、専任のサポートチームが対応いたします。お気軽にご連絡ください。',
+    buttonText: 'お問い合わせ',
     contactTitle: 'お問い合わせ',
     emailText: 'メールでお問い合わせください',
     closeText: '閉じる',

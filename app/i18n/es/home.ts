@@ -34,6 +34,24 @@ const HomePage: homepage = {
     disclaimer:
       '*Virufy no es un sustituto del consejo, diagnóstico o tratamiento médico profesional. Se recomienda a los usuarios consultar con un proveedor de atención médica autorizado para cualquier inquietud o decisión médica.*',
   },
+  impactSection: {
+    title: 'Nuestro Impacto en un Vistazo',
+    subtitle:
+      'Construyendo el conjunto de datos abiertos de audio de tos más grande del mundo para avanzar en la investigación de la salud respiratoria a nivel global.',
+    cardtitle: ['250K+', '5+', '250+', '10+'],
+    cardtext: [
+      'Muestras de tos recopiladas',
+      'Países alcanzados',
+      'Voluntarios activos',
+      'Socios de investigación',
+    ],
+    cardsubtext: [
+      'Contribuyendo a la investigación global',
+      'Construyendo un conjunto de datos verdaderamente global',
+      'Estudiantes e investigadores',
+      'Universidades e instituciones',
+    ],
+  },
   section4: {
     title: 'Avanzando la Salud Global, Juntos.',
     subtitle:

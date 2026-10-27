@@ -81,6 +81,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         route: [
           `/${lang}/story`,
           `/${lang}/advisors`,
+          `/${lang}/leadership`,
           `/${lang}/supporters`,
           `/${lang}/one-young-world`,
           `/${lang}/amils-story`,
@@ -333,7 +334,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
         {/* NAVBAR CONTAINER                                         */}
         {/* ========================================================= */}
 
-        <div className="relative flex h-[86px] w-full items-center bg-gradient-to-r from-[#d7e2eb]/90 via-[#f2f4f8]/90 to-[#d7e2eb]/90 px-8">
+        <div className="relative flex h-[86px] w-full items-center bg-gradient-to-r from-[#d7e2eb]/95 via-[#f2f4f8]/95 to-[#d7e2eb]/95 px-8">
           {/* ===================================================== */}
           {/* LOGO                                                   */}
           {/* ===================================================== */}
@@ -357,7 +358,7 @@ export default function Navbar({ lang }: { lang: Locale }) {
 
           <div
             className={`absolute top-1/2 hidden -translate-y-1/2 lg:block ${
-              showSearch ? 'left-[44%] min-[1600px]:left-1/2' : 'left-1/2'
+              'left-1/2'
             } -translate-x-1/2`}
           >
             <ul className="flex items-center gap-[29px] whitespace-nowrap">
@@ -405,6 +406,11 @@ export default function Navbar({ lang }: { lang: Locale }) {
                       label: aboutUs?.advisors,
                       href: `/${lang}/advisors`,
                       subtext: aboutUs.advisorsubtext,
+                    },
+                    {
+                      label: aboutUs?.leadership ?? 'Leadership Team',
+                      href: `/${lang}/leadership`,
+                      subtext: aboutUs.leadershipsubtext,
                     },
                     {
                       label: aboutUs?.ourFounder,
@@ -666,7 +672,13 @@ export default function Navbar({ lang }: { lang: Locale }) {
                   >
                     {aboutUs?.advisors}
                   </Link>
-
+                  <Link
+                    href={`/${lang}/leadership`}
+                    onClick={handleNavClick}
+                    className="text-[#26364b]"
+                  >
+                    {aboutUs?.leadership ?? 'Leadership Team'}
+                  </Link>
                   <Link
                     href={`/${lang}/amils-story`}
                     onClick={handleNavClick}

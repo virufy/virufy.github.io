@@ -30,6 +30,8 @@ export interface AboutUs {
   sectionsubtext?: string;
   advisors: string;
   advisorsubtext?: string;
+  leadership?: string;
+  leadershipsubtext?: string;
   ourFounder: string;
   foundersubtext?: string;
   ourSupporters: string;

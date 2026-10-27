@@ -18,6 +18,13 @@ export interface homepage {
     cardtext: string[];
     disclaimer: string;
   };
+  impactSection: {
+    title: string;
+    subtitle: string;
+    cardtitle: string[];
+    cardtext: string[];
+    cardsubtext: string[];
+  };
   section4: {
     title: string;
     icons: string[];

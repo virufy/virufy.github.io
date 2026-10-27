@@ -37,10 +37,10 @@ const AiCarousel = ({ slides }: Props) => {
                   {slide.title}
                 </h2>
                 {/* Image */}
-                <div className="relative overflow-hidden rounded-2xl border border-[#bcc7d4]">
+                <div className="relative aspect-[5/2] w-full overflow-hidden rounded-2xl border border-[#bcc7d4]">
                   <ExportedImage
                     fill
-                    className="aspect-[5/2] w-full object-cover object-[50%_20%]"
+                    className="object-cover object-[50%_20%]"
                     src={slide.image}
                     alt={slide.title}
                     priority

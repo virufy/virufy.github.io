@@ -2,28 +2,28 @@ import { type JobListing } from '../types/jobListing';
 
 const jobListing: JobListing = {
   title: {
-    before: 'Help Shape The Future of ',
-    highlight: 'Respiratory Health',
-    after: '',
+    before: '未来の',
+    highlight: '呼吸器ケア',
+    after: 'を共に創る',
   },
   subtitle:
-    'Join our global team of innovators, researchers, and health advocates working to make AI-powered early detection accessible to everyone.',
-  titlebuttonText: 'Explore Opportunities',
-  tag: 'Join Our Team',
+    'AI を活用した早期発見を、世界中の人々に届けるために仲間を募集しています。私たちは、革新者・研究者・ヘルスケアの担い手が集うグローバルチームです。',
+  titlebuttonText: '募集職種を見る',
+  tag: 'チームに参加する',
   modal: {
     text: 'これらがすべて無給のボランティアポジションであることをご理解いただけますか？',
     yes: 'はい',
     no: 'いいえ',
   },
-  placeholder: 'Search for a role...',
-  positiontitle: 'Open Positions',
+  placeholder: '職種を検索…',
+  positiontitle: '募集中のポジション',
   positionsubtitle:
-    'If a role resonates with you, we would love to hear from you. We welcome contributors from all backgrounds and value diverse experiences.',
+    'ご興味をお持ちのポジションがございましたら、ぜひご応募ください。私たちはあらゆるバックグラウンドを持つ方を歓迎し、多様な経験を大切にしています。',
   applyButtonText: '応募する',
   Banner: {
-    title: "Don't See a Perfect Fit?",
-    text: "We're always looking for passionate individuals who share our mission. Send us your resume and tell us how you'd like to contribute to advancing global respiratory health.",
-    buttonText: 'Get In Touch',
+    title: '希望のポジションが見つからない場合',
+    text: '私たちは Virufy のミッションに共感し、情熱を持って取り組める方を常に募集しています。履歴書とともに、どのように世界の呼吸器ケアに貢献したいかを教えてください。',
+    buttonText: 'お問い合わせ',
     contactTitle: 'お問い合わせ',
     emailText: 'メールでお問い合わせください',
     closeText: '閉じる',
@@ -43,7 +43,7 @@ const jobListing: JobListing = {
       positions: [
         {
           title: '一般的な求人応募',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 26,
         },
       ],
@@ -53,32 +53,32 @@ const jobListing: JobListing = {
       positions: [
         {
           title: 'ソフトウェアエンジニア',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 1,
         },
         {
           title: '機械学習エンジニア',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 2,
         },
         {
           title: '機械学習エンジニア（モデリング）',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 3,
         },
         {
           title: 'オーディオ信号処理エンジニア',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 4,
         },
         {
           title: 'DevOpsエンジニア',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 5,
         },
         {
           title: '情報セキュリティエンジニア',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 6,
         },
       ],
@@ -88,12 +88,12 @@ const jobListing: JobListing = {
       positions: [
         {
           title: 'データプライバシーインターン',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 7,
         },
         {
           title: 'アソシエイトデータサイエンティスト',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 8,
         },
       ],
@@ -103,17 +103,17 @@ const jobListing: JobListing = {
       positions: [
         {
           title: 'ビジネスマネージャー',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 9,
         },
         {
           title: 'プロジェクトマネージャー',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 10,
         },
         {
           title: 'プロダクトマネージャー',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 11,
         },
       ],
@@ -123,17 +123,17 @@ const jobListing: JobListing = {
       positions: [
         {
           title: 'HRビジネスパートナー',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 12,
         },
         {
           title: 'HRアドミニストレーティブアシスタント',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 13,
         },
         {
           title: 'テクニカルリクルーター',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 14,
         },
       ],
@@ -143,12 +143,12 @@ const jobListing: JobListing = {
       positions: [
         {
           title: '企業弁護士（IT志向）',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 15,
         },
         {
           title: 'パラリーガル',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 16,
         },
       ],
@@ -158,47 +158,47 @@ const jobListing: JobListing = {
       positions: [
         {
           title: 'ビジネスアナリスト',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 17,
         },
         {
           title: 'Pythonプログラマー',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 18,
         },
         {
           title: 'テクニカルライター',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 19,
         },
         {
           title: '品質保証エンジニア',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 20,
         },
         {
           title: 'AWS開発者',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 21,
         },
         {
           title: 'AWSアーキテクト',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 22,
         },
         {
           title: 'AWSエンジニア',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 23,
         },
         {
           title: 'クラウドエンジニア',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 24,
         },
         {
           title: 'Unix管理者',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 25,
         },
       ],
@@ -208,7 +208,7 @@ const jobListing: JobListing = {
       positions: [
         {
           title: '助成金ライター',
-          remote: 'Remote',
+          remote: 'リモート勤務',
           id: 27,
         },
       ],

@@ -2,64 +2,64 @@ import type { Donate } from '../types/donate';
 
 const donate: Donate = {
   introSection: {
-    tag: 'Support Our Mission',
-    title: ['Together, we can revolutionize', 'global respiratory health'],
-    text: 'Every contribution brings us closer to delivering AI-powered diagnostic tools to patients and communities worldwide offering health equity.',
-    buttonText: 'How to Contribute',
+    tag: '私たちのミッションへのご支援',
+    title: ['世界の呼吸器医療を', 'ともに前進させましょう'],
+    text: '皆さまからのご支援は、AI を活用した診断ツールを世界中の患者さんや地域社会へ届け、健康の公平性を実現するという私たちの目標を前進させます。',
+    buttonText: '支援方法について',
   },
   impactSection: {
-    title: 'Your gift creates a lasting impact.',
+    title: '皆さまのご支援が未来を変える力になります。',
     description:
-      "Every donation helps Virufy bring accessible digital health technology to underserved communities. By supporting us, you're accelerating innovation and giving patients the tools to protect their health.",
+      '皆さまからのご寄付は、医療サービスが十分に行き届いていない地域に、誰もが利用しやすいデジタルヘルス技術を届けるための大きな力となります。一人ひとりのご支援が、革新的な技術の開発を後押しし、より多くの人々に健康を守るための選択肢を広げます。',
   },
 
   pillars: [
     {
-      title: 'Expand Access',
+      title: 'アクセスの拡大',
       description:
-        'Bring AI-powered health screening tools and advantages to underserved communities worldwide.',
+        'AI を活用した健康スクリーニング技術とその恩恵を、世界中の医療アクセスが限られた地域へ届けます。',
       icon: '/icons/icon-expand-access.png',
     },
     {
-      title: 'Advance Research',
+      title: '研究の推進',
       description:
-        'Support cutting-edge studies that improve early detection of respiratory illness.',
+        '呼吸器疾患の早期発見の精度向上を目指す、最先端の研究を支援します。',
       icon: '/icons/icon-advance-research.png',
     },
     {
-      title: 'Empower Patients',
+      title: '患者さんの力になる',
       description:
-        'Help individuals take control of their health with accessible, science-driven insights.',
+        '誰もが自分の健康状態を理解し、主体的に健康を守れるよう、科学的根拠に基づく情報をわかりやすく届けます。',
       icon: '/icons/icon-empower-patients.png',
     },
   ],
   donateOptions: {
-    title: 'Choose how you’d like to give.',
+    title: 'ご希望の寄付方法をお選びください。',
     subtitle:
-      'Your support matters. Select a donation option below to get started.',
+      '皆さまのご支援が大きな力となります。以下からご希望の寄付方法をお選びください。',
     options: [
       {
         name: 'GoFundMe',
         description:
-          "Contributions are directed through Virufy's GoFundMe campaign.",
-        buttonText: 'Donate via GoFundMe',
+          '寄付は Virufy の GoFundMe キャンペーンを通じて受け付けています。',
+        buttonText: 'GoFundMe で寄付する',
         url: 'https://www.gofundme.com/f/donate-virufy',
         icon: '/icons/icon-donate.png',
       },
       {
         name: 'PayPal',
         description:
-          "Contributions are processed directly through Virufy's PayPal account.",
-        buttonText: 'Donate via PayPal',
+          '寄付は Virufy の PayPal アカウントを通じて直接処理されます。',
+        buttonText: 'PayPal で寄付する',
         url: 'https://www.paypal.com/us/fundraiser/charity/4348461',
         icon: '/icons/icon-donate.png',
       },
     ],
   },
   banner: {
-    title: 'Transparency you can trust.',
+    title: '透明性への取り組み',
     text: [
-      'Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research, innovation, and patient access.',
+      'Virufy は米国法 501(c)(3) に認定された非営利団体です。ご寄付は、適用される税法に従い、税控除の対象となる場合があります。私たちは透明性と説明責任を大切にし、皆さまからのご支援が社会に最大限の成果をもたらすよう努めています。',
     ],
   },
 };

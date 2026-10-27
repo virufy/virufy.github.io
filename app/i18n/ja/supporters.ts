@@ -2,15 +2,15 @@ import type { supporters } from '../types/supporters';
 
 const supporters: supporters = {
   introSection: {
-    tag: 'Global Partnerships',
-    title: ['Our', 'Supporters'],
-    text: 'Virufy collaborates with leading academic institutions, industry innovators, and nonprofit organizations worldwide to advance AI-powered respiratory health screening and make early detection accessible to everyone.',
+    tag: 'グローバルパートナーシップ',
+    title: ['私たちの', 'サポーター'],
+    text: 'Virufy は、世界各地の主要な学術機関、革新的な企業、非営利団体と連携し、AI を活用した呼吸器疾患スクリーニングを推進し、早期発見をより多くの人々に届けることを目指しています。',
   },
   banner: {
-    title: 'Join Our Mission',
-    buttontext: 'Become a Partner',
+    title: '私たちのミッションに参加しませんか',
+    buttontext: 'パートナーになる',
     text: [
-      'Partner with Virufy to advance respiratory health screening technology and make a global impact. Together, we can help detect diseases earlier and save lives worldwide.',
+      'Virufy のパートナーとして、呼吸器の健康を守るためのスクリーニング技術を前進させ、世界に貢献しませんか。協働することで、より早い段階で疾患を発見し、世界中の人々の命を守ることにつながります。',
     ],
     link: '/join-us',
   },

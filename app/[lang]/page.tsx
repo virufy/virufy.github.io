@@ -4,7 +4,7 @@ import { usei18n } from '../i18n';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { useState, useRef } from 'react';
-import SmokeModal from './components/SmokeModal';
+import WorldLungDayModal from './components/WorldLungDayModal';
 
 interface ContainerProps {
   children: React.ReactNode;
@@ -57,7 +57,7 @@ const Card: React.FC<CardProps> = ({ title, text, icon, first, last }) => (
 
 const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    home: { introSection, section2, section3, section4, section5 },
+    home: { introSection, section2, section3, impactSection, section4, section5 },
   } = usei18n(lang);
 
   const [open, setOpen] = useState(false);
@@ -67,7 +67,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
     <main className="">
       {/* HERO */}
       <div className="relative w-full items-center overflow-hidden lg:px-20 lg:px-5">
-        <SmokeModal lang={lang} />
+        <WorldLungDayModal lang={lang} />
         <div className="absolute inset-0 flex">
           <ExportedImage
             src="/images/sevenhome/HeroBG.png"
@@ -116,7 +116,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* SECTION 2 */}
-      <section className="border-gray relative w-full overflow-hidden border-2 border-y bg-gradient-to-br from-white to-[#dbeef3]">
+      <section className="relative w-full overflow-hidden border-y-[1.5px] border-[#BCC7D4] bg-gradient-to-br from-white to-[#dbeef3]">
         {/* Text Content */}
         <div className="relative mx-auto flex min-h-[700px] max-w-7xl py-20">
           <div className="flex-1 items-center px-5 text-center md:px-20 md:text-left">
@@ -187,7 +187,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             className="object-contain object-cover object-center"
           />
         </div>
-        <section className="relative z-10 mx-auto w-full max-w-7xl rounded-3xl border border-sky-200 bg-white py-20 text-left">
+        <section className="relative z-10 mx-auto w-full max-w-7xl rounded-3xl border border-[#BCC7D4] bg-white py-20 text-left">
           <Container>
             <div className="items-center p-2 md:text-left">
               <h2 className={titlestyle}>{section3.title}</h2>
@@ -234,6 +234,36 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
         </section>
       </div>
 
+      {/* IMPACT SECTION (duplicated from the Who We Are / Story page) */}
+      <div className="relative w-full overflow-hidden border border-[#BCC7D4] bg-gradient-to-t from-[#FBFEFF] to-[#EEF8FD]">
+        <div className="mx-auto w-full max-w-7xl px-5 md:px-10 lg:px-16 xl:px-20">
+          <section className="my-10 mt-24">
+            <div className="mb-4 text-center text-2xl font-semibold text-[#1B6E64] md:text-left md:text-4xl">
+              {impactSection.title}
+            </div>
+            <div className="py-2 text-left text-center text-lg font-normal text-gray-700 md:my-5 md:text-left md:text-2xl">
+              {impactSection.subtitle}
+            </div>
+            <div className="my-5 grid grid-cols-2 gap-2 md:my-20 md:grid-cols-4 md:gap-6">
+              {impactSection.cardtitle.map((title, i) => (
+                <div
+                  key={title}
+                  className="flex flex-col rounded-2xl border border-[#BCC7D4] p-2 text-center shadow-sm shadow-xl md:my-0 md:max-w-[276px] md:items-start md:p-6 md:text-left"
+                >
+                  <h1 className="bg-gradient-to-b from-[#2A9D8F] to-[#0E72C9] bg-clip-text text-center text-[42px] font-semibold text-transparent md:text-left md:text-[48px]">
+                    {title}
+                  </h1>
+                  <p className="text-black">{impactSection.cardtext[i]}</p>
+                  <span className="my-3 text-gray-700">
+                    {impactSection.cardsubtext[i]}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+      </div>
+
       {/* SECTION 4 */}
       <div className="relative w-full items-center overflow-hidden p-4 md:p-20">
         <div className="absolute inset-0 flex">
@@ -245,7 +275,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             className="object-contain object-cover object-center"
           />
         </div>
-        <section className="relative z-10 mx-auto w-full max-w-7xl py-20 md:rounded-3xl md:border md:border-sky-200 md:bg-white">
+        <section className="relative z-10 mx-auto w-full max-w-7xl py-20 md:rounded-3xl md:border md:border-[#BCC7D4] md:bg-white">
           <Container transparent>
             <div className="w-full md:text-left">
               <h2 className={titlestyle}>{section4.title}</h2>
@@ -270,8 +300,8 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
       </div>
 
       {/* CTA */}
-      <div className="w-full border border-y-2 border-sky-200 text-center md:text-left">
-        <section className="border-y-1 relative z-10 mx-auto w-full max-w-7xl border-sky-200 py-24">
+      <div className="w-full border border-y-2 border-[#BCC7D4] text-center md:text-left">
+        <section className="border-y-1 relative z-10 mx-auto w-full max-w-7xl border-[#BCC7D4] py-24">
           <Container transparent>
             {/* Title */}
             <h2 className="mb-6 font-semibold text-emerald-800 md:text-3xl md:text-4xl">
