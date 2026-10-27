@@ -47,6 +47,7 @@ const redirects = [
   },
   { from: 'disease-map', to: 'dubai-map' },
   { from: 'disease-app', to: 'dubai-app' },
+  { from: 'map-uae', to: 'dubai-map' },
   { from: 'map-jeddah', to: 'map-madinah' },
   // add more here
 ];
