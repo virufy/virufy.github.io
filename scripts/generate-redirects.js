@@ -47,6 +47,8 @@ const redirects = [
     from: 'amil-jp-degree',
     to: 'https://docs.google.com/document/d/1DtRBgO_oS_hR4CU-xktEE-nPB-LPH_rCW9QeEYjkNeQ/edit?tab=t.0',
   },
+  { from: 'map-medina', to: 'map-madinah' },
+  { from: 'map-jeddah', to: 'map-madinah' },
   // add more here
 ];
 

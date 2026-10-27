@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/map-madinah/static/css/main.92d8eae2.css",
+    "main.js": "/map-madinah/static/js/main.6cdd699a.js",
+    "static/js/453.4706647a.chunk.js": "/map-madinah/static/js/453.4706647a.chunk.js",
+    "static/media/virufyLogo.png": "/map-madinah/static/media/virufyLogo.384f765ff157cd378c91.png",
+    "index.html": "/map-madinah/index.html",
+    "main.92d8eae2.css.map": "/map-madinah/static/css/main.92d8eae2.css.map",
+    "main.6cdd699a.js.map": "/map-madinah/static/js/main.6cdd699a.js.map",
+    "453.4706647a.chunk.js.map": "/map-madinah/static/js/453.4706647a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92d8eae2.css",
+    "static/js/main.6cdd699a.js"
+  ]
+}
