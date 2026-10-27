@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/map-medina/static/css/main.92d8eae2.css",
-    "main.js": "/map-medina/static/js/main.26e9cbac.js",
+    "main.js": "/map-medina/static/js/main.07f66bad.js",
     "static/js/453.4706647a.chunk.js": "/map-medina/static/js/453.4706647a.chunk.js",
     "static/media/virufyLogo.png": "/map-medina/static/media/virufyLogo.384f765ff157cd378c91.png",
     "index.html": "/map-medina/index.html",
     "main.92d8eae2.css.map": "/map-medina/static/css/main.92d8eae2.css.map",
-    "main.26e9cbac.js.map": "/map-medina/static/js/main.26e9cbac.js.map",
+    "main.07f66bad.js.map": "/map-medina/static/js/main.07f66bad.js.map",
     "453.4706647a.chunk.js.map": "/map-medina/static/js/453.4706647a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92d8eae2.css",
-    "static/js/main.26e9cbac.js"
+    "static/js/main.07f66bad.js"
   ]
 }
