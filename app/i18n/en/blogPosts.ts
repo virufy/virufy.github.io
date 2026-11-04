@@ -729,11 +729,11 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
         <li>
           U.S. Food and Drug Administration —
           <a
-            href="https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-and-machine-learning-software-medical-device"
+            href="https://www.fda.gov/medical-devices"
             target="_blank"
             rel="noopener noreferrer"
           >
-            "Artificial Intelligence and Machine Learning in Software as a Medical Device"
+            "FDA Medical Devices"
           </a>
         </li>
 
