@@ -203,10 +203,11 @@ const people: People = {
         name: 'Richard Montauk',
         role: 'Asesor global de admisiones, autor',
         texts: [
-          'Global Admissions Advisor',
-          'Author - How to Get Into the Top Colleges',
-          'J.D. Stanford, M.A. Harvard, B.A. Brown',
+          'Asesor Global de Admisiones',
+          'Autor - Cómo Ingresar a las Mejores Universidades',
+          'Juris Doctor - Universidad de Stanford, Maestría - Universidad de Harvard, Licenciatura - Universidad de Brown',
         ],
+        link: 'https://www.richardmontauk.com/',
       },
       khwaja: {
         img: './../images/advisors/khwaja-shaik.webp',

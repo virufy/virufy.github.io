@@ -193,13 +193,14 @@ const people: People = {
       },
       richardMontauk: {
         img: './../images/advisors/richard-montauk.png',
-        name: 'Richard Montauk',
+        name: 'リチャード・モントーク',
         role: 'グローバル入学アドバイザー、著者',
         texts: [
-          'Global Admissions Advisor',
-          'Author - How to Get Into the Top Colleges',
-          'J.D. Stanford, M.A. Harvard, B.A. Brown',
+          'グローバル入学アドバイザー',
+          '著者 - 一流大学に入学する方法',
+          'スタンフォード大学 法学博士（J.D.）、ハーバード大学 修士（M.A.）、ブラウン大学 学士（B.A.）',
         ],
+        link: 'https://www.richardmontauk.com/',
       },
       khwaja: {
         img: './../images/advisors/khwaja-shaik.webp',
