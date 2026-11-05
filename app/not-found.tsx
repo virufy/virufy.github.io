@@ -21,7 +21,7 @@ export default function NotFound() {
       </Link>
 
       <p
-        className={`text-7xl font-bold md:text-8xl ${ColorProps.textGradient}`}
+        className={`text-6xl font-bold md:text-7xl ${ColorProps.textGradient}`}
       >
         404
       </p>
@@ -30,7 +30,7 @@ export default function NotFound() {
         Page Not Found
       </h1>
 
-      <p className="mt-3 max-w-md text-base text-[#2c3540] md:text-lg">
+      <p className="mt-3 whitespace-nowrap text-xs text-[#2c3540] sm:text-base md:text-lg">
         Sorry, we couldn&apos;t find the page you&apos;re looking for.
       </p>
 
