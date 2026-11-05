@@ -192,13 +192,14 @@ const people: People = {
       },
       richardMontauk: {
         img: './../images/advisors/richard-montauk.png',
-        name: 'Richard Montauk',
+        name: 'ريتشارد مونتوك',
         role: 'مستشار قبول عالمي، مؤلف',
         texts: [
-          'Global Admissions Advisor',
-          'Author - How to Get Into the Top Colleges',
-          'J.D. Stanford, M.A. Harvard, B.A. Brown',
+          'مستشار قبول عالمي',
+          'مؤلف - كيفية الالتحاق بأفضل الجامعات',
+          'دكتوراه في القانون من جامعة ستانفورد، ماجستير من جامعة هارفارد، بكالوريوس من جامعة براون',
         ],
+        link: 'https://www.richardmontauk.com/',
       },
       khwaja: {
         img: './../images/advisors/khwaja-shaik.webp',

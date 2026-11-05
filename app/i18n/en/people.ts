@@ -201,6 +201,7 @@ const people: People = {
           'Author - How to Get Into the Top Colleges',
           'J.D. Stanford, M.A. Harvard, B.A. Brown',
         ],
+        link: 'https://www.richardmontauk.com/',
       },
       khwaja: {
         img: './../images/advisors/khwaja-shaik.webp',
