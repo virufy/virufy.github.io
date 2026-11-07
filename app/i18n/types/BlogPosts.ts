@@ -23,6 +23,18 @@ export interface BlogPostsPageContent {
     oldestFirst: string;
     searchPlaceholder: string;
   };
+  categories: {
+    all: string;
+    research: string;
+    technology: string;
+    productUpdates: string;
+    community: string;
+    partnerships: string;
+    engineering: string;
+    design: string;
+    marketing: string;
+    operations: string;
+  };
   section5: {
     title: string;
     text: string;

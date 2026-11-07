@@ -25,7 +25,20 @@ export const blogPageContent = {
     sortByLabel: '並び替え：',
     newestFirst: '新しい順',
     oldestFirst: '古い順',
-    searchPlaceholder: 'ブログのタイトルと字幕を検索',
+    searchPlaceholder: 'ブログを検索...',
+  },
+
+  categories: {
+    all: 'すべて',
+    research: '研究',
+    technology: 'テクノロジー',
+    productUpdates: '製品アップデート',
+    community: 'コミュニティ',
+    partnerships: 'パートナーシップ',
+    engineering: 'エンジニアリング',
+    design: 'デザイン',
+    marketing: 'マーケティング',
+    operations: '運営',
   },
 
   section5: {
@@ -34,7 +47,7 @@ export const blogPageContent = {
     button: 'チームに参加する',
   },
 
-  emptyMessage: '該当するニュース記事はありません。',
+  emptyMessage: '条件に一致するブログ記事はありません。',
 } satisfies I18nData['blogPosts']['blogPageContent'];
 
 export const blogPosts: I18nData['blogPosts']['blogPosts'] = {

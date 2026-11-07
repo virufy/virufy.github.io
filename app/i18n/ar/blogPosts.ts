@@ -25,7 +25,20 @@ export const blogPageContent = {
     sortByLabel: 'ترتيب حسب:',
     newestFirst: 'الأحدث أولاً',
     oldestFirst: 'الأقدم أولاً',
-    searchPlaceholder: 'ابحث عن عناوين ومحتوى المقالات',
+    searchPlaceholder: 'ابحث في المدونات...',
+  },
+
+  categories: {
+    all: 'الكل',
+    research: 'الأبحاث',
+    technology: 'التكنولوجيا',
+    productUpdates: 'تحديثات المنتجات',
+    community: 'المجتمع',
+    partnerships: 'الشراكات',
+    engineering: 'الهندسة',
+    design: 'التصميم',
+    marketing: 'التسويق',
+    operations: 'العمليات',
   },
 
   section5: {
@@ -34,7 +47,7 @@ export const blogPageContent = {
     button: 'Join Our Team',
   },
 
-  emptyMessage: 'No news articles found for the selected filters.',
+  emptyMessage: 'لا توجد مقالات مدونة تطابق عوامل التصفية.',
 } satisfies I18nData['blogPosts']['blogPageContent'];
 
 export const blogPosts: I18nData['blogPosts']['blogPosts'] = {

@@ -25,7 +25,20 @@ export const blogPageContent = {
     sortByLabel: 'Ordenar por:',
     newestFirst: 'Más recientes primero',
     oldestFirst: 'Más antiguos primero',
-    searchPlaceholder: 'Buscar títulos y subtítulos del blog',
+    searchPlaceholder: 'Buscar en los blogs...',
+  },
+
+  categories: {
+    all: 'Todo',
+    research: 'Investigación',
+    technology: 'Tecnología',
+    productUpdates: 'Actualizaciones de productos',
+    community: 'Comunidad',
+    partnerships: 'Colaboraciones',
+    engineering: 'Ingeniería',
+    design: 'Diseño',
+    marketing: 'Marketing',
+    operations: 'Operaciones',
   },
 
   section5: {
@@ -34,7 +47,7 @@ export const blogPageContent = {
     button: 'Join Our Team',
   },
 
-  emptyMessage: 'No news articles found for the selected filters.',
+  emptyMessage: 'No hay artículos de blog que coincidan con los filtros.',
 } satisfies I18nData['blogPosts']['blogPageContent'];
 
 export const blogPosts: I18nData['blogPosts']['blogPosts'] = {

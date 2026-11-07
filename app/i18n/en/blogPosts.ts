@@ -24,16 +24,29 @@ export const blogPageContent = {
     sortByLabel: 'Sort by:',
     newestFirst: 'Newest to Oldest',
     oldestFirst: 'Oldest to Newest',
-    searchPlaceholder: 'Search blog titles and subtitles',
+    searchPlaceholder: 'Search through blogs...',
+  },
+
+  categories: {
+    all: 'All',
+    research: 'Research',
+    technology: 'Technology',
+    productUpdates: 'Product Updates',
+    community: 'Community',
+    partnerships: 'Partnerships',
+    engineering: 'Engineering',
+    design: 'Design',
+    marketing: 'Marketing',
+    operations: 'Operations',
   },
 
   section5: {
     title: 'Inspired by the work? Help shape what comes next.',
-    text: 'Join researchers, designers, engineers, and advocates working together to advance global respiratory health.',
+    text: 'Join researchers, designers, and engineers advancing global health.',
     button: 'Join Our Team',
   },
 
-  emptyMessage: 'No news articles found for the selected filters.',
+  emptyMessage: 'No blog articles match your filters.',
 } satisfies I18nData['blogPosts']['blogPageContent'];
 
 export const competitiveMedicalTechnologyBlogPost = {
