@@ -1,6 +1,6 @@
 import type { QA } from '@/app/i18n/types/faq';
 import { type Locale } from '@/i18n-config';
-import { useState } from 'react';
+import { useId, useState } from 'react';
 
 import AccordionItemParagraph from './AccordionItemParagraph';
 import { ChevronDown } from 'lucide-react';
@@ -20,6 +20,9 @@ const AccordionItem = ({
   className = '',
 }: AccordionItemProps) => {
   const [isActive, setIsActive] = useState(false);
+  const accordionId = useId();
+  const triggerId = `accordion-trigger-${accordionId}`;
+  const panelId = `accordion-panel-${accordionId}`;
   const borderTransitionStyle = isActive
     ? 'border-t border-gray-400'
     : 'border-transparent transition-all delay-500';
@@ -33,29 +36,39 @@ const AccordionItem = ({
     <div
       className={`border-b border-gray-400 bg-transparent text-white last:border-b-0 ${className}`}
     >
-      {/* Question Container */}
-      <div
-        className="relative w-full cursor-pointer py-4"
-        onClick={() => setIsActive(!isActive)}
-      >
-        <div className="pr-8">
-          <h3 className="font-semibold text-[#2C3540]">{question}</h3>
-          {topic && <p className="mt-1 text-sm text-[#084B8A]">{topic}</p>}
-        </div>
-
-        <div className="absolute right-0 top-4">
+      {/* A native button provides Tab, Enter, and Space support. */}
+      <h3>
+        <button
+          id={triggerId}
+          type="button"
+          className="relative w-full cursor-pointer py-4 pr-8 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0E72C9]"
+          aria-expanded={isActive}
+          aria-controls={panelId}
+          onClick={() => setIsActive((active) => !active)}
+        >
+          <span className="block font-semibold text-[#2C3540]">{question}</span>
+          {topic && (
+            <span className="mt-1 block text-sm font-normal text-[#084B8A]">
+              {topic}
+            </span>
+          )}
           <ChevronDown
-            className={`h-5 w-5 text-[#2C3540] transition-transform duration-300 ${
+            className={`absolute right-0 top-4 h-5 w-5 text-[#2C3540] transition-transform duration-300 ${
               isActive ? 'rotate-180' : ''
             }`}
+            aria-hidden="true"
           />
-        </div>
-      </div>
+        </button>
+      </h3>
 
       {/* Answer Container */}
       {/* When accordion is active, add a top border. When it's not active, delay the disappearance of the top border */}
       <div className={`${borderTransitionStyle}`}>
         <div
+          id={panelId}
+          role="region"
+          aria-labelledby={triggerId}
+          hidden={!isActive}
           className={`overflow-hidden transition-all duration-500 ${heightStyle}`}
         >
           <div
