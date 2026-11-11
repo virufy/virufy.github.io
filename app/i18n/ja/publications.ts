@@ -6,9 +6,9 @@ const PublicationsContent: PublicationsPage = {
     title: 'Virufyの論文・研究成果 ',
     subtitle:
       'AIを活用し、咳の音声から呼吸器疾患を検出する技術に関する査読済み研究、学術論文、科学的研究',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: '研究',
-    tagIcon: '/icons/icon-research.png',
+    tagIcon: '/images/icons/icon-research.png',
   },
   pillSelector: {
     options: [
@@ -70,7 +70,7 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: 'https://virufy.org/en/publications/data-efficient-cough-ai/',
       contentType: 'publications',
-      image: '/images/sevenNews/publications/march_8_2026.png/',
+      image: '/images/sevenNews/publications/march_8_2026.png',
       year: 2026,
     },
     {

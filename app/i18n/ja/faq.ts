@@ -19,7 +19,7 @@ const faq: FAQ = {
     ],
     input: {
       placeholder: '検索ワードを入力...',
-      img: '/icons/icon-search.png',
+      img: '/images/icons/icon-search.png',
       altText: '検索アイコン',
     },
     texts: [

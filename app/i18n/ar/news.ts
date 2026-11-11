@@ -5,9 +5,9 @@ const sevenNewsContent: SevenNewsPage = {
     title: 'فيروفي في الأخبار',
     subtitle:
       'تابع أحدث الأخبار والبيانات الصحفية والتغطية الإعلامية حول مهمة Virufy في إضفاء الديمقراطية على الرعاية الصحية من خلال فحص صحة الجهاز التنفسي المدعوم بالذكاء الاصطناعي.',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: 'التغطية الإعلامية',
-    tagIcon: '/icons/icon-media.png',
+    tagIcon: '/images/icons/icon-media.png',
   },
   pillSelector: {
     options: [

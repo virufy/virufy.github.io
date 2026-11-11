@@ -108,7 +108,7 @@ const FAQPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
             <div className="relative flex h-[400px] flex-col items-center justify-center px-5 text-center md:h-[500px] lg:h-[500px]">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-3 pr-4 text-xs text-[#084b8a] sm:mb-8 sm:py-1 sm:pl-4 sm:pr-5 sm:text-sm md:mb-10">
                 <ExportedImage
-                  src={'/icons/questionmark-faq.png'}
+                  src={'/images/icons/questionmark-faq.png'}
                   alt="FAQ icon"
                   height={17}
                   width={17}

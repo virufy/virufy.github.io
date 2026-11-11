@@ -1,6 +1,6 @@
 import ExportedImage from 'next-image-export-optimizer';
 import { basePath } from '@/next.config.mjs';
-import WhiteCircleIcon from '@/public/icons/icon-amil-circle-white.png';
+import WhiteCircleIcon from '@/public/images/icons/icon-amil-circle-white.png';
 import { type Card } from '@/app/i18n/types/amilsStory';
 
 // Animated Timeline

@@ -18,19 +18,19 @@ const donate: Donate = {
       title: 'アクセスの拡大',
       description:
         'AI を活用した健康スクリーニング技術とその恩恵を、世界中の医療アクセスが限られた地域へ届けます。',
-      icon: '/icons/icon-expand-access.png',
+      icon: '/images/icons/icon-expand-access.png',
     },
     {
       title: '研究の推進',
       description:
         '呼吸器疾患の早期発見の精度向上を目指す、最先端の研究を支援します。',
-      icon: '/icons/icon-advance-research.png',
+      icon: '/images/icons/icon-advance-research.png',
     },
     {
       title: '患者さんの力になる',
       description:
         '誰もが自分の健康状態を理解し、主体的に健康を守れるよう、科学的根拠に基づく情報をわかりやすく届けます。',
-      icon: '/icons/icon-empower-patients.png',
+      icon: '/images/icons/icon-empower-patients.png',
     },
   ],
   donateOptions: {
@@ -44,7 +44,7 @@ const donate: Donate = {
           '寄付は Virufy の GoFundMe キャンペーンを通じて受け付けています。',
         buttonText: 'GoFundMe で寄付する',
         url: 'https://www.gofundme.com/f/donate-virufy',
-        icon: '/icons/icon-donate.png',
+        icon: '/images/icons/icon-donate.png',
       },
       {
         name: 'PayPal',
@@ -52,7 +52,7 @@ const donate: Donate = {
           '寄付は Virufy の PayPal アカウントを通じて直接処理されます。',
         buttonText: 'PayPal で寄付する',
         url: 'https://www.paypal.com/us/fundraiser/charity/4348461',
-        icon: '/icons/icon-donate.png',
+        icon: '/images/icons/icon-donate.png',
       },
     ],
   },

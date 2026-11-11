@@ -1,9 +1,6 @@
+const basePath = '';
+
 /** @type {import('next').NextConfig} */
-
-const isProd = process.env.NODE_ENV === 'production';
-
-const basePath = isProd ? '/minimal-i18n-with-app-router' : '';
-//^ no Idea if this line does anything anymore
 const nextConfig = {
   output: 'export',
   basePath,

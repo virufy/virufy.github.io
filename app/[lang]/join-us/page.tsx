@@ -47,7 +47,7 @@ const JobListingPage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <span className="mb-8 inline-block rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
             <ExportedImage
               className="inline"
-              src={'/icons/Join-icon.png'}
+              src={'/images/icons/Join-icon.png'}
               height={17}
               width={17}
               alt="Join Us Icon"

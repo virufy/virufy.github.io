@@ -5,9 +5,9 @@ const sevenNewsContent: SevenNewsPage = {
     title: 'Virufy en las noticias',
     subtitle:
       'Manténgase al día con las últimas noticias, comunicados de prensa y cobertura mediática sobre la misión de Virufy de democratizar la atención médica mediante el cribado respiratorio impulsado por IA.',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: 'Cobertura mediática',
-    tagIcon: '/icons/icon-media.png',
+    tagIcon: '/images/icons/icon-media.png',
   },
   pillSelector: {
     options: [

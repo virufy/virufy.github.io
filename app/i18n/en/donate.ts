@@ -18,19 +18,19 @@ const donate: Donate = {
       title: 'Expand Access',
       description:
         'Bring AI-powered health screening tools and advantages to underserved communities worldwide.',
-      icon: '/icons/icon-expand-access.png',
+      icon: '/images/icons/icon-expand-access.png',
     },
     {
       title: 'Advance Research',
       description:
         'Support cutting-edge studies that improve early detection of respiratory illness.',
-      icon: '/icons/icon-advance-research.png',
+      icon: '/images/icons/icon-advance-research.png',
     },
     {
       title: 'Empower Patients',
       description:
         'Help individuals take control of their health with accessible, science-driven insights.',
-      icon: '/icons/icon-empower-patients.png',
+      icon: '/images/icons/icon-empower-patients.png',
     },
   ],
   donateOptions: {
@@ -44,7 +44,7 @@ const donate: Donate = {
           "Contributions are directed through Virufy's GoFundMe campaign.",
         buttonText: 'Donate via GoFundMe',
         url: 'https://www.gofundme.com/f/donate-virufy',
-        icon: '/icons/icon-donate.png',
+        icon: '/images/icons/icon-donate.png',
       },
       {
         name: 'PayPal',
@@ -52,7 +52,7 @@ const donate: Donate = {
           "Contributions are processed directly through Virufy's PayPal account.",
         buttonText: 'Donate via PayPal',
         url: 'https://www.paypal.com/us/fundraiser/charity/4348461',
-        icon: '/icons/icon-donate.png',
+        icon: '/images/icons/icon-donate.png',
       },
     ],
   },

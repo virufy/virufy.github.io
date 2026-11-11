@@ -5,9 +5,9 @@ const sevenNewsContent: SevenNewsPage = {
     title: 'Virufyに関連するニュース',
     subtitle:
       'Virufyは、AIを活用した呼吸器ヘルススクリーニングを通じて、ヘルスケアをより身近にすることを目指しています。最新ニュースやプレスリリース、メディア掲載情報を通じて、私たちの取り組みをお届けします。',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: 'メディア掲載',
-    tagIcon: '/icons/icon-media.png',
+    tagIcon: '/images/icons/icon-media.png',
   },
   pillSelector: {
     options: [
