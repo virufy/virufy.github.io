@@ -3,6 +3,9 @@ import { type Footer } from '../types/footer';
 const footer: Footer = {
   cookiePolicy: {
     title: 'سياسة الكوكيز',
+    lastUpdated: 'آخر تحديث: 12 نوفمبر 2026',
+    analyticsNotice:
+      'نستخدم Google Analytics 4 فقط بعد موافقتك على ملفات تعريف الارتباط. تم تعطيل Google Signals وتخصيص الإعلانات. نتعامل مع Global Privacy Control (GPC) كرفض. لا نستخدم Hotjar أو Meta Pixel أو X Pixel أو علامات Google Ads.',
     body: [
       {
         question: 'عام',

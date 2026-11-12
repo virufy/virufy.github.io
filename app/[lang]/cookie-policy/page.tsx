@@ -27,10 +27,16 @@ const CookiePolicyPage = ({
               Text={cookiePolicy.title}
               TitleClassProps="mx-auto text-[#16223A]"
             />
+            <p className="mt-3 text-sm text-[#16223A]">
+              {cookiePolicy.lastUpdated}
+            </p>
           </div>
 
           {/* Cookie Policy Content */}
           <div className="mx-auto mt-12 w-full max-w-md md:mt-16 md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
+            <p className="mb-6 text-sm text-[#16223A] md:text-base">
+              {cookiePolicy.analyticsNotice}
+            </p>
             <div className="w-full rounded-lg border-b border-gray-400 text-sm last:border-b-0 md:text-base">
               {cookiePolicy.body.map((detail, index) => (
                 <AccordionItem

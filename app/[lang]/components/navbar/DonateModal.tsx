@@ -15,31 +15,7 @@ export default function DonateModal({
   close: () => void;
   title: string;
 }) {
-  const handleDonationClick = (
-    platform: 'PayPal' | 'GoFundMe',
-    url: string
-  ) => {
-    if (!window.gtag) {
-      window.open(url, '_blank');
-      return;
-    }
-
-    // Event callback to open the link after firing conversion
-    const callback = () => {
-      window.open(url, '_blank');
-    };
-
-    // Fire Google Ads conversion
-    window.gtag('event', 'conversion', {
-      send_to: 'AW-350868067/783TCOnLmaobEOOkp6cB',
-      value: 1.0, // optional: adjust if you track donation amount
-      currency: 'USD',
-      event_callback: callback,
-    });
-
-    // Fallback: in case the callback doesn't fire in 1 second
-    setTimeout(callback, 1000);
-  };
+  const handleDonationClick = (url: string) => window.open(url, '_blank');
 
   return (
     <>
@@ -83,7 +59,6 @@ export default function DonateModal({
                 type="button"
                 onClick={() =>
                   handleDonationClick(
-                    'PayPal',
                     'https://www.paypal.com/us/fundraiser/charity/4348461'
                   )
                 }
@@ -102,7 +77,6 @@ export default function DonateModal({
                 type="button"
                 onClick={() =>
                   handleDonationClick(
-                    'GoFundMe',
                     'https://www.gofundme.com/f/donate-virufy'
                   )
                 }

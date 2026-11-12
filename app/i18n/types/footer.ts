@@ -10,6 +10,8 @@ export interface Footer {
 
 interface CookiePolicy {
   title: string;
+  lastUpdated: string;
+  analyticsNotice: string;
   body: QA[];
 }
 

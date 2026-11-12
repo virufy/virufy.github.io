@@ -3,6 +3,9 @@ import { type Footer } from '../types/footer';
 const footer: Footer = {
   cookiePolicy: {
     title: 'Política de Cookies',
+    lastUpdated: 'Última actualización: 12 de noviembre de 2026',
+    analyticsNotice:
+      'Usamos Google Analytics 4 solo después de que aceptes las cookies. Google Signals y la personalización de anuncios están desactivados. Respetamos Global Privacy Control (GPC) como una denegación. No usamos Hotjar, Meta Pixel, X Pixel ni etiquetas de Google Ads.',
     body: [
       {
         question: 'Preguntas generales',
