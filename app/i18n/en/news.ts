@@ -5,9 +5,9 @@ const sevenNewsContent: SevenNewsPage = {
     title: 'Virufy in the News',
     subtitle:
       'Stay updated with the latest news, press releases, and media coverage about Virufy’s mission to democratize healthcare through AI-powered respiratory health screening.',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: 'Media Coverage',
-    tagIcon: '/icons/icon-media.png',
+    tagIcon: '/images/icons/icon-media.png',
   },
   pillSelector: {
     options: [

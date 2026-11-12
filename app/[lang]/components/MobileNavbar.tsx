@@ -3,7 +3,7 @@
 import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { VirufyLogo } from '@/public/images/navbar/index';
-import ArrowDownIcon from '@/public/icons/icon-arrow-down.png';
+import ArrowDownIcon from '@/public/images/icons/icon-arrow-down.png';
 import ExportedImage from 'next-image-export-optimizer';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';

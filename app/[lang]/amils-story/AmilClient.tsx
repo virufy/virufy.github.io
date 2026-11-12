@@ -4,12 +4,12 @@ import { basePath } from '@/next.config.mjs';
 import ExportedImage from 'next-image-export-optimizer';
 import { usei18n } from '../../i18n';
 import { BgHeader, AmilHeadshot } from '@/public/images/amilsStory/index';
-import InfoIcon from '@/public/icons/icon-info-blue-tag.png';
+import InfoIcon from '@/public/images/icons/icon-info-blue-tag.png';
 import { ColorProps, TextSizeProps } from '../themes';
 import ActionBanner from '../components/ActionBanner';
 import AmilTimeline from './AmilTimeline';
 import { useState, useRef } from 'react';
-import ArrowDownIcon from '@/public/icons/icon-arrow-down.png';
+import ArrowDownIcon from '@/public/images/icons/icon-arrow-down.png';
 
 export default function AmilsStoryPage({
   params: { lang },

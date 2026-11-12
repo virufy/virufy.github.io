@@ -36,7 +36,7 @@ const SevenSupporters = ({
           <div className="mx-auto flex flex-col items-center px-5 text-center md:items-start md:px-10 md:text-left lg:max-w-7xl">
             <div className="mb-10 inline-flex w-[165px] items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
               <ExportedImage
-                src="/icons/InfoVector.png"
+                src="/images/icons/InfoVector.png"
                 alt="globe icon"
                 height={17}
                 width={17}

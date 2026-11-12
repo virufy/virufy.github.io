@@ -18,19 +18,19 @@ const donate: Donate = {
       title: 'Ampliar acceso',
       description:
         'Lleve herramientas y ventajas de detección de salud impulsadas por IA a comunidades desatendidas en todo el mundo.',
-      icon: '/icons/icon-expand-access.png',
+      icon: '/images/icons/icon-expand-access.png',
     },
     {
       title: 'Investigación avanzada',
       description:
         'Apoyar estudios de vanguardia que mejoren la detección temprana de enfermedades respiratorias.',
-      icon: '/icons/icon-advance-research.png',
+      icon: '/images/icons/icon-advance-research.png',
     },
     {
       title: 'Empoderar a los pacientes',
       description:
         'Ayude a las personas a tomar el control de su salud con información accesible y basada en la ciencia.',
-      icon: '/icons/icon-empower-patients.png',
+      icon: '/images/icons/icon-empower-patients.png',
     },
   ],
   donateOptions: {
@@ -44,7 +44,7 @@ const donate: Donate = {
           'Las contribuciones se dirigen a través de la campaña GoFundMe de Virufy.',
         buttonText: 'Donar a través de GoFundMe',
         url: 'https://www.gofundme.com/f/donate-virufy',
-        icon: '/icons/icon-donate.png',
+        icon: '/images/icons/icon-donate.png',
       },
       {
         name: 'PayPal',
@@ -52,7 +52,7 @@ const donate: Donate = {
           'Las contribuciones se procesan directamente a través de la cuenta PayPal de Virufy.',
         buttonText: 'Donar a través de PayPal',
         url: 'https://www.paypal.com/us/fundraiser/charity/4348461',
-        icon: '/icons/icon-donate.png',
+        icon: '/images/icons/icon-donate.png',
       },
     ],
   },

@@ -18,19 +18,19 @@ const donate: Donate = {
       title: 'قم بتوسيع الوصول',
       description:
         'توفير أدوات ومزايا الفحص الصحي المدعومة بالذكاء الاصطناعي للمجتمعات المحرومة في جميع أنحاء العالم.',
-      icon: '/icons/icon-expand-access.png',
+      icon: '/images/icons/icon-expand-access.png',
     },
     {
       title: 'البحوث المتقدمة',
       description:
         'دعم الدراسات المتطورة التي تعمل على تحسين الكشف المبكر عن أمراض الجهاز التنفسي.',
-      icon: '/icons/icon-advance-research.png',
+      icon: '/images/icons/icon-advance-research.png',
     },
     {
       title: 'تمكين المرضى',
       description:
         'ساعد الأفراد على التحكم في صحتهم من خلال رؤى علمية يمكن الوصول إليها.',
-      icon: '/icons/icon-empower-patients.png',
+      icon: '/images/icons/icon-empower-patients.png',
     },
   ],
   donateOptions: {
@@ -44,7 +44,7 @@ const donate: Donate = {
           'يتم توجيه المساهمات من خلال حملة GoFundMe التابعة لـ Virufy.',
         buttonText: 'التبرع عبر GoFundMe',
         url: 'https://www.gofundme.com/f/donate-virufy',
-        icon: '/icons/icon-donate.png',
+        icon: '/images/icons/icon-donate.png',
       },
       {
         name: 'PayPal',
@@ -52,7 +52,7 @@ const donate: Donate = {
           'تتم معالجة المساهمات مباشرة من خلال حساب PayPal الخاص بـ Virufy.',
         buttonText: 'التبرع عبر PayPal',
         url: 'https://www.paypal.com/us/fundraiser/charity/4348461',
-        icon: '/icons/icon-donate.png',
+        icon: '/images/icons/icon-donate.png',
       },
     ],
   },

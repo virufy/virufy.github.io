@@ -5,9 +5,9 @@ export const blogPageContent = {
     title: 'Our Blog',
     subtitle:
       'Stories, research insights, and updates on advancing AI-powered respiratory health.',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: 'Insights & Updates',
-    tagIcon: '/icons/Blog-icon.png',
+    tagIcon: '/images/icons/Blog-icon.png',
   },
   pillSelector: {
     options: [

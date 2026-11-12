@@ -25,7 +25,7 @@ const Supporters = ({ params: { lang } }: { params: { lang: Locale } }) => {
           <div className="mx-auto flex flex-col items-center text-center">
             <div className="mb-10 inline-flex items-center gap-2 rounded-full border border-[#bcc7d4] bg-[#d9eaf8] py-1 pl-4 pr-5 text-[#084b8a]">
               <ExportedImage
-                src="/icons/globe-supporters.png"
+                src="/images/icons/globe-supporters.png"
                 alt="globe icon"
                 height={17}
                 width={17}

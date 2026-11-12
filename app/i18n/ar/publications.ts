@@ -6,9 +6,9 @@ const PublicationsContent: PublicationsPage = {
     title: 'منشورات Virufy',
     subtitle:
       'استكشف أبحاثنا المحكمة، المنشورات الأكاديمية، والدراسات العلمية التي تدفع مجال الكشف عن أمراض الجهاز التنفسي باستخدام الذكاء الاصطناعي من خلال تقنية تحليل السعال المبتكرة.',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: 'بحث',
-    tagIcon: '/icons/icon-research.png',
+    tagIcon: '/images/icons/icon-research.png',
   },
   pillSelector: {
     options: [
@@ -53,7 +53,7 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: 'https://virufy.org/en/publications/data-efficient-cough-ai/',
       contentType: 'publications',
-      image: '/images/sevenNews/publications/march_8_2026.png/',
+      image: '/images/sevenNews/publications/march_8_2026.png',
       year: 2026,
     },
     {

@@ -5,9 +5,9 @@ const PublicationsContent: PublicationsPage = {
     title: 'Virufy Publications',
     subtitle:
       'Explore our peer-reviewed research, academic publications, and scientific studies advancing the field of AI-powered respiratory disease detection through innovative cough analysis technology.',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: 'Research',
-    tagIcon: '/icons/icon-research.png',
+    tagIcon: '/images/icons/icon-research.png',
   },
   pillSelector: {
     options: [
@@ -69,7 +69,7 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: 'https://virufy.org/en/publications/data-efficient-cough-ai/',
       contentType: 'publications',
-      image: '/images/sevenNews/publications/march_8_2026.png/',
+      image: '/images/sevenNews/publications/march_8_2026.png',
       year: 2026,
     },
     {

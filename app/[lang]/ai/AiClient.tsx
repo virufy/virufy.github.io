@@ -9,7 +9,7 @@ import AiCarousel from './AiCarousel';
 import ActionBanner from '../components/ActionBanner';
 
 import { CrossBackground } from '@/public/images/ai/index';
-import AiIcon from '@/public/icons/icon-ai.png';
+import AiIcon from '@/public/images/icons/icon-ai.png';
 import { ColorProps, TextSizeProps } from '../themes';
 
 export default function AiPage({

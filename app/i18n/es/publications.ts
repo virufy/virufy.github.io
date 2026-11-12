@@ -6,9 +6,9 @@ const PublicationsContent: PublicationsPage = {
     title: 'Publicaciones de Virufy',
     subtitle:
       'Explora nuestra investigación revisada por pares, publicaciones académicas y estudios científicos que avanzan en el campo de la detección de enfermedades respiratorias impulsada por IA mediante tecnología innovadora de análisis de la tos.',
-    bgImage: '/icons/icon-news-bg.png',
+    bgImage: '/images/icons/icon-news-bg.png',
     tag: 'Investigación',
-    tagIcon: '/icons/icon-research.png',
+    tagIcon: '/images/icons/icon-research.png',
   },
   pillSelector: {
     options: [
@@ -72,7 +72,7 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: 'https://virufy.org/en/publications/data-efficient-cough-ai/',
       contentType: 'publications',
-      image: '/images/sevenNews/publications/march_8_2026.png/',
+      image: '/images/sevenNews/publications/march_8_2026.png',
       year: 2026,
     },
     {
