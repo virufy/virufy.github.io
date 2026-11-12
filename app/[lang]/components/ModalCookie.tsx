@@ -9,12 +9,7 @@ import { usei18n } from '@/app/i18n';
 import ReactGA from 'react-ga4';
 import { usePathname } from 'next/navigation';
 
-interface CookieBannerProps {
-  lang: Locale;
-  onConsentChange: (consent: boolean) => void;
-}
-
-const CookieBanner = ({ lang, onConsentChange }: CookieBannerProps) => {
+const CookieBanner = ({ lang }: { lang: Locale }) => {
   const pathname = usePathname();
 
   const {
@@ -38,7 +33,6 @@ const CookieBanner = ({ lang, onConsentChange }: CookieBannerProps) => {
       localStorage.setItem('CookieConsent', 'rejected');
       setShowBanner(false);
       setHasConsent(false);
-      onConsentChange(false);
       return;
     }
 
@@ -48,13 +42,11 @@ const CookieBanner = ({ lang, onConsentChange }: CookieBannerProps) => {
       setShowBanner(true);
     } else if (consent === 'accepted') {
       setHasConsent(true);
-      onConsentChange(true);
     } else {
       setShowBanner(false);
       setHasConsent(false);
-      onConsentChange(false);
     }
-  }, [onConsentChange]);
+  }, []);
 
   useEffect(() => {
     if (!hasConsent) return;
@@ -77,14 +69,12 @@ const CookieBanner = ({ lang, onConsentChange }: CookieBannerProps) => {
     localStorage.setItem('CookieConsent', 'accepted');
     setShowBanner(false);
     setHasConsent(true);
-    onConsentChange(true);
   };
 
   const rejectCookies = () => {
     localStorage.setItem('CookieConsent', 'rejected');
     setShowBanner(false);
     setHasConsent(false);
-    onConsentChange(false);
   };
 
   if (!showBanner) return null;
