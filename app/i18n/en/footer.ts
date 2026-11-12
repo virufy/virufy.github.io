@@ -3,6 +3,9 @@ import { type Footer } from '../types/footer';
 const footer: Footer = {
   cookiePolicy: {
     title: 'Cookie Policy',
+    lastUpdated: 'Last updated: November 12, 2026',
+    analyticsNotice:
+      'We use Google Analytics 4 only after you accept cookies. Google Signals and ad personalization are disabled. We honor Global Privacy Control (GPC) as a decline. We do not use Hotjar, Meta Pixel, X Pixel, or Google Ads tags.',
     body: [
       {
         question: 'General',

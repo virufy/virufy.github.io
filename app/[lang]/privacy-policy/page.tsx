@@ -12,7 +12,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
             <br></br>Privacy Policy
           </h1>
           <p>
-            <i>Last updated: September 30, 2025</i>
+            <i>Last updated: November 12, 2026</i>
           </p>
           <p>
             The Covid Detection Foundation d.b.a. Virufy (“Virufy”, “we”, “us”
@@ -497,25 +497,16 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
 
                 <ul className="mx-5 my-2">
                   <p className="my-2">
-                    Some of the service providers we may use include:{' '}
+                    The analytics service we currently use is:{' '}
                   </p>
                   <li className="my-2">
-                    - <strong>Google Analytics.</strong> For more information
-                    about how Google uses your personal information, please
-                    visit Google Analytics’ Privacy Policy. To learn more about
-                    how to opt-out of Google Analytics’ use of your personal
-                    information, please click here.
-                  </li>
-                  <li className="my-2">
-                    - <strong>Hotjar (Session Replay Analytics).</strong> We use
-                    Hotjar’s session replay analytics services. This allows us
-                    to record and replay an individual’s interaction with the
-                    Services. For more information about how Hotjar uses your
-                    personal information, please visit the “Personal Data
-                    collected from a visitor of a Hotjar Enabled Site” section
-                    of Hotjar’s Privacy Policy. To learn more about how to
-                    opt-out of Hotjar’s use of your information, please click
-                    here.
+                    - <strong>Google Analytics 4.</strong> We use Google
+                    Analytics only after you accept cookies. Google Signals and
+                    ad personalization are disabled. For more information about
+                    how Google uses personal information, please visit{' '}
+                    <a href="https://policies.google.com/privacy?hl=en">
+                      Google’s Privacy Policy
+                    </a>.
                   </li>
                 </ul>
 
@@ -1552,66 +1543,15 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
             </p>
 
             <p className="my-2">
-              If you opt-in to “personalized marketing” through the{' '}
-              <a className="text-blue-500 underline" href="https://virufy.org/">
-                www.virufy.org
-              </a>{' '}
-              cookie banner, you allow us to “sell” your consumer health data as
-              described below:
+              We do not currently use marketing or advertising cookies, offer
+              personalized marketing through this website, or sell consumer
+              health data for personalized advertising. Google Analytics 4 is
+              used only after cookie consent, with Google Signals and ad
+              personalization disabled. We honor Global Privacy Control (GPC)
+              as a decline of optional tracking.
             </p>
 
             <ul className="mx-5 my-2 list-disc">
-              <li className="my-2">
-                <strong>
-                  Specific consumer health data intended for “sale”:
-                </strong>{' '}
-                Consumer health data collected via cookies and similar
-                technologies including but not limited to browsing activity on
-                our website.
-              </li>
-              <li className="my-2">
-                <strong>Purpose of the “sale” of consumer health data:</strong>{' '}
-                To tailor and deliver personalized advertisements to you.
-              </li>
-              <li className="my-2">
-                <strong>
-                  How consumer health data purchasers gather and use the data:
-                </strong>
-                Consumer health data purchasers will gather the data via cookies
-                and other tracking technologies when you visit www.virufy.org.
-                These purchasers may use the data to assist us to deliver
-                personalized advertisements to you and in accordance with their
-                privacy policies linked below.
-              </li>
-              <li className="my-2">
-                <strong>
-                  Consumer health data purchasers’ contact information:
-                </strong>
-                <ul className="mx-5 my-2">
-                  <li className="my-2">
-                    - Google:{' '}
-                    <a href="https://policies.google.com/privacy?hl=en">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li className="my-2">
-                    - Microsoft:{' '}
-                    <a href="https://privacy.microsoft.com/en-us/privacystatement">
-                      Privacy Statement
-                    </a>
-                  </li>
-                  <li className="my-2">
-                    - X Advertising:{' '}
-                    <a href="https://x.com/en/privacy">Privacy Policy</a>
-                  </li>
-                  <li className="my-2">
-                    - Facebook/Meta:{' '}
-                    <a href="https://www.facebook.com/privacy/policy/">
-                      Privacy Policy
-                    </a>
-                  </li>
-                </ul>
-              </li>
               <li className="my-2">
                 <strong>Contact information for Virufy:</strong>{' '}
                 <a
@@ -1623,63 +1563,6 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               </li>
             </ul>
 
-            <p className="my-2">
-              <strong>Please note:</strong>
-            </p>
-
-            <ul className="mx-5 my-2 list-disc">
-              <li className="my-2">
-                The provision of goods or services may not be conditioned upon
-                you accepting the terms of this Authorization.
-              </li>
-              <li className="my-2">
-                Purchasers may redisclose the consumer health data sold under
-                this authorization and such data may no longer be protected by
-                the CTDPA, MHMDA, NVCHDPL, and/or applicable state consumer
-                health data privacy laws.
-              </li>
-              <li className="my-2">
-                You may revoke this authorization at any time through the{' '}
-                <a
-                  className="text-blue-500 underline"
-                  href="https://virufy.org/"
-                >
-                  www.virufy.org
-                </a>{' '}
-                cookie banner. To do so, please be sure the box next to
-                “Personalize marketing” is unchecked and click “Save my
-                choices.” You may also click “Decline all” to decline our use of
-                all cookies not required to operate our website.
-              </li>
-              <p className="mx-5 my-2">
-                - A revocation will not impact previously sold consumer health
-                data. In addition, if you use different browsers or devices, you
-                must indicate your choices on each browser/device used to access{' '}
-                <a
-                  className="text-blue-500 underline"
-                  href="https://virufy.org/"
-                >
-                  www.virufy.org
-                </a>
-                .
-              </p>
-            </ul>
-
-            <p className="my-2">
-              If you have any questions about how to revoke your authorization,
-              please contact:{' '}
-              <a
-                className="text-blue-500 underline"
-                href="mailto:dpo@virufy.org"
-              >
-                dpo@virufy.org
-              </a>
-              .
-            </p>
-
-            <p className="mx-5 my-2">
-              This authorization will expire one (1) year after accepting it.
-            </p>
           </section>
         </div>
       </div>

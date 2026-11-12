@@ -3,6 +3,9 @@ import { type Footer } from '../types/footer';
 const footer: Footer = {
   cookiePolicy: {
     title: 'Cookie設定',
+    lastUpdated: '最終更新日：2026年11月12日',
+    analyticsNotice:
+      'Google Analytics 4 は Cookie に同意した場合にのみ使用します。Google Signals と広告のパーソナライズは無効です。Global Privacy Control（GPC）は拒否として扱います。Hotjar、Meta Pixel、X Pixel、Google Ads タグは使用していません。',
     body: [
       {
         question: '概要',

@@ -4,46 +4,21 @@ import { type Locale } from '@/i18n-config';
 import { basePath } from '@/next.config.mjs';
 import { VirufyLogo } from '@/public/images/jobListing';
 import ExportedImage from 'next-image-export-optimizer';
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { usei18n } from '@/app/i18n';
 import ReactGA from 'react-ga4';
 import { usePathname } from 'next/navigation';
 
-interface CookieBannerProps {
-  lang: Locale;
-  onConsentChange: (consent: boolean) => void;
-}
-
-const CookieBanner = ({ lang, onConsentChange }: CookieBannerProps) => {
+const CookieBanner = ({ lang }: { lang: Locale }) => {
   const pathname = usePathname();
-  const dateAccessed = new Date().toISOString();
 
   const {
     cookieModal: { text, yes, no },
   } = usei18n(lang);
 
   const [showBanner, setShowBanner] = useState(false);
-
-  /**
-   * Initialize GA once
-   */
-  useEffect(() => {
-    ReactGA.initialize('G-ZV5G86ZDRG');
-  }, []);
-
-  /**
-   * Track pageview if consent is accepted
-   */
-  const trackPageview = useCallback(
-    (url: string) => {
-      ReactGA.send({
-        hitType: 'pageview',
-        page: url,
-        date_accessed: dateAccessed,
-      });
-    },
-    [dateAccessed]
-  );
+  const [hasConsent, setHasConsent] = useState(false);
+  const analyticsInitialized = useRef(false);
 
   /**
    * On load:
@@ -51,29 +26,55 @@ const CookieBanner = ({ lang, onConsentChange }: CookieBannerProps) => {
    * - Track if already accepted
    */
   useEffect(() => {
+    const hasGpc =
+      (navigator as Navigator & { globalPrivacyControl?: boolean })
+        .globalPrivacyControl === true;
+    if (hasGpc) {
+      localStorage.setItem('CookieConsent', 'rejected');
+      setShowBanner(false);
+      setHasConsent(false);
+      return;
+    }
+
     const consent = localStorage.getItem('CookieConsent');
 
     if (!consent) {
       setShowBanner(true);
     } else if (consent === 'accepted') {
-      trackPageview(pathname);
-      onConsentChange(true);
+      setHasConsent(true);
     } else {
-      onConsentChange(false);
+      setShowBanner(false);
+      setHasConsent(false);
     }
-  }, [pathname, trackPageview, onConsentChange]);
+  }, []);
+
+  useEffect(() => {
+    if (!hasConsent) return;
+
+    if (!analyticsInitialized.current) {
+      ReactGA.initialize('G-ZV5G86ZDRG', {
+        gtagOptions: {
+          allow_google_signals: false,
+          allow_ad_personalization_signals: false,
+          send_page_view: false,
+        },
+      });
+      analyticsInitialized.current = true;
+    }
+
+    ReactGA.send({ hitType: 'pageview', page: pathname });
+  }, [hasConsent, pathname]);
 
   const acceptCookies = () => {
     localStorage.setItem('CookieConsent', 'accepted');
     setShowBanner(false);
-    trackPageview(pathname);
-    onConsentChange(true);
+    setHasConsent(true);
   };
 
   const rejectCookies = () => {
     localStorage.setItem('CookieConsent', 'rejected');
     setShowBanner(false);
-    onConsentChange(false);
+    setHasConsent(false);
   };
 
   if (!showBanner) return null;
