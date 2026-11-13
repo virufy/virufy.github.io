@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75e81b3981fe5e9f36d833c6e0551632",
+    "revision": "90c6662f0e87c3da55d1e702a4b5d5bb",
     "url": "/madinah-app/index.html"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/madinah-app/static/js/11.ad000866.chunk.js"
   },
   {
-    "revision": "5b265f4a59b5b4c4afd8",
-    "url": "/madinah-app/static/js/12.801a258e.chunk.js"
+    "revision": "974b41ed222f782f0f2c",
+    "url": "/madinah-app/static/js/12.e814e801.chunk.js"
   },
   {
     "revision": "0193bfceb303918e7675",
@@ -252,8 +252,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/madinah-app/static/js/main.493a604a.chunk.js"
   },
   {
-    "revision": "97e24bdb994d07307b03",
-    "url": "/madinah-app/static/js/runtime-main.10bd3b7e.js"
+    "revision": "55d22f256c91138d1ed6",
+    "url": "/madinah-app/static/js/runtime-main.3326c776.js"
   },
   {
     "revision": "74682ec33acb1a883ae7d81e961610ce",
