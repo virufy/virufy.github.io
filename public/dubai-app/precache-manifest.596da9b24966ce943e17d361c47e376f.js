@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd95e7245e8637e476a935ec1b33f9db",
+    "revision": "6b2ae227f6c074c301fd233397eec410",
     "url": "/dubai-app/index.html"
   },
   {
@@ -84,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dubai-app/static/js/22.e820a152.chunk.js"
   },
   {
-    "revision": "d3188e13f3ca7948d739",
-    "url": "/dubai-app/static/js/23.706e157f.chunk.js"
+    "revision": "c91143a5fee48c88e727",
+    "url": "/dubai-app/static/js/23.bce22b72.chunk.js"
   },
   {
     "revision": "1e91f745a5540ff3c298",
@@ -156,8 +156,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dubai-app/static/js/38.191a0a1d.chunk.js"
   },
   {
-    "revision": "9b2f42c55419fa2c5d48",
-    "url": "/dubai-app/static/js/39.2610c8a6.chunk.js"
+    "revision": "8d857c2d5860301241ba",
+    "url": "/dubai-app/static/js/39.6629a064.chunk.js"
   },
   {
     "revision": "c53a877410d523ce002b",
@@ -252,8 +252,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dubai-app/static/js/main.7c37fb0b.chunk.js"
   },
   {
-    "revision": "ea413ce8d59ff89dbd4b",
-    "url": "/dubai-app/static/js/runtime-main.0d499f67.js"
+    "revision": "57ea836280fc6056d1ff",
+    "url": "/dubai-app/static/js/runtime-main.28353b0e.js"
   },
   {
     "revision": "74682ec33acb1a883ae7d81e961610ce",

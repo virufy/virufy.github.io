@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/madinah-app/precache-manifest.cd451ec9f7c8877ea5b0cd741c442c12.js"
+  "/madinah-app/precache-manifest.60a532f3793383573e4b3a6bedfc258e.js"
 );
 
 self.addEventListener('message', (event) => {
