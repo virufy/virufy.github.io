@@ -37,16 +37,6 @@ const sevenNewsContent: SevenNewsPage = {
   newsCards: [
     {
       title:
-        'Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai',
-      date: 'May 2026',
-      subText: '',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
-      year: 2026,
-    },
-    {
-      title:
         'FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health',
       date: 'June 2026',
       subText: '',
@@ -63,6 +53,16 @@ const sevenNewsContent: SevenNewsPage = {
       image: '/images/news/Amil-Classroom-1.jpg',
       subText: '',
       url: '/en/news/amil-june-2026',
+      year: 2026,
+    },
+    {
+      title:
+        'Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai',
+      date: 'May 2026',
+      subText: '',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
       year: 2026,
     },
     {
@@ -157,25 +157,6 @@ const sevenNewsContent: SevenNewsPage = {
       year: 2020,
     },
     {
-      title: 'One Young World Japan Ambassador Targets COVID-19 Using A.I.',
-      date: 'May 2020',
-      subText: 'One Young World, Tokyo, Japan',
-      url: 'https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
-      title:
-        'North American Ambassadors on the Frontlines of the COVID-19 Response',
-      date: '2020',
-      subText: 'One Young World',
-      url: 'https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
       title: 'Ambassadors of the Month July',
       date: 'July 2020',
       subText: 'One Young World',
@@ -190,6 +171,25 @@ const sevenNewsContent: SevenNewsPage = {
       date: 'July 2020',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
+    },
+    {
+      title: 'One Young World Japan Ambassador Targets COVID-19 Using A.I.',
+      date: 'May 2020',
+      subText: 'One Young World, Tokyo, Japan',
+      url: 'https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
+    },
+    {
+      title:
+        'North American Ambassadors on the Frontlines of the COVID-19 Response',
+      date: '2020',
+      subText: 'One Young World',
+      url: 'https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       year: 2020,

@@ -37,26 +37,6 @@ const sevenNewsContent: SevenNewsPage = {
   newsCards: [
     {
       title:
-        'الارتقاء برعاية الأطفال باستخدام الذكاء الاصطناعي: Virufy وEmirates Health Services (EHS) في WHX دبي 2026!',
-      date: 'أبريل 2026',
-      subText: '',
-      url: '/ar/news/whx-dubai-2026',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2026,
-    },
-    {
-      title:
-        'ثلاثة مشاريع جامعية من سويسرا والولايات المتحدة ومصر تنتقل إلى مراحل تجريبية نشطة ومراحل تجارية في دبي',
-      date: 'مايو 2026',
-      subText: '',
-      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2026,
-    },
-    {
-      title:
         'كلية الصحة العامة بجامعة إندونيسيا تستكشف تعاونًا استراتيجيًا مع Virufy لتطوير تقنية الذكاء الاصطناعي في مجال صحة الجهاز التنفسي',
       date: 'يونيو 2026',
       subText: '',
@@ -73,6 +53,26 @@ const sevenNewsContent: SevenNewsPage = {
       url: '/ar/news/amil-june-2026',
       contentType: 'news',
       image: '/images/news/Amil-Classroom-1.jpg',
+      year: 2026,
+    },
+    {
+      title:
+        'ثلاثة مشاريع جامعية من سويسرا والولايات المتحدة ومصر تنتقل إلى مراحل تجريبية نشطة ومراحل تجارية في دبي',
+      date: 'مايو 2026',
+      subText: '',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2026,
+    },
+    {
+      title:
+        'الارتقاء برعاية الأطفال باستخدام الذكاء الاصطناعي: Virufy وEmirates Health Services (EHS) في WHX دبي 2026!',
+      date: 'أبريل 2026',
+      subText: '',
+      url: '/ar/news/whx-dubai-2026',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
       year: 2026,
     },
     {
@@ -152,6 +152,24 @@ const sevenNewsContent: SevenNewsPage = {
       year: 2020,
     },
     {
+      title: 'سفراء الشهر يوليو',
+      date: 'يوليو 2020',
+      subText: 'One Young World',
+      url: 'https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
+    },
+    {
+      title: 'آلاف يحضرون فعاليات OYW الرقمية العالمية في يوليو: ملخص لما فاتك',
+      date: 'يوليو 2020',
+      subText: 'One Young World',
+      url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
+    },
+    {
       title:
         'سفير One Young World في اليابان يستهدف COVID-19 باستخدام الذكاء الاصطناعي',
       date: 'مايو 2020',
@@ -166,24 +184,6 @@ const sevenNewsContent: SevenNewsPage = {
       date: '2020',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
-      title: 'سفراء الشهر يوليو',
-      date: 'يوليو 2020',
-      subText: 'One Young World',
-      url: 'https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
-      title: 'آلاف يحضرون فعاليات OYW الرقمية العالمية في يوليو: ملخص لما فاتك',
-      date: 'يوليو 2020',
-      subText: 'One Young World',
-      url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       year: 2020,
