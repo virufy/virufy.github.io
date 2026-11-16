@@ -38,15 +38,6 @@ const sevenNewsContent: SevenNewsPage = {
   newsCards: [
     {
       title:
-        'Tres empresas universitarias de Suiza, EE. UU. y Egipto avanzan a pilotos activos y fases comerciales en Dubái',
-      date: 'Mayo de 2026',
-      subText: '',
-      contentType: 'news',
-      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
-      year: 2026,
-    },
-    {
-      title:
         'FPH UI explora colaboración estratégica con Virufy para desarrollar tecnología de IA en salud respiratoria',
       date: 'Junio de 2026',
       subText: '',
@@ -62,6 +53,15 @@ const sevenNewsContent: SevenNewsPage = {
       image: '/images/news/Amil-Classroom-1.jpg',
       subText: '',
       url: '/en/news/amil-june-2026',
+      year: 2026,
+    },
+    {
+      title:
+        'Tres empresas universitarias de Suiza, EE. UU. y Egipto avanzan a pilotos activos y fases comerciales en Dubái',
+      date: 'Mayo de 2026',
+      subText: '',
+      contentType: 'news',
+      url: 'https://www.prototypesforhumanity.com/press-releases/press/Universityventures',
       year: 2026,
     },
     {
@@ -155,25 +155,6 @@ const sevenNewsContent: SevenNewsPage = {
       year: 2020,
     },
     {
-      title: 'Embajador de One Young World Japón combate el COVID-19 con IA',
-      date: 'Mayo de 2020',
-      subText: 'One Young World, Tokio, Japón',
-      url: 'https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
-      title:
-        'Embajadores de Norteamérica en la primera línea de la respuesta al COVID-19',
-      date: '2020',
-      subText: 'One Young World',
-      url: 'https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
       title: 'Embajadores del mes de julio',
       date: 'Julio de 2020',
       subText: 'One Young World',
@@ -188,6 +169,25 @@ const sevenNewsContent: SevenNewsPage = {
       date: 'Julio de 2020',
       subText: 'One Young World',
       url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
+    },
+    {
+      title: 'Embajador de One Young World Japón combate el COVID-19 con IA',
+      date: 'Mayo de 2020',
+      subText: 'One Young World, Tokio, Japón',
+      url: 'https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/',
+      contentType: 'news',
+      image: '/images/sevenNews/Placeholder-Card.png',
+      year: 2020,
+    },
+    {
+      title:
+        'Embajadores de Norteamérica en la primera línea de la respuesta al COVID-19',
+      date: '2020',
+      subText: 'One Young World',
+      url: 'https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response',
       contentType: 'news',
       image: '/images/sevenNews/Placeholder-Card.png',
       year: 2020,

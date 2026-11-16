@@ -1483,7 +1483,7 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               General at{' '}
               <a
                 className="text-blue-500 underline"
-                href="www.atg.wa.gov/file-complaint"
+                href="https://www.atg.wa.gov/file-complaint"
               >
                 www.atg.wa.gov/file-complaint
               </a>
