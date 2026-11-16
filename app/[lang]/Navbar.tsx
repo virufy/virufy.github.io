@@ -646,7 +646,12 @@ export default function Navbar({ lang }: { lang: Locale }) {
                           href={`/${lang}/amils-story`}
                           onClick={handleNavClick}
                         >
-                          {aboutUs?.ourFounder}
+                          <span className="block">{aboutUs?.ourFounder}</span>
+                          {aboutUs?.foundersubtext && (
+                            <span className="block text-sm font-normal text-gray-500">
+                              {aboutUs.foundersubtext}
+                            </span>
+                          )}
                         </Link>
 
                         {/* Our Supporters */}

@@ -29,6 +29,7 @@ export interface AboutUs {
   section: string;
   advisors: string;
   ourFounder: string;
+  foundersubtext?: string;
   ourSupporters: string;
 
   oneYoungWorld: string;
