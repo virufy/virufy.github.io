@@ -26,6 +26,7 @@ export const blogPageContent = {
     newestFirst: 'الأحدث أولاً',
     oldestFirst: 'الأقدم أولاً',
     searchPlaceholder: 'ابحث في المدونات...',
+    filterByCategoryLabel: 'تصفية حسب الفئة',
   },
 
   categories: {

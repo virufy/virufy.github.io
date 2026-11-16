@@ -25,6 +25,7 @@ export const blogPageContent = {
     newestFirst: 'Newest to Oldest',
     oldestFirst: 'Oldest to Newest',
     searchPlaceholder: 'Search through blogs...',
+    filterByCategoryLabel: 'Filter by category',
   },
 
   categories: {

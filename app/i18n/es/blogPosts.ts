@@ -26,6 +26,7 @@ export const blogPageContent = {
     newestFirst: 'Más recientes primero',
     oldestFirst: 'Más antiguos primero',
     searchPlaceholder: 'Buscar en los blogs...',
+    filterByCategoryLabel: 'Filtrar por categoría',
   },
 
   categories: {
