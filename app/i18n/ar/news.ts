@@ -161,15 +161,6 @@ const sevenNewsContent: SevenNewsPage = {
       year: 2020,
     },
     {
-      title: 'آلاف يحضرون فعاليات OYW الرقمية العالمية في يوليو: ملخص لما فاتك',
-      date: 'يوليو 2020',
-      subText: 'One Young World',
-      url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
       title:
         'سفير One Young World في اليابان يستهدف COVID-19 باستخدام الذكاء الاصطناعي',
       date: 'مايو 2020',
