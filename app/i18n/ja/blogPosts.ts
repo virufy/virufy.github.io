@@ -1,5 +1,8 @@
 import type { I18nData } from '../types';
-import { competitiveMedicalTechnologyBlogPost } from '../en/blogPosts';
+import {
+  competitiveMedicalTechnologyBlogPost,
+  earlyRespiratoryScreeningForSeniorsBlogPost,
+} from '../en/blogPosts';
 
 export const blogPageContent = {
   hero: {
@@ -664,5 +667,7 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
   },
   [competitiveMedicalTechnologyBlogPost.slug]:
     competitiveMedicalTechnologyBlogPost,
+  [earlyRespiratoryScreeningForSeniorsBlogPost.slug]:
+    earlyRespiratoryScreeningForSeniorsBlogPost,
 };
 export default blogPosts;
