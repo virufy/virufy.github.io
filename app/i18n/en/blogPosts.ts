@@ -163,6 +163,96 @@ export const competitiveMedicalTechnologyBlogPost = {
   `,
 } satisfies I18nData['blogPosts']['blogPosts'][string];
 
+export const earlyRespiratoryScreeningForSeniorsBlogPost = {
+  slug: 'early-respiratory-screening-senior-citizens',
+  title: 'Why Early Respiratory Screening Is Important for Senior Citizens',
+  description:
+    'How older adults and their care teams can recognize respiratory changes, understand appropriate testing, and act promptly when symptoms arise.',
+  date: 'November 2026',
+  image: '/images/blog/early-respiratory-screening-senior-citizens.png',
+  content: `
+    <p>
+      Breathing changes can be easy to explain away as part of getting older. A cough that lingers, getting winded during familiar activities, or feeling unusually tired may seem minor at first. But new or worsening respiratory symptoms deserve attention at any age, and especially in later life, when some respiratory infections are more likely to become serious.
+    </p>
+
+    <p>
+      Early attention does not mean every older adult needs the same test. It means noticing changes, discussing personal risks with a healthcare professional, and choosing an evaluation that fits the person.
+    </p>
+
+    <h2>Why respiratory health deserves attention with age</h2>
+    <p>
+      Age can affect how the body responds to illness, and many older adults also live with conditions such as heart disease, diabetes, or chronic lung disease. Together, these factors can raise the risk of severe illness from respiratory viruses. The U.S. Centers for Disease Control and Prevention (CDC) identifies adults 65 and older as being at higher risk of getting very sick from respiratory illnesses.
+    </p>
+    <p>
+      This does not mean that breathlessness or a cough is simply “normal aging.” A change from someone's usual breathing, stamina, or cough pattern is useful information to share with a clinician.
+    </p>
+
+    <h2>Notice changes and bring them up</h2>
+    <p>Consider contacting a healthcare professional about symptoms such as:</p>
+    <ul>
+      <li>A cough that persists, returns often, or produces more mucus than usual.</li>
+      <li>New wheezing, chest tightness, or shortness of breath during everyday tasks.</li>
+      <li>Repeated respiratory infections or a longer recovery than expected.</li>
+      <li>Unusual fatigue or a noticeable decline in normal activity.</li>
+    </ul>
+    <p>
+      Symptoms can have many causes, and a clinician can help determine whether they need evaluation. Seek urgent medical care for severe breathing difficulty, chest pain or pressure, sudden confusion, or rapidly worsening symptoms.
+    </p>
+
+    <h2>What “screening” can mean</h2>
+    <p>
+      Screening looks for a condition before symptoms are recognized; diagnostic testing investigates symptoms or a specific concern. A clinician may ask about symptoms, smoking history, environmental exposures, medications, and other health conditions before deciding what to do. Depending on the situation, evaluation might include a breathing test such as spirometry, an oxygen measurement, imaging, or testing for an infection. These tests answer different questions and are not interchangeable.
+    </p>
+    <p>
+      More testing is not always better. For example, the U.S. Preventive Services Task Force recommends against screening adults who have no symptoms for chronic obstructive pulmonary disease (COPD). This recommendation does not apply to people with respiratory symptoms, who may need clinical evaluation. Lung cancer screening is a separate decision: the Task Force recommends annual low-dose CT for eligible adults ages 50 to 80 with at least a 20 pack-year smoking history who currently smoke or quit within the past 15 years. A healthcare professional can explain whether those criteria apply and discuss benefits and harms.
+    </p>
+
+    <h2>Make a check-in useful</h2>
+    <p>Before an appointment, it may help to note:</p>
+    <ul>
+      <li>When the change began and whether it is getting better or worse.</li>
+      <li>Which activities bring on symptoms and how they compare with your usual routine.</li>
+      <li>Past or current tobacco use, workplace or household exposures, and recent infections.</li>
+      <li>Any medicines, vaccinations, or chronic conditions you want to review.</li>
+    </ul>
+    <p>
+      Ask what symptoms should prompt a call, which tests are appropriate for your situation, and whether you may qualify for any recommended screening. For adults at higher risk who become sick with a respiratory virus, prompt contact with a healthcare professional can help determine whether testing or time-sensitive treatment is appropriate.
+    </p>
+
+    <h2>Protecting respiratory health is an ongoing conversation</h2>
+    <p>
+      Staying up to date with recommended vaccines, avoiding tobacco smoke, reducing exposure to irritating pollutants when possible, and seeking advice when breathing changes are practical ways to support respiratory health. A personalized conversation can turn a vague concern into a clear next step—and help older adults and their care teams make informed decisions together.
+    </p>
+    <p>
+      Virufy is a nonprofit exploring how AI and respiratory sounds could contribute to more accessible respiratory health screening. The technology is in development; it is not a diagnosis and does not replace evaluation by a healthcare professional.
+    </p>
+
+    <h2>References</h2>
+    <ul>
+      <li>
+        <a href="https://www.cdc.gov/respiratory-viruses/about/" target="_blank" rel="noopener noreferrer">
+          CDC: About Respiratory Illnesses
+        </a>
+      </li>
+      <li>
+        <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/chronic-obstructive-pulmonary-disease-screening" target="_blank" rel="noopener noreferrer">
+          U.S. Preventive Services Task Force: COPD Screening
+        </a>
+      </li>
+      <li>
+        <a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening" target="_blank" rel="noopener noreferrer">
+          U.S. Preventive Services Task Force: Lung Cancer Screening
+        </a>
+      </li>
+      <li>
+        <a href="https://www.cdc.gov/respiratory-viruses/treatment/" target="_blank" rel="noopener noreferrer">
+          CDC: Treatment of Respiratory Viruses
+        </a>
+      </li>
+    </ul>
+  `,
+} satisfies I18nData['blogPosts']['blogPosts'][string];
+
 export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
   'silent-smog-hidden-impact': {
     slug: 'silent-smog-hidden-impact',
@@ -1063,6 +1153,8 @@ export const blogPosts: I18nData['blogPosts']['blogPosts'] = {
   },
   [competitiveMedicalTechnologyBlogPost.slug]:
     competitiveMedicalTechnologyBlogPost,
+  [earlyRespiratoryScreeningForSeniorsBlogPost.slug]:
+    earlyRespiratoryScreeningForSeniorsBlogPost,
 };
 export default blogPosts;
 

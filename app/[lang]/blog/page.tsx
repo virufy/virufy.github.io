@@ -28,6 +28,7 @@ const categoryBySlug: Record<string, CategoryKey> = {
   'the-science-of-sound-and-health': 'research',
   'world-lung-day': 'community',
   'how-to-stay-competitive-in-the-booming-era-of-medical-technology': 'technology',
+  'early-respiratory-screening-senior-citizens': 'research',
 };
 
 const desktopCategories = [
