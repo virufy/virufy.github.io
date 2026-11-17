@@ -81,7 +81,21 @@ export default function BlogPage({
   const postList = useMemo(() => Object.values(posts), [posts]);
   const heroTitleWords = useMemo(() => content.hero.title.trim().split(/\s+/).filter(Boolean), [content.hero.title]);
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedYear, setSelectedYear] = useState('all');
+  const [sortOrder, setSortOrder] = useState<'newest' | 'oldest'>('newest');
   const [searchQuery, setSearchQuery] = useState('');
+
+  const years = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          postList
+            .map((post) => post.date?.match(/\b(?:19|20)\d{2}\b/)?.[0])
+            .filter((year): year is string => Boolean(year))
+        )
+      ).sort((a, b) => Number(b) - Number(a)),
+    [postList]
+  );
 
   const normalizedSearchQuery = searchQuery.trim().toLocaleLowerCase();
   const filteredPosts = useMemo(() => {
@@ -97,10 +111,15 @@ export default function BlogPage({
     return postList
       .filter((post) => {
         const searchableText = `${post.title} ${post.description} ${post.content.replace(/<[^>]*>/g, ' ')}`.toLocaleLowerCase();
-        return categoryMatches(post) && (!normalizedSearchQuery || searchableText.includes(normalizedSearchQuery));
+        const postYear = post.date?.match(/\b(?:19|20)\d{2}\b/)?.[0];
+        const yearMatches = selectedYear === 'all' || postYear === selectedYear;
+        return categoryMatches(post) && yearMatches && (!normalizedSearchQuery || searchableText.includes(normalizedSearchQuery));
       })
-      .sort((a, b) => getSortableDate(b.date).localeCompare(getSortableDate(a.date)));
-  }, [postList, selectedCategory, normalizedSearchQuery]);
+      .sort((a, b) => {
+        const dateComparison = getSortableDate(a.date).localeCompare(getSortableDate(b.date));
+        return sortOrder === 'newest' ? -dateComparison : dateComparison;
+      });
+  }, [postList, selectedCategory, selectedYear, sortOrder, normalizedSearchQuery]);
 
   const selectCategory = (category: string) => {
     setSelectedCategory(category);
@@ -170,7 +189,7 @@ export default function BlogPage({
       <section className="w-full bg-gradient-to-b from-[#fbfeff] to-[#edf8fc] px-6 py-8 sm:px-8 sm:py-14 lg:px-16 lg:py-[76px]">
         <div className="mx-auto max-w-[1120px]">
           <div className="mb-7 flex flex-col gap-5 lg:mb-12 lg:flex-row lg:items-center lg:gap-5">
-            <div role="group" aria-label="Filter articles by category" className="flex flex-wrap gap-2 lg:flex-nowrap lg:gap-3">
+            <div role="group" aria-label={content.filters.filterByCategoryLabel} className="flex flex-wrap gap-2 lg:flex-nowrap lg:gap-3">
               {desktopCategories.map((category) => (
                 <button
                   key={category}
@@ -202,9 +221,43 @@ export default function BlogPage({
                 value={searchQuery}
                 onChange={(event) => updateSearch(event.target.value)}
                 placeholder={content.filters.searchPlaceholder}
-                aria-label="Search through blogs"
+                aria-label={content.filters.searchPlaceholder}
                 className="w-full border-0 bg-transparent text-sm text-[#253341] outline-none placeholder:text-[#aab9c9] focus:ring-0 sm:text-base"
               />
+            </label>
+          </div>
+
+          <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:justify-end lg:mb-8">
+            <label className="flex min-h-11 w-full items-center justify-between gap-3 rounded-full border border-[#cbd8e2] bg-white px-4 shadow-[0_2px_4px_rgba(25,47,65,0.14)] sm:w-auto sm:min-w-[220px]">
+              <span className="shrink-0 text-sm text-[#485663]">
+                {content.filters.filterByYearLabel}
+              </span>
+              <select
+                value={selectedYear}
+                onChange={(event) => setSelectedYear(event.target.value)}
+                aria-label={content.filters.filterByYearLabel}
+                className="min-w-0 cursor-pointer border-0 bg-transparent py-2 pl-1 pr-2 text-sm font-medium text-[#253341] outline-none focus:ring-0"
+              >
+                <option value="all">{content.filters.allYearsOption}</option>
+                {years.map((year) => (
+                  <option key={year} value={year}>{year}</option>
+                ))}
+              </select>
+            </label>
+
+            <label className="flex min-h-11 w-full items-center justify-between gap-3 rounded-full border border-[#cbd8e2] bg-white px-4 shadow-[0_2px_4px_rgba(25,47,65,0.14)] sm:w-auto sm:min-w-[240px]">
+              <span className="shrink-0 text-sm text-[#485663]">
+                {content.filters.sortByLabel}
+              </span>
+              <select
+                value={sortOrder}
+                onChange={(event) => setSortOrder(event.target.value as 'newest' | 'oldest')}
+                aria-label={content.filters.sortByLabel}
+                className="min-w-0 cursor-pointer border-0 bg-transparent py-2 pl-1 pr-2 text-sm font-medium text-[#253341] outline-none focus:ring-0"
+              >
+                <option value="newest">{content.filters.newestFirst}</option>
+                <option value="oldest">{content.filters.oldestFirst}</option>
+              </select>
             </label>
           </div>
 

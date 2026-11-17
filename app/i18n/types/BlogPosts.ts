@@ -22,6 +22,7 @@ export interface BlogPostsPageContent {
     newestFirst: string;
     oldestFirst: string;
     searchPlaceholder: string;
+    filterByCategoryLabel: string;
   };
   categories: {
     all: string;

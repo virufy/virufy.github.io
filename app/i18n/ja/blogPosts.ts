@@ -26,6 +26,7 @@ export const blogPageContent = {
     newestFirst: '新しい順',
     oldestFirst: '古い順',
     searchPlaceholder: 'ブログを検索...',
+    filterByCategoryLabel: 'カテゴリーで絞り込む',
   },
 
   categories: {
