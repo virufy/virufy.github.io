@@ -161,16 +161,6 @@ const sevenNewsContent: SevenNewsPage = {
       year: 2020,
     },
     {
-      title:
-        '7月に開催されたOYWのグローバルデジタルイベントに数千人が参加：見逃した内容を振り返る',
-      date: '2020年7月',
-      subText: 'One Young World',
-      url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
       title: 'One Young World日本アンバサダーがAIを活用してCOVID-19に挑む',
       date: '2020年5月',
       subText: 'One Young World, 東京, 日本',

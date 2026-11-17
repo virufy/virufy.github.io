@@ -166,16 +166,6 @@ const sevenNewsContent: SevenNewsPage = {
       year: 2020,
     },
     {
-      title:
-        "Thousands attend OYW's global digital events in July: A recap of what you've missed",
-      date: 'July 2020',
-      subText: 'One Young World',
-      url: 'https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed',
-      contentType: 'news',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2020,
-    },
-    {
       title: 'One Young World Japan Ambassador Targets COVID-19 Using A.I.',
       date: 'May 2020',
       subText: 'One Young World, Tokyo, Japan',
