@@ -39,14 +39,6 @@ const donate: Donate = {
       '皆さまのご支援が大きな力となります。以下からご希望の寄付方法をお選びください。',
     options: [
       {
-        name: 'GoFundMe',
-        description:
-          '寄付は Virufy の GoFundMe キャンペーンを通じて受け付けています。',
-        buttonText: 'GoFundMe で寄付する',
-        url: 'https://www.gofundme.com/f/donate-virufy',
-        icon: '/images/icons/icon-donate.png',
-      },
-      {
         name: 'PayPal',
         description:
           '寄付は Virufy の PayPal アカウントを通じて直接処理されます。',

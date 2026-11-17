@@ -39,14 +39,6 @@ const donate: Donate = {
       'دعمكم مهم. حدد خيار التبرع أدناه للبدء.',
     options: [
       {
-        name: 'GoFundMe',
-        description:
-          'يتم توجيه المساهمات من خلال حملة GoFundMe التابعة لـ Virufy.',
-        buttonText: 'التبرع عبر GoFundMe',
-        url: 'https://www.gofundme.com/f/donate-virufy',
-        icon: '/images/icons/icon-donate.png',
-      },
-      {
         name: 'PayPal',
         description:
           'تتم معالجة المساهمات مباشرة من خلال حساب PayPal الخاص بـ Virufy.',

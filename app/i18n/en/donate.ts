@@ -39,14 +39,6 @@ const donate: Donate = {
       'Your support matters. Select a donation option below to get started.',
     options: [
       {
-        name: 'GoFundMe',
-        description:
-          "Contributions are directed through Virufy's GoFundMe campaign.",
-        buttonText: 'Donate via GoFundMe',
-        url: 'https://www.gofundme.com/f/donate-virufy',
-        icon: '/images/icons/icon-donate.png',
-      },
-      {
         name: 'PayPal',
         description:
           "Contributions are processed directly through Virufy's PayPal account.",
