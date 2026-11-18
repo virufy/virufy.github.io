@@ -6,13 +6,6 @@ import { usei18n } from '../../i18n';
 
 const leadershipTeam = [
   {
-    name: 'Alex Marquess',
-    role: 'BizDev',
-    image: null,
-    position: 'center',
-    linkedin: 'https://www.linkedin.com/in/alex-marquess-a8ba2b264/',
-  },
-  {
     name: 'Emmanuella Nwawuba',
     role: 'Legal',
     image: '/images/leadership/Emmanuella Nwawuba.jpeg',
