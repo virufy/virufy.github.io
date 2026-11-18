@@ -663,9 +663,9 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               . Please contact{' '}
               <a
                 className="text-blue-500 underline"
-                href="mailto:dpo@virufy.org"
+                href="mailto:info@virufy.org"
               >
-                dpo@virufy.org
+                info@virufy.org
               </a>{' '}
               for a copy of the safeguards which we have put in place to protect
               your personal information and privacy rights in these
@@ -1098,9 +1098,9 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                 with an enclosed copy of the frontside of your identity card to
                 <a
                   className="text-blue-500 underline"
-                  href="mailto:dpo@virufy.org"
+                  href="mailto:info@virufy.org"
                 >
-                  dpo@virufy.org
+                  info@virufy.org
                 </a>
                 . We reserve the right to request the provision of additional
                 information necessary to confirm the identity of the enquirer.
@@ -1171,9 +1171,9 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
               Notice, please contact us at{' '}
               <a
                 className="text-blue-500 underline"
-                href="mailto:dpo@virufy.org"
+                href="mailto:info@virufy.org"
               >
-                dpo@virufy.org
+                info@virufy.org
               </a>
               .
             </p>
@@ -1556,9 +1556,9 @@ const PrivacyPolicyPage = ({}: { params: { lang: Locale } }) => {
                 <strong>Contact information for Virufy:</strong>{' '}
                 <a
                   className="text-blue-500 underline"
-                  href="mailto:dpo@virufy.org"
+                  href="mailto:info@virufy.org"
                 >
-                  dpo@virufy.org
+                  info@virufy.org
                 </a>
               </li>
             </ul>
