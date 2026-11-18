@@ -135,25 +135,6 @@ const PublicationsContent: PublicationsPage = {
       image: '/images/sevenNews/publications/November_26_2020.png',
       year: 2020,
     },
-    {
-      title:
-        'Fusical: Fusión multimodal para análisis de sentimientos en video',
-      date: 'Octubre 2020',
-      subText: '',
-      url: 'https://dl.acm.org/doi/abs/10.1145/3382507.3417966',
-      contentType: 'publications',
-      image: '/images/sevenNews/publications/October_22_2020.png',
-      year: 2020,
-    },
-    {
-      title: 'Reconocimiento de expresiones faciales con aprendizaje profundo',
-      date: 'Abril 2020',
-      subText: '',
-      url: 'https://arxiv.org/abs/2004.11823',
-      contentType: 'publications',
-      image: '/images/sevenNews/publications/April_8_2020.png',
-      year: 2020,
-    },
   ],
 };
 
