@@ -128,7 +128,7 @@ const sevenNewsContent: SevenNewsPage = {
     },
     {
       title:
-        'Esta app busca diagnosticar Covid-19 con sólo toser frente al teléfono',
+        'This App Aims to Diagnose COVID-19 Just by Coughing in Front of a Phone',
       date: 'February 2021',
       subText: 'Forbes, Mexico',
       url: 'https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/',
@@ -138,7 +138,7 @@ const sevenNewsContent: SevenNewsPage = {
     },
     {
       title:
-        'COVID-19: Aplicativo Virufy puede diagnosticar el virus mediante el análisis de la tos',
+        'COVID-19: Virufy App Can Diagnose the Virus Through Cough Analysis',
       date: 'January 2021',
       subText: 'MSN',
       url: 'https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332',
@@ -148,7 +148,7 @@ const sevenNewsContent: SevenNewsPage = {
     },
     {
       title:
-        'VIRUFY: plataforma que permite detectar si estamos contagiados con COVID-19',
+        'VIRUFY: A Platform That Can Detect Whether We Are Infected with COVID-19',
       date: 'October 2020',
       subText: 'Expreso, Lima, Peru',
       url: 'https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/',
