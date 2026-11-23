@@ -38,12 +38,34 @@ const PublicationsContent: PublicationsPage = {
   newsCards: [
     {
       title:
+        'الدعم التنظيمي والقيادي وعلاقته بدافعية المتطوعين في مؤسسة ناشئة غير ربحية تعتمد نهج العمل عن بُعد كأولوية',
+      date: 'سبتمبر 2026',
+      subText: '',
+      url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
+      contentType: 'publications',
+      image: '/images/sevenNews/publications/September2026-Publications.png',
+      year: 2026,
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
+        'تحويل دروس الشركات الناشئة إلى علم: تجربتنا في برنامج NSF I-Corps أصبحت الآن بحثاً منشوراً ومُحكَّماً. إن عملية "استكشاف العملاء" لا تقتصر على مجرد التحقق من الفرضيات، بل يمكنها إحداث تحول جذري في المشروع بأكمله.',
+      date: 'يوليو 2026',
+      subText: '',
+      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
+      contentType: 'publications',
+      image: '/images/sevenNews/publications/July2026-Publications.png',
+      year: 2026,
+      linkText: 'اقرأ المزيد',
+    },
+    {
+      title:
         'التشخيص الصوتي المدعوم بالذكاء الاصطناعي من أجل صحة الجهاز التنفسي العالمية',
       date: 'يونيو 2026',
       subText: '',
       url: '/en/publications/virufy-white-paper-2026',
       contentType: 'publications',
-      image: '/images/sevenNews/Placeholder-Card.png',
+      image: '/images/sevenNews/publications/June2026-Publications.png',
       year: 2026,
     },
     {
@@ -114,28 +136,6 @@ const PublicationsContent: PublicationsPage = {
       contentType: 'publications',
       image: '/images/sevenNews/publications/November_26_2020.png',
       year: 2020,
-    },
-    {
-      title:
-        'الدعم التنظيمي والقيادي وعلاقته بدافعية المتطوعين في مؤسسة ناشئة غير ربحية تعتمد نهج العمل عن بُعد كأولوية',
-      date: '2026 سبتمبر',
-      subText: '',
-      url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
-      contentType: 'publications',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2026,
-      linkText: 'اقرأ المزيد',
-    },
-    {
-      title:
-        'تحويل دروس الشركات الناشئة إلى علم: تجربتنا في برنامج NSF I-Corps أصبحت الآن بحثاً منشوراً ومُحكَّماً. إن عملية "استكشاف العملاء" لا تقتصر على مجرد التحقق من الفرضيات، بل يمكنها إحداث تحول جذري في المشروع بأكمله.',
-      date: 'يوليو 2026',
-      subText: '',
-      url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
-      contentType: 'publications',
-      image: '/images/sevenNews/Placeholder-Card.png',
-      year: 2026,
-      linkText: 'اقرأ المزيد',
     },
   ],
 };

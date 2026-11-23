@@ -43,8 +43,10 @@ const PublicationsContent: PublicationsPage = {
       date: 'Septiembre 2026',
       subText: '',
       url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
-      contentType: 'news',
+      contentType: 'publications',
       linkText: 'Leer más',
+      image: '/images/sevenNews/publications/September2026-Publications.png',
+      year: 2026,
     },
     {
       title:
@@ -52,8 +54,10 @@ const PublicationsContent: PublicationsPage = {
       date: 'Julio de 2026',
       subText: '',
       url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
-      contentType: 'news',
+      contentType: 'publications',
       linkText: 'Leer más',
+      image: '/images/sevenNews/publications/July2026-Publications.png',
+      year: 2026,
     },
     {
       title:
@@ -62,7 +66,7 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: '/en/publications/virufy-white-paper-2026',
       contentType: 'publications',
-      image: '/images/sevenNews/Placeholder-Card.png',
+      image: '/images/sevenNews/publications/June2026-Publications.png',
       year: 2026,
     },
     {
