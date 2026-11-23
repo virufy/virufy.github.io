@@ -20,9 +20,9 @@ const PublicationsContent: PublicationsPage = {
   },
 
   filters: {
-    filterByYearLabel: 'التصفية حسب السنة:',
+    filterByYearLabel: 'تصفية:',
     allYearsOption: 'كل السنوات',
-    sortByLabel: 'الترتيب حسب:',
+    sortByLabel: 'ترتيب:',
     newestFirst: 'من الأحدث إلى الأقدم',
     oldestFirst: 'من الأقدم إلى الأحدث',
   },

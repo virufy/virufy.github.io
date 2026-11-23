@@ -19,9 +19,9 @@ const sevenNewsContent: SevenNewsPage = {
   },
 
   filters: {
-    filterByYearLabel: 'Filter by Year:',
+    filterByYearLabel: 'Filter:',
     allYearsOption: 'All Years',
-    sortByLabel: 'Sort by:',
+    sortByLabel: 'Sort:',
     newestFirst: 'Newest to Oldest',
     oldestFirst: 'Oldest to Newest',
   },

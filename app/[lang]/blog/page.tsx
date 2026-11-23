@@ -6,6 +6,7 @@ import { type Locale } from '@/i18n-config';
 import ExportedImage from 'next-image-export-optimizer';
 import BlogCard from './BlogCard';
 import ActionBanner from '../components/ActionBanner';
+import FilterSortControls from '../components/FilterSortControls';
 import Link from 'next/link';
 import { usei18n } from '@/app/i18n';
 import type { Post } from '@/app/i18n/types/BlogPosts';
@@ -228,41 +229,14 @@ export default function BlogPage({
             </label>
           </div>
 
-          <div className="mb-6 flex flex-col gap-3 md:flex-row md:justify-end lg:mb-8">
-            <div className="flex w-full min-w-0 items-center gap-2 md:w-auto">
-              <label htmlFor="blog-year-filter" className="shrink-0 text-sm text-[#485663]">
-                {content.filters.filterByYearLabel}
-              </label>
-              <select
-                id="blog-year-filter"
-                value={selectedYear}
-                onChange={(event) => setSelectedYear(event.target.value)}
-                aria-label={content.filters.filterByYearLabel}
-                className="min-h-11 min-w-0 max-w-full flex-1 cursor-pointer rounded-full border border-[#cbd8e2] bg-white px-4 py-2 text-sm font-medium text-[#253341] shadow-[0_2px_4px_rgba(25,47,65,0.14)] outline-none focus:border-[#1689c5] focus:ring-2 focus:ring-[#1689c5]/20 md:flex-none md:min-w-[140px]"
-              >
-                <option value="all">{content.filters.allYearsOption}</option>
-                {years.map((year) => (
-                  <option key={year} value={year}>{year}</option>
-                ))}
-              </select>
-            </div>
-
-            <div className="flex w-full min-w-0 items-center gap-2 md:w-auto">
-              <label htmlFor="blog-sort-order" className="shrink-0 text-sm text-[#485663]">
-                {content.filters.sortByLabel}
-              </label>
-              <select
-                id="blog-sort-order"
-                value={sortOrder}
-                onChange={(event) => setSortOrder(event.target.value as 'newest' | 'oldest')}
-                aria-label={content.filters.sortByLabel}
-                className="min-h-11 min-w-0 max-w-full flex-1 cursor-pointer rounded-full border border-[#cbd8e2] bg-white px-4 py-2 text-sm font-medium text-[#253341] shadow-[0_2px_4px_rgba(25,47,65,0.14)] outline-none focus:border-[#1689c5] focus:ring-2 focus:ring-[#1689c5]/20 md:flex-none md:min-w-[200px]"
-              >
-                <option value="newest">{content.filters.newestFirst}</option>
-                <option value="oldest">{content.filters.oldestFirst}</option>
-              </select>
-            </div>
-          </div>
+          <FilterSortControls
+            selectedYear={selectedYear}
+            years={years}
+            onYearChange={setSelectedYear}
+            sortOrder={sortOrder}
+            onSortOrderChange={setSortOrder}
+            labels={content.filters}
+          />
 
           {filteredPosts.length === 0 ? (
             <p role="status" className="py-8 text-center text-gray-600">{content.emptyMessage}</p>

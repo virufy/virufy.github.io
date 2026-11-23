@@ -20,9 +20,9 @@ const PublicationsContent: PublicationsPage = {
   },
 
   filters: {
-    filterByYearLabel: 'Filtrar por año:',
+    filterByYearLabel: 'Filtrar:',
     allYearsOption: 'Todos los años',
-    sortByLabel: 'Ordenar por:',
+    sortByLabel: 'Ordenar:',
     newestFirst: 'Del más nuevo al más antiguo',
     oldestFirst: 'Del más antiguo al más nuevo',
   },
