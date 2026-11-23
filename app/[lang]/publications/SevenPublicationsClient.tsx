@@ -6,6 +6,7 @@ import ExportedImage from 'next-image-export-optimizer';
 import { basePath } from '@/next.config.mjs';
 import NewsCard from './NewsCard';
 import ActionBanner from '../components/ActionBanner';
+import FilterSortControls from '../components/FilterSortControls';
 import Link from 'next/link';
 import type { PublicationsPage } from '@/app/i18n/types/publications';
 
@@ -198,58 +199,16 @@ const SevenPublicationsClient = ({ content, params }: Props) => {
       {/* News Cards Section - Responsive Padding + Shadow */}
       <section className="w-full bg-gray-50 px-4 py-16 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] sm:px-8 sm:py-20 md:px-16 md:py-24 lg:px-[120px] lg:py-[100px]">
         <div className="mx-auto max-w-7xl">
-          {/* Filter Bar */}
-          <div className="mb-12 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-start sm:gap-8">
-            {/* Year Filter */}
-            <div className="flex items-center gap-2">
-              <span className="font-inter text-base font-medium leading-[24px] tracking-[-0.31px] text-gray-700">
-                {content.filters.filterByYearLabel}
-              </span>
-              <select
-                value={selectedYear}
-                onChange={(e) =>
-                  setSelectedYear(
-                    e.target.value === 'all' ? 'all' : Number(e.target.value)
-                  )
-                }
-                className="font-inter appearance-none rounded-2xl border border-gray-300 bg-white bg-no-repeat px-4 py-1.5 pr-10 text-base font-normal leading-[24px] tracking-[-0.31px] text-gray-800 shadow-lg focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-300"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%231F2937' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
-                  backgroundPosition: 'right 0.75rem center',
-                  backgroundSize: '1.5rem 1.5rem',
-                }}
-              >
-                <option value="all">{content.filters.allYearsOption}</option>
-                {years.map((year) => (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            {/* Sort */}
-            <div className="flex items-center gap-2">
-              <span className="font-inter text-base font-medium leading-[24px] tracking-[-0.31px] text-gray-700">
-                {content.filters.sortByLabel}
-              </span>
-              <select
-                value={sortBy}
-                onChange={(e) =>
-                  setSortBy(e.target.value as 'newest' | 'oldest')
-                }
-                className="font-inter appearance-none rounded-2xl border border-gray-300 bg-white bg-no-repeat px-4 py-1.5 pr-10 text-base font-normal leading-[24px] tracking-[-0.31px] text-gray-800 shadow-lg focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-300"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%231F2937' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E")`,
-                  backgroundPosition: 'right 0.75rem center',
-                  backgroundSize: '1.5rem 1.5rem',
-                }}
-              >
-                <option value="newest">{content.filters.newestFirst}</option>
-                <option value="oldest">{content.filters.oldestFirst}</option>
-              </select>
-            </div>
-          </div>
+          <FilterSortControls
+            selectedYear={selectedYear}
+            years={years}
+            onYearChange={(year) =>
+              setSelectedYear(year === 'all' ? 'all' : Number(year))
+            }
+            sortOrder={sortBy}
+            onSortOrderChange={setSortBy}
+            labels={content.filters}
+          />
 
           {/* Card Grid */}
           {filteredAndSortedCards.length === 0 ? (
