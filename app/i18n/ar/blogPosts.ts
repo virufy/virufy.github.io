@@ -23,12 +23,12 @@ export const blogPageContent = {
   },
 
   filters: {
-    filterByYearLabel: 'تصفية حسب السنة:',
+    filterByYearLabel: 'تصفية:',
     allYearsOption: 'كل السنوات',
-    sortByLabel: 'ترتيب حسب:',
+    sortByLabel: 'ترتيب:',
     newestFirst: 'الأحدث أولاً',
     oldestFirst: 'الأقدم أولاً',
-    searchPlaceholder: 'ابحث في المدونات...',
+    searchPlaceholder: 'ابحث عن مدونة...',
     filterByCategoryLabel: 'تصفية حسب الفئة',
   },
 
