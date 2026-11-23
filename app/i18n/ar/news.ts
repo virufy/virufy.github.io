@@ -19,9 +19,9 @@ const sevenNewsContent: SevenNewsPage = {
   },
 
   filters: {
-    filterByYearLabel: 'التصفية بحسب السنة:',
+    filterByYearLabel: 'تصفية:',
     allYearsOption: 'كل السنوات',
-    sortByLabel: 'الترتيب بحسب:',
+    sortByLabel: 'ترتيب:',
     newestFirst: 'الأحدث إلى الأقدم',
     oldestFirst: 'الأقدم إلى الأحدث',
   },

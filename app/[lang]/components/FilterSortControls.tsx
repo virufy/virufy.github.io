@@ -26,7 +26,7 @@ export default function FilterSortControls({
   return (
     <div className="mb-6 flex flex-col gap-3 md:flex-row md:justify-end lg:mb-8">
       <div className="flex w-full min-w-0 items-center gap-2 md:w-auto">
-        <label htmlFor="listing-year-filter" className="shrink-0 text-sm text-[#485663]">
+        <label htmlFor="listing-year-filter" className="shrink-0 whitespace-nowrap text-sm text-[#485663]">
           {labels.filterByYearLabel}
         </label>
         <select
@@ -44,7 +44,7 @@ export default function FilterSortControls({
       </div>
 
       <div className="flex w-full min-w-0 items-center gap-2 md:w-auto">
-        <label htmlFor="listing-sort-order" className="shrink-0 text-sm text-[#485663]">
+        <label htmlFor="listing-sort-order" className="shrink-0 whitespace-nowrap text-sm text-[#485663]">
           {labels.sortByLabel}
         </label>
         <select
