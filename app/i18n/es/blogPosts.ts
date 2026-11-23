@@ -23,12 +23,12 @@ export const blogPageContent = {
   },
 
   filters: {
-    filterByYearLabel: 'Filtrar por año:',
+    filterByYearLabel: 'Filtrar:',
     allYearsOption: 'Todos los años',
-    sortByLabel: 'Ordenar por:',
+    sortByLabel: 'Ordenar:',
     newestFirst: 'Más recientes primero',
     oldestFirst: 'Más antiguos primero',
-    searchPlaceholder: 'Buscar en los blogs...',
+    searchPlaceholder: 'Buscar un blog...',
     filterByCategoryLabel: 'Filtrar por categoría',
   },
 

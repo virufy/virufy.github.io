@@ -23,9 +23,9 @@ export const blogPageContent = {
   },
 
   filters: {
-    filterByYearLabel: '年で絞り込む:',
+    filterByYearLabel: '絞り込み:',
     allYearsOption: 'すべての年',
-    sortByLabel: '並び替え：',
+    sortByLabel: '並び替え:',
     newestFirst: '新しい順',
     oldestFirst: '古い順',
     searchPlaceholder: 'ブログを検索...',
