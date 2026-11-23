@@ -10,7 +10,7 @@ export const blogPageContent = {
     subtitle:
       'AIを用いた呼吸器の健康向上への挑戦、そのストーリー、研究インサイト、最新情報',
     bgImage: '/images/icons/icon-news-bg.png',
-    tag: 'Insights & Updates',
+    tag: 'インサイトと最新情報',
     tagIcon: '/images/icons/Blog-icon.png',
   },
   pillSelector: {

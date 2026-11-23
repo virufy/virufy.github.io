@@ -6,18 +6,18 @@ import {
 
 export const blogPageContent = {
   hero: {
-    title: 'Our Blog',
+    title: 'مدونتنا',
     subtitle:
-      'Stories, research insights, and updates on advancing AI-powered respiratory health.',
+      'قصص ورؤى بحثية وآخر المستجدات حول تطوير صحة الجهاز التنفسي باستخدام الذكاء الاصطناعي.',
     bgImage: '/images/icons/icon-news-bg.png',
-    tag: 'Insights & Updates',
+    tag: 'رؤى ومستجدات',
     tagIcon: '/images/icons/Blog-icon.png',
   },
   pillSelector: {
     options: [
-      { id: 'news', label: 'News' },
-      { id: 'publications', label: 'Publications' },
-      { id: 'blogs', label: 'Blogs' },
+      { id: 'news', label: 'أخبار' },
+      { id: 'publications', label: 'منشورات' },
+      { id: 'blogs', label: 'مدونات' },
     ],
     defaultOption: 'news',
   },
@@ -46,9 +46,9 @@ export const blogPageContent = {
   },
 
   section5: {
-    title: 'Inspired by the work? Help shape what comes next.',
-    text: 'Join researchers, designers, engineers, and advocates working together to advance global respiratory health.',
-    button: 'Join Our Team',
+    title: 'هل أعجبتك النتائج؟ ساهم في تشكيل ما سيأتي بعد ذلك.',
+    text: 'انضم إلى الباحثين والمصممين والمهندسين والداعمين الذين يعملون معًا لتعزيز صحة الجهاز التنفسي على مستوى العالم.',
+    button: 'انضم إلى فريقنا',
   },
 
   emptyMessage: 'لا توجد مقالات مدونة تطابق عوامل التصفية.',
