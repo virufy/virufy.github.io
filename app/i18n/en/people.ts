@@ -24,7 +24,7 @@ const people: People = {
     title: 'Our Advisors',
     advisors: {
       kara: {
-        img: './../images/advisors/kara-meister.webp',
+        img: '/images/advisors/kara-meister.webp',
         name: 'Kara Meister, M.D.',
         role: 'Clinical Advisor',
         texts: [
@@ -33,7 +33,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
       },
       jure: {
-        img: './../images/advisors/jure-leskovec.webp',
+        img: '/images/advisors/jure-leskovec.webp',
         name: 'Dr. Jure Leskovec',
         role: 'Artificial Intelligence Advisor',
         texts: [
@@ -43,14 +43,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       melissa: {
-        img: './../images/advisors/melissa-dyrdahl.webp',
+        img: '/images/advisors/melissa-dyrdahl.webp',
         name: 'Melissa Dyrdahl',
         role: 'Executive Marketing Advisor',
         texts: ['Former CMO - Adobe', 'Board Member - CommonSpirit Health'],
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
       },
       kutsuna: {
-        img: './../images/advisors/kutsuna-satoshi.webp',
+        img: '/images/advisors/kutsuna-satoshi.webp',
         name: 'Kutsuna Satoshi',
         role: 'Executive Clinical Advisor',
         texts: [
@@ -59,7 +59,7 @@ const people: People = {
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       glenn: {
-        img: './../images/advisors/glenn-muschert.webp',
+        img: '/images/advisors/glenn-muschert.webp',
         name: 'Prof. Glenn Muschert',
         role: 'Social Science & Public Policy Advisor',
         texts: [
@@ -69,7 +69,7 @@ const people: People = {
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
       },
       thomas: {
-        img: './../images/advisors/thomas-mahoney.webp',
+        img: '/images/advisors/thomas-mahoney.webp',
         name: 'Thomas Mahoney',
         role: 'Business & Public Health Advisor',
         texts: [
@@ -79,7 +79,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       madhav: {
-        img: './../images/advisors/madhav-datt.webp',
+        img: '/images/advisors/madhav-datt.webp',
         name: 'Madhav Datt',
         role: 'Executive Nonprofit Advisor',
         texts: [
@@ -90,14 +90,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
       may: {
-        img: './../images/advisors/may-xu.webp',
+        img: '/images/advisors/may-xu.webp',
         name: 'May Xu',
         role: 'Data and AI Product Strategy Advisor',
         texts: ['Founder / Executive Coach', 'M.S. - Stanford University'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
       },
       zafar: {
-        img: './../images/advisors/zafar-shahid.webp',
+        img: '/images/advisors/zafar-shahid.webp',
         name: 'Zafar Shahid',
         role: 'Technology Advisor',
         texts: [
@@ -107,7 +107,7 @@ const people: People = {
         link: 'https://zafarshahid.com/',
       },
       rafi: {
-        img: './../images/advisors/rafi-azim-khan.webp',
+        img: '/images/advisors/rafi-azim-khan.webp',
         name: 'Rafi Azim-Khan',
         role: 'Executive Legal Advisor',
         texts: [
@@ -117,7 +117,7 @@ const people: People = {
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       ronan: {
-        img: './../images/advisors/ronan-dunlop.webp',
+        img: '/images/advisors/ronan-dunlop.webp',
         name: 'Ronan Dunlop',
         role: 'Executive Marketing Advisor',
         texts: [
@@ -127,7 +127,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/rdunlop/',
       },
       mark: {
-        img: './../images/advisors/mark-haseltine.webp',
+        img: '/images/advisors/mark-haseltine.webp',
         name: 'Mark Haseltine',
         role: 'Executive Advisor',
         texts: [
@@ -137,7 +137,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       faisal: {
-        img: './../images/advisors/faisal-cheema.webp',
+        img: '/images/advisors/faisal-cheema.webp',
         name: 'Faisal Cheema',
         role: 'Executive Clinical Advisor',
         texts: [
@@ -146,7 +146,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/doccheema/',
       },
       mert: {
-        img: './../images/advisors/mert-pilanci.webp',
+        img: '/images/advisors/mert-pilanci.webp',
         name: 'Mert Pilanci',
         role: 'Artificial Intelligence Advisor',
         texts: [
@@ -155,7 +155,7 @@ const people: People = {
         link: 'https://stanford.edu/~pilanci/',
       },
       victor: {
-        img: './../images/advisors/victor-wang.webp',
+        img: '/images/advisors/victor-wang.webp',
         name: 'Victor Wang',
         role: 'Executive Advisor',
         texts: [
@@ -165,7 +165,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       adam: {
-        img: './../images/advisors/adam-leipzig.webp',
+        img: '/images/advisors/adam-leipzig.webp',
         name: 'Adam Leipzig',
         role: 'Executive Advisor',
         texts: [
@@ -176,14 +176,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/adamleipzig/',
       },
       rok: {
-        img: './../images/advisors/rok-sosic.webp',
+        img: '/images/advisors/rok-sosic.webp',
         name: 'Rok Sosic',
         role: 'Artificial Intelligence Advisor',
         texts: ['Senior Research Engineer', 'Stanford School of Engineering'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
       },
       richard: {
-        img: './../images/advisors/richard-nall.webp',
+        img: '/images/advisors/richard-nall.webp',
         name: 'Richard Nall',
         role: 'Marketing Advisor',
         texts: [
@@ -193,7 +193,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/richardnall/',
       },
       richardMontauk: {
-        img: './../images/advisors/richard-montauk.png',
+        img: '/images/advisors/richard-montauk.png',
         name: 'Richard Montauk',
         role: 'Global Admissions Advisor, Author',
         texts: [
@@ -204,7 +204,7 @@ const people: People = {
         link: 'https://www.richardmontauk.com/',
       },
       khwaja: {
-        img: './../images/advisors/khwaja-shaik.webp',
+        img: '/images/advisors/khwaja-shaik.webp',
         name: 'Khwaja Shaik',
         role: 'Chief Technology Officer - IBM',
         texts: [
@@ -214,7 +214,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/khwajashaik/',
       },
       ayomide: {
-        img: './../images/advisors/ayomide-owoyemi.webp',
+        img: '/images/advisors/ayomide-owoyemi.webp',
         name: 'Ayomide Owoyemi',
         role: 'Executive Clinical Advisor',
         texts: [
@@ -224,14 +224,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
       },
       tsutomu: {
-        img: './../images/advisors/tsutomu-ito.webp',
+        img: '/images/advisors/tsutomu-ito.webp',
         name: 'Tsutomu Ito',
         role: 'Executive Visionary Advisor',
         texts: ['Founder - Tannan FM Radio', 'Lead Architect, Bullet Train'],
         link: 'http://tannan.fm/contents/about-us.html',
       },
       les: {
-        img: './../images/advisors/les-atlas.webp',
+        img: '/images/advisors/les-atlas.webp',
         name: 'Dr. Les Atlas',
         role: 'Chief Scientist',
         texts: [
@@ -241,7 +241,7 @@ const people: People = {
         link: 'https://people.ece.uw.edu/atlas/',
       },
       jesse: {
-        img: './../images/advisors/jesse-bump.webp',
+        img: '/images/advisors/jesse-bump.webp',
         name: 'Jesse Bump, Ph.D., MPH, FRSA',
         role: 'Population Health Advisor',
         texts: [
@@ -251,14 +251,14 @@ const people: People = {
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       nobuyo: {
-        img: './../images/advisors/nobuyo-ozawa.webp',
+        img: '/images/advisors/nobuyo-ozawa.webp',
         name: 'Nobuyo Ozawa',
         role: 'Japan Clinical Development Lead',
         texts: ['Clinical Development Department Group Manager, CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
       },
       hiroyuki: {
-        img: './../images/advisors/hiroyuki-kunishima.webp',
+        img: '/images/advisors/hiroyuki-kunishima.webp',
         name: 'Hiroyuki Kunishima',
         role: 'Infectious Diseases Advisor',
         texts: [
@@ -267,21 +267,21 @@ const people: People = {
         link: 'http://www.k-icnet.org/profile.html',
       },
       fumihiko: {
-        img: './../images/advisors/fumihiko-yokota.webp',
+        img: '/images/advisors/fumihiko-yokota.webp',
         name: 'Fumihiko Yokota',
         role: 'Public Health Advisor',
         texts: ['Associate Professor of Epidemiology, Kyushu University'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
       },
       kohei: {
-        img: './../images/advisors/kohei-wakamiya.webp',
+        img: '/images/advisors/kohei-wakamiya.webp',
         name: 'Kohei Wakamiya',
         role: 'Audio AI Advisor',
         texts: ['Acoustic Design Assistant Professor', 'Kyushu University'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
       },
       tamer: {
-        img: './../images/advisors/tamer-fahmy.webp',
+        img: '/images/advisors/tamer-fahmy.webp',
         name: 'Tamer Fahmy',
         role: 'Middle East & Africa Market Advisor',
         texts: [
@@ -292,7 +292,7 @@ const people: People = {
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
       shirin: {
-        img: './../images/advisors/shirin-hasan.webp',
+        img: '/images/advisors/shirin-hasan.webp',
         name: 'Shirin Hasan',
         role: 'Clinical, Medical, Regulatory Affairs Advisor',
         texts: [
@@ -302,7 +302,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },
       maurino: {
-        img: './../images/advisors/Maurino-Flora.webp',
+        img: '/images/advisors/Maurino-Flora.webp',
         name: 'Maurino Flora',
         role: 'Medical Device Program Advisor',
         texts: [
@@ -312,7 +312,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: './../images/advisors/AmirKhan.webp',
+        img: '/images/advisors/AmirKhan.webp',
         name: 'Amir Khan',
         role: 'Executive Gravitas Advisor',
         texts: [
@@ -322,7 +322,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
       ohmori: {
-        img: './../images/advisors/ohmori-takeshi.webp',
+        img: '/images/advisors/ohmori-takeshi.webp',
         name: 'Takeshi Ohmori',
         role: 'Japan Cybersecurity Advisor',
         texts: [
@@ -332,7 +332,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
       tomohiro: {
-        img: './../images/advisors/Tomohiro-Kimura.webp',
+        img: '/images/advisors/Tomohiro-Kimura.webp',
         name: 'Tomohiro Kimura',
         role: 'Executive Business Advisor',
         texts: [
@@ -342,7 +342,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/tomohiro-%E5%85%B1%E5%AE%8F-kimura-%E6%9C%A8%E6%9D%91-7253ab39/',
       },
       okazaki: {
-        img: './../images/advisors/takashi-okazaki.webp',
+        img: '/images/advisors/takashi-okazaki.webp',
         name: 'Okazaki Takashi',
         role: 'Executive Malaysia-Japan Advisor',
         texts: [
@@ -352,7 +352,7 @@ const people: People = {
         link: 'https://therapia.my/',
       },
       junpei: {
-        img: './../images/advisors/junpei-komiyama.webp',
+        img: '/images/advisors/junpei-komiyama.webp',
         name: 'Junpei Komiyama',
         role: 'Artificial Intelligence Advisor',
         texts: [
@@ -362,7 +362,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
       },
       peter: {
-        img: './../images/advisors/peter-hart.jpg',
+        img: '/images/advisors/peter-hart.jpg',
         name: 'Peter Hart',
         role: 'Advisor on Technology Strategy',
         texts: [
@@ -372,7 +372,7 @@ const people: People = {
         link: 'http://www.peterhart.net/',
       },
       yasuko: {
-        img: './../images/advisors/Yasuko-Tokifuji.jpg',
+        img: '/images/advisors/Yasuko-Tokifuji.jpg',
         name: 'Yasuko Tokifuji',
         role: 'Executive Strategy Advisor',
         texts: ['Executive MBA, Quantic School of Business and Technology'],
