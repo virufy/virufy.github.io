@@ -57,7 +57,14 @@ const Card: React.FC<CardProps> = ({ title, text, icon, first, last }) => (
 
 const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
   const {
-    home: { introSection, section2, section3, impactSection, section4, section5 },
+    home: {
+      introSection,
+      section2,
+      section3,
+      impactSection,
+      section4,
+      section5,
+    },
   } = usei18n(lang);
 
   const [open, setOpen] = useState(false);
@@ -163,7 +170,7 @@ const SevenHomepage = ({ params: { lang } }: { params: { lang: Locale } }) => {
           }}
         >
           <ExportedImage
-            src="/images/sevenhome/Heart_image.png"
+            src="/images/sevenhome/Heart_Image.png"
             alt="Our mission background"
             width={1100}
             height={750}
