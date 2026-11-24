@@ -11,7 +11,7 @@ const oneYoungWorld: OneYoungWorld = {
     teamLeads: 'Team Leads',
   },
   oyw: {
-    bgImage: './../images/oneYoungWorld/bg-body.webp',
+    bgImage: '/images/oneYoungWorld/bg-body.webp',
     altText: '',
     virufyAndOyw: {
       title: 'One Young World',
@@ -29,25 +29,25 @@ const oneYoungWorld: OneYoungWorld = {
         {
           title: 'Ambassador driven',
           text: 'Our organization structure matches One Young World with youth ambassadors coordinating operations in each region.',
-          image: '../../images/icons/icon-female.png',
+          image: '/images/icons/icon-female.png',
           altText: '',
         },
         {
           title: 'Youth led',
           text: 'Our growing team is led by young professionals from over a dozen countries with close advisory from global industry leaders.',
-          image: '../../images/icons/icon-youth-in-circle.png',
+          image: '/images/icons/icon-youth-in-circle.png',
           altText: '',
         },
         {
           title: 'Focused on global impact',
           text: 'Our aim from day one has been to provide equitable solutions for all people in all countries across the world.',
-          image: '../../images/icons/icon-man-lifting-globe.png',
+          image: '/images/icons/icon-man-lifting-globe.png',
           altText: '',
         },
         {
           title: 'Diverse representation',
           text: 'Our team has representation from over 50 universities and 25 countries and has received support from dozens of One Young World ambassadors.',
-          image: '../../images/icons/icon-globe-with-markers.png',
+          image: '/images/icons/icon-globe-with-markers.png',
           altText: '',
         },
       ],
@@ -60,7 +60,7 @@ const oneYoungWorld: OneYoungWorld = {
           name: 'Sebastian Pedraza',
           origin: 'Colombia',
           image:
-            '../../images/oneYoungWorld/testimonials/sebastian-square-pic.webp',
+            '/images/oneYoungWorld/testimonials/sebastian-square-pic.webp',
           altText: 'image of Sebastian Pedraza',
           testimonial: `“Virufy unites the power of youth and technology to transform the world. We hope that this solution will reach the whole world and that it will become a support for doctors, especially in low-income countries.”`,
         },
@@ -68,7 +68,7 @@ const oneYoungWorld: OneYoungWorld = {
           name: 'Gonzalo Roiffe',
           origin: 'Argentina',
           image:
-            '../../images/oneYoungWorld/testimonials/gonzalo-square-pic.webp',
+            '/images/oneYoungWorld/testimonials/gonzalo-square-pic.webp',
           altText: 'image of Gonzalo Roiffe',
           testimonial: `“Virufy will impact globally, no matter the users' background or social status. This is what changing the status quo feels like.”`,
         },
@@ -76,12 +76,12 @@ const oneYoungWorld: OneYoungWorld = {
           name: 'Marcos Deza',
           origin: 'Argentina',
           image:
-            '../../images/oneYoungWorld/testimonials/marcos-square-pic.webp',
+            '/images/oneYoungWorld/testimonials/marcos-square-pic.webp',
           altText: 'image of Marcos Deza',
           testimonial: `“I think that Virufy will develop a very accurate solution and this will be useful for the entire world in every industry. So I encourage everyone to take some minutes and contribute with us.”`,
         },
       ],
-      readMoreText: 'Swipe to read more →',
+      readMoreText: 'Swipe to read more ↁE,
       buttonText: 'Join our Team',
     },
   },

@@ -24,7 +24,7 @@ const people: People = {
     title: 'المستشارين',
     advisors: {
       kara: {
-        img: './../images/advisors/kara-meister.webp',
+        img: '/images/advisors/kara-meister.webp',
         name: 'كارا ميستر، دكتور في الطب',
         role: 'مستشارة طبية',
         texts: [
@@ -33,7 +33,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
       },
       jure: {
-        img: './../images/advisors/jure-leskovec.webp',
+        img: '/images/advisors/jure-leskovec.webp',
         name: 'الدكتور يور ليشكوفيتش',
         role: 'مستشار في الذكاء الاصطناعي',
         texts: [
@@ -43,7 +43,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       melissa: {
-        img: './../images/advisors/melissa-dyrdahl.webp',
+        img: '/images/advisors/melissa-dyrdahl.webp',
         name: 'ميليسا ديرداهل',
         role: 'مستشارة تسويق تنفيذية',
         texts: [
@@ -53,14 +53,14 @@ const people: People = {
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
       },
       kutsuna: {
-        img: './../images/advisors/kutsuna-satoshi.webp',
+        img: '/images/advisors/kutsuna-satoshi.webp',
         name: 'كوتسونا ساتوشي',
         role: 'مستشار طبي تنفيذي',
         texts: ['أستاذ في مكافحة العدوى والوقاية - جامعة أوساكا'],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       glenn: {
-        img: './../images/advisors/glenn-muschert.webp',
+        img: '/images/advisors/glenn-muschert.webp',
         name: 'البروفيسور جلين موشيرت',
         role: 'مستشار العلوم الاجتماعية والسياسة العامة',
         texts: [
@@ -70,7 +70,7 @@ const people: People = {
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
       },
       thomas: {
-        img: './../images/advisors/thomas-mahoney.webp',
+        img: '/images/advisors/thomas-mahoney.webp',
         name: 'توماس ماهوني',
         role: 'مستشار الأعمال والصحة العامة',
         texts: [
@@ -80,7 +80,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       madhav: {
-        img: './../images/advisors/madhav-datt.webp',
+        img: '/images/advisors/madhav-datt.webp',
         name: 'مادهف دات',
         role: 'مستشار تنفيذي غير ربحي',
         texts: [
@@ -91,14 +91,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
       may: {
-        img: './../images/advisors/may-xu.webp',
+        img: '/images/advisors/may-xu.webp',
         name: 'ماي شو',
         role: 'مستشارة استراتيجية بيانات ومنتجات الذكاء الاصطناعي',
         texts: ['مؤسسة / مدربة تنفيذية', 'ماجستير - جامعة ستانفورد'],
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
       },
       zafar: {
-        img: './../images/advisors/zafar-shahid.webp',
+        img: '/images/advisors/zafar-shahid.webp',
         name: 'ظفر شهيد',
         role: 'مستشار التكنولوجيا',
         texts: [
@@ -108,7 +108,7 @@ const people: People = {
         link: 'https://zafarshahid.com/',
       },
       rafi: {
-        img: './../images/advisors/rafi-azim-khan.webp',
+        img: '/images/advisors/rafi-azim-khan.webp',
         name: 'رافي أزيم خان',
         role: 'مستشار قانوني تنفيذي',
         texts: [
@@ -118,7 +118,7 @@ const people: People = {
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       ronan: {
-        img: './../images/advisors/ronan-dunlop.webp',
+        img: '/images/advisors/ronan-dunlop.webp',
         name: 'رونان دونلوب',
         role: 'مستشار تسويق تنفيذي',
         texts: [
@@ -128,14 +128,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/rdunlop/',
       },
       mark: {
-        img: './../images/advisors/mark-haseltine.webp',
+        img: '/images/advisors/mark-haseltine.webp',
         name: 'مارك هاسلتين',
         role: 'مستشار تنفيذي',
         texts: ['CTO / CPO السابق - edX، GoDaddy', 'خريج علوم الكمبيوتر - MIT'],
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       faisal: {
-        img: './../images/advisors/faisal-cheema.webp',
+        img: '/images/advisors/faisal-cheema.webp',
         name: 'فيصل شيمة',
         role: 'مستشار طبي تنفيذي',
         texts: [
@@ -144,7 +144,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/doccheema/',
       },
       mert: {
-        img: './../images/advisors/mert-pilanci.webp',
+        img: '/images/advisors/mert-pilanci.webp',
         name: 'مارت بيلانجي',
         role: 'مستشار في الذكاء الاصطناعي',
         texts: [
@@ -153,7 +153,7 @@ const people: People = {
         link: 'https://stanford.edu/~pilanci/',
       },
       victor: {
-        img: './../images/advisors/victor-wang.webp',
+        img: '/images/advisors/victor-wang.webp',
         name: 'فيكتور وانغ',
         role: 'مستشار تنفيذي',
         texts: [
@@ -163,7 +163,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       adam: {
-        img: './../images/advisors/adam-leipzig.webp',
+        img: '/images/advisors/adam-leipzig.webp',
         name: 'آدم لايبزيغ',
         role: 'المستشار التنفيذي',
         texts: [
@@ -174,14 +174,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/adamleipzig/',
       },
       rok: {
-        img: './../images/advisors/rok-sosic.webp',
+        img: '/images/advisors/rok-sosic.webp',
         name: 'روك سوسي',
         role: 'مستشار في الذكاء الاصطناعي',
         texts: ['مهندس أبحاث أول', 'جامعة ستانفورد كلية الهندسة'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
       },
       richard: {
-        img: './../images/advisors/richard-nall.webp',
+        img: '/images/advisors/richard-nall.webp',
         name: 'ريتشارد نال',
         role: 'مستشار تسويق',
         texts: [
@@ -191,7 +191,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/richardnall/',
       },
       richardMontauk: {
-        img: './../images/advisors/richard-montauk.png',
+        img: '/images/advisors/richard-montauk.png',
         name: 'ريتشارد مونتوك',
         role: 'مستشار قبول عالمي، مؤلف',
         texts: [
@@ -202,7 +202,7 @@ const people: People = {
         link: 'https://www.richardmontauk.com/',
       },
       khwaja: {
-        img: './../images/advisors/khwaja-shaik.webp',
+        img: '/images/advisors/khwaja-shaik.webp',
         name: 'خواجة شيك',
         role: 'الرئيس التنفيذي للتكنولوجيا - IBM',
         texts: [
@@ -212,7 +212,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/khwajashaik/',
       },
       ayomide: {
-        img: './../images/advisors/ayomide-owoyemi.webp',
+        img: '/images/advisors/ayomide-owoyemi.webp',
         name: 'أيومي دي أووييمي',
         role: 'مستشار طبي تنفيذي',
         texts: [
@@ -222,14 +222,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
       },
       tsutomu: {
-        img: './../images/advisors/tsutomu-ito.webp',
+        img: '/images/advisors/tsutomu-ito.webp',
         name: 'تسوتومو إيتو',
         role: 'مستشار تنفيذي مستقبلي',
         texts: ['مؤسس - Tannan FM Radio', 'المدير المعماري، قطار الرصاصة'],
         link: 'http://tannan.fm/contents/about-us.html',
       },
       les: {
-        img: './../images/advisors/les-atlas.webp',
+        img: '/images/advisors/les-atlas.webp',
         name: 'الدكتور ليس أطلس',
         role: 'مستشار الصوت والتعلم الآلي',
         texts: [
@@ -239,7 +239,7 @@ const people: People = {
         link: 'https://people.ece.uw.edu/atlas/',
       },
       jesse: {
-        img: './../images/advisors/jesse-bump.webp',
+        img: '/images/advisors/jesse-bump.webp',
         name: 'جيسي بامب، دكتوراه، ماجستير فى الصحة العامة ، زميل الجمعية الملكية للفنون.',
         role: '. مستشار صحة السكان',
         texts: [
@@ -249,35 +249,35 @@ const people: People = {
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       nobuyo: {
-        img: './../images/advisors/nobuyo-ozawa.webp',
+        img: '/images/advisors/nobuyo-ozawa.webp',
         name: 'نوبويو أوزاوا',
         role: 'قائد تطوير سريري في اليابان',
         texts: ['مدير مجموعة قسم تطوير السريري، CRO'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
       },
       hiroyuki: {
-        img: './../images/advisors/hiroyuki-kunishima.webp',
+        img: '/images/advisors/hiroyuki-kunishima.webp',
         name: 'هيرويوكي كونيشما',
         role: 'مستشار أمراض معدية',
         texts: ['قسم الأمراض المعدية، مستشفى جامعة سانت ماريانا'],
         link: 'http://www.k-icnet.org/profile.html',
       },
       fumihiko: {
-        img: './../images/advisors/fumihiko-yokota.webp',
+        img: '/images/advisors/fumihiko-yokota.webp',
         name: 'فوميهيكو يوكوتا',
         role: 'مستشار الصحة العامة',
         texts: ['أستاذ مساعد في الوبائيات، جامعة كيوشو'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/members/yokota-fumihiko',
       },
       kohei: {
-        img: './../images/advisors/kohei-wakamiya.webp',
+        img: '/images/advisors/kohei-wakamiya.webp',
         name: 'كوهي واكاميا',
         role: 'مستشار الذكاء الاصطناعي الصوتي',
         texts: ['أستاذ مساعد تصميم الصوتيات', 'جامعة كيوشو'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_en.html',
       },
       tamer: {
-        img: './../images/advisors/tamer-fahmy.webp',
+        img: '/images/advisors/tamer-fahmy.webp',
         name: 'تامر فهمي',
         role: 'مستشار سوق الشرق الأوسط وأفريقيا',
         texts: [
@@ -288,7 +288,7 @@ const people: People = {
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b4468614',
       },
       shirin: {
-        img: './../images/advisors/shirin-hasan.webp',
+        img: '/images/advisors/shirin-hasan.webp',
         name: 'شيرين حسن',
         role: 'مستشار الشؤون السريرية والطبية والتنظيمية',
         texts: [
@@ -298,7 +298,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },
       maurino: {
-        img: './../images/advisors/Maurino-Flora.webp',
+        img: '/images/advisors/Maurino-Flora.webp',
         name: 'مورينو فلورا',
         role: 'مستشار برنامج الأجهزة الطبية',
         texts: [
@@ -308,7 +308,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: './../images/advisors/AmirKhan.webp',
+        img: '/images/advisors/AmirKhan.webp',
         name: 'أمير خان',
         role: 'مستشار الجاذبية التنفيذية',
         texts: [
@@ -318,7 +318,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
       ohmori: {
-        img: './../images/advisors/ohmori-takeshi.webp',
+        img: '/images/advisors/ohmori-takeshi.webp',
         name: 'تاكيشي أوموري',
         role: 'مستشار الأمن السيبراني في اليابان',
         texts: [
@@ -328,7 +328,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
       tomohiro: {
-        img: './../images/advisors/Tomohiro-Kimura.webp',
+        img: '/images/advisors/Tomohiro-Kimura.webp',
         name: 'توموهيرو كيمورا',
         role: 'مستشار أعمال تنفيذي',
         texts: [
@@ -338,7 +338,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/tomohiro-%E5%85%B1%E5%AE%8F-kimura-%E6%9C%A8%E6%9D%91-7253ab39/',
       },
       okazaki: {
-        img: './../images/advisors/takashi-okazaki.webp',
+        img: '/images/advisors/takashi-okazaki.webp',
         name: 'أوكازاكي تاكاشي',
         role: 'المستشار التنفيذي الماليزي–الياباني',
         texts: [
@@ -348,7 +348,7 @@ const people: People = {
         link: 'https://therapia.my/',
       },
       junpei: {
-        img: './../images/advisors/junpei-komiyama.webp',
+        img: '/images/advisors/junpei-komiyama.webp',
         name: 'جونبي كوميياما',
         role: 'مستشار الذكاء الاصطناعي',
         texts: [
@@ -358,7 +358,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
       },
       peter: {
-        img: './../images/advisors/peter-hart.jpg',
+        img: '/images/advisors/peter-hart.jpg',
         name: 'بيتر هارت',
         role: 'مستشار في استراتيجية التكنولوجيا',
         texts: [
@@ -368,7 +368,7 @@ const people: People = {
         link: 'http://www.peterhart.net/',
       },
       yasuko: {
-        img: './../images/advisors/Yasuko-Tokifuji.jpg',
+        img: '/images/advisors/Yasuko-Tokifuji.jpg',
         name: 'ياسوكو توكيفوجي',
         role: 'مستشار استراتيجي تنفيذي',
         texts: [

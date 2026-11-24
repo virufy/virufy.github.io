@@ -23,14 +23,14 @@ const people: People = {
     title: 'アドバイザー',
     advisors: {
       kara: {
-        img: './../images/advisors/kara-meister.webp',
+        img: '/images/advisors/kara-meister.webp',
         name: 'カラ・マイスター医学博士',
         role: '臨床アドバイザー',
         texts: ['スタンフォード大学 臨床准教授（医学部 耳鼻咽喉科）'],
         link: 'https://www.linkedin.com/in/kara-meister-200335110/',
       },
       jure: {
-        img: './../images/advisors/jure-leskovec.webp',
+        img: '/images/advisors/jure-leskovec.webp',
         name: 'ジュレ・レスコベック博士',
         role: '人工知能アドバイザー',
         texts: [
@@ -40,7 +40,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/leskovec/',
       },
       melissa: {
-        img: './../images/advisors/melissa-dyrdahl.webp',
+        img: '/images/advisors/melissa-dyrdahl.webp',
         name: 'メリッサ・ダーダル',
         role: '経営マーケティングアドバイザー',
         texts: [
@@ -50,14 +50,14 @@ const people: People = {
         link: 'https://dci.stanford.edu/melissa-dyrdahl/',
       },
       kutsuna: {
-        img: './../images/advisors/kutsuna-satoshi.webp',
+        img: '/images/advisors/kutsuna-satoshi.webp',
         name: '忽那賢志',
         role: '経営臨床アドバイザー',
         texts: ['大阪大学 教授（感染制御学）'],
         link: 'https://www.med.osaka-u.ac.jp/eng/introduction/research/special/infection',
       },
       glenn: {
-        img: './../images/advisors/glenn-muschert.webp',
+        img: '/images/advisors/glenn-muschert.webp',
         name: 'グレン・マシャート教授',
         role: 'ソーシャルサイエンス & 公共政策アドバイザー',
         texts: [
@@ -67,7 +67,7 @@ const people: People = {
         link: 'https://www.ku.ac.ae/college-people/glenn-muschert',
       },
       thomas: {
-        img: './../images/advisors/thomas-mahoney.webp',
+        img: '/images/advisors/thomas-mahoney.webp',
         name: 'トーマス・マホニー',
         role: 'ビジネス & 公衆衛生アドバイザー',
         texts: [
@@ -77,7 +77,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/tom-mahoney-lifesci/',
       },
       madhav: {
-        img: './../images/advisors/madhav-datt.webp',
+        img: '/images/advisors/madhav-datt.webp',
         name: 'マダフ・ダット',
         role: 'NPOアドバイザー',
         texts: [
@@ -88,7 +88,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/madhavdatt/',
       },
       may: {
-        img: './../images/advisors/may-xu.webp',
+        img: '/images/advisors/may-xu.webp',
         name: 'メイ・シュー',
         role: 'データ & AI プロダクト戦略アドバイザー',
         texts: [
@@ -98,7 +98,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/may-xu-bb06934',
       },
       zafar: {
-        img: './../images/advisors/zafar-shahid.webp',
+        img: '/images/advisors/zafar-shahid.webp',
         name: 'ザファル・シャヒッド',
         role: 'テクノロジーアドバイザー',
         texts: [
@@ -108,7 +108,7 @@ const people: People = {
         link: 'https://zafarshahid.com/',
       },
       rafi: {
-        img: './../images/advisors/rafi-azim-khan.webp',
+        img: '/images/advisors/rafi-azim-khan.webp',
         name: 'ラフィ・アジム・カーン',
         role: '法務アドバイザー',
         texts: [
@@ -118,7 +118,7 @@ const people: People = {
         link: 'https://www.crowell.com/en/professionals/rafi-azim-khan',
       },
       ronan: {
-        img: './../images/advisors/ronan-dunlop.webp',
+        img: '/images/advisors/ronan-dunlop.webp',
         name: 'ローナン・ダンロップ',
         role: 'マーケティングアドバイザー',
         texts: [
@@ -128,7 +128,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/rdunlop/',
       },
       mark: {
-        img: './../images/advisors/mark-haseltine.webp',
+        img: '/images/advisors/mark-haseltine.webp',
         name: 'マーク・ハゼルタイン',
         role: '顧問',
         texts: [
@@ -138,7 +138,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/mhaseltine/',
       },
       faisal: {
-        img: './../images/advisors/faisal-cheema.webp',
+        img: '/images/advisors/faisal-cheema.webp',
         name: 'ファイサル・チェーマ',
         role: '臨床アドバイザー',
         texts: [
@@ -147,14 +147,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/doccheema/',
       },
       mert: {
-        img: './../images/advisors/mert-pilanci.webp',
+        img: '/images/advisors/mert-pilanci.webp',
         name: 'メルト・ピランジ',
         role: '人工知能アドバイザー',
         texts: ['スタンフォード大学 助教（電気工学科人工知能）'],
         link: 'https://stanford.edu/~pilanci/',
       },
       victor: {
-        img: './../images/advisors/victor-wang.webp',
+        img: '/images/advisors/victor-wang.webp',
         name: 'ヴィクター・ワン',
         role: '顧問',
         texts: [
@@ -164,7 +164,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/executivestanfordvictorwang/',
       },
       adam: {
-        img: './../images/advisors/adam-leipzig.webp',
+        img: '/images/advisors/adam-leipzig.webp',
         name: 'アダム・ライプチヒ',
         role: '顧問',
         texts: [
@@ -175,14 +175,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/adamleipzig/',
       },
       rok: {
-        img: './../images/advisors/rok-sosic.webp',
+        img: '/images/advisors/rok-sosic.webp',
         name: 'ロック・ソシッチ',
         role: '人工知能アドバイザー',
         texts: ['スタンフォード大学 主任研究助手（工学部）'],
         link: 'https://scholar.google.com/citations?user=xlZ4YJcAAAAJ&hl=en&oi=ao',
       },
       richard: {
-        img: './../images/advisors/richard-nall.webp',
+        img: '/images/advisors/richard-nall.webp',
         name: 'リチャード・ナル',
         role: 'マーケティイングアドバイザー',
         texts: [
@@ -192,7 +192,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/richardnall/',
       },
       richardMontauk: {
-        img: './../images/advisors/richard-montauk.png',
+        img: '/images/advisors/richard-montauk.png',
         name: 'リチャード・モントーク',
         role: 'グローバル入学アドバイザー、著者',
         texts: [
@@ -203,7 +203,7 @@ const people: People = {
         link: 'https://www.richardmontauk.com/',
       },
       khwaja: {
-        img: './../images/advisors/khwaja-shaik.webp',
+        img: '/images/advisors/khwaja-shaik.webp',
         name: 'クワジャ・シェイク',
         role: '最高技術責任者（CTO）',
         texts: [
@@ -213,7 +213,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/khwajashaik/',
       },
       ayomide: {
-        img: './../images/advisors/ayomide-owoyemi.webp',
+        img: '/images/advisors/ayomide-owoyemi.webp',
         name: 'アヨミデ・オウォイェミ',
         role: '臨床アドバイザー',
         texts: [
@@ -223,14 +223,14 @@ const people: People = {
         link: 'https://www.linkedin.com/in/ayomide-owoyemi/',
       },
       tsutomu: {
-        img: './../images/advisors/tsutomu-ito.webp',
+        img: '/images/advisors/tsutomu-ito.webp',
         name: '伊藤努',
         role: '経営ビジョンアドバイザー',
         texts: ['丹南FMラジオ 創設者', '新幹線 主任設計者'],
         link: 'http://tannan.fm/contents/about-us.html',
       },
       les: {
-        img: './../images/advisors/les-atlas.webp',
+        img: '/images/advisors/les-atlas.webp',
         name: 'レス・アトラス博士',
         role: '主任研究者',
         texts: [
@@ -240,7 +240,7 @@ const people: People = {
         link: 'https://people.ece.uw.edu/atlas/',
       },
       jesse: {
-        img: './../images/advisors/jesse-bump.webp',
+        img: '/images/advisors/jesse-bump.webp',
         name: 'ジェシー・バンプ博士',
         role: '公衆衛生アドバイザー',
         texts: [
@@ -249,35 +249,35 @@ const people: People = {
         link: 'https://www.hsph.harvard.edu/jesse-bump/',
       },
       nobuyo: {
-        img: './../images/advisors/nobuyo-ozawa.webp',
+        img: '/images/advisors/nobuyo-ozawa.webp',
         name: '小澤信代',
         role: '臨床開発統括責任者',
         texts: ['CRO 臨床開発部 部長'],
         link: 'https://www.linkedin.com/in/nobuyo-ozawa-223707113',
       },
       hiroyuki: {
-        img: './../images/advisors/hiroyuki-kunishima.webp',
+        img: '/images/advisors/hiroyuki-kunishima.webp',
         name: '國島広之',
         role: '感染症アドバイザー',
         texts: ['聖マリアンナ医科大学病院 感染症科'],
         link: 'http://www.k-icnet.org/profile.html',
       },
       fumihiko: {
-        img: './../images/advisors/fumihiko-yokota.webp',
+        img: '/images/advisors/fumihiko-yokota.webp',
         name: '横田文彦',
         role: '公衆衛生アドバイザー',
         texts: ['九州大学 准教授（疫学）'],
         link: 'https://q-aos.kyushu-u.ac.jp/en/staff/1770/',
       },
       kohei: {
-        img: './../images/advisors/kohei-wakamiya.webp',
+        img: '/images/advisors/kohei-wakamiya.webp',
         name: '若宮幸平',
         role: '音響AIアドバイザー',
         texts: ['九州大学 助教（音響設計）'],
         link: 'https://hyoka.ofc.kyushu-u.ac.jp/html/100021188_ja.html',
       },
       tamer: {
-        img: './../images/advisors/tamer-fahmy.webp',
+        img: '/images/advisors/tamer-fahmy.webp',
         name: 'タメル・ファハミー',
         role: '中東・アフリカ市場アドバイザー',
         texts: [
@@ -288,7 +288,7 @@ const people: People = {
         link: 'https://ae.linkedin.com/in/tamer-fahmy-b44686114',
       },
       shirin: {
-        img: './../images/advisors/shirin-hasan.webp',
+        img: '/images/advisors/shirin-hasan.webp',
         name: 'シリン・ハサン',
         role: '臨床・医療・薬事アドバイザー',
         texts: [
@@ -298,7 +298,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/shirinhasan/',
       },
       maurino: {
-        img: './../images/advisors/Maurino-Flora.webp',
+        img: '/images/advisors/Maurino-Flora.webp',
         name: 'マウリノ・フローラ',
         role: '医療機器プログラムアドバイザー',
         texts: [
@@ -308,7 +308,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/maurino-f-a230971/',
       },
       amir: {
-        img: './../images/advisors/AmirKhan.webp',
+        img: '/images/advisors/AmirKhan.webp',
         name: 'アミール・カーン',
         role: 'エグゼクティブ・グラヴィタスアドバイザー',
         texts: [
@@ -318,7 +318,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/the-amir-khan/',
       },
       ohmori: {
-        img: './../images/advisors/ohmori-takeshi.webp',
+        img: '/images/advisors/ohmori-takeshi.webp',
         name: '大森健史',
         role: '日本サイバーセキュリティアドバイザー',
         texts: [
@@ -328,7 +328,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/takeshi-ohmori-8b92734a/',
       },
       tomohiro: {
-        img: './../images/advisors/Tomohiro-Kimura.webp',
+        img: '/images/advisors/Tomohiro-Kimura.webp',
         name: '木村共宏',
         role: 'エグゼクティブビジネスアドバイザー',
         texts: [
@@ -338,7 +338,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/tomohiro-%E5%85%B1%E5%AE%8F-kimura-%E6%9C%A8%E6%9D%91-7253ab39/',
       },
       okazaki: {
-        img: './../images/advisors/takashi-okazaki.webp',
+        img: '/images/advisors/takashi-okazaki.webp',
         name: '岡崎 崇',
         role: 'マレーシア・ジャパン エグゼクティブ・アドバイザー',
         texts: [
@@ -348,7 +348,7 @@ const people: People = {
         link: 'https://therapia.my/',
       },
       junpei: {
-        img: './../images/advisors/junpei-komiyama.webp',
+        img: '/images/advisors/junpei-komiyama.webp',
         name: '小宮山 純平',
         role: '人工知能アドバイザー',
         texts: [
@@ -358,7 +358,7 @@ const people: People = {
         link: 'https://www.linkedin.com/in/junpei-komiyama-861409132/',
       },
       peter: {
-        img: './../images/advisors/peter-hart.jpg',
+        img: '/images/advisors/peter-hart.jpg',
         name: 'ピーター・ハート',
         role: '技術戦略アドバイザー',
         texts: [
@@ -368,7 +368,7 @@ const people: People = {
         link: 'http://www.peterhart.net/',
       },
       yasuko: {
-        img: './../images/advisors/Yasuko-Tokifuji.jpg',
+        img: '/images/advisors/Yasuko-Tokifuji.jpg',
         name: '時藤 泰子',
         role: '経営戦略アドバイザー',
         texts: ['クアンティック経営大学院 経営学修士'],
