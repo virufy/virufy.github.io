@@ -52,7 +52,7 @@
     "id": "ja-publications-1",
     "lang": "ja",
     "title": "組織的・リーダーシップの支援と、リモートファーストの非営利団体におけるボランティアのモチベーションとの関係",
-    "content": "2026年7月",
+    "content": "2026年9月",
     "url": "https://link.springer.com/article/10.1186/s43093-026-00914-6"
   },
   {
@@ -66,7 +66,7 @@
     "id": "ja-publications-3",
     "lang": "ja",
     "title": "世界の呼吸器健康のためのAI音響診断",
-    "content": "June 2026",
+    "content": "2026年6月",
     "url": "/en/publications/virufy-white-paper-2026"
   },
   {
@@ -117,20 +117,6 @@
     "title": "Virufy: 咳からCOVID-19を検出するAIのためのクラウドソーシングおよび臨床データセットのグローバル適用性",
     "content": "2020年11月",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
-  },
-  {
-    "id": "ja-publications-11",
-    "lang": "ja",
-    "title": "Fusical: マルチモーダル融合によるビデオ感情分析",
-    "content": "2020年10月",
-    "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
-  },
-  {
-    "id": "ja-publications-12",
-    "lang": "ja",
-    "title": "ディープラーニングによる表情認識",
-    "content": "2020年4月",
-    "url": "https://arxiv.org/abs/2004.11823"
   },
   {
     "id": "ja-faq-1",
@@ -618,8 +604,8 @@
   {
     "id": "ja-supporters-intro",
     "lang": "ja",
-    "title": "Our Supporters",
-    "content": "Global Partnerships Virufy collaborates with leading academic institutions, industry innovators, and nonprofit organizations worldwide to advance AI-powered respiratory health screening and make early detection accessible to everyone.",
+    "title": "私たちの サポーター",
+    "content": "グローバルパートナーシップ Virufy は、世界各地の主要な学術機関、革新的な企業、非営利団体と連携し、AI を活用した呼吸器疾患スクリーニングを推進し、早期発見をより多くの人々に届けることを目指しています。",
     "url": "/ja/supporters"
   },
   {
@@ -793,8 +779,8 @@
   {
     "id": "ja-supporters-banner",
     "lang": "ja",
-    "title": "Join Our Mission",
-    "content": "Partner with Virufy to advance respiratory health screening technology and make a global impact. Together, we can help detect diseases earlier and save lives worldwide. Become a Partner",
+    "title": "私たちのミッションに参加しませんか",
+    "content": "Virufy のパートナーとして、呼吸器の健康を守るためのスクリーニング技術を前進させ、世界に貢献しませんか。協働することで、より早い段階で疾患を発見し、世界中の人々の命を守ることにつながります。 パートナーになる",
     "url": "/join-us"
   },
   {
@@ -926,131 +912,138 @@
   {
     "id": "ja-advisors-19",
     "lang": "ja",
+    "title": "リチャード・モントーク",
+    "content": "グローバル入学アドバイザー、著者 (グローバル入学アドバイザー | 著者 - 一流大学に入学する方法 | スタンフォード大学 法学博士（J.D.）、ハーバード大学 修士（M.A.）、ブラウン大学 学士（B.A.）)",
+    "url": "/ja/advisors"
+  },
+  {
+    "id": "ja-advisors-20",
+    "lang": "ja",
     "title": "クワジャ・シェイク",
     "content": "最高技術責任者（CTO） (IBM / MOSH 副会長・理事 | ノースフロリダ大学 コンピューティング学部 理事)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-20",
+    "id": "ja-advisors-21",
     "lang": "ja",
     "title": "アヨミデ・オウォイェミ",
     "content": "臨床アドバイザー (One Young World ナイジェリア 大使 | イリノイ大学シカゴ校 生物医学科学 博士（Ph.D.）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-21",
+    "id": "ja-advisors-22",
     "lang": "ja",
     "title": "伊藤努",
     "content": "経営ビジョンアドバイザー (丹南FMラジオ 創設者 | 新幹線 主任設計者)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-22",
+    "id": "ja-advisors-23",
     "lang": "ja",
     "title": "レス・アトラス博士",
     "content": "主任研究者 (ワシントン大学 教授（電気・コンピュータ工学） | スタンフォード大学 博士（電気工学）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-23",
+    "id": "ja-advisors-24",
     "lang": "ja",
     "title": "ジェシー・バンプ博士",
     "content": "公衆衛生アドバイザー (ハーバード大学 T.H.チャン公衆衛生大学院 グローバルヘルス・人口学部)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-24",
+    "id": "ja-advisors-25",
     "lang": "ja",
     "title": "小澤信代",
     "content": "臨床開発統括責任者 (CRO 臨床開発部 部長)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-25",
+    "id": "ja-advisors-26",
     "lang": "ja",
     "title": "國島広之",
     "content": "感染症アドバイザー (聖マリアンナ医科大学病院 感染症科)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-26",
+    "id": "ja-advisors-27",
     "lang": "ja",
     "title": "横田文彦",
     "content": "公衆衛生アドバイザー (九州大学 准教授（疫学）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-27",
+    "id": "ja-advisors-28",
     "lang": "ja",
     "title": "若宮幸平",
     "content": "音響AIアドバイザー (九州大学 助教（音響設計）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-28",
+    "id": "ja-advisors-29",
     "lang": "ja",
     "title": "タメル・ファハミー",
     "content": "中東・アフリカ市場アドバイザー (元ドレーゲル/フィリップスメドテック 睡眠・呼吸ケア部門 | SP Jain グローバル経営大学院 MBA | カイロ大学学士（生物医学工学）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-29",
+    "id": "ja-advisors-30",
     "lang": "ja",
     "title": "シリン・ハサン",
     "content": "臨床・医療・薬事アドバイザー (元メドトロニック 臨床部門長 | サンノゼ州立大学／スタンフォード大学 修士（生化学）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-30",
+    "id": "ja-advisors-31",
     "lang": "ja",
     "title": "マウリノ・フローラ",
     "content": "医療機器プログラムアドバイザー (Apomed Consultants マネージングディレクター | サンタクララ大学 工学マネジメント 修士（M.S.）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-31",
+    "id": "ja-advisors-32",
     "lang": "ja",
     "title": "アミール・カーン",
     "content": "エグゼクティブ・グラヴィタスアドバイザー (Digital Gravitas Silicon Valley 最高経営責任者（CEO） | イタリア モーダ・ブルゴ学院（ミラノ）)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-32",
+    "id": "ja-advisors-33",
     "lang": "ja",
     "title": "大森健史",
     "content": "日本サイバーセキュリティアドバイザー (CISSP, CCSP, CSSLP, CISM, AAISM | キンドリルジャパン セキュリティ＆レジリエンシー 技術戦略統括ディレクター)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-33",
+    "id": "ja-advisors-34",
     "lang": "ja",
     "title": "木村共宏",
     "content": "エグゼクティブビジネスアドバイザー (インド太平洋問題研究所 副理事長 / 武蔵野大学 理事 | 東京大学 工学部 システム量子工学科 学士)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-34",
+    "id": "ja-advisors-35",
     "lang": "ja",
     "title": "岡崎 崇",
     "content": "マレーシア・ジャパン エグゼクティブ・アドバイザー (Therapia Sdn. Bhd. 共同創業者 兼 CEO | 東京大学大学院 新領域創成科学研究科 修士)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-35",
+    "id": "ja-advisors-36",
     "lang": "ja",
     "title": "小宮山 純平",
     "content": "人工知能アドバイザー (MBZUAI（モハメド・ビン・ザイード人工知能大学）機械学習学部　助教 | 東京大学大学院 博士（情報理工学))",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-36",
+    "id": "ja-advisors-37",
     "lang": "ja",
     "title": "ピーター・ハート",
     "content": "技術戦略アドバイザー (リコー・イノベーションズ 創設者 兼 名誉会長 | スタンフォード大学 電気工学博士)",
     "url": "/ja/advisors"
   },
   {
-    "id": "ja-advisors-37",
+    "id": "ja-advisors-38",
     "lang": "ja",
     "title": "時藤 泰子",
     "content": "経営戦略アドバイザー (クアンティック経営大学院 経営学修士)",
@@ -1066,145 +1059,117 @@
   {
     "id": "ja-news-1",
     "lang": "ja",
-    "title": "スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行",
-    "content": "2026年5月",
-    "url": "prototypesforhumanity.com/press-releases/press/Universityventures"
+    "title": "インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討",
+    "content": "2026年6月",
+    "url": "https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/"
   },
   {
     "id": "ja-news-2",
     "lang": "ja",
-    "title": "インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討",
+    "title": "創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義",
     "content": "2026年6月",
-    "url": "fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health"
+    "url": "/ja/news/amil-june-2026/"
   },
   {
     "id": "ja-news-3",
-    "lang": "ja",
-    "title": "創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義",
-    "content": "2026年6月",
-    "url": "/en/sevennews/amil-june-2026"
-  },
-  {
-    "id": "ja-news-4",
-    "lang": "ja",
-    "title": "AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！",
-    "content": "2026年4月",
-    "url": "/en/sevennews/whx-dubai-2026"
-  },
-  {
-    "id": "ja-news-5",
     "lang": "ja",
     "title": "スイス、米国、エジプトの3つの大学発ベンチャーが、ドバイで実証実験および商業化段階へ移行",
     "content": "2026年5月",
     "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
   },
   {
+    "id": "ja-news-4",
+    "lang": "ja",
+    "title": "AIで小児医療を前進させる：Virufy × Emirates Health Services（EHS）、WHXドバイ2026に出展！",
+    "content": "2026年4月",
+    "url": "/ja/news/whx-dubai-2026/"
+  },
+  {
+    "id": "ja-news-5",
+    "lang": "ja",
+    "title": "GITEXグローバル2025 - ドバイヘルス",
+    "content": "2025年10月",
+    "url": "/ja/news/gitex-global-2025-dubai/"
+  },
+  {
     "id": "ja-news-6",
     "lang": "ja",
-    "title": "インドネシア大学公衆衛生学部、呼吸器健康分野におけるAI技術開発に向けてVirufyとの戦略的協力を検討",
-    "content": "2026年6月",
-    "url": "https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/"
+    "title": "Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示",
+    "content": "2025年6月",
+    "url": "/ja/news/uae-adghw-apr-2025/"
   },
   {
     "id": "ja-news-7",
     "lang": "ja",
-    "title": "創設者アミル・カンザダからのメッセージ：シリコンバレーから教室へ ― 福井大学での初めての講義",
-    "content": "2026年6月",
-    "url": "/en/sevennews/amil-june-2026"
+    "title": "Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露",
+    "content": "2024年11月",
+    "url": "/ja/news/press-release-dubai/"
   },
   {
     "id": "ja-news-8",
     "lang": "ja",
-    "title": "GITEXグローバル2025 - ドバイヘルス",
-    "content": "2025年10月",
-    "url": "/en/sevennews/gitex-global-2025-dubai"
+    "title": "Virufyベータ版アプリがコロンビアでリリース、4,500人のユーザーに自宅でCOVID-19検出を提供",
+    "content": "2023年2月",
+    "url": "/ja/news/beta-app-release-2023/"
   },
   {
     "id": "ja-news-9",
-    "lang": "ja",
-    "title": "Virufy、アブダビでAI呼吸器スクリーニングの成功例を展示",
-    "content": "2025年6月",
-    "url": "/en/sevennews/uae-adghw-apr-2025"
-  },
-  {
-    "id": "ja-news-10",
-    "lang": "ja",
-    "title": "Virufy、2024年ドバイのPrototypes for Humanityで革新的なCOVID-19スクリーニング技術を披露",
-    "content": "2024年11月",
-    "url": "/en/sevennews/press-release-dubai"
-  },
-  {
-    "id": "ja-news-11",
-    "lang": "ja",
-    "title": "Virufyベータ版アプリがコロンビアでリリース、4,500人のユーザーに自宅でCOVID-19検出を提供",
-    "content": "2023年2月",
-    "url": "/en/sevennews/beta-app-release-2023"
-  },
-  {
-    "id": "ja-news-12",
     "lang": "ja",
     "title": "BARDA、視覚および聴覚症状に基づく感染症検出のための新しいAI/MLデジタルアプリの開発を支援",
     "content": "医療対策、アメリカ合衆国",
     "url": "https://medicalcountermeasures.gov/newsroom/2022/ai_ml/"
   },
   {
-    "id": "ja-news-13",
+    "id": "ja-news-10",
     "lang": "ja",
     "title": "このアプリは電話の前で咳をするだけでCOVID-19を診断することを目指しています",
     "content": "Forbes, メキシコ",
     "url": "https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/"
   },
   {
-    "id": "ja-news-14",
+    "id": "ja-news-11",
     "lang": "ja",
     "title": "COVID-19: Virufyアプリは咳の分析を通じてウイルスを診断可能",
     "content": "MSN",
     "url": "https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332"
   },
   {
-    "id": "ja-news-15",
+    "id": "ja-news-12",
     "lang": "ja",
     "title": "VIRUFY: COVID-19に感染しているかどうかを検出するプラットフォーム",
     "content": "Expreso, リマ, ペルー",
     "url": "https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/"
   },
   {
-    "id": "ja-news-16",
-    "lang": "ja",
-    "title": "One Young World日本アンバサダーがAIを活用してCOVID-19に挑む",
-    "content": "One Young World, 東京, 日本",
-    "url": "https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
-  },
-  {
-    "id": "ja-news-17",
-    "lang": "ja",
-    "title": "COVID-19対応の最前線に立つ北米アンバサダーたち",
-    "content": "One Young World",
-    "url": "https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response"
-  },
-  {
-    "id": "ja-news-18",
+    "id": "ja-news-13",
     "lang": "ja",
     "title": "7月のアンバサダー・オブ・ザ・マンス",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month"
   },
   {
-    "id": "ja-news-19",
+    "id": "ja-news-14",
     "lang": "ja",
-    "title": "7月に開催されたOYWのグローバルデジタルイベントに数千人が参加：見逃した内容を振り返る",
-    "content": "One Young World",
-    "url": "https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed"
+    "title": "One Young World日本アンバサダーがAIを活用してCOVID-19に挑む",
+    "content": "One Young World, 東京, 日本",
+    "url": "https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
   },
   {
-    "id": "ja-news-20",
+    "id": "ja-news-15",
+    "lang": "ja",
+    "title": "COVID-19対応の最前線に立つ北米アンバサダーたち",
+    "content": "One Young World",
+    "url": "https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response"
+  },
+  {
+    "id": "ja-news-16",
     "lang": "ja",
     "title": "One Young World東京2020カーカス",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/event/one-young-world-tokyo-caucus-2020"
   },
   {
-    "id": "ja-news-21",
+    "id": "ja-news-17",
     "lang": "ja",
     "title": "One Young World東京2020カーカスでのVirufyプレゼンテーション",
     "content": "One Young World, 東京, 日本",
@@ -1213,85 +1178,85 @@
   {
     "id": "ja-amilsStory-hero",
     "lang": "ja",
-    "title": "Meet Our  Founder & CEO",
-    "content": "Meet Amil Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley. Specially Appointed Assistant Professor, Department of Engineering, University of Fukui, Japan",
+    "title": "私たちの 創業者・CEO について",
+    "content": "アミルのご紹介 福井大学大学院 工学研究科 博士後期課程在籍。元カリフォルニア大学バークレー校 MBA および工学修士（データサイエンス）ジョイントディグリープログラム学生。福井大学 工学部 特任助教。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-story",
     "lang": "ja",
-    "title": "Amil's Story",
-    "content": "Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact. Since its founding, Virufy has grown into an international nonprofit operating across three continents, supported by more than 250 volunteers and 60 partner organizations. Guided by its mission to democratize access to health screening, Virufy continues to advance AI-driven disease detection to help communities respond faster, earlier, and more equitably to global health threats.",
+    "title": "アミルについて",
+    "content": "アミル・カンザダ（Amil Khanzada）は、新型コロナウィルス（COVID-19）のパンデミックの最中、「スマートフォン一つで、世界中の誰もが、どこにいても早期の疾患スクリーニングを受けられるようにする」というミッションを掲げ、Virufyを創設しました。幼い頃から社会貢献活動に親しみ、ソフトウェア工学と人工知能（AI）の分野でキャリアを築いてきたアミルは、最先端のテクノロジーを活用することで、世界が直面する喫緊の公衆衛生課題の解決に貢献できると考えました。スタンフォード大学大学院では、アンドリュー・ン（Andrew Ng）博士やフェイフェイ・リ（Fei-Fei Li）博士といったAI分野の先駆者たちのもとで学び、機械学習、音声信号処理、モバイルコンピューティングの進歩が、人々の健康を守るための実社会の健康課題の解決に迅速に活かせる可能性を見出しました。 Virufyは設立以来、3大陸にわたって活動する国際的な非営利団体へと成長し、250名を超えるボランティアと60のパートナー団体に支えられています。「誰もが等しく健康スクリーニングを受けられる社会の実現」というミッションのもと、AIを活用した疾患の早期発見技術の開発を推進し、世界各地の地域社会が健康上の脅威を早期に把握し、迅速かつ公平に対応できるよう取り組み続けています。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-milestones-overview",
     "lang": "ja",
-    "title": "Key Milestones",
-    "content": "A journey from pandemic response to global impact in respiratory health technology.",
+    "title": "主なマイルストーン",
+    "content": "パンデミックへの対応から、呼吸器ケア技術の世界的展開へ",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-milestone-1",
     "lang": "ja",
-    "title": "2020: The Stanford Genesis",
-    "content": "2020 While a student at Stanford, Amil established Virufy as a registered nonprofit in direct response to the global pandemic. He mobilized a world-class volunteer network to begin collecting cough recordings, launching the first clinical research studies in South Asia to train AI for COVID-19 detection.",
+    "title": "2020年：スタンフォードでの始動",
+    "content": "2020 スタンフォード大学在学中、アミルは世界的なパンデミックを受け、非営利団体Virufyを正式に設立しました。世界各地から優秀なボランティアを集め、咳音データの収集を開始。さらに、COVID-19を検出するAIの開発に向けて、南アジアで初期の臨床研究を開始しました。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-milestone-2",
     "lang": "ja",
-    "title": "2021: Global Outreach & Data Expansion",
-    "content": "2021 Our partner Sherlock Communications led a massive marketing push across Latin America, generating over 300 press releases to drive large-scale data collection and public awareness. Amil began representing Virufy at major global summits, establishing the organization as an international leader in the emerging field of acoustic health.",
+    "title": "2021年：グローバル展開とデータの拡大",
+    "content": "2021 パートナー企業であるSherlock Communicationsは、ラテンアメリカ全域で大規模な広報活動を展開し、300件を超えるプレスリリースを通じて、データ収集の拡大と認知度の向上に貢献しました。また、アミルは世界の主要な国際サミットにVirufyの代表として参加し、音声を活用した健康・医療技術の新たな分野において、Virufyの国際的なリーダーとしての地位を確立していきました。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-milestone-3",
     "lang": "ja",
-    "title": "2022: Federal Recognition & Development",
-    "content": "2022 Virufy secured a prestigious research contract with the U.S. Department of Health and Human Services (BARDA). This milestone significantly accelerated the organization’s development capabilities and provided federal-level validation for the mission to provide accessible respiratory screening tools. Our clinical studies in Colombia proceeded in parallel.",
+    "title": "2022年：米国政府からの評価と開発",
+    "content": "2022 Virufyは、米国保健福祉省傘下の生物医学先端研究開発局（BARDA）との重要な研究契約を獲得しました。この契約を機に開発力が大幅に強化され、誰もが利用できる呼吸器疾患スクリーニング技術の実現を目指すVirufyの取り組みが、米国政府からも評価されました。並行して、コロンビアでの臨床研究も進められました。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-milestone-4",
     "lang": "ja",
-    "title": "2023: Strategic Innovation & NSF I-Corps",
-    "content": "2023 Following the conclusion of the public health emergency, Amil led Virufy through the National Science Foundation (NSF) I-Corps program. He traveled extensively across the U.S. to conduct hundreds of interviews, defining a robust operational model for acoustic AI to detect respiratory threats beyond COVID-19.",
+    "title": "2023年：戦略的イノベーションとNSF I-Corps",
+    "content": "2023 公衆衛生上の緊急事態が終結した後、アミルはVirufyを率いて、米国国立科学財団（NSF）のI-Corpsプログラムに参加しました。全米各地を訪れて数百件に及ぶインタビューを実施し、COVID-19にとどまらず、幅広い呼吸器疾患の検出に音声AIを活用するための実践的な運用モデルを確立しました。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-milestone-5",
     "lang": "ja",
-    "title": "2024: The Japan Hub & Elderly Care",
-    "content": "2024 Amil established a significant operational presence in Japan with support from JETRO. He spearheaded a major research shift toward detecting pneumonia in elderly care facilities, establishing a local HQ in Fukuoka to serve the specific needs of the Japanese healthcare market.",
+    "title": "2024年：日本拠点の設立と高齢者ケアへの応用",
+    "content": "2024 アミルは、JETRO（日本貿易振興機構）の支援を受け、日本での本格的な活動基盤を構築しました。高齢者介護施設における肺炎の検出に向けて研究の重点を移すとともに、福岡に日本の活動拠点を設立し、日本の医療現場特有のニーズに応える取り組みを進めました。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-milestone-6",
     "lang": "ja",
-    "title": "2025: Global Scale & Multi-Disease Detection",
-    "content": "2025 Amil launched operations in Dubai, securing a critical partnership with a health ministry arm to validate and deploy COVID/Flu detection technology. This initiative focused on achieving large-scale population health surveillance and strengthening public health infrastructure.",
+    "title": "2025年：グローバル展開と複数疾患の検知",
+    "content": "2025 アミルはドバイでの活動を開始し、保健省の関連機関との重要なパートナーシップを構築しました。この連携を通じて、COVID-19やインフルエンザの検出技術の検証と導入を進め、大規模な公衆衛生モニタリング体制の構築と公衆衛生基盤の強化に取り組みました。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-milestone-7",
     "lang": "ja",
-    "title": "2026: Academic Leadership & Global Mission",
-    "content": "2026 Amil joined the University of Fukui as a Specially Appointed Assistant Professor of Social Informatics. In this role, he continues to lead Virufy’s global mission in parallel with his academic research on GovAI, regional revitalization, and the practical deployment of global health technologies.",
+    "title": "2026年：学術的リーダーシップとグローバルミッション",
+    "content": "2026 アミルは福井大学の社会情報学分野における特命助教に就任しました。現在は、行政におけるAI活用（GovAI）、地域活性化、グローバルヘルステクノロジーの社会実装に関する研究に取り組む一方、Virufyの国際的な活動を引き続き牽引しています。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-oyw",
     "lang": "ja",
-    "title": "Supported by a Global Network –  One Young World",
-    "content": "Through One Young World, Amil has been able to scale his vision beyond borders, connecting with a global community of young leaders committed to solving real-world health challenges. As an ambassador, he collaborates with researchers, clinicians, and technologists from around the world, leveraging this international network to accelerate Virufy’s mission of accessible, AI-driven respiratory health screening.",
+    "title": "グローバルネットワークによる支援 One Young World",
+    "content": "アミルは「One Young World」を通じて、世界の健康課題の解決に取り組む若いリーダーたちとのつながりを深め、国境を越えて自身のビジョンを広げてきました。アンバサダーとして、世界各地の研究者、医療従事者、技術者と連携し、国際的なネットワークを活かしながら、誰もが利用できるAIを活用した呼吸器疾患スクリーニングの実現に向けて、Virufyの取り組みを加速させています。",
     "url": "/ja/amils-story"
   },
   {
     "id": "ja-amilsStory-banner",
     "lang": "ja",
-    "title": "Built in Partnership With a Global Network",
-    "content": "Together with academic, industry, and nonprofit partners, Amil and the Virufy team are expanding access to AI-driven respiratory health screening worldwide. View Our Supporters",
+    "title": "グローバルパートナーとの協働",
+    "content": "アミルとVirufyのチームは、大学、企業、非営利団体などのパートナーと連携し、AIを活用した呼吸器疾患スクリーニングを世界中の誰もが利用できるよう、取り組みを進めています。 支援者を見る",
     "url": "/supporters"
   },
   {
@@ -1325,71 +1290,64 @@
   {
     "id": "ja-donate-intro",
     "lang": "ja",
-    "title": "Together, we can revolutionize global respiratory health",
-    "content": "Support Our Mission Every contribution brings us closer to delivering AI-powered diagnostic tools to patients and communities worldwide offering health equity.",
+    "title": "世界の呼吸器医療を ともに前進させましょう",
+    "content": "私たちのミッションへのご支援 皆さまからのご支援は、AI を活用した診断ツールを世界中の患者さんや地域社会へ届け、健康の公平性を実現するという私たちの目標を前進させます。",
     "url": "/ja/donate"
   },
   {
     "id": "ja-donate-impact",
     "lang": "ja",
-    "title": "Your gift creates a lasting impact.",
-    "content": "Every donation helps Virufy bring accessible digital health technology to underserved communities. By supporting us, you're accelerating innovation and giving patients the tools to protect their health.",
+    "title": "皆さまのご支援が未来を変える力になります。",
+    "content": "皆さまからのご寄付は、医療サービスが十分に行き届いていない地域に、誰もが利用しやすいデジタルヘルス技術を届けるための大きな力となります。一人ひとりのご支援が、革新的な技術の開発を後押しし、より多くの人々に健康を守るための選択肢を広げます。",
     "url": "/ja/donate"
   },
   {
     "id": "ja-donate-pillars",
     "lang": "ja",
     "title": "Impact Pillars",
-    "content": "Expand Access Bring AI-powered health screening tools and advantages to underserved communities worldwide. Advance Research Support cutting-edge studies that improve early detection of respiratory illness. Empower Patients Help individuals take control of their health with accessible, science-driven insights.",
+    "content": "アクセスの拡大 AI を活用した健康スクリーニング技術とその恩恵を、世界中の医療アクセスが限られた地域へ届けます。 研究の推進 呼吸器疾患の早期発見の精度向上を目指す、最先端の研究を支援します。 患者さんの力になる 誰もが自分の健康状態を理解し、主体的に健康を守れるよう、科学的根拠に基づく情報をわかりやすく届けます。",
     "url": "/ja/donate"
   },
   {
     "id": "ja-donate-pillar-1",
     "lang": "ja",
-    "title": "Expand Access",
-    "content": "Bring AI-powered health screening tools and advantages to underserved communities worldwide.",
+    "title": "アクセスの拡大",
+    "content": "AI を活用した健康スクリーニング技術とその恩恵を、世界中の医療アクセスが限られた地域へ届けます。",
     "url": "/ja/donate"
   },
   {
     "id": "ja-donate-pillar-2",
     "lang": "ja",
-    "title": "Advance Research",
-    "content": "Support cutting-edge studies that improve early detection of respiratory illness.",
+    "title": "研究の推進",
+    "content": "呼吸器疾患の早期発見の精度向上を目指す、最先端の研究を支援します。",
     "url": "/ja/donate"
   },
   {
     "id": "ja-donate-pillar-3",
     "lang": "ja",
-    "title": "Empower Patients",
-    "content": "Help individuals take control of their health with accessible, science-driven insights.",
+    "title": "患者さんの力になる",
+    "content": "誰もが自分の健康状態を理解し、主体的に健康を守れるよう、科学的根拠に基づく情報をわかりやすく届けます。",
     "url": "/ja/donate"
   },
   {
     "id": "ja-donate-options",
     "lang": "ja",
-    "title": "Choose how you’d like to give.",
-    "content": "Your support matters. Select a donation option below to get started. GoFundMe Contributions are directed through Virufy's GoFundMe campaign. PayPal Contributions are processed directly through Virufy's PayPal account.",
+    "title": "ご希望の寄付方法をお選びください。",
+    "content": "皆さまのご支援が大きな力となります。以下からご希望の寄付方法をお選びください。 PayPal 寄付は Virufy の PayPal アカウントを通じて直接処理されます。",
     "url": "/ja/donate"
   },
   {
     "id": "ja-donate-option-1",
     "lang": "ja",
-    "title": "GoFundMe",
-    "content": "Contributions are directed through Virufy's GoFundMe campaign. Donate via GoFundMe",
-    "url": "https://www.gofundme.com/f/donate-virufy"
-  },
-  {
-    "id": "ja-donate-option-2",
-    "lang": "ja",
     "title": "PayPal",
-    "content": "Contributions are processed directly through Virufy's PayPal account. Donate via PayPal",
+    "content": "寄付は Virufy の PayPal アカウントを通じて直接処理されます。 PayPal で寄付する",
     "url": "https://www.paypal.com/us/fundraiser/charity/4348461"
   },
   {
     "id": "ja-donate-banner",
     "lang": "ja",
-    "title": "Transparency you can trust.",
-    "content": "Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research, innovation, and patient access.",
+    "title": "透明性への取り組み",
+    "content": "Virufy は米国法 501(c)(3) に認定された非営利団体です。ご寄付は、適用される税法に従い、税控除の対象となる場合があります。私たちは透明性と説明責任を大切にし、皆さまからのご支援が社会に最大限の成果をもたらすよう努めています。",
     "url": "/ja/donate"
   }
 ]

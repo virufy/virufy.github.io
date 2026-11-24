@@ -52,7 +52,7 @@
     "id": "es-publications-1",
     "lang": "es",
     "title": "Soporte organizativo y de liderazgo y su relación con la motivación de los voluntarios en una startup sin fines de lucro con enfoque remoto",
-    "content": "Julio 2026",
+    "content": "Septiembre 2026",
     "url": "https://link.springer.com/article/10.1186/s43093-026-00914-6"
   },
   {
@@ -117,20 +117,6 @@
     "title": "Virufy: Aplicabilidad global de conjuntos de datos clínicos y de colaboración colectiva para la detección mediante IA de COVID-19 a partir de la tos",
     "content": "Noviembre 2020",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
-  },
-  {
-    "id": "es-publications-11",
-    "lang": "es",
-    "title": "Fusical: Fusión multimodal para análisis de sentimientos en video",
-    "content": "Octubre 2020",
-    "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
-  },
-  {
-    "id": "es-publications-12",
-    "lang": "es",
-    "title": "Reconocimiento de expresiones faciales con aprendizaje profundo",
-    "content": "Abril 2020",
-    "url": "https://arxiv.org/abs/2004.11823"
   },
   {
     "id": "es-faq-1",
@@ -933,131 +919,138 @@
   {
     "id": "es-advisors-19",
     "lang": "es",
+    "title": "Richard Montauk",
+    "content": "Asesor global de admisiones, autor (Asesor Global de Admisiones | Autor - Cómo Ingresar a las Mejores Universidades | Juris Doctor - Universidad de Stanford, Maestría - Universidad de Harvard, Licenciatura - Universidad de Brown)",
+    "url": "/es/advisors"
+  },
+  {
+    "id": "es-advisors-20",
+    "lang": "es",
     "title": "Khwaja Shaik",
     "content": "Director de Tecnología - IBM (MOSH, Vicepresidente, Miembro de la Junta | Miembro de la Junta - Universidad de North Florida Computing)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-20",
+    "id": "es-advisors-21",
     "lang": "es",
     "title": "Ayomide Owoyemi",
     "content": "Asesor Clínico Ejecutivo (PhD en Ciencias Biomédicas - Universidad de Illinois Chicago | Embajador - One Young World Nigeria)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-21",
+    "id": "es-advisors-22",
     "lang": "es",
     "title": "Tsutomu Ito",
     "content": "Asesor Visionario Ejecutivo (Fundador - Tannan FM Radio | Arquitecto Principal, Tren Bala)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-22",
+    "id": "es-advisors-23",
     "lang": "es",
     "title": "Dr. Les Atlas",
     "content": "Asesor de Audio e Inteligencia Artificial (Profesor de Ingeniería Eléctrica y de Computación - Universidad de Washington | Ph.D. en Ingeniería Eléctrica, Stanford)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-23",
+    "id": "es-advisors-24",
     "lang": "es",
     "title": "Jesse Bump, Ph.D., MPH, FRSA",
     "content": "Asesor de Salud Poblacional (Departamento de Salud Global y Población | Escuela de Salud Pública T.H. Chan de Harvard)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-24",
+    "id": "es-advisors-25",
     "lang": "es",
     "title": "Nobuyo Ozawa",
     "content": "Líder de Desarrollo Clínico en Japón (Gerente de Grupo, Departamento de Desarrollo Clínico, CRO)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-25",
+    "id": "es-advisors-26",
     "lang": "es",
     "title": "Hiroyuki Kunishima",
     "content": "Asesor de Enfermedades Infecciosas (Departamento de Enfermedades Infecciosas, Hospital Universitario St. Marianna)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-26",
+    "id": "es-advisors-27",
     "lang": "es",
     "title": "Fumihiko Yokota",
     "content": "Asesor de Salud Pública (Profesor Asociado de Epidemiología, Universidad de Kyushu)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-27",
+    "id": "es-advisors-28",
     "lang": "es",
     "title": "Kohei Wakamiya",
     "content": "Asesor de Inteligencia Artificial de Voz (Profesor Asistente de Diseño Acústico | Universidad de Kyushu)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-28",
+    "id": "es-advisors-29",
     "lang": "es",
     "title": "Tamer Fahmy",
     "content": "Asesor de Mercado de Medio Oriente y África (Ex Dräger/Philips MedTech - Sueño y Cuidados Respiratorios | MBA, SP Jain School of Global Management | BSc en Ingeniería Biomédica, Universidad de El Cairo)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-29",
+    "id": "es-advisors-30",
     "lang": "es",
     "title": "Shirin Hasan",
     "content": "Asesora de Asuntos Regulatorios (Ex Directora de Asuntos Clínicos, Medtronic | M.S., Bioquímica, Universidad de Mumbai)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-30",
+    "id": "es-advisors-31",
     "lang": "es",
     "title": "Flora Maurino",
     "content": "Asesor del Programa de Dispositivos Médicos (Director General, Apomed Consultants | Maestría en Gestión de Ingeniería, Universidad de Santa Clara)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-31",
+    "id": "es-advisors-32",
     "lang": "es",
     "title": "Amir Khan",
     "content": "Asesor ejecutivo de Gravitas (CEO Digital Gravitas Silicon Valley | Instituto de Moda Burgo, Milán)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-32",
+    "id": "es-advisors-33",
     "lang": "es",
     "title": "Takeshi Ohmori",
     "content": "Asesor de Ciberseguridad en Japón (CISSP, CCSP, CSSLP, CISM, AAISM | Director de Estrategia Tecnológica de Seguridad y Resiliencia, Kyndryl Japón)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-33",
+    "id": "es-advisors-34",
     "lang": "es",
     "title": "Tomohiro Kimura",
     "content": "Asesor Ejecutivo de Negocios (Vicepresidente, RIIPA / Miembro del Consejo, Universidad de Musashino | Licenciatura en Ingeniería Cuántica - Universidad de Tokio)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-34",
+    "id": "es-advisors-35",
     "lang": "es",
     "title": "Okazaki Takashi",
     "content": "Asesor Ejecutivo Malasia-Japón (CEO y cofundador - Therapia Sdn. Bhd. | Máster en Ciencias Fronterizas - Universidad de Tokio)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-35",
+    "id": "es-advisors-36",
     "lang": "es",
     "title": "Junpei Komiyama",
     "content": "Asesor de Inteligencia Artificial (Profesor Asistente de Aprendizaje Automático, MBZUAI (Universidad Mohamed bin Zayed de Inteligencia Artificial) | Doctorado (Ph.D.) en Ciencias de la Computación, Universidad de Tokio)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-36",
+    "id": "es-advisors-37",
     "lang": "es",
     "title": "Peter Hart",
     "content": "Asesor en Estrategia Tecnológica (Fundador y Presidente Emérito en Ricoh Innovations, Inc. | Ph.D. en Ingeniería Eléctrica, Universidad de Stanford)",
     "url": "/es/advisors"
   },
   {
-    "id": "es-advisors-37",
+    "id": "es-advisors-38",
     "lang": "es",
     "title": "Yasuko Tokifuji",
     "content": "Asesora Ejecutiva de Estrategia (MBA Ejecutivo, Quantic School of Business and Technology)",
@@ -1073,23 +1066,23 @@
   {
     "id": "es-news-1",
     "lang": "es",
-    "title": "Tres empresas universitarias de Suiza, EE. UU. y Egipto avanzan a pilotos activos y fases comerciales en Dubái",
-    "content": "Mayo de 2026",
-    "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
-  },
-  {
-    "id": "es-news-2",
-    "lang": "es",
     "title": "FPH UI explora colaboración estratégica con Virufy para desarrollar tecnología de IA en salud respiratoria",
     "content": "Junio de 2026",
     "url": "https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/"
   },
   {
-    "id": "es-news-3",
+    "id": "es-news-2",
     "lang": "es",
     "title": "Un mensaje de nuestro fundador, Amil Khanzada: de Silicon Valley al aula — mi primera conferencia en la Universidad de Fukui",
     "content": "Junio de 2026",
     "url": "/en/news/amil-june-2026"
+  },
+  {
+    "id": "es-news-3",
+    "lang": "es",
+    "title": "Tres empresas universitarias de Suiza, EE. UU. y Egipto avanzan a pilotos activos y fases comerciales en Dubái",
+    "content": "Mayo de 2026",
+    "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
   },
   {
     "id": "es-news-4",
@@ -1157,40 +1150,33 @@
   {
     "id": "es-news-13",
     "lang": "es",
+    "title": "Embajadores del mes de julio",
+    "content": "One Young World",
+    "url": "https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month"
+  },
+  {
+    "id": "es-news-14",
+    "lang": "es",
     "title": "Embajador de One Young World Japón combate el COVID-19 con IA",
     "content": "One Young World, Tokio, Japón",
     "url": "https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
   },
   {
-    "id": "es-news-14",
+    "id": "es-news-15",
     "lang": "es",
     "title": "Embajadores de Norteamérica en la primera línea de la respuesta al COVID-19",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response"
   },
   {
-    "id": "es-news-15",
-    "lang": "es",
-    "title": "Embajadores del mes de julio",
-    "content": "One Young World",
-    "url": "https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month"
-  },
-  {
     "id": "es-news-16",
-    "lang": "es",
-    "title": "Miles de personas asisten a los eventos digitales globales de OYW en julio: un resumen de lo que te perdiste",
-    "content": "One Young World",
-    "url": "https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed"
-  },
-  {
-    "id": "es-news-17",
     "lang": "es",
     "title": "Caucus de One Young World Tokio 2020",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/event/one-young-world-tokyo-caucus-2020"
   },
   {
-    "id": "es-news-18",
+    "id": "es-news-17",
     "lang": "es",
     "title": "Presentación de Virufy en One Young World Tokio 2020 Caucus",
     "content": "One Young World, Tokio, Japón",
@@ -1311,71 +1297,64 @@
   {
     "id": "es-donate-intro",
     "lang": "es",
-    "title": "Together, we can revolutionize global respiratory health",
-    "content": "Support Our Mission Every contribution brings us closer to delivering AI-powered diagnostic tools to patients and communities worldwide offering health equity.",
+    "title": "Juntos podemos revolucionar salud respiratoria global",
+    "content": "Apoye nuestra misión Cada contribución nos acerca a la entrega de herramientas de diagnóstico basadas en inteligencia artificial a pacientes y comunidades de todo el mundo que ofrecen equidad en salud.",
     "url": "/es/donate"
   },
   {
     "id": "es-donate-impact",
     "lang": "es",
-    "title": "Your gift creates a lasting impact.",
-    "content": "Every donation helps Virufy bring accessible digital health technology to underserved communities. By supporting us, you're accelerating innovation and giving patients the tools to protect their health.",
+    "title": "Su donación crea un impacto duradero.",
+    "content": "Cada donación ayuda a Virufy a llevar tecnología de salud digital accesible a comunidades desatendidas. Al apoyarnos, está acelerando la innovación y brindando a los pacientes las herramientas para proteger su salud.",
     "url": "/es/donate"
   },
   {
     "id": "es-donate-pillars",
     "lang": "es",
     "title": "Impact Pillars",
-    "content": "Expand Access Bring AI-powered health screening tools and advantages to underserved communities worldwide. Advance Research Support cutting-edge studies that improve early detection of respiratory illness. Empower Patients Help individuals take control of their health with accessible, science-driven insights.",
+    "content": "Ampliar acceso Lleve herramientas y ventajas de detección de salud impulsadas por IA a comunidades desatendidas en todo el mundo. Investigación avanzada Apoyar estudios de vanguardia que mejoren la detección temprana de enfermedades respiratorias. Empoderar a los pacientes Ayude a las personas a tomar el control de su salud con información accesible y basada en la ciencia.",
     "url": "/es/donate"
   },
   {
     "id": "es-donate-pillar-1",
     "lang": "es",
-    "title": "Expand Access",
-    "content": "Bring AI-powered health screening tools and advantages to underserved communities worldwide.",
+    "title": "Ampliar acceso",
+    "content": "Lleve herramientas y ventajas de detección de salud impulsadas por IA a comunidades desatendidas en todo el mundo.",
     "url": "/es/donate"
   },
   {
     "id": "es-donate-pillar-2",
     "lang": "es",
-    "title": "Advance Research",
-    "content": "Support cutting-edge studies that improve early detection of respiratory illness.",
+    "title": "Investigación avanzada",
+    "content": "Apoyar estudios de vanguardia que mejoren la detección temprana de enfermedades respiratorias.",
     "url": "/es/donate"
   },
   {
     "id": "es-donate-pillar-3",
     "lang": "es",
-    "title": "Empower Patients",
-    "content": "Help individuals take control of their health with accessible, science-driven insights.",
+    "title": "Empoderar a los pacientes",
+    "content": "Ayude a las personas a tomar el control de su salud con información accesible y basada en la ciencia.",
     "url": "/es/donate"
   },
   {
     "id": "es-donate-options",
     "lang": "es",
-    "title": "Choose how you’d like to give.",
-    "content": "Your support matters. Select a donation option below to get started. GoFundMe Contributions are directed through Virufy's GoFundMe campaign. PayPal Contributions are processed directly through Virufy's PayPal account.",
+    "title": "Elige cómo te gustaría donar.",
+    "content": "Tu apoyo importa. Seleccione una de las opciones de donación a continuación para comenzar. PayPal Las contribuciones se procesan directamente a través de la cuenta PayPal de Virufy.",
     "url": "/es/donate"
   },
   {
     "id": "es-donate-option-1",
     "lang": "es",
-    "title": "GoFundMe",
-    "content": "Contributions are directed through Virufy's GoFundMe campaign. Donate via GoFundMe",
-    "url": "https://www.gofundme.com/f/donate-virufy"
-  },
-  {
-    "id": "es-donate-option-2",
-    "lang": "es",
     "title": "PayPal",
-    "content": "Contributions are processed directly through Virufy's PayPal account. Donate via PayPal",
+    "content": "Las contribuciones se procesan directamente a través de la cuenta PayPal de Virufy. Donar a través de PayPal",
     "url": "https://www.paypal.com/us/fundraiser/charity/4348461"
   },
   {
     "id": "es-donate-banner",
     "lang": "es",
-    "title": "Transparency you can trust.",
-    "content": "Virufy is a 501(c)(3) nonprofit organization. Your donations are tax-deductible where applicable. We are committed to transparency and accountability, ensuring that your gift directly supports research, innovation, and patient access.",
+    "title": "Transparencia en la que puedes confiar.",
+    "content": "Virufy es una organización sin fines de lucro 501(c)(3). Sus donaciones son deducibles de impuestos cuando corresponda. Estamos comprometidos con la transparencia y la responsabilidad, garantizando que su donación apoye directamente la investigación, la innovación y el acceso de los pacientes.",
     "url": "/es/donate"
   }
 ]

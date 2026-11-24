@@ -52,7 +52,7 @@
     "id": "en-publications-1",
     "lang": "en",
     "title": "Organizational and Leadership Support and Its Relationship to Volunteer Motivation in a Remote-First Nonprofit Startup",
-    "content": "July 2026",
+    "content": "September 2026",
     "url": "https://link.springer.com/article/10.1186/s43093-026-00914-6"
   },
   {
@@ -117,20 +117,6 @@
     "title": "Virufy: Global Applicability of Crowdsourced and Clinical Datasets for AI Detection of COVID-19 from",
     "content": "November 26, 2020",
     "url": "https://ui.adsabs.harvard.edu/abs/2020arXiv201113320C/abstract"
-  },
-  {
-    "id": "en-publications-11",
-    "lang": "en",
-    "title": "Fusical: Multimodal Fusion for Video Sentiment",
-    "content": "October 22, 2020",
-    "url": "https://dl.acm.org/doi/abs/10.1145/3382507.3417966"
-  },
-  {
-    "id": "en-publications-12",
-    "lang": "en",
-    "title": "Facial Expression Recognition with Deep Learning",
-    "content": "April 8, 2020",
-    "url": "https://arxiv.org/abs/2004.11823"
   },
   {
     "id": "en-faq-1",
@@ -940,131 +926,138 @@
   {
     "id": "en-advisors-19",
     "lang": "en",
+    "title": "Richard Montauk",
+    "content": "Global Admissions Advisor, Author (Global Admissions Advisor | Author - How to Get Into the Top Colleges | J.D. Stanford, M.A. Harvard, B.A. Brown)",
+    "url": "/en/advisors"
+  },
+  {
+    "id": "en-advisors-20",
+    "lang": "en",
     "title": "Khwaja Shaik",
     "content": "Chief Technology Officer - IBM (MOSH, Vice Chair, Board Member | Board Member - University of North Florida Computing)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-20",
+    "id": "en-advisors-21",
     "lang": "en",
     "title": "Ayomide Owoyemi",
     "content": "Executive Clinical Advisor (PhD Biomedical Sciences - University of Illinois Chicago | Ambassador - One Young World Nigeria)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-21",
+    "id": "en-advisors-22",
     "lang": "en",
     "title": "Tsutomu Ito",
     "content": "Executive Visionary Advisor (Founder - Tannan FM Radio | Lead Architect, Bullet Train)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-22",
+    "id": "en-advisors-23",
     "lang": "en",
     "title": "Dr. Les Atlas",
     "content": "Chief Scientist (Professor of Electrical and Computer Engineering - University of Washington | Ph.D. Electrical Engineering, Stanford)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-23",
+    "id": "en-advisors-24",
     "lang": "en",
     "title": "Jesse Bump, Ph.D., MPH, FRSA",
     "content": "Population Health Advisor (Department of Global Health and Population | Harvard T.H. Chan School of Public Health)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-24",
+    "id": "en-advisors-25",
     "lang": "en",
     "title": "Nobuyo Ozawa",
     "content": "Japan Clinical Development Lead (Clinical Development Department Group Manager, CRO)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-25",
+    "id": "en-advisors-26",
     "lang": "en",
     "title": "Hiroyuki Kunishima",
     "content": "Infectious Diseases Advisor (Department of Infectious Diseases, St. Marianna University Hospital)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-26",
+    "id": "en-advisors-27",
     "lang": "en",
     "title": "Fumihiko Yokota",
     "content": "Public Health Advisor (Associate Professor of Epidemiology, Kyushu University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-27",
+    "id": "en-advisors-28",
     "lang": "en",
     "title": "Kohei Wakamiya",
     "content": "Audio AI Advisor (Acoustic Design Assistant Professor | Kyushu University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-28",
+    "id": "en-advisors-29",
     "lang": "en",
     "title": "Tamer Fahmy",
     "content": "Middle East & Africa Market Advisor (Former Dräger/Philips MedTech - Sleep & Respiratory Care | MBA, SP Jain School of Global Management | BSc Biomedical Engineering, Cairo University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-29",
+    "id": "en-advisors-30",
     "lang": "en",
     "title": "Shirin Hasan",
     "content": "Clinical, Medical, Regulatory Affairs Advisor (Former Head of Clinical Affairs, Medtronic | M.S., Biochemistry, SJSU/Stanford)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-30",
+    "id": "en-advisors-31",
     "lang": "en",
     "title": "Maurino Flora",
     "content": "Medical Device Program Advisor (Managing Director, Apomed Consultants | M.S. Engineering Management, Santa Clara University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-31",
+    "id": "en-advisors-32",
     "lang": "en",
     "title": "Amir Khan",
     "content": "Executive Gravitas Advisor (CEO Digital Gravitas Silicon Valley | Istituto di Moda Burgo, Milan)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-32",
+    "id": "en-advisors-33",
     "lang": "en",
     "title": "Takeshi Ohmori",
     "content": "Japan Cybersecurity Advisor (CISSP, CCSP, CSSLP, CISM, AAISM | Director, Security & Resiliency Technology Strategy, Kyndryl Japan)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-33",
+    "id": "en-advisors-34",
     "lang": "en",
     "title": "Tomohiro Kimura",
     "content": "Executive Business Advisor (Vice Chairman, RIIPA / Board Member, Musashino University | Bachelor of Quantum Engineering - University of Tokyo)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-34",
+    "id": "en-advisors-35",
     "lang": "en",
     "title": "Okazaki Takashi",
     "content": "Executive Malaysia-Japan Advisor (CEO & Co-Founder - Therapia Sdn. Bhd. | M.S. Frontier Sciences - University of Tokyo)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-35",
+    "id": "en-advisors-36",
     "lang": "en",
     "title": "Junpei Komiyama",
     "content": "Artificial Intelligence Advisor (Assistant Professor of Machine Learning, MBZUAI (Mohamed bin Zayed University of Artificial Intelligence) | Ph.D. in Computer Science, The University of Tokyo)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-36",
+    "id": "en-advisors-37",
     "lang": "en",
     "title": "Peter Hart",
     "content": "Advisor on Technology Strategy (Founder and Chairman Emeritus at Ricoh Innovations, Inc. | Ph.D. in Electrical Engineering, Stanford University)",
     "url": "/en/advisors"
   },
   {
-    "id": "en-advisors-37",
+    "id": "en-advisors-38",
     "lang": "en",
     "title": "Yasuko Tokifuji",
     "content": "Executive Strategy Advisor (Executive MBA, Quantic School of Business and Technology)",
@@ -1080,23 +1073,23 @@
   {
     "id": "en-news-1",
     "lang": "en",
-    "title": "Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai",
-    "content": "May 2026",
-    "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
-  },
-  {
-    "id": "en-news-2",
-    "lang": "en",
     "title": "FPH UI Explores Strategic Collaboration with Virufy to Develop AI Technology in Respiratory Health",
     "content": "June 2026",
     "url": "https://fkm.ui.ac.id/en/fph-ui-explores-strategic-collaboration-with-virufy-to-develop-ai-technology-in-respiratory-health/"
   },
   {
-    "id": "en-news-3",
+    "id": "en-news-2",
     "lang": "en",
     "title": "A Message from our Founder, Amil Khanzada From Silicon Valley to the Classroom: My First Lecture at the University of Fukui",
     "content": "June 2026",
     "url": "/en/news/amil-june-2026"
+  },
+  {
+    "id": "en-news-3",
+    "lang": "en",
+    "title": "Three university ventures from Switzerland, the USA and Egypt move into active pilots and commercial stages in Dubai",
+    "content": "May 2026",
+    "url": "https://www.prototypesforhumanity.com/press-releases/press/Universityventures"
   },
   {
     "id": "en-news-4",
@@ -1143,61 +1136,54 @@
   {
     "id": "en-news-10",
     "lang": "en",
-    "title": "Esta app busca diagnosticar Covid-19 con sólo toser frente al teléfono",
+    "title": "This App Aims to Diagnose COVID-19 Just by Coughing in Front of a Phone",
     "content": "Forbes, Mexico",
     "url": "https://www.forbes.com.mx/emprendedores-app-diagnostico-covid-19-toser-telefono/"
   },
   {
     "id": "en-news-11",
     "lang": "en",
-    "title": "COVID-19: Aplicativo Virufy puede diagnosticar el virus mediante el análisis de la tos",
+    "title": "COVID-19: Virufy App Can Diagnose the Virus Through Cough Analysis",
     "content": "MSN",
     "url": "https://www.americatv.com.pe/noticias/actualidad/covid-19-aplicativo-virufy-puede-diagnosticar-virus-mediante-analisis-tiene-precision-80-y-no-reemplazara-pruebas-diagnostico-grado-hospitalario-tos-n433332"
   },
   {
     "id": "en-news-12",
     "lang": "en",
-    "title": "VIRUFY: plataforma que permite detectar si estamos contagiados con COVID-19",
+    "title": "VIRUFY: A Platform That Can Detect Whether We Are Infected with COVID-19",
     "content": "Expreso, Lima, Peru",
     "url": "https://www.expreso.com.pe/actualidad/virufy-plataforma-que-permite-detectar-si-estamos-contagiados-con-covid-19/"
   },
   {
     "id": "en-news-13",
     "lang": "en",
+    "title": "Ambassadors of the Month July",
+    "content": "One Young World",
+    "url": "https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month"
+  },
+  {
+    "id": "en-news-14",
+    "lang": "en",
     "title": "One Young World Japan Ambassador Targets COVID-19 Using A.I.",
     "content": "One Young World, Tokyo, Japan",
     "url": "https://oywj.org/ambassadors-in-action/2020/05/oywj-ambassador-targets-covid-19-using-ai/"
   },
   {
-    "id": "en-news-14",
+    "id": "en-news-15",
     "lang": "en",
     "title": "North American Ambassadors on the Frontlines of the COVID-19 Response",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/north-american-ambassadors-frontlines-covid-19-response"
   },
   {
-    "id": "en-news-15",
-    "lang": "en",
-    "title": "Ambassadors of the Month July",
-    "content": "One Young World",
-    "url": "https://www.oneyoungworld.com/news-item/july-2020-ambassadors-month"
-  },
-  {
     "id": "en-news-16",
-    "lang": "en",
-    "title": "Thousands attend OYW's global digital events in July: A recap of what you've missed",
-    "content": "One Young World",
-    "url": "https://www.oneyoungworld.com/news-item/thousands-attend-oyws-global-digital-events-july-recap-what-youve-missed"
-  },
-  {
-    "id": "en-news-17",
     "lang": "en",
     "title": "One Young World Tokyo 2020 Caucus",
     "content": "One Young World",
     "url": "https://www.oneyoungworld.com/event/one-young-world-tokyo-caucus-2020"
   },
   {
-    "id": "en-news-18",
+    "id": "en-news-17",
     "lang": "en",
     "title": "Virufy Presentation to One Young World Tokyo 2020 Cacus",
     "content": "One Young World, Tokyo, Japan",
@@ -1206,7 +1192,7 @@
   {
     "id": "en-amilsStory-hero",
     "lang": "en",
-    "title": "Meet Our  Founder & CEO",
+    "title": "Founder & CEO:  Dr. Amil Khanzada",
     "content": "Meet Amil Doctorate of Engineering Candidate, University of Fukui, Japan. Former MBA & Master of Engineering (Data Science) Joint-Degree Student, UC Berkeley. Specially Appointed Assistant Professor, Department of Engineering, University of Fukui, Japan",
     "url": "/en/amils-story"
   },
@@ -1214,7 +1200,7 @@
     "id": "en-amilsStory-story",
     "lang": "en",
     "title": "Amil's Story",
-    "content": "Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact. Since its founding, Virufy has grown into an international nonprofit operating across three continents, supported by more than 250 volunteers and 60 partner organizations. Guided by its mission to democratize access to health screening, Virufy continues to advance AI-driven disease detection to help communities respond faster, earlier, and more equitably to global health threats.",
+    "content": "Dr. Amil Khanzada founded Virufy during the COVID-19 pandemic with a singular mission: to make early disease screening accessible to anyone, anywhere, using only a smartphone. With a lifelong exposure to social service and a career rooted in software engineering and artificial intelligence, Amil saw an opportunity to apply cutting-edge technology to one of the world’s most urgent public health challenges. While pursuing graduate studies in Artificial Intelligence at Stanford University under pioneers such as Dr. Andrew Ng and Dr. Fei-Fei Li, he recognized that advances in machine learning, audio signal processing, and mobile computing could be rapidly translated into real-world health impact. Since its founding, Virufy has grown into an international nonprofit operating across three continents, supported by more than 250 volunteers and 60 partner organizations. Guided by its mission to democratize access to health screening, Virufy continues to advance AI-driven disease detection to help communities respond faster, earlier, and more equitably to global health threats.",
     "url": "/en/amils-story"
   },
   {
@@ -1361,18 +1347,11 @@
     "id": "en-donate-options",
     "lang": "en",
     "title": "Choose how you’d like to give.",
-    "content": "Your support matters. Select a donation option below to get started. GoFundMe Contributions are directed through Virufy's GoFundMe campaign. PayPal Contributions are processed directly through Virufy's PayPal account.",
+    "content": "Your support matters. Select a donation option below to get started. PayPal Contributions are processed directly through Virufy's PayPal account.",
     "url": "/en/donate"
   },
   {
     "id": "en-donate-option-1",
-    "lang": "en",
-    "title": "GoFundMe",
-    "content": "Contributions are directed through Virufy's GoFundMe campaign. Donate via GoFundMe",
-    "url": "https://www.gofundme.com/f/donate-virufy"
-  },
-  {
-    "id": "en-donate-option-2",
     "lang": "en",
     "title": "PayPal",
     "content": "Contributions are processed directly through Virufy's PayPal account. Donate via PayPal",
