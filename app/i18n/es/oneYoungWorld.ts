@@ -61,30 +61,27 @@ const oneYoungWorld: OneYoungWorld = {
         {
           name: 'Sebastián Pedraza',
           origin: 'Colombia',
-          image:
-            '/images/oneYoungWorld/testimonials/sebastian-square-pic.webp',
+          image: '/images/oneYoungWorld/testimonials/sebastian-square-pic.webp',
           altText: 'Imagen de Sebastián Pedraza',
           testimonial: `“Virufy une el poder de la juventud y la tecnología para transformar el mundo. Esperamos que esta solución llegue a todo el mundo y se convierta en un apoyo para los médicos, especialmente en países de bajos ingresos.”`,
         },
         {
           name: 'Gonzalo Roiffe',
           origin: 'Argentina',
-          image:
-            '/images/oneYoungWorld/testimonials/gonzalo-square-pic.webp',
+          image: '/images/oneYoungWorld/testimonials/gonzalo-square-pic.webp',
           altText: 'Imagen de Gonzalo Roiffe',
           testimonial: `“Virufy tendrá un impacto global, sin importar el origen o el estatus social de los usuarios. Así es como se siente cambiar el statu quo.”`,
         },
         {
           name: 'Marcos Deza',
           origin: 'Argentina',
-          image:
-            '/images/oneYoungWorld/testimonials/marcos-square-pic.webp',
+          image: '/images/oneYoungWorld/testimonials/marcos-square-pic.webp',
           altText: 'Imagen de Marcos Deza',
           testimonial: `“Creo que Virufy desarrollará una solución muy precisa y esto será útil para todo el mundo en cada industria. Así que animo a todos a tomar unos minutos y contribuir con nosotros.”`,
         },
       ],
       buttonText: 'Únete a nuestro equipo',
-      readMoreText: 'Desliza para leer más ↁE,
+      readMoreText: 'Desliza para leer más',
     },
   },
   BannerSection: {
