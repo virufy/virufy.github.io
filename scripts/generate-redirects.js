@@ -49,6 +49,7 @@ const redirects = [
   },
   { from: 'map-medina', to: 'map-madinah' },
   { from: 'map-jeddah', to: 'map-madinah' },
+  { from: 'map-uae', to: 'dubai-map' },
   // add more here
 ];
 
