@@ -6,17 +6,17 @@ import {
 
 export const blogPageContent = {
   hero: {
-    title: 'Our Blog',
+    title: 'Nuestro blog',
     subtitle:
-      'Stories, research insights, and updates on advancing AI-powered respiratory health.',
+      'Historias, hallazgos de investigación y novedades sobre el avance de la salud respiratoria impulsada por IA.',
     bgImage: '/images/icons/icon-news-bg.png',
-    tag: 'Insights & Updates',
+    tag: 'Ideas y novedades',
     tagIcon: '/images/icons/Blog-icon.png',
   },
   pillSelector: {
     options: [
-      { id: 'news', label: 'News' },
-      { id: 'publications', label: 'Publications' },
+      { id: 'news', label: 'Noticias' },
+      { id: 'publications', label: 'Publicaciones' },
       { id: 'blogs', label: 'Blogs' },
     ],
     defaultOption: 'news',
@@ -46,9 +46,9 @@ export const blogPageContent = {
   },
 
   section5: {
-    title: 'Inspired by the work? Help shape what comes next.',
-    text: 'Join researchers, designers, engineers, and advocates working together to advance global respiratory health.',
-    button: 'Join Our Team',
+    title: '¿Te inspiró el trabajo? Ayuda a dar forma a lo que viene después.',
+    text: 'Únete a investigadores, diseñadores, ingenieros y defensores que trabajan juntos para promover la salud respiratoria global.',
+    button: 'Únete a nuestro equipo',
   },
 
   emptyMessage: 'No hay artículos de blog que coincidan con los filtros.',

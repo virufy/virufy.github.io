@@ -474,9 +474,9 @@ const faq: FAQ = {
     },
   },
   banner: {
-    title: 'Still have questions?',
-    text: "Can't find the answer you're looking for? Our dedicated support team is here to help! Reach out to us with your question, and we'll be happy to assist you.",
-    buttonText: 'Contact Us',
+    title: '¿Todavía tienes preguntas?',
+    text: '¿No encuentras la respuesta que buscas? Nuestro equipo de soporte está aquí para ayudarte. Escríbenos con tu pregunta y con gusto te ayudaremos.',
+    buttonText: 'Contáctanos',
     contactTitle: 'Contáctanos',
     emailText: 'Envíanos un correo a',
     closeText: 'Cerrar',

@@ -467,9 +467,9 @@ const faq: FAQ = {
     },
   },
   banner: {
-    title: 'Still have questions?',
-    text: "Can't find the answer you're looking for? Our dedicated support team is here to help! Reach out to us with your question, and we'll be happy to assist you.",
-    buttonText: 'Contact Us',
+    title: 'هل لا تزال لديك أسئلة؟',
+    text: 'لم تجد الإجابة التي تبحث عنها؟ فريق الدعم لدينا هنا لمساعدتك. أرسل إلينا سؤالك وسيسعدنا مساعدتك.',
+    buttonText: 'تواصل معنا',
     contactTitle: 'تواصل معنا',
     emailText: 'راسلنا عبر البريد الإلكتروني على',
     closeText: 'إغلاق',
