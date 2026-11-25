@@ -43,7 +43,9 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: 'https://link.springer.com/article/10.1186/s43093-026-00914-6',
       linkText: '続きを読む',
-      contentType: 'news',
+      contentType: 'publications',
+      image: '/images/sevenNews/publications/September2026-Publications.png',
+      year: 2026,
     },
     {
       title:
@@ -52,7 +54,9 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: 'https://onlinelibrary.wiley.com/doi/10.1002/jsc.70107',
       linkText: '続きを読む',
-      contentType: 'news',
+      contentType: 'publications',
+      image: '/images/sevenNews/publications/July2026-Publications.png',
+      year: 2026,
     },
     {
       title: '世界の呼吸器健康のためのAI音響診断',
@@ -60,7 +64,7 @@ const PublicationsContent: PublicationsPage = {
       subText: '',
       url: '/en/publications/virufy-white-paper-2026',
       contentType: 'publications',
-      image: '/images/sevenNews/Placeholder-Card.png',
+      image: '/images/sevenNews/publications/June2026-Publications.png',
       year: 2026,
     },
     {

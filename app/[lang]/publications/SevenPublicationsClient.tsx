@@ -23,40 +23,6 @@ const extractYear = (dateStr: string): number => {
   return match ? parseInt(match[0], 10) : 0;
 };
 
-// Helper to get a sortable timestamp (YYYY-MM-DD) from various date formats
-const getSortableDate = (dateStr: string): string => {
-  // Handle "Month Day, Year"
-  const monthDayYearMatch = dateStr.match(/^(\w+)\s+(\d{1,2}),?\s+(\d{4})$/);
-  if (monthDayYearMatch) {
-    const month = monthDayYearMatch[1];
-    const day = monthDayYearMatch[2].padStart(2, '0');
-    const year = monthDayYearMatch[3];
-    const monthIndex = new Date(`${month} 1, 2000`).getMonth();
-    if (!isNaN(monthIndex)) {
-      return `${year}-${String(monthIndex + 1).padStart(2, '0')}-${day}`;
-    }
-  }
-
-  // Handle "Month Year"
-  const monthYearMatch = dateStr.match(/^(\w+)\s+(\d{4})$/);
-  if (monthYearMatch) {
-    const month = monthYearMatch[1];
-    const year = monthYearMatch[2];
-    const monthIndex = new Date(`${month} 1, 2000`).getMonth();
-    if (!isNaN(monthIndex)) {
-      return `${year}-${String(monthIndex + 1).padStart(2, '0')}-01`;
-    }
-  }
-
-  // Handle just "YYYY"
-  const yearMatch = dateStr.match(/^\d{4}$/);
-  if (yearMatch) {
-    return `${yearMatch[0]}-12-31`;
-  }
-
-  return '2000-01-01';
-};
-
 const SevenPublicationsClient = ({ content, params }: Props) => {
   const heroTitleWords = useMemo(() => {
     const words = content.hero.title.trim().split(/\s+/);
@@ -92,16 +58,9 @@ const SevenPublicationsClient = ({ content, params }: Props) => {
       result = result.filter((card) => extractYear(card.date) === selectedYear);
     }
 
-    // Sort by date
-    result.sort((a, b) => {
-      const dateA = getSortableDate(a.date);
-      const dateB = getSortableDate(b.date);
-      return sortBy === 'newest'
-        ? dateB.localeCompare(dateA)
-        : dateA.localeCompare(dateB);
-    });
-
-    return result;
+    // Keep the canonical newest-first order from the translated data files,
+    // as the news page does, so dates written in any script sort the same.
+    return sortBy === 'newest' ? result : result.reverse();
   }, [newsCards, selectedYear, sortBy]);
 
   return (
